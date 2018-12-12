@@ -12,7 +12,7 @@ If you have quesitons, topic ideas, or would like to post as a guest; send an em
 
 ## About Me
 
-My name is Patirck Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administator, BA, and Project Manager for over 5 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations.
+My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administator, BA, and Project Manager for over 5 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations.
 
 I love to learn and am constantly trying to expand my skillset. I am currently teaching myself SuiteScript 2.0 and will try to share my experience as I go.
 

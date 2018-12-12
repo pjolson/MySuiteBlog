@@ -4,6 +4,6 @@ blog_index: true
 
 # Blog
 
-Welcome on Outreach Shame blog.
+Covering NetSuite Administration, Development and anything I find interesting or useful!
 
 <BlogIndex />
