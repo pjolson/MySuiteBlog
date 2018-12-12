@@ -8,7 +8,7 @@ A minimalist blog to share  functional tips and tricks about NetSuite that I hav
 
 ## How can you contribute?
 
-If you have quesitons, topic ideas, or would like to post as a guest; send an email to [*info@mysuite.tech*](mailto:info@mysuite.tech) and I will get back to you as soon as possible.
+If you have questions, topic ideas, or would like to post as a guest; send an email to [*info@mysuite.tech*](mailto:info@mysuite.tech) and I will get back to you as soon as possible.
 
 ## About Me
 
