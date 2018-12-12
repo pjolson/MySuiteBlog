@@ -23,3 +23,7 @@ I love to learn and am constantly trying to expand my skillset. I am currently t
 <img src="./img/certadmin.png" width=48%>
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
+
+## Recent Posts
+
+<RecentArticles/>

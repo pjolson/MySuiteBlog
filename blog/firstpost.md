@@ -3,6 +3,8 @@ title: Welcome
 date: 2018-12-12
 description:
     Recently, I found myself looking for a good place to document some of the things I have learned over the years as a NetSuite Functional Administrator, Business Analyst, Project Manager & amatuer coding enthusiast. I started recording some notes in OneNote and then Workflowy, but I thought I should be more public about it so I've decided to periodically post this kind of information to this blog.
+
+tags: ["#GeneralInfo"]
 ---
 
 # Welcome!
@@ -22,4 +24,4 @@ I hope share
 
 I'm not setting any goals for posting. I'm just going to update this from time to time for my own personal benefit and hopefully something I write can be of use to others as well!
 
-
+<TagLinks />
