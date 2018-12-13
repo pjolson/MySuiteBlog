@@ -9,8 +9,6 @@ tags: ["#SuiteAnalytics", "#SavedSearch", "#Formulas", "#CaseWhen"]
 
 # Highlighting Saved Searches
 
-<TagList />
-
 [[toc]]
 
 ---
