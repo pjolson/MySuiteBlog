@@ -1,3 +1,4 @@
 # Tags
 
-<TagList />
+
+<TagLinks />
