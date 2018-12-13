@@ -23,24 +23,24 @@ NetSuite has a number of useful highlighting tools for saved searches. These too
 
 In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders
 
-<img src="./img/postimgs/post/criteria.png" width=85%>
+<img src="./img/criteria.png" width=85%>
 
 ---
 I have set the results to show some data about the POs
 
-<img src="./img/postimgs/post/results.png" width=85%>
+<img src="./img/results.png" width=85%>
 
 ---
 And the highlighting are set to add an image - "Red Arrow Left" if Status = Pending Billing and a mix of other highlights if Status = Fully Billed.
 
-<img src="./img/postimgs/post/highlighting.png" width=85%>
+<img src="./img/highlighting.png" width=85%>
 
 ---
 The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have few caveats. 
 
 As a best practice, I try to avoid more than a couple of highlights per search, I always utilize the Description column in the highlighting section of the saved search, and I try not to use background color highlighting very often, as it can make a search hard to read.
 
-<img src="./img/postimgs/post/output1.png" width=85%>
+<img src="./img/output1.png" width=85%>
 
 ## Highlight a single cell
 
@@ -67,11 +67,11 @@ In even plainer terms; If we still have items yet to be received, let me know by
 
 In the editor tool it will look like this:
 
-<img src="./img/postimgs/post/formula.png" width=85%>
+<img src="./img/formula.png" width=85%>
 
 And the output:
 
-<img src="./img/postimgs/post/output2.png" width=85%>
+<img src="./img/output2.png" width=85%>
 
 ---
 
@@ -90,7 +90,7 @@ Highlight a single field value can be achieved by adding the field to your formu
 
 Adding this as a formula(text) field will simply write the Date field in <text style="color:red;">red</text>
 
-<img src="./img/postimgs/post/output3.png" width=85%>
+<img src="./img/output3.png" width=85%>
 
 ## Conclusion
 ---
