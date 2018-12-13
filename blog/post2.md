@@ -12,6 +12,7 @@ description:
 
 ---
 
+[[toc]]
 
 NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search, and generally highlight at the line level. You can highlight a lines in saved searches by condition and highlight by:
 - Adding an image at the left
