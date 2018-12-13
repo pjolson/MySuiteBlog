@@ -25,25 +25,25 @@ In this example, I have created a Transaction Saved Search with criteria set to 
 
 
 
-![criteria](img/criteria.png "criteria")
+![criteria](./img/criteria.png "criteria")
 
 
 ---
 I have set the results to show some data about the POs
 
-![results](img/results.png "results")
+![results](./img/results.png "results")
 
 ---
 And the highlighting are set to add an image - "Red Arrow Left" if Status = Pending Billing and a mix of other highlights if Status = Fully Billed.
 
-![highlighting](img/highlighting.png "highlighting")
+![highlighting](./img/highlighting.png "highlighting")
 
 ---
 The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have few caveats. 
 
 As a best practice, I try to avoid more than a couple of highlights per search, I always utilize the Description column in the highlighting section of the saved search, and I try not to use background color highlighting very often, as it can make a search hard to read.
 
-![output](img/output1.png "output1")
+![output](./img/output1.png "output1")
 
 ## Highlight a single cell
 
@@ -70,11 +70,11 @@ In even plainer terms; If we still have items yet to be received, let me know by
 
 In the editor tool it will look like this:
 
-![formula](img/formula.png "formula")
+![formula](./img/formula.png "formula")
 
 And the output:
 
-![output2](img/output2.png "output2")
+![output2](./img/output2.png "output2")
 
 ---
 
@@ -93,7 +93,7 @@ Highlight a single field value can be achieved by adding the field to your formu
 
 Adding this as a formula(text) field will simply write the Date field in <text style="color:red;">red</text>
 
-![output3](img/output3.png "output3")
+![output3](./img/output3.png "output3")
 
 ## Conclusion
 ---
