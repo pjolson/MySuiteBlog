@@ -23,7 +23,10 @@ NetSuite has a number of useful highlighting tools for saved searches. These too
 
 In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders
 
-<img src="./img/criteria.png" title="criteria" alt="criteria"  width=85%>
+
+
+![criteria](img/criteria.png "criteria")
+
 
 ---
 I have set the results to show some data about the POs
