@@ -3,7 +3,6 @@ title: Highlighting Saved Searches
 date: 2018-12-13
 description:
     NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search, and generally highlight at the line level. You can highlight a lines in saved searches by condition and highlight by...
-tags: ["#SuiteAnalytics", "#SavedSearches", "#Formulas"]
 ---
 
 # Highlighting Saved Searches
