@@ -7,14 +7,11 @@ description:
 
 # Highlighting Saved Searches
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
-12/13/2018
+[[toc]]
 
 ---
 
-[[toc]]
-
-NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search, and generally highlight at the line level. You can highlight a lines in saved searches by condition and highlight by:
+NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search, and generally highlight at the line level. You can highlight lines in saved searches by condition and highlight using:
 - Adding an image at the left
 - Changing Text Color
 - Changing Background Color
@@ -43,9 +40,10 @@ And the highlighting are set to add an image - "Red Arrow Left" if Status = Pend
 ---
 The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have few caveats. 
 
+![output](https://i.imgur.com/5hd9ZXq.png "output1")
+
 As a best practice, I try to avoid more than a couple of highlights per search, I always utilize the Description column in the highlighting section of the saved search, and I try not to use background color highlighting very often, as it can make a search hard to read.
 
-![output](https://i.imgur.com/5hd9ZXq.png "output1")
 
 ## Highlight a single cell
 
@@ -84,7 +82,7 @@ This method for highlighting can get very complex. The CASE statement accepts mu
 
 ---
 
-## Simple cell Highlighting example
+### Simple cell Highlighting example
 
 A CASE statement is not necessary to highlight data in a saved search. 
 Highlight a single field value can be achieved by adding the field to your formula in this format: 
@@ -102,3 +100,6 @@ Adding this as a formula(text) field will simply write the Date field in <text s
 These are a few of the different highlighting tools I use in NetSuite. There are more advanced cases of using formula fields that go beyond styling that I will cover in future posts.
 
 Please let me know what you think of this post and if you have any questions or comments by emailing [*info@mysuite.tech*](mailto:info@mysuite.tech)
+
+<a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
+12/13/2018 
