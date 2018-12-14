@@ -1,8 +1,5 @@
 ---
 title: MySuite
-meta:
-  - name: google-site-verification
-  - content: uvIB91E265iSQQD1cxEquiWd9zcVbwFPdI-igHm4_hI
 ---
 
 # MySuite
