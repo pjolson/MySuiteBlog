@@ -1,8 +1,8 @@
 ---
 title: MySuite
-<meta name="google-site-verification" content="uvIB91E265iSQQD1cxEquiWd9zcVbwFPdI-igHm4_hI" />
-name: mysuite
-content: Netsuite, MySuite, ERP, CRM, Salesforce, Suiteanalytics, Suitebuilder, Suiteflow
+meta:
+  - name: google-site-verification
+  - content: uvIB91E265iSQQD1cxEquiWd9zcVbwFPdI-igHm4_hI
 ---
 
 # MySuite
