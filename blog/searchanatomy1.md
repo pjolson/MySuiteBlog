@@ -70,8 +70,11 @@ Checking this box make the search available in the Reminders Portlet.
 
 Checking this box makes the Saved Search appear in the Reports->Saved Searches dropdown menu and the tabbed Reports Page. Useful if your users need ready access to the search and are very visual (link to point and click)
 
+**DropDown**
 ![dropdown](https://i.imgur.com/dCFPbXs.png "Available for Dropdown")
 
+
+**Reports Page**
 ![reports](https://i.imgur.com/Lv5Goyj.png "Available for Reports")
 
 ---
