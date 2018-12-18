@@ -6,7 +6,7 @@ My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Admin
 
 ## NetSuite
 
-I began my NetSuite career with an organization that worked in the healthcare IT space. With this organization, I was introduced to NetSuite and began my, largely, self-taught journey of learning NetSuite. This company experienced rapid growth and my team had the opportunity to implement some very interesting business solutions in NetSuite ranging from onboarding/offboarding employees to sales automation and contract management.
+I began my NetSuite career with an organization that worked in the healthcare IT space. With this organization, I was introduced to NetSuite and began my mostly self-taught journey of learning NetSuite. This company experienced rapid growth and my team had the opportunity to implement some very interesting business solutions in NetSuite ranging from onboarding/offboarding employees to sales automation and contract management.
 
 Over the next 5 years I was able to work often with:
 
@@ -19,7 +19,7 @@ Over the next 5 years I was able to work often with:
 - Customer Relationship Management
 - Professional Services Automation
 
-I also helped to integrated and implement the following systems with NetSuite
+I also helped to integrate and implement the following systems with NetSuite:
 
 - Box
 - Nexonia (Time & Expense)
@@ -30,7 +30,7 @@ I also helped to integrated and implement the following systems with NetSuite
 - Qualtrics (Employee and Customer Surveys)
 
 ---
-My next and current employer is the manufacturing and distribution space. With this new company I have the opportunity to help mold NetSuite to the needs of a new NetSuite customer. I am learning the business processes behind this type of organization and getting the opportunity to learn and implement the following systems & modules.
+My current employer is in the manufacturing and distribution space. With this new company I have the opportunity to help mold NetSuite to the needs of a new NetSuite customer. I am learning the business processes behind this type of organization and implementing the following systems & modules:
 
 - Advanced Inventory Management
 - Advanced Shipping
@@ -40,7 +40,8 @@ My next and current employer is the manufacturing and distribution space. With t
 
 ## Certifications
 
-In addition to this practical experience, I hold the following certifications
+In addition to this practical experience, I hold the following certifications:
+
 - NetSuite SuiteFoundation
 - NetSuite Certified Administrator
 - PMI - Project Management Professional

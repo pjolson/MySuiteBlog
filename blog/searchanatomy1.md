@@ -23,14 +23,14 @@ The Definitions portion of the Saved Search editor allows you to set some global
 
 ### A.	Search Title	
 
-Search Title should be a descriptive title that tells the user what the purpose of the search is. This title will appear in the Global Search for users that have access to this saved search
+Search Title should be a descriptive title that tells the user what the purpose of the search is. This title will appear in the Global Search for users that have access to this saved search.
 
 
 ### B.	ID
 
 The ID field is set when creating the saved search or can be updated by clicking the Change ID button at the top. When setting this ID, begin with an underscore and then choose a descriptive name.
 
-These IDs can be referenced in script and are much easier to read in script in they are descriptive. If you do not set an ID, the system will choose a generic id like custsearch76.
+These IDs can be referenced in script and are much easier to read in script if they are descriptive. If you do not set an ID, the system will choose a generic id like custsearch76.
 
 ### C.	Owner
 
@@ -44,7 +44,7 @@ Checking the Public checkbox makes the search available for all users with acces
 
 Checking this box adds the search to the list of view options for lists of records of this type. So, if I were to view a list of transactions, I could update the view to this saved search to see the list of transactions with my predefined criteria and results.
 
-This can be very useful as the assigned view may show too much, or the wrong kind of information.
+This can be very useful as the assigned view may show too much - or the wrong kind - of information.
 
 ### F.	Available as Dashboard View
 
@@ -58,7 +58,7 @@ In this example, you can see that my search can be selected as the search for a 
 
 Checking this box makes the search available as a Sublist View for records of this type. This means that if a user is viewing a record where transactions are available to view in a Sublist, they can choose this search as their view.
 
-Like the Available as List View option, the Sublist view that is set for a user by default may have the wrong kind of information and custom views like this can be used to help them get the correct information about a sublist record.
+Like the Available as List View option, the Sublist view that is set for a user by default may have the wrong kind of information. Custom views like this can be used to help them get the correct information about a sublist record.
 
 ### H.	Available for Reminders
 
@@ -68,7 +68,7 @@ Checking this box make the search available in the Reminders Portlet.
 
 ### I.	Show in Menu
 
-Checking this box makes the Saved Search appear in the Reports->Saved Searches dropdown menu and the tabbed Reports Page. Useful if your users need ready access to the search and are very visual (link to point and click)
+Checking this box makes the Saved Search appear in the Reports->Saved Searches drop down menu and the tabbed Reports Page. This is useful if your users need ready access to the search and are very visual.
 
 **DropDown**
 ![dropdown](https://i.imgur.com/dCFPbXs.png "Available for Dropdown")

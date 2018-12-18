@@ -13,7 +13,7 @@ tags: ["CaseWhen", "Formulas", "SavedSearch", "SuiteAnalytics"]
 
 ---
 
-NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search, and generally highlight at the line level. You can highlight lines in saved searches by condition and highlight using:
+NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search and generally highlight at the line level. You can highlight lines in saved searches by condition and highlight using:
 - Adding an image at the left
 - Changing Text Color
 - Changing Background Color
@@ -22,36 +22,34 @@ NetSuite has a number of useful highlighting tools for saved searches. These too
 
 ## Native Highlighting Example
 
-In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders
-
-
+In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders.
 
 ![criteria](https://i.imgur.com/ENdKcWp.png "criteria")
 
 
 ---
-I have set the results to show some data about the POs
+I have set the results to show some data about the POs:
 
 ![results](https://i.imgur.com/8JIHTK1.png "results")
 
 ---
-And the highlighting are set to add an image - "Red Arrow Left" if Status = Pending Billing and a mix of other highlights if Status = Fully Billed.
+The highlighting is set to add an image - "Red Arrow Left" if Status = Pending Billing and a mix of other highlights if Status = Fully Billed.
 
 ![highlighting](https://i.imgur.com/Q1fww5E.png "highlighting")
 
 ---
-The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have few caveats. 
+The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have very few caveats. 
 
 ![output](https://i.imgur.com/5hd9ZXq.png "output1")
 
-As a best practice, I try to avoid more than a couple of highlights per search, I always utilize the Description column in the highlighting section of the saved search, and I try not to use background color highlighting very often, as it can make a search hard to read.
+As a best practice, I try to avoid more than a couple of highlights per search. I always use the Description column in the highlighting section of the saved search. I try not to use background color highlighting very often, as it can make a search hard to read.
 
 
 ## Highlight a single cell
 
-But what if I want to highlight by column in a saved search? The native "Highlighting" tools in the Saved Search editor do not allow for this, but creating a simple formula can achieve this for you.
+What if I want to highlight by column in a saved search? The native "Highlighting" tools in the Saved Search editor do not allow for this, but creating a simple formula can achieve this.
 
-When using a field in the Results section of the Saved Search editor, you can leverage the SQL CASE WHEN formula to filter values based on criteria and then apply text or styled html elements directly into your saved search!
+When using a field in the Results section of the Saved Search editor, you can leverage the SQL CASE WHEN formula to filter values based on criteria and then apply text or styled html elements directly into your saved search.
 
 ### Example
 
@@ -66,9 +64,9 @@ Using the same search from the previous example, I am going to add a Formula(tex
     END
 
 
-This formula has been separated into lines for readability, but will work on just one line in the Saved Search editor. The formula is saying; If the quantity ordered - the quantity received is greater than 0, then highlight, italicize and center the words "Not Fully Received"; Otherwise writer the word "Received".
+This formula has been separated into lines for readability, but will work on just one line in the Saved Search editor. The formula is saying: if the quantity ordered - the quantity received is greater than 0, then highlight, italicize and center the words "Not Fully Received"; otherwise, write the word "Received."
 
-In even plainer terms; If we still have items yet to be received, let me know by writing "Not Fully Received" and call that out to me by highlighting it; Otherwise simply write "Received".
+In even plainer terms, if we still have items yet to be received, let me know by writing "Not Fully Received" and call that out to me by highlighting it; if not, simply write "Received".
 
 In the editor tool it will look like this:
 
@@ -87,13 +85,13 @@ This method for highlighting can get very complex. The CASE statement accepts mu
 ### Simple cell Highlighting example
 
 A CASE statement is not necessary to highlight data in a saved search. 
-Highlight a single field value can be achieved by adding the field to your formula in this format: 
+Highlighting a single field value can be achieved by adding the field to your formula in this format: 
 
 
 
     '<p style="color: red;">'||{trandate}||''  
 
-Adding this as a formula(text) field will simply write the Date field in <text style="color:red;">red</text>
+Adding this as a formula(text) field will simply write the Date field in red.
 
 ![output3](https://i.imgur.com/imgugg7.png "output3")
 
