@@ -1,5 +1,6 @@
 ---
 blog_index: true
+date: 2018-12-11
 ---
 
 # Blog
