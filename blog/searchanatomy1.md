@@ -4,7 +4,7 @@ date: 2018-12-17
 description:
     When creating or updating a Saved Search in NetSuite, there are a lot of options and features to consider. In most cases, you can get by with many of the basic features, but it is useful to know how all the different options affect your search.
 
-tags: ["SavedSearch", "SuiteAnalytics", "Basics"]
+tags: ["Basics", "SavedSearch", "SuiteAnalytics"]
 ---
 
 # The Anatomy of a Saved Search
