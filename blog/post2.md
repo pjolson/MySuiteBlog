@@ -20,7 +20,7 @@ NetSuite has a number of useful highlighting tools for saved searches. These too
 - Bolding Text
 
 
-## Native Highlighting Example
+## Native Highlighting Example 
 
 In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders.
 
