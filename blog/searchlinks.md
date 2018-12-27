@@ -39,11 +39,17 @@ A few rules for crafting this formula:
 2.	The whole formula must be enclosed in single quotes ‘    ’
 3.	Whenever you pull data from a field into a formula, it needs to be enclosed in single quotes and pipes ‘|| Data goes here ||’
 4.	To get the link you want to link to, go to any individual record you want, in this case a Sales Order.
+    
     a.	Open the Sales order in NetSuite
+    
     b.	Copy the URL and paste it into a text editor
+    
     c.	https://system.netsuite.com/app/accounting/transactions/salesord.nl?id=118202
+    
     d.	Delete the number after id=
+    
     e.	https://system.netsuite.com/app/accounting/transactions/salesord.nl?id=
+    
     f.	This link will be used in your formula
 
 
