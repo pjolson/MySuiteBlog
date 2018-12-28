@@ -105,3 +105,5 @@ Please let me know what you think of this post and if you have any questions or 
 12/13/2018 
 
 <TagList />
+
+Read Next [The Anatomy of a Saved Search - part 1](https://mysuite.tech/blog/searchanatomy1.html)

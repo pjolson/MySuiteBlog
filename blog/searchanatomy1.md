@@ -92,5 +92,5 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagList />
 
-
+Read Next - [Create a Custom Center Tab](https://mysuite.tech/blog/centertabs.html)
 
