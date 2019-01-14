@@ -92,5 +92,5 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagList />
 
-Read Next - [Create a Custom Center Tab](https://mysuite.tech/blog/centertabs.html)
+Read Next - [The Anatomy of a Saved Search - part 2 - Criteria](https://mysuite.tech/blog/searchanatomy2.html)
 
