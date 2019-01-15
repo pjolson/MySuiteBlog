@@ -19,7 +19,7 @@ Recently, a user asked me if they could view the Default Shipping Address for a 
 
 The issue is illustrated in this screenshot of a Customer Record for “Frank’s Custom Stuff.” In this record There are different Default Billing and Default Shipping Addresses listed in the Address subtab. The Default Billing address is the one that is pulled into the ADDRESS field on the Main Subtab.
 
-![definitions](https://i.imgur.com/3xNgdeH.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/3xNgdeH.png "Customer Record")
 
 ----
 
@@ -43,15 +43,15 @@ There is no native way to change the default ADDRESS field to source from a diff
     <a onmouseout="window.status='';" onmouseover="window.status='Click to View Map'; return true;" onclick="openMapWindow('{shipaddressee}\n{shipaddr1}, {shipaddr2}\n{shipcity}, {shipstate} {shipzip}\n{shipcountry}', '{shipcountry}','google'); return false;" href="javascript:void('map')" class="smalltextul dottedlink">Map</a>
 ~~~
 
-![definitions](https://i.imgur.com/KbR0idK.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/KbR0idK.png "Edit Custom Entity Field")
 
-![definitions](https://i.imgur.com/r7ekMjB.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/r7ekMjB.png "Set Subtab")
 
-![definitions](https://i.imgur.com/5yTx5a9.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/5yTx5a9.png "Enter HTML and JavaScript")
 
 The code block uses HTML and JavaScript to Source the field data from the Default Shipping Address into the new field along with a “Map” link that will open Google Maps. This field will mimic the behavior of ADDRESS.
 
-![definitions](https://i.imgur.com/iIJKWNQ.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/iIJKWNQ.png "Custom Default Shipping Address Field")
 
 ---
 
@@ -59,7 +59,7 @@ The code block uses HTML and JavaScript to Source the field data from the Defaul
 
 If there is no Default Shipping specified in the Customer record Address subtab, the field will look like this:
 
-![definitions](https://i.imgur.com/04fGW9G.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/04fGW9G.png "Field Error - No Default Address")
 
 You could always train your staff that this means the default shipping address is not setup or you could create another field to handle this.
 1.	Customization -> Lists, Records, Fields -> Entity Fields -> New
@@ -76,7 +76,7 @@ This code block contains a SQL formula that is looking to see if the first line 
 3.	On the Custom Entry form, hide the original Default Address Field
 4.	On the Custom Entry form, add the new field in place of the original field
 
-![definitions](https://i.imgur.com/JtcpD20.png "Saved Search Definitions")
+![definitions](https://i.imgur.com/JtcpD20.png "Field with no default address")
 
 ---
 
