@@ -67,7 +67,7 @@ You could always train your staff that this means the default shipping address i
     - Type = Inline HTML
     - Applies To | Customer = T
     - Display | Subtab = Main
-    - Validation & Defaulting | Default Value = Code Block Below, Formula = F
+    - Validation & Defaulting | Default Value = Code Block Below, Formula = T
 ~~~    
 CASE WHEN {shipaddr1} IS NOT NULL THEN TO_CHAR({custentity_defaultshipping}) ELSE 'NO DEFAULT SHIPPING ADDRESS SPECIFIED' END
 ~~~
@@ -84,8 +84,9 @@ This code block contains a SQL formula that is looking to see if the first line 
 
 When editing a Custom Entity Field that contains a Default Value, it seems like the FORMULA check box gets set to checked every time. 
 
-In this case, the first field I created contained HTML and will throw an error if FORMULA = T. If you are getting INVALID EXPRESSION, check to see if FORUMULA = T and double check that it is not when saving.
-The second field we created did contain a formula and should be marked as FORUMULA = T.
+In this case, the first field I created contained HTML and will throw an error if FORMULA = T. If you are getting INVALID EXPRESSION, check to see if FORMULA = T and double check that it is FORMULA = F when saving.
+
+The second field we created did contain a formula and should be marked as FORMULA = T.
 
 ---
 
@@ -96,7 +97,7 @@ This solution is a simple way to source in another default address into a custom
 Please let me know what you think of this post and if you have any questions or comments by emailing [*info@mysuite.tech*](mailto:info@mysuite.tech)
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
-12/13/2018 
+01/15/2019 
 
 <TagList />
 
