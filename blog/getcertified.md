@@ -80,7 +80,7 @@ The study guides can begin to feel a little overwhelming at times. I had over 5 
 
 ### Take the Practice Exams
 
-The practice exams are excellent and will really help you prepare for the exams. I took the SuiteFoundation practice exam and scored very poorly. This was discouraging, but I too the wrong answers and studied up on those areas until I felt much better about them. I also took the exam again and again until I could score 100%. This might not seem very useful, but the memorization helped me to understand the concepts.
+The practice exams are excellent and will really help you prepare for the exams. I took the SuiteFoundation practice exam and scored very poorly. This was discouraging, but I noted the wrong answers and studied up on those areas until I felt much better about them. I also took the exam again and again until I could score 100%. This might not seem very useful, but the memorization helped me to understand the concepts.
 
 ### Use SuiteAnswers and Help
 
@@ -92,7 +92,7 @@ There can be a temptation in SuiteAnswers, to click link after link after link. 
 
 ### Flashcards
 
-There are some freely available flashcard sets on Quizlet.com that I found useful in studying for SuiteFoundation. Quizlet has mobile apps that allow you to study on the go, which I also took advantage of. I have some links in the Resources section of this post.
+There are some freely available flashcard sets on [Quizlet.com](https://quizlet.com) that I found useful in studying for SuiteFoundation. Quizlet has mobile apps that allow you to study on the go, which I also took advantage of. I have some links in the Resources section of this post.
 
 ### Move your exam date
 
@@ -100,7 +100,7 @@ When you are ready, change your exam date to something within 72 hours. I found 
 
 ### Believe in yourself!
 
-I spent the past 3 airplane rides back from SuiteWorld telling myself that I was going to take the SuiteFoundation exam. I was all pumped up from having attended SuiteWorld and felt ready to sit down, study and get certified. But when I got back to the daily business of taking care of business, I would find there was never enough time or feel I wasn’t ready. The truth is, I could have taken these exams a few years ago, but fear of failure held me back.
+I spent the past 3 airplane rides back from SuiteWorld telling myself that I was going to take the SuiteFoundation exam. I was all pumped up from having attended SuiteWorld and felt ready to sit down, study and get certified. But when I got back to the daily business of taking care of business, I would find there was never enough time or I would feel I wasn’t ready. The truth is, I could have taken these exams a few years ago, but fear of failure held me back.
 
 Failing these exams doesn’t mean anything other than you tried and you can try again with more perspective.
 
