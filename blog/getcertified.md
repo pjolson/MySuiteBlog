@@ -6,6 +6,7 @@ description:
 
 tags: ["Certification", "SuiteFoundation", "CertifiedAdmin", "Admin", "Study"]
 ---
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c463bbdc9830d001319aafe&product=inline-share-buttons' async='async'></script>
 
 # NetSuite Certified Admin / SuiteFoundation Study Guide
 
@@ -125,4 +126,3 @@ Please let me know what you think of this post and if you have any questions or 
 Read Next [The Anatomy of a Saved Search - part 1](https://mysuite.tech/blog/searchanatomy1.html)
 
 
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5c463bbdc9830d001319aafe&product=inline-share-buttons' async='async'></script>
