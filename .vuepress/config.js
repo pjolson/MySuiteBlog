@@ -9,9 +9,9 @@ module.exports = {
             { text: 'My Info', link: '/about/'}
         ],
         dest: 'vuepress',
-        sitemap: {
-          filename: 'sitemap.txt',
-          domain: 'http://mysuite.tech'
+            sitemap: {
+                filename: 'sitemap.txt',
+                domain: 'http://mysuite.tech'
         },
         base:'/base-doc/',
         sidebar: [
