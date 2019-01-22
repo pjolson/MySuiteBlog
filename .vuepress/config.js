@@ -8,11 +8,6 @@ module.exports = {
             { text: 'Tags', link: '/tags/'},
             { text: 'My Info', link: '/about/'}
         ],
-        dest: 'vuepress',
-            sitemap: {
-                filename: 'sitemap.txt',
-                domain: 'http://mysuite.tech'
-        },
         base:'/base-doc/',
         sidebar: [
             '/',
@@ -20,5 +15,10 @@ module.exports = {
             '/tags/',
             '/about/'
         ]
+    },
+    plugins: {
+        'sitemap': {
+            hostname: 'https://mysuite.tech'
+        },
     }
 }

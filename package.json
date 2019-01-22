@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/pjolson/MySuiteBlog#readme",
   "dependencies": {
-    "vuepress": "^0.14.8"
-}
+    "vuepress": "^0.14.8",
+    "vuepress-plugin-sitemap": "^2.1.1"
+  }
 }
