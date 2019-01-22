@@ -32,4 +32,5 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
  - [The Anatomy of a Saved Search - part 1](https://mysuite.tech/blog/searchanatomy1.html)
  - [Highlighting Saved Searches](https://mysuite.tech/blog/post2.html)
  
+ 
 <div class="sharethis-inline-share-buttons"></div>

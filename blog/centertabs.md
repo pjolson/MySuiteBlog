@@ -111,9 +111,10 @@ Please let me know what you think of this post and if you have any questions or 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 12/18/2018 
 
+<div class="sharethis-inline-share-buttons"></div>
+
 <TagList />
 
 Read Next - [Create a link to another record in a Saved Search](https://mysuite.tech/blog/searchlinks.html)
 
 
-<div class="sharethis-inline-share-buttons"></div>
