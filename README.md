@@ -33,4 +33,5 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
  - [Highlighting Saved Searches](https://mysuite.tech/blog/post2.html)
  
  
-<div class="sharethis-inline-share-buttons"></div>
+<div class="addthis_inline_share_toolbox"></div>
+            
