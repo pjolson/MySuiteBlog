@@ -24,7 +24,7 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
 
 ## Recent Posts
 
- - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/SuiteAnalyticsWorkbook.html)
+ - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
  - [SuiteFoundation / Certified Admin Study Guide](https://mysuite.tech/blog/getcertified.html)
  - [Display Default Shipping Address in a Custom Field](https://mysuite.tech/blog/displayshipping.html)
  - [The Anatomy of a Saved Search - part 2](https://mysuite.tech/blog/searchanatomy2.html)
