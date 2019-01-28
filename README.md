@@ -24,13 +24,14 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
 
 ## Recent Posts
 
+ - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/SuiteAnalyticsWorkbook.html)
  - [SuiteFoundation / Certified Admin Study Guide](https://mysuite.tech/blog/getcertified.html)
  - [Display Default Shipping Address in a Custom Field](https://mysuite.tech/blog/displayshipping.html)
  - [The Anatomy of a Saved Search - part 2](https://mysuite.tech/blog/searchanatomy2.html)
  - [Create a link to another record in a Saved Search](https://mysuite.tech/blog/searchlinks.html)
  - [Create a Custom Center Tab](https://mysuite.tech/blog/centertabs.html)
  - [The Anatomy of a Saved Search - part 1](https://mysuite.tech/blog/searchanatomy1.html)
- - [Highlighting Saved Searches](https://mysuite.tech/blog/post2.html)
+ 
  
  
 <div class="sharethis-inline-share-buttons"></div>
