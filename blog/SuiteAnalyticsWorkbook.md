@@ -4,7 +4,7 @@ date: 2019-01-28
 description:
     Have you ever wanted to be able to do more with your saved searches and reporting in NetSuite? Are you tired of edit/saving to test criteria or results changes? Have you ever withes you could create pivot tables in NetSuite?
 
-tags: ["SuiteAnalytics", "SavedSearch", "Reports", "Admin"]
+tags: ["Admin", "Reports", "SavedSearch", "SuiteAnalytics"]
 ---
 
 # SuiteAnalytics Workbook (Beta)
