@@ -24,6 +24,7 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
 
 ## Recent Posts
 
+ - [Match Strings in NetSuite fields](https://mysuite.tech/blog/stringmatch.html)
  - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
  - [SuiteFoundation / Certified Admin Study Guide](https://mysuite.tech/blog/getcertified.html)
  - [Display Default Shipping Address in a Custom Field](https://mysuite.tech/blog/displayshipping.html)
