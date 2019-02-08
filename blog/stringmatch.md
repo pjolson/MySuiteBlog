@@ -1,6 +1,6 @@
 ---
 title: Matching Field Strings using CASE Formula
-date: 2019-02-2019
+date: 2019-02-08
 description:
     Have you ever had to compare string data from 2 different fields or across joined records? It is very easy to match the string of two free form text fields using a CASE WHEN formula
 
