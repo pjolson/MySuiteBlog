@@ -113,4 +113,4 @@ If you would like to learn more about CASE WHEN, SuiteAnalytics or NetSuite in g
 
 <TagList />
 
-Read Next - [Create a Custom Center Tab](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
+Read Next - [Suite Analytics Workbook](https://mysuite.tech/blog/suiteanalyticsworkbook.html)

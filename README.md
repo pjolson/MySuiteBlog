@@ -24,6 +24,7 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
 
 ## Recent Posts
 
+ - [Keyboard Shortcuts](https://mysuite.tech/blog/keyboardshortcuts.html)
  - [Match Strings in NetSuite fields](https://mysuite.tech/blog/stringmatch.html)
  - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
  - [SuiteFoundation / Certified Admin Study Guide](https://mysuite.tech/blog/getcertified.html)
@@ -31,7 +32,7 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
  - [The Anatomy of a Saved Search - part 2](https://mysuite.tech/blog/searchanatomy2.html)
  - [Create a link to another record in a Saved Search](https://mysuite.tech/blog/searchlinks.html)
  - [Create a Custom Center Tab](https://mysuite.tech/blog/centertabs.html)
- - [The Anatomy of a Saved Search - part 1](https://mysuite.tech/blog/searchanatomy1.html)
+ 
  
  
  
