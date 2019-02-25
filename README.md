@@ -24,6 +24,7 @@ I love to learn and am constantly trying to expand my skill set. I am currently 
 
 ## Recent Posts
 
+ - [Dynamic Saved Search Links](https://mysuite.tech/blog/dynamiclinks_suiteanalytics.html)
  - [Keyboard Shortcuts](https://mysuite.tech/blog/keyboardshortcuts.html)
  - [Match Strings in NetSuite fields](https://mysuite.tech/blog/stringmatch.html)
  - [SuiteAnalytics Workbook (Beta)](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
