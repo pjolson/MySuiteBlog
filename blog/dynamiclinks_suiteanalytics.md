@@ -173,7 +173,7 @@ In my next post, I will outline a couple of ways to improve the link created in 
 
 <TagList />
 
-Read Next - [Keyboard Shortcuts](https://mysuite.tech/blog/keyboardshortcuts.html)
+Read Next - [Part 2 - Link Behavior](https://mysuite.tech/blog/popuplink_suiteanalytics.html)
 
 
 
