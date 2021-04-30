@@ -50,7 +50,7 @@ In addition to this practical experience, I hold the following certifications:
 ---
 
 ## Contact Information
-I am looking forward to posting tips & tricks I have learned over the years and hope to hear from you with your feedback and suggestions. Please email [*info@mysuite.tech*](mailto:info@mysuite.tech) if you would like to reach me.
+I am looking forward to posting tips & tricks I have learned over the years and hope to hear from you with your feedback and suggestions. Please email [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech) if you would like to reach me.
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
