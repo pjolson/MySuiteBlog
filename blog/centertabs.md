@@ -9,7 +9,7 @@ description:
 tags: ["Centers", "Navigation", "SuiteBuilder"]
 ---
 
-# Create a Custom Center Tab
+# Create a Custom Center Tab!
 
 
 [[toc]]
