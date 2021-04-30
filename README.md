@@ -2,7 +2,7 @@
 title: MySuite
 ---
 
-# MySuite
+# MySuite Consulting
 
 A minimalist blog to share  functional tips and tricks about NetSuite that I have learned along the way. 
 
