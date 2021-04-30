@@ -18,7 +18,7 @@ tags: ["Centers", "Navigation", "SuiteBuilder"]
 
 ## Center Tabs
 
-Centers tabs can be created to add a permanent navigation bar tab to the NetSuite interface. These tabs can be added to Centers and limited by Audience (roles, people, departments, groups, customers, vendors, partners).
+Center tabs can be created to add a permanent navigation bar tab to the NetSuite interface. These tabs can be added to Centers and limited by Audience (roles, people, departments, groups, customers, vendors, partners).
 Center Tabs can include Center Categories that will appear as drop-down navigation options and can contain links to pages within NetSuite or externally. The tab link will also allow the user to have a custom tab page with dashboards, links and portlets.
 
 ![CenterTab](https://i.imgur.com/4WMmLP1.png "Working Center Tab")
