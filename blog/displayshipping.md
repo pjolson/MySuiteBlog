@@ -14,7 +14,7 @@ tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
 ---
 
 ## Problem
-
+test
 Recently, a user asked me if they could view the Default Shipping Address for a Customer Record as a field on the Main subtab. The issue they were reporting was the ADDRESS field on the Customer Record always shows the Default Billing Address.
 
 The issue is illustrated in this screenshot of a Customer Record for “Frank’s Custom Stuff.” In this record There are different Default Billing and Default Shipping Addresses listed in the Address subtab. The Default Billing address is the one that is pulled into the ADDRESS field on the Main Subtab.
