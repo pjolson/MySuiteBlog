@@ -8,7 +8,7 @@ My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Admin
 
 I began my NetSuite career with an organization that worked in the healthcare IT space. With this organization, I was introduced to NetSuite and began my mostly self-taught journey of learning NetSuite. This company experienced rapid growth and my team had the opportunity to implement some very interesting business solutions in NetSuite ranging from onboarding/offboarding employees to sales automation and contract management.
 
-Over the next 5 years I was able to work often with:
+I work with :
 
 - SuiteAnalytics
 - SuiteBuilder
@@ -18,8 +18,12 @@ Over the next 5 years I was able to work often with:
 - Enterprise Resource Planning 
 - Customer Relationship Management
 - Professional Services Automation
+- Warehouse Management
+- Advanced Inventory Management
+- Advanced Shipping
+- Advanced Receiving
 
-I also helped to integrate and implement the following systems with NetSuite:
+I have also helped to integrate and implement the following systems with NetSuite:
 
 - Box
 - Nexonia (Time & Expense)
@@ -28,19 +32,14 @@ I also helped to integrate and implement the following systems with NetSuite:
 - Microsoft Azure
 - Microsoft Office 365
 - Qualtrics (Employee and Customer Surveys)
-
----
-My current employer is in the manufacturing and distribution space. With this new company I have the opportunity to help mold NetSuite to the needs of a new NetSuite customer. I am learning the business processes behind this type of organization and implementing the following systems & modules:
-
-- Advanced Inventory Management
-- Advanced Shipping
-- Advanced Receiving
+- Salesforce
 - RF-Smart for inventory
 - PaceJet for Shipping
 
+
 ## Certifications
 
-In addition to this practical experience, I hold the following certifications:
+I hold the following certifications:
 
 - NetSuite SuiteFoundation
 - NetSuite Certified Administrator
@@ -50,7 +49,7 @@ In addition to this practical experience, I hold the following certifications:
 ---
 
 ## Contact Information
-I am looking forward to posting tips & tricks I have learned over the years and hope to hear from you with your feedback and suggestions. Please email [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech) if you would like to reach me.
+I am looking forward to working with you and your team. Please feel free to review my blog for tips & tricks I have learned over the years. I hope to hear from you with your feedback and suggestions. Please email [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech) if you would like to reach me.
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
