@@ -4,11 +4,8 @@ title: MySuite
 
 # MySuite Consulting
 
-A minimalist blog to share  functional tips and tricks about NetSuite that I have learned along the way. 
-
-## How can you contribute?
-
-If you have questions, topic ideas, or would like to post as a guest send an email to [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech) and I will get back to you as soon as possible.
+MySuite Consulting offers NetSuite Optimization, Customization, and Support Services. We have contract Admin and Developer service packages available.
+If your company is currently considering NetSuite, or already live on NetSuite, but you do not have an expert resource on staff, please consider hiring MySuite as your trusted NetSuite Advisor.
 
 ## About Me
 
@@ -20,6 +17,9 @@ I am currently available for contract work. Please email [*patrick@mysuite.tech*
 
 <img src="./img/certfound.png" width=48%>
 <img src="./img/certadmin.png" width=48%>
+<img src="./img/finuser.jfif" width=48%>
+<img src="./img/reportinguser.jfif" width=48%>
+<img src="./img/pmp.jfif" width=48%>
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
