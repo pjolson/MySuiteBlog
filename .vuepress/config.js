@@ -15,7 +15,7 @@ module.exports = {
             '/blog/',
             '/tags/',
             '/about/',
-            '/contact/'
+            '/contact'
         ]
     },
     plugins: {
