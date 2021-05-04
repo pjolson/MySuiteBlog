@@ -4,9 +4,12 @@
 
 ---
 Patrick Olson
+
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
+
 Phone: 608-609-6953
-[Email: ](mailto:patrick@mysuite.tech)
+
+Email: [patrick@mysuite.tech ](mailto:patrick@mysuite.tech)
 
 <img src="../img/certfound.png" width=48%>
 <img src="../img/certadmin.png" width=48%>
