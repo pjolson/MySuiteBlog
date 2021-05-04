@@ -48,8 +48,9 @@ I hold the following certifications:
 - ITL v3 Foundation
 ---
 
-## Contact Information
-I am looking forward to working with you and your team. Please feel free to review my blog for tips & tricks I have learned over the years. I hope to hear from you with your feedback and suggestions. Please email [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech) if you would like to reach me.
+## Contact Form
+
+<iframe class="clickup-embed clickup-dynamic-height" src="https://forms.clickup.com/f/a1ztg-455/O8D3D8B57R12SUCFK9" onwheel="" width="100%" height="100%" style="background: transparent; border: 0px solid #ccc;"></iframe><script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
