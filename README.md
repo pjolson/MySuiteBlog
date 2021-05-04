@@ -11,17 +11,12 @@ If your company is currently considering NetSuite, or already live on NetSuite, 
 
 My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administrator, Business Analyst, Project Manager, and Consultant for over 8 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations. I have worked as an implementation consultant for 2 years and worked with dozens of clients to ensure successful implementation, optimization, and utilization of the NetSuite platform.
 
-I am currently available for contract work. Please email fill out our [Contact Form](https://mysuite.tech/about/#contact-form) with any contract inquiries or blog post requests.
+I am currently available for contract work. Please email fill out our [Contact Form](https://mysuite.tech/contact/) with any contract inquiries or blog post requests.
 
 
 
 <img src="./img/certfound.png" width=48%>
 <img src="./img/certadmin.png" width=48%>
-
-<img src="./img/finuser.png" width=48%>
-<img src="./img/reportinguser.png" width=48%>
-
-<img src="./img/pmp.png" width=48%>
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
