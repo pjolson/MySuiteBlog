@@ -6,7 +6,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Blog', link: '/blog/' },
             { text: 'Tags', link: '/tags/'},
-            { text: 'My Info', link: '/about/'}
+            { text: 'My Info', link: '/about/'},
             { text: 'Contact', link: '/contact/'}
         ],
         base:'/base-doc/',
