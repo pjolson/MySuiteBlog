@@ -18,6 +18,11 @@ I am currently available for contract work. Please email [*patrick@mysuite.tech*
 <img src="./img/certfound.png" width=48%>
 <img src="./img/certadmin.png" width=48%>
 
+<img src="./img/finuser.png" width=48%>
+<img src="./img/reportinguser.png" width=48%>
+
+<img src="./img/pmp.png" width=48%>
+
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
 ## Recent Posts
