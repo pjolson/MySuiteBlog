@@ -31,9 +31,9 @@
 
 ## Pricing
 
-<img src="../img/admin-lite.png" width=30%>
-<img src="../img/admin.png" width=30%>
-<img src="../img/admin-pro.png" width=30%>
+<img src="../img/admin-lite.png" width=32%>
+<img src="../img/admin.png" width=32%>
+<img src="../img/admin-pro.png" width=32%>
 
 ## Book Time
 
