@@ -10,6 +10,7 @@ My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Admin
 - SuiteBuilder
 - SuiteBundler
 - SuiteFlow
+- SuiteScript 2.0
 - OneWorld
 - Enterprise Resource Planning 
 - Customer Relationship Management
