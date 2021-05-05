@@ -48,8 +48,10 @@ Studying for these exams will probably expose you to areas of NetSuite you may n
 
 I didn’t think this would feel as good as it does, but I am pretty proud of this:
 
-<img src="../img/certfound.png" width=48%>
-<img src="../img/certadmin.png" width=48%>
+<img src="./img/foundnew.jpg" width=48%>
+<img src="./img/adminnew.jpg" width=48%>
+<img src="./img/analyticsnew.jpg" width=48%>
+<img src="./img/finusernew.jpg" width=48%>
 
  
 ### Resume material
