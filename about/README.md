@@ -2,13 +2,9 @@
 
 ## Me
 
-My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administrator, BA, and Project Manager for over 5 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations.
+My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administrator, BA, and Project Manager for over 8 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations.
 
-## NetSuite
-
-I began my NetSuite career with an organization that worked in the healthcare IT space. With this organization, I was introduced to NetSuite and began my mostly self-taught journey of learning NetSuite. This company experienced rapid growth and my team had the opportunity to implement some very interesting business solutions in NetSuite ranging from onboarding/offboarding employees to sales automation and contract management.
-
-I work with :
+## NetSuite Experience
 
 - SuiteAnalytics
 - SuiteBuilder
@@ -23,7 +19,7 @@ I work with :
 - Advanced Shipping
 - Advanced Receiving
 
-I have also helped to integrate and implement the following systems with NetSuite:
+## Integrations
 
 - Box
 - Nexonia (Time & Expense)
@@ -35,6 +31,9 @@ I have also helped to integrate and implement the following systems with NetSuit
 - Salesforce
 - RF-Smart for inventory
 - PaceJet for Shipping
+- Celigo SmartConnectors
+- Farapp
+- Celigo CloudExtend
 
 
 ## Certifications
@@ -43,6 +42,8 @@ I hold the following certifications:
 
 - NetSuite SuiteFoundation
 - NetSuite Certified Administrator
+- NetSuite Financial User
+- NetSuite SuiteAnalytics User
 - PMI - Project Management Professional
 - Scrum Alliance - Certified Scrum Master
 - ITL v3 Foundation
