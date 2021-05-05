@@ -1,21 +1,20 @@
 # Services
 
-## Me
 
-My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administrator, BA, and Project Manager for over 8 years. My primary experience is in developing business solutions in NetSuite for professional services and manufacturing organizations.
+## NetSuite Services
 
-## NetSuite Experience
-
-- SuiteAnalytics
-- SuiteBuilder
-- SuiteBundler
-- SuiteFlow
+- Configuration
+- Training
+- Support
+- SuiteAnalytics | Reporting | Searches
+- Workflows
 - SuiteScript 2.0
-- OneWorld
 - Enterprise Resource Planning 
 - Customer Relationship Management
 - Professional Services Automation
 - Warehouse Management
+- Pick/Pack/Ship
+- Advanced Manufacturing
 - Advanced Inventory Management
 - Advanced Shipping
 - Advanced Receiving
@@ -25,17 +24,17 @@ My name is Patrick Olson and I am a NetSuite SuiteFoundation and Certified Admin
 - Box
 - Nexonia (Time & Expense)
 - Concur (Travel & Expense)
-- HubSpot (Marketing)
-- Microsoft Azure
-- Microsoft Office 365
-- Qualtrics (Employee and Customer Surveys)
-- Salesforce
 - RF-Smart for inventory
 - PaceJet for Shipping
 - Celigo SmartConnectors
 - Farapp
 - Celigo CloudExtend
 
+## Pricing
+
+<img src="../img/admin-lite.png" width=30%>
+<img src="../img/admin.png" width=30%>
+<img src="../img/admin-pro.png" width=30%>
 
 ## Certifications
 
