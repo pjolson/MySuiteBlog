@@ -1,6 +1,5 @@
 # Services
 
-
 ## NetSuite Services
 
 - Configuration
@@ -35,6 +34,10 @@
 <img src="../img/admin-lite.png" width=30%>
 <img src="../img/admin.png" width=30%>
 <img src="../img/admin-pro.png" width=30%>
+
+## Book Time
+
+[Click here to schedule a meeting with me](/bookings/)
 
 ## Certifications
 
