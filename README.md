@@ -2,8 +2,7 @@
 title: MySuite
 ---
 
-# MySuite Consulting
-
+# <img src="./img/logo.png" width=48%>
 MySuite Consulting offers NetSuite Optimization, Customization, and Support Services. We have contract Admin and Developer service packages available.
 If your company is currently considering NetSuite, or already live on NetSuite, but you do not have an expert resource on staff, please consider hiring MySuite as your trusted NetSuite Advisor.
 
@@ -15,8 +14,11 @@ I am currently available for contract work. Please email fill out our [Contact F
 
 
 
-<img src="./img/certfound.png" width=48%>
-<img src="./img/certadmin.png" width=48%>
+<img src="./img/foundnew.jpg" width=48%>
+<img src="./img/adminnew.jpg" width=48%>
+<img src="./img/analyticsnew.jpg" width=48%>
+<img src="./img/finusernew.jpg" width=48%>
+
 
 [LinkedIn Profile](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
 
