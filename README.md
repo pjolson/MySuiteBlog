@@ -10,7 +10,7 @@ If your company is currently considering NetSuite, or already live on NetSuite, 
 
 My name is [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/) and I am a NetSuite SuiteFoundation and Certified Administrator. I have been working in NetSuite as an Administrator, Business Analyst, Project Manager, and Consultant for over 8 years. 
 
-I am currently available for contract work. Please email fill out our [Contact Form](/contact/) with any contract inquiries or blog post requests.
+I am currently available for contract work. Please email fill out my [Contact Form](/contact/) with any contract inquiries or blog post requests.
 
 <img src="./img/foundnew.jpg" width=48%>
 <img src="./img/adminnew.jpg" width=48%>
