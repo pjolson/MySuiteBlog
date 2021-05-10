@@ -18,9 +18,22 @@ module.exports = {
             '/contact/'
         ]
     },
-    plugins: {
+/*     plugins: {
         'sitemap': {
             hostname: 'https://mysuite.tech'
         },
-    }
+        '@vuepress/google-analytics',
+        {
+          'ga': 'UA-130998564-1' // UA-00000000-0
+        }
+    } */
+
+    plugins: [
+        [
+          '@vuepress/google-analytics',
+          {
+            'ga': '' // UA-00000000-0
+          },
+        ]
+      ]
 }
