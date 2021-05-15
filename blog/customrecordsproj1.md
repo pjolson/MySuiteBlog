@@ -1,6 +1,6 @@
 ---
 title: Working with Custom Records - Part 1
-date: 2018-12-18
+date: 2021-05-14
 description:
     Custom records in NetSuite allow for the tracking of unique information that is outside of the scope of native Entity, Transaction, CRM, and Other record types.
 
