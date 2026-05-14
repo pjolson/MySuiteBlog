@@ -25,6 +25,18 @@ export default defineConfig({
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-R3FVBP7K9S');"],
   ],
 
+  transformPageData(pageData) {
+    const canonicalUrl = `https://mysuite.tech/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
+  },
+
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: false,
