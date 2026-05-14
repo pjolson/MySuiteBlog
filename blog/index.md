@@ -13,6 +13,7 @@ Covering NetSuite Administration, Development and anything I find interesting or
 
 ## All Posts
 
+- [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource)
 - [Saved Search Link Behavior](/blog/popuplink_suiteanalytics)
 - [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics)
 - [Keyboard Shortcuts](/blog/keyboardshortcuts)
