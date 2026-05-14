@@ -3,6 +3,7 @@ title: Welcome
 date: 2018-12-12
 description:
     Recently, I found myself looking for a good place to document some of the things I have learned over the years as a NetSuite Functional Administrator, Business Analyst, Project Manager & amateur coding enthusiast. I started recording some notes in OneNote and then Workflowy, but I thought I should be more public about it so I've decided to periodically post this kind of information to this blog.
+tags: ["General"]
 ---
 
 # Welcome!
@@ -20,9 +21,9 @@ I hope share:
 
 I'm not setting any goals for posting. I'm just going to update this from time to time for my own personal benefit and hopefully something I write can be of use to others as well.
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/12/2018
 
-<div class="sharethis-inline-share-buttons"></div>
+<TagLinks />
 
 Read Next -  [Highlighting Saved Searches](https://mysuite.tech/blog/post2.html)

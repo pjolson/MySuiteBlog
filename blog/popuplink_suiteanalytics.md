@@ -82,7 +82,7 @@ And behave link this (example using the same search as a custom search portlet)
 
 ## Conclusion
 
-I hope you enjoyed this 2 part post on dynamic links and link behavior. If you have any questions, plese feel free to [*email me*](mailto:info@mysuite.tech) or reach out through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/).
+I hope you enjoyed this 2 part post on dynamic links and link behavior. If you have any questions, plese feel free to [*email me*](mailto:info@mysuite.tech) or reach out through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).
 
 ## Resources
 
@@ -90,11 +90,10 @@ I hope you enjoyed this 2 part post on dynamic links and link behavior. If you h
 
 ---
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp-csm-137a9435/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/26/2018 
 
-<div class="sharethis-inline-share-buttons"></div>
 
-<TagList />
+<TagLinks />
 
 Read Next - [Keyboard Shortcuts](https://mysuite.tech/blog/keyboardshortcuts.html)

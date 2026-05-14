@@ -1,9 +1,7 @@
 ---
-
 title: Tags
-
 ---
-# Tags 
 
+# Tags
 
-<TagLinks />
+<TagList />
