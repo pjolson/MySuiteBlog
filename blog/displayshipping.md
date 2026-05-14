@@ -94,7 +94,7 @@ The second field we created did contain a formula and should be marked as FORMUL
 This solution is a simple way to source in another default address into a custom field. It is also a good introduction to Inline HTML fields and power of styling individual custom fields. Inline HTML fields are a simple solution for adding styled text effects to custom forms to help call out data for users and increase form readability.
 
 
-<ConsultingCTA />
+<ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. I help companies get their NetSuite set up right." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 01/15/2019 

@@ -58,24 +58,28 @@ description: "NetSuite consulting services including administration, SuiteScript
 <div class="pricing-grid">
   <div class="pricing-card">
     <h3>Admin-Lite</h3>
+    <div class="pricing-desc">For stable environments that need a go-to person for questions, small changes, and ongoing support.</div>
     <div class="pricing-hours">5 hrs / wk (20 / mo)</div>
     <div class="pricing-amount">$3,000</div>
     <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Get Started</a>
   </div>
   <div class="pricing-card featured">
     <h3>Admin</h3>
+    <div class="pricing-desc">Hands-on administration — saved searches, workflows, user support, and configuration changes on a regular cadence.</div>
     <div class="pricing-hours">10 hrs / wk (40 / mo)</div>
     <div class="pricing-amount">$5,800</div>
     <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Get Started</a>
   </div>
   <div class="pricing-card">
     <h3>Admin-Pro</h3>
+    <div class="pricing-desc">Dedicated support for complex environments — development, integrations, reporting, and process optimization.</div>
     <div class="pricing-hours">20 hrs / wk (80 / mo)</div>
     <div class="pricing-amount">$11,200</div>
     <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Get Started</a>
   </div>
   <div class="pricing-card retainer">
     <h3>Retainer</h3>
+    <div class="pricing-desc">Scoped projects or flexible hours — migrations, implementations, custom development, and more.</div>
     <div class="pricing-hours">Custom hours &amp; scope</div>
     <div class="pricing-amount">Custom</div>
     <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Contact for Rates</a>

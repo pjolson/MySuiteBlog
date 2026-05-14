@@ -58,7 +58,7 @@ In Amount fields, enter numbers to calculate by addition or subtraction
 ## Conclusion
 
 
-<ConsultingCTA />
+<ConsultingCTA message="Small efficiencies like keyboard shortcuts add up. I help teams streamline their NetSuite workflows from top to bottom." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/20/2018 

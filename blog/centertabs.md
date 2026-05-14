@@ -103,7 +103,7 @@ Adding Portlets to a Custom Center Tab will allow the user to customize the Cust
 
 
 
-<ConsultingCTA />
+<ConsultingCTA message="Custom center tabs, roles, and navigation are just the start. I help teams configure NetSuite to match how they actually work." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/18/2018 

@@ -264,6 +264,14 @@
   color: var(--vp-c-brand-1);
 }
 
+.pricing-desc {
+  font-size: 0.85rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  min-height: 3.8em;
+}
+
 .pricing-hours {
   font-size: 0.9rem;
   color: var(--vp-c-text-2);

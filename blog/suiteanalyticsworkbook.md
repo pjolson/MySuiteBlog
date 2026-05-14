@@ -110,7 +110,7 @@ They have also published this short, but effective video to YouTube on SuiteAnal
 ---
 
 
-<ConsultingCTA />
+<ConsultingCTA message="I help teams get more out of SuiteAnalytics — from workbooks and saved searches to full reporting strategies. Let's talk about your reporting needs." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 01/28/2019 

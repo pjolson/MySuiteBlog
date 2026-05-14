@@ -118,7 +118,7 @@ Believe in yourself and register for SuiteFoundation today.
 - [Foundation Sample Test – Flashcards](https://quizlet.com/215608715/netsuite-certification-suitefoundation-flash-cards/)
 
 
-<ConsultingCTA />
+<ConsultingCTA message="Looking for a certified NetSuite admin for your team? I offer contract administration and development support at a fraction of a full-time hire." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 01/21/2019 
