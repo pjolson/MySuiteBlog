@@ -33,3 +33,12 @@ features:
     link: https://greenlightapprovals.io
     linkText: Learn more
 ---
+
+## Popular Posts
+
+- [Saved Search Link Behavior](/blog/popuplink_suiteanalytics.html) — Control how saved search links open in NetSuite
+- [Highlighting Saved Searches](/blog/post2.html) — Add conditional formatting to search results
+- [Anatomy of a Saved Search - Definitions](/blog/searchanatomy1.html) — Understand saved search building blocks
+- [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics.html) — Build clickable links in search results
+- [NetSuite Certification Study Guide](/blog/getcertified.html) — Study tips for SuiteFoundation and Admin exams
+- [Matching Field Strings using CASE Formula](/blog/stringmatch.html) — Use CASE formulas to match text in searches
