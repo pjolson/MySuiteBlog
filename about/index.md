@@ -82,7 +82,7 @@ description: "NetSuite consulting services including administration, SuiteScript
     <div class="pricing-desc">Scoped projects, fractional project management, implementations, migrations, and custom development.</div>
     <div class="pricing-hours">Custom hours &amp; scope</div>
     <div class="pricing-amount">Custom</div>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Contact for Rates</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="pricing-cta">Let's Talk</a>
   </div>
 </div>
 
