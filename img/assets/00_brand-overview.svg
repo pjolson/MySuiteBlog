@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 1600" width="1280" height="1600"
+     font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">
+  <rect width="1280" height="1600" fill="#FAFAF7"/>
+
+  <!-- Header -->
+  <text x="64" y="80" font-size="14" font-weight="600" letter-spacing="2" fill="#6B7280">MYSUITE CONSULTING</text>
+  <text x="64" y="120" font-size="40" font-weight="600" letter-spacing="-1" fill="#111827">Brand asset pack</text>
+  <text x="64" y="148" font-size="16" fill="#6B7280">A single source of truth for the [my]suite identity</text>
+  <line x1="64" y1="180" x2="1216" y2="180" stroke="#E5E7EB"/>
+
+  <!-- LOGO SECTION -->
+  <text x="64" y="220" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">PRIMARY LOGO</text>
+  <rect x="64" y="240" width="560" height="200" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <g transform="translate(141.27999999999997, 298.2)">
+      <path d="M 19.84 4.0 L 4.0 4.0 L 4.0 79.60000000000001 L 19.84 79.60000000000001"
+            stroke="#0E6B47" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="32.8" y="68.8" font-size="72" font-weight="700" fill="#111827"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+      <path d="M 167.76000000000002 4.0 L 183.60000000000002 4.0 L 183.60000000000002 79.60000000000001 L 167.76000000000002 79.60000000000001"
+            stroke="#0E6B47" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="199.44000000000003" y="68.8" font-size="72" font-weight="600" fill="#111827"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">suite</text></g>
+
+  <text x="660" y="220" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">MARK</text>
+  <rect x="660" y="240" width="200" height="200" fill="#FFFFFF" stroke="#E5E7EB" rx="6"/>
+  <g transform="translate(692.2, 309.7)">
+      <path d="M 14.44 3.0 L 3.0 3.0 L 3.0 57.6 L 14.44 57.6"
+            stroke="#0E6B47" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="23.799999999999997" y="49.800000000000004" font-size="52" font-weight="700" fill="#111827"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+      <path d="M 121.16 3.0 L 132.6 3.0 L 132.6 57.6 L 121.16 57.6"
+            stroke="#0E6B47" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+
+  <text x="896" y="220" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">DARK MODE</text>
+  <rect x="896" y="240" width="320" height="200" fill="#111827" rx="6"/>
+  <g transform="translate(940, 320)">
+      <path d="M 11.3 2.5 L 2.5 2.5 L 2.5 44.5 L 11.3 44.5"
+            stroke="#2DD4A4" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="18.5" y="38.5" font-size="40" font-weight="700" fill="#FFFFFF"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+      <path d="M 93.7 2.5 L 102.5 2.5 L 102.5 44.5 L 93.7 44.5"
+            stroke="#2DD4A4" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="111.3" y="38.5" font-size="40" font-weight="600" fill="#FFFFFF"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">suite</text></g>
+
+  <!-- PALETTE -->
+  <text x="64" y="500" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">COLOR PALETTE</text>
+  <g transform="translate(64, 520)">
+    <rect x="0" y="0" width="180" height="180" fill="#0E6B47" rx="6"/>
+    <text x="0" y="210" font-size="13" font-weight="600" fill="#111827">Emerald</text>
+    <text x="0" y="228" font-size="12" fill="#6B7280">#0E6B47</text>
+    <text x="0" y="244" font-size="12" fill="#6B7280">Primary brand</text>
+
+    <rect x="200" y="0" width="180" height="180" fill="#111827" rx="6"/>
+    <text x="200" y="210" font-size="13" font-weight="600" fill="#111827">Ink</text>
+    <text x="200" y="228" font-size="12" fill="#6B7280">#111827</text>
+    <text x="200" y="244" font-size="12" fill="#6B7280">Text, mono mark</text>
+
+    <rect x="400" y="0" width="180" height="180" fill="#2DD4A4" rx="6"/>
+    <text x="400" y="210" font-size="13" font-weight="600" fill="#111827">Accent</text>
+    <text x="400" y="228" font-size="12" fill="#6B7280">#2DD4A4</text>
+    <text x="400" y="244" font-size="12" fill="#6B7280">Dark-mode mark</text>
+
+    <rect x="600" y="0" width="180" height="180" fill="#FAFAF7" stroke="#E5E7EB" rx="6"/>
+    <text x="600" y="210" font-size="13" font-weight="600" fill="#111827">Warm White</text>
+    <text x="600" y="228" font-size="12" fill="#6B7280">#FAFAF7</text>
+    <text x="600" y="244" font-size="12" fill="#6B7280">Backgrounds</text>
+
+    <rect x="800" y="0" width="180" height="180" fill="#6B7280" rx="6"/>
+    <text x="800" y="210" font-size="13" font-weight="600" fill="#111827">Muted</text>
+    <text x="800" y="228" font-size="12" fill="#6B7280">#6B7280</text>
+    <text x="800" y="244" font-size="12" fill="#6B7280">Secondary text</text>
+
+    <rect x="1000" y="0" width="152" height="180" fill="#E5E7EB" rx="6"/>
+    <text x="1000" y="210" font-size="13" font-weight="600" fill="#111827">Light</text>
+    <text x="1000" y="228" font-size="12" fill="#6B7280">#E5E7EB</text>
+    <text x="1000" y="244" font-size="12" fill="#6B7280">Borders, dividers</text>
+  </g>
+
+  <!-- TYPE -->
+  <text x="64" y="880" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">TYPOGRAPHY</text>
+  <g transform="translate(64, 900)">
+    <text x="0" y="0" font-size="11" font-weight="600" letter-spacing="1" fill="#6B7280">PRIMARY · INTER (or system stack fallback)</text>
+    <text x="0" y="50" font-size="60" font-weight="700" letter-spacing="-2" fill="#111827">Trusted NetSuite expertise.</text>
+    <text x="0" y="100" font-size="20" font-weight="500" fill="#6B7280">Inter 700 for headlines, 600 for body, 500 for UI labels.</text>
+    <text x="0" y="130" font-size="14" fill="#6B7280">Letter-spacing: -2px for large display, -1px for headlines, 0 for body, +2 to +3 for ALL-CAPS labels.</text>
+  </g>
+
+  <!-- USAGE -->
+  <text x="64" y="1100" font-size="12" font-weight="700" letter-spacing="1.5" fill="#0E6B47">USAGE GUIDELINES</text>
+  <g transform="translate(64, 1130)" font-size="14" fill="#111827">
+    <text x="0" y="0" font-weight="600">Clear space</text>
+    <text x="0" y="22" fill="#6B7280">Maintain a minimum clear space equal to the bracket height around the mark.</text>
+
+    <text x="0" y="60" font-weight="600">Minimum size</text>
+    <text x="0" y="82" fill="#6B7280">Mark: 16px. Wordmark: 80px wide. Below this, use the mark only.</text>
+
+    <text x="0" y="120" font-weight="600">Color usage</text>
+    <text x="0" y="142" fill="#6B7280">Emerald brackets on light backgrounds. Accent (#2DD4A4) brackets on dark. Avoid placing emerald on saturated reds or warm yellows.</text>
+
+    <text x="0" y="180" font-weight="600">Bracket integrity</text>
+    <text x="0" y="202" fill="#6B7280">The brackets and "my" travel together as the mark. "suite" can be detached for compact lockups but never the brackets.</text>
+
+    <text x="0" y="240" font-weight="600">Don't</text>
+    <text x="0" y="262" fill="#6B7280">Stretch, rotate, recolor outside the palette, add shadows or gradients, or set the wordmark in a different typeface.</text>
+  </g>
+
+  <line x1="64" y1="1500" x2="1216" y2="1500" stroke="#E5E7EB"/>
+  <text x="64" y="1540" font-size="13" fill="#6B7280">mysuite consulting · barcelona, spain · mysuite.tech</text>
+  <text x="1216" y="1540" text-anchor="end" font-size="13" fill="#6B7280">Asset pack v1 · May 2026</text>
+</svg>

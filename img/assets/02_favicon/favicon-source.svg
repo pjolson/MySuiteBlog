@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+<rect width="512" height="512" fill="#FFFFFF" rx="0"/>
+<g transform="translate(51.58022813688213, 164.1125475285171)">
+      <path d="M 44.38631178707225 10.123193916349813 L 10.123193916349813 10.123193916349813 L 10.123193916349813 173.651711026616 L 44.38631178707225 173.651711026616"
+            stroke="#0E6B47" stroke-width="20.246387832699625" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="72.41977186311789" y="150.29049429657798" font-size="155.74144486692018" font-weight="700" fill="#111827"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+      <path d="M 364.4532319391635 10.123193916349813 L 398.71634980988597 10.123193916349813 L 398.71634980988597 173.651711026616 L 364.4532319391635 173.651711026616"
+            stroke="#0E6B47" stroke-width="20.246387832699625" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
