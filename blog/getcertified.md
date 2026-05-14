@@ -1,5 +1,5 @@
 ---
-title: NetSuite Certified Admin / SuiteFoundation Study Guide
+title: NetSuite Certification Study Guide
 date: 2019-01-21
 description: "Study strategies and resources for passing the NetSuite SuiteFoundation and Certified Administrator exams."
 

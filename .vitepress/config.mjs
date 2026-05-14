@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'MySuite - NetSuite Consulting',
+  title: 'MySuite',
   description: 'MySuite Consulting offers NetSuite optimization, customization, and support services. Contract admin and developer packages available.',
 
   srcExclude: ['img/**/*.md'],
