@@ -1,5 +1,7 @@
 ---
 blog_index: true
+title: Blog
+description: "NetSuite tips, tutorials, and guides covering saved searches, formulas, administration, SuiteScript, and more."
 date: 2018-12-11
 ---
 
@@ -15,7 +17,7 @@ Covering NetSuite Administration, Development and anything I find interesting or
 - [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics.html)
 - [Keyboard Shortcuts](/blog/keyboardshortcuts.html)
 - [Matching Field Strings using CASE Formula](/blog/stringmatch.html)
-- [SuiteAnalytics Workbook (Beta)](/blog/SuiteAnalyticsWorkbook.html)
+- [SuiteAnalytics Workbook (Beta)](/blog/suiteanalyticsworkbook.html)
 - [NetSuite Certified Admin / SuiteFoundation Study Guide](/blog/getcertified.html)
 - [Default Shipping Address in a Custom Field](/blog/displayshipping.html)
 - [Anatomy of a Saved Search - Criteria](/blog/searchanatomy2.html)

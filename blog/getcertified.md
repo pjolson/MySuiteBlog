@@ -1,8 +1,7 @@
 ---
 title: NetSuite Certified Admin / SuiteFoundation Study Guide
 date: 2019-01-21
-description:
-    Are you a user or consultant with some level of administrator privilege over a NetSuite account? Do you know your stuff and want to be able to test your knowledge? NetSuite certification might be right for you.
+description: "Study strategies and resources for passing the NetSuite SuiteFoundation and Certified Administrator exams."
 
 tags: ["Certification", "SuiteFoundation", "CertifiedAdmin", "Admin", "Study"]
 ---

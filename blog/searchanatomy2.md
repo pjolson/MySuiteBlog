@@ -1,8 +1,7 @@
 ---
 title: Anatomy of a Saved Search - Criteria
 date: 2019-01-14
-description:
-    The “Criteria” section of the saved search editor allows you to narrow down your results to see only the data that is useful or relevant to you. The criteria subtab is simple to grasp but can become as complex as you need it to be to retrieve the specific dataset you are search for.
+description: "How to use the Criteria tab in the NetSuite Saved Search editor to filter and narrow down your search results."
 
 tags: ["Basics", "SavedSearch", "SuiteAnalytics"]
 ---

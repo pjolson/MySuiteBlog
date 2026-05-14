@@ -1,8 +1,7 @@
 ---
 title: Saved Search Link Behavior
 date: 2019-02-26
-description:
-    In my last post, I discussed how to create dynamic links in Saved Searches to drill-down to related saved searches. In this post I will add to that example by showing how to have the drill-down searches open in another tab or pop-up window. This will allow your users to not lose their place in when opening the dynamic links you have created.
+description: "How to open NetSuite Saved Search drill-down links in a new tab or pop-up window using HTML and JavaScript formulas."
 
 tags: ["Formulas", "HTML", "JavaScript", "SavedSearch", "SuiteAnalytics"]
 ---

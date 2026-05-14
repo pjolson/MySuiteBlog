@@ -1,3 +1,8 @@
+---
+title: Contact
+description: "Get in touch with MySuite Consulting for NetSuite optimization, customization, and support. Book a meeting or send a message."
+---
+
 # Contact
 
 ## Get in Touch

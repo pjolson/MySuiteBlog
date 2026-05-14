@@ -1,8 +1,7 @@
 ---
 title: Matching Field Strings using CASE Formula
 date: 2019-02-08
-description:
-    Have you ever had to compare string data from 2 different fields or across joined records? It is very easy to match the string of two free form text fields using a CASE WHEN formula
+description: "Compare string data from different fields in NetSuite using a CASE WHEN formula to match free-form text values."
 
 tags: ["CaseWhen", "Formulas", "SuiteAnalytics"]
 ---
@@ -112,4 +111,4 @@ If you would like to learn more about CASE WHEN, SuiteAnalytics or NetSuite in g
 
 <TagLinks />
 
-Read Next - [Suite Analytics Workbook](/blog/SuiteAnalyticsWorkbook.html)
+Read Next - [Suite Analytics Workbook](/blog/suiteanalyticsworkbook.html)

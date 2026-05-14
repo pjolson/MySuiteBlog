@@ -1,9 +1,7 @@
 ---
 title: Dynamic Links in Saved Searches
 date: 2019-02-25
-description:
-    Saved Searches allow for some native options for drilling down into results data through grouping fields. If you summarize fields by group and then click the field link, you should be redirected to a summarized view of your saved search.
-    But what if you want more unique data in your drill-down? What if you don't want to lose your current search your are viewing? There are some formulaic answers to these questions that I will explore in this post.
+description: "Create dynamic drill-down links in NetSuite Saved Searches using formula fields to link to related searches and records."
 
 tags: ["Formulas", "HTML", "SavedSearch", "SuiteAnalytics"]
 ---

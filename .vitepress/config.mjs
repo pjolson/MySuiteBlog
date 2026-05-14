@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'MySuite',
-  description: 'NetSuite Consulting, Optimization, and Support Services',
+  title: 'MySuite - NetSuite Consulting',
+  description: 'MySuite Consulting offers NetSuite optimization, customization, and support services. Contract admin and developer packages available.',
 
   srcExclude: ['img/**/*.md'],
 
@@ -15,9 +15,9 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/favicon-192x192.png' }],
     ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon-180.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'MySuite' }],
     ['meta', { property: 'og:image', content: 'https://mysuite.tech/og-image.png' }],
-    ['meta', { property: 'og:title', content: 'MySuite - NetSuite Consulting' }],
-    ['meta', { property: 'og:description', content: 'NetSuite Consulting, Optimization, and Support Services' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://mysuite.tech/og-image.png' }],
     ['script', { src: 'https://analytics.ahrefs.com/analytics.js', 'data-key': 'JB7/uRXKgpaYMdBoftGA9Q', async: '' }],
@@ -31,10 +31,12 @@ export default defineConfig({
       .replace(/\.md$/, '.html')
 
     pageData.frontmatter.head ??= []
-    pageData.frontmatter.head.push([
-      'link',
-      { rel: 'canonical', href: canonicalUrl }
-    ])
+    pageData.frontmatter.head.push(
+      ['link', { rel: 'canonical', href: canonicalUrl }],
+      ['meta', { property: 'og:url', content: canonicalUrl }],
+      ['meta', { property: 'og:title', content: pageData.title + ' | MySuite' }],
+      ['meta', { property: 'og:description', content: pageData.description || 'MySuite Consulting offers NetSuite optimization, customization, and support services.' }]
+    )
   },
 
   themeConfig: {

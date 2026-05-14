@@ -1,11 +1,7 @@
 ---
 title: Creating Custom Center Tabs
 date: 2018-12-18
-description:
-    A follower of this blog reached out to ask for help on how to set up a Custom Center Tab, so I thought I would write up a brief how-to on Custom Center Tabs, Categories and Links.
-
-    Center tabs can be created to add a permanent navigation bar tab to the NetSuite interface. These tabs can be added to Centers and limited by Audience (roles, people, departments, groups, customers, vendors, partners)
-
+description: "Learn how to create Custom Center Tabs, Categories, and Links in NetSuite to add permanent navigation bar tabs to your interface."
 tags: ["Centers", "Navigation", "SuiteBuilder"]
 ---
 

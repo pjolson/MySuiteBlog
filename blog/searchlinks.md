@@ -1,8 +1,7 @@
 ---
 title: Create a link to another record in a Saved Search
 date: 2018-12-27
-description:
-    Sometimes, you may find yourself in a situation where you want to link out to another connected record in a Saved Search without having to drill down to the record and then to the Related Record. Thankfully, NetSuite makes this pretty easy with a Formula(text) field. The trick lies in getting the formatting of the formula correct to make this work.
+description: "How to create a clickable link to another record in a NetSuite Saved Search using a Formula(text) field with HTML."
 
 tags: ["Basics", "Formulas", "SavedSearch", "SuiteAnalytics"]
 ---

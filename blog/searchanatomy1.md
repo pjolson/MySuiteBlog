@@ -1,8 +1,7 @@
 ---
 title: Anatomy of a Saved Search - Definitions
 date: 2018-12-17
-description:
-    When creating or updating a Saved Search in NetSuite, there are a lot of options and features to consider. In most cases, you can get by with many of the basic features, but it is useful to know how all the different options affect your search.
+description: "A guide to the Definitions tab in the NetSuite Saved Search editor, covering all options and features available."
 
 tags: ["Basics", "SavedSearch", "SuiteAnalytics"]
 ---

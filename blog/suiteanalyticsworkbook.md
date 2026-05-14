@@ -1,8 +1,7 @@
 ---
 title: SuiteAnalytics Workbook (Beta)
 date: 2019-01-28
-description:
-    Have you ever wanted to be able to do more with your saved searches and reporting in NetSuite? Are you tired of edit/saving to test criteria or results changes? Have you ever wished you could create pivot tables in NetSuite?
+description: "An overview of the NetSuite SuiteAnalytics Workbook beta, featuring pivot tables, charts, and an improved search editor."
 
 tags: ["Admin", "Reports", "SavedSearch", "SuiteAnalytics"]
 ---

@@ -1,3 +1,8 @@
+---
+title: Services
+description: "NetSuite consulting services including administration, SuiteScript development, SuiteAnalytics, integrations, and contract support packages."
+---
+
 # Services
 
 ## NetSuite Services

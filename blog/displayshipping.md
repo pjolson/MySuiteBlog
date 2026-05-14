@@ -1,8 +1,7 @@
 ---
 title: Default Shipping Address in a Custom Field
 date: 2019-01-15
-description:
-    Recently, a user asked me if they could view the Default Shipping Address for a Customer Record as a field on the Main subtab. The issue they were reporting was the ADDRESS field on the Customer Record always shows the Default Billing Address. 
+description: "How to display the Default Shipping Address on a NetSuite Customer Record using a custom field on the Main subtab."
 
 tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
 ---
