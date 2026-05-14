@@ -57,12 +57,12 @@ In Amount fields, enter numbers to calculate by addition or subtraction
 
 ## Conclusion
 
-If you would like to learn more about NetSuite navigation or NetSuite in general please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*info@mysuite.tech*](mailto:info@mysuite.tech)
+If you would like to learn more about NetSuite navigation or NetSuite in general please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/20/2018 
 
 
 <TagLinks />
 
-Read Next - [String Match formula](https://mysuite.tech/blog/stringmatch.html)
+Read Next - [String Match formula](/blog/stringmatch.html)

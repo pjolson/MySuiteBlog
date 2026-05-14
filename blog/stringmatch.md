@@ -104,12 +104,12 @@ Now there will be a green checkmark to the right side of records where Parent/Ch
 
 The CASE WHEN formula is a deep topic and it has many use cases. It can be used every day in your saved searches, workflows, custom records and fields. The list goes on and on. This is a simple use case that allows for excellent comparison across records and fields.
 
-If you would like to learn more about CASE WHEN, SuiteAnalytics or NetSuite in general, please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*info@mysuite.tech*](mailto:info@mysuite.tech)
+If you would like to learn more about CASE WHEN, SuiteAnalytics or NetSuite in general, please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/27/2018 
 
 
 <TagLinks />
 
-Read Next - [Suite Analytics Workbook](https://mysuite.tech/blog/suiteanalyticsworkbook.html)
+Read Next - [Suite Analytics Workbook](/blog/suiteanalyticsworkbook.html)

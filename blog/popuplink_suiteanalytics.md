@@ -15,11 +15,11 @@ tags: ["Formulas", "HTML", "JavaScript", "SavedSearch", "SuiteAnalytics"]
 
 ## Introduction
 
-In <a href="https://mysuite.tech/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my last post</a>, I discussed how to create dynamic links in Saved Searches to drill-down to related saved searches. In this post I will add to that example by showing how to have the drill-down searches open in another tab or pop-up window. This will allow your users to not lose their place in when opening the dynamic links you have created.
+In <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my last post</a>, I discussed how to create dynamic links in Saved Searches to drill-down to related saved searches. In this post I will add to that example by showing how to have the drill-down searches open in another tab or pop-up window. This will allow your users to not lose their place in when opening the dynamic links you have created.
 
 The examples outlined here can be used for any `<a>` tag link you create in Searches or inline html fields in NetSuite.
 
-The example link from <a href="https://mysuite.tech/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my previous post</a> on the topic of dynamic links in saved searches was a dynamic link that pulled the Sales Order internal id into a link that referred to a saved search containing items on a Sales Order. When the link was clicked from a row on the saved search the user would be redirected to another saved search of items on Sales Orders, filtered to only that Sales Order. 
+The example link from <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my previous post</a> on the topic of dynamic links in saved searches was a dynamic link that pulled the Sales Order internal id into a link that referred to a saved search containing items on a Sales Order. When the link was clicked from a row on the saved search the user would be redirected to another saved search of items on Sales Orders, filtered to only that Sales Order. 
 
 The dynamic link in HTML format looked like this:
 
@@ -82,18 +82,18 @@ And behave link this (example using the same search as a custom search portlet)
 
 ## Conclusion
 
-I hope you enjoyed this 2 part post on dynamic links and link behavior. If you have any questions, plese feel free to [*email me*](mailto:info@mysuite.tech) or reach out through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).
+I hope you enjoyed this 2 part post on dynamic links and link behavior. If you have any questions, plese feel free to [*email me*](mailto:patrick@mysuite.tech) or reach out through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).
 
 ## Resources
 
-[Part 1 - Dynamic Saved Search Links](https://mysuite.tech/blog/dynamiclinks_suiteanalytics.html)
+[Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics.html)
 
 ---
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/26/2018 
 
 
 <TagLinks />
 
-Read Next - [Keyboard Shortcuts](https://mysuite.tech/blog/keyboardshortcuts.html)
+Read Next - [Keyboard Shortcuts](/blog/keyboardshortcuts.html)

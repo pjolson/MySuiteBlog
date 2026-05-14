@@ -22,7 +22,7 @@ In this example, I have a Custom Search portlet that is showing Item Fulfillment
 
 ## Crafting the Formula Field
 
-A formula field in NetSuite can contain HTML tags. I covered this in a previous post on [Highlighting Saved Searches](https://mysuite.tech/blog/post2.html). To achieve the example above I have added an "a" tag with a link to a dynamic Sales Order Link. I will break down the link below. 
+A formula field in NetSuite can contain HTML tags. I covered this in a previous post on [Highlighting Saved Searches](/blog/post2.html). To achieve the example above I have added an "a" tag with a link to a dynamic Sales Order Link. I will break down the link below. 
 
 ![searchlinks](https://i.imgur.com/0ZqraCT.png "Saved Search Results")
 
@@ -102,12 +102,12 @@ There even more things you can achieve with these links, like opening links in p
 
 ---
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*info@mysuite.tech*](mailto:info@mysuite.tech)
+Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
-<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width=8% height="auto" style="border-radius: 50%;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/27/2018 
 
 
 <TagLinks />
 
-Read Next - [Create a Custom Center Tab](https://mysuite.tech/blog/centertabs.html)
+Read Next - [Create a Custom Center Tab](/blog/centertabs.html)
