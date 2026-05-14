@@ -19,6 +19,12 @@
   --vp-home-hero-name-color: #f9fafb;
 }
 
+/* Code block wrapping */
+.vp-doc pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
 /* Nav logo sizing */
 .VPNavBarTitle .logo {
   height: 28px;
@@ -241,6 +247,9 @@
   border-radius: 10px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pricing-card:hover {
@@ -269,7 +278,6 @@
   color: var(--vp-c-text-2);
   line-height: 1.5;
   margin-bottom: 1rem;
-  min-height: 3.8em;
 }
 
 .pricing-hours {
@@ -283,6 +291,7 @@
   font-weight: 700;
   color: var(--vp-c-text-1);
   margin-bottom: 1.25rem;
+  margin-top: auto;
 }
 
 .pricing-card.featured .pricing-amount {
