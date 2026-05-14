@@ -59,6 +59,8 @@ In Amount fields, enter numbers to calculate by addition or subtraction
 
 If you would like to learn more about NetSuite navigation or NetSuite in general please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
+<ConsultingCTA />
+
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/20/2018 
 
