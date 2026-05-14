@@ -41,4 +41,4 @@ features:
 - [Anatomy of a Saved Search - Definitions](/blog/searchanatomy1) — Understand saved search building blocks
 - [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics) — Build clickable links in search results
 - [NetSuite Certification Study Guide](/blog/getcertified) — Study tips for SuiteFoundation and Admin exams
-- [Matching Field Strings using CASE Formula](/blog/stringmatch) — Use CASE formulas to match text in searches
+- [NetSuite CASE WHEN Formula: Match and Compare Fields](/blog/stringmatch) — Use CASE formulas to match text in searches

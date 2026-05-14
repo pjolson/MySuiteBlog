@@ -1,7 +1,7 @@
 ---
-title: Matching Field Strings using CASE Formula
+title: "NetSuite CASE WHEN Formula: Match and Compare Fields"
 date: 2019-02-08
-description: "Compare string data from different fields in NetSuite using a CASE WHEN formula to match free-form text values."
+description: "How to use CASE WHEN formulas in NetSuite Saved Searches to compare fields, match strings, and handle multiple conditions."
 
 tags: ["CaseWhen", "Formulas", "SuiteAnalytics"]
 ---

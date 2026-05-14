@@ -1,7 +1,7 @@
 ---
-title: Default Shipping Address in a Custom Field
+title: "NetSuite Default Shipping Address: Display on Customer Record"
 date: 2019-01-15
-description: "How to display the Default Shipping Address on a NetSuite Customer Record using a custom field on the Main subtab."
+description: "How to display the default shipping address on a NetSuite Customer Record using a custom field, with formula examples."
 
 tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
 ---
