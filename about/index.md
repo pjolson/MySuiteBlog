@@ -53,6 +53,30 @@ description: "NetSuite consulting services including administration, SuiteScript
   <a href="https://greenlightapprovals.io" target="_blank" class="integration-chip">Greenlight Approvals</a>
 </div>
 
+## How I Work
+
+<div class="how-i-work">
+  <div class="step-card">
+    <div class="step-number">1</div>
+    <h3>Discovery Call</h3>
+    <p>We talk about your environment, pain points, and what you need. No pressure, no pitch.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-number">2</div>
+    <h3>Scope & Start</h3>
+    <p>Pick a package or define a custom retainer. I get access to your environment and hit the ground running.</p>
+  </div>
+  <div class="step-card">
+    <div class="step-number">3</div>
+    <h3>Ongoing Support</h3>
+    <p>Regular communication, weekly updates, and clear documentation. No surprises, no disappearing acts.</p>
+  </div>
+</div>
+
+<div style="text-align: center; margin: 1.5rem 0;">
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Discovery Call</a>
+</div>
+
 ## Pricing
 
 <div class="pricing-grid">
