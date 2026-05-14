@@ -21,7 +21,7 @@ In this example, I have a Custom Search portlet that is showing Item Fulfillment
 
 ## Crafting the Formula Field
 
-A formula field in NetSuite can contain HTML tags. I covered this in a previous post on [Highlighting Saved Searches](/blog/post2.html). To achieve the example above I have added an "a" tag with a link to a dynamic Sales Order Link. I will break down the link below. 
+A formula field in NetSuite can contain HTML tags. I covered this in a previous post on [Highlighting Saved Searches](/blog/post2). To achieve the example above I have added an "a" tag with a link to a dynamic Sales Order Link. I will break down the link below. 
 
 ![searchlinks](https://i.imgur.com/0ZqraCT.png "Saved Search Results")
 
@@ -109,4 +109,4 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next - [Create a Custom Center Tab](/blog/centertabs.html)
+Read Next - [Create a Custom Center Tab](/blog/centertabs)

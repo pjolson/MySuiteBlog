@@ -87,4 +87,4 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next - [Create a Custom Center Tab](/blog/centertabs.html)
+Read Next - [Create a Custom Center Tab](/blog/centertabs)

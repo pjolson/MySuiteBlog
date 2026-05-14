@@ -126,4 +126,4 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next [The Anatomy of a Saved Search - part 1](/blog/searchanatomy1.html)
+Read Next [The Anatomy of a Saved Search - part 1](/blog/searchanatomy1)

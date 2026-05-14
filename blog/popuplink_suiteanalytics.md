@@ -85,7 +85,7 @@ I hope you enjoyed this 2 part post on dynamic links and link behavior. If you h
 
 ## Resources
 
-[Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics.html)
+[Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics)
 
 ---
 
@@ -95,4 +95,4 @@ I hope you enjoyed this 2 part post on dynamic links and link behavior. If you h
 
 <TagLinks />
 
-Read Next - [Keyboard Shortcuts](/blog/keyboardshortcuts.html)
+Read Next - [Keyboard Shortcuts](/blog/keyboardshortcuts)

@@ -170,7 +170,7 @@ In my next post, I will outline a couple of ways to improve the link created in 
 
 <TagLinks />
 
-Read Next - [Part 2 - Link Behavior](/blog/popuplink_suiteanalytics.html)
+Read Next - [Part 2 - Link Behavior](/blog/popuplink_suiteanalytics)
 
 
 

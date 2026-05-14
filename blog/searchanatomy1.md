@@ -92,5 +92,5 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next - [The Anatomy of a Saved Search - part 2 - Criteria](/blog/searchanatomy2.html)
+Read Next - [The Anatomy of a Saved Search - part 2 - Criteria](/blog/searchanatomy2)
 

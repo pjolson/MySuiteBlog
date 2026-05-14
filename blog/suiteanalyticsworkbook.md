@@ -117,4 +117,4 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next [NetSuite Certification Study Guide](/blog/getcertified.html)
+Read Next [NetSuite Certification Study Guide](/blog/getcertified)

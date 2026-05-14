@@ -25,4 +25,4 @@ I'm not setting any goals for posting. I'm just going to update this from time t
 
 <TagLinks />
 
-Read Next -  [Highlighting Saved Searches](/blog/post2.html)
+Read Next -  [Highlighting Saved Searches](/blog/post2)

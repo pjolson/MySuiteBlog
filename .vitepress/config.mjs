@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'MySuite',
   description: 'MySuite Consulting offers NetSuite optimization, customization, and support services. Contract admin and developer packages available.',
 
+  cleanUrls: true,
   srcExclude: ['img/**/*.md'],
 
   sitemap: {
@@ -28,7 +29,7 @@ export default defineConfig({
   transformPageData(pageData) {
     const canonicalUrl = `https://mysuite.tech/${pageData.relativePath}`
       .replace(/index\.md$/, '')
-      .replace(/\.md$/, '.html')
+      .replace(/\.md$/, '')
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(

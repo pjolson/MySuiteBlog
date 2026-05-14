@@ -110,6 +110,6 @@ Please let me know what you think of this post and if you have any questions or 
 
 <TagLinks />
 
-Read Next - [Create a link to another record in a Saved Search](/blog/searchlinks.html)
+Read Next - [Create a link to another record in a Saved Search](/blog/searchlinks)
 
 

@@ -65,4 +65,4 @@ If you would like to learn more about NetSuite navigation or NetSuite in general
 
 <TagLinks />
 
-Read Next - [String Match formula](/blog/stringmatch.html)
+Read Next - [String Match formula](/blog/stringmatch)
