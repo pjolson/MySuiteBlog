@@ -102,7 +102,6 @@ Adding Portlets to a Custom Center Tab will allow the user to customize the Cust
 
 
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

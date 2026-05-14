@@ -79,7 +79,6 @@ I will go over the Results section of the Saved Search editor and discuss some o
 
 ---
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

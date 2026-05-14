@@ -111,14 +111,12 @@ Believe in yourself and register for SuiteFoundation today.
 
 ## Your Certification Story
 
-If this post helped you in your certification journey, I would love to hear about it. Please let me know if the advice here or the recommended resources were useful to you or helped to motivate you to get certified. If you found this useful you can let me know by sharing using the links below.
 
 ## Resources
 - [Certifications Site](http://www.netsuite.com/portal/services/training/suite-training/certification.shtml)
 - [Excellent Flashcards for Foundation](https://quizlet.com/178010793/suitefoundation-exam-study-guide-flash-cards/)
 - [Foundation Sample Test – Flashcards](https://quizlet.com/215608715/netsuite-certification-suitefoundation-flash-cards/)
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

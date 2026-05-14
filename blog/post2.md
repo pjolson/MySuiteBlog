@@ -98,7 +98,6 @@ Adding this as a formula(text) field will simply write the Date field in red.
 ---
 These are a few of the different highlighting tools I use in NetSuite. There are more advanced cases of using formula fields that go beyond styling that I will cover in future posts.
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

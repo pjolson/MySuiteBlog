@@ -109,7 +109,6 @@ They have also published this short, but effective video to YouTube on SuiteAnal
 
 ---
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

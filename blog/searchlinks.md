@@ -101,7 +101,6 @@ There even more things you can achieve with these links, like opening links in p
 
 ---
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

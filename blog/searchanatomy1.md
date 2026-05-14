@@ -84,7 +84,6 @@ I will go over the Criteria section and all the options and features available t
 
 ---
 
-Please let me know what you think of this post and if you have any questions or comments by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 

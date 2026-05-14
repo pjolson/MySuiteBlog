@@ -57,7 +57,6 @@ In Amount fields, enter numbers to calculate by addition or subtraction
 
 ## Conclusion
 
-If you would like to learn more about NetSuite navigation or NetSuite in general please reach out to me directly through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/) or by emailing [*patrick@mysuite.tech*](mailto:patrick@mysuite.tech)
 
 <ConsultingCTA />
 
