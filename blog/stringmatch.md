@@ -112,4 +112,4 @@ If you would like to learn more about CASE WHEN, SuiteAnalytics or NetSuite in g
 
 <TagLinks />
 
-Read Next - [Suite Analytics Workbook](/blog/suiteanalyticsworkbook.html)
+Read Next - [Suite Analytics Workbook](/blog/SuiteAnalyticsWorkbook.html)
