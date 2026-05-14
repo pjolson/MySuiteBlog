@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311 172" width="311" height="172">
+
+<g transform="translate(30, 30)">
+      <path d="M 27.12 6.0 L 6.0 6.0 L 6.0 106.80000000000001 L 27.12 106.80000000000001"
+            stroke="#0E6B47" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="44.400000000000006" y="92.4" font-size="96" font-weight="700" fill="#111827"
+            font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+      <path d="M 224.68 6.0 L 245.8 6.0 L 245.8 106.80000000000001 L 224.68 106.80000000000001"
+            stroke="#0E6B47" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

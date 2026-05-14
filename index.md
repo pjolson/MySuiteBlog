@@ -5,6 +5,9 @@ hero:
   name: MySuite
   text: NetSuite Consulting
   tagline: Optimization, Customization, and Support Services for NetSuite
+  image:
+    src: /mark.svg
+    alt: MySuite
   actions:
     - theme: brand
       text: Blog

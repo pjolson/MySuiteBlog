@@ -26,7 +26,7 @@ export default defineConfig({
   ],
 
   themeConfig: {
-    logo: '/img/assets/01_logo/wordmark-color-on-light.svg',
+    logo: '/logo.svg',
     siteTitle: false,
 
     nav: [
