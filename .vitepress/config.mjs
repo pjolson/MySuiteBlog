@@ -38,7 +38,7 @@ export default defineConfig({
   },
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: { src: '/logo.svg', alt: 'MySuite' },
     siteTitle: false,
 
     nav: [
