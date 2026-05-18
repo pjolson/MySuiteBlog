@@ -3,7 +3,7 @@ layout: home
 title: MySuite
 hero:
   name: MySuite
-  text: Your NetSuite Partner
+  text: Your NetSuite Advisor
   tagline: Implementation advisory and ongoing administration for internal teams. Take control of your NetSuite project and keep the system running after go-live.
   image:
     src: /mark.svg
