@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'MySuite',
-  description: 'MySuite Consulting offers NetSuite optimization, customization, and support services. Contract admin and developer packages available.',
+  description: 'NetSuite implementation advisory and administration for internal teams. SOW review, project oversight, and ongoing support.',
 
   cleanUrls: true,
   srcExclude: ['img/**/*.md'],
@@ -36,7 +36,7 @@ export default defineConfig({
       ['link', { rel: 'canonical', href: canonicalUrl }],
       ['meta', { property: 'og:url', content: canonicalUrl }],
       ['meta', { property: 'og:title', content: pageData.title + ' | MySuite' }],
-      ['meta', { property: 'og:description', content: pageData.description || 'MySuite Consulting offers NetSuite optimization, customization, and support services.' }]
+      ['meta', { property: 'og:description', content: pageData.description || 'NetSuite implementation advisory and administration for internal teams. SOW review, project oversight, and ongoing support.' }]
     )
   },
 
@@ -60,7 +60,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'NetSuite Consulting, Optimization &amp; Support',
+      message: 'NetSuite Implementation Advisory &amp; Administration',
       copyright: '&copy; 2018-present MySuite'
     },
 
