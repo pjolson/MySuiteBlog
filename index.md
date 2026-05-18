@@ -34,11 +34,11 @@ features:
     linkText: Learn more
 ---
 
-## Popular Posts
+## Featured Posts
 
-- [Saved Search Link Behavior](/blog/popuplink_suiteanalytics) — Control how saved search links open in NetSuite
-- [Highlighting Saved Searches](/blog/post2) — Add conditional formatting to search results
-- [Anatomy of a Saved Search - Definitions](/blog/searchanatomy1) — Understand saved search building blocks
-- [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics) — Build clickable links in search results
-- [NetSuite Certification Study Guide](/blog/getcertified) — Study tips for SuiteFoundation and Admin exams
-- [NetSuite CASE WHEN Formula: Match and Compare Fields](/blog/stringmatch) — Use CASE formulas to match text in searches
+- [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner) - How to manage the partner relationship, review SOWs, and control change orders
+- [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource) - Why having an internal resource during implementation protects your investment
+- [Saved Search Link Behavior](/blog/popuplink_suiteanalytics) - Control how saved search links open in NetSuite
+- [Highlighting Saved Searches](/blog/post2) - Add conditional formatting to search results
+- [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics) - Build clickable links in search results
+- [NetSuite Certification Study Guide](/blog/getcertified) - Study tips for SuiteFoundation and Admin exams
