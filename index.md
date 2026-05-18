@@ -3,8 +3,8 @@ layout: home
 title: MySuite
 hero:
   name: MySuite
-  text: NetSuite Consulting
-  tagline: Optimization, Customization, and Support Services for NetSuite
+  text: NetSuite Implementation Advisory & Administration
+  tagline: I help internal teams take control of their NetSuite implementations and keep the system running after go-live.
   image:
     src: /mark.svg
     alt: MySuite
