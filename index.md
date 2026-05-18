@@ -36,6 +36,7 @@ features:
 
 ## Featured Posts
 
+- [The Post-Go-Live Cliff](/blog/post-go-live-cliff) - What happens when your implementation partner leaves and your team is on their own
 - [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner) - How to manage the partner relationship, review SOWs, and control change orders
 - [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource) - Why having an internal resource during implementation protects your investment
 - [Saved Search Link Behavior](/blog/popuplink_suiteanalytics) - Control how saved search links open in NetSuite
