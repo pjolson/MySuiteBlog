@@ -36,6 +36,7 @@ features:
 
 ## Featured Posts
 
+- [What to Look for in Your NetSuite SOW Before You Sign It](/blog/netsuite-sow-before-you-sign) - The NetSuite order form and implementation SOW are two contracts most companies treat as separate decisions. They aren't.
 - [The Post-Go-Live Cliff](/blog/post-go-live-cliff) - What happens when your implementation partner leaves and your team is on their own
 - [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner) - How to manage the partner relationship, review SOWs, and control change orders
 - [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource) - Why having an internal resource during implementation protects your investment

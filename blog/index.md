@@ -13,6 +13,7 @@ Covering NetSuite Administration, Development and anything I find interesting or
 
 ## All Posts
 
+- [What to Look for in Your NetSuite SOW Before You Sign It](/blog/netsuite-sow-before-you-sign)
 - [The Post-Go-Live Cliff: What Happens When Your Implementation Partner Leaves](/blog/post-go-live-cliff)
 - [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner)
 - [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource)
