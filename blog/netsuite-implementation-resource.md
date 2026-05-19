@@ -13,7 +13,7 @@ tags: ["Admin", "General", "Certification"]
 
 ## The Scenario
 
-Your company just signed with NetSuite. The implementation partner kicks off the project, and suddenly your team is in meetings about chart of accounts mapping, item types, workflow approvals, and data migration. The consultants are moving fast, using NetSuite terminology, referencing modules and features your team has never seen.
+Your company just signed with NetSuite. The implementation partner kicks off the project, and suddenly your team is in meetings about chart of accounts mapping, item types, workflow approvals, and data migration. The consultants are moving fast, using NetSuite terminology, referencing modules and features your team has never seen. (If you haven't signed yet, read [what to look for in your SOW before you do](/blog/netsuite-sow-before-you-sign).)
 
 Your people are smart. They know the business. But they don't speak NetSuite.
 

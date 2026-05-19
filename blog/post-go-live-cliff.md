@@ -51,7 +51,7 @@ Here is what I have seen happen in the weeks and months after the partner leaves
 
 ## Why This Happens
 
-This is not a failure by the implementation partner. Partners are hired to deliver a system and get you to go-live. That is what the SOW says. That is what you paid for. Most partners do a good job of it.
+This is not a failure by the implementation partner. Partners are hired to deliver a system and get you to go-live. That is what the [SOW](/blog/netsuite-sow-before-you-sign) says. That is what you paid for. Most partners do a good job of it.
 
 The gap is structural. The partner's job ends when the project ends. Your team's job with NetSuite is just beginning. And the skills needed to run the system day-to-day are not the same skills your team used during implementation. During the project, your people were attending design sessions and reviewing configurations. After go-live, they need to troubleshoot issues, train new hires, build reports, modify workflows, and make configuration changes on their own.
 

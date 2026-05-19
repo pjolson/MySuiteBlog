@@ -25,7 +25,7 @@ I wrote in my [last post](/blog/netsuite-implementation-resource) about why you 
 
 The Statement of Work is the single most important document in your implementation. It defines what you are paying for, what the partner is responsible for, and what is explicitly excluded. Most clients skim it during the sales process and never look at it again.
 
-That is a mistake.
+That is a mistake. I wrote a full breakdown of [what to look for in your NetSuite SOW before you sign it](/blog/netsuite-sow-before-you-sign), including the NetSuite order form, module overselling, and licensing traps. This section covers how to use the SOW as a management tool once the project is underway.
 
 SOWs from NetSuite implementation partners tend to follow a pattern. The scope section reads well at a high level. Phrases like "configure order-to-cash workflows" or "implement standard reporting package" sound comprehensive. But those phrases are doing a lot of heavy lifting. What does "standard" mean? Which reports? How many saved searches? Are workflow approval chains included or are those a separate line item?
 
