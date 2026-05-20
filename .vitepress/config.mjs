@@ -47,7 +47,6 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/' },
-      { text: 'Tags', link: '/tags/' },
       { text: 'Services', link: '/about/' },
       { text: 'Contact', link: '/contact/' },
       { text: 'Greenlight Approvals', link: 'https://greenlightapprovals.io', target: '_blank' }

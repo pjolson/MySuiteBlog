@@ -4,7 +4,7 @@ title: MySuite
 hero:
   name: MySuite
   text: Your NetSuite Advisor
-  tagline: Implementation advisory and ongoing administration for internal teams. Take control of your NetSuite project and keep the system running after go-live.
+  tagline: Implementation advisory and ongoing administration for internal NetSuite teams.
   image:
     src: /mark.svg
     alt: MySuite

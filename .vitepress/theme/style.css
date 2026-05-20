@@ -67,6 +67,13 @@
   line-height: 1.6;
 }
 
+.blog-post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+}
+
 .read-more {
   display: inline-block;
   margin-top: 0.5rem;
