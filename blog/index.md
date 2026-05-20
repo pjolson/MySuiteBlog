@@ -13,6 +13,7 @@ Covering NetSuite Administration, Development and anything I find interesting or
 
 ## All Posts
 
+- [Real-Time Status Pages in NetSuite: Tracking Record-by-Record Processing from a Suitelet](/blog/netsuite-realtime-status-page)
 - [What to Look for in Your NetSuite SOW Before You Sign It](/blog/netsuite-sow-before-you-sign)
 - [The Post-Go-Live Cliff: What Happens When Your Implementation Partner Leaves](/blog/post-go-live-cliff)
 - [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner)
