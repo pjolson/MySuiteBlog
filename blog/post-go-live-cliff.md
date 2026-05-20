@@ -2,7 +2,7 @@
 title: "The Post-Go-Live Cliff: What Happens When Your Implementation Partner Leaves"
 date: 2026-05-18
 description: "What happens after your NetSuite implementation partner rolls off and why most companies aren't ready for it."
-tags: ["Admin", "General", "ProjectManagement"]
+tags: ["Admin", "Implementation", "Advisory"]
 ---
 
 # The Post-Go-Live Cliff

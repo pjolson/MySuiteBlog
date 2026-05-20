@@ -2,7 +2,7 @@
 title: "Your NetSuite Implementation Partner Works for You. Act Like It."
 date: 2026-05-18
 description: "How to manage your NetSuite implementation partner relationship, review SOWs, control change orders, and run a steering committee that actually works."
-tags: ["Admin", "General", "ProjectManagement"]
+tags: ["Admin", "Implementation", "Advisory"]
 ---
 
 # Your NetSuite Implementation Partner Works for You. Act Like It.

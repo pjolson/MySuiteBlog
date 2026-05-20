@@ -2,7 +2,7 @@
 title: Why You Need an Internal NetSuite Expert on Your Implementation Team
 date: 2026-05-14
 description: "Why having an internal NetSuite resource during implementation protects your investment, improves outcomes, and keeps your team in control."
-tags: ["Admin", "General", "Certification"]
+tags: ["Admin", "Implementation", "Advisory"]
 ---
 
 # Why You Need an Internal NetSuite Expert on Your Implementation Team

@@ -2,7 +2,7 @@
 title: "What to Look for in Your NetSuite SOW Before You Sign It"
 date: 2026-05-19
 description: "The NetSuite order form and implementation SOW are two contracts that most companies treat as separate decisions. They aren't. Here's what to look for before you sign either one."
-tags: ["Admin", "General", "ProjectManagement"]
+tags: ["Admin", "Implementation", "Advisory"]
 ---
 
 # What to Look for in Your NetSuite SOW Before You Sign It

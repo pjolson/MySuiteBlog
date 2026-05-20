@@ -4,7 +4,7 @@ date: 2019-02-20
 description:
     Did you know that there are a variety of simple keyboard shortcuts for data entry and NetSuite Navigation?
 
-tags: ["General", "Navigation", "Shortcuts"]
+tags: ["Admin", "Navigation", "Shortcuts"]
 ---
 
 # Keyboard Shortcuts

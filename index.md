@@ -36,12 +36,4 @@ features:
 
 ## Featured Posts
 
-- [Real-Time Status Pages in NetSuite](/blog/netsuite-realtime-status-page) - A production pattern for giving users a live, polling status page during Map/Reduce bulk operations
-- [What to Look for in Your NetSuite SOW Before You Sign It](/blog/netsuite-sow-before-you-sign) - The NetSuite order form and implementation SOW are two contracts most companies treat as separate decisions. They aren't.
-- [The Post-Go-Live Cliff](/blog/post-go-live-cliff) - What happens when your implementation partner leaves and your team is on their own
-- [Your NetSuite Implementation Partner Works for You. Act Like It.](/blog/managing-your-implementation-partner) - How to manage the partner relationship, review SOWs, and control change orders
-- [Why You Need an Internal NetSuite Expert on Your Implementation Team](/blog/netsuite-implementation-resource) - Why having an internal resource during implementation protects your investment
-- [Saved Search Link Behavior](/blog/popuplink_suiteanalytics) - Control how saved search links open in NetSuite
-- [Highlighting Saved Searches](/blog/post2) - Add conditional formatting to search results
-- [Dynamic Links in Saved Searches](/blog/dynamiclinks_suiteanalytics) - Build clickable links in search results
-- [NetSuite Certification Study Guide](/blog/getcertified) - Study tips for SuiteFoundation and Admin exams
+<FeaturedPosts />
