@@ -7,6 +7,6 @@ date: 2018-12-11
 
 # Blog
 
-Implementation advisory, NetSuite administration, saved searches, formulas, and SuiteScript development.
+Implementation advisory, administration, accounting, SuiteScript, and technical how-tos.
 
 <BlogIndex />
