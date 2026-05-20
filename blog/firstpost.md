@@ -3,6 +3,7 @@ title: Welcome
 date: 2018-12-12
 description: "Welcome to MySuite, a NetSuite blog covering administration, development, tips, and useful tools from a certified consultant."
 tags: ["Admin"]
+hidden: true
 ---
 
 # Welcome!
