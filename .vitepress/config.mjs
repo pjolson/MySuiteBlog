@@ -8,7 +8,10 @@ export default defineConfig({
   srcExclude: ['img/**/*.md'],
 
   sitemap: {
-    hostname: 'https://mysuite.tech'
+    hostname: 'https://mysuite.tech',
+    transformItems(items) {
+      return items.filter(item => item.url !== 'blog/firstpost')
+    }
   },
 
   head: [
