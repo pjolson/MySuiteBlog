@@ -1,121 +1,160 @@
 ---
-title: SuiteAnalytics Workbook (Beta)
-date: 2019-01-28
-description: "An overview of the NetSuite SuiteAnalytics Workbook beta, featuring pivot tables, charts, and an improved search editor."
-
-tags: ["Admin", "Reports", "SavedSearch", "SuiteAnalytics"]
+title: "SuiteAnalytics Workbook: A Practitioner's Guide for NetSuite Admins"
+date: 2026-05-22
+description: "What NetSuite admins and consultants need to know about SuiteAnalytics Workbook in 2026, including datasets, pivots, formula fields, data refresh, and common gotchas."
+tags: ["Admin", "SuiteAnalytics", "Reports"]
 ---
 
-# SuiteAnalytics Workbook (Beta)
+# SuiteAnalytics Workbook: A Practitioner's Guide for NetSuite Admins
 
 [[toc]]
 
-Have you ever wanted to be able to do more with your saved searches and reporting in NetSuite? Are you tired of edit/saving to test criteria or results changes? Have you ever wished you could create pivot tables in NetSuite?
+## Workbook in 2026 Is Not the Workbook You Remember
 
-SuiteAnalytics Workbook is a new feature in NetSuite that is still in the Beta phase but appears on the 2019.1 Release notes as a feature set to go live. This feature has been teased at SuiteWorld for the past few years and it appears that it is finally ready for production release!
+The original version of this post went up in January 2019, back when SuiteAnalytics Workbook was still in beta. A lot has changed. Workbook went GA in 2019.1, the dataset/workbook split landed in 2020.1, and Oracle has kept shipping updates through 2026.1.
 
-In this post, I will go over some of the basic features of SuiteAnalytics Workbook.
+If you kicked the tires during beta and walked away unimpressed, give it another look. The tool is genuinely useful now, and it covers ground that saved searches and SuiteAnalytics Connect have never handled well.
 
----
+One thing worth noting upfront: Workbook is enabled by default in all accounts now. No feature flag to flip. If your users have the right permissions, they already have access. The Analytics center tab shows up in the navigation bar for any role with the SuiteAnalytics Workbook permission.
 
+## Datasets and Workbooks: The Split That Matters
 
-## Enable SuiteAnalytics Workbook
+The biggest change since beta is that datasets and workbooks are now separate objects. Oracle split them in 2020.1, and it changes how you should approach building reports.
 
-SuiteAnalytics workbook in your NetSuite account, is still a Beta feature and is not turned on by default. You need to enable this feature to begin using it. Once enabled a new Center Tab will appear in the navigation bar for most roles. Be aware of this as most of your regular NetSuite users will see the new “Analytics” tab after enabling. There is a “SuiteAnalytics Workbook” permission on the Reports subtab of the Permissions tab in the role editor if you want to add SuiteAnalytics Workbook to custom roles.
+A **dataset** defines your data: record types, joins, fields, and criteria. Think of it as a reusable data definition, similar to a SQL view.
 
-To Enable:
+A **workbook** consumes a dataset and presents it visually through tables, pivots, and charts. One dataset can feed multiple workbooks. A single workbook can also pull from multiple datasets through dataset linking.
 
-1.	Log in to NetSuite as an Administrator
-2.	Got Setup -> Company -> Enable Features, and click the Analytics subtab
-3.	Check “SUITEANALYTICS WORKBOOK”
+Why does the split matter in practice? Before building a new workbook, the first question should be "does a dataset already exist that gives me what I need?" Reusing datasets avoids duplicate logic, keeps things consistent, and cuts down on maintenance.
 
-![Enable](https://i.imgur.com/EzQJrl3.png "Enable SuiteAnalytics Workbook")
+The general workflow:
 
-Now that it is enabled you can see the “Analytics” Center Tab in the navigation bar.
+1. **Create or select a dataset** with the records, joins, fields, and criteria you need
+2. **Create a workbook** that references that dataset
+3. **Add visualizations** (tables, pivots, charts) inside the workbook
 
-![SelectRecord](https://i.imgur.com/cP8h5SJ.png "Select Record Type")
+When you click "New Workbook" from the Analytics center tab, NetSuite walks you through creating a dataset as the first step. You can also create standalone datasets from the same menu and attach them to workbooks later.
 
----
+## The Analytics Data Source
 
-## Create a Workbook
+Here is where people get tripped up. SuiteAnalytics Workbook runs on a different underlying data source than saved searches. Field names, record type names, and available joins do not always match.
 
-This works like creating a Saved Search. You create a workbook and choose the root record type.
-1.	Click the Analytics tab in the navigation bar
-2.	In the Analytics Dashboard, click “New Workbook”
-3.	Select a record from the list.
+Quick example: the "Transaction" record type in saved search becomes "Transactions" (plural) in the analytics data source. Some field internal IDs differ. Joins that exist in one context may be absent in the other.
 
-![NewWorkbook](https://i.imgur.com/AOyqu5q.png "New Workbook")
+Do not try to recreate a saved search in workbook by matching fields one-to-one. You will waste time chasing mismatches. Instead, explore what is available in the dataset editor and build from there.
 
-![Enabled](https://i.imgur.com/SFJZu3P.png "Analytics tab")
+NetSuite publishes an Analytics Browser (similar to the Records Browser for SuiteScript) that documents available record types, fields, and joins. Bookmark it.
 
----
+## Building a Dataset
 
-### Select Data
+### Record Types and Joins
 
-Once your record data loads, you can begin updating viewable data. This works like the Saved Search “Results” section except you can see your updates immediately, without having to save. Add your data columns from the left-hand dropdown and see the updates right away! You can also remove columns change sorting and add joined field data or formula fields as well.
+Every dataset starts with a root record type. From there, you add joins to pull in related records. The dataset editor shows available joins for your root record in the left panel.
 
+Be careful with joins. Adding a one-to-many join duplicates your root record rows. Join Transactions to Transaction Lines and each transaction appears once per line item. Add another one-to-many join on top of that and the row count multiplies again. SQL developers expect this behavior, but it catches people who are used to saved search summary reports abstracting it away. If your totals look inflated, your joins are almost always the reason.
 
-![DataActions](https://i.imgur.com/h1iyrEw.gif "Add and update Data Columns")
+Before adding a join, ask whether you actually need fields from that related record, or whether criteria on the root record would get you there. Unnecessary joins slow things down and make the output harder to read.
 
----
+### Fields and Criteria
 
-### Filter Data
+Adding fields is drag-and-drop. Select from any of your joined record types in the left panel and drag them into the field list. Reordering and removing fields works the same way.
 
-Filtering your data works like the "Criteria" section of the Saved Search editor. You can filter on one or more value types, use and/or logic and parenthetical groupings. Here is a simple example where I filter down the previous data set to just Sales Orders.
+Criteria support AND/OR logic with parenthetical groupings for complex filters. The live preview is probably the single biggest quality-of-life improvement over saved searches. Every criteria change shows results immediately, no save-and-rerun cycle. For anyone who has burned time clicking edit, tweaking one filter, saving, scrolling down to check results, and repeating, workbook feels like a different world.
 
-![FilterData](https://i.imgur.com/xr8rntW.gif "Add Criteria Filters")
+## Visualizations: Tables, Pivots, and Charts
 
-### Pivot Data
+A single workbook can hold multiple tables, pivots, and charts. Each visualization draws from the underlying dataset but gets configured independently.
 
-With SuiteAnalytics Workbook you can create multiple pivot tables in the same workbook and refresh them in the same manner as adding data and criteria.
+### Table Views
 
-1. Click "Add Pivot"
-2. Drag and drop your Row, Column and Value information into the "Layout" editor
-3. Click Refresh icon
+The table view is the simplest option: a flat grid with sorting, column reordering, and conditional formatting. You can set color rules on cells based on value thresholds, handy for flagging overdue items, negative amounts, or specific statuses.
 
-You can see your new pivot table is now available. Multiple pivots can be created by simply adding another pivot.
+Start here when building a new workbook. Get the data right in a table first, then layer pivots and charts on top.
 
-![Pivot](https://i.imgur.com/XpNK3Rf.png "Create Pivot Tables")
+### Pivot Tables
 
-Pivot tables can be filtered independently of the source data by dragging the filter field from the Fields section to the "Drag and drop a field to add it as a filter" section of the Pivot Table editor.
+Pivots are where Workbook genuinely pulls ahead of saved searches. Drag fields into rows, columns, and measures to build cross-tabulated summaries. Calculated measures let you operate on aggregated data directly, something that saved search summary formulas have always made painful.
 
----
+A few things worth knowing:
+
+- You can have **multiple pivots per workbook**, each slicing the same data differently.
+- **Pivot-level filters** let you narrow a pivot without touching the underlying dataset criteria. Useful when one dataset serves several pivots with different scopes.
+- **Calculated measures** (ratios, percentages, running totals) are defined right in the pivot editor.
+- **Drill-down** into any pivot cell to see the records behind the number.
 
 ### Charts
 
-Similar to the section on Pivots, you can create multiple charts in SuiteAnalytics workbook.
+Charts support bar, line, area, pie, donut, and scatter types. Like pivots, you can build multiple charts per workbook with independent configurations.
 
-1. Click "Add Chart"
-2. Add X-Axis, Series and Measures data
-3. Click Refresh icon
+The real value of charts shows up on dashboards. Build a chart in a workbook, publish it as a portlet, and users see it on their dashboard without ever opening the workbook. It is a clean separation between the person building the report and the people consuming it.
 
-![Charts](https://i.imgur.com/VYjXtM6.png "Create Charts")
+## Formula Fields and Calculated Measures
 
----
+Datasets support formula fields for computed columns. The syntax looks similar to saved search formulas, but it is not identical. Functions and field references follow the analytics data source conventions, so do not assume a formula that worked in a saved search will paste over cleanly.
 
-## Conclusion
+The formula editor has autocomplete for functions and field names, which helps. Error feedback is another story. A broken formula typically returns "Invalid formula" and nothing else. No line number, no hint about what went wrong.
 
-SuiteAnalytics Workbook is still in Beta, so the features may change prior to release. It appears that it is set for release in 2019.1. I encourage you to enable this feature in your Sandbox accounts, or Production accounts to play with the available features now.
+Build formulas one piece at a time. Start with a simple expression, confirm it returns something, then add complexity. Writing a long CASE WHEN in one shot and trying to debug the generic error is a frustrating exercise.
 
----
+Calculated measures in pivots are a different thing entirely. They operate on already-aggregated data within the pivot (dividing one measure by another to get a percentage, for instance) and live in the pivot editor, not the dataset.
 
-## Resources
+## Data Refresh: Cached vs. Real-Time
 
-I have gone over some very basic features available in SuiteAnalytics Workbook in this post. NetSuite has an in-depth walkthrough in Suite Answers. Check out Suite Answers ID: 77299. The tutorial will take you through some more advanced features like parenthetical criteria groupings, formula fields, pivots and charts.
+Workbook data is cached by default. When you open a workbook, you are looking at data from the last refresh, not a live query. Caching makes large datasets load faster and keeps system load down.
 
-They have also published this short, but effective video to YouTube on SuiteAnalytics Workbook as well. 
+You can hit the refresh button manually, or enable "refresh on open" to pull fresh data each time someone opens the workbook. For dashboards that need to reflect current state, refresh on open is the better setting.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/379BNC9SpcU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+"When was this last refreshed?" should be the first question when a workbook shows unexpected numbers. The timestamp is right there in the interface. Check it before you start questioning your criteria or formulas.
 
----
+## Sharing, Permissions, and Dashboard Portlets
 
+Workbooks are private to the creator by default. Sharing them with specific roles or users happens through the sharing settings.
 
-<ConsultingCTA message="I help teams get more out of SuiteAnalytics — from workbooks and saved searches to full reporting strategies. Let's talk about your reporting needs." />
+Two permissions matter here. **SuiteAnalytics Workbook** on the role grants access to the Analytics tab and the ability to view, create, and edit workbooks. **Analytics Administrator** is the broader permission for managing shared workbooks owned by other users.
+
+A pattern that works well in practice: an analyst builds and maintains datasets and workbooks, then publishes specific visualizations as dashboard portlets for end users. The end users see a chart or table on their dashboard and never need to open the workbook or understand how the data is structured. Build workbooks for your analysts. Publish portlets for everyone else.
+
+## Dataset Linking
+
+Dataset linking connects two datasets on a shared field, working like a join but across independent datasets. It solves the problem of record types that cannot be joined within a single dataset.
+
+Say you have one dataset of sales orders and another of support cases. Both include a customer field. Link them on that field and you get a combined view while each dataset keeps its own record type, joins, and criteria.
+
+Use it sparingly, though. Performance takes a hit as linked datasets grow, and the logic gets confusing fast. If you can pull the data into a single dataset with joins, that path is almost always cleaner.
+
+## SuiteQL and Workbook
+
+SuiteQL and Workbook share the same underlying analytics data source but serve different audiences. Workbook is the visual, no-code path. SuiteQL is the programmatic option, accessed through SuiteScript, REST APIs, or the SuiteQL query tool.
+
+If you are comfortable writing SQL, SuiteQL can handle queries that would be difficult or impossible to express in the workbook UI. If you are building reports for users who will never write a query, workbook is the right choice.
+
+Learning one helps with the other. Record types, field names, and join paths in the analytics data source are the same regardless of how you access them.
+
+## Templates
+
+NetSuite ships built-in dataset and workbook templates for common scenarios: financial summaries, sales pipelines, inventory reports, and others. They are available from the "New Workbook" and "New Dataset" dialogs.
+
+Check templates before building from scratch. Even when a template does not match your exact needs, it provides a starting point with relevant record types, joins, and fields already wired up. Templates are also a solid way to learn how NetSuite expects datasets to be structured for different use cases.
+
+## Limitations and Gotchas
+
+- **Row duplication from one-to-many joins** is the most common source of confusion. Already covered above, but it bears repeating: inflated totals almost always trace back to joins.
+- **CLOB fields (long text, rich text, memo fields) are not supported** in datasets. If you need those, you are stuck with a saved search.
+- **Ad blockers and browser extensions** can break the workbook editor in subtle ways. Strange UI behavior? Disable extensions and reload before troubleshooting anything else.
+- Formula error feedback is basically nonexistent. **"Invalid formula" tells you nothing.** Build incrementally.
+- **Large datasets get slow.** Hundreds of thousands of rows or too many joins will drag performance down. Tighten your criteria and cut unnecessary joins before blaming the platform.
+- There is **no scheduled export**. Saved searches can email results or export files on a schedule. Workbooks cannot. If you need automated delivery, saved search is still the tool for that job.
+- **Saved search is not going away.** Workbook does not replace it. Scheduled exports, SuiteFlow conditions, SuiteScript lookups, mass updates, and plenty of other workflows still run on saved searches. Workbook is an additional tool, not a successor.
+
+## Wrapping Up
+
+SuiteAnalytics Workbook has grown into a genuinely capable reporting tool. The dataset/workbook model, live preview, pivot tables, and dashboard portlets give admins and analysts options that saved searches alone cannot touch.
+
+There is a learning curve, especially around the analytics data source and formula syntax. But for teams that put in the time, workbook tends to become the default tool for anything interactive.
+
+<ConsultingCTA message="We help teams build reporting strategies that make the most of SuiteAnalytics Workbook, saved searches, and SuiteQL. If your team is struggling with NetSuite reporting, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
-01/28/2019 
-
+05/22/2026
 
 <TagLinks />
-
-Read Next [NetSuite Certification Study Guide](/blog/getcertified)
