@@ -2,7 +2,7 @@
 title: "Data Migration Is a Discipline, Not a Weekend Task"
 date: 2026-05-25
 description: "NetSuite data migration gets treated as the last step before go-live. It should be one of the first. Here is what internal teams need to own and what goes wrong when they don't."
-tags: ["Admin", "Implementation", "Advisory"]
+tags: ["Admin", "Implementation", "Advisory", "DataMigration"]
 ---
 
 # Data Migration Is a Discipline, Not a Weekend Task
@@ -11,21 +11,15 @@ tags: ["Admin", "Implementation", "Advisory"]
 
 ---
 
-## Nobody Plans for This
-
-Every NetSuite implementation has a data migration workstream. It shows up in the project plan. It has a line item in the [SOW](/blog/netsuite-sow-before-you-sign). The partner mentions it in kickoff.
-
-And then nobody thinks about it seriously until eight weeks before go-live.
-
-By that point, your team is deep in UAT, training is starting, and the partner's consultants are juggling configuration changes. Someone asks "where are we on data migration?" and the answer is a half-populated spreadsheet and a vague plan to "load it over the weekend."
-
-That is how companies end up with opening balances that don't match, duplicate vendor records, and a finance team spending their first month in NetSuite reconciling numbers that should have been right on day one. It is one of the reasons [the post-go-live cliff](/blog/post-go-live-cliff) hits so hard.
-
 ## The Partner Gives You Templates. The Data Is Yours.
 
-This is the part that catches most internal teams off guard. Your implementation partner will hand you CSV templates for every record type that needs to migrate: customers, vendors, items, chart of accounts, open transactions, journal entries. They will explain the required fields and the formatting rules.
+Your implementation partner will hand you CSV templates for every record type that needs to migrate: customers, vendors, items, chart of accounts, open transactions, journal entries. They will explain the required fields and the formatting rules.
 
 Then they will wait for you to fill them in.
+
+That is the part most internal teams do not see coming. Data migration shows up in the project plan. It has a line item in the [SOW](/blog/netsuite-sow-before-you-sign). The partner mentions it in kickoff. And then nobody thinks about it seriously until eight weeks before go-live, when your team is deep in UAT, training is starting, and someone asks "where are we on data?" The answer is a half-populated spreadsheet and a vague plan to "load it over the weekend."
+
+That is how companies end up with opening balances that don't match, duplicate vendor records, and a finance team spending their first month in NetSuite reconciling numbers that should have been right on day one. It is one of the reasons [the post-go-live cliff](/blog/post-go-live-cliff) hits so hard.
 
 Extraction, cleansing, deduplication, field mapping, and validation are your team's work. The partner is not going to log into your old system, pull the data, clean it up, and hand it back to you ready to import. That is not what the SOW says, and it is not how the economics work. Some SOWs are explicit about this. Others are vague enough that the assumption gap does not surface until your team is already behind schedule.
 
@@ -113,7 +107,9 @@ Hard cutovers are cleaner. There is one system, one source of truth, and no ambi
 
 Soft cutovers reduce that risk but create a different one: dual data entry, confusion about which system is authoritative, and a migration process that stretches out over weeks. Your team has to know which transactions go where. That sounds simple until an AP clerk is halfway through entering a batch of bills and cannot remember whether this vendor has been migrated yet.
 
-Most implementations end up with a hard cutover for good reason. It forces the discipline of getting migration right the first time. But whichever approach you choose, make sure your team, your partner, and your auditors all agree on it before you get within a month of go-live.
+Most implementations end up with a hard cutover for good reason. It forces the discipline of getting migration right the first time. I would push for hard cutover in most situations. The pain of running two systems in parallel is worse than the pain of a tight cutover weekend, and a soft cutover gives everyone an excuse to delay decisions that need to be made. The only time I would consider a soft cutover is when the auditors specifically require it or when the legacy system handles a function that genuinely is not ready in NetSuite yet.
+
+Whichever approach you choose, make sure your team, your partner, and your auditors all agree on it before you get within a month of go-live.
 
 ## Reconcile to the Penny
 
