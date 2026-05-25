@@ -13,7 +13,7 @@ tags: ["Admin", "SuiteAnalytics", "Reports"]
 
 The original version of this post went up in January 2019, back when SuiteAnalytics Workbook was still in beta. A lot has changed. Workbook went GA in 2019.1, the dataset/workbook split landed in 2020.1, and Oracle has kept shipping updates through 2026.1.
 
-If you kicked the tires during beta and walked away unimpressed, give it another look. The tool is genuinely useful now, and it covers ground that saved searches have never handled well.
+If you kicked the tires during beta and walked away unimpressed, give it another look. The tool is genuinely useful now, and it covers ground that [saved searches](/blog/searchanatomy1) have never handled well.
 
 One thing worth noting upfront: Workbook is enabled by default in all accounts now. No feature flag to flip. If your users have the right permissions, they already have access. The Analytics portlet shows up in the navigation bar for any role with the SuiteAnalytics Workbook permission.
 
@@ -69,7 +69,7 @@ A single workbook can hold multiple table views, pivots, and charts. Each visual
 
 ### Table Views
 
-The table view is the simplest visualization: a flat grid of your dataset results with sorting and column reordering. You can apply conditional formatting to highlight cells based on value thresholds, which is handy for flagging overdue items, negative amounts, or specific statuses.
+The table view is the simplest visualization: a flat grid of your dataset results with sorting and column reordering. You can apply conditional formatting to [highlight cells](/blog/post2) based on value thresholds, which is handy for flagging overdue items, negative amounts, or specific statuses.
 
 One limitation to know: conditional formatting only works on NUMBER and STRING field types. DATE fields do not support it.
 
@@ -98,7 +98,7 @@ The real value of charts shows up on dashboards. Build a chart in a workbook, pu
 
 These are two different things that serve different purposes, and mixing them up causes confusion.
 
-**Formula fields** live in the dataset. They operate row by row on the underlying data, similar to adding a computed column. The syntax looks like saved search formulas, but it is not identical. Functions and field references follow the analytics data source conventions, so do not assume a formula that worked in a saved search will paste over cleanly.
+**Formula fields** live in the dataset. They operate row by row on the underlying data, similar to adding a computed column. The syntax looks like [saved search formulas](/blog/stringmatch), but it is not identical. Functions and field references follow the analytics data source conventions, so do not assume a formula that worked in a saved search will paste over cleanly.
 
 The formula editor includes a Validate button that checks your expression before you save. Use it. Error feedback for invalid formulas is not detailed, so building formulas one piece at a time saves frustration. Start with a simple expression, confirm it validates, then add complexity. Writing a long CASE WHEN in one shot and trying to debug a generic error is a painful exercise.
 
@@ -176,7 +176,7 @@ Check templates before building from scratch. Even when a template does not matc
 
 **There is no scheduled export.** Saved searches can email results or export files on a schedule. Workbooks cannot. If you need automated delivery, saved search is still the tool for that job.
 
-**Saved search is not going away.** Workbook does not replace it. Scheduled exports, SuiteFlow conditions, SuiteScript lookups, mass updates, and plenty of other workflows still run on saved searches. Workbook is an additional reporting tool, not a successor.
+**Saved search is not going away.** Workbook does not replace it. Scheduled exports, SuiteFlow conditions, SuiteScript lookups, mass updates, and plenty of other workflows still run on saved searches. If you are new to saved searches, start with the [anatomy of a saved search](/blog/searchanatomy1) series. Workbook is an additional reporting tool, not a successor.
 
 ## Wrapping Up
 
