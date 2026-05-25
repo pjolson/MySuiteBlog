@@ -41,6 +41,37 @@ export default defineConfig({
       ['meta', { property: 'og:title', content: pageData.title + ' | MySuite' }],
       ['meta', { property: 'og:description', content: pageData.description || 'NetSuite implementation advisory and administration for internal teams. SOW review, project oversight, and ongoing support.' }]
     )
+
+    // JSON-LD structured data for blog posts
+    if (pageData.relativePath.startsWith('blog/') && !pageData.frontmatter.blog_index && !pageData.frontmatter.hidden) {
+      const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        'headline': pageData.title,
+        'description': pageData.description || '',
+        'url': canonicalUrl,
+        'author': {
+          '@type': 'Person',
+          'name': 'Patrick Olson',
+          'url': 'https://mysuite.tech/about/'
+        },
+        'publisher': {
+          '@type': 'Organization',
+          'name': 'MySuite',
+          'url': 'https://mysuite.tech',
+          'logo': {
+            '@type': 'ImageObject',
+            'url': 'https://mysuite.tech/og-image.png'
+          }
+        }
+      }
+      if (pageData.frontmatter.date) {
+        jsonLd.datePublished = new Date(pageData.frontmatter.date).toISOString().split('T')[0]
+      }
+      pageData.frontmatter.head.push(
+        ['script', { type: 'application/ld+json' }, JSON.stringify(jsonLd)]
+      )
+    }
   },
 
   themeConfig: {
