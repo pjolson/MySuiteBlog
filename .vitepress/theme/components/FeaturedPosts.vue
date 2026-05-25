@@ -37,9 +37,9 @@ const posts = [
     tags: ['SuiteScript', 'Suitelet', 'MapReduce']
   },
   {
-    title: 'NetSuite CASE WHEN Formula',
-    url: '/blog/stringmatch',
-    tags: ['Formulas', 'SuiteAnalytics']
+    title: 'Data Migration Is a Discipline, Not a Weekend Task',
+    url: '/blog/netsuite-data-migration',
+    tags: ['Implementation', 'Advisory']
   }
 ]
 </script>
