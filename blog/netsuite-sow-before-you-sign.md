@@ -106,7 +106,7 @@ Every SOW includes data migration. Almost none of them define it with enough spe
 - Which historical data is in scope? All transactions or only open ones? How far back?
 - Are custom records and custom fields included in the migration mapping?
 
-"Data migration" as a two-word line item in a SOW is not a deliverable. It is a placeholder for a conversation nobody has had yet.
+"Data migration" as a two-word line item in a SOW is not a deliverable. It is a placeholder for a conversation nobody has had yet. I wrote a full breakdown of [what data migration actually involves](/blog/netsuite-data-migration) and what the internal team needs to own.
 
 ### Integrations
 
