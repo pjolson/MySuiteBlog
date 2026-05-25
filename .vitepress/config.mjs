@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'NetSuite implementation advisory and administration for internal teams. SOW review, project oversight, and ongoing support.',
 
   cleanUrls: true,
+  lastUpdated: true,
   srcExclude: ['img/**/*.md'],
 
   sitemap: {

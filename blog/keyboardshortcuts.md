@@ -1,8 +1,7 @@
 ---
 title: Keyboard Shortcuts
 date: 2019-02-20
-description:
-    Did you know that there are a variety of simple keyboard shortcuts for data entry and NetSuite Navigation?
+description: "NetSuite keyboard shortcuts for global search, data entry, date fields, report navigation, and filtering search results."
 
 tags: ["Admin", "Navigation", "Shortcuts"]
 ---

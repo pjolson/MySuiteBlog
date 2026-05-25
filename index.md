@@ -1,6 +1,7 @@
 ---
 layout: home
 title: MySuite
+description: "NetSuite implementation advisory and administration for internal teams. SOW review, partner oversight, and ongoing admin support from a certified NetSuite consultant."
 hero:
   name: MySuite
   text: Your NetSuite Advisor
