@@ -15,7 +15,7 @@ I work with mid-market companies that are implementing NetSuite or already runni
 
 When you hire a big partner, you get a sales lead, a project manager, and whoever's on the bench that month. When you work with MySuite, you get **me** — the same senior person in every design session, every steering committee, every review.
 
-I'm a NetSuite Certified Administrator and PMP who has been through go-lives from both sides: building systems as the consultant, and protecting clients as the advisor in their corner. No rotating juniors, no handoffs, no learning your business twice.
+I'm a NetSuite Certified ERP Consultant and PMP who has been through go-lives from both sides: building systems as the consultant, and protecting clients as the advisor in their corner. No rotating juniors, no handoffs, no learning your business twice.
 
 ## Implementation Advisory
 
