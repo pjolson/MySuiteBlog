@@ -98,6 +98,9 @@ If you want the record to open in edit mode, simply add &e=T to the end of the U
 
 There even more things you can achieve with these links, like opening links in pop up windows, performing actions on click, etc. But I wanted to keep this first post simple. Whenever I create one of these links, I always refer to a working version to begin crafting my new search link. I hope you bookmark this post to help you the next time you need to start a linked column like this.
 
+::: tip Building approval workflows in NetSuite?
+Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built approval workflows for NetSuite — no custom code required.
+:::
 
 ---
 

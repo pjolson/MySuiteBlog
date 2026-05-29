@@ -103,6 +103,9 @@ Now there will be a green checkmark to the right side of records where Parent/Ch
 
 The CASE WHEN formula is a deep topic and it has many use cases. It can be used every day in your saved searches, workflows, custom records and fields. The list goes on and on. This is a simple use case that allows for excellent comparison across records and fields.
 
+::: tip Building approval workflows in NetSuite?
+If you're using CASE WHEN logic to route approvals or flag exceptions, take a look at [Greenlight Approvals](https://greenlightapprovals.io) — purpose-built approval workflows for NetSuite.
+:::
 
 <ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics — let's talk." />
 

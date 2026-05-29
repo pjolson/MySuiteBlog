@@ -144,11 +144,13 @@ Now the FORMULA(TEXT) column contains links labeled 'Items on SO' and if you cli
 
 ## Conclusion
 
-Mastering the creation of dynamic links in saved searches is an invaluable skill for any NetSuite Admin. The utility of this skill goes far beyond the example in this post. Dynamic links can be used to create custom links to subrecords, pop-up windows, links in a new tab and much more. 
+Mastering the creation of dynamic links in saved searches is an invaluable skill for any NetSuite Admin. The utility of this skill goes far beyond the example in this post. Dynamic links can be used to create custom links to subrecords, pop-up windows, links in a new tab and much more.
 
 In my next post, I will outline a couple of ways to improve the link created in this example to show how to open the drill-down search in a new tab and in a pop-up window.
 
-
+::: tip Need better visibility into approval status?
+Dynamic links are great for drilling into data — but if you're building approval workflows, [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built routing, delegation, and tracking without the formula gymnastics.
+:::
 
 #### A note on html in saved searches
 

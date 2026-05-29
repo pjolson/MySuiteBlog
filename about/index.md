@@ -1,6 +1,6 @@
 ---
-title: Services
-description: "NetSuite implementation advisory and ongoing administration services. Fractional NetSuite admin and project manager for mid-market companies."
+title: NetSuite Expert for Hire | Implementation Advisory & Admin
+description: "Hire a NetSuite expert for implementation advisory, SOW review, and ongoing administration. Fractional admin and project manager for mid-market companies."
 ---
 
 # The NetSuite expert on your side of the table.

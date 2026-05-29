@@ -93,6 +93,9 @@ The second field we created did contain a formula and should be marked as FORMUL
 
 This solution is a simple way to source in another default address into a custom field. It is also a good introduction to Inline HTML fields and power of styling individual custom fields. Inline HTML fields are a simple solution for adding styled text effects to custom forms to help call out data for users and increase form readability.
 
+::: tip Struggling with approval routing across entities or locations?
+Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightapprovals.io) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
+:::
 
 <ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. I help companies get their NetSuite set up right." />
 
