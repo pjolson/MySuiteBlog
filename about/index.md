@@ -3,7 +3,7 @@ title: Services
 description: "NetSuite implementation advisory and ongoing administration services. Fractional NetSuite admin and project manager for mid-market companies."
 ---
 
-# Services
+# The NetSuite expert on your side of the table.
 
 I work with mid-market companies that are implementing NetSuite or already running it and need hands-on help. Whether you need someone to represent your team during an implementation or a fractional admin to keep things running after go-live, I can help.
 
@@ -11,34 +11,40 @@ I work with mid-market companies that are implementing NetSuite or already runni
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Discovery Call</a>
 </div>
 
+## Who You're Working With
+
+When you hire a big partner, you get a sales lead, a project manager, and whoever's on the bench that month. When you work with MySuite, you get **me** — the same senior person in every design session, every steering committee, every review.
+
+I'm a NetSuite Certified Administrator and PMP who has been through go-lives from both sides: building systems as the consultant, and protecting clients as the advisor in their corner. No rotating juniors, no handoffs, no learning your business twice.
+
 ## Implementation Advisory
 
-Your implementation partner knows NetSuite. But they don't know your business the way your team does. I sit on your side of the table during the implementation and make sure your company has a voice in every design decision, scope conversation, and deliverable review.
+Your implementation partner knows NetSuite. They don't know your business the way your team does — and they're relying on your people to translate. That's where implementations go sideways. I sit on your side of the table and make sure your company has a real voice in every design decision, scope conversation, and deliverable review.
 
 <div class="services-grid">
   <div class="service-card">
     <h3>SOW & Scope Review</h3>
-    <p>Review the Statement of Work before kickoff. Identify vague deliverables, pin down assumptions, and make sure you know what you're paying for.</p>
+    <p>Review the Statement of Work before kickoff. Flag vague deliverables, pin down assumptions, and make sure you know exactly what you're paying for.</p>
   </div>
   <div class="service-card">
     <h3>Design Validation</h3>
-    <p>Sit in on design sessions and translate between your business teams and the partner's consultants. Challenge recommendations that don't fit your workflows.</p>
+    <p>Sit in on design sessions and translate between your business teams and the partner's consultants. Challenge recommendations that don't fit how you actually operate.</p>
   </div>
   <div class="service-card">
     <h3>Change Order Review</h3>
-    <p>Evaluate every change order before you sign it. Determine whether it's genuinely new scope or a gap the partner should have caught in discovery.</p>
+    <p>Evaluate every change order before you sign. Is it genuinely new scope, or a gap the partner should have caught in discovery? That distinction is worth real money.</p>
   </div>
   <div class="service-card">
     <h3>Steering Committee</h3>
-    <p>Run or support your steering committee with a client-driven agenda, clear decision tracking, and honest project status.</p>
+    <p>Run or support your steering committee with a client-driven agenda, written decisions, and honest status — not a green-light slide deck.</p>
   </div>
   <div class="service-card">
     <h3>UAT & Go-Live</h3>
-    <p>Write test scripts based on real business scenarios, manage the punch list, and coordinate between departments during go-live.</p>
+    <p>Test scripts built on real business scenarios, a managed punch list, and someone who knows a cosmetic issue from a go-live blocker.</p>
   </div>
   <div class="service-card">
     <h3>Knowledge Transfer</h3>
-    <p>Document configurations, decisions, and processes so your team owns the system after the partner rolls off.</p>
+    <p>Document configurations, decisions, and the <em>why</em> behind them, so your team owns the system after the partner rolls off.</p>
   </div>
 </div>
 
