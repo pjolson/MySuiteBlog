@@ -5,7 +5,7 @@ description: "Hire a NetSuite expert for implementation advisory, SOW review, an
 
 # The NetSuite expert on your side of the table.
 
-I work with mid-market companies that are implementing NetSuite or already running it and need hands-on help. Whether you need someone to represent your team during an implementation or a fractional admin to keep things running after go-live, I can help.
+Your implementation partner knows NetSuite. They don't know your business. I'm the certified admin and PMP who sits on your side of the table: reviewing the SOW, challenging the partner's design, and making sure your team controls its own implementation instead of just riding along. And after go-live, I stay on as your fractional admin so the system keeps working.
 
 <div style="text-align: center; margin: 1.5rem 0;">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Discovery Call</a>
@@ -166,6 +166,7 @@ If we worked together during implementation, this is the natural next step. If y
 <div class="cert-list-vertical">
   <span class="integration-chip">NetSuite SuiteFoundation</span>
   <span class="integration-chip">NetSuite Certified Administrator</span>
+  <span class="integration-chip">NetSuite Certified ERP Consultant</span>
   <span class="integration-chip">NetSuite Financial User</span>
   <span class="integration-chip">NetSuite SuiteAnalytics User</span>
   <span class="integration-chip">PMI - PMP</span>
