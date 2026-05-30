@@ -33,7 +33,7 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
   <div class="service-card">
     <h3>Projects</h3>
     <div class="offering-scope">quoted to scope</div>
-    <p>Migrations, builds, integrations, optimizations, fractional PM. Fixed-fee, scoped to the work.</p>
+    <p>Migrations, builds, integrations, optimizations, fractional PM. Fixed-fee, scoped to the work. PMP-certified project management included.</p>
     <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=projects" class="cta-secondary">Get Started</a>
   </div>
 </div>
