@@ -380,6 +380,50 @@
   background: var(--vp-c-brand-2);
 }
 
+/* Health check featured card */
+.health-check-card {
+  margin: 2rem 0;
+  padding: 2rem;
+  border: 2px solid var(--vp-c-brand-1);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
+  text-align: center;
+}
+
+.health-check-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.3rem;
+  color: var(--vp-c-brand-1);
+}
+
+.health-check-card p {
+  margin: 0 0 1.25rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+}
+
+/* Offerings grid */
+.offerings-grid .service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.offerings-grid .service-card .cta-secondary {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.offering-scope {
+  font-size: 0.85rem;
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
 /* Certification badge sizing */
 .cert-badges {
   display: grid;
