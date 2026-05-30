@@ -52,7 +52,14 @@ Certified and deep in the stack: NetSuite Certified ERP Consultant, Certified Ad
   <img src="../img/analyticsnew.jpg" alt="SuiteAnalytics User">
 </div>
 
-I also build **[Greenlight Approvals](https://greenlightapprovals.io)**: budget-aware, audit-ready NetSuite approval automation.
+<div class="greenlight-service-card">
+  <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
+  <div class="greenlight-service-content">
+    <h3>Greenlight Approvals</h3>
+    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off — built for the approval workflows that SuiteFlow can't handle.</p>
+    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
+  </div>
+</div>
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=footer" class="cta-primary">Book a Discovery Call</a>

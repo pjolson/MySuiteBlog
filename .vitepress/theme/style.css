@@ -449,11 +449,75 @@
   .cert-badges {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .cert-badges-5 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none;
+  }
+
+  .cert-badges-5 img:nth-child(1),
+  .cert-badges-5 img:nth-child(2),
+  .cert-badges-5 img:nth-child(3),
+  .cert-badges-5 img:nth-child(4),
+  .cert-badges-5 img:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .cert-badges-5 img:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 50%;
+    justify-self: center;
+  }
 }
 
 .cert-badges img {
   width: 100%;
   border-radius: 6px;
+}
+
+/* Greenlight service card */
+.greenlight-service-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.greenlight-service-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.08);
+}
+
+.greenlight-logo {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.greenlight-service-content h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  color: var(--vp-c-text-1);
+}
+
+.greenlight-service-content p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .greenlight-service-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
 }
 
 /* Consulting CTA banner */
