@@ -40,6 +40,15 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 
 <p style="text-align: center; color: var(--vp-c-text-2); font-size: 0.9rem; margin-top: 0.5rem;">One-off help is $225/hr, two-hour minimum.</p>
 
+<div class="greenlight-service-card">
+  <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
+  <div class="greenlight-service-content">
+    <h3>Greenlight Approvals</h3>
+    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off — built for the approval workflows that SuiteFlow can't handle.</p>
+    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
+  </div>
+</div>
+
 ## Credentials
 
 Certified and deep in the stack: NetSuite Certified ERP Consultant, Certified Administrator, SuiteAnalytics, ARM, and Multi-Book, plus PMP. Hands-on across administration, SuiteScript and SuiteQL, reporting, supply chain, and manufacturing, with integration work in Celigo, Workato, Box, Concur, and Salesforce.
@@ -50,15 +59,6 @@ Certified and deep in the stack: NetSuite Certified ERP Consultant, Certified Ad
   <img src="../img/foundnew.jpg" alt="SuiteFoundation">
   <img src="../img/finusernew.jpg" alt="Financial User">
   <img src="../img/analyticsnew.jpg" alt="SuiteAnalytics User">
-</div>
-
-<div class="greenlight-service-card">
-  <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
-  <div class="greenlight-service-content">
-    <h3>Greenlight Approvals</h3>
-    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off — built for the approval workflows that SuiteFlow can't handle.</p>
-    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
-  </div>
 </div>
 
 <div style="text-align: center; margin: 2rem 0;">
