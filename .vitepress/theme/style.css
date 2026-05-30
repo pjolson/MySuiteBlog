@@ -432,6 +432,13 @@
   margin: 1.5rem 0;
 }
 
+.cert-badges-5 {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (max-width: 768px) {
   .cert-badges {
     grid-template-columns: repeat(2, 1fr);

@@ -44,11 +44,12 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 
 Certified and deep in the stack: NetSuite Certified ERP Consultant, Certified Administrator, SuiteAnalytics, ARM, and Multi-Book, plus PMP. Hands-on across administration, SuiteScript and SuiteQL, reporting, supply chain, and manufacturing, with integration work in Celigo, Workato, Box, Concur, and Salesforce.
 
-<div class="cert-badges">
-  <img src="../img/foundnew.jpg" alt="SuiteFoundation">
+<div class="cert-badges cert-badges-5">
+  <img src="../img/erpconsultant.png" alt="Certified ERP Consultant">
   <img src="../img/adminnew.jpg" alt="Certified Administrator">
-  <img src="../img/analyticsnew.jpg" alt="SuiteAnalytics User">
+  <img src="../img/foundnew.jpg" alt="SuiteFoundation">
   <img src="../img/finusernew.jpg" alt="Financial User">
+  <img src="../img/analyticsnew.jpg" alt="SuiteAnalytics User">
 </div>
 
 I also build **[Greenlight Approvals](https://greenlightapprovals.io)**: budget-aware, audit-ready NetSuite approval automation.
