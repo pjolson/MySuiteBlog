@@ -8,13 +8,13 @@ description: "Hire a NetSuite expert for implementation advisory, SOW review, an
 Your implementation partner knows NetSuite. They don't know your business. I'm the certified admin and PMP who sits on your side of the table through your implementation, then stays on as your fractional admin after go-live. The same senior person in every session. No rotating juniors, no handoffs.
 
 <div style="text-align: center; margin: 1.5rem 0;">
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Discovery Call</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=hero" class="cta-primary">Book a Discovery Call</a>
 </div>
 
 <div class="health-check-card">
   <h3>Start here: NetSuite Health Check — $2,500</h3>
   <p>A fixed-scope assessment of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call. Credited toward whatever comes next.</p>
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Health Check</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=health-check" class="cta-primary">Book a Health Check</a>
 </div>
 
 <div class="services-grid offerings-grid">
@@ -22,19 +22,19 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
     <h3>Implementation Advisory</h3>
     <div class="offering-scope">scoped to your project</div>
     <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. Not the partner. Your advocate.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=advisory" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card">
     <h3>Ongoing Admin</h3>
     <div class="offering-scope">from $4,000/mo</div>
     <p>A certified admin on call for support, configuration, reporting, and training once you're live. Retainers scale from 20 to 80 hours a month.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=ongoing-admin" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card">
     <h3>Projects</h3>
     <div class="offering-scope">quoted to scope</div>
     <p>Migrations, builds, integrations, optimizations, fractional PM. Fixed-fee, scoped to the work.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=projects" class="cta-secondary">Get Started</a>
   </div>
 </div>
 
@@ -55,5 +55,5 @@ Certified and deep in the stack: NetSuite Certified ERP Consultant, Certified Ad
 I also build **[Greenlight Approvals](https://greenlightapprovals.io)**: budget-aware, audit-ready NetSuite approval automation.
 
 <div style="text-align: center; margin: 2rem 0;">
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite" class="cta-primary">Book a Discovery Call</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=footer" class="cta-primary">Book a Discovery Call</a>
 </div>
