@@ -85,7 +85,7 @@ export default defineConfig({
             'name': 'Is the NetSuite Health Check safe? What access do you need?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Read-only access via a scoped, token-based role. We extract configuration and metadata only, not transaction data. We never modify your account, and we remove our access objects when the engagement ends.'
+              'text': 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and all access objects are removed when the engagement ends.'
             }
           },
           {
@@ -109,7 +109,7 @@ export default defineConfig({
             'name': 'Do you fix the issues found in the Health Check?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Yes. The Health Check is the diagnosis. We scope remediation separately.'
+              'text': 'Yes. The Health Check is the diagnosis. I scope remediation separately.'
             }
           },
           {
