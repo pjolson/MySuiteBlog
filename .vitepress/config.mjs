@@ -73,6 +73,59 @@ export default defineConfig({
         ['script', { type: 'application/ld+json' }, JSON.stringify(jsonLd)]
       )
     }
+
+    // FAQ schema for health check page
+    if (pageData.frontmatter.faqSchema) {
+      const faqLd = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'Is the NetSuite Health Check safe? What access do you need?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Read-only access via a scoped, token-based role. We never modify your account, and we remove our access objects when we\'re done.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'How long does the NetSuite Health Check take?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': '24 hours from access to debrief.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'What if our NetSuite account is clean?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Then you get documented proof of a well-governed system — useful for auditors and boards. The grade is earned; a clean account scores an A.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Do you fix the issues found in the Health Check?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes. The Health Check is the diagnosis. We scope remediation separately.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'Does the Health Check work for OneWorld / multi-subsidiary?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Yes.'
+            }
+          }
+        ]
+      }
+      pageData.frontmatter.head.push(
+        ['script', { type: 'application/ld+json' }, JSON.stringify(faqLd)]
+      )
+    }
   },
 
   themeConfig: {
