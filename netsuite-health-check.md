@@ -2,6 +2,7 @@
 title: "NetSuite Health Check — Find Hidden Risk in Your Account"
 description: "An expert-reviewed NetSuite Health Check that surfaces segregation-of-duties conflicts, security gaps, audit exposure, and wasted license spend. See a sample report."
 faqSchema: true
+aside: false
 ---
 
 # NetSuite Health Check
@@ -10,7 +11,7 @@ Find out what's quietly wrong in your NetSuite account — before your auditor d
 
 <div class="hc-hero-actions">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
-  <a href="#sample-report" class="cta-secondary">See a Sample Report</a>
+  <a href="/health-check-sample.pdf" target="_blank" class="cta-secondary">See a Sample Report</a>
 </div>
 
 ## The problem
@@ -35,101 +36,18 @@ A Health Check makes the invisible visible — in 24 hours, not a six-week consu
     <p>Backdated-posting exposure your external auditor lands on first.</p>
   </div>
   <div class="hc-finding">
-    <h3>Wasted license seats</h3>
-    <p>Dormant users sitting on full licenses you're paying for.</p>
-  </div>
-  <div class="hc-finding">
-    <h3>Technical debt</h3>
-    <p>Legacy SuiteScript 1.0, duplicate vendor records, search and workflow sprawl.</p>
-  </div>
-  <div class="hc-finding">
     <h3>Security gaps</h3>
     <p>Missing MFA, overprivileged roles, stale integration tokens.</p>
   </div>
 </div>
 
-## What we assess {#coverage}
-
-Fifteen areas across three pillars. We show you what we cover — the extraction mechanics are our moat.
-
-<div class="hc-pillars">
-  <div class="hc-pillar">
-    <h3>Access & Controls</h3>
-    <ul>
-      <li>Roles & Segregation of Duties</li>
-      <li>Approvals</li>
-      <li>Security & Access</li>
-      <li>Accounting Setup</li>
-    </ul>
-  </div>
-  <div class="hc-pillar">
-    <h3>System & Customization Health</h3>
-    <ul>
-      <li>SuiteScript</li>
-      <li>Workflows</li>
-      <li>Saved Searches</li>
-      <li>Custom Records & Fields</li>
-      <li>Forms</li>
-      <li>Performance</li>
-      <li>Installed Bundles</li>
-    </ul>
-  </div>
-  <div class="hc-pillar">
-    <h3>Data, Integrations & Governance</h3>
-    <ul>
-      <li>Data Quality</li>
-      <li>Integrations & Tokens</li>
-      <li>License Utilization</li>
-      <li>Change Management</li>
-    </ul>
-  </div>
-</div>
-
-<div id="sample-report"></div>
-
-## See a real report
-
-This is a full, anonymized Health Check report — every section, exactly what you'd receive. No gate, no form. Download it.
-
-<div style="text-align: center; margin: 1.5rem 0;">
-  <a href="/health-check-sample.pdf" target="_blank" class="cta-primary">Download Sample Report (PDF)</a>
-</div>
+We assess fifteen areas across access controls, system health, and data governance. The full breakdown is in the [sample report](/health-check-sample.pdf).
 
 ## What you get
 
-- **A prioritized findings report** — severity-ranked, with a remediation roadmap
-- **A live debrief** with a NetSuite expert who walks you through the findings and the fixes
-- **Review of areas automation can't see** — approvals config, MFA/security policy, change process
-- **A clear "fix-first" action list** — quick wins and the bigger projects
+A severity-ranked findings report, a remediation roadmap, expert review of the areas automation can't see (approvals config, MFA policy, change process), and a live debrief where we walk through the findings and the fixes. 24 hours from access to debrief — read-only extraction, no data changed, nothing leaves your environment.
 
 This is an expert-reviewed assessment with a debrief, not a script you run yourself.
-
-## How it works
-
-<div class="how-i-work">
-  <div class="step-card">
-    <div class="step-number">1</div>
-    <h3>Connect</h3>
-    <p>We run a read-only extraction against your account. No data is changed. No transactional or financial records leave your environment.</p>
-  </div>
-  <div class="step-card">
-    <div class="step-number">2</div>
-    <h3>Analyze</h3>
-    <p>Your configuration is assessed against our 15-area rubric covering access, customization, and governance.</p>
-  </div>
-  <div class="step-card">
-    <div class="step-number">3</div>
-    <h3>Review</h3>
-    <p>A NetSuite specialist validates the findings and covers the manual areas that automation can't see.</p>
-  </div>
-  <div class="step-card">
-    <div class="step-number">4</div>
-    <h3>Debrief</h3>
-    <p>You get the report and a walkthrough of what to fix and in what order.</p>
-  </div>
-</div>
-
-## Pricing
 
 <div class="health-check-card">
   <h3>$2,500 — flat fee</h3>
