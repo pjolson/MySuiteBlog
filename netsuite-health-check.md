@@ -1,13 +1,13 @@
 ---
-title: "NetSuite Health Check — Find Hidden Risk in Your Account"
-description: "An expert-reviewed NetSuite Health Check that surfaces segregation-of-duties conflicts, security gaps, audit exposure, and wasted license spend. See a sample report."
+title: "NetSuite Health Check | Find Hidden Risk in Your Account"
+description: "A NetSuite Health Check that finds segregation-of-duties conflicts, security gaps, audit exposure, and wasted license spend. See a sample report."
 faqSchema: true
 aside: false
 ---
 
 # NetSuite Health Check
 
-Find out what's quietly wrong in your NetSuite account — before your auditor does. We surface the access conflicts, security gaps, audit exposure, and wasted spend hiding in your environment, then hand you a prioritized plan to fix them.
+Find out what's quietly wrong in your NetSuite account before your auditor does. We look at access conflicts, security gaps, audit exposure, and wasted license spend, then give you a prioritized plan to fix it.
 
 <div class="hc-hero-actions">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
@@ -18,7 +18,7 @@ Find out what's quietly wrong in your NetSuite account — before your auditor d
 
 Most NetSuite accounts accumulate risk silently. Roles drift until someone can create and approve their own payments. Admin access piles up. Periods never get closed. Old tokens and dormant logins stay open. None of it shows up until an audit, a bad actor, or a renewal invoice forces the issue.
 
-A Health Check makes the invisible visible — in 24 hours, not a six-week consulting engagement.
+A Health Check catches all of it in 24 hours, not a six-week consulting engagement.
 
 ## What we find
 
@@ -45,13 +45,13 @@ We assess fifteen areas across access controls, system health, and data governan
 
 ## What you get
 
-A severity-ranked findings report, a remediation roadmap, expert review of the areas automation can't see (approvals config, MFA policy, change process), and a live debrief where we walk through the findings and the fixes. 24 hours from access to debrief — read-only extraction, no data changed, nothing leaves your environment.
+A findings report ranked by severity with a fix-first roadmap. A manual review of the things automation misses: approvals config, MFA policy, change process. And a live debrief where I walk through every finding and what to do about it. 24 hours from access to debrief. Read-only extraction, no data changed, nothing leaves your environment.
 
-This is an expert-reviewed assessment with a debrief, not a script you run yourself.
+This is an expert-reviewed assessment, not a script you run yourself.
 
 <div class="health-check-card">
-  <h3>$2,500 — flat fee</h3>
-  <p>Includes the assessment, the report, the manual-area review, and the debrief. Credited toward whatever comes next.</p>
+  <h3>$2,500, flat fee</h3>
+  <p>Includes the assessment, the report, the manual review, and the debrief. Credited toward whatever comes next.</p>
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=pricing" class="cta-primary">Book Your Health Check</a>
 </div>
 
@@ -69,7 +69,7 @@ Read-only access via a scoped, token-based role. We never modify your account, a
 
 ### What if our account is clean?
 
-Then you get documented proof of a well-governed system — useful for auditors and boards. The grade is earned; a clean account scores an A.
+Then you get documented proof of a well-governed system. Useful for auditors and boards.
 
 ### Do you fix the issues too?
 
