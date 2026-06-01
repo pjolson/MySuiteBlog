@@ -18,7 +18,7 @@ Find out what's quietly wrong in your NetSuite account before your auditor does.
 
 Most NetSuite accounts accumulate risk silently. Roles drift until someone can create and approve their own payments. Admin access piles up. Periods never get closed. Old tokens and dormant logins stay open. None of it shows up until an audit, a bad actor, or a renewal invoice forces the issue.
 
-A Health Check catches all of it in 24 hours, not a six-week consulting engagement.
+A Health Check catches all of it in days, not a six-week consulting engagement.
 
 ## What we find
 
@@ -45,7 +45,7 @@ We assess fifteen areas across access controls, system health, and data governan
 
 ## What you get
 
-A findings report ranked by severity with a fix-first roadmap. A manual review of the things automation misses: approvals config, MFA policy, change process. And a live debrief where I walk through every finding and what to do about it. 24 hours from access to debrief. Read-only extraction, no data changed, nothing leaves your environment.
+A findings report ranked by severity with a fix-first roadmap. A manual review of the things automation misses: approvals config, MFA policy, change process. And a live debrief where we walk through every finding and what to do about it. Report within 24 hours, debrief scheduled with you. Read-only. We extract configuration and metadata, not your transaction data, analyze it securely, and delete it when the engagement ends. Nothing in your account is modified.
 
 This is an expert-reviewed assessment, not a script you run yourself.
 
@@ -61,11 +61,11 @@ This is an expert-reviewed assessment, not a script you run yourself.
 
 ### Is it safe? What access do you need?
 
-Read-only access via a scoped, token-based role. We never modify your account, and we remove our access objects when we're done.
+Read-only access via a scoped, token-based role. We extract configuration and metadata only, not transaction data. We never modify your account, and we remove our access objects when the engagement ends.
 
 ### How long does it take?
 
-24 hours from access to debrief.
+Report within 24 hours. Debrief scheduled with you, usually within the same week.
 
 ### What if our account is clean?
 

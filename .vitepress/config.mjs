@@ -85,7 +85,7 @@ export default defineConfig({
             'name': 'Is the NetSuite Health Check safe? What access do you need?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Read-only access via a scoped, token-based role. We never modify your account, and we remove our access objects when we\'re done.'
+              'text': 'Read-only access via a scoped, token-based role. We extract configuration and metadata only, not transaction data. We never modify your account, and we remove our access objects when the engagement ends.'
             }
           },
           {
@@ -93,7 +93,7 @@ export default defineConfig({
             'name': 'How long does the NetSuite Health Check take?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': '24 hours from access to debrief.'
+              'text': 'Report within 24 hours. Debrief scheduled with you, usually within the same week.'
             }
           },
           {
@@ -101,7 +101,7 @@ export default defineConfig({
             'name': 'What if our NetSuite account is clean?',
             'acceptedAnswer': {
               '@type': 'Answer',
-              'text': 'Then you get documented proof of a well-governed system — useful for auditors and boards. The grade is earned; a clean account scores an A.'
+              'text': 'Then you get documented proof of a well-governed system. Useful for auditors and boards.'
             }
           },
           {
