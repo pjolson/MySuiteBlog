@@ -162,15 +162,9 @@
 /* How I Work steps */
 .how-i-work {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.25rem;
   margin: 1.5rem 0;
-}
-
-@media (max-width: 768px) {
-  .how-i-work {
-    grid-template-columns: 1fr;
-  }
 }
 
 .step-card {
@@ -518,6 +512,92 @@
     text-align: center;
     padding: 1.5rem;
   }
+}
+
+/* Health Check page */
+.hc-hero-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.hc-findings-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hc-findings-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hc-finding {
+  padding: 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.hc-finding h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  color: var(--vp-c-text-1);
+}
+
+.hc-finding p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+}
+
+.hc-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hc-pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hc-pillar {
+  padding: 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+}
+
+.hc-pillar h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  color: var(--vp-c-brand-1);
+}
+
+.hc-pillar ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.hc-pillar li {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+}
+
+.hc-faq h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.05rem;
+}
+
+.hc-faq p {
+  color: var(--vp-c-text-2);
 }
 
 /* Consulting CTA banner */

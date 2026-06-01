@@ -14,7 +14,7 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 <div class="health-check-card">
   <h3>Start here: NetSuite Health Check — $2,500</h3>
   <p>A fixed-scope assessment of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call. Credited toward whatever comes next.</p>
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=health-check" class="cta-primary">Book a Health Check</a>
+  <a href="/netsuite-health-check" class="cta-primary">See What's Included</a>
 </div>
 
 <div class="services-grid offerings-grid">
