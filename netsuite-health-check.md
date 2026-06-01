@@ -1,6 +1,10 @@
 ---
 title: "NetSuite Health Check — Find Hidden Risk in Your Account"
 description: "An expert-reviewed NetSuite Health Check that surfaces segregation-of-duties conflicts, security gaps, audit exposure, and wasted license spend. See a sample report."
+head:
+  - - script
+    - type: application/ld+json
+    - '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the NetSuite Health Check safe? What access do you need?","acceptedAnswer":{"@type":"Answer","text":"Read-only access via a scoped, token-based role. We never modify your account, and we remove our access objects when we're done."}},{"@type":"Question","name":"How long does the NetSuite Health Check take?","acceptedAnswer":{"@type":"Answer","text":"24 hours from access to debrief."}},{"@type":"Question","name":"What if our NetSuite account is clean?","acceptedAnswer":{"@type":"Answer","text":"Then you get documented proof of a well-governed system — useful for auditors and boards. The grade is earned; a clean account scores an A."}},{"@type":"Question","name":"Do you fix the issues found in the Health Check?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Health Check is the diagnosis. We scope remediation separately."}},{"@type":"Question","name":"Does the Health Check work for OneWorld / multi-subsidiary?","acceptedAnswer":{"@type":"Answer","text":"Yes."}}]}'
 ---
 
 # NetSuite Health Check
@@ -165,52 +169,3 @@ Yes.
 <div style="text-align: center; margin: 2.5rem 0;">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=footer" class="cta-primary">Book Your Health Check</a>
 </div>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Is the NetSuite Health Check safe? What access do you need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Read-only access via a scoped, token-based role. We never modify your account, and we remove our access objects when we're done."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does the NetSuite Health Check take?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "24 hours from access to debrief."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if our NetSuite account is clean?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Then you get documented proof of a well-governed system — useful for auditors and boards. The grade is earned; a clean account scores an A."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you fix the issues found in the Health Check?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The Health Check is the diagnosis. We scope remediation separately."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does the Health Check work for OneWorld / multi-subsidiary?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes."
-      }
-    }
-  ]
-}
-</script>
