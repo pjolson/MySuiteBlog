@@ -12,6 +12,11 @@
 <script setup>
 const posts = [
   {
+    title: 'Is Your NetSuite Implementation Going Sideways? 7 Warning Signs',
+    url: '/blog/netsuite-implementation-warning-signs',
+    tags: ['Implementation', 'Advisory']
+  },
+  {
     title: 'Why You Need an Internal NetSuite Expert on Your Implementation Team',
     url: '/blog/netsuite-implementation-resource',
     tags: ['Implementation', 'Advisory']
@@ -29,11 +34,6 @@ const posts = [
   {
     title: 'The Post-Go-Live Cliff',
     url: '/blog/post-go-live-cliff',
-    tags: ['Implementation', 'Advisory']
-  },
-  {
-    title: 'Data Migration Is a Discipline, Not a Weekend Task',
-    url: '/blog/netsuite-data-migration',
     tags: ['Implementation', 'Advisory']
   }
 ]
