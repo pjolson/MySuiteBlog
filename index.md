@@ -16,39 +16,26 @@ hero:
     - theme: alt
       text: View Services
       link: /about/
+
+features:
+  - title: NetSuite Expertise
+    details: "Certified NetSuite implementation advisory, administration, SuiteAnalytics, workflows, and SuiteScript development. See the full picture of what we do."
+    link: /about/
+    linkText: View Services
+  - title: NetSuite Health Check
+    details: "Find what's quietly wrong before your auditor does: access conflicts, security gaps, audit exposure, wasted license spend. A fixed-fee report ranked by risk, with a fix-first roadmap."
+    link: /netsuite-health-check
+    linkText: Learn More
+  - title: Greenlight Approvals
+    details: "Budget-aware, audit-ready approval automation for NetSuite, built for the workflows SuiteFlow can't handle."
+    link: https://greenlightapprovals.io
+    linkText: Learn More
 ---
 
 <div class="home-content">
 
-<div class="health-check-card">
-  <h3>NetSuite Health Check: $2,500</h3>
-  <p>Find out what's quietly wrong in your account before your auditor does: access conflicts, security gaps, audit exposure, wasted license spend. A findings report ranked by risk and a fix-first roadmap, in days.</p>
-  <a href="/netsuite-health-check" class="cta-primary">Learn More</a>
-</div>
+<h2>Featured Posts</h2>
 
-<p class="home-services-line">I also handle <strong>implementation advisory</strong>, <strong>ongoing admin</strong>, and <strong>scoped projects</strong>. <a href="/about/">See Services →</a></p>
-
-<div class="cert-badges cert-badges-5">
-  <img src="./img/erpconsultant.png" alt="Certified ERP Consultant">
-  <img src="./img/adminnew.jpg" alt="Certified Administrator">
-  <img src="./img/foundnew.jpg" alt="SuiteFoundation">
-  <img src="./img/finusernew.jpg" alt="Financial User">
-  <img src="./img/analyticsnew.jpg" alt="SuiteAnalytics User">
-</div>
-
-<h2>Field Notes</h2>
-
-<p class="home-field-notes">Straight talk on NetSuite implementations, controls, and getting your money's worth from your partner.</p>
-
-<a href="/blog/" class="cta-secondary">Read the Blog</a>
-
-<div class="greenlight-service-card">
-  <img src="./img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
-  <div class="greenlight-service-content">
-    <h3>Greenlight Approvals</h3>
-    <p>Budget-aware, audit-ready approval automation for NetSuite.</p>
-    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
-  </div>
-</div>
+<FeaturedPosts />
 
 </div>

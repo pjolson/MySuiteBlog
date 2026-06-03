@@ -32,11 +32,6 @@ const posts = [
     tags: ['Implementation', 'Advisory']
   },
   {
-    title: 'Real-Time Status Pages in NetSuite',
-    url: '/blog/netsuite-realtime-status-page',
-    tags: ['SuiteScript', 'Suitelet', 'MapReduce']
-  },
-  {
     title: 'Data Migration Is a Discipline, Not a Weekend Task',
     url: '/blog/netsuite-data-migration',
     tags: ['Implementation', 'Advisory']
