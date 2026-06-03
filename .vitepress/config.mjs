@@ -137,6 +137,7 @@ export default defineConfig({
       { text: 'Blog', link: '/blog/' },
       { text: 'Services', link: '/about/' },
       { text: 'Health Check', link: '/netsuite-health-check' },
+      { text: 'Partners', link: '/partners/' },
       { text: 'Contact', link: '/contact/' },
       { text: 'Greenlight Approvals', link: 'https://greenlightapprovals.io', target: '_blank' }
     ],
