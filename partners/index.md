@@ -1,5 +1,5 @@
 ---
-title: Partners | MySuite
+title: "NetSuite Tools & Partners"
 description: "Tools and services I trust and work with across the NetSuite ecosystem."
 aside: false
 ---

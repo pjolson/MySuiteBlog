@@ -1,6 +1,6 @@
 ---
 blog_index: true
-title: Blog
+title: "NetSuite Blog: Implementation, Controls & Administration"
 description: "NetSuite tips, tutorials, and guides covering saved searches, formulas, administration, SuiteScript, and more."
 date: 2018-12-11
 ---
