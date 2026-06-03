@@ -20,13 +20,6 @@ hero:
 
 <div class="home-content">
 
-<div class="about-block">
-  <img src="./img/profile.jpg" alt="Patrick Olson" class="about-photo">
-  <div class="about-text">
-    <p>I'm Patrick Olson, a NetSuite Certified ERP Consultant, Certified Administrator, and PMP. I've been on both sides of implementations, building them as the consultant and protecting clients as the advisor in their corner. You get me in every session.</p>
-  </div>
-</div>
-
 <div class="health-check-card">
   <h3>NetSuite Health Check: $2,500</h3>
   <p>Find out what's quietly wrong in your account before your auditor does: access conflicts, security gaps, audit exposure, wasted license spend. A findings report ranked by risk and a fix-first roadmap, in days.</p>
