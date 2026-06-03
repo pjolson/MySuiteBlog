@@ -22,10 +22,6 @@ features:
     details: "Certified NetSuite implementation advisory, administration, SuiteAnalytics, workflows, and SuiteScript development. See the full picture of what we do."
     link: /about/
     linkText: View Services
-  - title: NetSuite Health Check
-    details: "Find what's quietly wrong before your auditor does: access conflicts, security gaps, audit exposure, wasted license spend. A fixed-fee report ranked by risk, with a fix-first roadmap."
-    link: /netsuite-health-check
-    linkText: Learn More
   - title: Greenlight Approvals
     details: "Budget-aware, audit-ready approval automation for NetSuite, built for the workflows SuiteFlow can't handle."
     link: https://greenlightapprovals.io
@@ -33,6 +29,12 @@ features:
 ---
 
 <div class="home-content">
+
+<div class="health-check-card">
+  <h3>NetSuite Health Check: $2,500</h3>
+  <p>Find what's quietly wrong before your auditor does. Access conflicts, security gaps, audit exposure, wasted license spend. Fixed fee, findings in days.</p>
+  <a href="/netsuite-health-check" class="cta-primary">Get Your Health Check</a>
+</div>
 
 <h2>Featured Posts</h2>
 
