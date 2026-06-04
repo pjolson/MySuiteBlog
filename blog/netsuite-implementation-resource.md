@@ -54,7 +54,7 @@ You're not replacing the implementation partner. You're making sure your company
 
 Not every company needs a full-time NetSuite administrator from day one. Implementations typically run 3 to 12 months, and the intensity varies. Early phases are heavy on design and decisions. Mid-project shifts to build and review. Late stages are testing and training.
 
-A fractional resource makes sense for a lot of mid-market companies. You get NetSuite expertise without a full-time salary during a finite project. You can scale hours as the project demands shift. And you're working with someone who has done this across multiple implementations, not just your first one. It also buys time. After go-live, you'll have a much better sense of what ongoing support actually looks like and whether a permanent hire is the right move.
+A fractional resource makes sense for a lot of mid-market companies. You get NetSuite expertise without a full-time salary during a finite project. You can scale hours as the project demands shift. And you're working with someone who has done this across multiple implementations, not just your first one. It also buys time. After go-live, you'll have a much better sense of what ongoing support actually looks like and whether a permanent hire is the right move. I wrote a detailed breakdown of [what a client-side resource actually does week to week](/blog/netsuite-client-side-resource), including the boundaries that keep the role useful to the partner rather than adversarial.
 
 ## What to Look For
 

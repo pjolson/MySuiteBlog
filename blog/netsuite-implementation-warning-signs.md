@@ -49,7 +49,7 @@ Pick a configuration, any one, and ask why it was set up that way. If the only p
 
 None of this means your partner is bad or your project is doomed. Most of the people doing the hands-on work are trying to do right by you. But "we're collaborating" can't quietly turn into "we're trusting and hoping," and the implementations that go well almost always have someone on the client's side who spots these early and does something about them.
 
-That's the job I do. I sit on your side of the table during the implementation, read the SOW, challenge the design, [keep the partner honest](/blog/managing-your-implementation-partner), and make sure the system you launch is the one your business actually needs.
+That's the job I do. I sit on your side of the table during the implementation, read the SOW, challenge the design, [keep the partner honest](/blog/managing-your-implementation-partner), and make sure the system you launch is the one your business actually needs. I wrote a longer piece on [what that role actually looks like day to day](/blog/netsuite-client-side-resource), including what a good client-side resource will and won't do.
 
 If you're mid-project and two or three of these are nagging at you, [let's talk](/about/). The cheapest time to deal with it is before go-live. And if you're already live and wondering what the rush left behind, a [NetSuite Health Check](/netsuite-health-check) will tell you in a few days.
 

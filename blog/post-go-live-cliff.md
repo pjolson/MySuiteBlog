@@ -69,7 +69,7 @@ When hypercare ends, the safety net disappears all at once. That is the cliff.
 
 The companies that handle this well do one or two things:
 
-**They have an internal NetSuite resource before go-live.** I wrote about this in a [previous post](/blog/netsuite-implementation-resource). If someone on your team was involved in design, build, and testing, they carry that context into post-go-live support. They know why things were configured the way they were. They can troubleshoot issues without calling the partner. They can train users because they understand the workflows, not just the documentation.
+**They have an internal NetSuite resource before go-live.** I wrote about [why you need one](/blog/netsuite-implementation-resource) and [what the role looks like in practice](/blog/netsuite-client-side-resource). If someone on your team was involved in design, build, and testing, they carry that context into post-go-live support. They know why things were configured the way they were. They can troubleshoot issues without calling the partner. They can train users because they understand the workflows, not just the documentation.
 
 **They plan for post-go-live support before they get there.** This means budgeting for it, not hoping the team figures it out. Whether that is a full-time hire, a fractional admin, or a managed services contract, the decision should be made during implementation, not after the partner sends the closeout email.
 

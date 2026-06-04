@@ -12,6 +12,11 @@
 <script setup>
 const posts = [
   {
+    title: 'What a Client-Side Resource Does on a NetSuite Implementation',
+    url: '/blog/netsuite-client-side-resource',
+    tags: ['Implementation', 'Advisory']
+  },
+  {
     title: 'Is Your NetSuite Implementation Going Sideways? 7 Warning Signs',
     url: '/blog/netsuite-implementation-warning-signs',
     tags: ['Implementation', 'Advisory']
