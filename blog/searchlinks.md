@@ -10,7 +10,6 @@ tags: ["Basics", "Formulas", "SavedSearch", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 Sometimes, you may find yourself in a situation where you want to link out to another connected record in a Saved Search without having to drill down to the record and then to the Related Record. Thankfully, NetSuite makes this pretty easy with a Formula(text) field. The trick lies in getting the formatting of the formula correct to make this work.
 
@@ -29,11 +28,9 @@ A few rules for crafting this formula:
 
 1.	An "a" tag should include, at least 
 
----
 
     '<a href=”thephysicallinktotherecordyouwant”>link text</a>’
 
----
 
 2.	The whole formula must be enclosed in single quotes ‘    ’
 3.	Whenever you pull data from a field into a formula, it needs to be enclosed in single quotes and pipes ‘|| Data goes here ||’
@@ -102,7 +99,6 @@ There even more things you can achieve with these links, like opening links in p
 Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built approval workflows for NetSuite — no custom code required.
 :::
 
----
 
 
 <ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics — let's talk." />

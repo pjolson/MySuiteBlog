@@ -10,7 +10,6 @@ tags: ["Formulas", "HTML", "JavaScript", "SavedSearch", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 ## Introduction
 
@@ -87,7 +86,6 @@ I hope you enjoyed this 2 part post on dynamic links and link behavior. If you h
 
 [Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics)
 
----
 
 <ConsultingCTA message="I build custom saved search links and drill-downs for clients regularly. If your team needs better reporting or dashboards — let's talk." />
 

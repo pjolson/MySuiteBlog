@@ -9,7 +9,6 @@ tags: ["Admin", "Implementation", "Advisory"]
 
 [[toc]]
 
----
 
 ## The Dynamic Nobody Talks About
 
@@ -100,7 +99,6 @@ Your priority is getting a system that works for your business. Their priority i
 
 That is the job. Not micromanaging consultants. Not second-guessing every configuration. Just making sure that the project stays honest, the scope stays controlled, and your team is not along for the ride on their own implementation.
 
----
 
 <ConsultingCTA message="I help companies manage their NetSuite implementation partners from the inside. If your project needs someone who can review SOWs, challenge change orders, and keep the partner accountable, let's talk." />
 

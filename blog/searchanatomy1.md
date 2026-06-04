@@ -10,7 +10,6 @@ tags: ["Basics", "SavedSearch", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 When creating or updating a Saved Search in NetSuite, there are a lot of options and features to consider. In most cases, you can get by with many of the basic features, but it is useful to know how all the different options affect your search.
 
@@ -76,13 +75,11 @@ Checking this box makes the Saved Search appear in the Reports->Saved Searches d
 **Reports Page**
 ![reports](https://i.imgur.com/Lv5Goyj.png "Available for Reports")
 
----
 
 ## Up Next
 
 I will go over the Criteria section and all the options and features available there.
 
----
 
 
 <ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics — let's talk." />

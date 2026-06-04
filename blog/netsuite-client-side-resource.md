@@ -9,7 +9,6 @@ tags: ["Implementation", "Advisory"]
 
 [[toc]]
 
----
 
 ## The Seat Most Clients Cannot Fill
 
@@ -25,7 +24,6 @@ What happens after that is predictable. Design decisions get rubber-stamped beca
 
 That seam is the role I fill.
 
----
 
 ## What the Role Actually Is
 
@@ -39,7 +37,6 @@ The hands-on piece is where I do functional or data work directly. CSV imports, 
 
 That last part is important and I will come back to it.
 
----
 
 ## What This Looks Like Week to Week
 
@@ -55,7 +52,6 @@ I am watching the change order pipeline. Most change orders are legitimate, real
 
 And I am doing a lot of work that is genuinely boring. Chasing stakeholder approvals. Maintaining the issues log. Prepping training materials. Validating data extracts before they go to the partner for loading. None of this shows up in a slide deck. All of it has to happen for the project to move, and the client's internal people do not have time for it.
 
----
 
 ## What I Will Not Do, and Why
 
@@ -69,7 +65,6 @@ I do not compete with the partner for the next engagement while we are still in 
 
 These are not soft constraints meant to make the partner comfortable. They are the disciplines that keep me from being the kind of client-side resource that sinks implementations. Which brings me to a story.
 
----
 
 ## I Saw This Done Badly Once
 
@@ -85,7 +80,6 @@ What is frustrating in retrospect is that he was technically capable. If he had 
 
 The constraints in the section above are not arbitrary. They are the difference between him and the version of this role that helps.
 
----
 
 ## The Implementation I Worked Most Recently
 
@@ -103,7 +97,6 @@ The project landed. The client went live on a system that mostly worked. The par
 
 This is the part of the role that does not fit on a sales page. Sometimes being on the client's side means telling the client that firing their partner would be a self-inflicted wound. Sometimes it means staying in a meeting where two parties are angry at each other and finding a path forward both of them can take. None of it is glamorous. It is the work.
 
----
 
 ## What to Look For If You Are Hiring Someone for This Role
 
@@ -119,7 +112,6 @@ Are they doing this full-time during the project, or is this a side commitment b
 
 Are they willing to do the unglamorous work? Chasing approvals, validating data, prepping training materials, running the issues log. If their answer is "I focus on the strategic stuff," they are going to leave you with the boring half of the role still unfilled, and that boring half is where most of the project's actual risk lives.
 
----
 
 ## Why the Role Is Worth Hiring For
 
@@ -133,7 +125,6 @@ That is the role. It is not adversarial and it is not deferential. It is the sea
 
 If your implementation has that seat unfilled, fill it. The mistake is leaving it empty.
 
----
 
 <ConsultingCTA message="Running an implementation and the client side is the bottleneck? I fill the seat between your team and the partner: super user, client-side PM, and hands-on support in one role." />
 

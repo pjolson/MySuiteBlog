@@ -9,7 +9,6 @@ tags: ["SuiteScript", "Suitelet", "MapReduce", "Admin"]
 
 [[toc]]
 
----
 
 ## The Problem
 
@@ -576,7 +575,6 @@ The full flow, end to end:
 
 It is not fancy. A custom record, a Suitelet with three routes, a Map/Reduce that updates log rows, and 80 lines of polling JavaScript. But it turns "I submitted something and I hope it worked" into "I can see exactly what happened to every record." For users running bulk operations in NetSuite, that difference matters.
 
----
 
 <ConsultingCTA message="I build custom Suitelets, Map/Reduce scripts, and workflow automation for NetSuite teams. If your users are running bulk operations blind, I can help you fix that." />
 

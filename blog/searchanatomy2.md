@@ -14,7 +14,6 @@ tags: ["Basics", "SavedSearch", "SuiteAnalytics"]
 
 The “Criteria” section of the saved search editor allows you to narrow down your results to see only the data that is useful or relevant to you. The criteria subtab is simple to grasp but can become as complex as you need it to be to retrieve the specific dataset you are search for.
 
----
 
 ### Filters
 
@@ -46,14 +45,12 @@ You can filter by a few different types of field data
 
 While building these criteria I chose to be inclusive and select Type IS Sales Order, but you can do the opposite and request Type is none of Sales Order and the search would return all transaction types EXCEPT Sales Orders.
 
----
 
 ### Standard vs Summary
 
 - Standard filters will filter any data in the saved search that has not been summarized
 - Summary allows you to filter summarized data. Results can be rolled up into summary data in the Results section and will be covered in my next post on Results
 
----
 
 ### Use Expressions
 
@@ -71,13 +68,11 @@ Use Expressions offers up to 3 levels of parenthesis with and/or logic on each l
 - The more complex the criteria, the longer time it may take for the search to run
     - I have gotten very complex in the past and tried to use the search as a Custom Search Dashboard Portlet and it would take minutes for the portlet to refresh.
 
----
 
 ## Up Next
 
 I will go over the Results section of the Saved Search editor and discuss some of my favorite tools located there.
 
----
 
 
 <ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics — let's talk." />

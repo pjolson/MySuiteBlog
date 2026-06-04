@@ -10,7 +10,6 @@ tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
 
 [[toc]]
 
----
 
 ## Problem
 
@@ -52,7 +51,6 @@ The code block uses HTML and JavaScript to Source the field data from the Defaul
 
 ![definitions](https://i.imgur.com/iIJKWNQ.png "Custom Default Shipping Address Field")
 
----
 
 ### No Default Shipping???
 
@@ -77,7 +75,6 @@ This code block contains a SQL formula that is looking to see if the first line 
 
 ![definitions](https://i.imgur.com/JtcpD20.png "Field with no default address")
 
----
 
 ### Pro Tip: Avoid some annoyance
 
@@ -87,7 +84,6 @@ In this case, the first field I created contained HTML and will throw an error i
 
 The second field we created did contain a formula and should be marked as FORMULA = T.
 
----
 
 ## Conclusion
 

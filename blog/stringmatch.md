@@ -10,7 +10,6 @@ tags: ["CaseWhen", "Formulas", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 ## Introduction
 
@@ -34,7 +33,6 @@ Here are what the forms end up looking like.
 ![Child Record](https://i.imgur.com/B9BhDlq.png "Child Record")
 
 
----
 
 ## Build the formula
 

@@ -9,7 +9,6 @@ tags: ["Admin", "Implementation", "Advisory", "DataMigration"]
 
 [[toc]]
 
----
 
 ## The Partner Gives You Templates. The Data Is Yours.
 
@@ -144,7 +143,6 @@ If your implementation just kicked off, put these items on the agenda now:
 
 If your implementation is already underway and nobody has answered those questions, that conversation is overdue. The answers will not get easier as go-live gets closer.
 
----
 
 <ConsultingCTA message="Data migration planning is one of the first things I look at when advising on a NetSuite implementation. If your team is staring down a migration and not sure where to start, let's talk." />
 

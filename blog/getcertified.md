@@ -9,7 +9,6 @@ tags: ["Certification", "SuiteFoundation", "Admin"]
 
 [[toc]]
 
----
 
 ## The Program Has Changed
 
@@ -17,7 +16,6 @@ If you last looked at NetSuite certifications a few years ago, the program you r
 
 We originally published a certification study guide in 2019. The study advice still holds up, but the program around it looks completely different now. This post covers what certs exist today, which ones matter depending on your role, and how to approach them.
 
----
 
 ## The Certification Landscape
 
@@ -39,7 +37,6 @@ Everything now sits in one of three tiers: **Associate**, **Specialist**, and **
 
 One practitioner caveat about the tracks themselves. They are useful scaffolding for deciding what to study, but they are not rigid gates, and they are not what goes on your resume. List the exact certifications you hold. No hiring manager is filtering for "completed the BI and Reporting track." They are filtering for "Administrator Professional" or "ERP Consultant Professional." The track is a study path. The exam is the credential.
 
----
 
 ## Which Cert Should You Get First?
 
@@ -59,7 +56,6 @@ After that, the path follows your role.
 
 The free Associate exams are worth the afternoon they take. They are real credentials and they feed the tracks above. But be honest about what they are: recognition, not leverage. The market still hires on SuiteFoundation, Administrator, and ERP Consultant. An Associate cert is a fine thing to have and a thin thing to lead with.
 
----
 
 ## Exam Logistics
 
@@ -69,7 +65,6 @@ A few practical details that have changed:
 
 **Platform.** Oracle moved exam registration and delivery to MyLearn in mid-2025. If you last registered through Webassessor, that is retired for new exams. Only the transitional recertification quiz still runs there. Start at [Oracle MyLearn](https://mylearn.oracle.com).
 
----
 
 ## Recertification
 
@@ -79,7 +74,6 @@ NetSuite is developing a new recertification program inside MyLearn. Until that 
 
 Treat the NRQ as the current mechanism, not the permanent one. The format, platform, and pricing of whatever MyLearn ships next are explicitly not guaranteed to match it. The one constant, across the old model and the new, is the release notes. If you read them every cycle, recertification is a formality you pass open-book in twenty minutes. If you have been ignoring them, the quiz is the system telling you to stop.
 
----
 
 ## Study Approach
 
@@ -106,7 +100,6 @@ These badges were earned under the old exam names, which is how they should stay
 <img src="./img/analyticsnew.jpg" width=48% alt="NetSuite SuiteAnalytics User Certified">
 <img src="./img/finusernew.jpg" width=48% alt="NetSuite Financial User Certified">
 
----
 
 <ConsultingCTA message="Need a certified NetSuite admin on your team? We offer fractional administration and advisory support for organizations running NetSuite." />
 

@@ -9,7 +9,6 @@ tags: ["Admin", "Implementation", "Advisory"]
 
 [[toc]]
 
----
 
 ## The Scenario
 
@@ -70,7 +69,6 @@ An implementation partner delivers the system. An internal resource makes sure i
 
 If you're in the middle of an implementation and feeling like things are moving faster than your team can keep up with, that's the signal. Get someone in your corner who speaks the language.
 
----
 
 <ConsultingCTA message="I've been on both sides of NetSuite implementations. If you need a certified admin and PMP who can represent your team's interests during an implementation, let's talk." />
 

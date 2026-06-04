@@ -10,7 +10,6 @@ tags: ["Formulas", "HTML", "SavedSearch", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 ## Introduction
 
@@ -65,7 +64,6 @@ The second search will be the drill-down search and will contain all of the item
 
 ![Child Record](https://i.imgur.com/6bcHQ0q.png "Items on Sales Orders")
 
----
 
 ### Crafting the link
 
@@ -82,7 +80,6 @@ The link from my filtered results looks like this:
     https://system.na3.netsuite.com/app/common/search/searchresults.nl?searchtype=Transaction&Transaction_INTERNALID=10537&style=NORMAL&report=&grid=&searchid=1175&dle=F&sortcol=Transction_FRETION17_raw&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&size=100&twbx=F
 
 
----
 
 ### Add the link to the primary search
 
@@ -106,7 +103,6 @@ The link we used in our Formula(text) column is not very helpful for our purpose
 
     https://system.na3.netsuite.com/app/common/search/searchresults.nl?searchtype=Transaction&Transaction_INTERNALID=10537&style=NORMAL&report=&grid=&searchid=1175&dle=F&sortcol=Transction_FRETION17_raw&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&size=100&twbx=F
 
----
 
 ### Make the link dynamic
 
@@ -124,7 +120,6 @@ for
 
 - INTERNALID='||{internalid}||'
 
----
 
 ### Add the dynamic link to Search #1
 
@@ -137,7 +132,6 @@ Now the FORMULA(TEXT) column contains links labeled 'Items on SO' and if you cli
 
 ![Parent Record](https://i.imgur.com/s7MSm84.png "Dynamic Link")
 
----
 
 ![Child Record](https://i.imgur.com/lj5aA8y.png "Results")
 

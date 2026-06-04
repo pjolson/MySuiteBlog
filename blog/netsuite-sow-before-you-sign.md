@@ -9,7 +9,6 @@ tags: ["Admin", "Implementation", "Advisory"]
 
 [[toc]]
 
----
 
 ## Two Contracts, One Decision
 
@@ -161,7 +160,6 @@ Have someone on your side read both contracts. Not your lawyer. Someone who unde
 
 That is the job I do. But whether it is me or someone else, do not sign without it.
 
----
 
 <ConsultingCTA message="I review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
 

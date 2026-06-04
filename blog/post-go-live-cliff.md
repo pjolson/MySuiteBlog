@@ -9,7 +9,6 @@ tags: ["Admin", "Implementation", "Advisory"]
 
 [[toc]]
 
----
 
 ## Go-Live Is Not the Finish Line
 
@@ -81,7 +80,6 @@ If you are going to bring in post-go-live support, the timing matters. That pers
 
 A clean handoff from partner to internal support almost never happens. What works is an overlap period where the incoming resource absorbs context from the outgoing team. Without that overlap, you are hiring someone to maintain a system they did not build, with documentation they have never read, for a team they have never met. That is not a setup for success.
 
----
 
 <ConsultingCTA message="If your implementation is wrapping up and you don't have a plan for what comes next, that's the conversation to have now. I help companies bridge the gap between implementation and ongoing operations." />
 

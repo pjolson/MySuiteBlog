@@ -10,7 +10,6 @@ tags: ["CaseWhen", "Formulas", "SavedSearch", "SuiteAnalytics"]
 
 [[toc]]
 
----
 
 NetSuite has a number of useful highlighting tools for saved searches. These tools can be used to call out important data in a saved search and generally highlight at the line level. You can highlight lines in saved searches by condition and highlight using:
 - Adding an image at the left
@@ -26,17 +25,14 @@ In this example, I have created a Transaction Saved Search with criteria set to 
 ![criteria](https://i.imgur.com/ENdKcWp.png "criteria")
 
 
----
 I have set the results to show some data about the POs:
 
 ![results](https://i.imgur.com/8JIHTK1.png "results")
 
----
 The highlighting is set to add an image - "Red Arrow Left" if Status = Pending Billing and a mix of other highlights if Status = Fully Billed.
 
 ![highlighting](https://i.imgur.com/Q1fww5E.png "highlighting")
 
----
 The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have very few caveats. 
 
 ![output](https://i.imgur.com/5hd9ZXq.png "output1")
@@ -75,11 +71,9 @@ And the output:
 
 ![output2](https://i.imgur.com/Zze92Us.png "output2")
 
----
 
 This method for highlighting can get very complex. The CASE statement accepts multiple WHENs and could be used to highlight in multiple styles.
 
----
 
 ### Simple cell Highlighting example
 
@@ -95,7 +89,6 @@ Adding this as a formula(text) field will simply write the Date field in red.
 ![output3](https://i.imgur.com/imgugg7.png "output3")
 
 ## Conclusion
----
 These are a few of the different highlighting tools I use in NetSuite. There are more advanced cases of using formula fields that go beyond styling that I will cover in future posts.
 
 

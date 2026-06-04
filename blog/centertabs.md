@@ -10,7 +10,6 @@ tags: ["Centers", "Navigation", "SuiteBuilder"]
 
 [[toc]]
 
----
 
 ## Center Tabs
 
@@ -52,7 +51,6 @@ In my earlier example, I created a Center Tab called Help Desk with some Categor
 
 ![CenterTab](https://i.imgur.com/jJmp8Oi.png "Editor Complete")
 
----
 
 ## Create Center Links
 
@@ -61,7 +59,6 @@ Create them by navigating to Customization->Centers and Tabs-Center Links.
 
 ![TabLinks](https://i.imgur.com/t5hVhg5.png "Center Tab Links")
 
----
 
 ## Create Categories
 
@@ -86,7 +83,6 @@ After saving Center Category, I can check my nav bar to see if the Center Tab an
 
 ![ViewLinks](https://i.imgur.com/NIyJ5h3.png "View Links")
 
----
 
 ## Add Portlets
 
