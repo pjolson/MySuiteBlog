@@ -89,6 +89,8 @@ The second field we created did contain a formula and should be marked as FORMUL
 
 This solution is a simple way to source in another default address into a custom field. It is also a good introduction to Inline HTML fields and power of styling individual custom fields. Inline HTML fields are a simple solution for adding styled text effects to custom forms to help call out data for users and increase form readability.
 
+Multi-entity setups are also where segregation of duties gets hard, because the same person often ends up able to create and approve across subsidiaries. I cover where NetSuite's native controls hold and where they stop in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
+
 ::: tip Struggling with approval routing across entities or locations?
 Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightapprovals.io) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
 :::

@@ -12,7 +12,7 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 </div>
 
 <div class="health-check-card">
-  <h3>Start here: NetSuite Health Check — $2,500</h3>
+  <h3>Start here: NetSuite Health Check, $2,500</h3>
   <p>A fixed-scope assessment of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call. Credited toward whatever comes next.</p>
   <a href="/netsuite-health-check" class="cta-primary">See What's Included</a>
 </div>
@@ -44,7 +44,7 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
   <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
   <div class="greenlight-service-content">
     <h3>Greenlight Approvals</h3>
-    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off — built for the approval workflows that SuiteFlow can't handle.</p>
+    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off, built for the approval workflows that SuiteFlow can't handle.</p>
     <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
   </div>
 </div>

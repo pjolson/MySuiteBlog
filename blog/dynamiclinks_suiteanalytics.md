@@ -142,8 +142,10 @@ Mastering the creation of dynamic links in saved searches is an invaluable skill
 
 In my next post, I will outline a couple of ways to improve the link created in this example to show how to open the drill-down search in a new tab and in a pop-up window.
 
+If you are reporting on approvals, the report auditors care about most is the one proving approver independence. See [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties) for why that is harder to prove than it looks.
+
 ::: tip Need better visibility into approval status?
-Dynamic links are great for drilling into data — but if you're building approval workflows, [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built routing, delegation, and tracking without the formula gymnastics.
+Dynamic links are great for drilling into data, but if you're building approval workflows, [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built routing, delegation, and tracking without the formula gymnastics.
 :::
 
 #### A note on html in saved searches
@@ -160,7 +162,7 @@ Dynamic links are great for drilling into data — but if you're building approv
     `
 
 
-<ConsultingCTA message="Dynamic links and formula fields are some of the most powerful tools in NetSuite. I help teams build searches that actually drive decisions — let's talk." />
+<ConsultingCTA message="Dynamic links and formula fields are some of the most powerful tools in NetSuite. I help teams build searches that actually drive decisions. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/25/2018 

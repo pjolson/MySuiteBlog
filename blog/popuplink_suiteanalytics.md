@@ -87,7 +87,7 @@ I hope you enjoyed this 2 part post on dynamic links and link behavior. If you h
 [Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics)
 
 
-<ConsultingCTA message="I build custom saved search links and drill-downs for clients regularly. If your team needs better reporting or dashboards — let's talk." />
+<ConsultingCTA message="I build custom saved search links and drill-downs for clients regularly. If your team needs better reporting or dashboards, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/26/2018 

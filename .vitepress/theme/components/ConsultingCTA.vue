@@ -2,7 +2,7 @@
 const props = defineProps({
   message: {
     type: String,
-    default: 'I offer contract NetSuite administration and development support — from quick fixes to ongoing managed services.'
+    default: 'I offer contract NetSuite administration and development support, from quick fixes to ongoing managed services.'
   }
 })
 </script>

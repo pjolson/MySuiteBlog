@@ -95,13 +95,15 @@ If you want the record to open in edit mode, simply add &e=T to the end of the U
 
 There even more things you can achieve with these links, like opening links in pop up windows, performing actions on click, etc. But I wanted to keep this first post simple. Whenever I create one of these links, I always refer to a working version to begin crafting my new search link. I hope you bookmark this post to help you the next time you need to start a linked column like this.
 
+A close cousin of the search in this post is the one your auditor eventually asks for: every transaction where the creator and the approver are the same person. That search is useful, but a saved search on its own is a detective control, not enforcement. I get into why that matters in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
+
 ::: tip Building approval workflows in NetSuite?
-Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built approval workflows for NetSuite — no custom code required.
+Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built approval workflows for NetSuite, no custom code required.
 :::
 
 
 
-<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics — let's talk." />
+<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/27/2018 

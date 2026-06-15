@@ -99,8 +99,10 @@ Adding Portlets to a Custom Center Tab will allow the user to customize the Cust
 
 
 
+Center tabs are limited by role and audience, which is really an access-control decision. Access control is only the first half of [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties). The second half, making sure the person who creates a transaction cannot also approve it, is where the native tools stop.
+
 ::: tip Want approvals that work as smoothly as your navigation?
-If you're customizing NetSuite to fit your team's workflow, take a look at [Greenlight Approvals](https://greenlightapprovals.io) — fast, reliable approval workflows built for NetSuite.
+If you're customizing NetSuite to fit your team's workflow, take a look at [Greenlight Approvals](https://greenlightapprovals.io): fast, reliable approval workflows built for NetSuite.
 :::
 
 <ConsultingCTA message="Custom center tabs, roles, and navigation are just the start. I help teams configure NetSuite to match how they actually work." />
