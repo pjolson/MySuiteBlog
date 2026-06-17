@@ -26,10 +26,11 @@ A formula field in NetSuite can contain HTML tags. I covered this in a previous 
 
 A few rules for crafting this formula:
 
-1.	An "a" tag should include, at least 
+1.	An "a" tag should include, at least
 
-
-    '<a href=”thephysicallinktotherecordyouwant”>link text</a>’
+    ```html
+    '<a href="thephysicallinktotherecordyouwant">link text</a>'
+    ```
 
 
 2.	The whole formula must be enclosed in single quotes ‘    ’
