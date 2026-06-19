@@ -74,57 +74,40 @@ export default defineConfig({
       )
     }
 
-    // FAQ schema for health check page
+    // FAQ schema (per-page Q&A -> FAQPage JSON-LD).
+    // The page must also render the same Q&A visibly for Google to honor it.
     if (pageData.frontmatter.faqSchema) {
-      const faqLd = {
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        'mainEntity': [
-          {
-            '@type': 'Question',
-            'name': 'Is the NetSuite Health Check safe? What access do you need?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and all access objects are removed when the engagement ends.'
-            }
-          },
-          {
-            '@type': 'Question',
-            'name': 'How long does the NetSuite Health Check take?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Report within 24 hours. Debrief scheduled with you, usually within the same week.'
-            }
-          },
-          {
-            '@type': 'Question',
-            'name': 'What if our NetSuite account is clean?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Then you get documented proof of a well-governed system. Useful for auditors and boards.'
-            }
-          },
-          {
-            '@type': 'Question',
-            'name': 'Do you fix the issues found in the Health Check?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Yes. The Health Check is the diagnosis. I scope remediation separately.'
-            }
-          },
-          {
-            '@type': 'Question',
-            'name': 'Does the Health Check work for OneWorld / multi-subsidiary?',
-            'acceptedAnswer': {
-              '@type': 'Answer',
-              'text': 'Yes.'
-            }
-          }
+      const faqByPath = {
+        'netsuite-health-check.md': [
+          { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and all access objects are removed when the engagement ends.' },
+          { q: 'How long does the NetSuite Health Check take?', a: 'Report within 24 hours. Debrief scheduled with you, usually within the same week.' },
+          { q: 'What if our NetSuite account is clean?', a: 'Then you get documented proof of a well-governed system. Useful for auditors and boards.' },
+          { q: 'Do you fix the issues found in the Health Check?', a: 'Yes. The Health Check is the diagnosis. I scope remediation separately.' },
+          { q: 'Does the Health Check work for OneWorld / multi-subsidiary?', a: 'Yes.' }
+        ],
+        'blog/netsuite-bill-capture-email-relay.md': [
+          { q: 'What is NetSuite Bill Capture?', a: 'NetSuite Bill Capture is the SuiteApp that scans vendor bills and lets you submit invoices by email or upload. The email submission feature is sometimes called the Email Capture Plugin. Bill Capture reads the sender address of each inbound email to decide whether the submission is allowed.' },
+          { q: 'Can you disable the vendor notification emails NetSuite Bill Capture sends?', a: 'Not natively. There is no setting to turn off the confirmation and rejection emails Bill Capture sends back to the original sender. The request is logged in the NetSuite SuiteIdeas portal as enhancement 756799 and has been open since at least 2024. Routing AP email through a relay inbox keeps those notifications away from your vendors.' },
+          { q: 'Does the NetSuite Transaction Email Plugin control Bill Capture emails?', a: 'No. Admins often reach for the Transaction Email Plugin to customize or suppress transaction notifications, but it does not cover the confirmation and rejection emails Bill Capture sends on email submissions. Those messages are separate, and there is no supported way to disable them as of mid-2026.' },
+          { q: 'Is Bill Capture the same as the NetSuite Email Capture Plugin or Email Plugin?', a: 'The terms get used loosely. The current SuiteApp is Bill Capture, and its email submission option is what many admins call the Email Capture Plugin or simply the Email Plugin. It is different from the Transaction Email Plugin, which is a separate SuiteScript plugin for customizing transaction emails.' },
+          { q: 'How do you let any vendor email invoices into NetSuite without pre-registering them?', a: 'Bill Capture only accepts email from sender addresses registered on a vendor record. Routing all AP email through a single relay inbox that forwards to NetSuite means every submission arrives from one approved sender, so you can accept invoices from any vendor without configuring their address first. Keep your downstream approval controls strong, since this removes a layer of access control.' }
         ]
       }
-      pageData.frontmatter.head.push(
-        ['script', { type: 'application/ld+json' }, JSON.stringify(faqLd)]
-      )
+      const faqItems = faqByPath[pageData.relativePath]
+      if (faqItems) {
+        const faqLd = {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          'mainEntity': faqItems.map(item => ({
+            '@type': 'Question',
+            'name': item.q,
+            'acceptedAnswer': { '@type': 'Answer', 'text': item.a }
+          }))
+        }
+        pageData.frontmatter.head.push(
+          ['script', { type: 'application/ld+json' }, JSON.stringify(faqLd)]
+        )
+      }
     }
   },
 
