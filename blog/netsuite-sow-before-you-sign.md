@@ -3,6 +3,7 @@ title: "What to Look for in Your NetSuite SOW Before You Sign It"
 date: 2026-05-19
 description: "The NetSuite order form and implementation SOW are two contracts that most companies treat as separate decisions. They aren't. Here's what to look for before you sign either one."
 tags: ["Admin", "Implementation", "Advisory"]
+faqSchema: true
 ---
 
 # What to Look for in Your NetSuite SOW Before You Sign It
@@ -160,6 +161,27 @@ Have someone on your side read both contracts. Not your lawyer. Someone who unde
 
 That is the job I do. But whether it is me or someone else, do not sign without it.
 
+## Frequently Asked Questions
+
+### What questions should you ask a NetSuite reseller before signing?
+
+Challenge every module on the order form: do you have a business process that needs it today, and what does the base platform already do? Confirm each user is licensed at the right level, Full Access versus Employee Center. Get renewal terms in writing, including discount preservation, an annual increase cap, and module-level line-item pricing. Then map everything shown in the sales demo against the actual SOW deliverables, because the delivery team builds from the SOW, not the demo.
+
+### What is the difference between a NetSuite Full Access and Employee Center license?
+
+A Full Access license, roughly $99 to $199 per user per month, can run transactions, pull reports, build saved searches, and administer the system. An Employee Center license, around $10 to $25 per user per month, is limited to submitting time and expenses, entering and approving purchase orders, and approving vendor bills. Licensing follows the highest-permission role assigned, so a user with any standard role consumes a full license even if they also have Employee Center.
+
+### Does the NetSuite discount expire at renewal?
+
+Usually yes. Initial NetSuite pricing almost always includes a discount structured to expire at the end of the initial term, after which you renew at list price, sometimes with an annual uplift clause on top. Negotiate discount preservation, an increase cap of 3 to 5 percent, and module-level pricing into the renewal terms before you sign, not after.
+
+### What should a NetSuite implementation SOW include?
+
+It should define data migration in detail (number of test loads, who owns cleansing, what is in scope, who pays for rework), integrations (direction, frequency, field mapping, middleware, ownership after go-live), role-based training with written materials, post-go-live hypercare (duration, hours, response times, escalation), and documentation as a named deliverable with a handoff date. A two-word line item like "data migration" is a placeholder, not a deliverable.
+
+### Is the NetSuite sales team the same as the implementation team?
+
+No. The sales engineers and account executives who sell and demo NetSuite are not the people who implement it. The implementation partner works from the Statement of Work, not the demo or the sales call, so anything that was shown but is not written into the SOW is out of scope. After every demo, write down the specific capabilities you were shown and map them against the SOW deliverables before you sign.
 
 <ConsultingCTA message="I review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
 
