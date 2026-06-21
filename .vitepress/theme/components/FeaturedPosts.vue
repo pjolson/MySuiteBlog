@@ -17,9 +17,9 @@ const posts = [
     tags: ['Implementation', 'Advisory']
   },
   {
-    title: 'Is Your NetSuite Implementation Going Sideways? 7 Warning Signs',
-    url: '/blog/netsuite-implementation-warning-signs',
-    tags: ['Implementation', 'Advisory']
+    title: 'Why NetSuite Implementation Partners Should Want a Client-Side Resource',
+    url: '/blog/netsuite-partner-client-side-resource',
+    tags: ['Implementation', 'Partners']
   },
   {
     title: 'Why You Need an Internal NetSuite Expert on Your Implementation Team',
@@ -32,9 +32,9 @@ const posts = [
     tags: ['Implementation', 'Advisory']
   },
   {
-    title: 'Your NetSuite Implementation Partner Works for You. Act Like It.',
-    url: '/blog/managing-your-implementation-partner',
-    tags: ['Implementation', 'Advisory']
+    title: 'Managing NetSuite Bill Capture Email Notifications and Sender Restrictions',
+    url: '/blog/netsuite-bill-capture-email-relay',
+    tags: ['Admin', 'Bill Capture']
   },
   {
     title: 'The Post-Go-Live Cliff',
