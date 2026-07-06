@@ -70,7 +70,7 @@ The companies that handle this well do one or two things:
 
 **They have an internal NetSuite resource before go-live.** I wrote about [why you need one](/blog/netsuite-implementation-resource) and [what the role looks like in practice](/blog/netsuite-client-side-resource). If someone on your team was involved in design, build, and testing, they carry that context into post-go-live support. They know why things were configured the way they were. They can troubleshoot issues without calling the partner. They can train users because they understand the workflows, not just the documentation.
 
-**They plan for post-go-live support before they get there.** This means budgeting for it, not hoping the team figures it out. Whether that is a full-time hire, a fractional admin, or a managed services contract, the decision should be made during implementation, not after the partner sends the closeout email.
+**They plan for post-go-live support before they get there.** This means budgeting for it, not hoping the team figures it out. Whether that is a full-time hire, a fractional admin, or a managed services contract, the decision should be made during implementation, not after the partner sends the closeout email. Working through a [go-live readiness checklist](/blog/netsuite-go-live-readiness-checklist) before launch forces that decision into the open, because support and ownership are two of the things it makes you prove.
 
 The worst position to be in is making a hiring decision while your finance team is struggling through month-end close and your warehouse is running on spreadsheets. That is reactive. It is expensive. And the candidates you find in a hurry are not always the right ones.
 

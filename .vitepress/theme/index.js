@@ -7,6 +7,7 @@ import TagLinks from './components/TagLinks.vue'
 import HubSpotForm from './components/HubSpotForm.vue'
 import GreenlightBanner from './components/GreenlightBanner.vue'
 import ConsultingCTA from './components/ConsultingCTA.vue'
+import ChecklistCTA from './components/ChecklistCTA.vue'
 import FeaturedPosts from './components/FeaturedPosts.vue'
 
 export default {
@@ -18,6 +19,7 @@ export default {
     app.component('HubSpotForm', HubSpotForm)
     app.component('GreenlightBanner', GreenlightBanner)
     app.component('ConsultingCTA', ConsultingCTA)
+    app.component('ChecklistCTA', ChecklistCTA)
     app.component('FeaturedPosts', FeaturedPosts)
   }
 }

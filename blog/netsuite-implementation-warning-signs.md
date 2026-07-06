@@ -39,7 +39,7 @@ Migration gets shoved into the last few weeks before go-live, which is exactly b
 
 Finance set a go-live date, usually pinned to a quarter close or year-end, and now it's untouchable. Fine. But watch what happens behind it. Scope keeps growing. UAT gets squeezed from three weeks to one. The open-issues list isn't actually shrinking. And the date still doesn't budge.
 
-I've watched a team hit their date on paper and then spend the next two quarters cleaning up everything that got rushed to make it. If the date can't move, the scope has to. Somebody has to be willing to say that out loud while there's still time to choose.
+I've watched a team hit their date on paper and then spend the next two quarters cleaning up everything that got rushed to make it. If the date can't move, the scope has to. Somebody has to be willing to say that out loud while there's still time to choose. And before you commit to that date, work through a [go-live readiness checklist](/blog/netsuite-go-live-readiness-checklist) honestly, because it tells you whether you've earned the launch or are just hoping the rush holds together.
 
 ## 7. Nobody can tell you why
 

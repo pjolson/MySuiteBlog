@@ -689,6 +689,87 @@
   text-decoration: none;
 }
 
+/* Go-live printable checklist */
+.golive-checklist {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+
+.golive-checklist > p:first-child {
+  margin-top: 0;
+}
+
+.golive-checklist ul {
+  list-style: none;
+  padding-left: 1.75rem;
+  margin: 0.5rem 0 1.25rem;
+}
+
+.golive-checklist li {
+  position: relative;
+  margin: 0.35rem 0;
+  line-height: 1.5;
+  break-inside: avoid;
+}
+
+.golive-checklist li::before {
+  content: "\2610";
+  position: absolute;
+  left: -1.75rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--vp-c-brand-1);
+}
+
+/* Gated checklist download card */
+.checklist-cta {
+  margin: 2.5rem 0;
+  padding: 1.75rem 2rem;
+  border: 2px solid var(--vp-c-brand-1);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
+}
+
+.checklist-cta h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: var(--vp-c-brand-1);
+}
+
+.checklist-cta p {
+  margin: 0 0 1.25rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+
+.checklist-cta-todo {
+  font-style: italic;
+  color: var(--vp-c-text-3);
+}
+
+/* Print: drop site chrome and CTAs so the checklist prints clean */
+@media print {
+  .VPNav,
+  .VPLocalNav,
+  .VPSidebar,
+  .VPFooter,
+  .VPDocFooter,
+  .VPDocAside,
+  .consulting-cta,
+  .checklist-cta {
+    display: none !important;
+  }
+
+  .golive-checklist {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+}
+
 /* Featured posts grid */
 .featured-grid {
   display: grid;
