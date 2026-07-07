@@ -77,10 +77,14 @@ function forwardToNetSuite() {
   var label = GmailApp.getUserLabelByName(processedLabel) ||
               GmailApp.createLabel(processedLabel);
 
-  // Only look at unprocessed threads that actually carry an attachment.
+  // Only look at unprocessed threads in the inbox that actually carry
+  // an attachment. Scoping to in:inbox is critical: without it, the
+  // search also matches the messages this script sends (which land in
+  // Sent with their attachments), and the script forwards its own
+  // output back to NetSuite over and over, creating an infinite loop.
   // NetSuite's reply notifications have no attachment, so they never
   // enter the loop in the first place.
-  var threads = GmailApp.search("-label:" + processedLabel + " has:attachment", 0, 10);
+  var threads = GmailApp.search("in:inbox -label:" + processedLabel + " has:attachment", 0, 10);
 
   threads.forEach(function(thread) {
     thread.getMessages().forEach(function(message) {
@@ -124,7 +128,8 @@ Run the function once manually to grant Gmail permissions when prompted. Then se
 A few notes on how this version behaves:
 
 - It uses a Gmail label rather than read or unread status to track processed emails, so it will not miss an email just because you opened it before the script ran.
-- The `has:attachment` search filter, combined with the excluded-senders list, keeps NetSuite's own confirmation and rejection emails from being relayed back and creating a loop.
+- The search is scoped to `in:inbox`, which is the single most important detail. Without it, the search also matches the messages the script itself sends (they land in Sent with their attachments), so the script forwards its own output back to NetSuite again and again in an infinite loop. Scoping to the inbox keeps the script looking only at genuinely inbound mail.
+- The `has:attachment` filter, combined with the excluded-senders list, keeps NetSuite's own confirmation and rejection emails from being relayed back into the loop.
 - Filtering out inline images means vendor signature logos do not get forwarded as junk attachments that confuse Bill Capture's document matching.
 - Sending from the account the script runs under means there is no hardcoded sender address to maintain.
 
