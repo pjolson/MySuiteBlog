@@ -99,7 +99,7 @@ Now there will be a green checkmark to the right side of records where Parent/Ch
 
 ## Conclusion
 
-The CASE WHEN formula is a deep topic and it has many use cases. It can be used every day in your saved searches, workflows, custom records and fields. The list goes on and on. This is a simple use case that allows for excellent comparison across records and fields.
+The CASE WHEN formula is a deep topic and it has many use cases. It can be used every day in your saved searches, workflows, custom records and fields. The list goes on and on. This is a simple use case that allows for excellent comparison across records and fields. It also does the heavy lifting behind [aging buckets and other date formulas](/blog/netsuite-saved-search-date-formulas), where the same logic sorts records by how many days old they are.
 
 One common CASE WHEN job in a compliance context is flagging records where the person who created a transaction also approved it. It works as a check, but catching a violation after the fact is not the same as preventing it. More on that distinction in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 

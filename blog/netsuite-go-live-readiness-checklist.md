@@ -192,8 +192,6 @@ Here is the whole thing in one place. Print it, take it into your readiness revi
 
 </div>
 
-<ChecklistCTA />
-
 ## Frequently Asked Questions
 
 ### How far before go-live should we start readiness checks?
