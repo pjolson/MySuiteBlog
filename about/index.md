@@ -38,8 +38,6 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
   </div>
 </div>
 
-<p style="text-align: center; color: var(--vp-c-text-2); font-size: 0.9rem; margin-top: 0.5rem;">One-off help is $225/hr, two-hour minimum.</p>
-
 <div class="greenlight-service-card">
   <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
   <div class="greenlight-service-content">
