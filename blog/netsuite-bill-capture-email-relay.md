@@ -152,7 +152,7 @@ The more realistic threat is not a random actor but a targeted one: someone impe
 The relay approach trades a pre-registration access control for operational simplicity. Whether that tradeoff is appropriate depends on your transaction volumes, vendor base, and downstream approval process. If you have mature AP approval workflows, the risk is manageable. If you are processing high-value invoices without strong approval controls, the pre-registration requirement is a meaningful extra safeguard worth keeping.
 
 ::: tip The relay is only as safe as your approval process
-If you are removing the pre-registration control, the approval workflow behind it has to be solid. [Greenlight Approvals](https://greenlightapprovals.io) handles vendor bill approval routing, dual approval, and the kind of controls that keep a fraudulent invoice from becoming a payment. If you want to understand where NetSuite's native approvals stop, I cover that in [NetSuite Approval Workflows: What SuiteFlow Can and Can't Do](/blog/netsuite-approval-workflows).
+If you are removing the pre-registration control, the approval workflow behind it has to be solid. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles vendor bill approval routing, dual approval, and the kind of controls that keep a fraudulent invoice from becoming a payment. If you want to understand where NetSuite's native approvals stop, I cover that in [NetSuite Approval Workflows: What SuiteFlow Can and Can't Do](/blog/netsuite-approval-workflows).
 :::
 
 ## Doing the Same Thing with Power Automate
@@ -177,6 +177,10 @@ The main advantage of Power Automate over Apps Script is that it is event-driven
 Bill Capture has two limitations that create friction in real-world AP workflows: vendor notification emails you cannot turn off, and mandatory sender pre-registration. A relay built on Google Apps Script or Power Automate manages both by funneling every submission to NetSuite from one consistent inbox, no matter who the vendor was.
 
 Neither build is complicated, and both run inside your existing email platform with no third-party services. What takes more thought than the setup is the security tradeoff: make sure the approval process downstream is solid enough to cover for the access control you are giving up.
+
+::: tip If you are rethinking Bill Capture itself
+The relay fixes Bill Capture's rough edges, but if the notification and pre-registration limits are symptoms of a bigger AP problem, it may be worth looking at a native alternative. [Greenlight Bills](https://greenlightsoftware.io/products/bills/) handles bill entry inside NetSuite, with the routing and approval controls built in rather than bolted on afterward.
+:::
 
 ## Frequently Asked Questions
 

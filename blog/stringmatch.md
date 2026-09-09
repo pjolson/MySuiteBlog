@@ -104,7 +104,7 @@ The CASE WHEN formula is a deep topic and it has many use cases. It can be used 
 One common CASE WHEN job in a compliance context is flagging records where the person who created a transaction also approved it. It works as a check, but catching a violation after the fact is not the same as preventing it. More on that distinction in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
 ::: tip Building approval workflows in NetSuite?
-If you're using CASE WHEN logic to route approvals or flag exceptions, take a look at [Greenlight Approvals](https://greenlightapprovals.io): purpose-built approval workflows for NetSuite.
+If you're using CASE WHEN logic to route approvals or flag exceptions, take a look at [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/): purpose-built approval workflows for NetSuite.
 :::
 
 <ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />

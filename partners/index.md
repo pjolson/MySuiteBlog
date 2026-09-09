@@ -10,10 +10,10 @@ Tools and services I trust and work with across the NetSuite ecosystem.
 
 <div class="partners-grid">
   <div class="partner-card">
-    <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="partner-logo">
-    <h3>Greenlight Approvals</h3>
-    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-step approvals, budget enforcement, one-click audit packs, and unlimited approvers in a single tray UI.</p>
-    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io</a>
+    <img src="../img/greenlogo.png" alt="Greenlight Software" class="partner-logo">
+    <h3>Greenlight Software</h3>
+    <p>Greenlight builds native NetSuite apps for approvals and accounts payable. We automate the routing, budget checks, and bill entry that eat your team's day, while keeping every step human-approved and audit-ready. No spreadsheets, email chains, or SuiteScript.</p>
+    <a href="https://greenlightsoftware.io" target="_blank" class="cta-secondary">greenlightsoftware.io</a>
   </div>
   <div class="partner-card">
     <img src="../img/suitepreferences-logo.png" alt="SuitePreferences" class="partner-logo">

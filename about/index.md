@@ -39,11 +39,11 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 </div>
 
 <div class="greenlight-service-card">
-  <img src="../img/greenlogo.png" alt="Greenlight Approvals" class="greenlight-logo">
+  <img src="../img/greenlogo.png" alt="Greenlight Software" class="greenlight-logo">
   <div class="greenlight-service-content">
-    <h3>Greenlight Approvals</h3>
-    <p>Budget-aware, audit-ready approval automation for NetSuite. Multi-level routing, delegation, mobile sign-off, built for the approval workflows that SuiteFlow can't handle.</p>
-    <a href="https://greenlightapprovals.io" target="_blank" class="cta-secondary">greenlightapprovals.io →</a>
+    <h3>Greenlight Software</h3>
+    <p>Native NetSuite apps for approvals and accounts payable. Automated routing, budget checks, and bill entry, with every step human-approved and audit-ready. No spreadsheets, email chains, or SuiteScript.</p>
+    <a href="https://greenlightsoftware.io" target="_blank" class="cta-secondary">greenlightsoftware.io →</a>
   </div>
 </div>
 

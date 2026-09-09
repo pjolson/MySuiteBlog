@@ -22,9 +22,9 @@ features:
     details: "Certified NetSuite implementation advisory, administration, SuiteAnalytics, workflows, and SuiteScript development. See the full picture of what we do."
     link: /about/
     linkText: View Services
-  - title: Greenlight Approvals
-    details: "Budget-aware, audit-ready approval automation for NetSuite, built for the workflows SuiteFlow can't handle."
-    link: https://greenlightapprovals.io
+  - title: Greenlight Software
+    details: "Native NetSuite apps for approvals and accounts payable: automated routing, budget checks, and bill entry, with every step human-approved and audit-ready."
+    link: https://greenlightsoftware.io
     linkText: Learn More
 ---
 

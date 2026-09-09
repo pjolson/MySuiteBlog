@@ -69,7 +69,7 @@ When I set this up or clean it up for a client, the work is less about NetSuite 
 Most of this you can do with native tools and discipline. The piece native tools struggle with is the last one in practice: capturing, at the moment of every approval across every channel, the proof that the separation held.
 
 ::: tip Need to prove SoD is enforced, not just documented?
-The native role and routing model gets you part of the way. Closing the gap between a documented policy and enforcement you can show an auditor is exactly what [Greenlight Approvals](https://greenlightapprovals.io) was built for. See [NetSuite Segregation of Duties: Can You Prove It's Enforced?](https://greenlightapprovals.io/resources/11-netsuite-segregation-of-duties/) for how preventive self-approval blocking, duplicate-approval prevention, and a single audit trail change the answer.
+The native role and routing model gets you part of the way. Closing the gap between a documented policy and enforcement you can show an auditor is exactly what [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) was built for. See [NetSuite Segregation of Duties: Can You Prove It's Enforced?](https://greenlightapprovals.io/resources/11-netsuite-segregation-of-duties/) for how preventive self-approval blocking, duplicate-approval prevention, and a single audit trail change the answer.
 :::
 
 ## The question to ask yourself

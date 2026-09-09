@@ -79,7 +79,7 @@ Assign least-privilege roles. The move I see constantly, and argue against every
 Check segregation of duties before you launch, not after an auditor circles it in red. The person who creates a vendor shouldn't be the person who approves its payment. NetSuite's native roles get you partway, and knowing exactly where they stop is a before-go-live problem, not an after one. I mapped out [where the native SoD tooling runs out of road](/blog/netsuite-segregation-of-duties) separately. Verify approval routing end to end too, across every subsidiary and every threshold, because chains that sail through a single-entity test tend to buckle across a multi-entity structure. That's its own rabbit hole, and I get into it in [what SuiteFlow can and can't do](/blog/netsuite-approval-workflows).
 
 ::: tip Approvals that have to survive an audit
-If your launch has to show that approvals and segregation of duties are actually enforced, not just written down, native routing only gets you so far. [Greenlight Approvals](https://greenlightapprovals.io) enforces and evidences approval controls in NetSuite, which is precisely what an auditor asks you to produce after go-live.
+If your launch has to show that approvals and segregation of duties are actually enforced, not just written down, native routing only gets you so far. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) enforces and evidences approval controls in NetSuite, which is precisely what an auditor asks you to produce after go-live.
 :::
 
 ## 6. The cutover runbook

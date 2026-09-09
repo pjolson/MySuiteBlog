@@ -66,7 +66,7 @@ When you hit SuiteFlow's limits, you have a few paths forward.
 **Third-party approval apps.** Tools built specifically for NetSuite approvals that handle delegation, cross-subsidiary routing, mobile approval, complex conditional logic, and context-rich approval screens without SuiteScript.
 
 ::: tip Building or outgrowing approval workflows?
-If you're hitting the walls described above, take a look at [Greenlight Approvals](https://greenlightapprovals.io). It handles delegation, cross-subsidiary routing, and mobile approvals natively inside NetSuite.
+If you're hitting the walls described above, take a look at [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/). It handles delegation, cross-subsidiary routing, and mobile approvals natively inside NetSuite.
 :::
 
 ## Picking the right approach

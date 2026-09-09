@@ -99,7 +99,7 @@ There even more things you can achieve with these links, like opening links in p
 A close cousin of the search in this post is the one your auditor eventually asks for: every transaction where the creator and the approver are the same person. That search is useful, but a saved search on its own is a detective control, not enforcement. I get into why that matters in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
 ::: tip Building approval workflows in NetSuite?
-Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built approval workflows for NetSuite, no custom code required.
+Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) gives you purpose-built approval workflows for NetSuite, no custom code required.
 :::
 
 

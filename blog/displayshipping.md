@@ -92,7 +92,7 @@ This solution is a simple way to source in another default address into a custom
 Multi-entity setups are also where segregation of duties gets hard, because the same person often ends up able to create and approve across subsidiaries. I cover where NetSuite's native controls hold and where they stop in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
 ::: tip Struggling with approval routing across entities or locations?
-Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightapprovals.io) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
+Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
 :::
 
 <ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. I help companies get their NetSuite set up right." />

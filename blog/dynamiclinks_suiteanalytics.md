@@ -145,7 +145,7 @@ In my next post, I will outline a couple of ways to improve the link created in 
 If you are reporting on approvals, the report auditors care about most is the one proving approver independence. See [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties) for why that is harder to prove than it looks.
 
 ::: tip Need better visibility into approval status?
-Dynamic links are great for drilling into data, but if you're building approval workflows, [Greenlight Approvals](https://greenlightapprovals.io) gives you purpose-built routing, delegation, and tracking without the formula gymnastics.
+Dynamic links are great for drilling into data, but if you're building approval workflows, [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) gives you purpose-built routing, delegation, and tracking without the formula gymnastics.
 :::
 
 #### A note on html in saved searches
