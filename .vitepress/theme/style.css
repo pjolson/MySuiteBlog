@@ -689,6 +689,28 @@
   text-decoration: none;
 }
 
+/*
+ * Dark mode: brand-1 is bright mint (#2DD4A4). White text on it fails
+ * contrast, so any button whose background is the mint gets dark ink;
+ * hover states that shift to the darker emerald (brand-2/3) keep white.
+ */
+.dark .cta-primary {
+  color: #062a1c !important;
+}
+.dark .cta-primary:hover {
+  color: #fff !important;
+}
+.dark .cta-secondary:hover {
+  color: #062a1c !important;
+}
+.dark .pricing-cta:hover,
+.dark .pricing-card.featured .pricing-cta {
+  color: #062a1c;
+}
+.dark .pricing-card.featured .pricing-cta:hover {
+  color: #fff;
+}
+
 /* Go-live printable checklist */
 .golive-checklist {
   margin: 1.5rem 0 2.5rem;
