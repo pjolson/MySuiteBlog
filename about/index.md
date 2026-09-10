@@ -1,11 +1,11 @@
 ---
 title: NetSuite Support, Implementation & Customization
-description: "Founder-led NetSuite consulting: ongoing support and administration, implementation help, and customization and integrations. Work directly with one certified expert."
+description: "NetSuite consulting for finance and operations teams: ongoing support and administration, implementation help, and customization and integrations. Senior certified expertise that stays with you."
 ---
 
 # The NetSuite expert on your side of the table.
 
-Your implementation partner knows NetSuite. They don't know your business. I'm the certified admin and PMP who supports finance and operations teams through an implementation and long after go-live. The same senior person in every session. No rotating juniors, no handoffs.
+Your implementation partner knows NetSuite. They don't know your business. MySuite supports finance and operations teams through an implementation and long after go-live, led by a NetSuite Certified ERP Consultant and PMP. You get a senior consultant, the same one in every session. No rotating juniors, no handoffs.
 
 <div style="text-align: center; margin: 1.5rem 0;">
   <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
@@ -34,13 +34,13 @@ Your implementation partner knows NetSuite. They don't know your business. I'm t
 
 ## How we'll work together
 
-Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there I propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
+Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there we propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
 
-In the first few weeks I get access to your account, review your configuration, roles, and open issues, and we set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You always work with me directly. The same certified person scopes the work and does the work.
+In the first few weeks we get access to your account, review your configuration, roles, and open issues, and set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You always work with a senior consultant directly. The same certified person scopes the work and does the work.
 
 ## Is this a fit?
 
-I work best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or round-the-clock coverage, I am not the right fit, and I will tell you.
+MySuite works best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or round-the-clock coverage, we are not the right fit, and we will tell you.
 
 <div class="health-check-card">
   <h3>One way to start: NetSuite Health Check, $2,500</h3>

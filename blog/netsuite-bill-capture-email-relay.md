@@ -10,7 +10,7 @@ faqSchema: true
 
 ## The Problem
 
-If you have configured NetSuite's Bill Capture for vendor bill scanning (the email submission feature many admins still call the Email Capture Plugin), you have probably run into two frustrating limitations. I have hit both of these on client AP implementations, and neither has a native fix today.
+If you have configured NetSuite's Bill Capture for vendor bill scanning (the email submission feature many admins still call the Email Capture Plugin), you have probably run into two frustrating limitations. We have hit both of these on client AP implementations, and neither has a native fix today.
 
 The first is that every email sent to your capture inbox triggers an automated reply back to the original sender. On success, the vendor gets a generic confirmation. On failure, they get a confusing error message with no branding and no clear next steps.
 
@@ -57,7 +57,7 @@ Go to script.google.com while signed in to the Google Workspace relay account. T
 Create a new project and paste in the following script:
 
 ::: warning A starting point, not a drop-in
-This is a version of the script I have used, shared to show the approach. Treat it as a starting point, not production code. Customize it for your own environment, test it thoroughly in a sandbox first, and confirm it behaves the way you expect before you point it at a live NetSuite account.
+This is a version of the script we have used, shared to show the approach. Treat it as a starting point, not production code. Customize it for your own environment, test it thoroughly in a sandbox first, and confirm it behaves the way you expect before you point it at a live NetSuite account.
 :::
 
 ```javascript
@@ -141,7 +141,7 @@ From an operational standpoint this is a significant improvement. You can onboar
 
 ## The Security Tradeoff
 
-I want to be direct about what this approach changes from a security perspective. This is the part of the conversation I have with every client before turning a relay like this on.
+We want to be direct about what this approach changes from a security perspective. This is the part of the conversation we have with every client before turning a relay like this on.
 
 With standard Bill Capture configuration, only pre-registered sender addresses can submit to your capture inbox. This acts as a basic layer of access control. With the relay approach, that control is removed. Anyone who knows or guesses your relay inbox address can send a file to NetSuite.
 
@@ -152,7 +152,7 @@ The more realistic threat is not a random actor but a targeted one: someone impe
 The relay approach trades a pre-registration access control for operational simplicity. Whether that tradeoff is appropriate depends on your transaction volumes, vendor base, and downstream approval process. If you have mature AP approval workflows, the risk is manageable. If you are processing high-value invoices without strong approval controls, the pre-registration requirement is a meaningful extra safeguard worth keeping.
 
 ::: tip The relay is only as safe as your approval process
-If you are removing the pre-registration control, the approval workflow behind it has to be solid. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles vendor bill approval routing, dual approval, and the kind of controls that keep a fraudulent invoice from becoming a payment. If you want to understand where NetSuite's native approvals stop, I cover that in [NetSuite Approval Workflows: What SuiteFlow Can and Can't Do](/blog/netsuite-approval-workflows).
+If you are removing the pre-registration control, the approval workflow behind it has to be solid. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles vendor bill approval routing, dual approval, and the kind of controls that keep a fraudulent invoice from becoming a payment. If you want to understand where NetSuite's native approvals stop, we cover that in [NetSuite Approval Workflows: What SuiteFlow Can and Can't Do](/blog/netsuite-approval-workflows).
 :::
 
 ## Doing the Same Thing with Power Automate
@@ -204,6 +204,6 @@ The terms get used loosely. The current SuiteApp is Bill Capture, and its email 
 
 Bill Capture only accepts email from sender addresses registered on a vendor record. Routing all AP email through a single relay inbox that forwards to NetSuite means every submission arrives from one approved sender, so you can accept invoices from any vendor without configuring their address first. Keep your downstream approval controls strong, since this removes a layer of access control.
 
-<ConsultingCTA message="If you are running NetSuite Bill Capture and want help getting AP intake and the approval process behind it right, that is the kind of thing I help NetSuite teams sort out." />
+<ConsultingCTA message="If you are running NetSuite Bill Capture and want help getting AP intake and the approval process behind it right, that is the kind of thing we help NetSuite teams sort out." />
 
 <TagLinks />

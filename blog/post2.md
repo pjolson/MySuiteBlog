@@ -20,12 +20,12 @@ NetSuite has a number of useful highlighting tools for saved searches. These too
 
 ## Native Highlighting Example 
 
-In this example, I have created a Transaction Saved Search with criteria set to only show Purchase Orders.
+In this example, we have created a Transaction Saved Search with criteria set to only show Purchase Orders.
 
 ![criteria](https://i.imgur.com/ENdKcWp.png "criteria")
 
 
-I have set the results to show some data about the POs:
+We have set the results to show some data about the POs:
 
 ![results](https://i.imgur.com/8JIHTK1.png "results")
 
@@ -33,22 +33,22 @@ The highlighting is set to add an image - "Red Arrow Left" if Status = Pending B
 
 ![highlighting](https://i.imgur.com/Q1fww5E.png "highlighting")
 
-The output matches my highlighting criteria exactly. These highlighting features are very simple to set up and have very few caveats. 
+The output matches our highlighting criteria exactly. These highlighting features are very simple to set up and have very few caveats. 
 
 ![output](https://i.imgur.com/5hd9ZXq.png "output1")
 
-As a best practice, I try to avoid more than a couple of highlights per search. I always use the Description column in the highlighting section of the saved search. I try not to use background color highlighting very often, as it can make a search hard to read.
+As a best practice, we try to avoid more than a couple of highlights per search. We always use the Description column in the highlighting section of the saved search. We try not to use background color highlighting very often, as it can make a search hard to read.
 
 
 ## Highlight a single cell
 
-What if I want to highlight by column in a saved search? The native "Highlighting" tools in the Saved Search editor do not allow for this, but creating a simple formula can achieve this.
+What if you want to highlight by column in a saved search? The native "Highlighting" tools in the Saved Search editor do not allow for this, but creating a simple formula can achieve this.
 
-When using a field in the Results section of the Saved Search editor, you can leverage the SQL CASE WHEN formula to filter values based on criteria and then apply text or styled html elements directly into your saved search.
+When using a field in the Results section of the Saved Search editor, you can use the SQL CASE WHEN formula to filter values based on criteria and then apply text or styled html elements directly into your saved search.
 
 ### Example
 
-Using the same search from the previous example, I am going to add a Formula(text) field with a simple formula to highlight the corresponding cell if the line item on the PO is not fully received.
+Using the same search from the previous example, we are going to add a Formula(text) field with a simple formula to highlight the corresponding cell if the line item on the PO is not fully received.
 
 
 
@@ -61,7 +61,7 @@ Using the same search from the previous example, I am going to add a Formula(tex
 
 This formula has been separated into lines for readability, but will work on just one line in the Saved Search editor. The formula is saying: if the quantity ordered - the quantity received is greater than 0, then highlight, italicize and center the words "Not Fully Received"; otherwise, write the word "Received."
 
-In even plainer terms, if we still have items yet to be received, let me know by writing "Not Fully Received" and call that out to me by highlighting it; if not, simply write "Received".
+In even plainer terms, if we still have items yet to be received, flag it by writing "Not Fully Received" and call it out by highlighting it; if not, simply write "Received".
 
 In the editor tool it will look like this:
 
@@ -89,10 +89,10 @@ Adding this as a formula(text) field will simply write the Date field in red.
 ![output3](https://i.imgur.com/imgugg7.png "output3")
 
 ## Conclusion
-These are a few of the different highlighting tools I use in NetSuite. There are more advanced cases of using formula fields that go beyond styling that I will cover in future posts.
+These are a few of the different highlighting tools we use in NetSuite. There are more advanced cases of using formula fields that go beyond styling that we will cover in future posts.
 
 
-<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
+<ConsultingCTA message="We build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/13/2018 

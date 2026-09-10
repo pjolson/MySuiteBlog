@@ -12,18 +12,18 @@ head:
 
 # Welcome!
 
-Welcome to my NetSuite blog! 
+Welcome to our NetSuite blog! 
 
-Recently, I found myself looking for a good place to document some of the things I have learned over the years as a NetSuite Functional Administrator, Business Analyst, Project Manager & amateur coding enthusiast. I started recording some notes in OneNote and then Workflowy, but I thought I should be more public about it so I've decided to periodically post this kind of information to this blog.
+Recently, we found ourselves looking for a good place to document some of the things we have learned over the years working as NetSuite Functional Administrators, Business Analysts, Project Managers and coding enthusiasts. We started recording some notes in OneNote and then Workflowy, but we thought we should be more public about it, so we have decided to periodically post this kind of information to this blog.
 
-I hope share:
+We hope to share:
 - Interesting solutions to problems
-- Stupid mistakes I have made and how to fix them
+- Mistakes we have made and how to fix them
 - Useful features
 - Tools and techniques
 - Resources
 
-I'm not setting any goals for posting. I'm just going to update this from time to time for my own personal benefit and hopefully something I write can be of use to others as well.
+We are not setting any goals for posting. We will just update this from time to time, and hopefully something we write can be of use to others as well.
 
 <ConsultingCTA />
 

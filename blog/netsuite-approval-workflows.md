@@ -31,13 +31,13 @@ SuiteFlow still works in these scenarios, but you are fighting it more than usin
 
 **Multi-level routing beyond simple chains.** Three levels is practical. Beyond that, performance degrades and state management gets complicated. Parallel approvals, where two people need to approve simultaneously, require careful state design that most admins cannot build without help. Before long you have custom fields tracking who has approved, custom actions checking whether all required approvals are in, and a workflow that nobody wants to touch six months later.
 
-**Delegation of authority.** Native delegation exists, but your approval limits still apply to your delegate. If I delegate to you and my limit is $10K, you can approve up to $10K on my behalf, but you cannot escalate beyond that. Building proper delegation with proxy approvers, expiration dates, and automatic return requires SuiteScript custom actions or a custom record-based matrix. It is doable, but it is no longer a drag-and-drop workflow.
+**Delegation of authority.** Native delegation exists, but your approval limits still apply to your delegate. If someone with a $10K limit delegates to you, you can approve up to $10K on their behalf, but you cannot escalate beyond that. Building proper delegation with proxy approvers, expiration dates, and automatic return requires SuiteScript custom actions or a custom record-based matrix. It is doable, but it is no longer a drag-and-drop workflow.
 
 **Cross-subsidiary routing.** Behavior is inconsistent by record type, and this trips people up. Expense report approvers only see their own subsidiary. PO and requisition approvers can see across subsidiaries. If your approval policy needs consistent cross-subsidiary behavior, you are building workarounds for the record types that do not cooperate.
 
 **Record types without native approvals.** Vendors, customers, inventory adjustments, and several other record types have no native approval workflow support. You either build a full SuiteFlow workflow from scratch with custom status fields, or you skip formal approval on those records entirely.
 
-**Multi-currency threshold logic.** Approval limits align with the base currency. If you operate in multiple currencies, the threshold logic does not convert. A $50K limit does not automatically become a 45K EUR limit. I have seen this surface mid-deployment when someone tests with a non-base currency for the first time and the routing makes no sense.
+**Multi-currency threshold logic.** Approval limits align with the base currency. If you operate in multiple currencies, the threshold logic does not convert. A $50K limit does not automatically become a 45K EUR limit. We have seen this come up mid-deployment when someone tests with a non-base currency for the first time and the routing makes no sense.
 
 **The Approval Routing to SuiteFlow migration gap.** If you are moving from legacy Approval Routing to SuiteFlow, you lose auto-generated email notifications, Employee Center approve/reject buttons, and supervisor hierarchy routing. You rebuild all of it manually in the new framework. It is a real project, not a migration wizard.
 
@@ -51,7 +51,7 @@ These are not edge cases you can design around. They are gaps in what SuiteFlow 
 
 The **context problem** is subtler but just as damaging. The approval screen shows the transaction. It does not show the Slack thread, the email chain, the vendor quote, or the budget comparison that explains why the amount is what it is. Approvers rubber-stamp because they do not have context, not because they do not care. You can attach files to transactions, but that requires someone to remember to attach them before submission.
 
-Then there is **complex conditional logic.** If your approval matrix is a spreadsheet with 40 rows of conditions covering department, subsidiary, amount band, item category, and custom segments, SuiteFlow's condition builder runs out of room. You land on SuiteScript custom actions inside the workflow, which means you need a developer to maintain what was supposed to be an admin tool. I have seen this in SOWs where "configure standard approval workflows" turns into a month of custom development. If you are reviewing a SOW right now, [make sure you know what that line actually means](/blog/netsuite-sow-before-you-sign).
+Then there is **complex conditional logic.** If your approval matrix is a spreadsheet with 40 rows of conditions covering department, subsidiary, amount band, item category, and custom segments, SuiteFlow's condition builder runs out of room. You land on SuiteScript custom actions inside the workflow, which means you need a developer to maintain what was supposed to be an admin tool. We have seen this in SOWs where "configure standard approval workflows" turns into a month of custom development. If you are reviewing a SOW right now, [make sure you know what that line actually means](/blog/netsuite-sow-before-you-sign).
 
 ## Your options when SuiteFlow is not enough
 
@@ -75,6 +75,6 @@ SuiteFlow is not the problem. It is a capable tool that covers the majority of a
 
 If your approval needs are straightforward, start with SuiteFlow and you will be fine. If you are running into the limits described above, you are not the first. The main thing is to pick your path deliberately instead of bolting on workarounds until the workflow is unmaintainable.
 
-<ConsultingCTA message="If you are building approval workflows and want help evaluating what SuiteFlow can handle vs. what needs something else, that is a conversation I have regularly." />
+<ConsultingCTA message="If you are building approval workflows and want help evaluating what SuiteFlow can handle vs. what needs something else, that is a conversation we have regularly." />
 
 <TagLinks />

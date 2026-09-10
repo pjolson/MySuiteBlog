@@ -18,7 +18,7 @@ NetSuite's Map/Reduce engine is great for processing records in bulk, but out of
 
 For operations where users are selecting specific records and need to know what succeeded and what failed, that is not good enough.
 
-I have shipped this pattern in production across multiple use cases: bulk status flips, batch payment processing, mass email sends. The structure is always the same, and it works every time.
+We have shipped this pattern in production across multiple use cases: bulk status flips, batch payment processing, mass email sends. The structure is always the same, and it works every time.
 
 ## The Architecture
 
@@ -55,7 +55,7 @@ User selects records
   [Done - "Return" button enabled]
 ```
 
-I will walk through each piece.
+We will walk through each piece.
 
 ## Step 1: The Job Log Custom Record
 
@@ -510,7 +510,7 @@ You have two options for when the PENDING rows get created.
 
 **Option B: In the Suitelet POST handler**, before launching the MR. Rows exist immediately, so the status page shows them right away even before the MR starts. If instant feedback matters for your use case, this is the better choice.
 
-Both work. I have used both depending on the situation.
+Both work. We have used both depending on the situation.
 
 ## Design Decisions Worth Calling Out
 
@@ -560,7 +560,7 @@ What changes per implementation:
 - The Map/Reduce business logic
 - Column mappings (which `col1` through `col4` fields mean in context)
 
-You could abstract the status page and progress endpoint into a shared module. Honestly, copy-paste with minor edits has worked well for me. The status page code is around 80 lines and rarely changes.
+You could abstract the status page and progress endpoint into a shared module. Honestly, copy-paste with minor edits has worked well for us. The status page code is around 80 lines and rarely changes.
 
 ## Wrapping Up
 
@@ -576,7 +576,7 @@ The full flow, end to end:
 It is not fancy. A custom record, a Suitelet with three routes, a Map/Reduce that updates log rows, and 80 lines of polling JavaScript. But it turns "I submitted something and I hope it worked" into "I can see exactly what happened to every record." For users running bulk operations in NetSuite, that difference matters.
 
 
-<ConsultingCTA message="I build custom Suitelets, Map/Reduce scripts, and workflow automation for NetSuite teams. If your users are running bulk operations blind, I can help you fix that." />
+<ConsultingCTA message="We build custom Suitelets, Map/Reduce scripts, and workflow automation for NetSuite teams. If your users are running bulk operations blind, we can help you fix that." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/20/2026

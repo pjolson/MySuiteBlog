@@ -36,7 +36,7 @@ Now it's yours.
 
 ## What Actually Happens Next
 
-Here is what I have seen happen in the weeks and months after the partner leaves:
+Here is what we have seen happen in the weeks and months after the partner leaves:
 
 **Month-end close is a disaster.** Your finance team ran one test close during UAT. Maybe two. Now they are doing it for real, under deadline pressure, in a system they have been using for 30 days. The revenue recognition rules that looked fine in testing produce numbers that don't match expectations. Nobody on your team knows whether the configuration is wrong or whether they are running the process incorrectly. The partner is gone. NetSuite support tells you to check SuiteAnswers.
 
@@ -68,7 +68,7 @@ When hypercare ends, the safety net disappears all at once. That is the cliff.
 
 The companies that handle this well do one or two things:
 
-**They have an internal NetSuite resource before go-live.** I wrote about [why you need one](/blog/netsuite-implementation-resource) and [what the role looks like in practice](/blog/netsuite-client-side-resource). If someone on your team was involved in design, build, and testing, they carry that context into post-go-live support. They know why things were configured the way they were. They can troubleshoot issues without calling the partner. They can train users because they understand the workflows, not just the documentation.
+**They have an internal NetSuite resource before go-live.** We wrote about [why you need one](/blog/netsuite-implementation-resource) and [what the role looks like in practice](/blog/netsuite-client-side-resource). If someone on your team was involved in design, build, and testing, they carry that context into post-go-live support. They know why things were configured the way they were. They can troubleshoot issues without calling the partner. They can train users because they understand the workflows, not just the documentation.
 
 **They plan for post-go-live support before they get there.** This means budgeting for it, not hoping the team figures it out. Whether that is a full-time hire, a fractional admin, or a managed services contract, the decision should be made during implementation, not after the partner sends the closeout email. Working through a [go-live readiness checklist](/blog/netsuite-go-live-readiness-checklist) before launch forces that decision into the open, because support and ownership are two of the things it makes you prove.
 
@@ -81,7 +81,7 @@ If you are going to bring in post-go-live support, the timing matters. That pers
 A clean handoff from partner to internal support almost never happens. What works is an overlap period where the incoming resource absorbs context from the outgoing team. Without that overlap, you are hiring someone to maintain a system they did not build, with documentation they have never read, for a team they have never met. That is not a setup for success.
 
 
-<ConsultingCTA message="If your implementation is wrapping up and you don't have a plan for what comes next, that's the conversation to have now. I help companies bridge the gap between implementation and ongoing operations." />
+<ConsultingCTA message="If your implementation is wrapping up and you don't have a plan for what comes next, that's the conversation to have now. We help companies bridge the gap between implementation and ongoing operations." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/18/2026

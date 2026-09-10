@@ -13,14 +13,14 @@ tags: ["Basics", "Formulas", "SavedSearch", "SuiteAnalytics"]
 
 Sometimes, you may find yourself in a situation where you want to link out to another connected record in a Saved Search without having to drill down to the record and then to the Related Record. Thankfully, NetSuite makes this pretty easy with a Formula(text) field. The trick lies in getting the formatting of the formula correct to make this work.
 
-In this example, I have a Custom Search portlet that is showing Item Fulfillment Records with a link to the Sales Order that was used to create the Item Fulfillment Record.
+In this example, we have a Custom Search portlet that is showing Item Fulfillment Records with a link to the Sales Order that was used to create the Item Fulfillment Record.
 
 ![searchlinks](https://i.imgur.com/lOulJ0v.png "Saved Search Results")
  
 
 ## Crafting the Formula Field
 
-A formula field in NetSuite can contain HTML tags. I covered this in a previous post on [Highlighting Saved Searches](/blog/post2). To achieve the example above I have added an "a" tag with a link to a dynamic Sales Order Link. I will break down the link below. 
+A formula field in NetSuite can contain HTML tags. We covered this in a previous post on [Highlighting Saved Searches](/blog/post2). To achieve the example above we have added an "a" tag with a link to a dynamic Sales Order Link. We will break down the link below. 
 
 ![searchlinks](https://i.imgur.com/0ZqraCT.png "Saved Search Results")
 
@@ -70,11 +70,11 @@ And the final formula will look like this and it will open the Sales Order that 
 
     '<a href="https://system.netsuite.com/app/accounting/transactions/salesord.nl?id='||{createdfrom.id}||'">'||{createdfrom}||'</a>'
 
-And will be added as a Results column of a type of Formula(text) like this (I have added the Sales Order Description, so it appears more logically in the results):
+And will be added as a Results column of a type of Formula(text) like this (we have added the Sales Order Description, so it appears more logically in the results):
  
 ## Search View
 
-Now if I view the Saved Search, I can see a column called “Sales Order” with links that open the Sales Order listed. The Edit | View links still open the Item Fulfillment record.
+Now if we view the Saved Search, we can see a column called “Sales Order” with links that open the Sales Order listed. The Edit | View links still open the Item Fulfillment record.
 
 ![searchlinks](https://i.imgur.com/lOulJ0v.png "Saved Search Results")
  
@@ -94,9 +94,9 @@ If you want the record to open in edit mode, simply add &e=T to the end of the U
 
 ## Finally
 
-There even more things you can achieve with these links, like opening links in pop up windows, performing actions on click, etc. But I wanted to keep this first post simple. Whenever I create one of these links, I always refer to a working version to begin crafting my new search link. I hope you bookmark this post to help you the next time you need to start a linked column like this.
+There even more things you can achieve with these links, like opening links in pop up windows, performing actions on click, etc. But we wanted to keep this first post simple. Whenever we create one of these links, we always refer to a working version to begin crafting the new search link. We hope you bookmark this post to help you the next time you need to start a linked column like this.
 
-A close cousin of the search in this post is the one your auditor eventually asks for: every transaction where the creator and the approver are the same person. That search is useful, but a saved search on its own is a detective control, not enforcement. I get into why that matters in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
+A close cousin of the search in this post is the one your auditor eventually asks for: every transaction where the creator and the approver are the same person. That search is useful, but a saved search on its own is a detective control, not enforcement. We get into why that matters in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
 ::: tip Building approval workflows in NetSuite?
 Linked searches are powerful, but approval routing needs more than formulas. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) gives you purpose-built approval workflows for NetSuite, no custom code required.
@@ -104,7 +104,7 @@ Linked searches are powerful, but approval routing needs more than formulas. [Gr
 
 
 
-<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
+<ConsultingCTA message="We build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/27/2018 

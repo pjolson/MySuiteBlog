@@ -13,7 +13,7 @@ tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
 
 ## Problem
 
-Recently, a user asked me if they could view the Default Shipping Address for a Customer Record as a field on the Main subtab. The issue they were reporting was the ADDRESS field on the Customer Record always shows the Default Billing Address.
+Recently, a user asked us if they could view the Default Shipping Address for a Customer Record as a field on the Main subtab. The issue they were reporting was the ADDRESS field on the Customer Record always shows the Default Billing Address.
 
 The issue is illustrated in this screenshot of a Customer Record for “Frank’s Custom Stuff.” In this record There are different Default Billing and Default Shipping Addresses listed in the Address subtab. The Default Billing address is the one that is pulled into the ADDRESS field on the Main Subtab.
 
@@ -80,7 +80,7 @@ This code block contains a SQL formula that is looking to see if the first line 
 
 When editing a Custom Entity Field that contains a Default Value, it seems like the FORMULA check box gets set to checked every time. 
 
-In this case, the first field I created contained HTML and will throw an error if FORMULA = T. If you are getting INVALID EXPRESSION, check to see if FORMULA = T and double check that it is FORMULA = F when saving.
+In this case, the first field we created contained HTML and will throw an error if FORMULA = T. If you are getting INVALID EXPRESSION, check to see if FORMULA = T and double check that it is FORMULA = F when saving.
 
 The second field we created did contain a formula and should be marked as FORMULA = T.
 
@@ -89,13 +89,13 @@ The second field we created did contain a formula and should be marked as FORMUL
 
 This solution is a simple way to source in another default address into a custom field. It is also a good introduction to Inline HTML fields and power of styling individual custom fields. Inline HTML fields are a simple solution for adding styled text effects to custom forms to help call out data for users and increase form readability.
 
-Multi-entity setups are also where segregation of duties gets hard, because the same person often ends up able to create and approve across subsidiaries. I cover where NetSuite's native controls hold and where they stop in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
+Multi-entity setups are also where segregation of duties gets hard, because the same person often ends up able to create and approve across subsidiaries. We cover where NetSuite's native controls hold and where they stop in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
 ::: tip Struggling with approval routing across entities or locations?
 Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
 :::
 
-<ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. I help companies get their NetSuite set up right." />
+<ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. We help companies get their NetSuite set up right." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 01/15/2019 

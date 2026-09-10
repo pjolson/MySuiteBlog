@@ -16,15 +16,15 @@ There are hundreds of articles about how to *choose* a NetSuite implementation p
 
 But what about after you sign? What happens when the project kicks off and your team is in weekly meetings with consultants who have done this fifty times before?
 
-Here is what I see over and over again: the client starts deferring to the partner on everything. Design decisions, timeline changes, scope adjustments. The partner says "best practice" and the room goes quiet. Nobody on the client side feels qualified to push back.
+Here is what we see over and over again: the client starts deferring to the partner on everything. Design decisions, timeline changes, scope adjustments. The partner says "best practice" and the room goes quiet. Nobody on the client side feels qualified to push back.
 
-I wrote in my [last post](/blog/netsuite-implementation-resource) about why you need an internal NetSuite expert on your implementation team. This post is about what that person actually does when it comes to managing the partner relationship.
+We wrote in our [last post](/blog/netsuite-implementation-resource) about why you need an internal NetSuite expert on your implementation team. This post is about what that person actually does when it comes to managing the partner relationship.
 
 ## Read the SOW. Then Read It Again.
 
 The Statement of Work is the single most important document in your implementation. It defines what you are paying for, what the partner is responsible for, and what is explicitly excluded. Most clients skim it during the sales process and never look at it again.
 
-That is a mistake. I wrote a full breakdown of [what to look for in your NetSuite SOW before you sign it](/blog/netsuite-sow-before-you-sign), including the NetSuite order form, module overselling, and licensing traps. This section covers how to use the SOW as a management tool once the project is underway.
+That is a mistake. We wrote a full breakdown of [what to look for in your NetSuite SOW before you sign it](/blog/netsuite-sow-before-you-sign), including the NetSuite order form, module overselling, and licensing traps. This section covers how to use the SOW as a management tool once the project is underway.
 
 SOWs from NetSuite implementation partners tend to follow a pattern. The scope section reads well at a high level. Phrases like "configure order-to-cash workflows" or "implement standard reporting package" sound comprehensive. But those phrases are doing a lot of heavy lifting. What does "standard" mean? Which reports? How many saved searches? Are workflow approval chains included or are those a separate line item?
 
@@ -44,7 +44,7 @@ If the partner gets defensive when you ask for specifics, that tells you somethi
 
 The narrative around NetSuite implementations is that change orders are just part of the process. Scope evolves, requirements shift, things come up. And sure, some of that is true. Businesses are complicated and you will discover things during build that nobody anticipated in design.
 
-But I have seen projects where the change order total exceeded the original SOW value. That is not scope evolution. That is a scoping problem, and the client is the one who pays for it.
+But we have seen projects where the change order total exceeded the original SOW value. That is not scope evolution. That is a scoping problem, and the client is the one who pays for it.
 
 Here is how change orders typically happen:
 
@@ -87,7 +87,7 @@ This does not have to be complicated. A simple spreadsheet that maps every SOW d
 
 The reason you need this: the partner will consider something "delivered" when they have configured it. Your team might not consider it delivered until it has been tested with real data, validated by the business users who will actually use it, and confirmed to work with your other processes. Those are different milestones, and the gap between them is where problems hide.
 
-I have seen partners report a module as 100% complete when the client team had not even logged in to review it. That is not the partner being dishonest. It is two sides using different definitions of "done." Your deliverable tracker forces that conversation early.
+We have seen partners report a module as 100% complete when the client team had not even logged in to review it. That is not the partner being dishonest. It is two sides using different definitions of "done." Your deliverable tracker forces that conversation early.
 
 ## You Hired Them. Manage Them.
 
@@ -100,7 +100,7 @@ Your priority is getting a system that works for your business. Their priority i
 That is the job. Not micromanaging consultants. Not second-guessing every configuration. Just making sure that the project stays honest, the scope stays controlled, and your team is not along for the ride on their own implementation.
 
 
-<ConsultingCTA message="I help companies manage their NetSuite implementation partners from the inside. If your project needs someone who can review SOWs, challenge change orders, and keep the partner accountable, let's talk." />
+<ConsultingCTA message="We help companies manage their NetSuite implementation partners from the inside. If your project needs someone who can review SOWs, challenge change orders, and keep the partner accountable, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/18/2026

@@ -40,7 +40,7 @@ Checking the Public checkbox makes the search available for all users with acces
 
 ### E.	Available as List View
 
-Checking this box adds the search to the list of view options for lists of records of this type. So, if I were to view a list of transactions, I could update the view to this saved search to see the list of transactions with my predefined criteria and results.
+Checking this box adds the search to the list of view options for lists of records of this type. So, if you were to view a list of transactions, you could update the view to this saved search to see the list of transactions with your predefined criteria and results.
 
 This can be very useful as the assigned view may show too much - or the wrong kind - of information.
 
@@ -48,7 +48,7 @@ This can be very useful as the assigned view may show too much - or the wrong ki
 
 Checking this option makes the search available as a dashboard view on user’s home page or other center pages.
 
-In this example, you can see that my search can be selected as the search for a Custom Search portlet.
+In this example, you can see that the search can be selected as the search for a Custom Search portlet.
 
 ![dashboard](https://i.imgur.com/kdATcRP.png "Available for Dashboard")
 
@@ -78,11 +78,11 @@ Checking this box makes the Saved Search appear in the Reports->Saved Searches d
 
 ## Up Next
 
-I will go over the Criteria section and all the options and features available there.
+We will go over the Criteria section and all the options and features available there.
 
 
 
-<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
+<ConsultingCTA message="We build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/17/2018 

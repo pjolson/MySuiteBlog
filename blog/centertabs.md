@@ -47,7 +47,7 @@ Navigate to Customization->Centers and Tab->New to begin creating your new Cente
 
 - This allows you to choose portlet you want to be available on the Center Tab landing page (if you click on the Center Tab in the nav bar.)
  
-In my earlier example, I created a Center Tab called Help Desk with some Categories to link to useful reports. This is what that looks like on the back-end:
+In our earlier example, we created a Center Tab called Help Desk with some Categories to link to useful reports. This is what that looks like on the back-end:
 
 ![CenterTab](https://i.imgur.com/jJmp8Oi.png "Editor Complete")
 
@@ -66,7 +66,7 @@ Once your Center Tab is created and you have some links Center Links ready, you 
 
 ![CenterCategories](https://i.imgur.com/YUVycUF.png "Category Example")
 
-You can create Custom Center Categories by navigating to Customization ->Centers and Tabs->Center Categories->New or from your already created Center Tab (This is how I prefer to create them).
+You can create Custom Center Categories by navigating to Customization ->Centers and Tabs->Center Categories->New or from your already created Center Tab (This is how we prefer to create them).
 If you edit your Center Tab, you can add new categories inline in the Categories sublist.
 
 ![InlineCategories](https://i.imgur.com/VsscbhG.png "Create Categories")
@@ -75,11 +75,11 @@ After saving, you can edit each Category to apply the Center Links.
 
 ![EditCategories](https://i.imgur.com/zVx5TRj.png "Edit Categories")
 
-In this Case I will edit “Open Cases” to add “Report2” and “Report3” links.
+In this Case we will edit “Open Cases” to add “Report2” and “Report3” links.
 
 ![AddLinks](https://i.imgur.com/Vq8CNrf.png "Add Links")
 
-After saving Center Category, I can check my nav bar to see if the Center Tab and drop-down options are available and working.
+After saving Center Category, we can check the nav bar to see if the Center Tab and drop-down options are available and working.
 
 ![ViewLinks](https://i.imgur.com/NIyJ5h3.png "View Links")
 
@@ -105,7 +105,7 @@ Center tabs are limited by role and audience, which is really an access-control 
 If you're customizing NetSuite to fit your team's workflow, take a look at [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/): fast, reliable approval workflows built for NetSuite.
 :::
 
-<ConsultingCTA message="Custom center tabs, roles, and navigation are just the start. I help teams configure NetSuite to match how they actually work." />
+<ConsultingCTA message="Custom center tabs, roles, and navigation are just the start. We help teams configure NetSuite to match how they actually work." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 12/18/2018 

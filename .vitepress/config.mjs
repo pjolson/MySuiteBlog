@@ -79,10 +79,10 @@ export default defineConfig({
     if (pageData.frontmatter.faqSchema) {
       const faqByPath = {
         'netsuite-health-check.md': [
-          { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and all access objects are removed when the engagement ends.' },
+          { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and we remove all access objects when the engagement ends.' },
           { q: 'How long does the NetSuite Health Check take?', a: 'Report within 24 hours. Debrief scheduled with you, usually within the same week.' },
           { q: 'What if our NetSuite account is clean?', a: 'Then you get documented proof of a well-governed system. Useful for auditors and boards.' },
-          { q: 'Do you fix the issues found in the Health Check?', a: 'Yes. The Health Check is the diagnosis. I scope remediation separately.' },
+          { q: 'Do you fix the issues found in the Health Check?', a: 'Yes. The Health Check is the diagnosis. We scope remediation separately.' },
           { q: 'Does the Health Check work for OneWorld / multi-subsidiary?', a: 'Yes.' }
         ],
         'blog/netsuite-bill-capture-email-relay.md': [

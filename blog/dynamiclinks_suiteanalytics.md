@@ -15,11 +15,11 @@ tags: ["Formulas", "HTML", "SavedSearch", "SuiteAnalytics"]
 
 Saved Searches allow for some native options for drilling down into results data through grouping fields. If you summarize fields by group and then click the field link, you should be redirected to a summarized view of your saved search.
 
-But what if you want more unique data in your drill-down? What if you don't want to lose your current search your are viewing? There are some formulaic answers to these questions that I will explore in this post.
+But what if you want more unique data in your drill-down? What if you don't want to lose your current search your are viewing? There are some formulaic answers to these questions that we will explore in this post.
 
 ## Drill-Down link by formula (text)
 
-To create a formulaic drill-down in a saved search, I am going to create a couple of searches based on the Transaction record. The end goal will be a search that lists all sales orders from last week with a link to another search listing the items on a single sales order.
+To create a formulaic drill-down in a saved search, we are going to create a couple of searches based on the Transaction record. The end goal will be a search that lists all sales orders from last week with a link to another search listing the items on a single sales order.
 
 The first Search will be the primary search and will eventually contain the drill-down link to the items search
 
@@ -67,7 +67,7 @@ The second search will be the drill-down search and will contain all of the item
 
 ### Crafting the link
 
-To build the link between the two searches, we need to know the url to a specific sales order in Search #2. This is why I added the Internal ID filter to the second search.
+To build the link between the two searches, we need to know the url to a specific sales order in Search #2. This is why we added the Internal ID filter to the second search.
 
 Using the INTERNAL ID filter in the FILTERS section you can choose the internal id of a specific Transaction Record. This will then filter the results down to that specific transaction record. The results in this case, do not matter. What we are after here is the URL (circled in red).
 
@@ -75,7 +75,7 @@ Copy the url from the filter results and paste  it into a text editor - like VSc
 
 ![URL](https://i.imgur.com/BnSjwg5.png "URL")
 
-The link from my filtered results looks like this:
+The link from our filtered results looks like this:
 
     https://system.na3.netsuite.com/app/common/search/searchresults.nl?searchtype=Transaction&Transaction_INTERNALID=10537&style=NORMAL&report=&grid=&searchid=1175&dle=F&sortcol=Transction_FRETION17_raw&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&size=100&twbx=F
 
@@ -113,7 +113,7 @@ Making the dynamic link look like this
 
     https://system.na3.netsuite.com/app/common/search/searchresults.nl?searchtype=Transaction&Transaction_INTERNALID='||{internalid}||'&style=NORMAL&report=&grid=&searchid=1175&dle=F&sortcol=Transction_FRETION17_raw&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&size=100&twbx=F
 
-Look at the difference closely. I have swapped out
+Look at the difference closely. We have swapped out
 - INTERNALID=10537
 
 for
@@ -140,7 +140,7 @@ Now the FORMULA(TEXT) column contains links labeled 'Items on SO' and if you cli
 
 Mastering the creation of dynamic links in saved searches is an invaluable skill for any NetSuite Admin. The utility of this skill goes far beyond the example in this post. Dynamic links can be used to create custom links to subrecords, pop-up windows, links in a new tab and much more.
 
-In my next post, I will outline a couple of ways to improve the link created in this example to show how to open the drill-down search in a new tab and in a pop-up window.
+In our next post, we will outline a couple of ways to improve the link created in this example to show how to open the drill-down search in a new tab and in a pop-up window.
 
 If you are reporting on approvals, the report auditors care about most is the one proving approver independence. See [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties) for why that is harder to prove than it looks.
 
@@ -162,7 +162,7 @@ Dynamic links are great for drilling into data, but if you're building approval 
     `
 
 
-<ConsultingCTA message="Dynamic links and formula fields are some of the most powerful tools in NetSuite. I help teams build searches that actually drive decisions. Let's talk." />
+<ConsultingCTA message="Dynamic links and formula fields are some of the most powerful tools in NetSuite. We help teams build searches that actually drive decisions. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/25/2018 

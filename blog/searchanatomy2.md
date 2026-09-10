@@ -27,7 +27,7 @@ A simple example would be: All Sales Orders with a Transaction Date with in the 
 
 ![Criteria1](https://i.imgur.com/y6f1I7Y.png "Criteria Defined")
 
-You may have noticed I included Main Line = True. I will get into the Main Line in detail in a future post, but the Main line = True criteria will make only 1 line per transaction appear in the search.
+You may have noticed we included Main Line = True. We will get into the Main Line in detail in a future post, but the Main line = True criteria will make only 1 line per transaction appear in the search.
 You can filter by a few different types of field data
 1.	Field data (any field that appears on the record in question)
 2.	Joined fields (any field that joins out to another record)
@@ -43,13 +43,13 @@ You can filter by a few different types of field data
 
     c.	Text
 
-While building these criteria I chose to be inclusive and select Type IS Sales Order, but you can do the opposite and request Type is none of Sales Order and the search would return all transaction types EXCEPT Sales Orders.
+While building these criteria we chose to be inclusive and select Type IS Sales Order, but you can do the opposite and request Type is none of Sales Order and the search would return all transaction types EXCEPT Sales Orders.
 
 
 ### Standard vs Summary
 
 - Standard filters will filter any data in the saved search that has not been summarized
-- Summary allows you to filter summarized data. Results can be rolled up into summary data in the Results section and will be covered in my next post on Results
+- Summary allows you to filter summarized data. Results can be rolled up into summary data in the Results section and will be covered in our next post on Results
 
 
 ### Use Expressions
@@ -63,19 +63,19 @@ This is a short example using parenthesis along with and/or.
 Use Expressions offers up to 3 levels of parenthesis with and/or logic on each line and each level of parenthesis. The tool is pretty simple to understand, but comes with some caveats:
 
 - Using “or” can bring in data you do not want
-- This example shows my original criteria with parenthesis added and an OR Date Create is last week. This added Or line will bring in every transaction created last week (Probably not useful in the context of the original criteria)
+- This example shows our original criteria with parenthesis added and an OR Date Create is last week. This added Or line will bring in every transaction created last week (Probably not useful in the context of the original criteria)
 ![Criteria1](https://i.imgur.com/hWgzMX8.png "Criteria or")
 - The more complex the criteria, the longer time it may take for the search to run
-    - I have gotten very complex in the past and tried to use the search as a Custom Search Dashboard Portlet and it would take minutes for the portlet to refresh.
+    - We have gotten very complex in the past and tried to use the search as a Custom Search Dashboard Portlet and it would take minutes for the portlet to refresh.
 
 
 ## Up Next
 
-I will go over the Results section of the Saved Search editor and discuss some of my favorite tools located there.
+We will go over the Results section of the Saved Search editor and discuss some of our favorite tools located there.
 
 
 
-<ConsultingCTA message="I build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
+<ConsultingCTA message="We build saved searches like this for clients every week. If you need help with reporting, formulas, or SuiteAnalytics. Let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 1/14/2019 

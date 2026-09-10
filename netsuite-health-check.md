@@ -7,7 +7,7 @@ aside: false
 
 # NetSuite Health Check
 
-Find out what's quietly wrong in your NetSuite account before your auditor does. The Health Check looks at access conflicts, security gaps, audit exposure, and wasted license spend. I give you a prioritized plan to fix it.
+Find out what's quietly wrong in your NetSuite account before your auditor does. The Health Check looks at access conflicts, security gaps, audit exposure, and wasted license spend. We give you a prioritized plan to fix it.
 
 <div class="hc-hero-actions">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
@@ -45,7 +45,7 @@ The Health Check assesses fifteen areas across access controls, system health, a
 
 ## What you get
 
-A findings report ranked by severity with a fix-first roadmap. I manually review the things automation misses: approvals config, MFA policy, change process. Then I walk you through every finding and what to do about it. Report within 24 hours, debrief scheduled with you. The extraction is read-only, pulling configuration and metadata, not your transaction data. Everything is analyzed securely and deleted when the engagement ends. Nothing in your account is modified.
+A findings report ranked by severity with a fix-first roadmap. We manually review the things automation misses: approvals config, MFA policy, change process. Then we walk you through every finding and what to do about it. Report within 24 hours, debrief scheduled with you. The extraction is read-only, pulling configuration and metadata, not your transaction data. Everything is analyzed securely and deleted when the engagement ends. Nothing in your account is modified.
 
 This is an expert-reviewed assessment, not a script you run yourself.
 
@@ -61,7 +61,7 @@ This is an expert-reviewed assessment, not a script you run yourself.
 
 ### Is it safe? What access do you need?
 
-Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and I remove all access objects when the engagement ends.
+Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and we remove all access objects when the engagement ends.
 
 ### How long does it take?
 
@@ -73,7 +73,7 @@ Then you get documented proof of a well-governed system. Useful for auditors and
 
 ### Do you fix the issues too?
 
-Yes. The Health Check is the diagnosis. I scope remediation separately.
+Yes. The Health Check is the diagnosis. We scope remediation separately.
 
 ### Does this work for OneWorld / multi-subsidiary?
 

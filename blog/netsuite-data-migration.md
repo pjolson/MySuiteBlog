@@ -22,7 +22,7 @@ That is how companies end up with opening balances that don't match, duplicate v
 
 Extraction, cleansing, deduplication, field mapping, and validation are your team's work. The partner is not going to log into your old system, pull the data, clean it up, and hand it back to you ready to import. That is not what the SOW says, and it is not how the economics work. Some SOWs are explicit about this. Others are vague enough that the assumption gap does not surface until your team is already behind schedule.
 
-Before the project kicks off, read the data migration section of your SOW and answer one question: who does the actual work of preparing the data? This is the kind of gap I wrote about in [what to look for in your NetSuite SOW](/blog/netsuite-sow-before-you-sign). If the answer is "us" and you have not allocated time for it, you have a scheduling problem that will show up at the worst possible moment.
+Before the project kicks off, read the data migration section of your SOW and answer one question: who does the actual work of preparing the data? This is the kind of gap we wrote about in [what to look for in your NetSuite SOW](/blog/netsuite-sow-before-you-sign). If the answer is "us" and you have not allocated time for it, you have a scheduling problem that will show up at the worst possible moment.
 
 ## What Gets Migrated and What Gets Left Behind
 
@@ -106,7 +106,7 @@ Hard cutovers are cleaner. There is one system, one source of truth, and no ambi
 
 Soft cutovers reduce that risk but create a different one: dual data entry, confusion about which system is authoritative, and a migration process that stretches out over weeks. Your team has to know which transactions go where. That sounds simple until an AP clerk is halfway through entering a batch of bills and cannot remember whether this vendor has been migrated yet.
 
-Most implementations end up with a hard cutover for good reason. It forces the discipline of getting migration right the first time. I would push for hard cutover in most situations. The pain of running two systems in parallel is worse than the pain of a tight cutover weekend, and a soft cutover gives everyone an excuse to delay decisions that need to be made. The only time I would consider a soft cutover is when the auditors specifically require it or when the legacy system handles a function that genuinely is not ready in NetSuite yet.
+Most implementations end up with a hard cutover for good reason. It forces the discipline of getting migration right the first time. We would push for hard cutover in most situations. The pain of running two systems in parallel is worse than the pain of a tight cutover weekend, and a soft cutover gives everyone an excuse to delay decisions that need to be made. The only time we would consider a soft cutover is when the auditors specifically require it or when the legacy system handles a function that genuinely is not ready in NetSuite yet.
 
 Whichever approach you choose, make sure your team, your partner, and your auditors all agree on it before you get within a month of go-live.
 
@@ -144,7 +144,7 @@ If your implementation just kicked off, put these items on the agenda now:
 If your implementation is already underway and nobody has answered those questions, that conversation is overdue. The answers will not get easier as go-live gets closer.
 
 
-<ConsultingCTA message="Data migration planning is one of the first things I look at when advising on a NetSuite implementation. If your team is staring down a migration and not sure where to start, let's talk." />
+<ConsultingCTA message="Data migration planning is one of the first things we look at when advising on a NetSuite implementation. If your team is staring down a migration and not sure where to start, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/25/2026

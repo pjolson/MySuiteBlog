@@ -13,11 +13,11 @@ tags: ["Formulas", "HTML", "JavaScript", "SavedSearch", "SuiteAnalytics"]
 
 ## Introduction
 
-In <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my last post</a>, I discussed how to create dynamic links in Saved Searches to drill-down to related saved searches. In this post I will add to that example by showing how to have the drill-down searches open in another tab or pop-up window. This will allow your users to not lose their place in when opening the dynamic links you have created.
+In <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">our last post</a>, we discussed how to create dynamic links in Saved Searches to drill-down to related saved searches. In this post we will add to that example by showing how to have the drill-down searches open in another tab or pop-up window. This will allow your users to not lose their place in when opening the dynamic links you have created.
 
 The examples outlined here can be used for any `<a>` tag link you create in Searches or inline html fields in NetSuite.
 
-The example link from <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">my previous post</a> on the topic of dynamic links in saved searches was a dynamic link that pulled the Sales Order internal id into a link that referred to a saved search containing items on a Sales Order. When the link was clicked from a row on the saved search the user would be redirected to another saved search of items on Sales Orders, filtered to only that Sales Order. 
+The example link from <a href="/blog/dynamiclinks_suiteanalytics.html" target= "_blank">our previous post</a> on the topic of dynamic links in saved searches was a dynamic link that pulled the Sales Order internal id into a link that referred to a saved search containing items on a Sales Order. When the link was clicked from a row on the saved search the user would be redirected to another saved search of items on Sales Orders, filtered to only that Sales Order. 
 
 The dynamic link in HTML format looked like this:
 
@@ -25,7 +25,7 @@ The dynamic link in HTML format looked like this:
     Items on SO
     </a>'
 
-I will use this `<a>` tag link for the 2 following examples.
+We will use this `<a>` tag link for the 2 following examples.
 
 
 ## Open in an new tab
@@ -53,9 +53,9 @@ And the actual link behavior will work like this:
 
 ## Open in a Pop-up Window
 
-Another option is to have the linked saved search or record open in a pop-up window. But Pop-ups are annoying right? I have found small pop-up windows to be useful with dynamic links in many cases. The example I will show is in using the same search as a custom search dashboard portlet. When using a pop-up in this situation, you users can quickly drill-down to necessary data and easily close out without navigating away from their dashboard.
+Another option is to have the linked saved search or record open in a pop-up window. But Pop-ups are annoying right? We have found small pop-up windows to be useful with dynamic links in many cases. The example we will show is in using the same search as a custom search dashboard portlet. When using a pop-up in this situation, you users can quickly drill-down to necessary data and easily close out without navigating away from their dashboard.
 
-For the pop-up link, we are going to use a little JavaScript. I will provide a template that you can use over and over again here and then show it in action using my previous example
+For the pop-up link, we are going to use a little JavaScript. We will provide a template that you can use over and over again here and then show it in action using our previous example
 
 ### Pop-Up Template
 
@@ -67,7 +67,7 @@ You can use the code below in a formula(text) column in a Saved Search to create
         UPDATE_LINK_TEXT_HERE
         </a>'
     
-Using the dynamic link from my previous example, my new `<a>` tag would look like this:
+Using the dynamic link from our previous example, our new `<a>` tag would look like this:
 
     '<a href="#" onclick="window.open(''https://system.na3.netsuite.com/app/common/search/searchresults.nl?searchtype=Transaction&Transaction_INTERNALID='||{internalid}||'&style=NORMAL&report=&grid=&searchid=1175&dle=F&sortcol=Transction_FRETION17_raw&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&size=100&twbx=F'',''selection'',''dependent=yes,height=600,width=700,scrollbars=no,statusbar=no,titlebar=no,menubar=no,resizeable=yes,location=no'');">
     Items on SO
@@ -80,14 +80,14 @@ And behave link this (example using the same search as a custom search portlet)
 
 ## Conclusion
 
-I hope you enjoyed this 2 part post on dynamic links and link behavior. If you have any questions, plese feel free to [*email me*](mailto:patrick@mysuite.tech) or reach out through [LinkedIn](https://www.linkedin.com/in/patrick-olson-pmp/).
+We hope you enjoyed this 2 part post on dynamic links and link behavior.
 
 ## Resources
 
 [Part 1 - Dynamic Saved Search Links](/blog/dynamiclinks_suiteanalytics)
 
 
-<ConsultingCTA message="I build custom saved search links and drill-downs for clients regularly. If your team needs better reporting or dashboards, let's talk." />
+<ConsultingCTA message="We build custom saved search links and drill-downs for clients regularly. If your team needs better reporting or dashboards, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 2/26/2018 

@@ -9,13 +9,13 @@ tags: ["Implementation", "Advisory"]
 
 NetSuite implementations rarely blow up. They drift. The status stays green, the partner stays confident, and one day you go live and find out the system doesn't match how your business actually runs, or the invoice is somehow double what you signed. By then it's expensive to unwind.
 
-But the drift is visible early, if you know the tells. Here are seven I run into again and again, usually months before anyone on the project will say the word "problem."
+But the drift is visible early, if you know the tells. Here are seven we run into again and again, usually months before anyone on the project will say the word "problem."
 
 [[toc]]
 
 ## 1. The change orders keep coming
 
-One or two change orders is just a project. A steady drip of them is a scoping problem wearing a different hat. When you keep getting billed for things you were sure were included, it usually means discovery got rushed and the gaps are surfacing now, at change-order rates. I've seen the change-order total pass the value of the original contract. That isn't "scope evolved," it's the bill for a discovery nobody pressure-tested.
+One or two change orders is just a project. A steady drip of them is a scoping problem wearing a different hat. When you keep getting billed for things you were sure were included, it usually means discovery got rushed and the gaps are showing up now, at change-order rates. We have seen the change-order total pass the value of the original contract. That isn't "scope evolved," it's the bill for a discovery nobody pressure-tested.
 
 If every surprise is a new line item, go back and reread [what your SOW actually says](/blog/netsuite-sow-before-you-sign), then ask which of these should have been caught up front.
 
@@ -39,7 +39,7 @@ Migration gets shoved into the last few weeks before go-live, which is exactly b
 
 Finance set a go-live date, usually pinned to a quarter close or year-end, and now it's untouchable. Fine. But watch what happens behind it. Scope keeps growing. UAT gets squeezed from three weeks to one. The open-issues list isn't actually shrinking. And the date still doesn't budge.
 
-I've watched a team hit their date on paper and then spend the next two quarters cleaning up everything that got rushed to make it. If the date can't move, the scope has to. Somebody has to be willing to say that out loud while there's still time to choose. And before you commit to that date, work through a [go-live readiness checklist](/blog/netsuite-go-live-readiness-checklist) honestly, because it tells you whether you've earned the launch or are just hoping the rush holds together.
+We have watched a team hit their date on paper and then spend the next two quarters cleaning up everything that got rushed to make it. If the date can't move, the scope has to. Somebody has to be willing to say that out loud while there's still time to choose. And before you commit to that date, work through a [go-live readiness checklist](/blog/netsuite-go-live-readiness-checklist) honestly, because it tells you whether you've earned the launch or are just hoping the rush holds together.
 
 ## 7. Nobody can tell you why
 
@@ -49,8 +49,8 @@ Pick a configuration, any one, and ask why it was set up that way. If the only p
 
 None of this means your partner is bad or your project is doomed. Most of the people doing the hands-on work are trying to do right by you. But "we're collaborating" can't quietly turn into "we're trusting and hoping," and the implementations that go well almost always have someone on the client's side who spots these early and does something about them.
 
-That's the job I do. I sit on your side of the table during the implementation, read the SOW, challenge the design, [keep the partner honest](/blog/managing-your-implementation-partner), and make sure the system you launch is the one your business actually needs. I wrote a longer piece on [what that role actually looks like day to day](/blog/netsuite-client-side-resource), including what a good client-side resource will and won't do.
+That's the job we do. We sit on your side of the table during the implementation, read the SOW, challenge the design, [keep the partner honest](/blog/managing-your-implementation-partner), and make sure the system you launch is the one your business actually needs. We wrote a longer piece on [what that role actually looks like day to day](/blog/netsuite-client-side-resource), including what a good client-side resource will and won't do.
 
 If you're mid-project and two or three of these are nagging at you, [let's talk](/about/). The cheapest time to deal with it is before go-live. And if you're already live and wondering what the rush left behind, a [NetSuite Health Check](/netsuite-health-check) will tell you in a few days.
 
-<ConsultingCTA message="I sit on your side of the table during NetSuite implementations. SOW review, design validation, partner oversight, and making sure the system you launch actually fits your business." />
+<ConsultingCTA message="We sit on your side of the table during NetSuite implementations. SOW review, design validation, partner oversight, and making sure the system you launch actually fits your business." />

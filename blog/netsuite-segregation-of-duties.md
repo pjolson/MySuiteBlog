@@ -38,7 +38,7 @@ So the native toolkit is: granular role-based access to control who can do what,
 
 ## Where the native tools stop
 
-Here is where I spend most of my time with clients, because this is where the gap between "we have SoD" and "we can prove SoD" opens up.
+Here is where we spend most of our time with clients, because this is where the gap between "we have SoD" and "we can prove SoD" opens up.
 
 **Access control is not approval independence.** Roles decide whether you can open a page. They do not, on their own, stop the creator of a transaction from also being the approver of that transaction. If your approval routing sends a PO to "the department manager" and the department manager is the person who raised the PO, the system will happily let them approve their own request. The permission was never the problem. The routing logic was.
 
@@ -56,15 +56,15 @@ For SOX-regulated companies the stakes are explicit. An SoD weakness does not st
 
 If you are not under SOX, you are not off the hook, you are just on a slower clock. An auditor finding around approver independence carries forward year to year until you fix it, and every cycle it sits open, the engagement gets broader and more expensive. "We will catch it in review" stops being an acceptable answer the first time someone asks you to prove the review actually happened.
 
-## How I approach SoD in a NetSuite build
+## How we approach SoD in a NetSuite build
 
-When I set this up or clean it up for a client, the work is less about NetSuite features and more about being deliberate:
+When we set this up or clean it up for a client, the work is less about NetSuite features and more about being deliberate:
 
 1. **Map the conflicts first.** List the actual create-versus-approve and enter-versus-pay pairs for your business. You cannot enforce a separation you have not named.
 2. **Design roles to the conflicts, not the org chart.** Start from least privilege and add only what each role needs. Resist the urge to clone one fat role for everyone.
 3. **Design routing that enforces independence.** Approval rules have to account for the case where the routed approver is the creator, and for the single-approver fallback, before those cases show up in production.
 4. **Decide preventive versus detective on purpose.** For your highest-risk transactions, aim for the system to block the violation, not just report it later.
-5. **Write it down as you go.** The policy and the configuration have to match. The single most common finding I see is a written policy that says one thing and a system that enforces another.
+5. **Write it down as you go.** The policy and the configuration have to match. The single most common finding we see is a written policy that says one thing and a system that enforces another.
 
 Most of this you can do with native tools and discipline. The piece native tools struggle with is the last one in practice: capturing, at the moment of every approval across every channel, the proof that the separation held.
 
@@ -76,6 +76,6 @@ The native role and routing model gets you part of the way. Closing the gap betw
 
 If an auditor pulled a random transaction from last quarter tomorrow, how long would it take you to prove the person who created it did not approve it? If the answer is "a few clicks," your SoD is enforced. If the answer is "give me a few days," it is documented, and there is work to do.
 
-<ConsultingCTA message="If you are setting up roles and approval routing and want segregation of duties that holds up to an audit, not just a policy document, that is the kind of thing I help NetSuite teams get right." />
+<ConsultingCTA message="If you are setting up roles and approval routing and want segregation of duties that holds up to an audit, not just a policy document, that is the kind of thing we help NetSuite teams get right." />
 
 <TagLinks />

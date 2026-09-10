@@ -29,7 +29,7 @@ NetSuite is sold through a combination of Oracle's internal sales team and a net
 
 What matters to you: returning a module you already bought hurts both sides. The reseller loses standing. The Oracle rep takes a hit. Nobody is going to proactively tell you that you bought something you do not need. And once the implementation partner starts configuring it, you are now paying twice: once for the license and once for the build.
 
-I have worked with clients who realized mid-implementation that they purchased Advanced Procurement and did not need it. Standard purchasing covered their requirements. But by the time someone raised the question, the partner had already scoped configuration hours against it and the reseller had no interest in processing a return.
+We have worked with clients who realized mid-implementation that they purchased Advanced Procurement and did not need it. Standard purchasing covered their requirements. But by the time someone raised the question, the partner had already scoped configuration hours against it and the reseller had no interest in processing a return.
 
 Before you sign the order form, challenge every module on it:
 
@@ -47,7 +47,7 @@ A Full Access license is what most people think of as a "NetSuite user." They ca
 
 An Employee Center license costs a fraction of that, around $10 to $25 per user per month, typically sold in packs of five. These users can submit time and expenses, enter and approve purchase orders, and approve vendor bills. That is it. They cannot access financial reports, run saved searches, or do anything that resembles administration.
 
-The mistake I see repeatedly: companies buy full licenses for users who only need Employee Center access. Someone in operations who only approves POs. A project manager who only submits time. A department head who only approves expense reports. Each one of those is a full license at 5 to 10 times the cost of what they actually need.
+The mistake we see repeatedly: companies buy full licenses for users who only need Employee Center access. Someone in operations who only approves POs. A project manager who only submits time. A department head who only approves expense reports. Each one of those is a full license at 5 to 10 times the cost of what they actually need.
 
 The catch is that if you assign a user any standard NetSuite role (accountant, sales rep, operations manager, anything beyond Employee Center), that user consumes a full license even if they also have the Employee Center role. The licensing is driven by the highest-permission role assigned. So you cannot split the difference. Either someone is an Employee Center user or they are a full user. There is nothing in between.
 
@@ -87,13 +87,13 @@ The sales engineers, account executives, and demo team who sell you NetSuite are
 
 When the implementation partner shows up for kickoff, they work off the Statement of Work. Not the demo. Not the sales call notes. Not the email where the account executive said "yes, the system handles that natively." If it is not in the SOW, it does not exist in the project scope.
 
-I have seen this play out with specific features. A sales engineer demonstrates a complex approval routing during a demo. The client assumes that is included. The SOW says "configure standard approval workflows." When the partner's consultant starts the build, they configure a basic approval chain. The client says "that is not what we were shown." The partner says "that is what the SOW says." The client either lives with it or pays for a change order.
+We have seen this play out with specific features. A sales engineer demonstrates a complex approval routing during a demo. The client assumes that is included. The SOW says "configure standard approval workflows." When the partner's consultant starts the build, they configure a basic approval chain. The client says "that is not what we were shown." The partner says "that is what the SOW says." The client either lives with it or pays for a change order.
 
 The fix is simple but requires discipline: after every sales demo, write down the specific capabilities that were shown. Before you sign the SOW, map those capabilities against the SOW deliverables. Anything that was demonstrated but is not explicitly described in the SOW needs to be added or acknowledged as out of scope. Do this before kickoff, not during UAT when it is too late.
 
 ## What the SOW Should Say and Usually Does Not
 
-I covered the dynamics of working with a partner once the project starts in [managing your implementation partner](/blog/managing-your-implementation-partner). But a lot of the problems that surface during the implementation are baked into the SOW before day one.
+We covered the dynamics of working with a partner once the project starts in [managing your implementation partner](/blog/managing-your-implementation-partner). But a lot of the problems that come up during the implementation are baked into the SOW before day one.
 
 ### Data Migration
 
@@ -106,7 +106,7 @@ Every SOW includes data migration. Almost none of them define it with enough spe
 - Which historical data is in scope? All transactions or only open ones? How far back?
 - Are custom records and custom fields included in the migration mapping?
 
-"Data migration" as a two-word line item in a SOW is not a deliverable. It is a placeholder for a conversation nobody has had yet. I wrote a full breakdown of [what data migration actually involves](/blog/netsuite-data-migration) and what the internal team needs to own.
+"Data migration" as a two-word line item in a SOW is not a deliverable. It is a placeholder for a conversation nobody has had yet. We wrote a full breakdown of [what data migration actually involves](/blog/netsuite-data-migration) and what the internal team needs to own.
 
 ### Integrations
 
@@ -139,7 +139,7 @@ The weeks right after go-live are brutal. The system is live, real transactions 
 
 If hypercare is a single line item that says "two weeks of post-go-live support," ask what that means in practice. Two weeks of dedicated support is very different from two weeks of "email us if something breaks."
 
-I wrote about what happens when this period ends and the partner rolls off in [the post-go-live cliff](/blog/post-go-live-cliff). The quality of your hypercare terms determines how hard that cliff hits.
+We wrote about what happens when this period ends and the partner rolls off in [the post-go-live cliff](/blog/post-go-live-cliff). The quality of your hypercare terms determines how hard that cliff hits.
 
 ### Documentation
 
@@ -159,7 +159,7 @@ The time to ask these questions is before you sign. Not because your partner is 
 
 Have someone on your side read both contracts. Not your lawyer. Someone who understands what a NetSuite implementation actually involves. Someone who knows what "configure order-to-cash" means in practice and can tell you whether the SOW matches what your business actually needs.
 
-That is the job I do. But whether it is me or someone else, do not sign without it.
+That is the job we do. But whether it is MySuite or someone else, do not sign without it.
 
 ## Frequently Asked Questions
 
@@ -183,7 +183,7 @@ It should define data migration in detail (number of test loads, who owns cleans
 
 No. The sales engineers and account executives who sell and demo NetSuite are not the people who implement it. The implementation partner works from the Statement of Work, not the demo or the sales call, so anything that was shown but is not written into the SOW is out of scope. After every demo, write down the specific capabilities you were shown and map them against the SOW deliverables before you sign.
 
-<ConsultingCTA message="I review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
+<ConsultingCTA message="We review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/19/2026

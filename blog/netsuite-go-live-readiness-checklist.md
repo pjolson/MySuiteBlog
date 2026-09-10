@@ -10,9 +10,9 @@ faqSchema: true
 
 [[toc]]
 
-Go-live gets treated like a finish line on a schedule. It's really a decision, and the date is just when you've committed to making it. The mistake I run into over and over is treating the date as fixed and readiness as something that'll sort itself out on the way there. It works the other way around. You earn the date by proving you're ready, and the proof is specific: reconciled data, signed-off tests, a rehearsed cutover, trained users, and a plan for support that outlives the partner.
+Go-live gets treated like a finish line on a schedule. It's really a decision, and the date is just when you've committed to making it. The mistake we run into over and over is treating the date as fixed and readiness as something that'll sort itself out on the way there. It works the other way around. You earn the date by proving you're ready, and the proof is specific: reconciled data, signed-off tests, a rehearsed cutover, trained users, and a plan for support that outlives the partner.
 
-This is the checklist I work through with a client in the weeks before a NetSuite launch. Some of it is NetSuite-specific. A lot of it is just the go-live discipline any serious ERP project runs on, because the ways a launch goes wrong don't change much whether the logo says NetSuite, SAP, or Dynamics. Use it to pressure-test where you actually are, not where the status dashboard says you are.
+This is the checklist we work through with a client in the weeks before a NetSuite launch. Some of it is NetSuite-specific. A lot of it is just the go-live discipline any serious ERP project runs on, because the ways a launch goes wrong don't change much whether the logo says NetSuite, SAP, or Dynamics. Use it to pressure-test where you actually are, not where the status dashboard says you are.
 
 One note on who this is for. It's written for the person on the customer's side who has to stand behind the launch: the sponsor, the finance or ops lead, the internal project owner. Your partner has their own cutover checklist. This one is yours.
 
@@ -24,7 +24,7 @@ Before the checklist itself, the mindset behind it, because it changes how you r
 
 **Every item has one owner.** Not a team. A person. "Finance owns the close test" becomes "the controller owns the close test and signs it." Shared ownership is how things slip through the cracks in the last two weeks, when everyone assumes someone else has it.
 
-**Readiness is a gate, and gates need governance.** A real go-live has checkpoints, not one nervous Friday call. Someone named makes the decision at each one. I get into how that works in the last section, but carry it with you as you read, because every dimension below feeds that one call.
+**Readiness is a gate, and gates need governance.** A real go-live has checkpoints, not one nervous Friday call. Someone named makes the decision at each one. We get into how that works in the last section, but carry it with you as you read, because every dimension below feeds that one call.
 
 Nine dimensions follow. Work each one, then take the [printable checklist](#the-printable-checklist) at the end into your own readiness review.
 
@@ -34,17 +34,17 @@ Data sinks more go-lives than anything else, and it does it quietly. The system 
 
 Order matters. Load master data by dependency or the loads fail on broken references: chart of accounts, then currencies and tax, then subsidiaries, locations, departments, and classes, then your entities, then items, then open transactions, and opening balances last. Get the order wrong and you'll spend a day chasing reference errors instead of checking whether the data is any good.
 
-The one practice that saves go-lives here is the mock load. Don't plan to migrate once, on cutover weekend, and pray. Run the whole thing end to end, more than once, well before launch. Each dry run answers three questions: is the data clean, are the mappings right, and does the full load even fit inside your cutover window. A load that takes forty hours doesn't fit in a weekend, and you want to learn that in a rehearsal, not at 3am on go-live Saturday. I've made the longer case for treating [migration as an early workstream, not a last one](/blog/netsuite-data-migration).
+The one practice that saves go-lives here is the mock load. Don't plan to migrate once, on cutover weekend, and pray. Run the whole thing end to end, more than once, well before launch. Each dry run answers three questions: is the data clean, are the mappings right, and does the full load even fit inside your cutover window. A load that takes forty hours doesn't fit in a weekend, and you want to learn that in a rehearsal, not at 3am on go-live Saturday. We've made the longer case for treating [migration as an early workstream, not a last one](/blog/netsuite-data-migration).
 
 Then reconcile. The final mock load has to tie back to the source: record counts, control totals, opening balances against the trial balance you're carrying over. And the person who signs that reconciliation is the controller, because they're the one who has to trust the numbers on Monday.
 
 ## 2. Configuration and solution scope
 
-You can't certify a system as ready while the definition of the system is still moving. Scope creep in the final weeks is one of the surest tells a launch is about to hurt, and it's one of the [warning signs I look for on any project](/blog/netsuite-implementation-warning-signs).
+You can't certify a system as ready while the definition of the system is still moving. Scope creep in the final weeks is one of the surest tells a launch is about to hurt, and it's one of the [warning signs we look for on any project](/blog/netsuite-implementation-warning-signs).
 
 Freeze it. What's going live should be written down and agreed: no open change orders that change go-live behavior, and a clear, shared line between what's in this launch and what's honestly phase two. Everything in scope should trace back to what you signed, which is the moment your [SOW](/blog/netsuite-sow-before-you-sign) finally earns its keep as the reference for what "done" means.
 
-Then the build. Every customization, script, and workflow that's in scope is deployed and working in the environment you'll actually launch from, not parked in a developer's sandbox. The saved searches, reports, forms, and dashboards people need are built and tested. And there's a real role waiting for every job that logs in Monday morning, which matters more than it sounds. I'll come back to why under security.
+Then the build. Every customization, script, and workflow that's in scope is deployed and working in the environment you'll actually launch from, not parked in a developer's sandbox. The saved searches, reports, forms, and dashboards people need are built and tested. And there's a real role waiting for every job that logs in Monday morning, which matters more than it sounds. We'll come back to why under security.
 
 ## 3. Testing: UAT, SIT, and performance
 
@@ -68,15 +68,15 @@ Every integration in scope gets tested with real data at real volume: the shippi
 
 Simulate the failure. Watch how the system and your people react. You'll learn more from that than from ten clean test runs.
 
-The other half is the dependencies you don't control. If a vendor, a bank, or a service provider has to be ready on your date, get it in writing, not in a hallway conversation. I've watched a launch slip because a bank needed six weeks to stand up a production feed and nobody asked until week five. Their timeline was the whole project's timeline, and nobody was watching it.
+The other half is the dependencies you don't control. If a vendor, a bank, or a service provider has to be ready on your date, get it in writing, not in a hallway conversation. We've watched a launch slip because a bank needed six weeks to stand up a production feed and nobody asked until week five. Their timeline was the whole project's timeline, and nobody was watching it.
 
 ## 5. Security, roles, and access
 
 This one gets skipped because it's boring, right up until it's a control failure. Two things go wrong, and both show up fast: people get too much access, or people get the wrong access.
 
-Assign least-privilege roles. The move I see constantly, and argue against every time, is handing everyone administrator or some broad catch-all role to "avoid access issues during go-live." That's how you end up with an AP clerk who can edit the chart of accounts and an auditor asking who signed off on that. Roles match jobs. And you've already tested them, because UAT ran in those roles.
+Assign least-privilege roles. The move we see constantly, and argue against every time, is handing everyone administrator or some broad catch-all role to "avoid access issues during go-live." That's how you end up with an AP clerk who can edit the chart of accounts and an auditor asking who signed off on that. Roles match jobs. And you've already tested them, because UAT ran in those roles.
 
-Check segregation of duties before you launch, not after an auditor circles it in red. The person who creates a vendor shouldn't be the person who approves its payment. NetSuite's native roles get you partway, and knowing exactly where they stop is a before-go-live problem, not an after one. I mapped out [where the native SoD tooling runs out of road](/blog/netsuite-segregation-of-duties) separately. Verify approval routing end to end too, across every subsidiary and every threshold, because chains that sail through a single-entity test tend to buckle across a multi-entity structure. That's its own rabbit hole, and I get into it in [what SuiteFlow can and can't do](/blog/netsuite-approval-workflows).
+Check segregation of duties before you launch, not after an auditor circles it in red. The person who creates a vendor shouldn't be the person who approves its payment. NetSuite's native roles get you partway, and knowing exactly where they stop is a before-go-live problem, not an after one. We mapped out [where the native SoD tooling runs out of road](/blog/netsuite-segregation-of-duties) separately. Verify approval routing end to end too, across every subsidiary and every threshold, because chains that sail through a single-entity test tend to buckle across a multi-entity structure. That's its own rabbit hole, and we get into it in [what SuiteFlow can and can't do](/blog/netsuite-approval-workflows).
 
 ::: tip Approvals that have to survive an audit
 If your launch has to show that approvals and segregation of duties are actually enforced, not just written down, native routing only gets you so far. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) enforces and evidences approval controls in NetSuite, which is precisely what an auditor asks you to produce after go-live.
@@ -100,13 +100,13 @@ Under all of that sits change management: leadership visibly backing the launch,
 
 ## 8. Support and hypercare
 
-The most dangerous assumption on any launch is that the partner sticking around for a few weeks means you're covered. Hypercare is a safety net for go-live bugs. It is not a transfer of ownership, and the gap between those two things is exactly [the post-go-live cliff](/blog/post-go-live-cliff) I've written about.
+The most dangerous assumption on any launch is that the partner sticking around for a few weeks means you're covered. Hypercare is a safety net for go-live bugs. It is not a transfer of ownership, and the gap between those two things is exactly [the post-go-live cliff](/blog/post-go-live-cliff) we've written about.
 
 Plan it deliberately: who's on the support team, what hours they cover, how issues get logged, triaged, and escalated, and how severity is defined so a broken invoice run doesn't wait in the same line as a font complaint. Coverage runs hardest in the first 48 to 72 hours, then stays elevated for two to four weeks. The part people forget is how it ends. Hypercare should wind down when incident volume drops below an agreed line and stays there, not when the calendar hits an arbitrary Friday and the consultants roll to their next project.
 
 And then the real question: who owns this system afterward?
 
-Someone on your side has to, and the time to put that person in the seat is before go-live, overlapping with the partner while the knowledge is still in the building. It's the whole reason I argue for [an internal resource on the implementation](/blog/netsuite-implementation-resource) and [a client-side owner who carries the context forward](/blog/netsuite-client-side-resource). Skip it and you're not really launching a system. You're starting the countdown to a crisis.
+Someone on your side has to, and the time to put that person in the seat is before go-live, overlapping with the partner while the knowledge is still in the building. It's the whole reason we argue for [an internal resource on the implementation](/blog/netsuite-implementation-resource) and [a client-side owner who carries the context forward](/blog/netsuite-client-side-resource). Skip it and you're not really launching a system. You're starting the countdown to a crisis.
 
 ## 9. The go/no-go decision
 
@@ -214,7 +214,7 @@ Hypercare is the period of elevated support right after go-live, when issues get
 
 Almost always, yes, but only deliberately. No launch happens with a completely empty defect list. The discipline is to triage: separate the issues that are true blockers, meaning they break a critical business process or a control, from the ones that are cosmetic or have a workaround. Blockers stop the launch. Everything else goes live with an owner and a fix date. What you do not do is go live without knowing which is which.
 
-<ConsultingCTA message="Staring down a NetSuite go-live? I help companies pressure-test their readiness and cutover plan before they commit to the go/no-go, so launch day is a decision you've earned, not a date you're hoping survives contact with reality." />
+<ConsultingCTA message="Staring down a NetSuite go-live? We help companies pressure-test their readiness and cutover plan before they commit to the go/no-go, so launch day is a decision you've earned, not a date you're hoping survives contact with reality." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 7/6/2026
