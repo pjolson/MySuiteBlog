@@ -24,6 +24,9 @@ export function publicProcedure(id, entry) {
     else body = body.split('**Countries and states**')[0].trim() + (entry.id === 'EXP-03' ? '\n\nVerify the actual period reference before changing dates or reopening periods. A reference mismatch does not itself establish a closed-period problem.' : '')
   }
   if (id === 'P03' && !['SAL-04', 'SAL-07'].includes(entry.id)) body = body.replace(/\n\nFor an update to an existing sales order,[\s\S]*$/, '')
+  // The duplicate-record advice only belongs on guides about duplicates; the
+  // inactive-record and subsidiary caution stays for every reference error.
+  if (id === 'P01' && !['duplicate-records', 'record-identifiers'].includes(entry.slug)) body = body.replace('For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. ', '')
   if (id === 'P09' && !entry.id.startsWith('VBL-')) body = body.replace(/\n\nFor vendor bills,[\s\S]*?(?=\n\nFor assemblies)/, '')
   return body.trim()
 }

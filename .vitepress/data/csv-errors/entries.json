@@ -368,11 +368,11 @@
     "id": "EMP-04",
     "context": "Employees and expense categories",
     "messageFragments": [
-      "employee"
+      "Invalid employee reference key"
     ],
-    "matchNotes": "`employee`, reference-key wording",
+    "matchNotes": "`Invalid employee reference key {value}`; the value varies.",
     "explanation": "The time entry cannot match the employee supplied.",
-    "firstCheck": "Compare the employee value with the mapping's choice of name or internal ID.",
+    "firstCheck": "Compare the employee value with the mapping's choice of name or internal ID. A name must match the format the Time Tracking form shows for the employee.",
     "procedureIds": [
       "P01"
     ],

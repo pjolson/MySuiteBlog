@@ -22,7 +22,7 @@ Check the record identity and whether its subsidiary, currency, and active state
 
 **Message looks like**
 
-- `employee`
+- `Invalid employee reference key`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -34,7 +34,7 @@ Import context: Time entries and Employees and expense categories.
 
 **Check this first**
 
-Compare the employee value with the mapping's choice of name or internal ID.
+Compare the employee value with the mapping's choice of name or internal ID. A name must match the format the Time Tracking form shows for the employee.
 
 ::: details Show the steps
 
@@ -50,7 +50,7 @@ If you need to see internal IDs, enable them in your personal preferences or inc
 
 [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
 
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
 
 :::
 
@@ -163,7 +163,7 @@ If you need to see internal IDs, enable them in your personal preferences or inc
 
 [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
 
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
 
 :::
 

@@ -50,7 +50,7 @@ If you need to see internal IDs, enable them in your personal preferences or inc
 
 [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
 
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
 
 :::
 
@@ -184,7 +184,7 @@ If you need to see internal IDs, enable them in your personal preferences or inc
 
 [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
 
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
 
 :::
 

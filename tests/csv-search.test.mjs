@@ -468,6 +468,25 @@ test('ordinary long-word typos keep their fuzzy match', () => {
   assert.equal(searchEntries('wrong datte').results[0]?.slug, 'dates-and-periods')
 })
 
+test('the employee reference message shows its wording, plain steps, and no duplicate advice', () => {
+  const entry = entries.find(entry => entry.id === 'EMP-04')
+  for (const query of ['Invalid employee reference key 9846', 'Invalid employee reference key ABC-01', 'invalid EMPLOYEE reference key']) {
+    const first = searchEntries(query).results[0]
+    assert.deepEqual(first.entries.map(item => item.id), ['EMP-04'], query)
+    assert.equal(first.url, entry.url, query)
+    assert.equal(headerResults(query, [])[0].id, entry.url, query)
+  }
+  assert.deepEqual(entry.messageFragments, ['Invalid employee reference key'])
+  assert.match(entry.firstCheck, /format the Time Tracking form shows/)
+  const md = renderGuide(guides.find(guide => guide.ids.includes('EMP-04')))
+  assert.ok(md.includes('- `Invalid employee reference key`'))
+  const section = md.split('## The employee cannot be matched')[1].split('\n## ')[0]
+  assert.doesNotMatch(section, /duplicate-record message|generate new external IDs/)
+  assert.match(section, /inactive records or subsidiary restrictions/i)
+  const duplicates = renderGuide(guides.find(guide => guide.slug === 'duplicate-records'))
+  assert.match(duplicates, /For a duplicate-record message/)
+})
+
 test('errors stay reachable under the import type Oracle files them beneath', () => {
   assert.deepEqual(ids('Please enter value(s) for: Currency', { context: 'Employees and expense categories' }), ['EMP-01'])
   assert.deepEqual(ids('Please enter value(s) for: Currency', { context: 'Expense reports' }), ['EMP-01'])
