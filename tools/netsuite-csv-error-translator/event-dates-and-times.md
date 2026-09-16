@@ -22,8 +22,7 @@ Check the event’s start and end values, date format, and whether it spans date
 
 **Message looks like**
 
-- `preferred`
-- `Date`
+- `Date field not in your preferred date format`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -62,8 +61,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Date`
-- `End Date`
+- `Required field missing for field Date`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -117,8 +115,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Parse`
-- `date/time`
+- `Parse of date/time failed`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -157,8 +154,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Start time`
-- `end time`
+- `Start time must be earlier than the end time`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

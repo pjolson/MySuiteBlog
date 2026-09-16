@@ -22,7 +22,7 @@ Check what saved before retrying. A script or later processing step can fail aft
 
 **Message looks like**
 
-- `AfterSubmit`
+- `AfterSubmit Script failed, record created with internalId xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -56,9 +56,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Script usage-limit wording`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 
@@ -96,9 +94,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Post-processing failure`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 

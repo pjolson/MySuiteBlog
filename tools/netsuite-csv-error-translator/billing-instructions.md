@@ -22,10 +22,7 @@ Choose the intended billing outcome before changing either the terms or payment-
 
 **Message looks like**
 
-- `terms`
-- `paymentmethod`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+The exact wording varies. Messages for this case mention `terms` and `paymentmethod`.
 
 **What it means**
 

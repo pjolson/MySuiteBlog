@@ -22,7 +22,7 @@ Check the detail mapping and how each item, expense, member, or operation row co
 
 **Message looks like**
 
-- `member items`
+- `Please select member items before submitting`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -98,7 +98,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `line item`
+- `You must enter at least one line item for this transaction`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -136,7 +136,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `line item`
+- `You must enter at least one line item for this transaction`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -208,7 +208,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `line item`
+- `You must enter at least one line item for this transaction`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

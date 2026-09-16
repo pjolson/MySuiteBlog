@@ -64,8 +64,8 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `assetaccount`
-- `cogsaccount`
+- `Invalid assetaccount reference key xxx`
+- `Invalid cogsaccount reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -99,8 +99,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `account`
-- `subsidiary`
+- `Invalid account reference key 'xxx' for subsidiary 'xxx'`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -134,8 +133,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `entity`
-- `currency`
+- `Invalid entity reference key xx for currency xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -211,9 +209,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid subsidiary reference key {value}`
-- `subsidiary`
-- `entity`
+- `Invalid subsidiary reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

@@ -22,7 +22,7 @@ Check the separator and the complete intended set. Routing locations have their 
 
 **Message looks like**
 
-- `name/parent`
+- `There is already an item with that name or name/parent combination`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -64,7 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Multiple values`
+- `Multiple values found for a dropdown field that can only take one`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -106,7 +106,6 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `remove subsidiary`
 - `used on a transaction`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
@@ -149,7 +148,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `location`
+- `Invalid location reference key`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

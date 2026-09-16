@@ -22,7 +22,7 @@ Choose the import context before following a documented example. A generic error
 
 **Message looks like**
 
-- `Unexpected Error`
+- `An Unexpected Error has Occurred`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -62,7 +62,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Unexpected Error`
+- `An Unexpected Error has Occurred`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

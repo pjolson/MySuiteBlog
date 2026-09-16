@@ -22,7 +22,7 @@ Distinguish a customer-only import from a combined customer or prospect and cont
 
 **Message looks like**
 
-- `Illegal ID`
+- `Illegal ID. Please enter a name.`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -60,7 +60,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `company`
+- `Invalid company reference key ***.`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -102,7 +102,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Type`
+- `Please set value for Type`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -144,7 +144,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `isperson`
+- `Invalid isperson reference key (customer name)`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -186,7 +186,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Illegal ID`
+- `Illegal ID. Please enter a name.`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

@@ -22,8 +22,7 @@ Find the exact field, its mapping, and the form or sublist that requires it.
 
 **Message looks like**
 
-- `vatregnumber`
-- `20`
+- `The field vatregnumber contained more than the maximum number ( 20 ) of characters allowed.`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -65,7 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Currency`
+- `Please enter value(s) for: Currency`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -107,7 +106,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `61`
+- `Expense Categories - The field name contained more than the maximum number (61) of characters allowed`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -149,8 +148,8 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Please enter value(s) for: {field}`
-- `Mandatory field`
+- `Mandatory field missing for field 'XXXX'`
+- `Please enter value(s) for: <Field XYZ>`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -184,8 +183,8 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `You have entered an Invalid Field Value {value} for the following field: {field}`
-- `permissions`
+- `You do not have permissions to set a value for element XXXX due to one of the following reasons: 1) The field is read-only; 2) An associated feature is disabled`
+- `You have entered an Invalid Field Value XXXX for the following field: XXXX`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -219,7 +218,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Type`
+- `Please enter value(s) for: Type`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -261,8 +260,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `incoming`
-- `email`
+- `You have entered an Invalid Field Value incoming for the following field: email`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -319,9 +317,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Required-field wording`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 
@@ -376,9 +372,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Required-field wording on update`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 

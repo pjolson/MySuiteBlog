@@ -22,9 +22,7 @@ Inspect the saved value and compare it with the original before changing precisi
 
 **Message looks like**
 
-- `Symptom: text became a date`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 
@@ -65,7 +63,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `CostEstimate`
+- `You have entered an Invalid Field Value for [CostEstimate]`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -108,7 +106,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Rounding Error`
+- `Rounding Error xx.xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -236,9 +234,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Symptom: exponent notation`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+Oracle does not publish one exact wording for this case. Match it by the situation described below.
 
 **What it means**
 
@@ -270,7 +266,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `amount`
+- `You have entered an invalid field value for the following field: amount`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

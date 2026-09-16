@@ -22,7 +22,7 @@ Check bill headers, linked detail files, and whether the bill is sourced from a 
 
 **Message looks like**
 
-- `line item`
+- `You must enter a line item for this transaction`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -64,8 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `primary`
-- `duplicate`
+- `Multiple rows in your primary CSV file have the same value for the key column. Please edit this file to eliminate rows with duplicate key column values for field 'ExternalId'`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -112,7 +111,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `purchase order list`
-- `item/expense list`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

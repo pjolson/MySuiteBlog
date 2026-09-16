@@ -22,7 +22,7 @@ Distinguish the plan’s identity from its item reference and check the complete
 
 **Message looks like**
 
-- `internal ID`
+- `Could not find record with internal ID = xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -68,7 +68,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `start date`
+- `Invalid start date ref key mm/dd/yyyy`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

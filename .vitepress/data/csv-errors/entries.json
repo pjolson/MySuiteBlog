@@ -3,7 +3,7 @@
     "id": "ASM-01",
     "context": "Assemblies",
     "messageFragments": [
-      "member items"
+      "Please select member items before submitting"
     ],
     "matchNotes": "`member items`",
     "explanation": "The assembly has no linked component rows.",
@@ -22,7 +22,7 @@
     "id": "ASM-02",
     "context": "Assemblies",
     "messageFragments": [
-      "Unexpected Error"
+      "An Unexpected Error has Occurred"
     ],
     "matchNotes": "`Unexpected Error`",
     "explanation": "For the documented assembly case, check unit settings on the assembly and its components.",
@@ -41,7 +41,7 @@
     "id": "CON-01",
     "context": "Customers imported together with contacts",
     "messageFragments": [
-      "Illegal ID"
+      "Illegal ID. Please enter a name."
     ],
     "matchNotes": "`Illegal ID`",
     "explanation": "This combined import expects company customers.",
@@ -60,7 +60,7 @@
     "id": "CON-02",
     "context": "Customers imported together with contacts",
     "messageFragments": [
-      "company"
+      "Invalid company reference key ***."
     ],
     "matchNotes": "`company`, reference-key wording",
     "explanation": "The linked customer may be inactive.",
@@ -79,8 +79,7 @@
     "id": "CPY-01",
     "context": "Customer payments",
     "messageFragments": [
-      "Could not find record",
-      "Internal ID"
+      "Could not find record with Internal ID = xxxx"
     ],
     "matchNotes": "`Could not find record`, `Internal ID`",
     "explanation": "Check whether the failing identifier belongs to the payment or the invoice it should pay.",
@@ -138,7 +137,7 @@
     "id": "CUS-01",
     "context": "Customers",
     "messageFragments": [
-      "Primary name"
+      "Could not find matching record. Primary name field was not mapped or is empty."
     ],
     "matchNotes": "`Primary name`",
     "explanation": "The customer cannot be identified.",
@@ -176,7 +175,7 @@
     "id": "CUS-03",
     "context": "Customers",
     "messageFragments": [
-      "Type"
+      "Please set value for Type"
     ],
     "matchNotes": "`Type`",
     "explanation": "The selected customer form requires a type.",
@@ -195,8 +194,7 @@
     "id": "CUS-04",
     "context": "Customers",
     "messageFragments": [
-      "vatregnumber",
-      "20"
+      "The field vatregnumber contained more than the maximum number ( 20 ) of characters allowed."
     ],
     "matchNotes": "`vatregnumber`, `20`",
     "explanation": "The tax registration value exceeds the field's length.",
@@ -215,8 +213,7 @@
     "id": "CUS-05",
     "context": "Customers",
     "messageFragments": [
-      "country",
-      "state/province"
+      "The country and state/province are mismatched, the country is US and the state/province is XX. Please enter a state/province short name that matches the country."
     ],
     "matchNotes": "`country`, `state/province`",
     "explanation": "Country and state do not agree.",
@@ -235,7 +232,7 @@
     "id": "CUS-06",
     "context": "Customers",
     "messageFragments": [
-      "isperson"
+      "Invalid isperson reference key (customer name)"
     ],
     "matchNotes": "`isperson`",
     "explanation": "NetSuite needs to know whether this customer is an individual or company.",
@@ -254,7 +251,7 @@
     "id": "CUS-07",
     "context": "Customers",
     "messageFragments": [
-      "Illegal ID"
+      "Illegal ID. Please enter a name."
     ],
     "matchNotes": "`Illegal ID`",
     "explanation": "The customer type may be hidden on the import form.",
@@ -273,7 +270,7 @@
     "id": "DMD-01",
     "context": "Item demand plans",
     "messageFragments": [
-      "internal ID"
+      "Could not find record with internal ID = xxx"
     ],
     "matchNotes": "`internal ID`, record-not-found wording",
     "explanation": "The import is not identifying the intended record.",
@@ -292,7 +289,7 @@
     "id": "DMD-02",
     "context": "Item demand plans",
     "messageFragments": [
-      "start date"
+      "Invalid start date ref key mm/dd/yyyy"
     ],
     "matchNotes": "`start date`, reference-key wording",
     "explanation": "The plan dates may conflict with its year or end date.",
@@ -311,7 +308,7 @@
     "id": "EMP-01",
     "context": "Employees and expense categories",
     "messageFragments": [
-      "Currency"
+      "Please enter value(s) for: Currency"
     ],
     "matchNotes": "`Currency`, required-value wording",
     "explanation": "The expense report expects a currency.",
@@ -330,7 +327,7 @@
     "id": "EMP-02",
     "context": "Employees and expense categories",
     "messageFragments": [
-      "category"
+      "Invalid category reference key xx"
     ],
     "matchNotes": "`category`, reference-key wording",
     "explanation": "The expense category cannot be matched.",
@@ -349,7 +346,7 @@
     "id": "EMP-03",
     "context": "Employees and expense categories",
     "messageFragments": [
-      "61"
+      "Expense Categories - The field name contained more than the maximum number (61) of characters allowed"
     ],
     "matchNotes": "`61`, expense-category field length",
     "explanation": "The expense-account value is too long for this field.",
@@ -387,8 +384,7 @@
     "id": "EVT-01",
     "context": "Events",
     "messageFragments": [
-      "preferred",
-      "Date"
+      "Date field not in your preferred date format"
     ],
     "matchNotes": "`preferred`, `Date`",
     "explanation": "An event date does not match the importing user's format.",
@@ -407,8 +403,7 @@
     "id": "EVT-02",
     "context": "Events",
     "messageFragments": [
-      "Date",
-      "End Date"
+      "Required field missing for field Date"
     ],
     "matchNotes": "`Date`, `End Date`, missing-field wording",
     "explanation": "A date is missing, or an unintended row is being processed.",
@@ -428,8 +423,7 @@
     "id": "EVT-03",
     "context": "Events",
     "messageFragments": [
-      "Parse",
-      "date/time"
+      "Parse of date/time failed"
     ],
     "matchNotes": "`Parse`, `date/time`",
     "explanation": "A date and time cannot be read.",
@@ -448,8 +442,7 @@
     "id": "EVT-04",
     "context": "Events",
     "messageFragments": [
-      "Start time",
-      "end time"
+      "Start time must be earlier than the end time"
     ],
     "matchNotes": "`Start time`, `end time`",
     "explanation": "The time range is invalid for this event import.",
@@ -468,7 +461,7 @@
     "id": "EXP-01",
     "context": "Expense reports",
     "messageFragments": [
-      "Amount"
+      "Please enter value(s) for: Amount"
     ],
     "matchNotes": "`Amount`, required-value wording",
     "explanation": "The expense amount may depend on a missing rate or quantity.",
@@ -487,7 +480,7 @@
     "id": "EXP-02",
     "context": "Expense reports",
     "messageFragments": [
-      "line item"
+      "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
     "explanation": "The report has no linked expense line.",
@@ -506,7 +499,7 @@
     "id": "EXP-03",
     "context": "Expense reports",
     "messageFragments": [
-      "postingperiod"
+      "Invalid postingperiod reference key for subsidiary 1"
     ],
     "matchNotes": "`postingperiod`",
     "explanation": "The period value cannot be matched.",
@@ -568,7 +561,7 @@
     "id": "GEN-01",
     "context": "General imports",
     "messageFragments": [
-      "name/parent"
+      "There is already an item with that name or name/parent combination"
     ],
     "matchNotes": "`name/parent`",
     "explanation": "A list selection may be repeated.",
@@ -587,7 +580,7 @@
     "id": "GEN-02",
     "context": "General imports",
     "messageFragments": [
-      "re-upload"
+      "The following file(s) could not be uploaded because of one or more errors. Please correct and re-upload."
     ],
     "matchNotes": "`re-upload`",
     "explanation": "NetSuite couldn't read the file.",
@@ -606,8 +599,8 @@
     "id": "GEN-03",
     "context": "General imports",
     "messageFragments": [
-      "Please enter value(s) for: {field}",
-      "Mandatory field"
+      "Mandatory field missing for field 'XXXX'",
+      "Please enter value(s) for: <Field XYZ>"
     ],
     "matchNotes": "`Mandatory field`",
     "explanation": "A required value isn't reaching NetSuite.",
@@ -626,8 +619,8 @@
     "id": "GEN-04",
     "context": "General imports",
     "messageFragments": [
-      "You have entered an Invalid Field Value {value} for the following field: {field}",
-      "permissions"
+      "You do not have permissions to set a value for element XXXX due to one of the following reasons: 1) The field is read-only; 2) An associated feature is disabled",
+      "You have entered an Invalid Field Value XXXX for the following field: XXXX"
     ],
     "matchNotes": "`permissions`",
     "explanation": "This field may be unavailable for import.",
@@ -646,7 +639,7 @@
     "id": "GEN-05",
     "context": "General imports",
     "messageFragments": [
-      "effective date"
+      "Invalid effective date reference key"
     ],
     "matchNotes": "`effective date`",
     "explanation": "The date format doesn't match.",
@@ -665,7 +658,7 @@
     "id": "GEN-06",
     "context": "General imports",
     "messageFragments": [
-      "Saved Search"
+      "A Saved Search with Internal ID xxx does not exist"
     ],
     "matchNotes": "`Saved Search`",
     "explanation": "A field depends on an inaccessible search.",
@@ -684,7 +677,7 @@
     "id": "GEN-07",
     "context": "General imports",
     "messageFragments": [
-      "amount"
+      "Please enter a value for amount"
     ],
     "matchNotes": "`amount`",
     "explanation": "NetSuite can't determine the amount.",
@@ -703,7 +696,7 @@
     "id": "GEN-08",
     "context": "General imports",
     "messageFragments": [
-      "columns"
+      "Different number of columns than in the header row"
     ],
     "matchNotes": "`columns`",
     "explanation": "A row has too many fields.",
@@ -722,7 +715,7 @@
     "id": "GEN-09",
     "context": "General imports",
     "messageFragments": [
-      "AfterSubmit"
+      "AfterSubmit Script failed, record created with internalId xxx"
     ],
     "matchNotes": "`AfterSubmit`",
     "explanation": "The record saved before a script failed.",
@@ -741,7 +734,7 @@
     "id": "GEN-10",
     "context": "General imports",
     "messageFragments": [
-      "personal language"
+      "Warning: Your personal language settings do not match your company's language preferences. This may slow down the import of CSV data."
     ],
     "matchNotes": "`personal language`",
     "explanation": "Language settings may slow the import.",
@@ -760,7 +753,7 @@
     "id": "GEN-11",
     "context": "General imports",
     "messageFragments": [
-      "Custom Record"
+      "There is already a Custom Record Entry with that name"
     ],
     "matchNotes": "`Custom Record`",
     "explanation": "Another record uses this identifier.",
@@ -796,7 +789,7 @@
     "id": "INV-01",
     "context": "Inventory item records",
     "messageFragments": [
-      "Locale"
+      "Invalid Locale Reference Key XX"
     ],
     "matchNotes": "`Locale`",
     "explanation": "Creating the item and its translations together can cause this documented failure.",
@@ -900,7 +893,7 @@
     "id": "INV-03",
     "context": "Inventory item records",
     "messageFragments": [
-      "Multiple values"
+      "Multiple values found for a dropdown field that can only take one"
     ],
     "matchNotes": "`Multiple values`, dropdown wording",
     "explanation": "The configured multi-select separator may appear inside an identifier.",
@@ -919,7 +912,7 @@
     "id": "INVC-01",
     "context": "Invoices and credit applications",
     "messageFragments": [
-      "line item"
+      "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
     "explanation": "The invoice has no imported item line.",
@@ -938,8 +931,7 @@
     "id": "INVC-02",
     "context": "Invoices and credit applications",
     "messageFragments": [
-      "apply",
-      "[doc,line]"
+      "Unable to find a matching line for sublist apply with key: [doc,line]"
     ],
     "matchNotes": "`apply`, `[doc,line]`",
     "explanation": "The application rows may repeat an invoice reference without a matching applied amount.",
@@ -999,10 +991,9 @@
     "title": "A unit has no unit type to belong to",
     "context": "Item records and pricing",
     "messageFragments": [
-      "purchaseunit",
-      "saleunit",
-      "stockunit",
-      "unitstype"
+      "Invalid purchaseunit reference key xx",
+      "Invalid saleunit reference key xx",
+      "Invalid stockunit reference key xx"
     ],
     "matchNotes": "Match fields: `purchaseunit`, `saleunit`, `stockunit`, with `unitstype` and a blank value.",
     "explanation": "NetSuite needs the item's unit type before it can accept its purchase, sales, or stock unit.",
@@ -1022,7 +1013,7 @@
     "title": "A custom item field cannot match its selection",
     "context": "Item records and pricing",
     "messageFragments": [
-      "custitem"
+      "Invalid custitem reference key xxx"
     ],
     "matchNotes": "Match: `custitem`, reference-key wording.",
     "explanation": "The value supplied to a custom item field does not match an allowed selection.",
@@ -1106,7 +1097,7 @@
     "title": "A related item is missing its presentation type",
     "context": "Item records and pricing",
     "messageFragments": [
-      "Type"
+      "Please enter value(s) for: Type"
     ],
     "matchNotes": "Match: `Type`, required-value wording, in presentation items.",
     "explanation": "The related-item line needs its type as well as the referenced item.",
@@ -1126,8 +1117,7 @@
     "title": "A pricing update introduces a new matrix header",
     "context": "Item records and pricing",
     "messageFragments": [
-      "existing headers",
-      "existing matrix"
+      "If you are not replacing the entire matrix you may only update existing headers. X is not in the existing matrix"
     ],
     "matchNotes": "Match fragments: `existing headers`, `existing matrix`.",
     "explanation": "The pricing update refers to a header that is not already in the matrix.",
@@ -1147,8 +1137,8 @@
     "title": "The item cannot match its asset or cost account",
     "context": "Item records and pricing",
     "messageFragments": [
-      "assetaccount",
-      "cogsaccount"
+      "Invalid assetaccount reference key xxx",
+      "Invalid cogsaccount reference key xxx"
     ],
     "matchNotes": "Match fields: `assetaccount`, `cogsaccount`.",
     "explanation": "The accounting reference does not match what the field expects.",
@@ -1168,7 +1158,7 @@
     "title": "A translated item import gives a generic failure",
     "context": "Item records and pricing",
     "messageFragments": [
-      "Unexpected Error"
+      "An Unexpected Error has Occurred"
     ],
     "matchNotes": "Match: `Unexpected Error`, in item translation work.",
     "explanation": "Oracle documents a case involving simultaneous item-name and store-display-name mappings, with translation language also needing attention.",
@@ -1188,7 +1178,7 @@
     "title": "The price level cannot be matched",
     "context": "Item records and pricing",
     "messageFragments": [
-      "price level"
+      "Invalid price level reference key XXX"
     ],
     "matchNotes": "Match: `price level`, reference-key wording.",
     "explanation": "Check the price level under the accounting lists, including inactive entries.",
@@ -1208,7 +1198,7 @@
     "title": "The parent and child have different item types",
     "context": "Item records and pricing",
     "messageFragments": [
-      "parent"
+      "Invalid parent reference key xxx"
     ],
     "matchNotes": "Match: `parent`, reference-key wording, when setting an item's parent.",
     "explanation": "The proposed parent may be a different kind of item.",
@@ -1340,7 +1330,7 @@
     "title": "An item-defined cost contains currency formatting",
     "context": "Item records and pricing",
     "messageFragments": [
-      "CostEstimate"
+      "You have entered an Invalid Field Value for [CostEstimate]"
     ],
     "matchNotes": "Match: `CostEstimate`, invalid-value wording.",
     "explanation": "The amount may include a currency symbol the mapping does not expect.",
@@ -1360,7 +1350,7 @@
     "title": "The parent reference is affected by display-name settings",
     "context": "Item records and pricing",
     "messageFragments": [
-      "parent"
+      "Invalid parent reference key xxx"
     ],
     "matchNotes": "Match: `parent`, reference-key wording, during matrix work.",
     "explanation": "A preference that displays item codes with display names can change the name needed by this import.",
@@ -1398,8 +1388,7 @@
     "id": "JRN-01",
     "context": "Journal entries",
     "messageFragments": [
-      "account",
-      "subsidiary"
+      "Invalid account reference key 'xxx' for subsidiary 'xxx'"
     ],
     "matchNotes": "`account`, `subsidiary`",
     "explanation": "The account may not be valid for this subsidiary.",
@@ -1418,7 +1407,7 @@
     "id": "JRN-02",
     "context": "Journal entries",
     "messageFragments": [
-      "department"
+      "Invalid department reference key xxx"
     ],
     "matchNotes": "`department`",
     "explanation": "The department reference cannot be matched.",
@@ -1437,8 +1426,7 @@
     "id": "JRN-03",
     "context": "Journal entries",
     "messageFragments": [
-      "entity",
-      "currency"
+      "Invalid entity reference key xx for currency xx"
     ],
     "matchNotes": "`entity`, `currency`",
     "explanation": "The entity may not support the journal currency.",
@@ -1457,7 +1445,7 @@
     "id": "JRN-04",
     "context": "Journal entries",
     "messageFragments": [
-      "blank headers"
+      "No empty or blank headers are allowed in the CSV file"
     ],
     "matchNotes": "`blank headers`",
     "explanation": "A column lacks a heading.",
@@ -1476,7 +1464,7 @@
     "id": "JRN-05",
     "context": "Journal entries",
     "messageFragments": [
-      "Account"
+      "Please enter the value(s) for Account"
     ],
     "matchNotes": "`Account`, required-value wording",
     "explanation": "A totals row may be treated as another journal line.",
@@ -1495,7 +1483,7 @@
     "id": "JRN-06",
     "context": "Journal entries",
     "messageFragments": [
-      "amortization"
+      "Amortization end date cannot be before amortization start date"
     ],
     "matchNotes": "`amortization`, date-order wording",
     "explanation": "The amortization dates are reversed or misread.",
@@ -1514,7 +1502,7 @@
     "id": "JRN-07",
     "context": "Journal entries",
     "messageFragments": [
-      "Rounding Error"
+      "Rounding Error xx.xx"
     ],
     "matchNotes": "`Rounding Error`",
     "explanation": "Inspect full decimal values and unnecessary opposite-side zero entries.",
@@ -1627,7 +1615,7 @@
     "id": "LST-01",
     "context": "Custom lists",
     "messageFragments": [
-      "translations"
+      "Adding new line to sublist translations is not allowed"
     ],
     "matchNotes": "`translations`, adding-line wording",
     "explanation": "Translation support may not be configured.",
@@ -1646,7 +1634,7 @@
     "id": "LST-02",
     "context": "Custom lists",
     "messageFragments": [
-      "translations"
+      "Unable to find a matching line for sublist translations"
     ],
     "matchNotes": "`translations`, matching-line wording",
     "explanation": "One default language may be applied to rows containing several languages.",
@@ -1665,8 +1653,7 @@
     "id": "LST-03",
     "context": "Custom lists",
     "messageFragments": [
-      "CUSTOMLIST",
-      "[id, name]"
+      "One of the columns [id, name] must be mapped in the CUSTOMLIST import"
     ],
     "matchNotes": "`CUSTOMLIST`, `[id, name]`",
     "explanation": "The list record has no mapped identity.",
@@ -1723,7 +1710,7 @@
     "id": "REL-01",
     "context": "Leads, prospects, and other relationship records",
     "messageFragments": [
-      "Lead Source"
+      "Invalid Lead Source Reference Key"
     ],
     "matchNotes": "`Lead Source`",
     "explanation": "NetSuite cannot match the lead source.",
@@ -1742,8 +1729,7 @@
     "id": "REL-02",
     "context": "Leads, prospects, and other relationship records",
     "messageFragments": [
-      "incoming",
-      "email"
+      "You have entered an Invalid Field Value incoming for the following field: email"
     ],
     "matchNotes": "`incoming`, `email`",
     "explanation": "An email value is missing or invalid in this import.",
@@ -1782,7 +1768,7 @@
     "id": "REV-01",
     "context": "Inventory cost revaluations",
     "messageFragments": [
-      "unique identifier"
+      "You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #"
     ],
     "matchNotes": "`unique identifier`",
     "explanation": "The new revaluation needs an external ID or reference number.",
@@ -1819,7 +1805,7 @@
     "id": "REV-03",
     "context": "Inventory cost revaluations",
     "messageFragments": [
-      "already exists"
+      "An Inventory Cost Revaluation Already Exists for this Item, Location, and Date"
     ],
     "matchNotes": "`already exists`, item/location/date context",
     "explanation": "A revaluation already occupies this item, location, and date combination.",
@@ -1857,7 +1843,7 @@
     "id": "ROU-02",
     "context": "Manufacturing routings",
     "messageFragments": [
-      "location"
+      "Invalid location reference key"
     ],
     "matchNotes": "`location`",
     "explanation": "Check the location, its subsidiary, and multi-select syntax.",
@@ -1876,7 +1862,7 @@
     "id": "ROU-03",
     "context": "Manufacturing routings",
     "messageFragments": [
-      "sequence number"
+      "This sequence number is already in use on another step"
     ],
     "matchNotes": "`sequence number`",
     "explanation": "Two steps share a sequence within one routing.",
@@ -1895,7 +1881,7 @@
     "id": "ROU-04",
     "context": "Manufacturing routings",
     "messageFragments": [
-      "manufacturingworkcenter"
+      "Invalid manufacturingworkcenter reference key Value"
     ],
     "matchNotes": "`manufacturingworkcenter`",
     "explanation": "The selected group may not be designated as a manufacturing work center.",
@@ -1914,7 +1900,7 @@
     "id": "SAL-01",
     "context": "Sales orders",
     "messageFragments": [
-      "line item"
+      "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
     "explanation": "No item line reached the transaction.",
@@ -1933,7 +1919,7 @@
     "id": "SAL-02",
     "context": "Sales orders",
     "messageFragments": [
-      "deleted since"
+      "The record has been deleted since you retrieved it"
     ],
     "matchNotes": "`deleted since`",
     "explanation": "The update's line handling needs review.",
@@ -1953,8 +1939,7 @@
     "context": "Sales orders",
     "anchor": "a-date-produces-getfullyear-or-nan",
     "messageFragments": [
-      "getFullYear",
-      "NaN"
+      "TypeError: Cannot find function getFullYear in object NaN"
     ],
     "matchNotes": "`getFullYear`, `NaN`",
     "explanation": "NetSuite or account customization tried to treat a value as a valid date and failed. The imported date may have triggered the failure, but the message often comes from SuiteScript or workflow logic running while the sales order is processed.",
@@ -2033,7 +2018,7 @@
     "id": "SAL-06",
     "context": "Sales orders",
     "messageFragments": [
-      "choose an item"
+      "Please choose an item to add"
     ],
     "matchNotes": "`choose an item`",
     "explanation": "The update may use incorrect line identifiers.",
@@ -2103,7 +2088,7 @@
     "id": "SYS-03",
     "context": "File processing and errors after saving",
     "messageFragments": [
-      "country"
+      "Invalid country code"
     ],
     "matchNotes": "`country`, reference-key wording",
     "explanation": "A country code may have been supplied where a localized name is expected.",
@@ -2122,9 +2107,7 @@
     "id": "SYS-04",
     "context": "File processing and errors after saving",
     "messageFragments": [
-      "Invalid subsidiary reference key {value}",
-      "subsidiary",
-      "entity"
+      "Invalid subsidiary reference key xxx"
     ],
     "matchNotes": "`subsidiary`, `entity`",
     "explanation": "The entity's subsidiary reference may be formatted incorrectly.",
@@ -2143,7 +2126,7 @@
     "id": "SYS-05",
     "context": "File processing and errors after saving",
     "messageFragments": [
-      "department"
+      "Invalid department reference key xxx"
     ],
     "matchNotes": "`department`, reference-key wording",
     "explanation": "Check the department's hierarchy, active state, and name-versus-ID setting.",
@@ -2196,7 +2179,7 @@
     "id": "TXN-01",
     "context": "Transactions in general",
     "messageFragments": [
-      "unique identifier"
+      "You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #"
     ],
     "matchNotes": "`unique identifier`",
     "explanation": "The import needs a supported transaction identifier.",
@@ -2215,7 +2198,7 @@
     "id": "TXN-02",
     "context": "Transactions in general",
     "messageFragments": [
-      "Ambiguity"
+      "Ambiguity error"
     ],
     "matchNotes": "`Ambiguity`",
     "explanation": "Repeated items make line matching unclear.",
@@ -2234,7 +2217,7 @@
     "id": "TXN-03",
     "context": "Transactions in general",
     "messageFragments": [
-      "record already exists"
+      "This record already exists"
     ],
     "matchNotes": "`record already exists`",
     "explanation": "The identifier may belong to an earlier transaction.",
@@ -2274,8 +2257,7 @@
     "id": "TXN-05",
     "context": "Transactions in general",
     "messageFragments": [
-      "contribution",
-      "100%"
+      "Total contribution for sales reps cannot exceed 100%"
     ],
     "matchNotes": "`contribution`, `100%`",
     "explanation": "Imported and existing sales-team percentages may exceed the allowed total together.",
@@ -2294,7 +2276,7 @@
     "id": "VBL-01",
     "context": "Vendor bills",
     "messageFragments": [
-      "line item"
+      "You must enter a line item for this transaction"
     ],
     "matchNotes": "`line item`",
     "explanation": "The bill has no linked detail.",
@@ -2313,8 +2295,7 @@
     "id": "VBL-02",
     "context": "Vendor bills",
     "messageFragments": [
-      "primary",
-      "duplicate"
+      "Multiple rows in your primary CSV file have the same value for the key column. Please edit this file to eliminate rows with duplicate key column values for field 'ExternalId'"
     ],
     "matchNotes": "`primary`, `duplicate`",
     "explanation": "The primary file repeats a bill key.",
@@ -2333,8 +2314,7 @@
     "id": "VBL-03",
     "context": "Vendor bills",
     "messageFragments": [
-      "userTotal",
-      "totalField"
+      "Your transaction does not balance. Please Adjust Expenses/Items.: userTotal:xx: totalField:xx"
     ],
     "matchNotes": "`userTotal`, `totalField`",
     "explanation": "The supplied header amount disagrees with the lines.",
@@ -2353,8 +2333,7 @@
     "id": "VBL-04",
     "context": "Vendor bills",
     "messageFragments": [
-      "location",
-      "subsidiary"
+      "Invalid location reference key xx for subsidiary xx"
     ],
     "matchNotes": "`location`, `subsidiary`",
     "explanation": "The selected location may not belong to the bill's subsidiary.",
@@ -2373,7 +2352,7 @@
     "id": "VBL-05",
     "context": "Vendor bills",
     "messageFragments": [
-      "amount"
+      "You have entered an invalid field value for the following field: amount"
     ],
     "matchNotes": "`amount`, invalid-value wording",
     "explanation": "The amount may contain unsupported symbols or separators.",
@@ -2412,8 +2391,7 @@
     "id": "VPY-01",
     "context": "Vendor payments and shared payment errors",
     "messageFragments": [
-      "Accounts Payable",
-      "entity"
+      "Invalid account reference key Accounts Payable xx for entity xx"
     ],
     "matchNotes": "`Accounts Payable`, `entity`",
     "explanation": "The AP reference may be unnecessary when the bill is identified directly.",
@@ -2432,8 +2410,7 @@
     "id": "VPY-02",
     "context": "Vendor payments and shared payment errors",
     "messageFragments": [
-      "apply",
-      "[doc,line]"
+      "Unable to find a matching line for sublist apply with key: [doc,line]"
     ],
     "matchNotes": "`apply`, `[doc,line]`",
     "explanation": "The referenced bill or invoice may be unavailable for application.",
@@ -2452,7 +2429,7 @@
     "id": "VPY-03",
     "context": "Vendor payments and shared payment errors",
     "messageFragments": [
-      "payment made"
+      "One or more bills or invoices has had a payment made on it since you retrieved the form"
     ],
     "matchNotes": "`payment made`",
     "explanation": "The amount due may differ after discounts or other activity.",
@@ -2471,7 +2448,7 @@
     "id": "VPY-04",
     "context": "Vendor payments and shared payment errors",
     "messageFragments": [
-      "apply"
+      "Adding new line to sublist apply is not allowed"
     ],
     "matchNotes": "`apply`, adding-line wording",
     "explanation": "A bill-and-credit application needs review.",
@@ -2490,7 +2467,7 @@
     "id": "VPY-05",
     "context": "Vendor payments and shared payment errors",
     "messageFragments": [
-      "Unparseable Internal Id"
+      "Unparseable Internal Id, did you mean to lookup this field by Name or External ID? for field xx"
     ],
     "matchNotes": "`Unparseable Internal Id`",
     "explanation": "The bill reference is not a usable internal ID.",
@@ -2509,9 +2486,7 @@
     "id": "WEB-01",
     "context": "Website categories",
     "messageFragments": [
-      "category",
-      "website",
-      "<NULL>"
+      "Invalid category reference key Information for website <NULL>"
     ],
     "matchNotes": "`category`, `website`, `<NULL>`",
     "explanation": "NetSuite needs a website before it can identify the site's category.",

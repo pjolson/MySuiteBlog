@@ -22,7 +22,7 @@ Compare the reference type, hierarchy, active state, and subsidiary of the selec
 
 **Message looks like**
 
-- `department`
+- `Invalid department reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -56,7 +56,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `department`
+- `Invalid department reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -98,8 +98,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `location`
-- `subsidiary`
+- `Invalid location reference key xx for subsidiary xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

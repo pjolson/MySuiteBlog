@@ -22,7 +22,7 @@ Check sequence numbers within each routing and confirm that the selected group i
 
 **Message looks like**
 
-- `sequence number`
+- `This sequence number is already in use on another step`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -64,7 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `manufacturingworkcenter`
+- `Invalid manufacturingworkcenter reference key Value`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

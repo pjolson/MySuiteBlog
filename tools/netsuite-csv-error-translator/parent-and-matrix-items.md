@@ -22,7 +22,7 @@ Check the record identifier first. For parent or matrix-item errors, use the con
 
 **Message looks like**
 
-- `parent`
+- `Invalid parent reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -66,7 +66,6 @@ Documentation checked September 16, 2026.
 
 - `Could not find any records by this name.`
 - `Could not find any records`
-- `RCRD_NOT_FOUND`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -156,7 +155,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `parent`
+- `Invalid parent reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

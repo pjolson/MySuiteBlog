@@ -22,7 +22,6 @@ Check the item type and unit type before changing purchase, sales, or stock unit
 
 **Message looks like**
 
-- `SSS_RECORD_TYPE_MISMATCH`
 - `The record you are attempting to load has a different type: {actualType} from the type specified: {requestedType}`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
@@ -88,10 +87,9 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `purchaseunit`
-- `saleunit`
-- `stockunit`
-- `unitstype`
+- `Invalid purchaseunit reference key xx`
+- `Invalid saleunit reference key xx`
+- `Invalid stockunit reference key xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

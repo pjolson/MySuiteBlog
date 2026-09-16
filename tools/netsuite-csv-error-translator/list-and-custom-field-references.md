@@ -22,7 +22,7 @@ Check the list behind the field, the allowed selection, and the mapping referenc
 
 **Message looks like**
 
-- `category`
+- `Invalid category reference key xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -64,7 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `custitem`
+- `Invalid custitem reference key xxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -98,7 +98,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Lead Source`
+- `Invalid Lead Source Reference Key`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -140,9 +140,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `category`
-- `website`
-- `<NULL>`
+- `Invalid category reference key Information for website <NULL>`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

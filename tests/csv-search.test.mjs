@@ -513,7 +513,9 @@ test('every documented message fragment routes back to its entry', () => {
   // These entries' fragments are single generic words from Oracle's error
   // lists ("Type", "subsidiary", "Account"); ambiguity without an import type
   // is the honest answer, so they must resolve once the type is chosen.
-  const needsImportType = new Set(['CPY-01', 'DMD-01', 'ITM-07', 'JRN-01', 'JRN-03', 'JRN-05', 'REL-03', 'ROU-02', 'SYS-04', 'VBL-01', 'VBL-04', 'VBL-05', 'VPY-01'])
+  // REL-02's documented wording is the generic invalid-field-value family, so
+  // it shares a definitive rule with GEN-04 and resolves via import type.
+  const needsImportType = new Set(['CPY-01', 'DMD-01', 'ITM-07', 'JRN-01', 'JRN-03', 'JRN-05', 'REL-02', 'REL-03', 'ROU-02', 'SYS-04', 'VBL-01', 'VBL-04', 'VBL-05', 'VPY-01'])
   const position = (results, id) => results.findIndex(result => result.entries.some(entry => entry.id === id))
   for (const entry of entries) {
     for (const fragment of entry.messageFragments) {

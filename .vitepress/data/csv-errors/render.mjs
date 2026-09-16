@@ -55,16 +55,20 @@ export function renderGuide(guide) {
   const members = guideEntries(guide.slug)
   const sections = members.map(entry => {
     const steps = entry.tailoredSteps ? `**${entry.procedureTitle}**\n\n${entry.tailoredSteps}` : (entry.stepProcedureIds || entry.procedureIds).map(id => `**${procedures[id].title}**\n\n${publicProcedure(id, entry)}`).join('\n\n')
-    const messageExamples = entry.messageFragments.length
-      ? entry.messageFragments
-      : [entry.matchNotes?.replace(/^`|`$/g, '') || entry.title]
+    // Show documented wording as examples; identifying keywords and
+    // wording-varies cases are labeled as such instead of posing as messages.
+    const verbatim = entry.messageFragments.filter(fragment => fragment.split(' ').length >= 3)
+    const keywords = entry.messageFragments.filter(fragment => fragment.split(' ').length < 3)
+    const messageBlock = verbatim.length
+      ? `${verbatim.map(fragment => `- \`${fragment}\``).join('\n')}\n\nThe wording identifies a matching situation, not a confirmed diagnosis for your account.`
+      : keywords.length
+        ? `The exact wording varies. Messages for this case mention ${keywords.map(keyword => `\`${keyword}\``).join(' and ')}.`
+        : 'Oracle does not publish one exact wording for this case. Match it by the situation described below.'
     return `## ${entry.title} {#${entry.anchor}}
 
 ${entry.summary ? entry.summary + "\n\n" : ""}**Message looks like**
 
-${messageExamples.map(fragment => `- \`${fragment}\``).join('\n')}
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+${messageBlock}
 
 **What it means**
 

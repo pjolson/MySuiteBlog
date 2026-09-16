@@ -22,8 +22,7 @@ Identify the payment separately from the bill or invoice, then check the documen
 
 **Message looks like**
 
-- `Could not find record`
-- `Internal ID`
+- `Could not find record with Internal ID = xxxx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -63,8 +62,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `apply`
-- `[doc,line]`
+- `Unable to find a matching line for sublist apply with key: [doc,line]`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -104,8 +102,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Accounts Payable`
-- `entity`
+- `Invalid account reference key Accounts Payable xx for entity xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -145,8 +142,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `apply`
-- `[doc,line]`
+- `Unable to find a matching line for sublist apply with key: [doc,line]`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -186,7 +182,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `payment made`
+- `One or more bills or invoices has had a payment made on it since you retrieved the form`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -226,7 +222,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `apply`
+- `Adding new line to sublist apply is not allowed`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -266,7 +262,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Unparseable Internal Id`
+- `Unparseable Internal Id, did you mean to lookup this field by Name or External ID? for field xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

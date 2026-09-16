@@ -22,7 +22,7 @@ Check language setup, translation mappings, and whether the main record needs to
 
 **Message looks like**
 
-- `Locale`
+- `Invalid Locale Reference Key XX`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -64,7 +64,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `translations`
+- `Adding new line to sublist translations is not allowed`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -106,7 +106,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `translations`
+- `Unable to find a matching line for sublist translations`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

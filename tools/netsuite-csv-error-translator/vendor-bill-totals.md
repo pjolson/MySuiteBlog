@@ -22,8 +22,7 @@ Compare the supplied header amount with the detail lines and review whether the 
 
 **Message looks like**
 
-- `userTotal`
-- `totalField`
+- `Your transaction does not balance. Please Adjust Expenses/Items.: userTotal:xx: totalField:xx`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

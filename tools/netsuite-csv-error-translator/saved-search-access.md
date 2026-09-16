@@ -22,7 +22,7 @@ Check whether the saved search still exists and whether the importing role can a
 
 **Message looks like**
 
-- `Saved Search`
+- `A Saved Search with Internal ID xxx does not exist`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

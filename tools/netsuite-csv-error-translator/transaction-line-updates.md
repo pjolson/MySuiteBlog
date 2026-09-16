@@ -56,7 +56,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `deleted since`
+- `The record has been deleted since you retrieved it`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -101,7 +101,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `choose an item`
+- `Please choose an item to add`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -135,9 +135,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Ambiguity`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
+The exact wording varies. Messages for this case mention `Ambiguity error`.
 
 **What it means**
 
@@ -180,8 +178,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `contribution`
-- `100%`
+- `Total contribution for sales reps cannot exceed 100%`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

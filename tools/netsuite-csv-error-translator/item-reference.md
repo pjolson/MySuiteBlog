@@ -23,7 +23,6 @@ Check the item reference in the right context: a transaction line, kit member, r
 **Message looks like**
 
 - `Invalid item reference key {value}`
-- `item`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -66,7 +65,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid item reference key {value}`
-- `item`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -171,7 +169,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid item reference key {value}`
-- `item`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 

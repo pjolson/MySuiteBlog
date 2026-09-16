@@ -60,8 +60,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `existing headers`
-- `existing matrix`
+- `If you are not replacing the entire matrix you may only update existing headers. X is not in the existing matrix`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
@@ -103,7 +102,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `price level`
+- `Invalid price level reference key XXX`
 
 The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
