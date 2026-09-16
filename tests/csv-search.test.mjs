@@ -1,7 +1,8 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { entries, guides, basePath, searchSections } from '../.vitepress/data/csv-errors/catalogue.mjs'
+import { entries, guides, basePath, searchSections, importTypes } from '../.vitepress/data/csv-errors/catalogue.mjs'
+import { importTypeGroups } from '../.vitepress/data/csv-errors/import-types.mjs'
 import { searchEntries, headerResults, normalize } from '../.vitepress/data/csv-errors/search.mjs'
 import { renderGuide, publicProcedure } from '../.vitepress/data/csv-errors/render.mjs'
 import { questionFor } from '../.vitepress/data/csv-errors/questions.mjs'
@@ -465,6 +466,34 @@ test('altered technical identifiers stay exact and do not fuzzy-match', () => {
 
 test('ordinary long-word typos keep their fuzzy match', () => {
   assert.equal(searchEntries('wrong datte').results[0]?.slug, 'dates-and-periods')
+})
+
+test('the import-type taxonomy covers every catalogue context exactly once', () => {
+  const contexts = importTypeGroups.flatMap(group => group.types.map(type => type.context))
+  assert.deepEqual([...contexts].sort(), [...importTypes].sort())
+  assert.equal(new Set(contexts).size, contexts.length)
+  const labels = importTypeGroups.flatMap(group => group.types.map(type => type.label))
+  assert.equal(new Set(labels).size, labels.length)
+})
+
+test('every documented message fragment routes back to its entry', () => {
+  // These entries' fragments are single generic words from Oracle's error
+  // lists ("Type", "subsidiary", "Account"); ambiguity without an import type
+  // is the honest answer, so they must resolve once the type is chosen.
+  const needsImportType = new Set(['CPY-01', 'DMD-01', 'ITM-07', 'JRN-01', 'JRN-03', 'JRN-05', 'REL-03', 'ROU-02', 'SYS-04', 'VBL-01', 'VBL-04', 'VBL-05', 'VPY-01'])
+  const position = (results, id) => results.findIndex(result => result.entries.some(entry => entry.id === id))
+  for (const entry of entries) {
+    for (const fragment of entry.messageFragments) {
+      const plain = position(searchEntries(fragment).results, entry.id)
+      if (needsImportType.has(entry.id)) {
+        assert.ok(plain >= 0, `${entry.id} "${fragment}" missing without an import type`)
+        const scoped = position(searchEntries(fragment, { context: entry.contexts[0] }).results, entry.id)
+        assert.ok(scoped >= 0 && scoped <= 2, `${entry.id} "${fragment}" with ${entry.contexts[0]}`)
+      } else {
+        assert.equal(plain, 0, `${entry.id} "${fragment}"`)
+      }
+    }
+  }
 })
 
 test('filters, outside-filter counts, and the unknown state share one unfiltered result', () => {
