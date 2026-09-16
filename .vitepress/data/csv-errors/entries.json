@@ -118,6 +118,7 @@
     "id": "CST-02",
     "context": "Manufacturing cost templates",
     "messageFragments": [
+      "Invalid item reference key {value}",
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
@@ -605,6 +606,7 @@
     "id": "GEN-03",
     "context": "General imports",
     "messageFragments": [
+      "Please enter value(s) for: {field}",
       "Mandatory field"
     ],
     "matchNotes": "`Mandatory field`",
@@ -624,6 +626,7 @@
     "id": "GEN-04",
     "context": "General imports",
     "messageFragments": [
+      "You have entered an Invalid Field Value {value} for the following field: {field}",
       "permissions"
     ],
     "matchNotes": "`permissions`",
@@ -955,6 +958,7 @@
     "id": "INVC-03",
     "context": "Invoices and credit applications",
     "messageFragments": [
+      "Invalid item reference key {value}",
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
@@ -1039,6 +1043,7 @@
     "title": "A related item uses a different display name",
     "context": "Item records and pricing",
     "messageFragments": [
+      "Invalid item reference key {value}",
       "Invalid Item Reference Key"
     ],
     "matchNotes": "Match: `Invalid Item Reference Key`, in related or presentation items.",
@@ -1602,6 +1607,7 @@
     "id": "KIT-01",
     "context": "Kits and packages",
     "messageFragments": [
+      "Invalid item reference key {value}",
       "Invalid item reference key"
     ],
     "matchNotes": "`Invalid item reference key`",
@@ -1945,13 +1951,14 @@
   {
     "id": "SAL-03",
     "context": "Sales orders",
+    "anchor": "a-date-produces-getfullyear-or-nan",
     "messageFragments": [
       "getFullYear",
       "NaN"
     ],
     "matchNotes": "`getFullYear`, `NaN`",
-    "explanation": "A malformed date may be reaching date-processing code.",
-    "firstCheck": "Inspect the year and format.",
+    "explanation": "NetSuite or account customization tried to treat a value as a valid date and failed. The imported date may have triggered the failure, but the message often comes from SuiteScript or workflow logic running while the sales order is processed.",
+    "firstCheck": "Open the complete import error and identify any script, workflow, function, or stack trace named there. Compare the affected row's date values with the format and assumptions used by that customization.",
     "procedureIds": [
       "P05"
     ],
@@ -1960,7 +1967,10 @@
     ],
     "reviewNotes": "",
     "evidenceType": "documented",
-    "documentationCheckedAt": "2026-09-16"
+    "documentationCheckedAt": "2026-09-16",
+    "title": "A script or workflow could not process the date",
+    "procedureTitle": "Trace the date-processing failure",
+    "tailoredSteps": "1. Preserve the complete error from the CSV response.\n2. Identify the affected row and all mapped date fields.\n3. Confirm the saved CSV contains the intended date text.\n4. If the error names a script or workflow, inspect its date parsing and empty-value handling on the Sales Order form and CSV execution context.\n5. Test one corrected row. Do not change every account date preference based only on this message."
   },
   {
     "id": "SAL-04",
@@ -1986,6 +1996,7 @@
     "id": "SAL-05",
     "context": "Sales orders",
     "messageFragments": [
+      "Invalid item reference key {value}",
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
@@ -2111,6 +2122,7 @@
     "id": "SYS-04",
     "context": "File processing and errors after saving",
     "messageFragments": [
+      "Invalid subsidiary reference key {value}",
       "subsidiary",
       "entity"
     ],
@@ -2241,6 +2253,8 @@
     "id": "TXN-04",
     "context": "Transactions in general",
     "messageFragments": [
+      "Invalid date value (must be entered as mm/dd/yyyy)",
+      "The transaction date you specified is not within the date range of your accounting period",
       "trandate"
     ],
     "matchNotes": "`trandate`",

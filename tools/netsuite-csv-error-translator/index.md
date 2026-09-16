@@ -2,6 +2,7 @@
 title: NetSuite CSV Error Translator
 description: Paste a NetSuite CSV import error to find a plain-language explanation, practical checks, and links to Oracle's documentation.
 outline: false
+lastUpdated: false
 ---
 
 [Tools](/tools/)

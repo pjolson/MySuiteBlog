@@ -1,5 +1,6 @@
 import rawEntries from './entries.json' with { type: 'json' }
-import { guides, basePath, contextByPrefix, contextOverrides, entryTitles } from './guides.mjs'
+import { guides, basePath, contextByPrefix, contextOverrides, entryTitles, detailedEntryIds } from './guides.mjs'
+import { editorialSteps } from './editorial-steps.mjs'
 
 export { guides, basePath }
 export const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
@@ -12,7 +13,10 @@ export const entries = rawEntries.map(entry => {
     ...entry, title, contexts, slug: guide.slug, category: guide.category,
     aliases: [...guide.aliases, ...(entry.aliases || [])], anchor: entry.anchor || slugify(title),
     url: `${basePath}${guide.slug}#${entry.anchor || slugify(title)}`,
-    reviewStatus: entry.reviewStatus || (entry.reviewNotes ? 'needs-account-verification' : 'source-reviewed')
+    reviewStatus: entry.reviewStatus || (entry.reviewNotes ? 'needs-account-verification' : 'source-reviewed'),
+    tailoredSteps: entry.tailoredSteps || editorialSteps[entry.id] || undefined,
+    procedureTitle: entry.procedureTitle || (editorialSteps[entry.id] ? 'Steps for this error' : undefined),
+    detailed: detailedEntryIds.has(entry.id)
   }
 })
 export const importTypes = [...new Set(entries.flatMap(entry => entry.contexts))].sort()

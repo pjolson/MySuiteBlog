@@ -63,11 +63,11 @@ function unfilter() {
         @click="csvSession.category = csvSession.category === category ? '' : category">{{ category }}</button>
     </div>
 
-    <p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">
+    <p v-if="active" role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">
       {{ count === 1 ? '1 matching guide' : `${count} matching guides` }} covering
       {{ explanationCount === 1 ? '1 explanation' : `${explanationCount} explanations` }}.
     </p>
-    <p class="csv-help">The catalogue covers {{ entries.length }} error entries across {{ guides.length }} guides.</p>
+    <p class="csv-help">Search {{ entries.length }} documented import situations across {{ guides.length }} guides. Detailed troubleshooting is available for the most common and best-supported errors.</p>
     <div v-if="ambiguous && count" class="csv-notice">
       <strong>This message has a few possible causes</strong>
       <p>Choose what you're importing so we can narrow it down.</p>

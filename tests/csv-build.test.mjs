@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import MiniSearch from 'minisearch'
 import { entries, guides, basePath } from '../.vitepress/data/csv-errors/catalogue.mjs'
+import { indexableGuideSlugs } from '../.vitepress/data/csv-errors/guides.mjs'
 import { headerResults } from '../.vitepress/data/csv-errors/search.mjs'
 import config from '../.vitepress/config.mjs'
 
@@ -48,7 +49,10 @@ test('all guide HTML has working anchors, canonical URLs, descriptions, and craw
     assert.match(html, /Check this first/)
     assert.match(html, /Show the steps/)
     assert.match(html, /docs.oracle.com/)
-    assert.ok(sitemap.includes(`https://mysuite.tech${basePath}${guide.slug}`))
+    assert.equal(sitemap.includes(`https://mysuite.tech${basePath}${guide.slug}`), indexableGuideSlugs.has(guide.slug))
+    assert.match(html, indexableGuideSlugs.has(guide.slug)
+      ? /name="robots" content="index, follow"/
+      : /name="robots" content="noindex, follow"/)
   }
   assert.ok(!sitemap.includes('researchdocs'))
   assert.equal(existsSync(new URL('researchdocs/', root)), false)

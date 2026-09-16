@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { fileURLToPath } from 'node:url'
 import { searchSections } from './data/csv-errors/catalogue.mjs'
+import { basePath, indexableGuideSlugs } from './data/csv-errors/guides.mjs'
 import { feedbackLocalPlugin } from '../server/csv-feedback/local.mjs'
 
 export default defineConfig({
@@ -38,7 +39,13 @@ export default defineConfig({
   sitemap: {
     hostname: 'https://mysuite.tech',
     transformItems(items) {
-      return items.filter(item => item.url !== 'blog/firstpost')
+      const translatorPrefix = basePath.slice(1)
+      return items.filter(item => {
+        if (item.url === 'blog/firstpost') return false
+        if (!item.url.startsWith(translatorPrefix) || item.url === translatorPrefix) return true
+        const slug = item.url.slice(translatorPrefix.length).replace(/\/$/, '')
+        return indexableGuideSlugs.has(slug)
+      })
     }
   },
 

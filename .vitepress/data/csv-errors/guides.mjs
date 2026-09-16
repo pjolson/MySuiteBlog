@@ -153,6 +153,29 @@ export const guides = [
     ['terms paymentmethod', 'terms payment method', 'conflicting billing instructions'])
 ]
 
+// These pages have enough reviewed, message-specific material to stand alone in
+// search results. Other guides remain available to both searches and to visitors,
+// but stay out of the sitemap until their entries receive a deeper editorial pass.
+export const indexableGuideSlugs = new Set([
+  'received-line-item-cannot-change', 'record-identifiers', 'duplicate-records',
+  'item-reference', 'item-units-and-types', 'parent-and-matrix-items',
+  'list-and-custom-field-references', 'account-and-entity-references',
+  'department-and-location-references', 'required-fields', 'dates-and-periods',
+  'csv-file-structure', 'numbers-and-spreadsheet-changes', 'missing-amount',
+  'inventory-status', 'inventory-quantity', 'transaction-line-updates',
+  'missing-detail-lines', 'payment-applications', 'item-pricing',
+  'failed-after-saving', 'unexpected-error', 'manufacturing-routing-operations'
+])
+
+// This count describes entry-level editorial depth, not catalogue breadth.
+export const detailedEntryIds = new Set([
+  'FLD-01', 'FLD-02', 'FLD-03', 'GEN-02', 'GEN-03', 'GEN-04', 'GEN-05',
+  'GEN-08', 'GEN-09', 'GEN-11', 'INV-02', 'INVC-01', 'INVC-03', 'ITM-02',
+  'ITM-03', 'ITM-04', 'ITM-05', 'ITM-09', 'ITM-13', 'JRN-01', 'JRN-02',
+  'JRN-07', 'JRN-08', 'KIT-01', 'PUR-01', 'SAL-01', 'SAL-03', 'SAL-05',
+  'SAL-06', 'SYS-01', 'SYS-02', 'SYS-04', 'TXN-03', 'TXN-04', 'VPY-05'
+])
+
 export const contextByPrefix = {
   GEN: ['General imports'], EMP: ['Employees and expense categories'], REL: ['Leads and prospects'],
   CUS: ['Customers'], CON: ['Customers with contacts'], PRO: ['Prospects with contacts'],
@@ -203,7 +226,7 @@ export const entryTitles = {
   'JRN-05': 'A totals row asks for Account', 'JRN-06': 'Amortization dates are reversed or misread',
   'JRN-07': 'The journal reports Rounding Error', 'PUR-01': 'The purchase-order vendor cannot be matched',
   'SAL-01': 'A sales order has no item line', 'SAL-02': 'A sales order reports a deleted line',
-  'SAL-03': 'A date produces getFullYear or NaN', 'SAL-04': 'Terms and payment method conflict',
+  'SAL-03': 'A script or workflow could not process the date', 'SAL-04': 'Terms and payment method conflict',
   'SAL-05': 'A sales order item cannot be matched', 'SAL-06': 'An update asks you to choose an item',
   'SAL-07': 'An existing sales order requires another field', 'VBL-01': 'The bill has no linked detail',
   'VBL-02': 'The primary bill file repeats a key', 'VBL-03': 'The header amount disagrees with the lines',

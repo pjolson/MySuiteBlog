@@ -5,6 +5,7 @@ import { entries, guides, basePath, searchSections } from '../.vitepress/data/cs
 import { searchEntries, headerResults, normalize } from '../.vitepress/data/csv-errors/search.mjs'
 import { renderGuide, publicProcedure } from '../.vitepress/data/csv-errors/render.mjs'
 import { questionFor } from '../.vitepress/data/csv-errors/questions.mjs'
+import { detailedEntryIds } from '../.vitepress/data/csv-errors/guides.mjs'
 
 const ids = (query, options) => searchEntries(query, options).results.flatMap(result => result.entries.map(entry => entry.id))
 const scenarios = [
@@ -25,6 +26,34 @@ const scenarios = [
   ['technical custom field ID', 'Invalid custitem_part_family reference key 00456', {}, ['ITM-03']],
   ['meaningful percentage limit', 'Sales contribution exceeds 100%', {}, ['TXN-05']]
 ]
+
+test('reviewed exact-message families route through both searches', () => {
+  const cases = [
+    ['You have entered an Invalid Field Value ABC for the following field: custbody_example', ['GEN-04']],
+    ['Please enter value(s) for: Memo', ['GEN-03']],
+    ['Invalid date value (must be entered as mm/dd/yyyy)', ['TXN-04']],
+    ['The transaction date you specified is not within the date range of your accounting period', ['TXN-04']],
+    ['Invalid subsidiary reference key Europe', ['SYS-04']],
+    ['This record already exists', ['TXN-03']],
+    ['Could not find any records by this name.', ['ITM-13']],
+    ['The amounts in a journal entry must balance.', ['JRN-08']]
+  ]
+  for (const [query, expected] of cases) {
+    assert.deepEqual(ids(query), expected, query)
+    assert.equal(headerResults(query, [])[0].id, entries.find(entry => entry.id === expected[0]).url, query)
+  }
+  assert.deepEqual(ids('An unexpected error has occurred').sort(), ['ASM-02', 'ITM-10'])
+})
+
+test('the first editorial pass contains 35 entry-specific explanations', () => {
+  assert.equal(detailedEntryIds.size, 35)
+  for (const id of detailedEntryIds) {
+    const entry = entries.find(item => item.id === id)
+    assert.ok(entry?.detailed, id)
+    assert.ok(entry.tailoredSteps, `${id} needs entry-specific steps`)
+    assert.ok(entry.sources.length && entry.documentationCheckedAt, `${id} needs reviewed sourcing`)
+  }
+})
 for (const [name, query, options, expected] of scenarios) {
   test(name, () => assert.deepEqual(ids(query, options).sort(), [...expected].sort()))
 }
