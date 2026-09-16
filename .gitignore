@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.DS_Store
 
 # Runtime data
 pids
@@ -69,6 +70,11 @@ typings/
 # vitepress build output
 .vitepress/dist
 .vitepress/cache
+.vitepress/.temp
+
+# Private local feedback, reviewer credentials, and Netlify development state
+.local/
+.netlify/
 
 # Serverless directories
 .serverless

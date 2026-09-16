@@ -1,0 +1,2588 @@
+[
+  {
+    "id": "ASM-01",
+    "context": "Assemblies",
+    "messageFragments": [
+      "member items"
+    ],
+    "matchNotes": "`member items`",
+    "explanation": "The assembly has no linked component rows.",
+    "firstCheck": "Check the primary assembly file, member file, shared assembly identifier, and member item and quantity mappings.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ASM-02",
+    "context": "Assemblies",
+    "messageFragments": [
+      "Unexpected Error"
+    ],
+    "matchNotes": "`Unexpected Error`",
+    "explanation": "For the documented assembly case, check unit settings on the assembly and its components.",
+    "firstCheck": "Oracle also suggests resaving populated records, but that should follow a review of the affected records and automation.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CON-01",
+    "context": "Customers imported together with contacts",
+    "messageFragments": [
+      "Illegal ID"
+    ],
+    "matchNotes": "`Illegal ID`",
+    "explanation": "This combined import expects company customers.",
+    "firstCheck": "If the customer is an individual, choose the customer-only import and handle the contact separately.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CON-02",
+    "context": "Customers imported together with contacts",
+    "messageFragments": [
+      "company"
+    ],
+    "matchNotes": "`company`, reference-key wording",
+    "explanation": "The linked customer may be inactive.",
+    "firstCheck": "Check the customer before changing the contact mapping. Oracle describes importing with an active customer and inactivating afterward; only use that sequence when the intended customer lifecycle supports it.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CPY-01",
+    "context": "Customer payments",
+    "messageFragments": [
+      "Could not find record",
+      "Internal ID"
+    ],
+    "matchNotes": "`Could not find record`, `Internal ID`",
+    "explanation": "Check whether the failing identifier belongs to the payment or the invoice it should pay.",
+    "firstCheck": "They are different records. Verify both references; a supplied internal ID can take precedence over an external ID.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570023326.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CST-01",
+    "context": "Manufacturing cost templates",
+    "messageFragments": [
+      "at least one line"
+    ],
+    "matchNotes": "`at least one line`",
+    "explanation": "The cost template has no linked cost lines.",
+    "firstCheck": "Check that each template has details and that the file-linking keys agree.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CST-02",
+    "context": "Manufacturing cost templates",
+    "messageFragments": [
+      "item"
+    ],
+    "matchNotes": "`item`, reference-key wording",
+    "explanation": "The item may be missing or paired with the wrong cost category.",
+    "firstCheck": "Check the item's purchasing information as well as its identity.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-01",
+    "context": "Customers",
+    "messageFragments": [
+      "Primary name"
+    ],
+    "matchNotes": "`Primary name`",
+    "explanation": "The customer cannot be identified.",
+    "firstCheck": "Use its internal ID, external ID, or customer ID.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-02",
+    "context": "Customers",
+    "messageFragments": [
+      "Matched more"
+    ],
+    "matchNotes": "`Matched more`",
+    "explanation": "Several customers fit.",
+    "firstCheck": "Add a unique customer identifier, especially for parent and child customers.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-03",
+    "context": "Customers",
+    "messageFragments": [
+      "Type"
+    ],
+    "matchNotes": "`Type`",
+    "explanation": "The selected customer form requires a type.",
+    "firstCheck": "Check the field and form settings.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-04",
+    "context": "Customers",
+    "messageFragments": [
+      "vatregnumber",
+      "20"
+    ],
+    "matchNotes": "`vatregnumber`, `20`",
+    "explanation": "The tax registration value exceeds the field's length.",
+    "firstCheck": "Check the value before editing.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-05",
+    "context": "Customers",
+    "messageFragments": [
+      "country",
+      "state/province"
+    ],
+    "matchNotes": "`country`, `state/province`",
+    "explanation": "Country and state do not agree.",
+    "firstCheck": "Check both values and whether Country is exposed.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-06",
+    "context": "Customers",
+    "messageFragments": [
+      "isperson"
+    ],
+    "matchNotes": "`isperson`",
+    "explanation": "NetSuite needs to know whether this customer is an individual or company.",
+    "firstCheck": "Map the choice.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "CUS-07",
+    "context": "Customers",
+    "messageFragments": [
+      "Illegal ID"
+    ],
+    "matchNotes": "`Illegal ID`",
+    "explanation": "The customer type may be hidden on the import form.",
+    "firstCheck": "Check the form and default type.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "DMD-01",
+    "context": "Item demand plans",
+    "messageFragments": [
+      "internal ID"
+    ],
+    "matchNotes": "`internal ID`, record-not-found wording",
+    "explanation": "The import is not identifying the intended record.",
+    "firstCheck": "Distinguish the plan's identity from its item reference before changing the mapping. The error article's wording needs verification.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html"
+    ],
+    "reviewNotes": "D2",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "DMD-02",
+    "context": "Item demand plans",
+    "messageFragments": [
+      "start date"
+    ],
+    "matchNotes": "`start date`, reference-key wording",
+    "explanation": "The plan dates may conflict with its year or end date.",
+    "firstCheck": "Supply a consistent period instead of changing the start date alone.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EMP-01",
+    "context": "Employees and expense categories",
+    "messageFragments": [
+      "Currency"
+    ],
+    "matchNotes": "`Currency`, required-value wording",
+    "explanation": "The expense report expects a currency.",
+    "firstCheck": "Map the expense currency or choose a default that applies to every affected line. If the expenses genuinely use only the employee subsidiary's base currency, review the report's multicurrency setting.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EMP-02",
+    "context": "Employees and expense categories",
+    "messageFragments": [
+      "category"
+    ],
+    "matchNotes": "`category`, reference-key wording",
+    "explanation": "The expense category cannot be matched.",
+    "firstCheck": "Check its active state, displayed name, and mapping reference type.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EMP-03",
+    "context": "Employees and expense categories",
+    "messageFragments": [
+      "61"
+    ],
+    "matchNotes": "`61`, expense-category field length",
+    "explanation": "The expense-account value is too long for this field.",
+    "firstCheck": "Check that the intended value belongs here before shortening it.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EMP-04",
+    "context": "Employees and expense categories",
+    "messageFragments": [
+      "employee"
+    ],
+    "matchNotes": "`employee`, reference-key wording",
+    "explanation": "The time entry cannot match the employee supplied.",
+    "firstCheck": "Compare the employee value with the mapping's choice of name or internal ID.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EVT-01",
+    "context": "Events",
+    "messageFragments": [
+      "preferred",
+      "Date"
+    ],
+    "matchNotes": "`preferred`, `Date`",
+    "explanation": "An event date does not match the importing user's format.",
+    "firstCheck": "Check both date columns.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EVT-02",
+    "context": "Events",
+    "messageFragments": [
+      "Date",
+      "End Date"
+    ],
+    "matchNotes": "`Date`, `End Date`, missing-field wording",
+    "explanation": "A date is missing, or an unintended row is being processed.",
+    "firstCheck": "Inspect the saved CSV.",
+    "procedureIds": [
+      "P02",
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EVT-03",
+    "context": "Events",
+    "messageFragments": [
+      "Parse",
+      "date/time"
+    ],
+    "matchNotes": "`Parse`, `date/time`",
+    "explanation": "A date and time cannot be read.",
+    "firstCheck": "Check the format and any absent end date.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EVT-04",
+    "context": "Events",
+    "messageFragments": [
+      "Start time",
+      "end time"
+    ],
+    "matchNotes": "`Start time`, `end time`",
+    "explanation": "The time range is invalid for this event import.",
+    "firstCheck": "Check both dates and times, including overnight spans.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EXP-01",
+    "context": "Expense reports",
+    "messageFragments": [
+      "Amount"
+    ],
+    "matchNotes": "`Amount`, required-value wording",
+    "explanation": "The expense amount may depend on a missing rate or quantity.",
+    "firstCheck": "Check the expense category and how that line's amount should be calculated.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EXP-02",
+    "context": "Expense reports",
+    "messageFragments": [
+      "line item"
+    ],
+    "matchNotes": "`line item`",
+    "explanation": "The report has no linked expense line.",
+    "firstCheck": "Check the shared key between the report and its expenses.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "EXP-03",
+    "context": "Expense reports",
+    "messageFragments": [
+      "postingperiod"
+    ],
+    "matchNotes": "`postingperiod`",
+    "explanation": "The period value cannot be matched.",
+    "firstCheck": "Check the existing period name and whether spreadsheet formatting changed it.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "FLD-01",
+    "title": "Inventory status does not match the stock being removed",
+    "context": "Inventory adjustments",
+    "messageFragments": [
+      "Invalid inventorystatus reference key {status} for issueinventorynumber {number}."
+    ],
+    "matchNotes": "Invalid inventorystatus reference key {status} for issueinventorynumber {number}.",
+    "explanation": "NetSuite could not use that status with the inventory detail on this line. The status might exist elsewhere, but the import still needs the correct item, location, lot, bin, and status combination.",
+    "firstCheck": "Verify how Status is mapped. If the file contains an internal ID, the mapping must use that reference type. Then inspect the exact inventory balance the line is meant to reduce.",
+    "procedureIds": [
+      "P07"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2271791.html"
+    ],
+    "reviewNotes": "Field example from the supplied project. Supporting documentation is not an error-specific Oracle article.",
+    "evidenceType": "field-example",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "FLD-02",
+    "title": "Inventory adjustment quantity exceeds available stock",
+    "context": "Inventory adjustments",
+    "messageFragments": [
+      "You only have {quantity} available. Please enter a different quantity."
+    ],
+    "matchNotes": "You only have {quantity} available. Please enter a different quantity.",
+    "explanation": "The requested quantity exceeds the quantity NetSuite will allow for the selected inventory detail. The difference can be too small to notice in the spreadsheet.",
+    "firstCheck": "Compare the full saved quantity with the available quantity using the same unit. Check other rows drawing from the same balance too.",
+    "procedureIds": [
+      "P04",
+      "P07"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453795.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html"
+    ],
+    "reviewNotes": "Field example from the supplied project. Supporting documentation is not an error-specific Oracle article.",
+    "evidenceType": "field-example",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-01",
+    "context": "General imports",
+    "messageFragments": [
+      "name/parent"
+    ],
+    "matchNotes": "`name/parent`",
+    "explanation": "A list selection may be repeated.",
+    "firstCheck": "Check multi-select IDs.",
+    "procedureIds": [
+      "P08"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-02",
+    "context": "General imports",
+    "messageFragments": [
+      "re-upload"
+    ],
+    "matchNotes": "`re-upload`",
+    "explanation": "NetSuite couldn't read the file.",
+    "firstCheck": "Check encoding.",
+    "procedureIds": [
+      "P02"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-03",
+    "context": "General imports",
+    "messageFragments": [
+      "Mandatory field"
+    ],
+    "matchNotes": "`Mandatory field`",
+    "explanation": "A required value isn't reaching NetSuite.",
+    "firstCheck": "Check mapping and separators.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-04",
+    "context": "General imports",
+    "messageFragments": [
+      "permissions"
+    ],
+    "matchNotes": "`permissions`",
+    "explanation": "This field may be unavailable for import.",
+    "firstCheck": "Check read-only settings.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-05",
+    "context": "General imports",
+    "messageFragments": [
+      "effective date"
+    ],
+    "matchNotes": "`effective date`",
+    "explanation": "The date format doesn't match.",
+    "firstCheck": "Check your preferences.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-06",
+    "context": "General imports",
+    "messageFragments": [
+      "Saved Search"
+    ],
+    "matchNotes": "`Saved Search`",
+    "explanation": "A field depends on an inaccessible search.",
+    "firstCheck": "Check existence and audience.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-07",
+    "context": "General imports",
+    "messageFragments": [
+      "amount"
+    ],
+    "matchNotes": "`amount`",
+    "explanation": "NetSuite can't determine the amount.",
+    "firstCheck": "Check numbers and duplicate input.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-08",
+    "context": "General imports",
+    "messageFragments": [
+      "columns"
+    ],
+    "matchNotes": "`columns`",
+    "explanation": "A row has too many fields.",
+    "firstCheck": "Check quotes and separators.",
+    "procedureIds": [
+      "P02"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-09",
+    "context": "General imports",
+    "messageFragments": [
+      "AfterSubmit"
+    ],
+    "matchNotes": "`AfterSubmit`",
+    "explanation": "The record saved before a script failed.",
+    "firstCheck": "Check that record before retrying.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-10",
+    "context": "General imports",
+    "messageFragments": [
+      "personal language"
+    ],
+    "matchNotes": "`personal language`",
+    "explanation": "Language settings may slow the import.",
+    "firstCheck": "Compare preferences.",
+    "procedureIds": [
+      "P12"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-11",
+    "context": "General imports",
+    "messageFragments": [
+      "Custom Record"
+    ],
+    "matchNotes": "`Custom Record`",
+    "explanation": "Another record uses this identifier.",
+    "firstCheck": "Check existing external IDs.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "GEN-12",
+    "context": "General imports",
+    "messageFragments": [],
+    "matchNotes": "Symptom: text became a date",
+    "explanation": "Excel may have changed the value.",
+    "firstCheck": "Compare the original.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "INV-01",
+    "context": "Inventory item records",
+    "messageFragments": [
+      "Locale"
+    ],
+    "matchNotes": "`Locale`",
+    "explanation": "Creating the item and its translations together can cause this documented failure.",
+    "firstCheck": "First add the item with its required accounting, location, and pricing data, then update it with language and translated display values.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "INV-02",
+    "context": "Record updates",
+    "messageFragments": [
+      "SSS_RECORD_TYPE_MISMATCH",
+      "The record you are attempting to load has a different type: {actualType} from the type specified: {requestedType}"
+    ],
+    "matchNotes": "Match message family independently of the type pair. Existing type comes before requested type. Prefix/code-only queries do not provide type values.",
+    "explanation": "NetSuite found a record, but the operation is trying to open it as a different type.",
+    "firstCheck": "Open the record identified by the failing row and confirm that it is the record you meant to update. Then compare its type with the import's Record Type selection.\n\nIf the row points to the wrong record, correct its identifier. Changing the import type to suit an unintended record would target the wrong data.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_24213744571.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_63201856891.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N370727.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4267258486.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3188567.html"
+    ],
+    "reviewNotes": "Source-reviewed; not account-tested. Wrong target, mixed-type splitting and script-triggered load checks are editorial possibilities. Supplied SuiteAnswers 34807, NetSuite 2024.1, updated 05/08/2024 as supplied; no authenticated page accessed and date ordering not independently established.",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16",
+    "title": "Record type does not match the existing record",
+    "anchor": "the-item-type-differs-from-the-import-type",
+    "contexts": [
+      "General imports",
+      "Item records",
+      "Inventory items"
+    ],
+    "aliases": [
+      "record type mismatch",
+      "different type from the type specified",
+      "wrong item type selected",
+      "item import record type"
+    ],
+    "detailMarkdown": "### Reading the two types\n\n| Part of the message | What it tells you |\n| --- | --- |\n| After **different type:** | The type NetSuite found on the existing record. |\n| After **type specified:** | The type the operation requested. |\n\nOracle lists this message under `SSS_RECORD_TYPE_MISMATCH`. [Oracle's error reference](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html)\n\n### Reported item-import example\n\nIn the reported example, `otherchargesaleitem` identifies an **Other Charge for Sale** item, while `otherchargepurchaseitem` identifies the **Other Charge for Purchase** type the operation requested. [Sale item type](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_24213744571.html), [purchase item type](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_63201856891.html)\n\nIf that sale item is the intended update target, choose the **Other Charge for Sale** record type for the item import. If you intended to update a purchase item, check why the row points to a sale item before proceeding. The same message format can describe other mismatched types.",
+    "importContext": "Record updates. The steps below apply to item imports. If the message comes from another record type or a script running during the import, use the relevant branch below.",
+    "procedureTitle": "For item imports: match the item import to the existing item",
+    "tailoredSteps": "1. **Confirm the target.** Check the identifier used to match the existing item, including its mapping. Open that item in the same NetSuite account and check its type.\n2. **Start the import with the matching type.** Open **Import CSV Records** under **Setup > Import/Export**. On **Scan & Upload CSV File**, select **Items**, then the Record Type that matches the item you confirmed. For the reported sale-item example, choose **Other Charge for Sale** only if that sale item is the intended update target.\n3. **Use Update for an update-only job.** On **Import Options**, select **Update** when the purpose is to change existing records.\n4. **Review the mapping.** Map the intended record identifier and the fields to change. Recheck the mapping after changing the selected type.\n5. **Check the file's scope.** If it contains different item types, separate the update rows by the Record Type each requires. Review the prepared import before running it.\n\nOther Charge items have separate purchase, sale, and resale import types. Inventory and assembly items also have distinct choices, including serialized and lot-numbered types. Match the actual item subtype. [Supported item import types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N370727.html)",
+    "followUp": {
+      "prompt": "Which situation fits?",
+      "options": [
+        {
+          "label": "The CSV points to the wrong record",
+          "answer": "Correct the identifier or its mapping so it selects the intended record. Confirm the record's type again before retrying. Keep an identifier separate from a display name that happens to look similar.",
+          "links": []
+        },
+        {
+          "label": "The file contains several item types",
+          "answer": "Use a separate import setup for each required Record Type. Keep each row's correct identifier with it when splitting the file. One row's type does not establish the type of every item in the file.",
+          "links": []
+        },
+        {
+          "label": "The target and selected type already agree",
+          "answer": "Check whether the error comes from a script or another operation triggered by the import. It may refer to a related record being loaded, rather than the main record in the CSV. This is a possibility to investigate, not a conclusion from the message alone.\n\nIf an execution log identifies a record-loading call, have the developer check the record ID and requested type together.",
+          "links": [
+            {
+              "label": "Record-loading parameters",
+              "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4267258486.html"
+            }
+          ]
+        },
+        {
+          "label": "I am importing a different kind of record",
+          "answer": "Use the same first check: confirm the intended record and compare the two types named in the error. Verify the import selection or the operation requesting the record. The **Items** steps above do not apply to every record type.",
+          "links": []
+        },
+        {
+          "label": "I intended to change the item's type",
+          "answer": "This error guide addresses updating the existing record under its current type. Selecting a different type in the Import Assistant is not an instruction to convert the item. Review the supported conversion or replacement process for that specific item separately.",
+          "links": []
+        }
+      ]
+    },
+    "evidenceNote": "This is a documented message family. The reported Other Charge pair and the documented inventory example are separate cases. The checks are not a confirmed resolution of this reported import.",
+    "reviewStatus": "source-reviewed",
+    "relatedIds": [
+      "ITM-04",
+      "ITM-12"
+    ],
+    "searchSnippet": "NetSuite found a record of a different type. Check the target identifier and the import's Record Type before changing either."
+  },
+  {
+    "id": "INV-03",
+    "context": "Inventory item records",
+    "messageFragments": [
+      "Multiple values"
+    ],
+    "matchNotes": "`Multiple values`, dropdown wording",
+    "explanation": "The configured multi-select separator may appear inside an identifier.",
+    "firstCheck": "Choose an import separator absent from those values. Oracle also notes that a literal NULL setting can behave as a space.",
+    "procedureIds": [
+      "P08"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "INVC-01",
+    "context": "Invoices and credit applications",
+    "messageFragments": [
+      "line item"
+    ],
+    "matchNotes": "`line item`",
+    "explanation": "The invoice has no imported item line.",
+    "firstCheck": "Put the item in a CSV column and map the item sublist. A default by itself may not create the line.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "INVC-02",
+    "context": "Invoices and credit applications",
+    "messageFragments": [
+      "apply",
+      "[doc,line]"
+    ],
+    "matchNotes": "`apply`, `[doc,line]`",
+    "explanation": "The application rows may repeat an invoice reference without a matching applied amount.",
+    "firstCheck": "Separate item rows from application rows and check the document being paid or credited.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "INVC-03",
+    "context": "Invoices and credit applications",
+    "messageFragments": [
+      "item"
+    ],
+    "matchNotes": "`item`, reference-key wording",
+    "explanation": "The invoice cannot match its item.",
+    "firstCheck": "Check the invoice form's item selection, active state, and name-versus-ID mapping.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-01",
+    "title": "A quantity price break has no starting price",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "Please Enter Missing Price(s)"
+    ],
+    "matchNotes": "Match: `Please Enter Missing Price(s)`",
+    "explanation": "The higher quantity break is present, but the starting price is missing.",
+    "firstCheck": "Include pricing for quantity zero as well as the later quantity breaks. Check the existing item before changing the price table.",
+    "procedureIds": [
+      "P10"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426053.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-02",
+    "title": "A unit has no unit type to belong to",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "purchaseunit",
+      "saleunit",
+      "stockunit",
+      "unitstype"
+    ],
+    "matchNotes": "Match fields: `purchaseunit`, `saleunit`, `stockunit`, with `unitstype` and a blank value.",
+    "explanation": "NetSuite needs the item's unit type before it can accept its purchase, sales, or stock unit.",
+    "firstCheck": "If the item has no unit type, map the correct one along with the unit fields. Check that each unit belongs to that type. An identifier for a unit is not an identifier for a unit type.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426135.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-03",
+    "title": "A custom item field cannot match its selection",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "custitem"
+    ],
+    "matchNotes": "Match: `custitem`, reference-key wording.",
+    "explanation": "The value supplied to a custom item field does not match an allowed selection.",
+    "firstCheck": "Identify the field from its script ID, then inspect the list or record it references. Check spelling, spaces, and the chosen reference type. For several selections in one cell, check the multi-select separator too. Confirm a missing selection belongs in the list before adding it.",
+    "procedureIds": [
+      "P01",
+      "P08"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426278.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-04",
+    "title": "A related item uses a different display name",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "Invalid Item Reference Key"
+    ],
+    "matchNotes": "Match: `Invalid Item Reference Key`, in related or presentation items.",
+    "explanation": "For this import, a related item's store display name can affect name matching.",
+    "firstCheck": "Check the displayed value on the related item and whether the mapping expects a name or internal ID. If the store display name is populated, Oracle identifies that name as the relevant name reference in this scenario. This explanation is specific to related items.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426643.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-05",
+    "title": "A location-specific update is missing the location key",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "Adding New Line to Sublist Locations is not Allowed"
+    ],
+    "matchNotes": "Match: `Adding New Line to Sublist Locations is not Allowed`",
+    "explanation": "NetSuite cannot tell which location row to update.",
+    "firstCheck": "Map the location within the item's Locations sublist when importing values such as reorder point or preferred stock level. A location elsewhere in the import does not necessarily identify this sublist row.",
+    "procedureIds": [
+      "P01",
+      "P06"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427025.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-06",
+    "title": "An item update would remove a subsidiary already in use",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "remove subsidiary",
+      "used on a transaction"
+    ],
+    "matchNotes": "Match fragments: `remove subsidiary`, `used on a transaction`.",
+    "explanation": "The imported subsidiary list may replace the existing selections and leave out a subsidiary needed by earlier transactions.",
+    "firstCheck": "Prepare the complete intended set in one multi-select cell, including subsidiaries that must remain. Check the separator and mapping. Do not solve this by changing the historical transactions.",
+    "procedureIds": [
+      "P08"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427412.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-07",
+    "title": "A related item is missing its presentation type",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "Type"
+    ],
+    "matchNotes": "Match: `Type`, required-value wording, in presentation items.",
+    "explanation": "The related-item line needs its type as well as the referenced item.",
+    "firstCheck": "Inspect the presentation-item mapping, identify the existing main item, and provide the related item's type. Oracle describes an Update import for this case. The source's example mapping labels are unclear, so check the live field labels before following them literally.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428607.html"
+    ],
+    "reviewNotes": "D4",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-08",
+    "title": "A pricing update introduces a new matrix header",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "existing headers",
+      "existing matrix"
+    ],
+    "matchNotes": "Match fragments: `existing headers`, `existing matrix`.",
+    "explanation": "The pricing update refers to a header that is not already in the matrix.",
+    "firstCheck": "Decide whether you are updating existing breaks or replacing the price structure. Oracle's error-specific article describes supplying the full price matrix and enabling sublist replacement, but its general sublist guidance cautions against that option for item pricing. Do not present replacement as an automatic fix.",
+    "procedureIds": [
+      "P10"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428723.html"
+    ],
+    "reviewNotes": "D1",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-09",
+    "title": "The item cannot match its asset or cost account",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "assetaccount",
+      "cogsaccount"
+    ],
+    "matchNotes": "Match fields: `assetaccount`, `cogsaccount`.",
+    "explanation": "The accounting reference does not match what the field expects.",
+    "firstCheck": "Use a verified account internal ID with the matching reference type, or match the account's displayed name, including hierarchy and account number when those are used. A mapping default is suitable only when every affected item should use the same account.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428980.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-10",
+    "title": "A translated item import gives a generic failure",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "Unexpected Error"
+    ],
+    "matchNotes": "Match: `Unexpected Error`, in item translation work.",
+    "explanation": "Oracle documents a case involving simultaneous item-name and store-display-name mappings, with translation language also needing attention.",
+    "firstCheck": "Check those mappings if you are importing translations. This short error is not enough to establish the cause on other item imports.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429388.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-11",
+    "title": "The price level cannot be matched",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "price level"
+    ],
+    "matchNotes": "Match: `price level`, reference-key wording.",
+    "explanation": "Check the price level under the accounting lists, including inactive entries.",
+    "firstCheck": "Compare its name with the CSV value. If the import should use one price level throughout, select that level as a mapping default. Do not use a default when the file deliberately includes different levels.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429620.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-12",
+    "title": "The parent and child have different item types",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "parent"
+    ],
+    "matchNotes": "Match: `parent`, reference-key wording, when setting an item's parent.",
+    "explanation": "The proposed parent may be a different kind of item.",
+    "firstCheck": "Compare both item types with the record type selected for import. Correct an incorrect import selection first. If the item hierarchy itself needs redesign, review that separately. Oracle discusses replacing an incorrectly typed parent; deletion is not a routine troubleshooting step.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429813.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-13",
+    "title": "NetSuite could not find a matching record",
+    "context": "Record updates",
+    "messageFragments": [
+      "Could not find any records by this name.",
+      "Could not find any records",
+      "RCRD_NOT_FOUND"
+    ],
+    "matchNotes": "Match: `Could not find any records by this name`",
+    "explanation": "NetSuite could not match a record needed for this row. If you are updating existing records, start with the value that tells NetSuite which record to change. If that checks out, look at the records referenced by the other mapped fields.\n\nThe message does not tell you which lookup failed. It does not establish that the record was deleted, that you selected Name as the reference type, or that the item is a matrix item.",
+    "firstCheck": "Pick one failed row. Check the import's Record Type, Data Handling setting, and the field used to identify the record being updated. Compare that identifier with the actual record in the same NetSuite account.\n\nFor an Inventory Item import using Update, begin with the item's own identity. The ID of a vendor, account, parent item, or another related record will not identify that item.",
+    "procedureIds": [
+      "P01",
+      "P04",
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N345294.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3924743.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429898.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N357847.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1529508258.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html"
+    ],
+    "reviewNotes": "Reported case establishes Inventory Item + Update only. Identifier, matrix status, failing field and resolution unknown. Screenshot showed SuiteAnswers account/relationship results, but full error-specific articles were not supplied or accessed. No account tested.",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16",
+    "anchor": "a-matrix-child-cannot-be-found-by-name",
+    "contexts": [
+      "General imports",
+      "Inventory items",
+      "Item records",
+      "Chart of Accounts",
+      "Vendor-Subsidiary Relationship"
+    ],
+    "aliases": [
+      "could not find a matching record",
+      "record not found by name"
+    ],
+    "searchSnippet": "Check how the import identifies the existing record. Names, internal IDs, and external IDs are different ways of finding it.",
+    "procedureTitle": "Identify the intended record and check the mapping",
+    "tailoredSteps": "1. Open one intended record in NetSuite. Confirm that it is the record you want to change and that the import's Record Type matches it.\n2. On **Field Mapping**, find the mapping that identifies the record itself. Check the NetSuite destination field, not just the CSV column heading.\n3. Compare the saved CSV value with the record's identifier. Use the relevant branch below for names, internal IDs, or external IDs.\n4. If the identity matches, inspect the related fields in the same row. A correct item ID does not establish that its parent, vendor, account, or custom-field reference is also correct.\n5. Correct the confirmed mismatch and retry one intended update. Check the resulting record before rerunning the remaining failed rows.\n\nUse **Update** when changing existing records. Switching to **Add or Update** can create records that were not intended, so it is not a general fix for a failed match. [Data handling options](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N345294.html)",
+    "followUp": {
+      "prompt": "How are you identifying the record being updated?",
+      "options": [
+        {
+          "label": "Internal ID",
+          "answer": "Export the intended records with Internal ID as a results column. Compare that export with the failed rows and map the values to the record's Internal ID field. Confirm that the export came from the account receiving the import.\n\nAn item number that happens to contain only digits is still not necessarily an internal ID. Check where the value came from.",
+          "links": []
+        },
+        {
+          "label": "External ID",
+          "answer": "Confirm that the exact external ID is already stored on the intended record. A code from another system cannot identify an existing NetSuite record unless that association has been established.",
+          "links": []
+        },
+        {
+          "label": "Name",
+          "answer": "Compare with an export of the record's actual name or item number. Check spaces, punctuation, and any required parent information. Do not substitute a description or display label without checking what that field expects.\n\nIf you are changing the name itself, use a verified internal ID to identify the existing record and map the new name separately. This avoids relying on the new name to locate the old record.",
+          "links": []
+        },
+        {
+          "label": "I'm not sure",
+          "answer": "Inspect the mapping before changing the CSV. For an existing-record update, a fresh export containing Internal ID provides a clear way to identify the intended records.",
+          "links": [
+            {
+              "label": "Oracle's guidance on matching updates",
+              "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3924743.html"
+            }
+          ]
+        }
+      ]
+    },
+    "additionalChecks": "### If this is a matrix-child item update {#record-not-found-matrix-child}\n\nOracle documents this exact error when a matrix child is identified incorrectly by name. Keep the child and parent in separate fields:\n\n| Item Name/Number | Subitem of |\n| --- | --- |\n| Shirt-Blue-Small | Shirt |\n\nDo not put `Shirt : Shirt-Blue-Small` in **Item Name/Number** for this scenario. Alternatively, identify the child using its verified internal ID.\n\nThis example is specific to matrix-child updates. Other imports can have different name and hierarchy requirements. [Oracle's matrix-child example](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429898.html)\n\n### If this is a Chart of Accounts update {#record-not-found-chart-of-accounts}\n\nCheck which ledger account the row identifies. Keep its account number, name, and internal ID distinct. A verified account internal ID can identify the existing account while other mapped fields supply the intended changes.\n\nIf a mapped field references an account **by name**, check the complete value expected by that field. For example, when its list shows `42000 Product Sales`, supplying just `42000` or just `Product Sales` does not match Oracle's documented format. This rule concerns that account reference; it does not mean every Account Name column should have a number added to it. [Account import and reference guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N357847.html)\n\n### If this is a Vendor-Subsidiary Relationship import {#record-not-found-vendor-subsidiary}\n\nFor **Update**, check that the intended vendor-subsidiary relationship already exists. Open the vendor's **Subsidiaries** subtab and compare it with the row being imported.\n\nThen review the relationship import's identity fields and its separate **Vendor** and **Subsidiary** mappings. Check what each supplied ID identifies before using it. The relationship does not have a standalone record page in the usual interface.\n\nIf the relationship is new, confirm that creating it is the intended task before choosing the appropriate data-handling option. [Vendor-subsidiary import guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1529508258.html)\n\n**If that looks right**\n\nFor a dropdown or list field, open its mapping settings and compare the selected reference type with the supplied value. The option may be Name, Internal ID, External ID, or another supported type. Not every field supports every option. These settings are separate from mapping the main record's own Internal ID. [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)\n\nIf the message includes a script error or stack trace, have the script owner identify the failed lookup. The short message alone cannot establish whether the failure came from the import's record matching or another lookup during processing.\n\n### Keep the failed-row evidence together\n\nKeep one failed row, the complete error, and screenshots of the import options and field mapping together. Those show what the import was trying to find.\n\n[Ask MySuite for help](/contact/)",
+    "contextChecks": {
+      "Chart of Accounts": {
+        "title": "If this is a Chart of Accounts update",
+        "text": "Check which ledger account the row identifies. Keep its account number, name, and internal ID distinct. A verified account internal ID can identify the existing account while other mapped fields supply the intended changes.",
+        "anchor": "record-not-found-chart-of-accounts"
+      },
+      "Vendor-Subsidiary Relationship": {
+        "title": "If this is a Vendor-Subsidiary Relationship import",
+        "text": "For Update, check that the intended vendor-subsidiary relationship already exists. Open the vendor's Subsidiaries subtab and compare it with the row being imported.",
+        "anchor": "record-not-found-vendor-subsidiary"
+      },
+      "Inventory items": {
+        "title": "Identify the existing item first",
+        "text": "For an Inventory Item import using Update, begin with the item's own identity. The ID of a vendor, account, parent item, or another related record will not identify that item.",
+        "anchor": "a-matrix-child-cannot-be-found-by-name"
+      }
+    },
+    "evidenceNote": "The matrix-child correction is a documented scenario. The other checks are assembled from supporting guidance, not a confirmed diagnosis. The reported Inventory Item update has no tested resolution.",
+    "reviewStatus": "source-reviewed",
+    "relatedIds": [
+      "INV-02"
+    ],
+    "relatedLinks": [
+      {
+        "title": "Item-reference errors: choose your import context",
+        "url": "/tools/netsuite-csv-error-translator/item-reference"
+      },
+      {
+        "title": "Spreadsheet changes to names and identifiers",
+        "url": "/tools/netsuite-csv-error-translator/numbers-and-spreadsheet-changes"
+      },
+      {
+        "title": "Scripts and permissions: when error details point there",
+        "url": "/tools/netsuite-csv-error-translator/failed-after-saving"
+      }
+    ]
+  },
+  {
+    "id": "ITM-14",
+    "title": "An item-defined cost contains currency formatting",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "CostEstimate"
+    ],
+    "matchNotes": "Match: `CostEstimate`, invalid-value wording.",
+    "explanation": "The amount may include a currency symbol the mapping does not expect.",
+    "firstCheck": "Compare the raw CSV value with the field's currency-format setting. For Oracle's documented case, supply the numeric amount without the symbol and select the corresponding no-symbol format.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429970.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ITM-15",
+    "title": "The parent reference is affected by display-name settings",
+    "context": "Item records and pricing",
+    "messageFragments": [
+      "parent"
+    ],
+    "matchNotes": "Match: `parent`, reference-key wording, during matrix work.",
+    "explanation": "A preference that displays item codes with display names can change the name needed by this import.",
+    "firstCheck": "Compare the CSV value with the displayed combination and keep the matrix-option and external-ID fields intact. Prefer correcting the reference over changing a company preference just to make a name match.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534430023.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "IVD-01",
+    "context": "Inventory worksheets requiring inventory detail",
+    "messageFragments": [
+      "configure the inventory detail"
+    ],
+    "matchNotes": "`configure the inventory detail`",
+    "explanation": "This inventory worksheet is encountering a bin-detail requirement.",
+    "firstCheck": "Confirm that this is the worksheet import, rather than an inventory adjustment, before using worksheet-specific guidance.",
+    "procedureIds": [
+      "P07"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569179830.html"
+    ],
+    "reviewNotes": "D3",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-01",
+    "context": "Journal entries",
+    "messageFragments": [
+      "account",
+      "subsidiary"
+    ],
+    "matchNotes": "`account`, `subsidiary`",
+    "explanation": "The account may not be valid for this subsidiary.",
+    "firstCheck": "Check eligibility and reference format.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-02",
+    "context": "Journal entries",
+    "messageFragments": [
+      "department"
+    ],
+    "matchNotes": "`department`",
+    "explanation": "The department reference cannot be matched.",
+    "firstCheck": "Check hierarchy, active state, and reference type.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-03",
+    "context": "Journal entries",
+    "messageFragments": [
+      "entity",
+      "currency"
+    ],
+    "matchNotes": "`entity`, `currency`",
+    "explanation": "The entity may not support the journal currency.",
+    "firstCheck": "Check its currencies and active state.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-04",
+    "context": "Journal entries",
+    "messageFragments": [
+      "blank headers"
+    ],
+    "matchNotes": "`blank headers`",
+    "explanation": "A column lacks a heading.",
+    "firstCheck": "Inspect the first CSV row.",
+    "procedureIds": [
+      "P02"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-05",
+    "context": "Journal entries",
+    "messageFragments": [
+      "Account"
+    ],
+    "matchNotes": "`Account`, required-value wording",
+    "explanation": "A totals row may be treated as another journal line.",
+    "firstCheck": "Check the final records.",
+    "procedureIds": [
+      "P02"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-06",
+    "context": "Journal entries",
+    "messageFragments": [
+      "amortization"
+    ],
+    "matchNotes": "`amortization`, date-order wording",
+    "explanation": "The amortization dates are reversed or misread.",
+    "firstCheck": "Check their actual values.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "JRN-07",
+    "context": "Journal entries",
+    "messageFragments": [
+      "Rounding Error"
+    ],
+    "matchNotes": "`Rounding Error`",
+    "explanation": "Inspect full decimal values and unnecessary opposite-side zero entries.",
+    "firstCheck": "Reconcile the journal before retrying.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16",
+    "relatedIds": [
+      "JRN-08"
+    ]
+  },
+  {
+    "id": "JRN-08",
+    "title": "The journal's debits and credits do not balance",
+    "context": "Journal entries",
+    "contexts": [
+      "Journal entries",
+      "Single Journal Entry import",
+      "Intercompany journal entries"
+    ],
+    "categories": [
+      "Transaction lines",
+      "Dates and numbers"
+    ],
+    "messageFragments": [
+      "The amounts in a journal entry must balance."
+    ],
+    "aliases": [
+      "amounts in a journal entry must balance",
+      "journal entry must balance",
+      "journal balances in Excel but import fails",
+      "debit credit line order"
+    ],
+    "searchSnippet": "Check each journal separately. If the amounts already balance, check which lines reach NetSuite, then try the documented line-order workaround.",
+    "summary": "Check each journal separately. If the amounts already balance, check which lines reach NetSuite, then try the documented line-order workaround.",
+    "explanation": "NetSuite is trying to save a journal whose debit and credit totals do not match. The numbers may be wrong, or the import may not be bringing the expected lines together.\n\nA balanced total for the whole CSV is not enough when the file contains several journals. Each journal must balance on its own.",
+    "firstCheck": "Take one failed journal and compare its debit and credit totals using the values saved in the CSV. Check that every line belongs to the intended journal and that both amount columns are mapped correctly.",
+    "procedureIds": [
+      "P04",
+      "P09"
+    ],
+    "procedureTitle": "Check one journal and its imported lines",
+    "importContext": "Journal entries, including the Single Journal Entry import. Intercompany and advanced intercompany journals have their own requirements; the standard-journal line-order workaround is not an established fix for them.",
+    "detailMarkdown": "For example, one journal with debits of 110 and credits of 100 and another with debits of 90 and credits of 100 are both unbalanced. The combined 200 on each side does not make either journal valid.",
+    "tailoredSteps": "1. Identify the lines for one journal. For a file containing several journals, use the same identifier and mapping that the import uses to group them. Check for missing or inconsistent identifiers.\n2. Total that journal's debits and credits separately. Include every intended line and inspect the full saved amounts, not just rounded spreadsheet displays.\n3. On **Field Mapping**, confirm that Debit maps to the journal line's Debit field and Credit maps to its Credit field. Check that a mapping default is not supplying a different amount.\n4. Inspect the saved CSV for missing amounts, shifted columns, or values that the spreadsheet total treated as text. Compare suspect values with the source before changing them.\n5. Check for missing lines, duplicated lines, and spreadsheet total rows. Keep calculation rows outside the import data.\n6. If the amounts, grouping, and mappings check out, try the line-order steps below on a copy of the failed journal.\n\nFor imports containing several journals, Oracle documents transaction identifiers on every row. The dedicated Single Journal Entry import handles one journal, so do not add a multi-journal identifier requirement to that workflow. [Journal CSV structure](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534489651.html)",
+    "additionalChecks": "### The amounts balance, but NetSuite still rejects the journal {#journal-balanced-file-workaround}\n\nSuiteAnswers Answer **70365** describes a case where the values are valid and the journal balances, but the order of the debit and credit lines causes the import to fail. Its suggested workaround is to keep each side together.\n\n1. Make a copy of the failed journal's import data.\n2. Move complete rows so the debit lines come first, followed by the credit lines, within that journal.\n3. Keep every account, amount, memo, and other field attached to its original line. Do not sort the Debit or Credit column by itself.\n4. Recheck the totals and save the CSV.\n5. Retry that journal and check the import result.\n\nFor example, a journal arranged as **debit 60, credit 100, debit 40** can be rearranged as follows without changing an amount:\n\n| Journal identifier | Account | Debit | Credit |\n| --- | --- | ---: | ---: |\n| JE-EXAMPLE-01 | Expense A | 60 | |\n| JE-EXAMPLE-01 | Expense B | 40 | |\n| JE-EXAMPLE-01 | Accrual account | | 100 |\n\nThe names and identifier above are illustrative. Use your actual account references and mapping. For a batch, keep each journal's rows together; do not move all debit rows in the entire file ahead of all credit rows.\n\nThis is a workaround for an otherwise balanced file. Reordering cannot fix unequal totals or an incorrect mapping. Do not change amounts or add a balancing line just to make the error disappear.\n\n### If you are updating an existing journal {#journal-existing-update}\n\nCheck how the imported lines will affect the saved journal. Oracle documents that journal line imports using Update append lines unless the sublist is replaced. The resulting journal must balance; do not assume that a CSV line will replace a particular existing line.\n\nReplacing the sublist requires the complete intended set of lines and a deliberate review of the replacement settings. It is not a routine fix for this error. Oracle also notes that updating a journal applied as a payment can remove that payment application. The Single Journal Entry Import Assistant does not support updates. [Journal update behavior](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534490251.html)\n\n**If that looks right**\n\nKeep the failed journal, its complete error, and the import mapping together for review. If an error also identifies a script, investigate what that script changes before the journal is saved. The balance message alone does not identify a script as the cause.\n\n### Intercompany and advanced intercompany journals {#journal-intercompany-balance}\n\nFor an intercompany or advanced intercompany journal, use the requirements for that journal type. Do not assume that the standard-journal line-order workaround explains its failure.\n\n### Still stuck?\n\nWe can help compare the journal, the CSV, and the import mapping to find where the two sides stop matching.\n\n[Ask MySuite for help](/contact/)",
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534489651.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534490251.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html"
+    ],
+    "evidenceNote": "The line-order workaround comes from user-supplied SuiteAnswers Answer 70365 (last updated 06/01/2026; NetSuite 2026.1). No authenticated SuiteAnswers page was accessed. The public Oracle pages support the balance, grouping, numeric-value and update checks, not the line-order workaround. No client CSV was examined and no import was run for this addition.",
+    "reviewStatus": "source-reviewed",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16",
+    "reviewNotes": "Troubleshooting sequence combines public documentation and user-supplied Answer 70365. No account-specific cause established. Alternating rows are not universally invalid; Oracle publishes an intercompany example with alternating sides.",
+    "relatedIds": [
+      "JRN-07",
+      "JRN-05"
+    ],
+    "relatedLinks": [
+      {
+        "title": "Check saved numeric values",
+        "url": "/tools/netsuite-csv-error-translator/numbers-and-spreadsheet-changes"
+      },
+      {
+        "title": "Check record grouping and file links",
+        "url": "/tools/netsuite-csv-error-translator/missing-detail-lines"
+      }
+    ],
+    "contextChecks": {
+      "Intercompany journal entries": {
+        "title": "Check the requirements for this journal type",
+        "text": "Use the general balance and grouping checks, then the requirements for intercompany or advanced intercompany journals. Alternating debit and credit rows are not universally invalid; the standard-journal line-order workaround is not an established intercompany fix.",
+        "anchor": "journal-intercompany-balance"
+      }
+    },
+    "sourceLabels": {
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html": "Journal balance requirement"
+    }
+  },
+  {
+    "id": "KIT-01",
+    "context": "Kits and packages",
+    "messageFragments": [
+      "Invalid item reference key"
+    ],
+    "matchNotes": "`Invalid item reference key`",
+    "explanation": "The kit cannot match a member item.",
+    "firstCheck": "Check that the member exists and is active, then align the member-item mapping with the name or internal ID in the file. The relevant field is the member reference, not the kit's own identity.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570007314.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "LST-01",
+    "context": "Custom lists",
+    "messageFragments": [
+      "translations"
+    ],
+    "matchNotes": "`translations`, adding-line wording",
+    "explanation": "Translation support may not be configured.",
+    "firstCheck": "Check that the language feature is enabled and at least one language is configured.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "LST-02",
+    "context": "Custom lists",
+    "messageFragments": [
+      "translations"
+    ],
+    "matchNotes": "`translations`, matching-line wording",
+    "explanation": "One default language may be applied to rows containing several languages.",
+    "firstCheck": "Map the language from the file instead.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "LST-03",
+    "context": "Custom lists",
+    "messageFragments": [
+      "CUSTOMLIST",
+      "[id, name]"
+    ],
+    "matchNotes": "`CUSTOMLIST`, `[id, name]`",
+    "explanation": "The list record has no mapped identity.",
+    "firstCheck": "Choose a name or supported identifier and map it to the intended field.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "PRO-01",
+    "context": "Prospects imported together with contacts",
+    "messageFragments": [
+      "That Record Does Not Exist"
+    ],
+    "matchNotes": "`That Record Does Not Exist`",
+    "explanation": "The prospect and contact data may be mapped to the wrong records.",
+    "firstCheck": "Check their identifiers and phone mappings separately. Prospect fields belong to the prospect section; the contact's ID and phone belong to the contact section.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568678135.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "PUR-01",
+    "context": "Purchase orders",
+    "messageFragments": [
+      "Invalid entity reference key"
+    ],
+    "matchNotes": "`Invalid entity reference key`",
+    "explanation": "The purchase order cannot match the vendor.",
+    "firstCheck": "Check the vendor as shown on the purchase-order form, its active state, and the reference type. If using an ID, make sure it belongs to the vendor and matches the selected ID type.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570035686.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REL-01",
+    "context": "Leads, prospects, and other relationship records",
+    "messageFragments": [
+      "Lead Source"
+    ],
+    "matchNotes": "`Lead Source`",
+    "explanation": "NetSuite cannot match the lead source.",
+    "firstCheck": "Check the configured list and include the campaign identifier when it forms part of the displayed value. The list's location depends on whether Marketing Automation is enabled.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REL-02",
+    "context": "Leads, prospects, and other relationship records",
+    "messageFragments": [
+      "incoming",
+      "email"
+    ],
+    "matchNotes": "`incoming`, `email`",
+    "explanation": "An email value is missing or invalid in this import.",
+    "firstCheck": "Inspect the mapped email column and the rows being processed.",
+    "procedureIds": [
+      "P02",
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REL-03",
+    "context": "Leads, prospects, and other relationship records",
+    "messageFragments": [
+      "entity"
+    ],
+    "matchNotes": "`entity`, already-exists wording",
+    "explanation": "Another entity may already own that external ID.",
+    "firstCheck": "Search entities by the value and establish which record the import is meant to create or update.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REV-01",
+    "context": "Inventory cost revaluations",
+    "messageFragments": [
+      "unique identifier"
+    ],
+    "matchNotes": "`unique identifier`",
+    "explanation": "The new revaluation needs an external ID or reference number.",
+    "firstCheck": "Map the intended identifier.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REV-02",
+    "context": "Inventory cost revaluations",
+    "messageFragments": [],
+    "matchNotes": "Required-field wording",
+    "explanation": "A required value is absent on a processed row.",
+    "firstCheck": "Check real records and unintended trailing content.",
+    "procedureIds": [
+      "P02",
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "REV-03",
+    "context": "Inventory cost revaluations",
+    "messageFragments": [
+      "already exists"
+    ],
+    "matchNotes": "`already exists`, item/location/date context",
+    "explanation": "A revaluation already occupies this item, location, and date combination.",
+    "firstCheck": "Find it before deciding whether an update is appropriate.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ROU-01",
+    "context": "Manufacturing routings",
+    "messageFragments": [
+      "at least one line"
+    ],
+    "matchNotes": "`at least one line`",
+    "explanation": "The routing has no linked operations.",
+    "firstCheck": "Check the detail file and shared routing key.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ROU-02",
+    "context": "Manufacturing routings",
+    "messageFragments": [
+      "location"
+    ],
+    "matchNotes": "`location`",
+    "explanation": "Check the location, its subsidiary, and multi-select syntax.",
+    "firstCheck": "This routing guide specifically warns about spaces around the separator.",
+    "procedureIds": [
+      "P08"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html"
+    ],
+    "reviewNotes": "D6",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ROU-03",
+    "context": "Manufacturing routings",
+    "messageFragments": [
+      "sequence number"
+    ],
+    "matchNotes": "`sequence number`",
+    "explanation": "Two steps share a sequence within one routing.",
+    "firstCheck": "Check both the sequence values and which routing owns each row.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "ROU-04",
+    "context": "Manufacturing routings",
+    "messageFragments": [
+      "manufacturingworkcenter"
+    ],
+    "matchNotes": "`manufacturingworkcenter`",
+    "explanation": "The selected group may not be designated as a manufacturing work center.",
+    "firstCheck": "Check the group record, not just its name.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-01",
+    "context": "Sales orders",
+    "messageFragments": [
+      "line item"
+    ],
+    "matchNotes": "`line item`",
+    "explanation": "No item line reached the transaction.",
+    "firstCheck": "Map a CSV field into the item sublist.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-02",
+    "context": "Sales orders",
+    "messageFragments": [
+      "deleted since"
+    ],
+    "matchNotes": "`deleted since`",
+    "explanation": "The update's line handling needs review.",
+    "firstCheck": "Check existing lines before replacing a sublist.",
+    "procedureIds": [
+      "P06"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-03",
+    "context": "Sales orders",
+    "messageFragments": [
+      "getFullYear",
+      "NaN"
+    ],
+    "matchNotes": "`getFullYear`, `NaN`",
+    "explanation": "A malformed date may be reaching date-processing code.",
+    "firstCheck": "Inspect the year and format.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-04",
+    "context": "Sales orders",
+    "messageFragments": [
+      "terms",
+      "paymentmethod"
+    ],
+    "matchNotes": "`terms`, `paymentmethod`",
+    "explanation": "Conflicting billing instructions were mapped.",
+    "firstCheck": "Choose the intended billing path.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-05",
+    "context": "Sales orders",
+    "messageFragments": [
+      "item"
+    ],
+    "matchNotes": "`item`, reference-key wording",
+    "explanation": "The sales order cannot match its item.",
+    "firstCheck": "Check the selection and reference type.",
+    "procedureIds": [
+      "P01",
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html",
+      "https://support.microsoft.com/en-gb/excel/keeping-leading-zeros-and-large-numbers",
+      "https://support.microsoft.com/en-us/excel/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats"
+    ],
+    "reviewNotes": "Spreadsheet conversion is conditional, not inferred from the error. Synthetic examples 001234/1234. User supplied SuiteAnswers 71261, updated 02/26/2026, product NetSuite 2022.1. No authenticated SuiteAnswers page accessed; no account-tested fix.",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16",
+    "stepProcedureIds": [
+      "P01"
+    ],
+    "additionalChecks": "### Did the spreadsheet change the item reference?\n\nAn item reference can look like a number even when its characters need to be preserved exactly. Compare the saved CSV value with the reference copied or exported from NetSuite.\n\nFor example, if NetSuite's reference is `001234` and the CSV contains `1234`, those are different references. Spreadsheet conversion is one possible cause of this error.\n\n::: details Show the steps\n\n1. Confirm whether the Item mapping expects a name, internal ID, or external ID. Get the exact reference of that kind from NetSuite.\n2. In the spreadsheet, set the destination cells to **Text before pasting or importing the references**.\n3. Restore the original references from NetSuite. Formatting a value as Text after characters have been lost does not bring them back.\n4. Save the CSV. Open it in a text editor and check that the item reference still has the expected characters, including any leading zeros.\n5. Retry with the appropriate **Transactions > Sales Order** import setup and the matching Item reference type. Use **Update** when changing existing sales orders; use the data-handling mode appropriate to the intended job otherwise.\n\n:::\n\nThe purpose of the Text setting is to preserve the identifier. CSV files do not retain an Excel column's formatting, so the saved text is the final check. Changing spreadsheet formatting does not change NetSuite's Name/Internal ID/External ID mapping.\n\n**If that looks right**\n\nIf the saved reference already matches NetSuite, return to the item-selection and mapping checks. A correct reference may still be unsuitable for the sales order. Formatting is not the explanation for every invalid-item message.",
+    "aliases": [
+      "item reference lost leading zeros",
+      "Excel changed item code",
+      "sales order invalid item reference"
+    ],
+    "reviewStatus": "source-reviewed",
+    "sourceLabels": {
+      "https://support.microsoft.com/en-gb/excel/keeping-leading-zeros-and-large-numbers": "Microsoft: Keeping leading zeros and large numbers",
+      "https://support.microsoft.com/en-us/excel/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats": "Microsoft: CSV export behavior"
+    }
+  },
+  {
+    "id": "SAL-06",
+    "context": "Sales orders",
+    "messageFragments": [
+      "choose an item"
+    ],
+    "matchNotes": "`choose an item`",
+    "explanation": "The update may use incorrect line identifiers.",
+    "firstCheck": "Export the actual line IDs.",
+    "procedureIds": [
+      "P06"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SAL-07",
+    "context": "Sales orders",
+    "messageFragments": [],
+    "matchNotes": "Required-field wording on update",
+    "explanation": "The transaction's stored form may require the field.",
+    "firstCheck": "Check that form's rules.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-01",
+    "context": "File processing and errors after saving",
+    "messageFragments": [],
+    "matchNotes": "Invalid-character or encoding wording",
+    "explanation": "The file's encoding may differ from the import setting.",
+    "firstCheck": "Check both.",
+    "procedureIds": [
+      "P02"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-02",
+    "context": "File processing and errors after saving",
+    "messageFragments": [],
+    "matchNotes": "Symptom: exponent notation",
+    "explanation": "Spreadsheet handling may have changed a number.",
+    "firstCheck": "Inspect its saved text and original value.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-03",
+    "context": "File processing and errors after saving",
+    "messageFragments": [
+      "country"
+    ],
+    "matchNotes": "`country`, reference-key wording",
+    "explanation": "A country code may have been supplied where a localized name is expected.",
+    "firstCheck": "A country code may have been supplied where a localized name is expected.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-04",
+    "context": "File processing and errors after saving",
+    "messageFragments": [
+      "subsidiary",
+      "entity"
+    ],
+    "matchNotes": "`subsidiary`, `entity`",
+    "explanation": "The entity's subsidiary reference may be formatted incorrectly.",
+    "firstCheck": "Check the full hierarchy when using names.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-05",
+    "context": "File processing and errors after saving",
+    "messageFragments": [
+      "department"
+    ],
+    "matchNotes": "`department`, reference-key wording",
+    "explanation": "Check the department's hierarchy, active state, and name-versus-ID setting.",
+    "firstCheck": "Check the department's hierarchy, active state, and name-versus-ID setting.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-06",
+    "context": "File processing and errors after saving",
+    "messageFragments": [],
+    "matchNotes": "Script usage-limit wording",
+    "explanation": "A script exhausted its allowed execution usage.",
+    "firstCheck": "Inspect the script failure and saved-record state.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "SYS-07",
+    "context": "File processing and errors after saving",
+    "messageFragments": [],
+    "matchNotes": "Post-processing failure",
+    "explanation": "Some work may already have saved.",
+    "firstCheck": "Verify the affected records before choosing what to rerun.",
+    "procedureIds": [
+      "P11"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "TXN-01",
+    "context": "Transactions in general",
+    "messageFragments": [
+      "unique identifier"
+    ],
+    "matchNotes": "`unique identifier`",
+    "explanation": "The import needs a supported transaction identifier.",
+    "firstCheck": "Choose one appropriate to the record and operation.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "TXN-02",
+    "context": "Transactions in general",
+    "messageFragments": [
+      "Ambiguity"
+    ],
+    "matchNotes": "`Ambiguity`",
+    "explanation": "Repeated items make line matching unclear.",
+    "firstCheck": "Identify existing lines explicitly.",
+    "procedureIds": [
+      "P06"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html"
+    ],
+    "reviewNotes": "D5",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "TXN-03",
+    "context": "Transactions in general",
+    "messageFragments": [
+      "record already exists"
+    ],
+    "matchNotes": "`record already exists`",
+    "explanation": "The identifier may belong to an earlier transaction.",
+    "firstCheck": "Find it before creating another.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "TXN-04",
+    "context": "Transactions in general",
+    "messageFragments": [
+      "trandate"
+    ],
+    "matchNotes": "`trandate`",
+    "explanation": "The transaction date does not match the expected format.",
+    "firstCheck": "Check the raw value.",
+    "procedureIds": [
+      "P05"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "TXN-05",
+    "context": "Transactions in general",
+    "messageFragments": [
+      "contribution",
+      "100%"
+    ],
+    "matchNotes": "`contribution`, `100%`",
+    "explanation": "Imported and existing sales-team percentages may exceed the allowed total together.",
+    "firstCheck": "Review the complete team.",
+    "procedureIds": [
+      "P06"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-01",
+    "context": "Vendor bills",
+    "messageFragments": [
+      "line item"
+    ],
+    "matchNotes": "`line item`",
+    "explanation": "The bill has no linked detail.",
+    "firstCheck": "Check expense-file linkage and sublist mappings.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-02",
+    "context": "Vendor bills",
+    "messageFragments": [
+      "primary",
+      "duplicate"
+    ],
+    "matchNotes": "`primary`, `duplicate`",
+    "explanation": "The primary file repeats a bill key.",
+    "firstCheck": "Keep one header row per bill in a multi-file import.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-03",
+    "context": "Vendor bills",
+    "messageFragments": [
+      "userTotal",
+      "totalField"
+    ],
+    "matchNotes": "`userTotal`, `totalField`",
+    "explanation": "The supplied header amount disagrees with the lines.",
+    "firstCheck": "Review whether that header mapping belongs here.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-04",
+    "context": "Vendor bills",
+    "messageFragments": [
+      "location",
+      "subsidiary"
+    ],
+    "matchNotes": "`location`, `subsidiary`",
+    "explanation": "The selected location may not belong to the bill's subsidiary.",
+    "firstCheck": "Compare both records.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-05",
+    "context": "Vendor bills",
+    "messageFragments": [
+      "amount"
+    ],
+    "matchNotes": "`amount`, invalid-value wording",
+    "explanation": "The amount may contain unsupported symbols or separators.",
+    "firstCheck": "Check the raw numeric text.",
+    "procedureIds": [
+      "P04"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VBL-06",
+    "context": "Additional documented vendor-bill mapping conflict",
+    "messageFragments": [
+      "purchase order list",
+      "item/expense list"
+    ],
+    "matchNotes": "`purchase order list`, `item/expense list`",
+    "explanation": "The import is trying to source a bill from purchase orders while also supplying its item or expense lists.",
+    "firstCheck": "Choose the supported approach for the bill you intend to create. Oracle's described purchase-order linking import does not support partial billing.",
+    "procedureIds": [
+      "P09"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N427250.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VPY-01",
+    "context": "Vendor payments and shared payment errors",
+    "messageFragments": [
+      "Accounts Payable",
+      "entity"
+    ],
+    "matchNotes": "`Accounts Payable`, `entity`",
+    "explanation": "The AP reference may be unnecessary when the bill is identified directly.",
+    "firstCheck": "Review the mapping.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VPY-02",
+    "context": "Vendor payments and shared payment errors",
+    "messageFragments": [
+      "apply",
+      "[doc,line]"
+    ],
+    "matchNotes": "`apply`, `[doc,line]`",
+    "explanation": "The referenced bill or invoice may be unavailable for application.",
+    "firstCheck": "Check its identity and open balance.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VPY-03",
+    "context": "Vendor payments and shared payment errors",
+    "messageFragments": [
+      "payment made"
+    ],
+    "matchNotes": "`payment made`",
+    "explanation": "The amount due may differ after discounts or other activity.",
+    "firstCheck": "Refresh it before retrying.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VPY-04",
+    "context": "Vendor payments and shared payment errors",
+    "messageFragments": [
+      "apply"
+    ],
+    "matchNotes": "`apply`, adding-line wording",
+    "explanation": "A bill-and-credit application needs review.",
+    "firstCheck": "Check import mode, unused credit, open bill, and matching AP accounts.",
+    "procedureIds": [
+      "P13"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "VPY-05",
+    "context": "Vendor payments and shared payment errors",
+    "messageFragments": [
+      "Unparseable Internal Id"
+    ],
+    "matchNotes": "`Unparseable Internal Id`",
+    "explanation": "The bill reference is not a usable internal ID.",
+    "firstCheck": "Verify the bill and mapping.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "WEB-01",
+    "context": "Website categories",
+    "messageFragments": [
+      "category",
+      "website",
+      "<NULL>"
+    ],
+    "matchNotes": "`category`, `website`, `<NULL>`",
+    "explanation": "NetSuite needs a website before it can identify the site's category.",
+    "firstCheck": "Map the website or select a default when every row belongs to that site. Then check the category within that site.",
+    "procedureIds": [
+      "P01"
+    ],
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568643764.html"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-16"
+  },
+  {
+    "id": "FLD-03",
+    "title": "An item on a received line cannot be changed",
+    "context": "Existing transaction updates",
+    "messageFragments": [
+      "You cannot change the selected item because it has already been received."
+    ],
+    "matchNotes": "Item-change restriction together with prior receiving. Do not infer a purchase order or equate fulfilled-item restrictions.",
+    "explanation": "NetSuite is rejecting an item change because it considers the affected line already received.\n\nThat does not establish why the import is changing the item. One possibility is that the CSV row points to a different line than you intended, even if your goal was only to update a date, price, or custom field.",
+    "firstCheck": "Compare the transaction, line, and item in the CSV with the saved transaction. Then decide whether this row should update an existing line, add a new one, or replace its item.",
+    "procedureIds": [
+      "P01",
+      "P06"
+    ],
+    "procedureTitle": "Check the line and its receipt history",
+    "tailoredSteps": "1. **Open the transaction identified by the import.** Confirm it is the intended record, then find the affected item line.\n2. **Check the line identifier.** Use the actual Line/Order Line value from NetSuite, not the spreadsheet row number. A saved transaction search can retrieve it. When both a line key and Item are supplied, the line key takes precedence. [Oracle's line-update guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html)\n3. **Compare the item references.** Check that the CSV value and mapping identify the item you intend. A name, internal ID, and external ID are different ways to refer to a record. [Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)\n4. **Check what was received.** On a purchase order using Advanced Receiving, open **Related Records > Receipts & Bills** and inspect the receipt for the affected item line. A partially received order also has receipt history to check. [Purchase order receipts](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2412119.html)\n5. **Review Overwrite Sublists.** This option replaces existing sublist data with the imported data. For an update to selected fields, check that the import is not trying to replace the whole item list. Changing this option does not make a received item freely replaceable. [Overwrite Sublists](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html)",
+    "importContext": "Updates to existing transaction lines. The purchase-order receipt check below applies when Advanced Receiving is enabled.",
+    "followUp": {
+      "prompt": "What were you trying to change?",
+      "options": [
+        {
+          "label": "Update another field on the same line",
+          "answer": "Keep the correct line identifier. Correct an unintended item reference and map only the fields needed for the update, plus required identifiers. Do not blank an existing line's identifier to make the error disappear: that can add a new line instead.",
+          "links": [
+            {
+              "label": "Updating existing lines",
+              "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html"
+            }
+          ]
+        },
+        {
+          "label": "Add a new line",
+          "answer": "Check that the new row does not reuse an existing line's identifier. For the transaction-item imports covered by Oracle's line-update guide, a mapped blank Line/Order Line value is used for an addition. Keep valid identifiers on rows that are meant to update existing lines.",
+          "links": [
+            {
+              "label": "Adding transaction lines",
+              "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html"
+            }
+          ]
+        },
+        {
+          "label": "Replace the item on the received line",
+          "answer": "First establish whether the receipt is correct. If it is wrong, work through the transaction correction with the person responsible for receiving and accounting. If a different item is needed for a future delivery, review that requirement separately from the receipt already recorded.\n\nDeleting a receipt should not be the default import fix. Receipts affect inventory and accounting, so any correction needs to account for the related transactions.",
+          "links": [
+            {
+              "label": "Accounting for received purchase orders",
+              "url": "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2408991.html"
+            }
+          ]
+        },
+        {
+          "label": "I'm not sure",
+          "answer": "Collect the import record type, the intended change, one failing CSV row, its field mapping, and the matching transaction line. Check those together with its receipt history. The error alone cannot identify which value or process caused the attempted item change.",
+          "links": []
+        }
+      ]
+    },
+    "evidenceNote": "The links above explain the supporting checks. The exact error message was supplied during translator testing; a public Oracle article explaining that exact message was not located.",
+    "sources": [
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2412119.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html",
+      "https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2408991.html"
+    ],
+    "reviewNotes": "Reported message; not reproduced in a NetSuite account. Wrong-line and Overwrite Sublists checks are editorial inferences from supporting guidance, not verified causes. Existing P06 review note D5 applies. No confirmed resolution.",
+    "evidenceType": "field-example",
+    "documentationCheckedAt": "2026-09-16",
+    "relatedIds": [
+      "TXN-02",
+      "SAL-06"
+    ]
+  }
+]

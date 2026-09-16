@@ -1,0 +1,99 @@
+<script setup>
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { normalize, searchEntries } from '../../data/csv-errors/search.mjs'
+import { importTypes, entries, guides } from '../../data/csv-errors/catalogue.mjs'
+import { categories } from '../../data/csv-errors/guides.mjs'
+import { csvSession, clearSearch } from '../csv-session.js'
+import { createSearchTracker, protectSearchPrivacy } from '../csv-feedback.mjs'
+import CsvFeedback from './CsvFeedback.vue'
+
+const input = ref(null)
+const result = computed(() => searchEntries(csvSession.query, csvSession))
+const count = computed(() => result.value.results.length)
+const explanationCount = computed(() => result.value.results.reduce((total, item) => total + item.entries.length, 0))
+const active = computed(() => csvSession.query.trim() || csvSession.context || csvSession.category)
+const unknown = computed(() => normalize(csvSession.query) && !searchEntries(csvSession.query).results.length)
+const tracker = createSearchTracker({ source: 'translator', filters: () => csvSession })
+watch(() => csvSession.source, source => { if (source === 'header') tracker.cancel() })
+onMounted(protectSearchPrivacy)
+onBeforeUnmount(tracker.cancel)
+const ambiguous = computed(() => csvSession.query.trim() && !csvSession.context && (
+  result.value.results.length > 1 || result.value.results.some(result => result.entries.length > 1)
+))
+function clear() {
+  tracker.schedule('')
+  clearSearch()
+  input.value?.focus()
+}
+function searchInput(event) {
+  if (event.isComposing) return
+  csvSession.source = 'translator'
+  tracker.schedule(event.target.value)
+}
+function unfilter() {
+  csvSession.context = ''
+  csvSession.category = ''
+}
+</script>
+
+<template>
+  <section class="csv-translator" aria-label="Find a CSV error guide" data-nosnippet>
+    <div class="csv-search-panel">
+      <label for="csv-query">Error message or problem</label>
+      <input id="csv-query" ref="input" v-model="csvSession.query" type="search" @input="searchInput"
+        placeholder='Paste your NetSuite error, or try "invalid item"'
+        aria-describedby="csv-query-help" autocomplete="off" spellcheck="false">
+      <p id="csv-query-help" class="csv-help">You can paste the whole message, including any record numbers.</p>
+      <p class="csv-help">Your search text stays in this tab unless you choose to send it for review. We count unsuccessful searches without recording the message.</p>
+      <label for="csv-context">What are you importing?</label>
+      <select id="csv-context" v-model="csvSession.context">
+        <option value="">All import types</option>
+        <option value="unknown">I'm not sure</option>
+        <option v-for="context in importTypes" :key="context" :value="context">{{ context }}</option>
+      </select>
+      <div class="csv-actions">
+        <button class="cta-primary csv-button" type="button" :disabled="!active" @click="clear">Clear and start over</button>
+      </div>
+    </div>
+
+    <h2 id="common-places">Common places imports get stuck</h2>
+    <div class="csv-categories" role="group" aria-labelledby="common-places">
+      <button v-for="category in categories" :key="category" type="button"
+        :aria-pressed="csvSession.category === category"
+        @click="csvSession.category = csvSession.category === category ? '' : category">{{ category }}</button>
+    </div>
+
+    <p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">
+      {{ count === 1 ? '1 matching guide' : `${count} matching guides` }} covering
+      {{ explanationCount === 1 ? '1 explanation' : `${explanationCount} explanations` }}.
+    </p>
+    <p class="csv-help">The catalogue covers {{ entries.length }} error entries across {{ guides.length }} guides.</p>
+    <div v-if="ambiguous && count" class="csv-notice">
+      <strong>This message has a few possible causes</strong>
+      <p>Choose what you're importing so we can narrow it down.</p>
+    </div>
+    <div v-if="result.otherCount > 0" class="csv-actions">
+      <span class="csv-help">There are also matches outside these filters.</span>
+      <button type="button" class="cta-secondary csv-button" @click="unfilter">Show all matches</button>
+    </div>
+    <div v-if="!count" class="csv-empty">
+      <h3>{{ result.needsContext ? 'More detail needed' : result.otherCount ? 'No matches with these filters' : "We haven't covered this one yet" }}</h3>
+      <p v-if="result.needsContext">Paste the full error and choose what you are importing. Already received alone does not identify which restriction applies.</p>
+      <p v-else>Try a shorter part of the message, such as the field name. If it mentions a script, the message may come from your account's custom code.</p>
+      <CsvFeedback v-if="unknown" :query="csvSession.query" :context="csvSession.context" :source="csvSession.source" />
+      <div class="cta-actions">
+        <button type="button" class="cta-secondary csv-button" @click="clear">Browse all errors</button>
+        <a class="cta-secondary csv-button" href="/contact/">Ask MySuite for help</a>
+      </div>
+    </div>
+    <ul v-else class="csv-results">
+      <li v-for="item in result.results" :key="item.slug" class="csv-result">
+        <p class="csv-result-context">{{ item.contexts.join(' · ') }}</p>
+        <h3><a :href="item.url">{{ item.title }}</a></h3>
+        <p>{{ item.description }}</p>
+        <span v-if="item.matched && item.entries.length === 1" class="csv-match">Message matched</span>
+        <span v-else-if="item.matched" class="csv-match">A few possibilities</span>
+      </li>
+    </ul>
+  </section>
+</template>

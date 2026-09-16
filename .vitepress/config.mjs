@@ -1,4 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath } from 'node:url'
+import { searchSections } from './data/csv-errors/catalogue.mjs'
+import { feedbackLocalPlugin } from '../server/csv-feedback/local.mjs'
 
 export default defineConfig({
   title: 'MySuite',
@@ -6,7 +9,31 @@ export default defineConfig({
 
   cleanUrls: true,
   lastUpdated: true,
-  srcExclude: ['img/**/*.md'],
+  srcExclude: ['img/**/*.md', 'researchdocs/**', 'tests/**', 'scripts/**', 'server/**', 'netlify/**', '.local/**'],
+
+  vite: {
+    server: { fs: { deny: ['.env', '.env.*', '*.{crt,pem}', '**/.git/**', '**/.local/**', '**/server/**', '**/netlify/**'] } },
+    plugins: [feedbackLocalPlugin(), {
+      name: 'mysuite-csv-header-search',
+      enforce: 'pre',
+      transform(code, id) {
+        // VitePress compiles the overlay as a Vue virtual module. Redirect its
+        // one lookup import before compilation, retaining its complete UI.
+        if (!id.replaceAll('\\', '/').endsWith('/VPLocalSearchBox.vue')) return
+        const lookup = fileURLToPath(new URL('./data/csv-errors/header-search.mjs', import.meta.url))
+        const feedback = fileURLToPath(new URL('./theme/components/CsvHeaderFeedback.vue', import.meta.url))
+        const patched = code.replace(/from ['"]minisearch['"]/, `from ${JSON.stringify(lookup)}`)
+        if (patched === code) throw new Error('Review the CSV search adapter for this VitePress version.')
+        if (!patched.includes('<ul\n          ref="resultsEl"')) throw new Error('Review the CSV feedback integration for this VitePress version.')
+        return {
+          code: patched.replace('<script lang="ts" setup>', `<script lang="ts" setup>\nimport CsvHeaderFeedback from ${JSON.stringify(feedback)}`)
+            .replace('maxlength="64"', '').replace('@submit.prevent=""', '@submit.prevent.stop=""')
+            .replace('<ul\n          ref="resultsEl"', '<CsvHeaderFeedback :query="filterText" @close="emit(\'close\')" />\n        <p class="visually-hidden" role="status" aria-live="polite" aria-atomic="true">{{ results.length }} search results</p>\n        <ul\n          ref="resultsEl"'),
+          map: null
+        }
+      }
+    }]
+  },
 
   sitemap: {
     hostname: 'https://mysuite.tech',
@@ -25,6 +52,7 @@ export default defineConfig({
     ['meta', { property: 'og:image', content: 'https://mysuite.tech/og-image.png' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:image', content: 'https://mysuite.tech/og-image.png' }],
+    ['script', {}, "if (location.pathname.startsWith('/tools/netsuite-csv-error-translator/')) window['ga-disable-G-R3FVBP7K9S'] = true;"],
     ['script', { src: 'https://analytics.ahrefs.com/analytics.js', 'data-key': 'JB7/uRXKgpaYMdBoftGA9Q', async: '' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-R3FVBP7K9S' }],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-R3FVBP7K9S');"],
@@ -139,6 +167,13 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/blog/' },
+      {
+        text: 'Tools', activeMatch: '^/tools/',
+        items: [
+          { text: 'All Tools', link: '/tools/' },
+          { text: 'CSV Error Translator', link: '/tools/netsuite-csv-error-translator/' }
+        ]
+      },
       { text: 'Services', link: '/about/' },
       { text: 'Health Check', link: '/netsuite-health-check' },
       { text: 'Partners', link: '/partners/' },
@@ -158,7 +193,16 @@ export default defineConfig({
     },
 
     search: {
-      provider: 'local'
+      provider: 'local',
+      options: {
+        disableQueryPersistence: true,
+        detailedView: true,
+        miniSearch: {
+          _splitIntoSections(file) {
+            return searchSections(file)
+          }
+        }
+      }
     }
   }
 })
