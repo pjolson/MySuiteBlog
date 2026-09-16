@@ -468,6 +468,20 @@ test('ordinary long-word typos keep their fuzzy match', () => {
   assert.equal(searchEntries('wrong datte').results[0]?.slug, 'dates-and-periods')
 })
 
+test('errors stay reachable under the import type Oracle files them beneath', () => {
+  assert.deepEqual(ids('Please enter value(s) for: Currency', { context: 'Employees and expense categories' }), ['EMP-01'])
+  assert.deepEqual(ids('Please enter value(s) for: Currency', { context: 'Expense reports' }), ['EMP-01'])
+  assert.ok(ids('Invalid item reference key SKU-0100', { context: 'Item records' }).includes('ITM-04'))
+})
+
+test('a wrong filter names the import types the matches are filed under', () => {
+  const filtered = searchEntries('Invalid inventorystatus reference key 987 for issueinventorynumber 0000456', { context: 'Customers' })
+  assert.equal(filtered.results.length, 0)
+  assert.ok(filtered.otherContexts.includes('Inventory adjustments'))
+  assert.ok(!filtered.otherContexts.includes('Customers'))
+  assert.deepEqual(searchEntries('XYZZY_00000 exploded').otherContexts, [])
+})
+
 test('the import-type taxonomy covers every catalogue context exactly once', () => {
   const contexts = importTypeGroups.flatMap(group => group.types.map(type => type.context))
   assert.deepEqual([...contexts].sort(), [...importTypes].sort())

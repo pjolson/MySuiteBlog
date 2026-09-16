@@ -85,13 +85,21 @@ function unfilter() {
         <button type="button" @click="csvSession.context = 'unknown'">I'm not sure</button>
       </div>
     </div>
-    <div v-if="result.otherCount > 0" class="csv-actions">
+    <div v-if="count && result.otherCount > 0" class="csv-actions">
       <span class="csv-help">There are also matches outside these filters.</span>
       <button type="button" class="cta-secondary csv-button" @click="unfilter">Show all matches</button>
     </div>
     <div v-if="!count" class="csv-empty">
       <h3>{{ result.needsContext ? 'More detail needed' : result.otherCount ? 'No matches with these filters' : "We haven't covered this one yet" }}</h3>
       <p v-if="result.needsContext">{{ result.clarificationPrompt }}</p>
+      <template v-else-if="result.otherCount">
+        <p>The matching guides are filed under a different import type.</p>
+        <div class="csv-categories csv-context-choices">
+          <button v-for="context in result.otherContexts.slice(0, 8)" :key="context" type="button"
+            @click="csvSession.context = context">{{ labelForContext(context) }}</button>
+          <button type="button" @click="unfilter">Show all matches</button>
+        </div>
+      </template>
       <p v-else>Try a shorter part of the message, such as the field name. If it mentions a script, the message may come from your account's custom code.</p>
       <CsvFeedback v-if="unknown" :query="csvSession.query" :context="csvSession.context" :source="csvSession.source" />
       <div class="cta-actions">

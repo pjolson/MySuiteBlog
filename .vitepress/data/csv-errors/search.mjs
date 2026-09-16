@@ -201,10 +201,14 @@ export function searchEntries(query, { context = '', category = '' } = {}) {
   const visible = all.filter(({ entry }) => (!context || context === 'unknown' || entry.contexts.includes(context)) && (!category || (entry.categories || [entry.category]).includes(category)))
   const results = groupResults(visible)
   if (!normalized) results.sort((a, b) => guides.findIndex(guide => guide.slug === a.slug) - guides.findIndex(guide => guide.slug === b.slug))
-  const unfilteredCount = groupResults(all).length
+  const allResults = groupResults(all)
+  const visibleSlugs = new Set(results.map(result => result.slug))
+  // The import types the hidden matches are filed under, so a wrong filter
+  // gets a way forward instead of a dead end.
+  const otherContexts = [...new Set(allResults.filter(result => !visibleSlugs.has(result.slug)).flatMap(result => result.contexts))].filter(other => other !== context)
   return {
     results, needsContext: Boolean(clarification), clarificationPrompt: clarification?.prompt,
-    otherCount: unfilteredCount - results.length, unfilteredCount
+    otherCount: allResults.length - results.length, unfilteredCount: allResults.length, otherContexts
   }
 }
 

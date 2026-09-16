@@ -188,10 +188,17 @@ export const contextByPrefix = {
   REV: ['Inventory cost revaluations'], SYS: ['General imports'], FLD: ['Inventory adjustments']
 }
 
+// Entries keep their documented scenario first, but stay visible under the
+// import type a visitor would reasonably pick: Oracle files the expense and
+// time errors under Employee Import Errors, and the related-item and
+// translation errors under item imports.
 export const contextOverrides = {
   'FLD-03': ['Transactions'],
-  'EMP-01': ['Expense reports'], 'EMP-04': ['Time entries'],
-  'ITM-04': ['Related items'], 'ITM-07': ['Related items'], 'ITM-10': ['Item translations'],
+  'EMP-01': ['Expense reports', 'Employees and expense categories'],
+  'EMP-04': ['Time entries', 'Employees and expense categories'],
+  'ITM-04': ['Related items', 'Item records'],
+  'ITM-07': ['Related items', 'Item records'],
+  'ITM-10': ['Item translations', 'Item records'],
   'INV-01': ['Inventory items', 'Item translations'], 'SYS-05': ['General imports', 'Journal entries']
 }
 

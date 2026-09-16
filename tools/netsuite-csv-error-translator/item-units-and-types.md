@@ -124,7 +124,7 @@ Documentation checked September 16, 2026.
 ## Related errors
 
 
-- [A related item uses a different display name](/tools/netsuite-csv-error-translator/item-reference#a-related-item-uses-a-different-display-name) (Related items)
+- [A related item uses a different display name](/tools/netsuite-csv-error-translator/item-reference#a-related-item-uses-a-different-display-name) (Related items, Item records)
 - [The parent and child have different item types](/tools/netsuite-csv-error-translator/parent-and-matrix-items#the-parent-and-child-have-different-item-types) (Item records)
 
 <CsvGuideFooter show-navigation />

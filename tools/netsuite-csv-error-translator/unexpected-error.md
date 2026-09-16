@@ -70,7 +70,7 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 Oracle documents a case involving simultaneous item-name and store-display-name mappings, with translation language also needing attention.
 
-Import context: Item translations.
+Import context: Item translations and Item records.
 
 **Check this first**
 

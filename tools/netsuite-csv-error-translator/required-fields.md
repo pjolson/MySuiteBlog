@@ -73,7 +73,7 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 The expense report expects a currency.
 
-Import context: Expense reports.
+Import context: Expense reports and Employees and expense categories.
 
 **Check this first**
 
@@ -227,7 +227,7 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 The related-item line needs its type as well as the referenced item.
 
-Import context: Related items.
+Import context: Related items and Item records.
 
 **Check this first**
 

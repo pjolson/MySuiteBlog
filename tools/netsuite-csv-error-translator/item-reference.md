@@ -109,7 +109,7 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 For this import, a related item's store display name can affect name matching.
 
-Import context: Related items.
+Import context: Related items and Item records.
 
 **Check this first**
 

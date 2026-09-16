@@ -30,7 +30,7 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 The time entry cannot match the employee supplied.
 
-Import context: Time entries.
+Import context: Time entries and Employees and expense categories.
 
 **Check this first**
 
