@@ -30,6 +30,7 @@ test('reviewed exact-message families route through both searches', () => {
   const cases = [
     ['You have entered an Invalid Field Value ABC for the following field: custbody_example', ['GEN-04']],
     ['Please enter value(s) for: Memo', ['GEN-03']],
+    ['Please enter value(s) for: Currency', ['EMP-01']],
     ['Invalid date value (must be entered as mm/dd/yyyy)', ['TXN-04']],
     ['The transaction date you specified is not within the date range of your accounting period', ['TXN-04']],
     ['Invalid subsidiary reference key Europe', ['SYS-04']],

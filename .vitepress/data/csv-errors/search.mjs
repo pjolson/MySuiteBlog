@@ -21,7 +21,10 @@ rule(/\b(?:inventorystatus|inventory status)\b.*\breference\b/, 'FLD-01')
 rule(/you only have .+ available.*please enter a different quantity/, 'FLD-02')
 rule(/(?:cannot|can t) change (?:the )?(?:selected )?item.*already (?:been )?received|cannot change received item|change item after receiving|csv changes a received line/, 'FLD-03')
 rule(/you have entered an invalid field value .+ for the following field/, 'GEN-04')
-rule(/please enter value(?: s)? for (?!type\b|amount\b|account\b)/, 'GEN-03')
+// Fields with a documented entry of their own are excluded here and matched by
+// their specific families below (Type, Amount, Account, Currency).
+rule(/please enter value(?: s)? for (?!type\b|amount\b|account\b|currency\b)/, 'GEN-03')
+rule(/please enter value(?: s)? for currency/, 'EMP-01')
 rule(/invalid date value.*must be entered as mm dd yyyy/, 'TXN-04')
 rule(/transaction date.*not within the date range of your accounting period/, 'TXN-04')
 rule(/invalid subsidiary reference key/, 'SYS-04')
