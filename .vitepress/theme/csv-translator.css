@@ -73,6 +73,7 @@
 .csv-match { display: inline-block; margin-top: 0.35rem; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); font-size: 0.875rem; }
 .csv-notice, .csv-empty { padding: 1rem 1.25rem; border: 1px solid var(--vp-c-divider); border-left: 3px solid var(--vp-c-brand-1); border-radius: 6px; margin: 1rem 0; }
 .vp-doc .csv-notice p { margin: 0.4rem 0 0; }
+.csv-notice .csv-context-choices { margin-top: 0.6rem; }
 .vp-doc .csv-empty h3 { margin-top: 0; }
 .csv-empty .cta-actions { align-items: center; }
 .csv-results-count { font-size: 0.9rem; font-weight: 600; }

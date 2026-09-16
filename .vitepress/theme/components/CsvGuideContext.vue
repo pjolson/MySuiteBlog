@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import { guideEntries, basePath } from '../../data/csv-errors/catalogue.mjs'
 import { csvSession } from '../csv-session.js'
 import { parseRecordTypes } from '../../data/csv-errors/record-type.mjs'
+import { labelForContext } from '../../data/csv-errors/import-types.mjs'
 import { searchEntries } from '../../data/csv-errors/search.mjs'
 import CsvGuideNavigation from './CsvGuideNavigation.vue'
 
@@ -76,7 +77,7 @@ async function copyLink() {
         <select :id="`guide-context-${slug}`" v-model="contextSelection">
           <option value="">All import types</option>
           <option value="unknown">I'm not sure</option>
-          <option v-for="context in contexts" :key="context" :value="context">{{ context }}</option>
+          <option v-for="context in contexts" :key="context" :value="context">{{ labelForContext(context) }}</option>
         </select>
       </template>
       <p v-else class="csv-help">Choose the message that matches your import.</p>

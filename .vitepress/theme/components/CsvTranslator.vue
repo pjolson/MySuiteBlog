@@ -1,8 +1,9 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { normalize, searchEntries } from '../../data/csv-errors/search.mjs'
-import { importTypes, entries, guides } from '../../data/csv-errors/catalogue.mjs'
+import { entries, guides } from '../../data/csv-errors/catalogue.mjs'
 import { categories } from '../../data/csv-errors/guides.mjs'
+import { importTypeGroups, labelForContext } from '../../data/csv-errors/import-types.mjs'
 import { csvSession, clearSearch } from '../csv-session.js'
 import { createSearchTracker, protectSearchPrivacy } from '../csv-feedback.mjs'
 import CsvFeedback from './CsvFeedback.vue'
@@ -25,6 +26,9 @@ onBeforeUnmount(tracker.cancel)
 const ambiguous = computed(() => csvSession.query.trim() && !csvSession.context && (
   result.value.results.length > 1 || result.value.results.some(result => result.entries.length > 1)
 ))
+// The matched results' own import types, most relevant first, so an ambiguous
+// answer becomes a direct question instead of a passive tip.
+const contextChoices = computed(() => [...new Set(result.value.results.flatMap(item => item.contexts))].slice(0, 8))
 function clear() {
   tracker.schedule('')
   clearSearch()
@@ -54,7 +58,9 @@ function unfilter() {
       <select id="csv-context" v-model="csvSession.context">
         <option value="">All import types</option>
         <option value="unknown">I'm not sure</option>
-        <option v-for="context in importTypes" :key="context" :value="context">{{ context }}</option>
+        <optgroup v-for="group in importTypeGroups" :key="group.label" :label="group.label">
+          <option v-for="type in group.types" :key="type.context" :value="type.context">{{ type.label }}</option>
+        </optgroup>
       </select>
       <div class="csv-actions">
         <button class="cta-primary csv-button" type="button" :disabled="!active" @click="clear">Clear and start over</button>
@@ -72,7 +78,12 @@ function unfilter() {
     <p class="csv-help">Search {{ entries.length }} documented import situations across {{ guides.length }} guides. Detailed troubleshooting is available for the most common and best-supported errors.</p>
     <div v-if="ambiguous && count" class="csv-notice">
       <strong>This message has a few possible causes</strong>
-      <p>Choose what you're importing so we can narrow it down.</p>
+      <p>Which import produced it?</p>
+      <div class="csv-categories csv-context-choices">
+        <button v-for="context in contextChoices" :key="context" type="button"
+          @click="csvSession.context = context">{{ labelForContext(context) }}</button>
+        <button type="button" @click="csvSession.context = 'unknown'">I'm not sure</button>
+      </div>
     </div>
     <div v-if="result.otherCount > 0" class="csv-actions">
       <span class="csv-help">There are also matches outside these filters.</span>

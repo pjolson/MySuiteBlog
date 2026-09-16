@@ -69,6 +69,11 @@ test('translator HTML has labeled inputs, live results, ordinary links, and no f
   // visitor's first search is the first thing assistive technology announces.
   assert.match(html, /<p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count"><\/p>/)
   assert.match(html, /autocomplete="off"/)
+  // The import-type selector is grouped by NetSuite's own Import Assistant
+  // taxonomy while option values remain the catalogue's internal contexts.
+  assert.match(html, /<optgroup label="Employees">/)
+  assert.match(html, /<optgroup label="Transactions">/)
+  assert.match(html, /<option value="Employees and expense categories">Employees<\/option>/)
   assert.doesNotMatch(html, /type="file"|Check file|Check the file too/)
   for (const guide of guides) assert.ok(html.includes(`${basePath}${guide.slug}#`))
   assert.ok(read('tools/index.html').includes(basePath))

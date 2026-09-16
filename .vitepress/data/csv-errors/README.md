@@ -8,6 +8,7 @@ This is the first phase of the project in `researchdocs/MySuite-CSV-Error-Transl
 - `guides.mjs` assigns each entry to one of 35 canonical guides and supplies human headings, import contexts, categories, and natural-language aliases. JRN-08 shares the numbers guide with JRN-07, with separate message matching and answer anchors. Its categories include both Transaction lines and Dates and numbers.
 - `procedures.json` retains the reusable procedures from the brief. `render.mjs` scopes them to the record type and removes internal editorial references before publishing them. It also preserves the safe checks and source caveats for the six documented conflicts.
 - `questions.mjs` supplies the optional follow-up checks. Only one follow-up disclosure can be open at a time.
+- `import-types.mjs` is the display taxonomy for the import-type selectors, grouped and named after the record-type page of NetSuite's Import Assistant. Option values remain the catalogue's internal context strings; a test requires the taxonomy to cover every context exactly once.
 
 Run `npm run generate:csv-guides` after changing content. The same command runs before `npm run dev` and `npm run build`. The generated Markdown pages under `tools/netsuite-csv-error-translator/` are committed content artifacts for VitePress's existing page loader and local search index. Edit the structured source rather than those generated pages. If removing or renaming a guide, explicitly remove its old generated page and consider a redirect separately.
 

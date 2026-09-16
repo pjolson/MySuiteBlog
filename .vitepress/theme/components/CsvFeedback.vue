@@ -1,6 +1,7 @@
 <script setup>
 import { computed, nextTick, ref, watch } from 'vue'
 import { importTypes } from '../../data/csv-errors/catalogue.mjs'
+import { importTypeGroups } from '../../data/csv-errors/import-types.mjs'
 import { feedbackLimits } from '../../data/csv-errors/feedback-contract.mjs'
 import { catalogueVersion, postFeedback, protectSearchPrivacy } from '../csv-feedback.mjs'
 import { csvSession } from '../csv-session.js'
@@ -73,7 +74,9 @@ watch(() => csvSession.reviewRequested, requested => {
         <label for="csv-feedback-context">What were you importing?</label>
         <select id="csv-feedback-context" v-model="context">
           <option value="unknown">I'm not sure</option>
-          <option v-for="type in importTypes" :key="type" :value="type">{{ type }}</option>
+          <optgroup v-for="group in importTypeGroups" :key="group.label" :label="group.label">
+            <option v-for="type in group.types" :key="type.context" :value="type.context">{{ type.label }}</option>
+          </optgroup>
         </select>
         <label for="csv-feedback-note">Anything else we should know? <span class="csv-help">(optional)</span></label>
         <textarea id="csv-feedback-note" v-model="note" rows="3" :maxlength="feedbackLimits.note" placeholder="For example, whether you were adding or updating records." autocomplete="off" />
