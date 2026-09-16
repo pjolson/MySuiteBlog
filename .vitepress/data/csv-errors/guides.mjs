@@ -169,12 +169,23 @@ export const indexableGuideSlugs = new Set([
 
 // This count describes entry-level editorial depth, not catalogue breadth.
 export const detailedEntryIds = new Set([
+  'ASM-01', 'ASM-02', 'CON-01', 'CON-02', 'CPY-01', 'CST-01', 'CST-02',
   'CUS-01', 'CUS-02', 'CUS-03', 'CUS-04', 'CUS-05', 'CUS-06', 'CUS-07',
-  'FLD-01', 'FLD-02', 'FLD-03', 'GEN-02', 'GEN-03', 'GEN-04', 'GEN-05',
-  'GEN-08', 'GEN-09', 'GEN-11', 'INV-02', 'INVC-01', 'INVC-02', 'INVC-03', 'ITM-02',
-  'ITM-03', 'ITM-04', 'ITM-05', 'ITM-09', 'ITM-13', 'JRN-01', 'JRN-02',
-  'JRN-07', 'JRN-08', 'KIT-01', 'PUR-01', 'SAL-01', 'SAL-03', 'SAL-05',
-  'SAL-06', 'SYS-01', 'SYS-02', 'SYS-04', 'TXN-03', 'TXN-04', 'VPY-05'
+  'DMD-01', 'DMD-02', 'EMP-01', 'EMP-02', 'EMP-03', 'EMP-04', 'EVT-01',
+  'EVT-02', 'EVT-03', 'EVT-04', 'EXP-01', 'EXP-02', 'EXP-03', 'FLD-01',
+  'FLD-02', 'FLD-03', 'GEN-01', 'GEN-02', 'GEN-03', 'GEN-04', 'GEN-05',
+  'GEN-06', 'GEN-07', 'GEN-08', 'GEN-09', 'GEN-10', 'GEN-11', 'INV-01',
+  'INV-02', 'INV-03', 'INVC-01', 'INVC-02', 'INVC-03', 'ITM-01', 'ITM-02',
+  'ITM-03', 'ITM-04', 'ITM-05', 'ITM-06', 'ITM-07', 'ITM-09', 'ITM-10',
+  'ITM-11', 'ITM-12', 'ITM-13', 'ITM-14', 'ITM-15', 'JRN-01', 'JRN-02',
+  'JRN-03', 'JRN-04', 'JRN-05', 'JRN-06', 'JRN-07', 'JRN-08', 'KIT-01',
+  'LST-01', 'LST-02', 'LST-03', 'PRO-01', 'PUR-01', 'REL-01', 'REL-02',
+  'REL-03', 'REV-01', 'REV-02', 'REV-03', 'ROU-01', 'ROU-02', 'ROU-03',
+  'ROU-04', 'SAL-01', 'SAL-02', 'SAL-03', 'SAL-05', 'SAL-06', 'SYS-01',
+  'SYS-02', 'SYS-03', 'SYS-04', 'SYS-05', 'SYS-06', 'SYS-07', 'TXN-01',
+  'TXN-02', 'TXN-03', 'TXN-04', 'TXN-05', 'VBL-01', 'VBL-02', 'VBL-03',
+  'VBL-04', 'VBL-05', 'VPY-01', 'VPY-02', 'VPY-03', 'VPY-04', 'VPY-05',
+  'WEB-01'
 ])
 
 export const contextByPrefix = {

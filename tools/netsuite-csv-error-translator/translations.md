@@ -38,15 +38,11 @@ First add the item with its required accounting, location, and pricing data, the
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. This appears when the Multi-Language feature is enabled and a new inventory item imports with translation columns alongside its other fields.
+2. Import the item first without the Translation Language and Translation Display Name columns.
+3. Run a second import with Update to add the translations to the imported items.
 
 :::
 
@@ -80,19 +76,10 @@ Check that the language feature is enabled and at least one language is configur
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. Check that the Multi-Language feature is enabled and at least one language is listed on the Languages subtab under Setup > Company > Enable Features.
+2. Retry the translation import after the language setup is confirmed.
 
 :::
 
@@ -122,15 +109,11 @@ Map the language from the file instead.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Check whether the Language field uses a static mapping while the file contains translations for more than one language.
+2. A static language mapping works only for a single-language file. Map the language from a CSV column, or split the file by language.
+3. Retry one list.
 
 :::
 

@@ -38,16 +38,11 @@ Check both date columns.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. Compare every Date and End Date value with the importing user’s date format under Home > Set Preferences, in the Formatting section.
+2. Correct the cells that differ from that format.
+3. Retry one event.
 
 :::
 
@@ -77,31 +72,11 @@ Inspect the saved CSV.
 
 ::: details Show the steps
 
-**Check the saved CSV structure**
+**Steps for this error**
 
-1. Inspect the actual saved CSV, not just its spreadsheet display.
-2. Confirm the file's separator and encoding agree with the import settings.
-3. Parse quoted fields correctly. A comma inside a quoted description is not another column.
-4. Compare each parsed row with the header. Identify extra fields, unnamed columns, and duplicate headings.
-5. Check for totals, notes, and partially populated rows that were not meant to be imported.
-6. Save a corrected copy and inspect it again before importing.
-
-Completely blank trailing lines and partially populated records are different. Report the actual parsed content rather than assuming that any blank-looking spreadsheet row causes an error. The import's documented size limits are per job, including combined files: 25,000 records or 50 MB. A transaction with several CSV rows is not necessarily several records.
-
-[File conventions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453326.html), [separators inside fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453950.html)
-
-Oracle documents that duplicate column headings can cause the later column's values to be used. For results files, preserve duplicate error columns by position instead of silently overwriting them in a parser. Let the visitor identify the latest error column. [CSV preparation tips](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N439220.html)
-
-**Check the saved date or period value**
-
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. Check the Date and End Date columns for rows without values.
+2. If every intended row has a value, delete the empty rows after your data. Spreadsheet formatting on an empty cell can make NetSuite treat it as a row.
+3. Save the file and retry.
 
 :::
 
@@ -131,16 +106,11 @@ Check the format and any absent end date.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. Compare each Date and End Date cell with the importing user’s date and time format under Home > Set Preferences.
+2. Check for rows without an End Date. A missing end value can generate an invalid date during the import.
+3. Correct the format or supply the missing dates, then retry one event.
 
 :::
 
@@ -170,16 +140,11 @@ Check both dates and times, including overnight spans.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. Check for End Date values earlier than the Date value.
+2. Check the times: an event cannot span two days, so an End Date on a later day with an earlier time of day also fails. Change both the end date and time so the event stays within one day.
+3. Retry one event.
 
 :::
 

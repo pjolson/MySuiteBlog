@@ -38,18 +38,11 @@ Check the existing period name and whether spreadsheet formatting changed it.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
-
-Verify the actual period reference before changing dates or reopening periods. A reference mismatch does not itself establish a closed-period problem.
+1. Compare the Posting Period value with the exact name of an existing period.
+2. Check the CSV formatting for that column. In a spreadsheet, set the Posting Period column format to Text so no punctuation or date handling is added.
+3. Retry one report.
 
 :::
 
@@ -113,16 +106,11 @@ Check their actual values.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. The Start Date and End Date fields on a journal require the Revenue Recognition feature; check whether they should be mapped at all.
+2. Compare the two columns: the start date must be before the end date.
+3. Correct the dates and retry one journal.
 
 :::
 

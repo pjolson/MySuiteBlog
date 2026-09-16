@@ -106,19 +106,11 @@ Choose a name or supported identifier and map it to the intended field.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Map a name, internal ID, or external ID for the custom list on the Field Mapping page.
+2. Choose the matching reference type with the edit icon beside the field.
+3. Retry the import.
 
 :::
 
@@ -148,19 +140,11 @@ Map the intended identifier.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. When adding revaluation records, map a unique identifier for every row: External ID or Ref. No.
+2. Choose the matching reference type for the mapped field.
+3. Retry the import.
 
 :::
 
@@ -190,19 +174,11 @@ Choose one appropriate to the record and operation.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. When adding transactions, map one unique identifier for every row: External ID, Internal ID, or a transaction number field such as Order # or Invoice #.
+2. Choose the matching reference type for the mapped field.
+3. Retry the import.
 
 :::
 

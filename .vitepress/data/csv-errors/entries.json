@@ -1750,9 +1750,9 @@
     "id": "REL-03",
     "context": "Leads, prospects, and other relationship records",
     "messageFragments": [
-      "entity"
+      "This entity already exists"
     ],
-    "matchNotes": "`entity`, already-exists wording",
+    "matchNotes": "`This entity already exists`; documented within the relationship email-error article.",
     "explanation": "Another entity may already own that external ID.",
     "firstCheck": "Search entities by the value and establish which record the import is meant to create or update.",
     "procedureIds": [

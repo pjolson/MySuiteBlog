@@ -38,15 +38,11 @@ If the customer is an individual, choose the customer-only import and handle the
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Check the three documented conditions together: the customer type is Individual, the file also adds a contact, and the record type is Customers and Contacts Together.
+2. Individual customers cannot import together with contacts. Import them with Relationships as the import type and Customers Only as the record type.
+3. Keep Customers and Contacts Together for customers with the Company type.
 
 :::
 
@@ -76,19 +72,11 @@ Check the customer before changing the contact mapping. Oracle describes importi
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Check whether the linked customer is inactive. This message appears when the company being referenced is an inactive record.
+2. Make the customer active, import the customers and contacts, and then inactivate the customer again afterward, for example with a mass update.
+3. Retry one row.
 
 :::
 
@@ -221,15 +209,11 @@ Check their identifiers and phone mappings separately. Prospect fields belong to
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Export the affected prospects with a customer saved search filtered to Stage is Prospect, including the prospect name and phone plus the contact name and internal ID.
+2. Edit the exported file, keeping the prospect’s identifiers and phone separate from the contact’s.
+3. Map the prospect fields to the prospect folder and the contact fields, including the contact internal ID, to the contact folder, then retry.
 
 :::
 

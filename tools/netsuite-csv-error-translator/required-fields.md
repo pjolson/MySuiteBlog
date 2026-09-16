@@ -72,19 +72,12 @@ Map the expense currency or choose a default that applies to every affected line
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. This appears when a new expense report is added while Use Multicurrency Expense Reports is enabled but no currency reaches the import.
+2. Add a Currency column, or set a default value for Expenses 1 : Currency on the Field Mapping page.
+3. If the reports do not need multiple currencies, set Use MultiCurrency to No in the file or as a mapping default, or clear the Use Multicurrency Expense Reports box under Home > Set Preferences.
+4. Retry one report.
 
 :::
 
@@ -114,19 +107,11 @@ Check that the intended value belongs here before shortening it.
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. The Expense Account value on an expense category record allows at most 61 characters, including spaces and symbols.
+2. Shorten the over-length values in the saved CSV after confirming the intended account.
+3. Retry one row.
 
 :::
 
@@ -226,19 +211,12 @@ Inspect the presentation-item mapping, identify the existing main item, and prov
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. This appears when related items import without a type. The field is under Items Presentation Items > Item Presentation Item 1 on the Field Mapping page.
+2. Set Data Handling to Update; only existing items can become related items.
+3. Map the main item’s Internal ID, the related item’s number to Presentation Items 1: Item Number, and the type to Presentation Items 1: Item.
+4. Retry one item.
 
 :::
 
@@ -268,34 +246,11 @@ Inspect the mapped email column and the rows being processed.
 
 ::: details Show the steps
 
-**Check the saved CSV structure**
+**Steps for this error**
 
-1. Inspect the actual saved CSV, not just its spreadsheet display.
-2. Confirm the file's separator and encoding agree with the import settings.
-3. Parse quoted fields correctly. A comma inside a quoted description is not another column.
-4. Compare each parsed row with the header. Identify extra fields, unnamed columns, and duplicate headings.
-5. Check for totals, notes, and partially populated rows that were not meant to be imported.
-6. Save a corrected copy and inspect it again before importing.
-
-Completely blank trailing lines and partially populated records are different. Report the actual parsed content rather than assuming that any blank-looking spreadsheet row causes an error. The import's documented size limits are per job, including combined files: 25,000 records or 50 MB. A transaction with several CSV rows is not necessarily several records.
-
-[File conventions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453326.html), [separators inside fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453950.html)
-
-Oracle documents that duplicate column headings can cause the later column's values to be used. For results files, preserve duplicate error columns by position instead of silently overwriting them in a parser. Let the visitor identify the latest error column. [CSV preparation tips](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N439220.html)
-
-**Check the required field and mapping**
-
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. Check that every row has an email value in a valid format.
+2. The complete message names the column and a null value; find the rows with a blank or malformed email.
+3. Supply or correct the addresses and retry.
 
 :::
 
@@ -323,34 +278,11 @@ Check real records and unintended trailing content.
 
 ::: details Show the steps
 
-**Check the saved CSV structure**
+**Steps for this error**
 
-1. Inspect the actual saved CSV, not just its spreadsheet display.
-2. Confirm the file's separator and encoding agree with the import settings.
-3. Parse quoted fields correctly. A comma inside a quoted description is not another column.
-4. Compare each parsed row with the header. Identify extra fields, unnamed columns, and duplicate headings.
-5. Check for totals, notes, and partially populated rows that were not meant to be imported.
-6. Save a corrected copy and inspect it again before importing.
-
-Completely blank trailing lines and partially populated records are different. Report the actual parsed content rather than assuming that any blank-looking spreadsheet row causes an error. The import's documented size limits are per job, including combined files: 25,000 records or 50 MB. A transaction with several CSV rows is not necessarily several records.
-
-[File conventions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453326.html), [separators inside fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453950.html)
-
-Oracle documents that duplicate column headings can cause the later column's values to be used. For results files, preserve duplicate error columns by position instead of silently overwriting them in a parser. Let the visitor identify the latest error column. [CSV preparation tips](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N439220.html)
-
-**Check the required field and mapping**
-
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. With Data Handling set to Add, check the mapped required columns for rows missing values.
+2. Delete unintended empty rows after your data; spreadsheet formatting can make them import as rows.
+3. Save the file and retry.
 
 :::
 

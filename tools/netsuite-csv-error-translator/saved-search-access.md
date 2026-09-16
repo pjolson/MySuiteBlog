@@ -38,17 +38,11 @@ Check existence and audience.
 
 ::: details Show the steps
 
-**Check what saved and what failed**
+**Steps for this error**
 
-1. Read the result for a record identifier or wording that says the record was created.
-2. Locate that record and verify its current state.
-3. Identify the script, workflow, or saved-search dependency named in the failure, if one is provided.
-4. Ask the account administrator to inspect the relevant execution or access problem.
-5. Decide what needs to run again only after distinguishing the saved record from the failed follow-up work.
-
-For a missing saved search, check whether the referenced search still exists and whether the import role can access it. For a generic unexpected error, collect the record type, mapping, result, and a minimal example instead of treating one documented scenario as the answer to every failure.
-
-Do not make disabling scripts or workflow triggers a standard fix. That changes what runs during the import and can omit work the account depends on. [Script and workflow execution](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4676525683.html)
+1. This appears when a custom field pulls its value from a saved search that is inactive, deleted, or private.
+2. Ask the administrator to confirm the search exists, is active, and that the importing user is in its audience or the search is public.
+3. Retry after access is confirmed.
 
 :::
 

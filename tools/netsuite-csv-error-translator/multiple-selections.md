@@ -38,19 +38,11 @@ Check multi-select IDs.
 
 ::: details Show the steps
 
-**Check multiple selections and hierarchy**
+**Steps for this error**
 
-1. Identify whether the value represents a parent/child path, several selections, or an ordinary text value.
-2. Check the separator selected for this import.
-3. Make sure that separator does not split part of a real identifier.
-4. Check for a repeated selection within one cell.
-5. When updating the complete set, retain existing selections that must remain.
-
-Hierarchy and multi-select separators serve different purposes. Oracle describes colon-separated hierarchy paths and a configurable single-character separator for multiple selections. Follow the record-specific requirements where they differ.
-
-[Hierarchy and multi-select guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454061.html)
-
-For manufacturing routings, check the routing-specific separator and whitespace requirements. Do not silently trim all record values or apply one whitespace rule across every import.
+1. Find the multi-select field column in the file.
+2. Remove values that appear twice in the same cell, including repeated internal IDs.
+3. Retry one row.
 
 :::
 
@@ -80,19 +72,11 @@ Choose an import separator absent from those values. Oracle also notes that a li
 
 ::: details Show the steps
 
-**Check multiple selections and hierarchy**
+**Steps for this error**
 
-1. Identify whether the value represents a parent/child path, several selections, or an ordinary text value.
-2. Check the separator selected for this import.
-3. Make sure that separator does not split part of a real identifier.
-4. Check for a repeated selection within one cell.
-5. When updating the complete set, retain existing selections that must remain.
-
-Hierarchy and multi-select separators serve different purposes. Oracle describes colon-separated hierarchy paths and a configurable single-character separator for multiple selections. Follow the record-specific requirements where they differ.
-
-[Hierarchy and multi-select guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454061.html)
-
-For manufacturing routings, check the routing-specific separator and whitespace requirements. Do not silently trim all record values or apply one whitespace rule across every import.
+1. On the import’s Advanced Options, set the Custom Multi-Select Value Delimiter to a character that does not occur inside your values, especially external IDs with special characters.
+2. Do not use a space or a character your data contains, such as a pipe or slash. A NULL setting behaves like a space.
+3. Retry one row.
 
 :::
 
@@ -122,19 +106,11 @@ Prepare the complete intended set in one multi-select cell, including subsidiari
 
 ::: details Show the steps
 
-**Check multiple selections and hierarchy**
+**Steps for this error**
 
-1. Identify whether the value represents a parent/child path, several selections, or an ordinary text value.
-2. Check the separator selected for this import.
-3. Make sure that separator does not split part of a real identifier.
-4. Check for a repeated selection within one cell.
-5. When updating the complete set, retain existing selections that must remain.
-
-Hierarchy and multi-select separators serve different purposes. Oracle describes colon-separated hierarchy paths and a configurable single-character separator for multiple selections. Follow the record-specific requirements where they differ.
-
-[Hierarchy and multi-select guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454061.html)
-
-For manufacturing routings, check the routing-specific separator and whitespace requirements. Do not silently trim all record values or apply one whitespace rule across every import.
+1. Subsidiary is a multi-select field: list every subsidiary the item should keep in one cell, separated by the configured delimiter, rather than only the one being added.
+2. Map the item name to Item Name/Number and the combined value to Subsidiary.
+3. Retry one item and confirm no existing subsidiary was dropped.
 
 :::
 
@@ -164,19 +140,12 @@ This routing guide specifically warns about spaces around the separator.
 
 ::: details Show the steps
 
-**Check multiple selections and hierarchy**
+**Steps for this error**
 
-1. Identify whether the value represents a parent/child path, several selections, or an ordinary text value.
-2. Check the separator selected for this import.
-3. Make sure that separator does not split part of a real identifier.
-4. Check for a repeated selection within one cell.
-5. When updating the complete set, retain existing selections that must remain.
-
-Hierarchy and multi-select separators serve different purposes. Oracle describes colon-separated hierarchy paths and a configurable single-character separator for multiple selections. Follow the record-specific requirements where they differ.
-
-[Hierarchy and multi-select guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454061.html)
-
-For manufacturing routings, check the routing-specific separator and whitespace requirements. Do not silently trim all record values or apply one whitespace rule across every import.
+1. Check the location value for a typo.
+2. Confirm the location is valid for the routing’s subsidiary.
+3. For several locations, check the multi-select formatting: spaces around the delimiter cause this error.
+4. Retry one routing.
 
 :::
 

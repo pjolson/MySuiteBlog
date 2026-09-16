@@ -38,19 +38,11 @@ Compare the employee value with the mapping's choice of name or internal ID. A n
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Use the employee internal ID in the file, or the employee name exactly as the Time Tracking form shows it.
+2. On the Field Mapping page, open the Employee field and set the reference type to Internal ID or Names to match the file.
+3. Retry one entry.
 
 :::
 
@@ -149,19 +141,12 @@ Check its currencies and active state.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Confirm the entity on the journal line is active.
+2. Compare the CSV value with how the entity is listed in NetSuite, including any ID prefix in the displayed name.
+3. Check the entity’s currency against the journal transaction currency. Add the transaction currency as a secondary currency on the entity record when the primary differs.
+4. Retry one journal.
 
 :::
 

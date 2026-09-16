@@ -38,19 +38,12 @@ Check its active state, displayed name, and mapping reference type.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Check that the expense category is active under Setup > Accounting > Expense Categories with Show Inactives checked.
+2. When matching by name, compare the CSV value with the Category dropdown on the expense report form.
+3. To avoid name issues, choose Internal ID as the reference type for the Category field on the Field Mapping page.
+4. Retry one line.
 
 :::
 
@@ -114,19 +107,11 @@ Check the configured list and include the campaign identifier when it forms part
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Compare the CSV value with the Lead Sources list: under Lists > Marketing > Marketing Campaigns when Marketing Automation is enabled, otherwise under Setup > Sales > CRM Lists.
+2. Match the displayed naming exactly. When the list shows the campaign ID with the title, include both, for example 34 OnlineForm.
+3. Add missing lead sources to the list or correct the file, then retry one row.
 
 :::
 
@@ -156,19 +141,11 @@ Map the website or select a default when every row belongs to that site. Then ch
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. A site category needs its website: include the site name as it was created in NetSuite and map it.
+2. Or set a default value for the Site field on the Field Mapping page with the edit icon.
+3. Retry one row.
 
 :::
 

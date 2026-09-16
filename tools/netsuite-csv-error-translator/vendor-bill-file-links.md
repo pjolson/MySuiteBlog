@@ -38,19 +38,12 @@ Check expense-file linkage and sublist mappings.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For vendor bills, the documented multi-file structure separates bill headers from expenses, and can use another file for items. Repeat the linking key in the detail files. A duplicate key in a primary header file is different from a transaction key correctly repeated across detail rows.
-
-[Vendor bill file structure](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N427250.html)
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. For vendor bills with expenses, use two linked files: a bill file and an expense file.
+2. Give both files a shared External ID key: map the bill file’s to Vendor Bill: External ID and the expense file’s to the Vendor Bill Expenses line.
+3. In the expense file, name the amount column Total, not Amount, and include the account.
+4. Retry one bill.
 
 :::
 
@@ -80,19 +73,11 @@ Keep one header row per bill in a multi-file import.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For vendor bills, the documented multi-file structure separates bill headers from expenses, and can use another file for items. Repeat the linking key in the detail files. A duplicate key in a primary header file is different from a transaction key correctly repeated across detail rows.
-
-[Vendor bill file structure](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N427250.html)
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. In a multiple-file vendor bill import keyed on external ID, check the primary bill file for repeated external ID values.
+2. Keep one row per bill in the primary file; detail rows belong in the linked file.
+3. Retry the import.
 
 :::
 

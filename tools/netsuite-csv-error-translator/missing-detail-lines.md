@@ -38,15 +38,11 @@ Check the primary assembly file, member file, shared assembly identifier, and me
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. For a multiple-file import, confirm the member file links to the assembly file through Assembly Item: External ID, Internal ID, or Name.
+2. Use Items as the import type with Assembly/BOM Item as the record type, upload the assembly file as the primary file and the members as the linked Item Members file, and set Data Handling to Add.
+3. Map the member name and quantity to Item and Quantity in the Item Members folder, then retry one assembly.
 
 :::
 
@@ -76,15 +72,11 @@ Check that each template has details and that the file-linking keys agree.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Confirm every cost template record has at least one cost line in the file.
+2. For a multiple-file import, check the key column linking the template file to its detail file. A typo in that column breaks the link.
+3. Retry one template.
 
 :::
 
@@ -114,15 +106,11 @@ Check the shared key between the report and its expenses.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Confirm every expense report record has at least one expense line in the file.
+2. For a multiple-file import, check the key column linking the report file to its expense file. A typo in that column breaks the link.
+3. Retry one report.
 
 :::
 
@@ -186,15 +174,11 @@ Check the detail file and shared routing key.
 
 ::: details Show the steps
 
-**Check how the detail rows are linked**
+**Steps for this error**
 
-1. Confirm whether this is a single-file or multiple-file import.
-2. Identify the parent record key and the key used to connect each detail file.
-3. Verify that every required detail row points to an intended parent, with no spelling or whitespace changes in the linking value.
-4. Check the import's field mapping for the detail sublist. Defaults alone do not establish that detail rows were imported.
-5. Separate a record identifier from a line identifier. They serve different purposes.
-
-For assemblies, link member rows to the assembly. For routings, check the operation sequence within each routing. For customer/contact combinations, keep each record's identity and fields separate. Check the actual mapping fields for the record being imported.
+1. Confirm every routing record has at least one operation line in the file.
+2. For a multiple-file import, check the key column linking the routing file to its operations file. A typo in that column breaks the link.
+3. Retry one routing.
 
 :::
 

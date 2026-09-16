@@ -38,17 +38,11 @@ They are different records. Verify both references; a supplied internal ID can t
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. Confirm the internal IDs for both the customer payment and the invoice. NetSuite looks the transaction up by internal ID before any external ID.
+2. To see internal IDs in lists, go to Home > Set Preferences > General and check Show Internal IDs.
+3. Correct the mapped ID and retry one payment.
 
 :::
 
@@ -129,17 +123,11 @@ Review the mapping.
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. When the bill is mapped by internal ID, NetSuite finds its Accounts Payable account itself.
+2. Remove the AP account from the field mapping.
+3. Retry one payment.
 
 :::
 
@@ -169,17 +157,11 @@ Check its identity and open balance.
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. Check that the referenced invoice or bill is open and not already Paid in Full.
+2. Confirm the internal or external ID in the file matches an existing open document; those are the only reference fields payment imports accept.
+3. Correct the reference or drop the paid document, then retry one payment.
 
 :::
 
@@ -209,17 +191,11 @@ Refresh it before retrying.
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. Compare the payment amount with the amount actually due: with a term discount, the payment should equal the net amount after the discount.
+2. If no discount should apply, clear the Terms and Disc. Amt. fields on the bill.
+3. The same applies to customer payments. Retry one payment.
 
 :::
 
@@ -249,17 +225,12 @@ Check import mode, unused credit, open bill, and matching AP accounts.
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. When paying bills and applying existing credits together, set Data Handling to Add/Update, not Add.
+2. Check that the bill is still open, the credit is not already applied, and both use the same A/P account.
+3. Use internal IDs for both the bill and the credit in the ID of the Bill column, with a positive amount for the bill and a negative amount for the credit.
+4. Retry one payment.
 
 :::
 

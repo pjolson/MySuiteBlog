@@ -38,15 +38,11 @@ Include pricing for quantity zero as well as the later quantity breaks. Check th
 
 ::: details Show the steps
 
-**Check the price structure**
+**Steps for this error**
 
-1. Establish whether the change is to a price, a quantity break, a price level, or the entire structure.
-2. Compare the existing item pricing with the proposed rows.
-3. Keep every price and quantity break that is meant to remain.
-4. Check the missing-base-price case separately from the new-matrix-header case.
-5. If the change would replace pricing, ask the account administrator to review the pricing setup and the conflicting Oracle guidance before proceeding.
-
-This is a check of the intended price structure, not an instruction to enable sublist replacement.
+1. This appears when quantity pricing is imported without pricing for quantity 0.
+2. Include the quantity 0 price, either before or in the same import as the other quantity prices.
+3. Retry one item.
 
 :::
 
@@ -118,19 +114,11 @@ Compare its name with the CSV value. If the import should use one price level th
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Check the price level under Setup > Accounting > Accounting Lists with Type set to Price Level: it must be active and spelled exactly as in the file.
+2. Or map Item Pricing 1 to Price Level on the Field Mapping page and pick the level with the edit icon.
+3. Retry one item.
 
 :::
 

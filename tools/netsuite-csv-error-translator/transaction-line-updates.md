@@ -72,22 +72,11 @@ Check existing lines before replacing a sublist.
 
 ::: details Show the steps
 
-**Decide whether to update, append, or replace lines**
+**Steps for this error**
 
-Ask first: **Are you changing existing lines, adding new lines, or replacing the whole list?**
-
-- To update a line, export and use its real line key.
-- To add lines through the documented transaction-item workflow, map the line-key column with blank values for the new lines.
-- When an item appears more than once, the item reference alone may not identify a unique line.
-- Do not invent sequential line IDs from spreadsheet row numbers.
-
-[Transaction line updates](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html)
-
-Sublist replacement is a separate choice. Enabling it replaces existing sublist content with the imported content. With replacement off, behavior depends on whether the sublist supports matching by keys. Get the complete intended list before choosing replacement. Item pricing and demand plans need their own guidance.
-
-[Sublist replacement](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html)
-
-Do not generalize these line-key rules to every sublist. Use the import documentation for the selected record type and sublist.
+1. This update path uses Overwrite Sublists: with Transactions as the import type, Sales Order as the record type, and Data Handling on Update, check Overwrite Sublists on the Advanced Options menu. Oracle marks that option with a caution because it replaces the existing lines.
+2. Confirm Line ID is not mapped to anything.
+3. Retry one order and verify its lines afterward.
 
 :::
 
@@ -149,22 +138,11 @@ Identify existing lines explicitly.
 
 ::: details Show the steps
 
-**Decide whether to update, append, or replace lines**
+**Steps for this error**
 
-Ask first: **Are you changing existing lines, adding new lines, or replacing the whole list?**
-
-- To update a line, export and use its real line key.
-- To add lines through the documented transaction-item workflow, map the line-key column with blank values for the new lines.
-- When an item appears more than once, the item reference alone may not identify a unique line.
-- Do not invent sequential line IDs from spreadsheet row numbers.
-
-[Transaction line updates](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html)
-
-Sublist replacement is a separate choice. Enabling it replaces existing sublist content with the imported content. With replacement off, behavior depends on whether the sublist supports matching by keys. Get the complete intended list before choosing replacement. Item pricing and demand plans need their own guidance.
-
-[Sublist replacement](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html)
-
-Do not generalize these line-key rules to every sublist. Use the import documentation for the selected record type and sublist.
+1. This appears when a file adds or updates several lines that use the same item on one transaction.
+2. Include a Line ID column. Leave it blank for lines NetSuite should treat as new, or use values above the highest existing Line ID.
+3. Import with Transactions as the import type and the matching record type, then verify the changed lines on one transaction.
 
 :::
 
@@ -194,12 +172,11 @@ Review the complete team.
 
 ::: details Show the steps
 
-**Decide whether to update, append, or replace lines**
+**Steps for this error**
 
-1. Review the complete sales team already on the transaction.
-2. Compare its contributions with the proposed imported team.
-3. Check whether imported and existing percentages together exceed 100%.
-4. Establish the complete intended team before choosing how to update its sublist.
+1. Add the imported contributions to the sales team already on the record; the combined total cannot exceed 100%.
+2. Without Overwrite Sublists checked, NetSuite combines the existing team with the rows in the file, which is the usual cause.
+3. Establish the complete intended team before choosing whether to overwrite or adjust contributions.
 
 :::
 

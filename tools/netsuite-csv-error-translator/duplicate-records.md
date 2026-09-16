@@ -56,7 +56,9 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-The exact wording varies. Messages for this case mention `entity`.
+- `This entity already exists`
+
+The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -70,19 +72,11 @@ Search entities by the value and establish which record the import is meant to c
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Another entity already uses the external ID being assigned. Find it with an entity saved search filtered to External ID is the failing value, showing ID, name, and type.
+2. Decide whether the row should update that record instead of reusing the identifier.
+3. Correct the external ID in the file and retry one row.
 
 :::
 
@@ -112,19 +106,11 @@ Find it before deciding whether an update is appropriate.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Each revaluation must use a unique combination of item, location, and date. Look for an existing revaluation with the same three values.
+2. Change the date or update the existing record instead of adding another for the same combination.
+3. Retry one row.
 
 :::
 

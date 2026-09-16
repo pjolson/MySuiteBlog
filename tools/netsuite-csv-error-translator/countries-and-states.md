@@ -72,11 +72,11 @@ A country code may have been supplied where a localized name is expected.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-Use the country name shown in the account's language, or a mapping default when one country applies throughout. Do not assume a SOAP country enumeration or a two-letter code is the value expected by CSV import. For states and provinces, match the configured short name for the selected country. Inspect the account's state/province list when the value looks right but is rejected.
-
-[Country values](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454670.html), [state and province values](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N454550.html)
+1. The Import Assistant does not accept country codes; the file must use the localized country names.
+2. Replace codes such as US with the country name NetSuite displays.
+3. Retry one row.
 
 :::
 

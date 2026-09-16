@@ -38,19 +38,11 @@ Distinguish the plan's identity from its item reference before changing the mapp
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Map the demand plan record’s internal ID to the Demand: Item field. The internal ID identifies the plan for the import.
+2. As in the user interface, an update overwrites the existing plan; confirm which plan the row targets.
+3. Retry one plan.
 
 :::
 
@@ -84,16 +76,11 @@ Supply a consistent period instead of changing the start date alone.
 
 ::: details Show the steps
 
-**Check the saved date or period value**
+**Steps for this error**
 
-**Dates**
-
-1. Compare the saved CSV text with the importing user's date format, including the year.
-2. If the date is ambiguous, establish the intended date from the source. Do not guess whether `04/05` is April 5 or May 4.
-3. For a period or time range, verify both ends and any accompanying year or view.
-4. Recheck the saved file after editing it in a spreadsheet.
-
-Use the first check above for the specific transaction date, effective date, event, demand plan, or posting period involved.
+1. This appears when the plan start date falls in a year ahead of the current year while the Year and plan end date fields are not mapped.
+2. Map Year to the intended year and map both Plan Start Date and Plan End Date.
+3. Retry one plan.
 
 :::
 

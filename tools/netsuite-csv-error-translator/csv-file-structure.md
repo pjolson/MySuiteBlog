@@ -106,20 +106,11 @@ Inspect the first CSV row.
 
 ::: details Show the steps
 
-**Check the saved CSV structure**
+**Steps for this error**
 
-1. Inspect the actual saved CSV, not just its spreadsheet display.
-2. Confirm the file's separator and encoding agree with the import settings.
-3. Parse quoted fields correctly. A comma inside a quoted description is not another column.
-4. Compare each parsed row with the header. Identify extra fields, unnamed columns, and duplicate headings.
-5. Check for totals, notes, and partially populated rows that were not meant to be imported.
-6. Save a corrected copy and inspect it again before importing.
-
-Completely blank trailing lines and partially populated records are different. Report the actual parsed content rather than assuming that any blank-looking spreadsheet row causes an error. The import's documented size limits are per job, including combined files: 25,000 records or 50 MB. A transaction with several CSV rows is not necessarily several records.
-
-[File conventions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453326.html), [separators inside fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453950.html)
-
-Oracle documents that duplicate column headings can cause the later column's values to be used. For results files, preserve duplicate error columns by position instead of silently overwriting them in a parser. Let the visitor identify the latest error column. [CSV preparation tips](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N439220.html)
+1. Confirm row 1 of the file holds a heading for every column, with none blank.
+2. Remove unnamed columns the spreadsheet may have saved to the right of your data.
+3. Retry the file.
 
 :::
 
@@ -149,20 +140,11 @@ Check the final records.
 
 ::: details Show the steps
 
-**Check the saved CSV structure**
+**Steps for this error**
 
-1. Inspect the actual saved CSV, not just its spreadsheet display.
-2. Confirm the file's separator and encoding agree with the import settings.
-3. Parse quoted fields correctly. A comma inside a quoted description is not another column.
-4. Compare each parsed row with the header. Identify extra fields, unnamed columns, and duplicate headings.
-5. Check for totals, notes, and partially populated rows that were not meant to be imported.
-6. Save a corrected copy and inspect it again before importing.
-
-Completely blank trailing lines and partially populated records are different. Report the actual parsed content rather than assuming that any blank-looking spreadsheet row causes an error. The import's documented size limits are per job, including combined files: 25,000 records or 50 MB. A transaction with several CSV rows is not necessarily several records.
-
-[File conventions](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453326.html), [separators inside fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453950.html)
-
-Oracle documents that duplicate column headings can cause the later column's values to be used. For results files, preserve duplicate error columns by position instead of silently overwriting them in a parser. Let the visitor identify the latest error column. [CSV preparation tips](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N439220.html)
+1. Look for an extra row in the file, usually a totals row under the Debit and Credit columns. Every row is treated as a journal line, so a totals row asks for Account.
+2. Remove the totals row from the saved CSV.
+3. Retry the journal.
 
 :::
 

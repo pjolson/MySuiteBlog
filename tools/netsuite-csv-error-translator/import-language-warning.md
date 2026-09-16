@@ -38,9 +38,11 @@ Compare preferences.
 
 ::: details Show the steps
 
-**Separate a warning from a failed record**
+**Steps for this error**
 
-Check the import status and results before treating a language warning as a failed transaction. If language settings are slowing the import, compare the user's chosen language with the language used in the file and the relevant account configuration. Avoid changing a company-wide setting for one import.
+1. Compare your personal language preference with the company language preference. A subsidiary language difference can also cause the warning.
+2. The company default language cannot change after setup; align the personal or subsidiary preference instead.
+3. The message is a warning about import speed. Check the import results before treating any record as failed.
 
 :::
 

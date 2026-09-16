@@ -46,8 +46,8 @@ test('reviewed exact-message families route through both searches', () => {
   assert.deepEqual(ids('An unexpected error has occurred').sort(), ['ASM-02', 'ITM-10'])
 })
 
-test('the first editorial pass contains 43 entry-specific explanations', () => {
-  assert.equal(detailedEntryIds.size, 43)
+test('the first editorial pass contains 113 entry-specific explanations', () => {
+  assert.equal(detailedEntryIds.size, 113)
   for (const id of detailedEntryIds) {
     const entry = entries.find(item => item.id === id)
     assert.ok(entry?.detailed, id)
@@ -482,9 +482,9 @@ test('the employee reference message shows its wording, plain steps, and no dupl
   assert.ok(md.includes('- `Invalid employee reference key`'))
   const section = md.split('## The employee cannot be matched')[1].split('\n## ')[0]
   assert.doesNotMatch(section, /duplicate-record message|generate new external IDs/)
-  assert.match(section, /inactive records or subsidiary restrictions/i)
+  assert.match(section, /reference type to Internal ID or Names/)
   const duplicates = renderGuide(guides.find(guide => guide.slug === 'duplicate-records'))
-  assert.match(duplicates, /For a duplicate-record message/)
+  assert.match(duplicates, /update that record or create a different one/)
 })
 
 test('the apply-sublist entry teaches the documented one-row correction', () => {

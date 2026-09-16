@@ -38,20 +38,11 @@ Review whether that header mapping belongs here.
 
 ::: details Show the steps
 
-**Check the number that was actually saved**
+**Steps for this error**
 
-1. Open the saved CSV as text and locate the affected value.
-2. Compare it with the original export when one is available. Compare numeric values precisely, not just the displayed number of decimals.
-3. Check whether the column is an amount, quantity, rate, or identifier. Identifiers must keep their original characters, including leading zeros.
-4. Match number formatting to the import's decimal settings. Check currency symbols, grouping separators, and exponent notation where relevant.
-5. Restore lost digits from the original source. Adding decimal places to a rounded value does not recover them.
-6. Inspect the final CSV after saving it again.
-
-[Oracle number handling](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453795.html)
-
-Excel can export the value as displayed when saving CSV. That makes the saved file the final check, even when the formula bar previously showed more precision. [Microsoft CSV export guidance](https://support.microsoft.com/en-us/excel/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats)
-
-For quantities, compare the same units and the same stock balance. For amounts, identify which field owns the calculation before changing a number. Do not balance a journal or inventory adjustment by inserting an arbitrary difference. Keep debit, credit, rate, quantity, and precision findings separate.
+1. Three Amount fields exist for vendor bills: the bill header amount, expense line amounts, and item line amounts.
+2. Remove the mapping for the header Amount in the Vendor Bill folder; NetSuite computes it from the expense and item lines.
+3. Retry one bill.
 
 :::
 

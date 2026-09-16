@@ -70,17 +70,11 @@ Inspect the script failure and saved-record state.
 
 ::: details Show the steps
 
-**Check what saved and what failed**
+**Steps for this error**
 
-1. Read the result for a record identifier or wording that says the record was created.
-2. Locate that record and verify its current state.
-3. Identify the script, workflow, or saved-search dependency named in the failure, if one is provided.
-4. Ask the account administrator to inspect the relevant execution or access problem.
-5. Decide what needs to run again only after distinguishing the saved record from the failed follow-up work.
-
-For a missing saved search, check whether the referenced search still exists and whether the import role can access it. For a generic unexpected error, collect the record type, mapping, result, and a minimal example instead of treating one documented scenario as the answer to every failure.
-
-Do not make disabling scripts or workflow triggers a standard fix. That changes what runs during the import and can omit work the account depends on. [Script and workflow execution](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4676525683.html)
+1. Identify the script and its type from the complete error; each script type has its own usage limit in the SuiteScript governance model.
+2. Ask the script owner to review which calls consume usage when the script runs during a CSV import.
+3. Retry after the script is adjusted. The import data itself is not the cause.
 
 :::
 
@@ -108,17 +102,11 @@ Verify the affected records before choosing what to rerun.
 
 ::: details Show the steps
 
-**Check what saved and what failed**
+**Steps for this error**
 
-1. Read the result for a record identifier or wording that says the record was created.
-2. Locate that record and verify its current state.
-3. Identify the script, workflow, or saved-search dependency named in the failure, if one is provided.
-4. Ask the account administrator to inspect the relevant execution or access problem.
-5. Decide what needs to run again only after distinguishing the saved record from the failed follow-up work.
-
-For a missing saved search, check whether the referenced search still exists and whether the import role can access it. For a generic unexpected error, collect the record type, mapping, result, and a minimal example instead of treating one documented scenario as the answer to every failure.
-
-Do not make disabling scripts or workflow triggers a standard fix. That changes what runs during the import and can omit work the account depends on. [Script and workflow execution](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4676525683.html)
+1. Post-processing failures happen after data reaches NetSuite, for example an application error or a failing afterSubmit script. Records may exist even though the row reports an error.
+2. Check the import email notification; its attachment lists the affected records and errors.
+3. Check what saved before retrying rows that may already exist.
 
 :::
 
