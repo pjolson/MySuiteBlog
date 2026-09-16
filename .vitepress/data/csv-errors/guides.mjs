@@ -170,7 +170,7 @@ export const indexableGuideSlugs = new Set([
 // This count describes entry-level editorial depth, not catalogue breadth.
 export const detailedEntryIds = new Set([
   'FLD-01', 'FLD-02', 'FLD-03', 'GEN-02', 'GEN-03', 'GEN-04', 'GEN-05',
-  'GEN-08', 'GEN-09', 'GEN-11', 'INV-02', 'INVC-01', 'INVC-03', 'ITM-02',
+  'GEN-08', 'GEN-09', 'GEN-11', 'INV-02', 'INVC-01', 'INVC-02', 'INVC-03', 'ITM-02',
   'ITM-03', 'ITM-04', 'ITM-05', 'ITM-09', 'ITM-13', 'JRN-01', 'JRN-02',
   'JRN-07', 'JRN-08', 'KIT-01', 'PUR-01', 'SAL-01', 'SAL-03', 'SAL-05',
   'SAL-06', 'SYS-01', 'SYS-02', 'SYS-04', 'TXN-03', 'TXN-04', 'VPY-05'

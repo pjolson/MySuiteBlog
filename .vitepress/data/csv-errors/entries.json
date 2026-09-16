@@ -935,6 +935,7 @@
     ],
     "matchNotes": "`apply`, `[doc,line]`",
     "explanation": "The application rows may repeat an invoice reference without a matching applied amount.",
+    "detailMarkdown": "Oracle's documented example is a credit memo with several item lines applied to one invoice. The failing file repeats the invoice internal ID on every row; the working file lists the invoice and its total applied amount once and leaves the remaining rows blank.\n\n| Invoice Internal ID | Credit Memo Internal ID | Amount Applied |\n| --- | --- | --- |\n| 2001 | 3005 | 250 |\n| 2001 | 3005 | |\n| 2001 | 3005 | |\n\nbecomes\n\n| Invoice Internal ID | Credit Memo Internal ID | Amount Applied |\n| --- | --- | --- |\n| 2001 | 3005 | 250 |\n| | 3005 | |\n| | 3005 | |",
     "firstCheck": "Separate item rows from application rows and check the document being paid or credited.",
     "procedureIds": [
       "P13"

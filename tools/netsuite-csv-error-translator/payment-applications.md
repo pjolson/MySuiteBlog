@@ -70,6 +70,22 @@ The wording identifies a matching situation, not a confirmed diagnosis for your 
 
 The application rows may repeat an invoice reference without a matching applied amount.
 
+Oracle's documented example is a credit memo with several item lines applied to one invoice. The failing file repeats the invoice internal ID on every row; the working file lists the invoice and its total applied amount once and leaves the remaining rows blank.
+
+| Invoice Internal ID | Credit Memo Internal ID | Amount Applied |
+| --- | --- | --- |
+| 2001 | 3005 | 250 |
+| 2001 | 3005 | |
+| 2001 | 3005 | |
+
+becomes
+
+| Invoice Internal ID | Credit Memo Internal ID | Amount Applied |
+| --- | --- | --- |
+| 2001 | 3005 | 250 |
+| | 3005 | |
+| | 3005 | |
+
 Import context: Invoices and credits.
 
 **Check this first**
@@ -78,17 +94,12 @@ Separate item rows from application rows and check the document being paid or cr
 
 ::: details Show the steps
 
-**Check the document being paid**
+**Steps for this error**
 
-1. Identify the payment separately from the bill or invoice it should pay.
-2. Verify the referenced document in NetSuite and refresh its open amount.
-3. Check the customer or vendor, currency, account, discounts, and other applications relevant to this payment.
-4. Reconcile the application rows with the intended payment. Do not repeat an application merely because the document has several item lines.
-5. Use the payment-specific first check above to review the remaining mapping issue.
-
-An invoice number shown on a form is not interchangeable with its internal or external ID for payment application. Oracle identifies those IDs as the supported invoice links. [Invoice references for payments](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N411794.html)
-
-These steps are an editorial checklist. They do not establish that any single account, currency, or discount problem is the cause of a particular error.
+1. Count the application rows for each invoice in the saved CSV. A credit memo with several item lines still applies to an invoice on a single application row.
+2. Keep the invoice internal ID and the total applied amount on one row for that document, and leave both blank on the remaining rows. [Oracle shows this correction with an example file](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
+3. Check that each remaining application row uses the internal ID NetSuite expects. An invoice number displayed on a form is not interchangeable with the internal ID.
+4. Retry one credited invoice and confirm the applied amount in NetSuite before importing the rest.
 
 :::
 

@@ -46,8 +46,8 @@ test('reviewed exact-message families route through both searches', () => {
   assert.deepEqual(ids('An unexpected error has occurred').sort(), ['ASM-02', 'ITM-10'])
 })
 
-test('the first editorial pass contains 35 entry-specific explanations', () => {
-  assert.equal(detailedEntryIds.size, 35)
+test('the first editorial pass contains 36 entry-specific explanations', () => {
+  assert.equal(detailedEntryIds.size, 36)
   for (const id of detailedEntryIds) {
     const entry = entries.find(item => item.id === id)
     assert.ok(entry?.detailed, id)
@@ -485,6 +485,16 @@ test('the employee reference message shows its wording, plain steps, and no dupl
   assert.match(section, /inactive records or subsidiary restrictions/i)
   const duplicates = renderGuide(guides.find(guide => guide.slug === 'duplicate-records'))
   assert.match(duplicates, /For a duplicate-record message/)
+})
+
+test('the apply-sublist entry teaches the documented one-row correction', () => {
+  const entry = entries.find(entry => entry.id === 'INVC-02')
+  assert.match(entry.tailoredSteps, /single application row/)
+  assert.match(entry.tailoredSteps, /leave both blank on the remaining rows/)
+  const md = renderGuide(guides.find(guide => guide.ids.includes('INVC-02')))
+  assert.match(md, /\| 2001 \| 3005 \| 250 \|/)
+  assert.match(md, /\| \| 3005 \| \|/)
+  assert.doesNotMatch(md.split('## Invoice or credit application rows repeat a document')[1].split('\n## ')[0], /editorial checklist/)
 })
 
 test('errors stay reachable under the import type Oracle files them beneath', () => {
