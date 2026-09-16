@@ -56,7 +56,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="CUS-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -98,7 +98,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="CUS-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -141,7 +141,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="LST-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
+- [Common Errors When Importing Custom Lists](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
 
 Documentation checked September 16, 2026.
 
@@ -183,7 +183,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="REV-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html)
+- [Common Errors When Importing Inventory Cost Revaluation Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html)
 
 Documentation checked September 16, 2026.
 
@@ -225,7 +225,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="TXN-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
+- [General Transaction Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
 
 Documentation checked September 16, 2026.
 

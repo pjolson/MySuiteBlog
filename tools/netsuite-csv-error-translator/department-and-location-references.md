@@ -48,7 +48,7 @@ Check hierarchy, active state, and reference type.
 
 <CsvEntryHelp entry-id="JRN-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -90,7 +90,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="SYS-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 
@@ -133,7 +133,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="VBL-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
+- [Vendor Bills Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
 
 Documentation checked September 16, 2026.
 

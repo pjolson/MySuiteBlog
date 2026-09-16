@@ -55,7 +55,7 @@ Verify the actual period reference before changing dates or reopening periods. A
 
 <CsvEntryHelp entry-id="EXP-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
+- [Common Errors When Importing Expense Reports](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
 
 Documentation checked September 16, 2026.
 
@@ -89,7 +89,7 @@ Check your preferences.
 
 <CsvEntryHelp entry-id="GEN-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -128,7 +128,7 @@ Use the first check above for the specific transaction date, effective date, eve
 
 <CsvEntryHelp entry-id="JRN-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -165,7 +165,7 @@ Open the complete import error and identify any script, workflow, function, or s
 
 <CsvEntryHelp entry-id="SAL-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 
@@ -201,7 +201,7 @@ Check the raw value.
 
 <CsvEntryHelp entry-id="TXN-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
+- [General Transaction Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
 
 Documentation checked September 16, 2026.
 

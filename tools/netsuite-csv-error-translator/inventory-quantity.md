@@ -52,7 +52,8 @@ This is a field example with supporting number-handling documentation. Rounding 
 
 <CsvEntryHelp entry-id="FLD-02" />
 
-[Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453795.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html)
+- [Tips for Using Numbers in CSV Files](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N453795.html)
+- [Inventory Balance Search](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html)
 
 Documentation checked September 16, 2026.
 

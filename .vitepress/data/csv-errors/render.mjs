@@ -1,5 +1,6 @@
 import { entries, guides, guideEntries, basePath } from './catalogue.mjs'
 import { indexableGuideSlugs } from './guides.mjs'
+import { sourceLabels } from './source-labels.mjs'
 import procedures from './procedures.json' with { type: 'json' }
 
 // Keep editorial review codes out of public copy. Disputed procedures are
@@ -80,7 +81,7 @@ ${steps}
 
 ${entry.additionalChecks ? entry.additionalChecks + '\n\n' : ''}${entry.id === 'FLD-01' ? '### Does the stock have a bin assignment?\n\nIf the item uses bins and the relevant stock has no bin assignment, investigate whether put-away is outstanding. Confirm the physical bin before changing the import. A blank bin is not an error for every item.\n\n' : ''}${notes[entry.id] ? `### If that looks right\n\n${notes[entry.id]}\n\n` : ''}<CsvEntryHelp entry-id="${entry.id}" />
 
-${entry.evidenceNote ? `### Read Oracle's supporting guidance\n\n${entry.evidenceNote}\n\n` : ''}${entry.sources.map((source, index) => `[${entry.sourceLabels?.[source] || (entry.evidenceType === 'field-example' ? 'Read Oracle’s supporting guidance' : index ? 'Read more Oracle guidance' : "Read Oracle's guidance")}](${source})`).join(' · ')}
+${entry.evidenceNote ? `### Read Oracle's supporting guidance\n\n${entry.evidenceNote}\n\n` : ''}${entry.sources.map(source => `- [${entry.sourceLabels?.[source] || sourceLabels[source] || 'Supporting documentation'}](${source})`).join('\n')}
 
 Documentation checked September 16, 2026.
 `

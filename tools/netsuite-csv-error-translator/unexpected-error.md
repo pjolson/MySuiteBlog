@@ -54,7 +54,7 @@ Do not make disabling scripts or workflow triggers a standard fix. That changes 
 
 <CsvEntryHelp entry-id="ASM-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html)
+- [Assembly Item Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html)
 
 Documentation checked September 16, 2026.
 
@@ -94,7 +94,7 @@ Do not make disabling scripts or workflow triggers a standard fix. That changes 
 
 <CsvEntryHelp entry-id="ITM-10" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429388.html)
+- [Unexpected Error](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429388.html)
 
 Documentation checked September 16, 2026.
 

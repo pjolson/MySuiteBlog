@@ -6,7 +6,7 @@ import { renderGuide } from '../.vitepress/data/csv-errors/render.mjs'
 
 const directory = new URL('../tools/netsuite-csv-error-translator/', import.meta.url)
 const catalogueHash = createHash('sha256')
-for (const name of ['entries.json', 'guides.mjs', 'procedures.json', 'search.mjs', 'render.mjs', 'questions.mjs']) {
+for (const name of ['entries.json', 'guides.mjs', 'procedures.json', 'search.mjs', 'render.mjs', 'questions.mjs', 'source-labels.mjs']) {
   catalogueHash.update(await readFile(new URL(`../.vitepress/data/csv-errors/${name}`, import.meta.url)))
 }
 await writeFile(new URL('../.vitepress/data/csv-errors/version.json', import.meta.url), JSON.stringify(`csv-${catalogueHash.digest('hex').slice(0, 12)}`) + '\n')

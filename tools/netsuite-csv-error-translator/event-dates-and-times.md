@@ -54,7 +54,7 @@ Use the first check above for the specific transaction date, effective date, eve
 
 <CsvEntryHelp entry-id="EVT-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
+- [Common Errors When Importing Events](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
 
 Documentation checked September 16, 2026.
 
@@ -109,7 +109,7 @@ Use the first check above for the specific transaction date, effective date, eve
 
 <CsvEntryHelp entry-id="EVT-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
+- [Common Errors When Importing Events](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
 
 Documentation checked September 16, 2026.
 
@@ -149,7 +149,7 @@ Use the first check above for the specific transaction date, effective date, eve
 
 <CsvEntryHelp entry-id="EVT-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
+- [Common Errors When Importing Events](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
 
 Documentation checked September 16, 2026.
 
@@ -193,7 +193,7 @@ Oracle describes a restriction on events spanning dates in this event-import wor
 
 <CsvEntryHelp entry-id="EVT-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
+- [Common Errors When Importing Events](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3754448437.html)
 
 Documentation checked September 16, 2026.
 

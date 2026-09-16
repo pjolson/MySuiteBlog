@@ -57,7 +57,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="CST-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html)
+- [Common Errors When Importing Cost Templates](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html)
 
 Documentation checked September 16, 2026.
 
@@ -92,7 +92,7 @@ Check the invoice form's item selection, active state, and name-versus-ID mappin
 
 <CsvEntryHelp entry-id="INVC-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
+- [Invoice Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
 
 Documentation checked September 16, 2026.
 
@@ -127,7 +127,7 @@ Check the displayed value on the related item and whether the mapping expects a 
 
 <CsvEntryHelp entry-id="ITM-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426643.html)
+- [Invalid Item Reference Key xx](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426643.html)
 
 Documentation checked September 16, 2026.
 
@@ -162,7 +162,7 @@ Check that the member exists and is active, then align the member-item mapping w
 
 <CsvEntryHelp entry-id="KIT-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570007314.html)
+- [Kit/Package Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570007314.html)
 
 Documentation checked September 16, 2026.
 
@@ -219,7 +219,9 @@ If the saved reference already matches NetSuite, return to the item-selection an
 
 <CsvEntryHelp entry-id="SAL-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html) · [Microsoft: Keeping leading zeros and large numbers](https://support.microsoft.com/en-gb/excel/keeping-leading-zeros-and-large-numbers) · [Microsoft: CSV export behavior](https://support.microsoft.com/en-us/excel/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Microsoft: Keeping leading zeros and large numbers](https://support.microsoft.com/en-gb/excel/keeping-leading-zeros-and-large-numbers)
+- [Microsoft: CSV export behavior](https://support.microsoft.com/en-us/excel/excel-formatting-and-features-that-are-not-transferred-to-other-file-formats)
 
 Documentation checked September 16, 2026.
 

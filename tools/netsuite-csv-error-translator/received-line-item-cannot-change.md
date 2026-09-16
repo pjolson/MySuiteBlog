@@ -56,7 +56,11 @@ Compare the transaction, line, and item in the CSV with the saved transaction. T
 
 The links above explain the supporting checks. The exact error message was supplied during translator testing; a public Oracle article explaining that exact message was not located.
 
-[Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2412119.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2408991.html)
+- [Line Item Updates on Transactions Imports](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N451889.html)
+- [Select Reference Types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
+- [Receiving a Purchase Order With Advanced Receiving](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2412119.html)
+- [Overwrite Sublists](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046270.html)
+- [Accounting for Received Purchase Orders](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2408991.html)
 
 Documentation checked September 16, 2026.
 

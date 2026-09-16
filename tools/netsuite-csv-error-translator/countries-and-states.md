@@ -49,7 +49,7 @@ Use the country name shown in the account's language, or a mapping default when 
 
 <CsvEntryHelp entry-id="CUS-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -83,7 +83,7 @@ Use the country name shown in the account's language, or a mapping default when 
 
 <CsvEntryHelp entry-id="SYS-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 

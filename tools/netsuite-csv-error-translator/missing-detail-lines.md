@@ -52,7 +52,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="ASM-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html)
+- [Assembly Item Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569175605.html)
 
 Documentation checked September 16, 2026.
 
@@ -90,7 +90,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="CST-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html)
+- [Common Errors When Importing Cost Templates](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N399710.html)
 
 Documentation checked September 16, 2026.
 
@@ -128,7 +128,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="EXP-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
+- [Common Errors When Importing Expense Reports](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
 
 Documentation checked September 16, 2026.
 
@@ -162,7 +162,7 @@ Put the item in a CSV column and map the item sublist. A default by itself may n
 
 <CsvEntryHelp entry-id="INVC-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
+- [Invoice Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
 
 Documentation checked September 16, 2026.
 
@@ -200,7 +200,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="ROU-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
+- [Common Errors When Importing Routing Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
 
 Documentation checked September 16, 2026.
 
@@ -234,7 +234,7 @@ Map a CSV field into the item sublist.
 
 <CsvEntryHelp entry-id="SAL-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 

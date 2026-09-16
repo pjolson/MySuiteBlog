@@ -57,7 +57,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="EXP-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
+- [Common Errors When Importing Expense Reports](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3750986962.html)
 
 Documentation checked September 16, 2026.
 
@@ -100,7 +100,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="GEN-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 

@@ -56,7 +56,7 @@ For manufacturing routings, check the routing-specific separator and whitespace 
 
 <CsvEntryHelp entry-id="GEN-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -98,7 +98,7 @@ For manufacturing routings, check the routing-specific separator and whitespace 
 
 <CsvEntryHelp entry-id="INV-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html)
+- [Inventory Item Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html)
 
 Documentation checked September 16, 2026.
 
@@ -141,7 +141,7 @@ For manufacturing routings, check the routing-specific separator and whitespace 
 
 <CsvEntryHelp entry-id="ITM-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427412.html)
+- [You cannot remove subsidiary because this record is used on a transaction](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427412.html)
 
 Documentation checked September 16, 2026.
 
@@ -187,7 +187,7 @@ The routing-specific documentation warns about spaces around the multi-select se
 
 <CsvEntryHelp entry-id="ROU-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
+- [Common Errors When Importing Routing Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
 
 Documentation checked September 16, 2026.
 

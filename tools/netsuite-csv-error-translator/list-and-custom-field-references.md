@@ -56,7 +56,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="EMP-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
+- [Employee Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
 
 Documentation checked September 16, 2026.
 
@@ -90,7 +90,7 @@ Identify the field from its script ID, then inspect the list or record it refere
 
 <CsvEntryHelp entry-id="ITM-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426278.html)
+- [Invalid Custitem Reference Key xxx](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426278.html)
 
 Documentation checked September 16, 2026.
 
@@ -132,7 +132,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="REL-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html)
+- [General Relationship Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html)
 
 Documentation checked September 16, 2026.
 
@@ -176,7 +176,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="WEB-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568643764.html)
+- [Website Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568643764.html)
 
 Documentation checked September 16, 2026.
 

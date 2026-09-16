@@ -53,7 +53,7 @@ For an inventory worksheet, Oracle describes a workaround that temporarily chang
 
 <CsvEntryHelp entry-id="IVD-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569179830.html)
+- [Inventory Detail Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569179830.html)
 
 Documentation checked September 16, 2026.
 

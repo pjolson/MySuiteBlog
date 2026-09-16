@@ -56,7 +56,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="VBL-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
+- [Vendor Bills Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
 
 Documentation checked September 16, 2026.
 
@@ -103,7 +103,7 @@ This primary-header check applies to a multiple-file import. Repeating a transac
 
 <CsvEntryHelp entry-id="VBL-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
+- [Vendor Bills Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
 
 Documentation checked September 16, 2026.
 
@@ -146,7 +146,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="VBL-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N427250.html)
+- [Vendor Bill Import](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N427250.html)
 
 Documentation checked September 16, 2026.
 

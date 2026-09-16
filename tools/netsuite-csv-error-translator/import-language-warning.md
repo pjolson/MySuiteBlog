@@ -46,7 +46,7 @@ Check the import status and results before treating a language warning as a fail
 
 <CsvEntryHelp entry-id="GEN-10" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 

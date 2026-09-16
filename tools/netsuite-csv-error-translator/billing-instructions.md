@@ -59,7 +59,7 @@ For an update to an existing sales order, inspect the form saved with that trans
 
 <CsvEntryHelp entry-id="SAL-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 

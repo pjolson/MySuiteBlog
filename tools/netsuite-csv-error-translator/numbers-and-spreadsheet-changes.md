@@ -57,7 +57,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="GEN-12" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -100,7 +100,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="ITM-14" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429970.html)
+- [You have entered an Invalid Field Value for CostEstimate](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429970.html)
 
 Documentation checked September 16, 2026.
 
@@ -134,7 +134,7 @@ Reconcile the journal before retrying.
 
 <CsvEntryHelp entry-id="JRN-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -225,7 +225,10 @@ We can help compare the journal, the CSV, and the import mapping to find where t
 
 The line-order workaround comes from user-supplied SuiteAnswers Answer 70365 (last updated 06/01/2026; NetSuite 2026.1). No authenticated SuiteAnswers page was accessed. The public Oracle pages support the balance, grouping, numeric-value and update checks, not the line-order workaround. No client CSV was examined and no import was run for this addition.
 
-[Journal balance requirement](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534489651.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534490251.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal balance requirement](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html)
+- [Journal Entry CSV Files](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534489651.html)
+- [Using Journal Entry Import for Updates](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534490251.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -259,7 +262,7 @@ Inspect its saved text and original value.
 
 <CsvEntryHelp entry-id="SYS-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 
@@ -302,7 +305,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="VBL-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
+- [Vendor Bills Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
 
 Documentation checked September 16, 2026.
 

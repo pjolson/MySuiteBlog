@@ -57,7 +57,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="CUS-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -99,7 +99,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="EMP-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
+- [Employee Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
 
 Documentation checked September 16, 2026.
 
@@ -141,7 +141,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="EMP-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
+- [Employee Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
 
 Documentation checked September 16, 2026.
 
@@ -176,7 +176,7 @@ Check mapping and separators.
 
 <CsvEntryHelp entry-id="GEN-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -211,7 +211,7 @@ Check read-only settings.
 
 <CsvEntryHelp entry-id="GEN-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -253,7 +253,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="ITM-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428607.html)
+- [Please enter value(s) for: Type](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428607.html)
 
 Documentation checked September 16, 2026.
 
@@ -311,7 +311,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="REL-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html)
+- [General Relationship Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570061540.html)
 
 Documentation checked September 16, 2026.
 
@@ -368,7 +368,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="REV-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html)
+- [Common Errors When Importing Inventory Cost Revaluation Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3761449045.html)
 
 Documentation checked September 16, 2026.
 
@@ -412,7 +412,7 @@ For an update to an existing sales order, inspect the form saved with that trans
 
 <CsvEntryHelp entry-id="SAL-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 

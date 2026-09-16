@@ -74,7 +74,13 @@ Other Charge items have separate purchase, sale, and resale import types. Invent
 
 This is a documented message family. The reported Other Charge pair and the documented inventory example are separate cases. The checks are not a confirmed resolution of this reported import.
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_24213744571.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_63201856891.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N370727.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4267258486.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3188567.html)
+- [Error Status Codes](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html)
+- [Other Charge for Sale Item](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_24213744571.html)
+- [Other Charge for Purchase Item](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_63201856891.html)
+- [Item Record Types that Can Be Imported](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N370727.html)
+- [record.load(options)](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4267258486.html)
+- [Inventory Item Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html)
+- [Using Item Records in SuiteScript](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3188567.html)
 
 Documentation checked September 16, 2026.
 
@@ -111,7 +117,7 @@ If the item has no unit type, map the correct one along with the unit fields. Ch
 
 <CsvEntryHelp entry-id="ITM-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426135.html)
+- [Invalid Purchaseunit Reference Key](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426135.html)
 
 Documentation checked September 16, 2026.
 

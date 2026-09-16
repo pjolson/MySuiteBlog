@@ -48,7 +48,7 @@ Check encoding.
 
 <CsvEntryHelp entry-id="GEN-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -82,7 +82,7 @@ Check quotes and separators.
 
 <CsvEntryHelp entry-id="GEN-08" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -125,7 +125,7 @@ Oracle documents that duplicate column headings can cause the later column's val
 
 <CsvEntryHelp entry-id="JRN-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -168,7 +168,7 @@ Oracle documents that duplicate column headings can cause the later column's val
 
 <CsvEntryHelp entry-id="JRN-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -202,7 +202,7 @@ Check both.
 
 <CsvEntryHelp entry-id="SYS-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 

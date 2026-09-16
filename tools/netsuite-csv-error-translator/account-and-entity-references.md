@@ -56,7 +56,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="EMP-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
+- [Employee Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568655075.html)
 
 Documentation checked September 16, 2026.
 
@@ -91,7 +91,7 @@ Use a verified account internal ID with the matching reference type, or match th
 
 <CsvEntryHelp entry-id="ITM-09" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428980.html)
+- [Invalid assetaccount or cogsaccount reference key](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428980.html)
 
 Documentation checked September 16, 2026.
 
@@ -126,7 +126,7 @@ Check eligibility and reference format.
 
 <CsvEntryHelp entry-id="JRN-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -169,7 +169,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="JRN-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
+- [Journal Entry Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570029068.html)
 
 Documentation checked September 16, 2026.
 
@@ -203,7 +203,7 @@ Check the vendor as shown on the purchase-order form, its active state, and the 
 
 <CsvEntryHelp entry-id="PUR-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570035686.html)
+- [Purchase Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570035686.html)
 
 Documentation checked September 16, 2026.
 
@@ -239,7 +239,7 @@ Check the full hierarchy when using names.
 
 <CsvEntryHelp entry-id="SYS-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 

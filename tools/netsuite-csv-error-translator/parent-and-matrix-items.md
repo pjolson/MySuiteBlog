@@ -56,7 +56,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="ITM-12" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429813.html)
+- ['Invalid parent reference key' on Item Record Import](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429813.html)
 
 Documentation checked September 16, 2026.
 
@@ -142,7 +142,13 @@ Keep one failed row, the complete error, and screenshots of the import options a
 
 The matrix-child correction is a documented scenario. The other checks are assembled from supporting guidance, not a confirmed diagnosis. The reported Inventory Item update has no tested resolution.
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N345294.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3924743.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429898.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N357847.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1529508258.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html) · [Read more Oracle guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html)
+- [Choose Data Handling for Import](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N345294.html)
+- [CSV Import FAQ](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3924743.html)
+- [Could not find any records by this name](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429898.html)
+- [Chart of Accounts Import](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N357847.html)
+- [Vendor-Subsidiary Relationship Import](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1529508258.html)
+- [Select Reference Types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
+- [Error Status Codes](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N3539978.html)
 
 Documentation checked September 16, 2026.
 
@@ -184,7 +190,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="ITM-15" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534430023.html)
+- [Invalid Parent Reference Key](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534430023.html)
 
 Documentation checked September 16, 2026.
 

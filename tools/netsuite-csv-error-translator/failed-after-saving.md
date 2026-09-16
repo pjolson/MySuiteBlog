@@ -48,7 +48,7 @@ Check that record before retrying.
 
 <CsvEntryHelp entry-id="GEN-09" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+- [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
 
 Documentation checked September 16, 2026.
 
@@ -88,7 +88,7 @@ Do not make disabling scripts or workflow triggers a standard fix. That changes 
 
 <CsvEntryHelp entry-id="SYS-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 
@@ -128,7 +128,7 @@ Do not make disabling scripts or workflow triggers a standard fix. That changes 
 
 <CsvEntryHelp entry-id="SYS-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+- [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
 
 Documentation checked September 16, 2026.
 

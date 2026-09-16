@@ -56,7 +56,7 @@ A sequence can be reused in a different routing. Check for repetition within the
 
 <CsvEntryHelp entry-id="ROU-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
+- [Common Errors When Importing Routing Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
 
 Documentation checked September 16, 2026.
 
@@ -98,7 +98,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="ROU-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
+- [Common Errors When Importing Routing Records](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N404433.html)
 
 Documentation checked September 16, 2026.
 

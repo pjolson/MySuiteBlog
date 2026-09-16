@@ -56,7 +56,7 @@ In the first pass, include the starting quantity price break when required. In t
 
 <CsvEntryHelp entry-id="INV-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html)
+- [Inventory Item Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569181039.html)
 
 Documentation checked September 16, 2026.
 
@@ -98,7 +98,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="LST-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
+- [Common Errors When Importing Custom Lists](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
 
 Documentation checked September 16, 2026.
 
@@ -136,7 +136,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="LST-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
+- [Common Errors When Importing Custom Lists](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N369759.html)
 
 Documentation checked September 16, 2026.
 

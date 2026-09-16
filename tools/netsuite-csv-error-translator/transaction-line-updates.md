@@ -48,7 +48,7 @@ Map the location within the item's Locations sublist when importing values such 
 
 <CsvEntryHelp entry-id="ITM-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427025.html)
+- [Adding New Line to Sublist Locations is not Allowed](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534427025.html)
 
 Documentation checked September 16, 2026.
 
@@ -93,7 +93,7 @@ Do not generalize these line-key rules to every sublist. Use the import document
 
 <CsvEntryHelp entry-id="SAL-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 
@@ -127,7 +127,7 @@ Export the actual line IDs.
 
 <CsvEntryHelp entry-id="SAL-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+- [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
 
 Documentation checked September 16, 2026.
 
@@ -172,7 +172,7 @@ Do not generalize these line-key rules to every sublist. Use the import document
 
 <CsvEntryHelp entry-id="TXN-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
+- [General Transaction Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
 
 Documentation checked September 16, 2026.
 
@@ -208,7 +208,7 @@ Review the complete team.
 
 <CsvEntryHelp entry-id="TXN-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
+- [General Transaction Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570011199.html)
 
 Documentation checked September 16, 2026.
 

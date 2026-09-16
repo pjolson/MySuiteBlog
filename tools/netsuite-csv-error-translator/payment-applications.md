@@ -55,7 +55,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="CPY-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570023326.html)
+- [Customer Payment Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570023326.html)
 
 Documentation checked September 16, 2026.
 
@@ -96,7 +96,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="INVC-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
+- [Invoice Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570024634.html)
 
 Documentation checked September 16, 2026.
 
@@ -137,7 +137,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="VPY-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
+- [Vendor Payment Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
 
 Documentation checked September 16, 2026.
 
@@ -178,7 +178,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="VPY-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
+- [Vendor Payment Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
 
 Documentation checked September 16, 2026.
 
@@ -218,7 +218,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="VPY-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
+- [Vendor Payment Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
 
 Documentation checked September 16, 2026.
 
@@ -258,7 +258,7 @@ These steps are an editorial checklist. They do not establish that any single ac
 
 <CsvEntryHelp entry-id="VPY-04" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
+- [Vendor Payment Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
 
 Documentation checked September 16, 2026.
 
@@ -292,7 +292,7 @@ Verify the bill and mapping.
 
 <CsvEntryHelp entry-id="VPY-05" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
+- [Vendor Payment Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570046360.html)
 
 Documentation checked September 16, 2026.
 

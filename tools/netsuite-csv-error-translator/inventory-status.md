@@ -56,7 +56,8 @@ This is a field example with supporting inventory documentation. A status marked
 
 <CsvEntryHelp entry-id="FLD-01" />
 
-[Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html) · [Read Oracle’s supporting guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2271791.html)
+- [Inventory Balance Search](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1518564230.html)
+- [Advanced Bin / Numbered Inventory Management](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N2271791.html)
 
 Documentation checked September 16, 2026.
 

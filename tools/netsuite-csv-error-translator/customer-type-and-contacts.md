@@ -52,7 +52,7 @@ For assemblies, link member rows to the assembly. For routings, check the operat
 
 <CsvEntryHelp entry-id="CON-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html)
+- [Customers and Contacts Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html)
 
 Documentation checked September 16, 2026.
 
@@ -94,7 +94,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="CON-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html)
+- [Customers and Contacts Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568677178.html)
 
 Documentation checked September 16, 2026.
 
@@ -136,7 +136,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="CUS-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -178,7 +178,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="CUS-06" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -220,7 +220,7 @@ If a custom field is required, provide the intended value first. Turning off man
 
 <CsvEntryHelp entry-id="CUS-07" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
+- [Customer Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568672490.html)
 
 Documentation checked September 16, 2026.
 
@@ -262,7 +262,7 @@ To prepare an update, use a customer search filtered to the prospect stage. Incl
 
 <CsvEntryHelp entry-id="PRO-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568678135.html)
+- [Prospects and Contacts Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568678135.html)
 
 Documentation checked September 16, 2026.
 

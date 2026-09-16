@@ -58,7 +58,7 @@ For quantities, compare the same units and the same stock balance. For amounts, 
 
 <CsvEntryHelp entry-id="VBL-03" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
+- [Vendor Bills Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570039432.html)
 
 Documentation checked September 16, 2026.
 

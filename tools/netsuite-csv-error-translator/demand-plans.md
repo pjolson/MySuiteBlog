@@ -60,7 +60,7 @@ The plan’s body Internal ID identifies the plan for an update. The Item field 
 
 <CsvEntryHelp entry-id="DMD-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html)
+- [Item Demand Plan Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html)
 
 Documentation checked September 16, 2026.
 
@@ -99,7 +99,7 @@ Use the first check above for the specific transaction date, effective date, eve
 
 <CsvEntryHelp entry-id="DMD-02" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html)
+- [Item Demand Plan Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4569177775.html)
 
 Documentation checked September 16, 2026.
 

@@ -52,7 +52,7 @@ This is a check of the intended price structure, not an instruction to enable su
 
 <CsvEntryHelp entry-id="ITM-01" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426053.html)
+- [Please Enter Missing Price(s)](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534426053.html)
 
 Documentation checked September 16, 2026.
 
@@ -95,7 +95,7 @@ Oracle’s error article and general sublist guidance disagree about replacing i
 
 <CsvEntryHelp entry-id="ITM-08" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428723.html)
+- [If you are not replacing the entire matrix you may only update existing headers](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534428723.html)
 
 Documentation checked September 16, 2026.
 
@@ -137,7 +137,7 @@ For a duplicate-record message, determine whether you intend to update the exist
 
 <CsvEntryHelp entry-id="ITM-11" />
 
-[Read Oracle's guidance](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429620.html)
+- [Invalid price level reference key](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_1534429620.html)
 
 Documentation checked September 16, 2026.
 
