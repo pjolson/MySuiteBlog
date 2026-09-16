@@ -38,19 +38,11 @@ Use its internal ID, external ID, or customer ID.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Check whether the import updates existing customers using the company name or another text field as its key. A customer update matches on internal ID, external ID, or customer ID only.
+2. Map one of those three identifiers for every row and remove name-based keys from the mapping.
+3. Retry one customer update and confirm it changed the intended record.
 
 :::
 
@@ -64,7 +56,9 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-The exact wording varies. Messages for this case mention `Matched more`.
+- `Matched more than one record`
+
+The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -78,19 +72,11 @@ Add a unique customer identifier, especially for parent and child customers.
 
 ::: details Show the steps
 
-**Check the record reference**
+**Steps for this error**
 
-1. Find the field named in the error on the import's Field Mapping page.
-2. Open its edit control and check the selected reference type.
-3. Compare that setting with the actual CSV value. A number could be a name, an external ID, or an internal ID. Its appearance alone does not establish the type.
-4. Locate the intended record in the same account. Confirm its identity and whether it is available for this transaction.
-5. Correct the file or mapping so they agree. Use a default only when it applies to every affected row.
-
-If you need to see internal IDs, enable them in your personal preferences or include them in a saved-search export. Supported reference types vary by field. Name matching is generally case-insensitive, so changing capitalization alone should not be the standard recommendation.
-
-[Reference types](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349594.html)
-
-For a duplicate-record message, determine whether you intend to update the existing record or create a different one. Do not generate new external IDs simply to get past the error. For inactive records or subsidiary restrictions, verify the intended business setup before changing it. Those are account decisions, not text-cleanup operations.
+1. Check the four documented conditions together: the customer has a parent with several child customers, Data Handling is Add or Update, Child of is mapped, and none of internal ID, external ID, or customer ID is mapped.
+2. Map internal ID, external ID, or customer ID for the affected rows so each matches one record.
+3. If the import should create new child customers instead of updating them, review the Child of mapping before retrying.
 
 :::
 

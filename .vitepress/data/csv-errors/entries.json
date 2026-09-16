@@ -156,7 +156,7 @@
     "id": "CUS-02",
     "context": "Customers",
     "messageFragments": [
-      "Matched more"
+      "Matched more than one record"
     ],
     "matchNotes": "`Matched more`",
     "explanation": "Several customers fit.",

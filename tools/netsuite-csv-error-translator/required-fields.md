@@ -38,19 +38,11 @@ Check the value before editing.
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
+1. The vatregnumber field is the Tax Reg. Number. Compare each mapped value with the 20-character maximum.
+2. Correct the over-length values in the saved CSV. Do not truncate a registration number without confirming the correct value with its owner.
+3. Retry one row.
 
 :::
 

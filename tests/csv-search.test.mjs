@@ -46,8 +46,8 @@ test('reviewed exact-message families route through both searches', () => {
   assert.deepEqual(ids('An unexpected error has occurred').sort(), ['ASM-02', 'ITM-10'])
 })
 
-test('the first editorial pass contains 36 entry-specific explanations', () => {
-  assert.equal(detailedEntryIds.size, 36)
+test('the first editorial pass contains 43 entry-specific explanations', () => {
+  assert.equal(detailedEntryIds.size, 43)
   for (const id of detailedEntryIds) {
     const entry = entries.find(item => item.id === id)
     assert.ok(entry?.detailed, id)
@@ -495,6 +495,19 @@ test('the apply-sublist entry teaches the documented one-row correction', () => 
   assert.match(md, /\| 2001 \| 3005 \| 250 \|/)
   assert.match(md, /\| \| 3005 \| \|/)
   assert.doesNotMatch(md.split('## Invoice or credit application rows repeat a document')[1].split('\n## ')[0], /editorial checklist/)
+})
+
+test('customer import errors carry documented wording and fixes', () => {
+  assert.deepEqual(ids('Matched more than one record'), ['CUS-02'])
+  for (const id of ['CUS-01', 'CUS-02', 'CUS-03', 'CUS-04', 'CUS-05', 'CUS-06', 'CUS-07']) {
+    assert.ok(entries.find(entry => entry.id === id).tailoredSteps, id)
+  }
+  const identifiers = renderGuide(guides.find(guide => guide.ids.includes('CUS-02')))
+  assert.match(identifiers, /Child of is mapped/)
+  assert.match(identifiers, /internal ID, external ID, or customer ID only/)
+  const typeGuide = renderGuide(guides.find(guide => guide.ids.includes('CUS-07')))
+  assert.match(typeGuide, /Default Customer Type of Individual/)
+  assert.match(typeGuide, /clear its Mandatory box/)
 })
 
 test('errors stay reachable under the import type Oracle files them beneath', () => {
