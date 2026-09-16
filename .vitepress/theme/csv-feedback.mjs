@@ -29,10 +29,9 @@ export function createSearchTracker({ source, filters = () => ({}), send = paylo
     if (!key || key === lastQuery) return
     lastQuery = key
     const { context = '', category = '' } = filters()
-    const all = searchEntries(query)
     const visible = searchEntries(query, { context, category })
     if (visible.results.length) return
-    const unfilteredMatches = all.results.length > 0
+    const unfilteredMatches = visible.unfilteredCount > 0
     // Explicit allowlist. Never spread session state or a search result into
     // a telemetry payload. The random ID is unrelated to the query.
     const event = { id: crypto.randomUUID(), source, context, category, unfilteredMatches,

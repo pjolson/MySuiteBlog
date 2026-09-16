@@ -19,7 +19,6 @@ const scenarios = [
   ['customer and contact Illegal ID', 'Illegal ID', { context: 'Customers with contacts' }, ['CON-01']],
   ['apply sublist contexts', 'Invalid reference for apply sublist [doc,line]', {}, ['INVC-02', 'VPY-02', 'VPY-04']],
   ['record created before script failed', 'Record 927 was created but afterSubmit failed', {}, ['GEN-09', 'SYS-07']],
-  ['unexpected error requires context', 'Unexpected Error', {}, ['ITM-10', 'ASM-02']],
   ['routing sequence', 'Duplicate sequence number 10', { context: 'Manufacturing routings' }, ['ROU-03']],
   ['primary-file duplicate', 'Primary file contains duplicate key INV-0001', { context: 'Vendor bills' }, ['VBL-02']],
   ['meaningful character limit', 'Field exceeds maximum length of 61 characters', {}, ['EMP-03']],
@@ -393,4 +392,86 @@ test('journal balance guidance keeps totals, grouping, workaround and update che
   assert.match(md,/### The amounts balance, but NetSuite still rejects the journal/)
   assert.ok(e.relatedIds.includes('JRN-05'))
   assert.ok(md.includes(entries.find(e=>e.id==='JRN-07').url))
+})
+
+test('a definitive inventory-quantity message still short-circuits to its entry', () => {
+  const query = 'You only have 12 available. Please enter a different quantity.'
+  const { results } = searchEntries(query)
+  assert.equal(results.length, 1)
+  assert.deepEqual(results[0].entries.map(entry => entry.id), ['FLD-02'])
+  assert.equal(results[0].matched, true)
+  assert.equal(results[0].url, entries.find(entry => entry.id === 'FLD-02').url)
+  assert.equal(headerResults(query, [])[0].id, results[0].url)
+})
+
+test('an unexpected error without context is general guidance, not an item diagnosis', () => {
+  for (const query of ['Unexpected Error', 'An unexpected error has occurred']) {
+    const result = searchEntries(query)
+    assert.equal(result.needsContext, false, query)
+    const first = result.results[0]
+    assert.equal(first.slug, 'unexpected-error', query)
+    assert.equal(first.matched, false, query)
+    assert.equal(first.url, `${basePath}unexpected-error#unexpected-error`, query)
+    assert.equal(first.title, guides.find(guide => guide.slug === 'unexpected-error').title, query)
+  }
+})
+
+test('item context ranks the documented unexpected-error case without claiming a confirmed cause', () => {
+  const filtered = searchEntries('Unexpected Error', { context: 'Item translations' })
+  assert.deepEqual(filtered.results[0].entries.map(entry => entry.id), ['ITM-10'])
+  assert.equal(filtered.results[0].matched, false)
+  assert.equal(filtered.results[0].url, entries.find(entry => entry.id === 'ITM-10').url)
+})
+
+test('a journal-context unexpected error does not become an item diagnosis', () => {
+  const filtered = searchEntries('Unexpected Error', { context: 'Journal entries' })
+  assert.ok(filtered.results.every(result => result.entries.every(entry => !['ITM-10', 'ASM-02'].includes(entry.id))))
+  assert.ok(filtered.otherCount > 0)
+})
+
+test('a generic item reference stays one ambiguous family with context choices', () => {
+  const { results } = searchEntries('Invalid item reference key SKU-0100')
+  assert.equal(results.length, 1)
+  assert.equal(results[0].entries.length, 5)
+  assert.equal(results[0].title, guides.find(guide => guide.slug === 'item-reference').title)
+  assert.equal(results[0].url, `${basePath}item-reference#item-reference`)
+  assert.ok(results[0].contexts.length >= 4)
+})
+
+test('a distinctive item reference with import context selects the right candidate', () => {
+  assert.deepEqual(ids('Invalid item reference key SKU-0100', { context: 'Kits and packages' }), ['KIT-01'])
+  const inferred = searchEntries('Invalid item reference key SKU-0100 on invoice').results[0]
+  assert.equal(inferred.entries[0].id, 'INVC-03')
+  assert.equal(inferred.url, entries.find(entry => entry.id === 'INVC-03').url)
+})
+
+test('received fragments ask for clarification while the full message stays exact', () => {
+  for (const query of ['already received', 'Item already received', ' The item already been RECEIVED! ']) {
+    const result = searchEntries(query)
+    assert.equal(result.needsContext, true, query)
+    assert.ok(result.clarificationPrompt.includes('Paste the full error'), query)
+    assert.ok(result.results.every(item => item.entries.every(entry => entry.id !== 'FLD-03')), query)
+  }
+  assert.deepEqual(ids('You cannot change the selected item because it has already been received.'), ['FLD-03'])
+  assert.equal(searchEntries('The order was received yesterday').needsContext, false)
+})
+
+test('altered technical identifiers stay exact and do not fuzzy-match', () => {
+  for (const query of ['inventorystatuses mismatch', 'issueinventorynumbers 91', 'custitem9 lookup']) {
+    assert.equal(searchEntries(query).results.length, 0, query)
+  }
+})
+
+test('ordinary long-word typos keep their fuzzy match', () => {
+  assert.equal(searchEntries('wrong datte').results[0]?.slug, 'dates-and-periods')
+})
+
+test('filters, outside-filter counts, and the unknown state share one unfiltered result', () => {
+  const query = 'Invalid inventorystatus reference key 987 for issueinventorynumber 0000456'
+  const unfiltered = searchEntries(query)
+  const filtered = searchEntries(query, { context: 'Customers' })
+  assert.equal(filtered.results.length, 0)
+  assert.equal(filtered.otherCount, 1)
+  assert.equal(filtered.unfilteredCount, unfiltered.results.length)
+  assert.equal(searchEntries('XYZZY_00000 exploded').unfilteredCount, 0)
 })

@@ -12,7 +12,12 @@ const result = computed(() => searchEntries(csvSession.query, csvSession))
 const count = computed(() => result.value.results.length)
 const explanationCount = computed(() => result.value.results.reduce((total, item) => total + item.entries.length, 0))
 const active = computed(() => csvSession.query.trim() || csvSession.context || csvSession.category)
-const unknown = computed(() => normalize(csvSession.query) && !searchEntries(csvSession.query).results.length)
+const unknown = computed(() => Boolean(normalize(csvSession.query)) && !result.value.unfilteredCount)
+// The live region stays in the DOM permanently; an empty string announces
+// nothing, so assistive technology hears the first real count and no stale one.
+const resultsAnnouncement = computed(() => active.value
+  ? `${count.value === 1 ? '1 matching guide' : `${count.value} matching guides`} covering ${explanationCount.value === 1 ? '1 explanation' : `${explanationCount.value} explanations`}.`
+  : '')
 const tracker = createSearchTracker({ source: 'translator', filters: () => csvSession })
 watch(() => csvSession.source, source => { if (source === 'header') tracker.cancel() })
 onMounted(protectSearchPrivacy)
@@ -63,10 +68,7 @@ function unfilter() {
         @click="csvSession.category = csvSession.category === category ? '' : category">{{ category }}</button>
     </div>
 
-    <p v-if="active" role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">
-      {{ count === 1 ? '1 matching guide' : `${count} matching guides` }} covering
-      {{ explanationCount === 1 ? '1 explanation' : `${explanationCount} explanations` }}.
-    </p>
+    <p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">{{ resultsAnnouncement }}</p>
     <p class="csv-help">Search {{ entries.length }} documented import situations across {{ guides.length }} guides. Detailed troubleshooting is available for the most common and best-supported errors.</p>
     <div v-if="ambiguous && count" class="csv-notice">
       <strong>This message has a few possible causes</strong>
@@ -78,7 +80,7 @@ function unfilter() {
     </div>
     <div v-if="!count" class="csv-empty">
       <h3>{{ result.needsContext ? 'More detail needed' : result.otherCount ? 'No matches with these filters' : "We haven't covered this one yet" }}</h3>
-      <p v-if="result.needsContext">Paste the full error and choose what you are importing. Already received alone does not identify which restriction applies.</p>
+      <p v-if="result.needsContext">{{ result.clarificationPrompt }}</p>
       <p v-else>Try a shorter part of the message, such as the field name. If it mentions a script, the message may come from your account's custom code.</p>
       <CsvFeedback v-if="unknown" :query="csvSession.query" :context="csvSession.context" :source="csvSession.source" />
       <div class="cta-actions">

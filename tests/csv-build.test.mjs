@@ -27,11 +27,13 @@ test('built header index contains every catalogue entry and existing articles', 
 
 test('the compiled VitePress overlay uses the shared matcher and retains accessibility', () => {
   const overlay = read(`assets/chunks/${chunks.find(file => file.startsWith('VPLocalSearchBox.'))}`)
-  assert.match(overlay, /headerResults\(query, index.search\(query\)\)/)
-  assert.match(overlay, /rememberQuery\(query\)/)
-  assert.doesNotMatch(overlay, /maxlength: ["']64["']/)
-  assert.match(overlay, /"aria-live": "polite"/)
-  assert.match(overlay, /useFocusTrap/)
+  // Identifier names may be minified away, so assert the decorated wrapper's
+  // structure: loadJSON is wrapped, and search(query) remembers the query then
+  // hands the inner index results to the shared catalogue matcher.
+  assert.match(overlay, /loadJSON\(([\w$]+),\s*([\w$]+)\)\s*\{\s*const\s+([\w$]+)\s*=\s*[\w$]+\.loadJSON\(\1,\s*\2\)[\s\S]{0,60}?search\(([\w$]+)\)\s*\{\s*(?:return\s+)?[\w$]+\(\4\)[,;\s]+(?:return\s+)?[\w$]+\(\4,\s*\3\.search\(\4\)\)/)
+  assert.doesNotMatch(overlay, /maxlength:\s*["']64["']/)
+  assert.match(overlay, /"aria-live":\s*"polite"/)
+  assert.match(overlay, /useFocusTrap|focus-trap|tabbable/)
   assert.equal(config.themeConfig.search.options.disableQueryPersistence, true)
 })
 
@@ -63,7 +65,9 @@ test('translator HTML has labeled inputs, live results, ordinary links, and no f
   assert.match(html, /for="csv-query"/)
   assert.match(html, /id="csv-query"/)
   assert.match(html, /for="csv-context"/)
-  assert.match(html, /aria-live="polite"/)
+  // The live region must pre-exist in server-rendered output — empty, so a
+  // visitor's first search is the first thing assistive technology announces.
+  assert.match(html, /<p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count"><\/p>/)
   assert.match(html, /autocomplete="off"/)
   assert.doesNotMatch(html, /type="file"|Check file|Check the file too/)
   for (const guide of guides) assert.ok(html.includes(`${basePath}${guide.slug}#`))
