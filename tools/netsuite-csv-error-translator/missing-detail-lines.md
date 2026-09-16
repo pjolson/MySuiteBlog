@@ -155,7 +155,7 @@ Put the item in a CSV column and map the item sublist. A default by itself may n
 **Steps for this error**
 
 1. Confirm the file contains an item value on every intended invoice line.
-2. Map that column to the invoice Items sublist and check the key linking each line to its invoice header.
+2. Map that column to the Items : Item field on the Field Mapping page and check the key linking each line to its invoice header. For a new invoice, set Data Handling to Add.
 3. Retry one invoice and verify that its item line was created.
 
 :::
