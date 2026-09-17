@@ -67,4 +67,4 @@ Documentation checked September 16, 2026.
 - [Inventory adjustment quantity exceeds available stock](/tools/netsuite-csv-error-translator/inventory-quantity)
 - [An inventory worksheet needs inventory detail](/tools/netsuite-csv-error-translator/inventory-worksheet-detail)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="inventory-status" />

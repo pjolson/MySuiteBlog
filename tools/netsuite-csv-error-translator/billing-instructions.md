@@ -68,4 +68,4 @@ Documentation checked September 16, 2026.
 - [NetSuite cannot read the CSV file or its columns](/tools/netsuite-csv-error-translator/csv-file-structure)
 - [Item or custom list translations cannot be imported](/tools/netsuite-csv-error-translator/translations)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="billing-instructions" />

@@ -63,4 +63,4 @@ Documentation checked September 16, 2026.
 - [Inventory status does not match the stock being removed](/tools/netsuite-csv-error-translator/inventory-status)
 - [An inventory worksheet needs inventory detail](/tools/netsuite-csv-error-translator/inventory-worksheet-detail)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="inventory-quantity" />

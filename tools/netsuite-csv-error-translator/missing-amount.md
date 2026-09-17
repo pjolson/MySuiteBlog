@@ -94,4 +94,4 @@ Documentation checked September 16, 2026.
 - [Numbers or identifiers changed in the CSV](/tools/netsuite-csv-error-translator/numbers-and-spreadsheet-changes)
 - [The vendor bill total disagrees with its lines](/tools/netsuite-csv-error-translator/vendor-bill-totals)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="missing-amount" />

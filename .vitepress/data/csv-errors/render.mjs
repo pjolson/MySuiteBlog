@@ -120,7 +120,7 @@ ${sections}
 ${members.flatMap(entry => entry.relatedLinks || []).map(link => `- [${link.title}](${link.url})`).join("\n")}
 ${members.some(entry => entry.relatedIds) ? members.flatMap(entry => entry.relatedIds || []).map(id => entries.find(entry => entry.id === id)).map(entry => `- [${entry.title}](${entry.url}) (${entry.contexts.join(', ')})`).join('\n') : related.map(other => `- [${other.title}](${basePath}${other.slug})`).join('\n')}
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="${guide.slug}" />
 `
 }
 

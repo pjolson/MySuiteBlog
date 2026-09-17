@@ -59,4 +59,4 @@ Documentation checked September 16, 2026.
 - [NetSuite reports an unexpected error during import](/tools/netsuite-csv-error-translator/unexpected-error)
 - [A language warning may be slowing the import](/tools/netsuite-csv-error-translator/import-language-warning)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="saved-search-access" />

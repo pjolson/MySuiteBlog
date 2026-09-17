@@ -104,7 +104,7 @@ function unfilter() {
       <CsvFeedback v-if="unknown" :query="csvSession.query" :context="csvSession.context" :source="csvSession.source" />
       <div class="cta-actions">
         <button type="button" class="cta-secondary csv-button" @click="clear">Browse all errors</button>
-        <a class="cta-secondary csv-button" href="/contact/">Ask MySuite for help</a>
+        <a class="cta-secondary csv-button" href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=csv-tool&utm_campaign=import-fix&utm_content=translator" target="_blank" rel="noopener">Book a free 30-minute import fix</a>
       </div>
     </div>
     <ul v-else class="csv-results">

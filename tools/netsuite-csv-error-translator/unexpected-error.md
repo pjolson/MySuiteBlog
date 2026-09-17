@@ -93,4 +93,4 @@ Documentation checked September 16, 2026.
 - [An import field depends on an inaccessible saved search](/tools/netsuite-csv-error-translator/saved-search-access)
 - [A language warning may be slowing the import](/tools/netsuite-csv-error-translator/import-language-warning)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="unexpected-error" />

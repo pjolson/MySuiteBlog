@@ -194,4 +194,4 @@ Documentation checked September 16, 2026.
 - [Vendor bill files or purchase order mappings conflict](/tools/netsuite-csv-error-translator/vendor-bill-file-links)
 - [NetSuite cannot apply a payment or credit](/tools/netsuite-csv-error-translator/payment-applications)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="transaction-line-updates" />

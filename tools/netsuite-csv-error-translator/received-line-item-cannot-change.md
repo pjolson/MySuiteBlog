@@ -70,4 +70,4 @@ Documentation checked September 16, 2026.
 - [Repeated items make line matching ambiguous](/tools/netsuite-csv-error-translator/transaction-line-updates#repeated-items-make-line-matching-ambiguous) (Transactions)
 - [An update asks you to choose an item](/tools/netsuite-csv-error-translator/transaction-line-updates#an-update-asks-you-to-choose-an-item) (Sales orders)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="received-line-item-cannot-change" />

@@ -131,4 +131,4 @@ Documentation checked September 16, 2026.
 - [NetSuite cannot read the CSV file or its columns](/tools/netsuite-csv-error-translator/csv-file-structure)
 - [Sales order terms and payment method conflict](/tools/netsuite-csv-error-translator/billing-instructions)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="translations" />

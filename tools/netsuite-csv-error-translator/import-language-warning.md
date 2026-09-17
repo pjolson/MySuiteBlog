@@ -59,4 +59,4 @@ Documentation checked September 16, 2026.
 - [An import field depends on an inaccessible saved search](/tools/netsuite-csv-error-translator/saved-search-access)
 - [NetSuite reports an unexpected error during import](/tools/netsuite-csv-error-translator/unexpected-error)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="import-language-warning" />

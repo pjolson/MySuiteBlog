@@ -141,4 +141,4 @@ Documentation checked September 16, 2026.
 - [The import has no linked item, expense, or member lines](/tools/netsuite-csv-error-translator/missing-detail-lines)
 - [NetSuite cannot apply a payment or credit](/tools/netsuite-csv-error-translator/payment-applications)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="vendor-bill-file-links" />

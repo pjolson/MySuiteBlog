@@ -342,4 +342,4 @@ Documentation checked September 16, 2026.
 - [Item or custom list translations cannot be imported](/tools/netsuite-csv-error-translator/translations)
 - [Sales order terms and payment method conflict](/tools/netsuite-csv-error-translator/billing-instructions)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="required-fields" />

@@ -294,4 +294,4 @@ Documentation checked September 16, 2026.
 - [The journal reports Rounding Error](/tools/netsuite-csv-error-translator/numbers-and-spreadsheet-changes#the-journal-reports-rounding-error) (Journal entries)
 - [A totals row asks for Account](/tools/netsuite-csv-error-translator/csv-file-structure#a-totals-row-asks-for-account) (Journal entries)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="numbers-and-spreadsheet-changes" />

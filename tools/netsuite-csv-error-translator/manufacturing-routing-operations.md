@@ -98,4 +98,4 @@ Documentation checked September 16, 2026.
 - [The import has no linked item, expense, or member lines](/tools/netsuite-csv-error-translator/missing-detail-lines)
 - [Vendor bill files or purchase order mappings conflict](/tools/netsuite-csv-error-translator/vendor-bill-file-links)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="manufacturing-routing-operations" />

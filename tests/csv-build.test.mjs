@@ -51,6 +51,9 @@ test('all guide HTML has working anchors, canonical URLs, descriptions, and craw
     assert.match(html, /Check this first/)
     assert.match(html, /Show the steps/)
     assert.match(html, /docs.oracle.com/)
+    // Each guide's booking CTA carries its own slug so bookings attribute to
+    // the exact error page that produced them.
+    assert.ok(html.includes(`utm_medium=csv-tool&amp;utm_campaign=import-fix&amp;utm_content=${guide.slug}`) || html.includes(`utm_medium=csv-tool&utm_campaign=import-fix&utm_content=${guide.slug}`), `${guide.slug} booking attribution`)
     assert.equal(sitemap.includes(`https://mysuite.tech${basePath}${guide.slug}`), indexableGuideSlugs.has(guide.slug))
     assert.match(html, indexableGuideSlugs.has(guide.slug)
       ? /name="robots" content="index, follow"/

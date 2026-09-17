@@ -185,4 +185,4 @@ Documentation checked September 16, 2026.
 - [Scripts and permissions: when error details point there](/tools/netsuite-csv-error-translator/failed-after-saving)
 - [Record type does not match the existing record](/tools/netsuite-csv-error-translator/item-units-and-types#the-item-type-differs-from-the-import-type) (General imports, Item records, Inventory items)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="parent-and-matrix-items" />

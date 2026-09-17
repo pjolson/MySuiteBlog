@@ -63,4 +63,4 @@ Documentation checked September 16, 2026.
 - [Inventory status does not match the stock being removed](/tools/netsuite-csv-error-translator/inventory-status)
 - [Inventory adjustment quantity exceeds available stock](/tools/netsuite-csv-error-translator/inventory-quantity)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="inventory-worksheet-detail" />

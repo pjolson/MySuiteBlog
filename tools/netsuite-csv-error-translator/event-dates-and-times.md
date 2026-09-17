@@ -166,4 +166,4 @@ Documentation checked September 16, 2026.
 - [NetSuite CSV import says an amount is missing](/tools/netsuite-csv-error-translator/missing-amount)
 - [The vendor bill total disagrees with its lines](/tools/netsuite-csv-error-translator/vendor-bill-totals)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="event-dates-and-times" />

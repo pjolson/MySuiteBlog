@@ -94,4 +94,4 @@ Documentation checked September 16, 2026.
 - [NetSuite cannot match an item in a CSV import](/tools/netsuite-csv-error-translator/item-reference)
 - [The item unit or record type does not match](/tools/netsuite-csv-error-translator/item-units-and-types)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="countries-and-states" />

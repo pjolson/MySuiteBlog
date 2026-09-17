@@ -4,7 +4,9 @@ This is the first phase of the project in `researchdocs/MySuite-CSV-Error-Transl
 
 ## Content
 
-- `entries.json` retains all 119 context-specific entries, original IDs, source links, review notes, and the brief's documentation review date. That date records the supplied research, not a NetSuite account test.
+- `entries.json` retains all 119 context-specific entries, original IDs, source links, review notes, and the brief's documentation review date. That date records the supplied research, not a NetSuite account test. `messageFragments` hold the verbatim error wording from Oracle's import-error pages (values kept as Oracle prints them, such as `xx` or `mm/dd/yyyy`); guide pages render them in a three-tier "Message looks like" block — verbatim examples, "wording varies" with identifying keywords, or an honest note that Oracle publishes no exact wording.
+- `editorial-steps.mjs` holds entry-specific steps drawn from the fix documented on each entry's Oracle source page. 113 of the 119 entries carry them (`detailedEntryIds` in guides.mjs, count enforced by a test). The six exceptions are deliberate: ITM-08 and IVD-01 preserve documented conflicts in Oracle's own guidance rather than repeating disputed advice, GEN-12 is a spreadsheet symptom with no message, and SAL-04, SAL-07, and VBL-06 have no documented section — real submissions through the feedback form are the intended way to close those.
+- `source-labels.mjs` maps every source URL to its page title so reference links read as titles, not "Read more Oracle guidance". A newly added source URL needs a row here; unknown URLs fall back to a generic label.
 - `guides.mjs` assigns each entry to one of 35 canonical guides and supplies human headings, import contexts, categories, and natural-language aliases. JRN-08 shares the numbers guide with JRN-07, with separate message matching and answer anchors. Its categories include both Transaction lines and Dates and numbers.
 - `procedures.json` retains the reusable procedures from the brief. `render.mjs` scopes them to the record type and removes internal editorial references before publishing them. It also preserves the safe checks and source caveats for the six documented conflicts.
 - `questions.mjs` supplies the optional follow-up checks. Only one follow-up disclosure can be open at a time.
@@ -31,6 +33,8 @@ Search text and selected filters stay in memory for the current page session. Th
 An optional review form now lets visitors deliberately send an edited message, import context, and optional note. Opening, editing, or cancelling the form sends no message. Submissions use a private server-side store and are never published automatically. A failed request keeps its draft and random request ID for a safe retry.
 
 The two search interfaces count unsuccessful attempts after 1.2 seconds without typing. Those events contain only allowlisted context, category, source, outcome, whether unfiltered matches exist, and the catalogue version, plus a random event ID. They never contain the query, fragments, identifiers, or a query hash. Filter changes alone do not create attempts. Counts and submissions are separate records. See [the feedback implementation notes](../../../researchdocs/CSV-Feedback-Implementation-2026-09-16.md) for storage, private review access, instrumentation, retention, and acceptance checks.
+
+Submissions are reviewed at `/private/csv-review` (Basic auth: username `reviewer`, password from the `CSV_REVIEW_PASSWORD` environment variable — at least 24 characters, Functions scope, and a redeploy is required after changing it). In the unsuccessful-search counts, a `filtered` outcome means the catalogue matched but the entry's import-type tagging hid it (fix the entry's contexts); an `unknown` outcome is a true miss. Raw submissions expire after 90 days, so fold useful wording into the catalogue before then.
 
 ## Local validation
 

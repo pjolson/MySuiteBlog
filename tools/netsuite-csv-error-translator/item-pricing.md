@@ -136,4 +136,4 @@ Documentation checked September 16, 2026.
 - [Numbers or identifiers changed in the CSV](/tools/netsuite-csv-error-translator/numbers-and-spreadsheet-changes)
 - [NetSuite CSV import says an amount is missing](/tools/netsuite-csv-error-translator/missing-amount)
 
-<CsvGuideFooter show-navigation />
+<CsvGuideFooter show-navigation slug="item-pricing" />
