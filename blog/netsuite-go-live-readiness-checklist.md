@@ -214,7 +214,7 @@ Hypercare is the period of elevated support right after go-live, when issues get
 
 Almost always, yes, but only deliberately. No launch happens with a completely empty defect list. The discipline is to triage: separate the issues that are true blockers, meaning they break a critical business process or a control, from the ones that are cosmetic or have a workaround. Blockers stop the launch. Everything else goes live with an owner and a fix date. What you do not do is go live without knowing which is which.
 
-<ConsultingCTA message="Staring down a NetSuite go-live? We help companies pressure-test their readiness and cutover plan before they commit to the go/no-go, so launch day is a decision you've earned, not a date you're hoping survives contact with reality." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Staring down a NetSuite go-live? We help companies pressure-test their readiness and cutover plan before they commit to the go/no-go, so launch day is a decision you've earned, not a date you're hoping survives contact with reality." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 7/6/2026

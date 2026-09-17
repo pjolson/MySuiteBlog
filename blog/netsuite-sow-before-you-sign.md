@@ -183,7 +183,7 @@ It should define data migration in detail (number of test loads, who owns cleans
 
 No. The sales engineers and account executives who sell and demo NetSuite are not the people who implement it. The implementation partner works from the Statement of Work, not the demo or the sales call, so anything that was shown but is not written into the SOW is out of scope. After every demo, write down the specific capabilities you were shown and map them against the SOW deliverables before you sign.
 
-<ConsultingCTA message="We review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="We review NetSuite SOWs and order forms before you sign them. If you want someone on your side of the table reading the fine print, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/19/2026

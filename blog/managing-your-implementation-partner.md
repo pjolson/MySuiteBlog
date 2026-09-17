@@ -100,7 +100,7 @@ Your priority is getting a system that works for your business. Their priority i
 That is the job. Not micromanaging consultants. Not second-guessing every configuration. Just making sure that the project stays honest, the scope stays controlled, and your team is not along for the ride on their own implementation.
 
 
-<ConsultingCTA message="We help companies manage their NetSuite implementation partners from the inside. If your project needs someone who can review SOWs, challenge change orders, and keep the partner accountable, let's talk." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="We help companies manage their NetSuite implementation partners from the inside. If your project needs someone who can review SOWs, challenge change orders, and keep the partner accountable, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/18/2026

@@ -70,7 +70,7 @@ An implementation partner delivers the system. An internal resource makes sure i
 If you're in the middle of an implementation and feeling like things are moving faster than your team can keep up with, that's the signal. Get someone in your corner who speaks the language.
 
 
-<ConsultingCTA message="We have been on both sides of NetSuite implementations. If you need a certified admin and PMP who can represent your team's interests during an implementation, let's talk." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="We have been on both sides of NetSuite implementations. If you need a certified admin and PMP who can represent your team's interests during an implementation, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/14/2026

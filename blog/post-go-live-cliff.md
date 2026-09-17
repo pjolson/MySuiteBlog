@@ -81,7 +81,7 @@ If you are going to bring in post-go-live support, the timing matters. That pers
 A clean handoff from partner to internal support almost never happens. What works is an overlap period where the incoming resource absorbs context from the outgoing team. Without that overlap, you are hiring someone to maintain a system they did not build, with documentation they have never read, for a team they have never met. That is not a setup for success.
 
 
-<ConsultingCTA message="If your implementation is wrapping up and you don't have a plan for what comes next, that's the conversation to have now. We help companies bridge the gap between implementation and ongoing operations." />
+<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Ongoing Support" message="If your implementation is wrapping up and you don't have a plan for what comes next, that's the conversation to have now. We help companies bridge the gap between implementation and ongoing operations." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/18/2026

@@ -144,7 +144,7 @@ If your implementation just kicked off, put these items on the agenda now:
 If your implementation is already underway and nobody has answered those questions, that conversation is overdue. The answers will not get easier as go-live gets closer.
 
 
-<ConsultingCTA message="Data migration planning is one of the first things we look at when advising on a NetSuite implementation. If your team is staring down a migration and not sure where to start, let's talk." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Data migration planning is one of the first things we look at when advising on a NetSuite implementation. If your team is staring down a migration and not sure where to start, let's talk." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 5/25/2026

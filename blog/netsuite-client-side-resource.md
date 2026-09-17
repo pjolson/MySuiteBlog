@@ -126,6 +126,6 @@ That is the role. It is not adversarial and it is not deferential. It is the sea
 If your implementation has that seat unfilled, fill it. The mistake is leaving it empty.
 
 
-<ConsultingCTA message="Running an implementation and the client side is the bottleneck? We fill the seat between your team and the partner: super user, client-side PM, and hands-on support in one role." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Running an implementation and the client side is the bottleneck? We fill the seat between your team and the partner: super user, client-side PM, and hands-on support in one role." />
 
 <TagLinks />

@@ -4,7 +4,7 @@ title: "NetSuite Support for Finance & Operations Teams"
 titleTemplate: ":title | MySuite"
 description: "NetSuite consulting for finance and operations teams: ongoing administration and support, implementation help, and customization. Senior certified expertise that stays with you."
 hero:
-  text: NetSuite support from a firm that owns the outcome.
+  text: NetSuite support from a consultant who owns the outcome.
   tagline: "Ongoing administration, implementation help, and customization for finance and operations teams. Senior certified expertise that stays with you, not a rotating bench."
   image:
     src: /mark.svg
@@ -68,23 +68,30 @@ NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalyti
   <img src="./img/analyticsnew.jpg" alt="SuiteAnalytics User">
 </div>
 
+## Recent work
+
+<div class="work-card">
+  <p>Six months behind on go-live, delivered on the reset date. Fifty-item backlog cleared in a month. Thousands of subscriptions and a collections process rebuilt.</p>
+  <a href="/about/#recent-work">Read the details →</a>
+</div>
+
 <div class="health-check-card">
   <h3>Not sure where you stand? NetSuite Health Check, $2,500</h3>
   <p>A fixed-scope assessment of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call. One way to start, credited toward whatever comes next. It is an option, not a required first step.</p>
   <a href="/netsuite-health-check" class="cta-secondary">See What's Included</a>
 </div>
 
+## From the blog
+
+<FeaturedPosts />
+
 <div class="greenlight-service-card">
   <img src="./img/greenlogo.png" alt="Greenlight Software" class="greenlight-logo">
   <div class="greenlight-service-content">
     <h3>Greenlight Software</h3>
-    <p>Native NetSuite apps for approvals and accounts payable, built by the same team. Automated routing, budget checks, and bill entry, with every step human-approved and audit-ready.</p>
+    <p>Native NetSuite apps for approvals and accounts payable, built by MySuite. Automated routing, budget checks, and bill entry, with every step human-approved and audit-ready.</p>
     <a href="https://greenlightsoftware.io" target="_blank" class="cta-secondary">greenlightsoftware.io →</a>
   </div>
 </div>
-
-## From the blog
-
-<FeaturedPosts />
 
 </div>

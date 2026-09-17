@@ -53,4 +53,4 @@ That's the job we do. We sit on your side of the table during the implementation
 
 If you're mid-project and two or three of these are nagging at you, [let's talk](/about/). The cheapest time to deal with it is before go-live. And if you're already live and wondering what the rush left behind, a [NetSuite Health Check](/netsuite-health-check) will tell you in a few days.
 
-<ConsultingCTA message="We sit on your side of the table during NetSuite implementations. SOW review, design validation, partner oversight, and making sure the system you launch actually fits your business." />
+<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="We sit on your side of the table during NetSuite implementations. SOW review, design validation, partner oversight, and making sure the system you launch actually fits your business." />

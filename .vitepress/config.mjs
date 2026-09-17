@@ -188,7 +188,6 @@ export default defineConfig({
           { text: 'How We Work', link: '/about/#how-we-work' },
           { text: 'About Patrick', link: '/about/#patrick' },
           { text: 'Recent Work', link: '/about/#recent-work' },
-          { text: 'Credentials', link: '/about/#credentials' },
           { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
         ]
       },
