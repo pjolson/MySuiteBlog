@@ -26,13 +26,13 @@ Check the import results before treating a language warning as a failed record.
 
 **What it means**
 
-Language settings may slow the import.
+Your language preference does not match the company language preference, so NetSuite warns that the import may run slower. A difference between a subsidiary or parent subsidiary language and the company language can also trigger it.
 
 Import context: General imports.
 
 **Check this first**
 
-Compare preferences.
+Compare your personal and subsidiary language preferences with the company preference. This is a warning about import speed, not a failed record.
 
 ::: details Show the steps
 

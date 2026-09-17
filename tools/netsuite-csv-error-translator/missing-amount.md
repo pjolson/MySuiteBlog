@@ -26,13 +26,13 @@ Check which field supplies the amount and whether the expense line also needs a 
 
 **What it means**
 
-The expense amount may depend on a missing rate or quantity.
+An expense line is missing the value NetSuite needs to price it. The message says Amount, but the missing field can be Amount, Rate, or Quantity.
 
 Import context: Expense reports.
 
 **Check this first**
 
-Check the expense category and how that line's amount should be calculated.
+Check each expense line for whichever of Amount, Rate, and Quantity your report layout requires.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-NetSuite can't determine the amount.
+NetSuite cannot settle on an amount, most often because the import repeats a line or the Amount column is not formatted as a plain number.
 
 Import context: General imports.
 
 **Check this first**
 
-Check numbers and duplicate input.
+Check for duplicate lines and format the Amount column as a number without symbols or zero values.
 
 ::: details Show the steps
 

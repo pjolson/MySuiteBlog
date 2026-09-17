@@ -6,8 +6,8 @@
       "Please select member items before submitting"
     ],
     "matchNotes": "`member items`",
-    "explanation": "The assembly has no linked component rows.",
-    "firstCheck": "Check the primary assembly file, member file, shared assembly identifier, and member item and quantity mappings.",
+    "explanation": "The assembly import reached NetSuite without any member items attached, so the assembly cannot be built as a bill of materials.",
+    "firstCheck": "Check the link between the assembly file and the member file: the member rows must carry the assembly identifier.",
     "procedureIds": [
       "P09"
     ],
@@ -44,8 +44,8 @@
       "Illegal ID. Please enter a name."
     ],
     "matchNotes": "`Illegal ID`",
-    "explanation": "This combined import expects company customers.",
-    "firstCheck": "If the customer is an individual, choose the customer-only import and handle the contact separately.",
+    "explanation": "The combined customers-and-contacts import only accepts company customers. This appears when a row tries to add an individual customer together with a contact.",
+    "firstCheck": "Check whether the failing rows are individuals. Import those with Customers Only and add their contacts separately.",
     "procedureIds": [
       "P09"
     ],
@@ -63,8 +63,8 @@
       "Invalid company reference key ***."
     ],
     "matchNotes": "`company`, reference-key wording",
-    "explanation": "The linked customer may be inactive.",
-    "firstCheck": "Check the customer before changing the contact mapping. Oracle describes importing with an active customer and inactivating afterward; only use that sequence when the intended customer lifecycle supports it.",
+    "explanation": "The company this contact should attach to exists but is inactive, so the import cannot reference it.",
+    "firstCheck": "Check the linked customer for an inactive flag before assuming the reference value is wrong.",
     "procedureIds": [
       "P01"
     ],
@@ -101,8 +101,8 @@
       "at least one line"
     ],
     "matchNotes": "`at least one line`",
-    "explanation": "The cost template has no linked cost lines.",
-    "firstCheck": "Check that each template has details and that the file-linking keys agree.",
+    "explanation": "The cost template saved without any cost lines. In a multiple-file import this usually means the key column linking template to detail rows did not match.",
+    "firstCheck": "Check that every template has at least one detail row and that the linking key matches exactly in both files.",
     "procedureIds": [
       "P09"
     ],
@@ -121,8 +121,8 @@
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
-    "explanation": "The item may be missing or paired with the wrong cost category.",
-    "firstCheck": "Check the item's purchasing information as well as its identity.",
+    "explanation": "A cost line references an item NetSuite cannot accept here, usually a typo or an item paired with a cost category it does not belong to.",
+    "firstCheck": "Open the item record and compare its cost category on the Purchasing subtab with the failing line.",
     "procedureIds": [
       "P01"
     ],
@@ -140,8 +140,8 @@
       "Could not find matching record. Primary name field was not mapped or is empty."
     ],
     "matchNotes": "`Primary name`",
-    "explanation": "The customer cannot be identified.",
-    "firstCheck": "Use its internal ID, external ID, or customer ID.",
+    "explanation": "The update is trying to find customers by company name or another text field. Customer updates match on internal ID, external ID, or customer ID only, so the lookup comes back empty.",
+    "firstCheck": "Check which field the mapping uses as the record key and switch it to one of the three identifiers.",
     "procedureIds": [
       "P01"
     ],
@@ -159,8 +159,8 @@
       "Matched more than one record"
     ],
     "matchNotes": "`Matched more`",
-    "explanation": "Several customers fit.",
-    "firstCheck": "Add a unique customer identifier, especially for parent and child customers.",
+    "explanation": "More than one customer fits the row, typically a parent with several child customers while Child of is mapped and no unique identifier is.",
+    "firstCheck": "Map internal ID, external ID, or customer ID for the affected rows so each matches exactly one record.",
     "procedureIds": [
       "P01"
     ],
@@ -178,8 +178,8 @@
       "Please set value for Type"
     ],
     "matchNotes": "`Type`",
-    "explanation": "The selected customer form requires a type.",
-    "firstCheck": "Check the field and form settings.",
+    "explanation": "The customer form used by the import marks Type as mandatory, and the rows do not supply a value for it.",
+    "firstCheck": "Decide whether to supply a Type value in the file or to clear the Mandatory box on the entry form.",
     "procedureIds": [
       "P03"
     ],
@@ -197,8 +197,8 @@
       "The field vatregnumber contained more than the maximum number ( 20 ) of characters allowed."
     ],
     "matchNotes": "`vatregnumber`, `20`",
-    "explanation": "The tax registration value exceeds the field's length.",
-    "firstCheck": "Check the value before editing.",
+    "explanation": "The Tax Reg. Number field, whose field ID is vatregnumber, holds at most 20 characters, and a mapped value is longer.",
+    "firstCheck": "Find the over-length registration numbers and confirm the correct values before shortening anything.",
     "procedureIds": [
       "P03"
     ],
@@ -216,8 +216,8 @@
       "The country and state/province are mismatched, the country is US and the state/province is XX. Please enter a state/province short name that matches the country."
     ],
     "matchNotes": "`country`, `state/province`",
-    "explanation": "Country and state do not agree.",
-    "firstCheck": "Check both values and whether Country is exposed.",
+    "explanation": "The state or province value does not belong to the country on the same row, or the Country field is not exposed for the import to fill.",
+    "firstCheck": "Compare the state value with the short names the country allows, and check that Country appears on the Field Mapping page.",
     "procedureIds": [
       "P05"
     ],
@@ -235,8 +235,8 @@
       "Invalid isperson reference key (customer name)"
     ],
     "matchNotes": "`isperson`",
-    "explanation": "NetSuite needs to know whether this customer is an individual or company.",
-    "firstCheck": "Map the choice.",
+    "explanation": "NetSuite needs to know whether each customer is an individual or a company, and the isperson field, which is the Company Type, is not receiving that answer.",
+    "firstCheck": "Map the Individual field and give every row a Yes or No value.",
     "procedureIds": [
       "P03"
     ],
@@ -273,8 +273,8 @@
       "Could not find record with internal ID = xxx"
     ],
     "matchNotes": "`internal ID`, record-not-found wording",
-    "explanation": "The import is not identifying the intended record.",
-    "firstCheck": "Distinguish the plan's identity from its item reference before changing the mapping. The error article's wording needs verification.",
+    "explanation": "The import cannot find the demand plan it should update. Plans are identified by internal ID, and that ID is not reaching the right field.",
+    "firstCheck": "Map the plan internal ID to the Demand: Item field and confirm which plan each row targets.",
     "procedureIds": [
       "P01"
     ],
@@ -292,8 +292,8 @@
       "Invalid start date ref key mm/dd/yyyy"
     ],
     "matchNotes": "`start date`, reference-key wording",
-    "explanation": "The plan dates may conflict with its year or end date.",
-    "firstCheck": "Supply a consistent period instead of changing the start date alone.",
+    "explanation": "The plan start date falls in a future year while the Year and end date fields are not mapped, so NetSuite cannot build the planning period.",
+    "firstCheck": "Map Year and both plan start and end dates for any plan that begins after the current year.",
     "procedureIds": [
       "P05"
     ],
@@ -311,8 +311,8 @@
       "Please enter value(s) for: Currency"
     ],
     "matchNotes": "`Currency`, required-value wording",
-    "explanation": "The expense report expects a currency.",
-    "firstCheck": "Map the expense currency or choose a default that applies to every affected line. If the expenses genuinely use only the employee subsidiary's base currency, review the report's multicurrency setting.",
+    "explanation": "The account has multicurrency expense reports enabled, so every new expense report needs a currency, and none is reaching the import.",
+    "firstCheck": "Add a Currency column or set a mapping default, or switch multicurrency off for these reports if it is not needed.",
     "procedureIds": [
       "P03"
     ],
@@ -330,8 +330,8 @@
       "Invalid category reference key xx"
     ],
     "matchNotes": "`category`, reference-key wording",
-    "explanation": "The expense category cannot be matched.",
-    "firstCheck": "Check its active state, displayed name, and mapping reference type.",
+    "explanation": "The expense category on the row cannot be matched, usually because it is inactive or its name does not match the category list exactly.",
+    "firstCheck": "Check the category active state and exact displayed name, or switch the mapping to internal IDs.",
     "procedureIds": [
       "P01"
     ],
@@ -349,8 +349,8 @@
       "Expense Categories - The field name contained more than the maximum number (61) of characters allowed"
     ],
     "matchNotes": "`61`, expense-category field length",
-    "explanation": "The expense-account value is too long for this field.",
-    "firstCheck": "Check that the intended value belongs here before shortening it.",
+    "explanation": "The Expense Account value on an expense category holds at most 61 characters including spaces and symbols, and a mapped value is longer.",
+    "firstCheck": "Find the over-length account values and confirm the intended account before shortening them.",
     "procedureIds": [
       "P03"
     ],
@@ -368,7 +368,7 @@
       "Invalid employee reference key"
     ],
     "matchNotes": "`Invalid employee reference key {value}`; the value varies.",
-    "explanation": "The time entry cannot match the employee supplied.",
+    "explanation": "The time entry cannot match the employee it names, usually because the value does not agree with the mapping choice of name or internal ID.",
     "firstCheck": "Compare the employee value with the mapping's choice of name or internal ID. A name must match the format the Time Tracking form shows for the employee.",
     "procedureIds": [
       "P01"
@@ -387,8 +387,8 @@
       "Date field not in your preferred date format"
     ],
     "matchNotes": "`preferred`, `Date`",
-    "explanation": "An event date does not match the importing user's format.",
-    "firstCheck": "Check both date columns.",
+    "explanation": "At least one date on the event rows is not written in the date format of the person running the import, so NetSuite stops at the mapping step.",
+    "firstCheck": "Compare the Date and End Date values with the importing user format under Home > Set Preferences.",
     "procedureIds": [
       "P05"
     ],
@@ -406,8 +406,8 @@
       "Required field missing for field Date"
     ],
     "matchNotes": "`Date`, `End Date`, missing-field wording",
-    "explanation": "A date is missing, or an unintended row is being processed.",
-    "firstCheck": "Inspect the saved CSV.",
+    "explanation": "A row is missing its Date or End Date. Formatted but empty spreadsheet rows below the data can also import as blank events.",
+    "firstCheck": "Check the date columns for blanks and delete leftover empty rows after the data.",
     "procedureIds": [
       "P02",
       "P05"
@@ -426,8 +426,8 @@
       "Parse of date/time failed"
     ],
     "matchNotes": "`Parse`, `date/time`",
-    "explanation": "A date and time cannot be read.",
-    "firstCheck": "Check the format and any absent end date.",
+    "explanation": "NetSuite could not parse a date and time on the event rows, either from a format mismatch or from an End Date it had to invent for a row that lacked one.",
+    "firstCheck": "Compare the date and time cells with the importing user preference and fill any missing End Date values.",
     "procedureIds": [
       "P05"
     ],
@@ -445,8 +445,8 @@
       "Start time must be earlier than the end time"
     ],
     "matchNotes": "`Start time`, `end time`",
-    "explanation": "The time range is invalid for this event import.",
-    "firstCheck": "Check both dates and times, including overnight spans.",
+    "explanation": "An event ends before it starts. An event also cannot span two days, so a later date with an earlier time of day fails the same way.",
+    "firstCheck": "Check each End Date against the Date and keep every event within a single day.",
     "procedureIds": [
       "P05"
     ],
@@ -464,8 +464,8 @@
       "Please enter value(s) for: Amount"
     ],
     "matchNotes": "`Amount`, required-value wording",
-    "explanation": "The expense amount may depend on a missing rate or quantity.",
-    "firstCheck": "Check the expense category and how that line's amount should be calculated.",
+    "explanation": "An expense line is missing the value NetSuite needs to price it. The message says Amount, but the missing field can be Amount, Rate, or Quantity.",
+    "firstCheck": "Check each expense line for whichever of Amount, Rate, and Quantity your report layout requires.",
     "procedureIds": [
       "P04"
     ],
@@ -483,8 +483,8 @@
       "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
-    "explanation": "The report has no linked expense line.",
-    "firstCheck": "Check the shared key between the report and its expenses.",
+    "explanation": "An expense report saved without any expense lines, which usually means the key column linking the report file to the expense file did not match.",
+    "firstCheck": "Check that every report has at least one expense row and that the linking key matches exactly in both files.",
     "procedureIds": [
       "P09"
     ],
@@ -502,8 +502,8 @@
       "Invalid postingperiod reference key for subsidiary 1"
     ],
     "matchNotes": "`postingperiod`",
-    "explanation": "The period value cannot be matched.",
-    "firstCheck": "Check the existing period name and whether spreadsheet formatting changed it.",
+    "explanation": "The posting period on the row does not match an existing period name, often because spreadsheet formatting changed the text.",
+    "firstCheck": "Compare the value with the exact period name and format the Posting Period column as text.",
     "procedureIds": [
       "P05"
     ],
@@ -564,8 +564,8 @@
       "There is already an item with that name or name/parent combination"
     ],
     "matchNotes": "`name/parent`",
-    "explanation": "A list selection may be repeated.",
-    "firstCheck": "Check multi-select IDs.",
+    "explanation": "A multi-select column repeats the same value inside one cell, and NetSuite refuses the duplicate selection.",
+    "firstCheck": "Find the multi-select column and remove any value or internal ID that appears twice in the same cell.",
     "procedureIds": [
       "P08"
     ],
@@ -583,8 +583,8 @@
       "The following file(s) could not be uploaded because of one or more errors. Please correct and re-upload."
     ],
     "matchNotes": "`re-upload`",
-    "explanation": "NetSuite couldn't read the file.",
-    "firstCheck": "Check encoding.",
+    "explanation": "NetSuite could not read the uploaded file, usually because the saved encoding or delimiter does not match what the Import Assistant expects.",
+    "firstCheck": "Save a fresh CSV copy with the delimiter and encoding selected in the Import Assistant and upload that copy.",
     "procedureIds": [
       "P02"
     ],
@@ -603,8 +603,8 @@
       "Please enter value(s) for: <Field XYZ>"
     ],
     "matchNotes": "`Mandatory field`",
-    "explanation": "A required value isn't reaching NetSuite.",
-    "firstCheck": "Check mapping and separators.",
+    "explanation": "A field the record requires is not receiving a value: a blank cell, a shifted column, or a form that makes the field mandatory.",
+    "firstCheck": "Read the field name in the full error and inspect the failing row and its mapping for that field.",
     "procedureIds": [
       "P03"
     ],
@@ -623,8 +623,8 @@
       "You have entered an Invalid Field Value XXXX for the following field: XXXX"
     ],
     "matchNotes": "`permissions`",
-    "explanation": "This field may be unavailable for import.",
-    "firstCheck": "Check read-only settings.",
+    "explanation": "NetSuite refused to write the field: it may be read-only, hidden by the form, tied to a disabled feature, or the value itself was rejected.",
+    "firstCheck": "Check whether the importing role and the selected form allow the field before changing any values.",
     "procedureIds": [
       "P03"
     ],
@@ -642,8 +642,8 @@
       "Invalid effective date reference key"
     ],
     "matchNotes": "`effective date`",
-    "explanation": "The date format doesn't match.",
-    "firstCheck": "Check your preferences.",
+    "explanation": "The effective date on the row is not readable in the importing user date format, so the reference fails.",
+    "firstCheck": "Compare the saved CSV date text with the importing user date format and confirm the intended year.",
     "procedureIds": [
       "P05"
     ],
@@ -661,8 +661,8 @@
       "A Saved Search with Internal ID xxx does not exist"
     ],
     "matchNotes": "`Saved Search`",
-    "explanation": "A field depends on an inaccessible search.",
-    "firstCheck": "Check existence and audience.",
+    "explanation": "A custom field on the form pulls its value from a saved search that is inactive, deleted, or private to someone else.",
+    "firstCheck": "Ask an admin to confirm the search exists, is active, and is visible to the importing user.",
     "procedureIds": [
       "P11"
     ],
@@ -680,8 +680,8 @@
       "Please enter a value for amount"
     ],
     "matchNotes": "`amount`",
-    "explanation": "NetSuite can't determine the amount.",
-    "firstCheck": "Check numbers and duplicate input.",
+    "explanation": "NetSuite cannot settle on an amount, most often because the import repeats a line or the Amount column is not formatted as a plain number.",
+    "firstCheck": "Check for duplicate lines and format the Amount column as a number without symbols or zero values.",
     "procedureIds": [
       "P04"
     ],
@@ -699,8 +699,8 @@
       "Different number of columns than in the header row"
     ],
     "matchNotes": "`columns`",
-    "explanation": "A row has too many fields.",
-    "firstCheck": "Check quotes and separators.",
+    "explanation": "A row has a different number of fields than the header, which usually means a comma or an unclosed quotation mark split the row apart.",
+    "firstCheck": "Compare the failing row field count with the header and inspect the quoting around free-text fields.",
     "procedureIds": [
       "P02"
     ],
@@ -718,8 +718,8 @@
       "AfterSubmit Script failed, record created with internalId xxx"
     ],
     "matchNotes": "`AfterSubmit`",
-    "explanation": "The record saved before a script failed.",
-    "firstCheck": "Check that record before retrying.",
+    "explanation": "The record itself saved, and an afterSubmit script failed afterward. Retrying the row blindly can create a duplicate.",
+    "firstCheck": "Open the record the result names, confirm what saved, and involve the script owner before rerunning.",
     "procedureIds": [
       "P11"
     ],
@@ -737,8 +737,8 @@
       "Warning: Your personal language settings do not match your company's language preferences. This may slow down the import of CSV data."
     ],
     "matchNotes": "`personal language`",
-    "explanation": "Language settings may slow the import.",
-    "firstCheck": "Compare preferences.",
+    "explanation": "Your language preference does not match the company language preference, so NetSuite warns that the import may run slower. A difference between a subsidiary or parent subsidiary language and the company language can also trigger it.",
+    "firstCheck": "Compare your personal and subsidiary language preferences with the company preference. This is a warning about import speed, not a failed record.",
     "procedureIds": [
       "P12"
     ],
@@ -756,8 +756,8 @@
       "There is already a Custom Record Entry with that name"
     ],
     "matchNotes": "`Custom Record`",
-    "explanation": "Another record uses this identifier.",
-    "firstCheck": "Check existing external IDs.",
+    "explanation": "Another custom record already uses this name or identifier, so NetSuite will not create a second one.",
+    "firstCheck": "Search the record type for the value and decide whether the row should update the existing record instead.",
     "procedureIds": [
       "P01"
     ],
@@ -773,8 +773,8 @@
     "context": "General imports",
     "messageFragments": [],
     "matchNotes": "Symptom: text became a date",
-    "explanation": "Excel may have changed the value.",
-    "firstCheck": "Compare the original.",
+    "explanation": "The saved value no longer matches the source, a spreadsheet symptom: text such as a part number was silently converted to a date or a number.",
+    "firstCheck": "Compare the saved CSV value with the original export before changing anything in NetSuite.",
     "procedureIds": [
       "P04"
     ],
@@ -896,8 +896,8 @@
       "Multiple values found for a dropdown field that can only take one"
     ],
     "matchNotes": "`Multiple values`, dropdown wording",
-    "explanation": "The configured multi-select separator may appear inside an identifier.",
-    "firstCheck": "Choose an import separator absent from those values. Oracle also notes that a literal NULL setting can behave as a space.",
+    "explanation": "The multi-select delimiter also appears inside a value, often an external ID with special characters, so one value reads as several.",
+    "firstCheck": "Set the Custom Multi-Select Value Delimiter in Advanced Options to a character your data never contains.",
     "procedureIds": [
       "P08"
     ],
@@ -915,8 +915,8 @@
       "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
-    "explanation": "The invoice has no imported item line.",
-    "firstCheck": "Put the item in a CSV column and map the item sublist. A default by itself may not create the line.",
+    "explanation": "The invoice saved without any item line. A default value on the item mapping does not create a line; the item must come from a CSV column.",
+    "firstCheck": "Put the item in its own column and map it to the Items : Item field on the Field Mapping page.",
     "procedureIds": [
       "P09"
     ],
@@ -955,8 +955,8 @@
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
-    "explanation": "The invoice cannot match its item.",
-    "firstCheck": "Check the invoice form's item selection, active state, and name-versus-ID mapping.",
+    "explanation": "An item on the invoice cannot be matched, usually an inactive item or a value that does not agree with the mapping reference type.",
+    "firstCheck": "Open the intended item and compare the CSV value with the Name, Internal ID, or External ID choice in the mapping.",
     "procedureIds": [
       "P01"
     ],
@@ -975,8 +975,8 @@
       "Please Enter Missing Price(s)"
     ],
     "matchNotes": "Match: `Please Enter Missing Price(s)`",
-    "explanation": "The higher quantity break is present, but the starting price is missing.",
-    "firstCheck": "Include pricing for quantity zero as well as the later quantity breaks. Check the existing item before changing the price table.",
+    "explanation": "Quantity pricing is being imported without a price for quantity zero, which NetSuite requires before the other quantity breaks.",
+    "firstCheck": "Include the quantity zero price in the same import or load it before the other prices.",
     "procedureIds": [
       "P10"
     ],
@@ -1017,8 +1017,8 @@
       "Invalid custitem reference key xxx"
     ],
     "matchNotes": "Match: `custitem`, reference-key wording.",
-    "explanation": "The value supplied to a custom item field does not match an allowed selection.",
-    "firstCheck": "Identify the field from its script ID, then inspect the list or record it references. Check spelling, spaces, and the chosen reference type. For several selections in one cell, check the multi-select separator too. Confirm a missing selection belongs in the list before adding it.",
+    "explanation": "A custom item field points at a list, and the value on the row is not one of that list's active selections, or the reference type does not match.",
+    "firstCheck": "Open the field definition from the ID in the error and compare the value with the allowed selections.",
     "procedureIds": [
       "P01",
       "P08"
@@ -1039,8 +1039,8 @@
       "Invalid Item Reference Key"
     ],
     "matchNotes": "Match: `Invalid Item Reference Key`, in related or presentation items.",
-    "explanation": "For this import, a related item's store display name can affect name matching.",
-    "firstCheck": "Check the displayed value on the related item and whether the mapping expects a name or internal ID. If the store display name is populated, Oracle identifies that name as the relevant name reference in this scenario. This explanation is specific to related items.",
+    "explanation": "A related item is matched by its store display name in this import, and the CSV value does not agree with it.",
+    "firstCheck": "Compare the related item Store Display Name with the saved CSV value before changing the reference.",
     "procedureIds": [
       "P01"
     ],
@@ -1059,8 +1059,8 @@
       "Adding New Line to Sublist Locations is not Allowed"
     ],
     "matchNotes": "Match: `Adding New Line to Sublist Locations is not Allowed`",
-    "explanation": "NetSuite cannot tell which location row to update.",
-    "firstCheck": "Map the location within the item's Locations sublist when importing values such as reorder point or preferred stock level. A location elsewhere in the import does not necessarily identify this sublist row.",
+    "explanation": "The import is trying to add a new row to the item Locations sublist, and this import can only update the rows that already exist.",
+    "firstCheck": "Map the location key inside the sublist so each row updates the existing location line.",
     "procedureIds": [
       "P01",
       "P06"
@@ -1101,8 +1101,8 @@
       "Please enter value(s) for: Type"
     ],
     "matchNotes": "Match: `Type`, required-value wording, in presentation items.",
-    "explanation": "The related-item line needs its type as well as the referenced item.",
-    "firstCheck": "Inspect the presentation-item mapping, identify the existing main item, and provide the related item's type. Oracle describes an Update import for this case. The source's example mapping labels are unclear, so check the live field labels before following them literally.",
+    "explanation": "Related items are being added without a type, a field that lives under Presentation Items on the Field Mapping page and is easy to miss.",
+    "firstCheck": "Set Data Handling to Update and map the related item number and type under Presentation Items.",
     "procedureIds": [
       "P03"
     ],
@@ -1121,8 +1121,8 @@
       "If you are not replacing the entire matrix you may only update existing headers. X is not in the existing matrix"
     ],
     "matchNotes": "Match fragments: `existing headers`, `existing matrix`.",
-    "explanation": "The pricing update refers to a header that is not already in the matrix.",
-    "firstCheck": "Decide whether you are updating existing breaks or replacing the price structure. Oracle's error-specific article describes supplying the full price matrix and enabling sublist replacement, but its general sublist guidance cautions against that option for item pricing. Do not present replacement as an automatic fix.",
+    "explanation": "The import adds quantity pricing that is not in the item's existing matrix headers, and only existing headers can be updated unless the whole matrix is replaced.",
+    "firstCheck": "Compare the imported quantities with the item's existing pricing headers before changing any replacement settings.",
     "procedureIds": [
       "P10"
     ],
@@ -1142,8 +1142,8 @@
       "Invalid cogsaccount reference key xxx"
     ],
     "matchNotes": "Match fields: `assetaccount`, `cogsaccount`.",
-    "explanation": "The accounting reference does not match what the field expects.",
-    "firstCheck": "Use a verified account internal ID with the matching reference type, or match the account's displayed name, including hierarchy and account number when those are used. A mapping default is suitable only when every affected item should use the same account.",
+    "explanation": "The asset or COGS account on the row cannot be matched, usually an inactive account, a subsidiary restriction, or a reference type mismatch.",
+    "firstCheck": "Open the intended account and compare the CSV value with the mapping's Name or Internal ID choice.",
     "procedureIds": [
       "P01"
     ],
@@ -1182,8 +1182,8 @@
       "Invalid price level reference key XXX"
     ],
     "matchNotes": "Match: `price level`, reference-key wording.",
-    "explanation": "Check the price level under the accounting lists, including inactive entries.",
-    "firstCheck": "Compare its name with the CSV value. If the import should use one price level throughout, select that level as a mapping default. Do not use a default when the file deliberately includes different levels.",
+    "explanation": "The price level on the row is not an active, exactly spelled entry in the account's Price Level list.",
+    "firstCheck": "Check the Price Level list under Accounting Lists for the value, including spelling and active state.",
     "procedureIds": [
       "P01"
     ],
@@ -1202,8 +1202,8 @@
       "Invalid parent reference key xxx"
     ],
     "matchNotes": "Match: `parent`, reference-key wording, when setting an item's parent.",
-    "explanation": "The proposed parent may be a different kind of item.",
-    "firstCheck": "Compare both item types with the record type selected for import. Correct an incorrect import selection first. If the item hierarchy itself needs redesign, review that separately. Oracle discusses replacing an incorrectly typed parent; deletion is not a routine troubleshooting step.",
+    "explanation": "The parent item is a different item type than the items being imported, and a parent must share its children's type.",
+    "firstCheck": "Compare the parent's item type with the import's record type before creating or selecting a different parent.",
     "procedureIds": [
       "P01"
     ],
@@ -1334,8 +1334,8 @@
       "You have entered an Invalid Field Value for [CostEstimate]"
     ],
     "matchNotes": "Match: `CostEstimate`, invalid-value wording.",
-    "explanation": "The amount may include a currency symbol the mapping does not expect.",
-    "firstCheck": "Compare the raw CSV value with the field's currency-format setting. For Oracle's documented case, supply the numeric amount without the symbol and select the corresponding no-symbol format.",
+    "explanation": "The item defined cost was rejected even though the number is right, usually because the value carries a currency symbol the field does not accept.",
+    "firstCheck": "Remove currency symbols from the cost column and set the field's currency format to none on the mapping page.",
     "procedureIds": [
       "P04"
     ],
@@ -1373,8 +1373,8 @@
       "configure the inventory detail"
     ],
     "matchNotes": "`configure the inventory detail`",
-    "explanation": "This inventory worksheet is encountering a bin-detail requirement.",
-    "firstCheck": "Confirm that this is the worksheet import, rather than an inventory adjustment, before using worksheet-specific guidance.",
+    "explanation": "The worksheet rows need inventory detail because an accounting preference requires bins on this transaction type.",
+    "firstCheck": "Confirm the import is an inventory worksheet and review the bin requirement with your admin before changing preferences.",
     "procedureIds": [
       "P07"
     ],
@@ -1392,8 +1392,8 @@
       "Invalid account reference key 'xxx' for subsidiary 'xxx'"
     ],
     "matchNotes": "`account`, `subsidiary`",
-    "explanation": "The account may not be valid for this subsidiary.",
-    "firstCheck": "Check eligibility and reference format.",
+    "explanation": "The account on a journal line is not available to the subsidiary the journal posts to, or the account reference does not match the mapping.",
+    "firstCheck": "Open the account and check its subsidiaries, then compare the CSV value with the mapping's reference type.",
     "procedureIds": [
       "P01"
     ],
@@ -1411,8 +1411,8 @@
       "Invalid department reference key xxx"
     ],
     "matchNotes": "`department`",
-    "explanation": "The department reference cannot be matched.",
-    "firstCheck": "Check hierarchy, active state, and reference type.",
+    "explanation": "The department on a journal line cannot be matched: a spelling difference, a missing parent path, an inactive record, or the wrong reference type.",
+    "firstCheck": "Compare the value with the department's full path, such as Finance : Accounting, and check its active state.",
     "procedureIds": [
       "P01"
     ],
@@ -1430,8 +1430,8 @@
       "Invalid entity reference key xx for currency xx"
     ],
     "matchNotes": "`entity`, `currency`",
-    "explanation": "The entity may not support the journal currency.",
-    "firstCheck": "Check its currencies and active state.",
+    "explanation": "The entity on a journal line cannot be used, usually because it is inactive, its displayed name differs from the CSV, or its currency does not match the journal.",
+    "firstCheck": "Check the entity's active state, displayed name, and currencies against the journal's transaction currency.",
     "procedureIds": [
       "P01"
     ],
@@ -1449,8 +1449,8 @@
       "No empty or blank headers are allowed in the CSV file"
     ],
     "matchNotes": "`blank headers`",
-    "explanation": "A column lacks a heading.",
-    "firstCheck": "Inspect the first CSV row.",
+    "explanation": "The file has a column without a heading in row one, often an empty column the spreadsheet saved to the right of the data.",
+    "firstCheck": "Give every column a heading and delete unnamed columns before saving the CSV.",
     "procedureIds": [
       "P02"
     ],
@@ -1468,8 +1468,8 @@
       "Please enter the value(s) for Account"
     ],
     "matchNotes": "`Account`, required-value wording",
-    "explanation": "A totals row may be treated as another journal line.",
-    "firstCheck": "Check the final records.",
+    "explanation": "An extra row, usually a debit and credit totals row, is being read as another journal line, and a line cannot exist without an account.",
+    "firstCheck": "Remove totals rows and any other rows that are not journal lines from the saved CSV.",
     "procedureIds": [
       "P02"
     ],
@@ -1487,8 +1487,8 @@
       "Amortization end date cannot be before amortization start date"
     ],
     "matchNotes": "`amortization`, date-order wording",
-    "explanation": "The amortization dates are reversed or misread.",
-    "firstCheck": "Check their actual values.",
+    "explanation": "The amortization start and end dates are reversed, or the fields are mapped in an account where revenue recognition does not expose them.",
+    "firstCheck": "Compare the two date columns and confirm the start date comes before the end date.",
     "procedureIds": [
       "P05"
     ],
@@ -1506,8 +1506,8 @@
       "Rounding Error xx.xx"
     ],
     "matchNotes": "`Rounding Error`",
-    "explanation": "Inspect full decimal values and unnecessary opposite-side zero entries.",
-    "firstCheck": "Reconcile the journal before retrying.",
+    "explanation": "The journal's debits and credits stop matching after rounding, usually because line amounts carry more precision than the currency keeps.",
+    "firstCheck": "Check line amounts for extra decimal places and correct them at the source rather than adding a balancing line.",
     "procedureIds": [
       "P04"
     ],
@@ -1600,8 +1600,8 @@
       "Invalid item reference key"
     ],
     "matchNotes": "`Invalid item reference key`",
-    "explanation": "The kit cannot match a member item.",
-    "firstCheck": "Check that the member exists and is active, then align the member-item mapping with the name or internal ID in the file. The relevant field is the member reference, not the kit's own identity.",
+    "explanation": "A kit member cannot be matched to an item, so the kit line fails, usually a name or reference type mismatch on the member item.",
+    "firstCheck": "Compare each member value with the mapping's reference type and the item's exact name.",
     "procedureIds": [
       "P01"
     ],
@@ -1619,8 +1619,8 @@
       "Adding new line to sublist translations is not allowed"
     ],
     "matchNotes": "`translations`, adding-line wording",
-    "explanation": "Translation support may not be configured.",
-    "firstCheck": "Check that the language feature is enabled and at least one language is configured.",
+    "explanation": "Translations are being imported while the Multi-Language feature is not fully set up, so the translation sublist will not accept new lines.",
+    "firstCheck": "Check that Multi-Language is enabled and at least one language is listed under Enable Features.",
     "procedureIds": [
       "P03"
     ],
@@ -1638,8 +1638,8 @@
       "Unable to find a matching line for sublist translations"
     ],
     "matchNotes": "`translations`, matching-line wording",
-    "explanation": "One default language may be applied to rows containing several languages.",
-    "firstCheck": "Map the language from the file instead.",
+    "explanation": "The Language field uses one fixed mapping value while the file contains translations in more than one language, so most rows find no matching line.",
+    "firstCheck": "Map the language from a CSV column or split the file so each import carries one language.",
     "procedureIds": [
       "P09"
     ],
@@ -1657,8 +1657,8 @@
       "One of the columns [id, name] must be mapped in the CUSTOMLIST import"
     ],
     "matchNotes": "`CUSTOMLIST`, `[id, name]`",
-    "explanation": "The list record has no mapped identity.",
-    "firstCheck": "Choose a name or supported identifier and map it to the intended field.",
+    "explanation": "The custom list rows carry no identity: neither a name nor an internal or external ID is mapped, so NetSuite cannot tell which entry is which.",
+    "firstCheck": "Map a name or ID column and pick the matching reference type on the Field Mapping page.",
     "procedureIds": [
       "P01"
     ],
@@ -1676,8 +1676,8 @@
       "That Record Does Not Exist"
     ],
     "matchNotes": "`That Record Does Not Exist`",
-    "explanation": "The prospect and contact data may be mapped to the wrong records.",
-    "firstCheck": "Check their identifiers and phone mappings separately. Prospect fields belong to the prospect section; the contact's ID and phone belong to the contact section.",
+    "explanation": "On the combined prospects-and-contacts import this error usually means the prospect's and the contact's fields, often phone numbers, are mapped into each other.",
+    "firstCheck": "Keep the prospect's identifiers and phone separate from the contact's in both the file and the mapping.",
     "procedureIds": [
       "P09"
     ],
@@ -1695,8 +1695,8 @@
       "Invalid entity reference key"
     ],
     "matchNotes": "`Invalid entity reference key`",
-    "explanation": "The purchase order cannot match the vendor.",
-    "firstCheck": "Check the vendor as shown on the purchase-order form, its active state, and the reference type. If using an ID, make sure it belongs to the vendor and matches the selected ID type.",
+    "explanation": "The vendor on the purchase order cannot be matched, usually an inactive vendor, a name that differs from the record, or the wrong reference type.",
+    "firstCheck": "Open the intended vendor and compare the CSV value with the mapping's Name or Internal ID choice.",
     "procedureIds": [
       "P01"
     ],
@@ -1714,8 +1714,8 @@
       "Invalid Lead Source Reference Key"
     ],
     "matchNotes": "`Lead Source`",
-    "explanation": "NetSuite cannot match the lead source.",
-    "firstCheck": "Check the configured list and include the campaign identifier when it forms part of the displayed value. The list's location depends on whether Marketing Automation is enabled.",
+    "explanation": "The lead source on the row is not in the account's Lead Sources list, or its name does not match the list's naming, which can include a campaign ID.",
+    "firstCheck": "Compare the value with the Lead Sources list and include the campaign ID when the list shows one.",
     "procedureIds": [
       "P01"
     ],
@@ -1733,8 +1733,8 @@
       "You have entered an Invalid Field Value incoming for the following field: email"
     ],
     "matchNotes": "`incoming`, `email`",
-    "explanation": "An email value is missing or invalid in this import.",
-    "firstCheck": "Inspect the mapped email column and the rows being processed.",
+    "explanation": "A row's email value is blank or not shaped like an email address, and the import stops at the mapping step.",
+    "firstCheck": "Check every row for a complete, correctly formatted address in the email column.",
     "procedureIds": [
       "P02",
       "P03"
@@ -1753,8 +1753,8 @@
       "This entity already exists"
     ],
     "matchNotes": "`This entity already exists`; documented within the relationship email-error article.",
-    "explanation": "Another entity may already own that external ID.",
-    "firstCheck": "Search entities by the value and establish which record the import is meant to create or update.",
+    "explanation": "The external ID on the row already belongs to another entity, and two entities cannot share one.",
+    "firstCheck": "Search entities for the failing external ID and decide whether the row should update that record instead.",
     "procedureIds": [
       "P01"
     ],
@@ -1772,8 +1772,8 @@
       "You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #"
     ],
     "matchNotes": "`unique identifier`",
-    "explanation": "The new revaluation needs an external ID or reference number.",
-    "firstCheck": "Map the intended identifier.",
+    "explanation": "New revaluation rows have no unique identifier mapped, so NetSuite cannot tell the records apart.",
+    "firstCheck": "Map an external ID or reference number for every new revaluation row.",
     "procedureIds": [
       "P01"
     ],
@@ -1789,8 +1789,8 @@
     "context": "Inventory cost revaluations",
     "messageFragments": [],
     "matchNotes": "Required-field wording",
-    "explanation": "A required value is absent on a processed row.",
-    "firstCheck": "Check real records and unintended trailing content.",
+    "explanation": "A required value is missing on a revaluation row, or an empty formatted row below the data is being imported as a record.",
+    "firstCheck": "Check the mapped required columns for blanks and delete leftover empty rows after the data.",
     "procedureIds": [
       "P02",
       "P03"
@@ -1809,8 +1809,8 @@
       "An Inventory Cost Revaluation Already Exists for this Item, Location, and Date"
     ],
     "matchNotes": "`already exists`, item/location/date context",
-    "explanation": "A revaluation already occupies this item, location, and date combination.",
-    "firstCheck": "Find it before deciding whether an update is appropriate.",
+    "explanation": "A revaluation already exists for this item, location, and date, and each combination can only be used once.",
+    "firstCheck": "Find the existing revaluation and decide whether to update it or change the date.",
     "procedureIds": [
       "P01"
     ],
@@ -1828,8 +1828,8 @@
       "at least one line"
     ],
     "matchNotes": "`at least one line`",
-    "explanation": "The routing has no linked operations.",
-    "firstCheck": "Check the detail file and shared routing key.",
+    "explanation": "A routing saved without any operation lines, which usually means the key linking the routing file to its operations file did not match.",
+    "firstCheck": "Check that every routing has operations and that the linking key matches exactly in both files.",
     "procedureIds": [
       "P09"
     ],
@@ -1847,8 +1847,8 @@
       "Invalid location reference key"
     ],
     "matchNotes": "`location`",
-    "explanation": "Check the location, its subsidiary, and multi-select syntax.",
-    "firstCheck": "This routing guide specifically warns about spaces around the separator.",
+    "explanation": "A routing location cannot be matched: a typo, a location outside the routing's subsidiary, or spaces around the multi-select delimiter.",
+    "firstCheck": "Check the location spelling and subsidiary, and remove spaces around the delimiter for multiple locations.",
     "procedureIds": [
       "P08"
     ],
@@ -1866,8 +1866,8 @@
       "This sequence number is already in use on another step"
     ],
     "matchNotes": "`sequence number`",
-    "explanation": "Two steps share a sequence within one routing.",
-    "firstCheck": "Check both the sequence values and which routing owns each row.",
+    "explanation": "Two operations in the same routing use the same sequence number. In a multiple-file import a wrong link can pull another routing's numbers in.",
+    "firstCheck": "Compare sequence numbers within each routing and check the identifiers linking operations to routings.",
     "procedureIds": [
       "P09"
     ],
@@ -1885,8 +1885,8 @@
       "Invalid manufacturingworkcenter reference key Value"
     ],
     "matchNotes": "`manufacturingworkcenter`",
-    "explanation": "The selected group may not be designated as a manufacturing work center.",
-    "firstCheck": "Check the group record, not just its name.",
+    "explanation": "The value mapped to Manufacturing Work Center is not a group NetSuite recognizes as one; the group record may be missing its work center flag.",
+    "firstCheck": "Open the employee group and confirm the Manufacturing Work Center box is checked.",
     "procedureIds": [
       "P01"
     ],
@@ -1904,8 +1904,8 @@
       "You must enter at least one line item for this transaction"
     ],
     "matchNotes": "`line item`",
-    "explanation": "No item line reached the transaction.",
-    "firstCheck": "Map a CSV field into the item sublist.",
+    "explanation": "The sales order saved without any item line reaching its Items sublist, often a mapping or line-linking problem in a multiple-file import.",
+    "firstCheck": "Check that every order has an item row and that the line data links to its order header.",
     "procedureIds": [
       "P09"
     ],
@@ -1923,8 +1923,8 @@
       "The record has been deleted since you retrieved it"
     ],
     "matchNotes": "`deleted since`",
-    "explanation": "The update's line handling needs review.",
-    "firstCheck": "Check existing lines before replacing a sublist.",
+    "explanation": "The update references order lines that no longer match what was retrieved, which Oracle resolves with the overwrite-sublists update setup.",
+    "firstCheck": "Review the update setup: Update data handling, Overwrite Sublists checked, and no Line ID mapped.",
     "procedureIds": [
       "P06"
     ],
@@ -1966,8 +1966,8 @@
       "paymentmethod"
     ],
     "matchNotes": "`terms`, `paymentmethod`",
-    "explanation": "Conflicting billing instructions were mapped.",
-    "firstCheck": "Choose the intended billing path.",
+    "explanation": "The order supplies both payment terms and a payment method, and the two describe different billing outcomes, so NetSuite rejects the combination.",
+    "firstCheck": "Decide whether the order should bill on terms or take a payment method, and map only that one.",
     "procedureIds": [
       "P03"
     ],
@@ -1986,8 +1986,8 @@
       "item"
     ],
     "matchNotes": "`item`, reference-key wording",
-    "explanation": "The sales order cannot match its item.",
-    "firstCheck": "Check the selection and reference type.",
+    "explanation": "A sales order item cannot be matched, often because spreadsheet formatting changed the item reference or the value does not agree with the mapping's reference type.",
+    "firstCheck": "Check the item selection and the mapping's reference type before retyping any item values.",
     "procedureIds": [
       "P01",
       "P04"
@@ -2022,8 +2022,8 @@
       "Please choose an item to add"
     ],
     "matchNotes": "`choose an item`",
-    "explanation": "The update may use incorrect line identifiers.",
-    "firstCheck": "Export the actual line IDs.",
+    "explanation": "The update cannot tell which existing item line the row should change, so NetSuite asks for an item to be chosen.",
+    "firstCheck": "Check how the rows identify existing lines before adding any item values.",
     "procedureIds": [
       "P06"
     ],
@@ -2039,8 +2039,8 @@
     "context": "Sales orders",
     "messageFragments": [],
     "matchNotes": "Required-field wording on update",
-    "explanation": "The transaction's stored form may require the field.",
-    "firstCheck": "Check that form's rules.",
+    "explanation": "Updating an existing sales order tripped another required field, one the form demands even though the import did not intend to change it.",
+    "firstCheck": "Read the field name in the full error and check what the order's form requires.",
     "procedureIds": [
       "P03"
     ],
@@ -2056,8 +2056,8 @@
     "context": "File processing and errors after saving",
     "messageFragments": [],
     "matchNotes": "Invalid-character or encoding wording",
-    "explanation": "The file's encoding may differ from the import setting.",
-    "firstCheck": "Check both.",
+    "explanation": "The file contains characters NetSuite cannot read, usually a copy-paste artifact or a save in the wrong encoding.",
+    "firstCheck": "Re-save the file in the encoding selected in the Import Assistant and inspect the failing row in a text editor.",
     "procedureIds": [
       "P02"
     ],
@@ -2073,8 +2073,8 @@
     "context": "File processing and errors after saving",
     "messageFragments": [],
     "matchNotes": "Symptom: exponent notation",
-    "explanation": "Spreadsheet handling may have changed a number.",
-    "firstCheck": "Inspect its saved text and original value.",
+    "explanation": "A long number was saved in exponent notation, such as 1.23E+15, so the identifier no longer matches anything.",
+    "firstCheck": "Format the column as text and compare the saved value with the original before importing again.",
     "procedureIds": [
       "P04"
     ],
@@ -2092,8 +2092,8 @@
       "Invalid country code"
     ],
     "matchNotes": "`country`, reference-key wording",
-    "explanation": "A country code may have been supplied where a localized name is expected.",
-    "firstCheck": "A country code may have been supplied where a localized name is expected.",
+    "explanation": "The file uses country codes, and the Import Assistant only accepts country names as NetSuite displays them.",
+    "firstCheck": "Replace codes such as US with the full country names NetSuite displays.",
     "procedureIds": [
       "P05"
     ],
@@ -2111,8 +2111,8 @@
       "Invalid subsidiary reference key xxx"
     ],
     "matchNotes": "`subsidiary`, `entity`",
-    "explanation": "The entity's subsidiary reference may be formatted incorrectly.",
-    "firstCheck": "Check the full hierarchy when using names.",
+    "explanation": "The subsidiary reference does not match, often because a child subsidiary needs its full path, such as Parent : Europe : Spain.",
+    "firstCheck": "Compare the value with the subsidiary's full displayed hierarchy.",
     "procedureIds": [
       "P01"
     ],
@@ -2130,8 +2130,8 @@
       "Invalid department reference key xxx"
     ],
     "matchNotes": "`department`, reference-key wording",
-    "explanation": "Check the department's hierarchy, active state, and name-versus-ID setting.",
-    "firstCheck": "Check the department's hierarchy, active state, and name-versus-ID setting.",
+    "explanation": "The department cannot be matched: spelling, a missing parent path, an inactive record, or a reference type mismatch.",
+    "firstCheck": "Compare the value with the department's full path and check its active state and the mapping's reference type.",
     "procedureIds": [
       "P01"
     ],
@@ -2147,8 +2147,8 @@
     "context": "File processing and errors after saving",
     "messageFragments": [],
     "matchNotes": "Script usage-limit wording",
-    "explanation": "A script exhausted its allowed execution usage.",
-    "firstCheck": "Inspect the script failure and saved-record state.",
+    "explanation": "A script ran during the import and used up its allowed processing units, so NetSuite stopped it. The import data is rarely the cause.",
+    "firstCheck": "Identify the script in the full error and have its owner review what it does during CSV imports.",
     "procedureIds": [
       "P11"
     ],
@@ -2164,8 +2164,8 @@
     "context": "File processing and errors after saving",
     "messageFragments": [],
     "matchNotes": "Post-processing failure",
-    "explanation": "Some work may already have saved.",
-    "firstCheck": "Verify the affected records before choosing what to rerun.",
+    "explanation": "The failure happened after the data reached NetSuite, in application logic or a script, so records may exist even though rows report errors.",
+    "firstCheck": "Check the import email notification for the error list and confirm what saved before retrying anything.",
     "procedureIds": [
       "P11"
     ],
@@ -2183,8 +2183,8 @@
       "You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #"
     ],
     "matchNotes": "`unique identifier`",
-    "explanation": "The import needs a supported transaction identifier.",
-    "firstCheck": "Choose one appropriate to the record and operation.",
+    "explanation": "New transactions need one mapped identifier NetSuite can tell them apart by, and none of external ID, internal ID, or a transaction number is mapped.",
+    "firstCheck": "Map one unique identifier for every row and pick its matching reference type.",
     "procedureIds": [
       "P01"
     ],
@@ -2202,8 +2202,8 @@
       "Ambiguity error"
     ],
     "matchNotes": "`Ambiguity`",
-    "explanation": "Repeated items make line matching unclear.",
-    "firstCheck": "Identify existing lines explicitly.",
+    "explanation": "The rows add or update several lines that use the same item on one transaction, and without line IDs NetSuite cannot tell them apart.",
+    "firstCheck": "Include a Line ID column: blank for new lines, or values above the highest existing line ID.",
     "procedureIds": [
       "P06"
     ],
@@ -2221,8 +2221,8 @@
       "This record already exists"
     ],
     "matchNotes": "`record already exists`",
-    "explanation": "The identifier may belong to an earlier transaction.",
-    "firstCheck": "Find it before creating another.",
+    "explanation": "A transaction with this identifier already exists, so an Add import will not create another one.",
+    "firstCheck": "Find the existing transaction and decide whether the row should update it instead.",
     "procedureIds": [
       "P01"
     ],
@@ -2242,8 +2242,8 @@
       "trandate"
     ],
     "matchNotes": "`trandate`",
-    "explanation": "The transaction date does not match the expected format.",
-    "firstCheck": "Check the raw value.",
+    "explanation": "The transaction date is not readable in the importing user's date format, or it falls outside the accounting period being posted to.",
+    "firstCheck": "Compare the saved date text with the importing user's format and the intended period.",
     "procedureIds": [
       "P05"
     ],
@@ -2261,8 +2261,8 @@
       "Total contribution for sales reps cannot exceed 100%"
     ],
     "matchNotes": "`contribution`, `100%`",
-    "explanation": "Imported and existing sales-team percentages may exceed the allowed total together.",
-    "firstCheck": "Review the complete team.",
+    "explanation": "The sales team already on the record plus the imported rows adds up past 100 percent, because without overwriting NetSuite merges the two teams.",
+    "firstCheck": "Add the imported contributions to the existing team before deciding whether to overwrite or adjust.",
     "procedureIds": [
       "P06"
     ],
@@ -2280,8 +2280,8 @@
       "You must enter a line item for this transaction"
     ],
     "matchNotes": "`line item`",
-    "explanation": "The bill has no linked detail.",
-    "firstCheck": "Check expense-file linkage and sublist mappings.",
+    "explanation": "A vendor bill saved without any line. Bills with expenses import as two linked files, and the expense file's amount column must be named Total.",
+    "firstCheck": "Check the two-file setup: a shared external ID key, expense lines linked to the bill, and a Total column.",
     "procedureIds": [
       "P09"
     ],
@@ -2299,8 +2299,8 @@
       "Multiple rows in your primary CSV file have the same value for the key column. Please edit this file to eliminate rows with duplicate key column values for field 'ExternalId'"
     ],
     "matchNotes": "`primary`, `duplicate`",
-    "explanation": "The primary file repeats a bill key.",
-    "firstCheck": "Keep one header row per bill in a multi-file import.",
+    "explanation": "The primary bill file repeats the same external ID on more than one row, and the header file can only hold each bill once.",
+    "firstCheck": "Keep one row per bill in the primary file and move detail rows to the linked file.",
     "procedureIds": [
       "P09"
     ],
@@ -2318,8 +2318,8 @@
       "Your transaction does not balance. Please Adjust Expenses/Items.: userTotal:xx: totalField:xx"
     ],
     "matchNotes": "`userTotal`, `totalField`",
-    "explanation": "The supplied header amount disagrees with the lines.",
-    "firstCheck": "Review whether that header mapping belongs here.",
+    "explanation": "The bill's header amount is mapped, and it disagrees with the line totals NetSuite computes itself.",
+    "firstCheck": "Remove the header Amount mapping from the Vendor Bill folder and let the lines set the total.",
     "procedureIds": [
       "P04"
     ],
@@ -2337,8 +2337,8 @@
       "Invalid location reference key xx for subsidiary xx"
     ],
     "matchNotes": "`location`, `subsidiary`",
-    "explanation": "The selected location may not belong to the bill's subsidiary.",
-    "firstCheck": "Compare both records.",
+    "explanation": "In a OneWorld account the location on the bill belongs to a different subsidiary than the transaction, so the reference fails.",
+    "firstCheck": "Compare the vendor's subsidiary with the location's and choose a location that is valid for it.",
     "procedureIds": [
       "P01"
     ],
@@ -2356,8 +2356,8 @@
       "You have entered an invalid field value for the following field: amount"
     ],
     "matchNotes": "`amount`, invalid-value wording",
-    "explanation": "The amount may contain unsupported symbols or separators.",
-    "firstCheck": "Check the raw numeric text.",
+    "explanation": "The amount is not plain numeric text: a thousands separator or a currency symbol is riding along in the column.",
+    "firstCheck": "Strip separators and symbols so the Amount column holds bare numbers only.",
     "procedureIds": [
       "P04"
     ],
@@ -2395,8 +2395,8 @@
       "Invalid account reference key Accounts Payable xx for entity xx"
     ],
     "matchNotes": "`Accounts Payable`, `entity`",
-    "explanation": "The AP reference may be unnecessary when the bill is identified directly.",
-    "firstCheck": "Review the mapping.",
+    "explanation": "The Accounts Payable account is mapped even though the bill's internal ID already tells NetSuite which AP account applies, and the two collide.",
+    "firstCheck": "Remove the AP account from the mapping when bills are matched by internal ID.",
     "procedureIds": [
       "P13"
     ],
@@ -2414,8 +2414,8 @@
       "Unable to find a matching line for sublist apply with key: [doc,line]"
     ],
     "matchNotes": "`apply`, `[doc,line]`",
-    "explanation": "The referenced bill or invoice may be unavailable for application.",
-    "firstCheck": "Check its identity and open balance.",
+    "explanation": "The payment references a bill or invoice that is not open, or an ID that does not match an open document. Payment imports accept internal and external IDs only.",
+    "firstCheck": "Check that the referenced document is open and that the ID matches it exactly.",
     "procedureIds": [
       "P13"
     ],
@@ -2433,8 +2433,8 @@
       "One or more bills or invoices has had a payment made on it since you retrieved the form"
     ],
     "matchNotes": "`payment made`",
-    "explanation": "The amount due may differ after discounts or other activity.",
-    "firstCheck": "Refresh it before retrying.",
+    "explanation": "The bill carries a term discount, so the amount due is the net amount, and the payment in the file does not match it.",
+    "firstCheck": "Compare the payment with the net amount after the discount, or clear the terms if no discount applies.",
     "procedureIds": [
       "P13"
     ],
@@ -2452,8 +2452,8 @@
       "Adding new line to sublist apply is not allowed"
     ],
     "matchNotes": "`apply`, adding-line wording",
-    "explanation": "A bill-and-credit application needs review.",
-    "firstCheck": "Check import mode, unused credit, open bill, and matching AP accounts.",
+    "explanation": "The import pays bills and applies existing credits in one pass, and that setup only works with Add/Update handling, open documents, and one shared AP account.",
+    "firstCheck": "Set Data Handling to Add/Update and check the bill, the credit, and their AP accounts.",
     "procedureIds": [
       "P13"
     ],
@@ -2471,8 +2471,8 @@
       "Unparseable Internal Id, did you mean to lookup this field by Name or External ID? for field xx"
     ],
     "matchNotes": "`Unparseable Internal Id`",
-    "explanation": "The bill reference is not a usable internal ID.",
-    "firstCheck": "Verify the bill and mapping.",
+    "explanation": "The value in the internal ID field is not an internal ID; it is usually a name or an external ID that NetSuite cannot parse as a number.",
+    "firstCheck": "Replace the value with the document's actual internal ID or switch the mapping's reference type.",
     "procedureIds": [
       "P01"
     ],
@@ -2490,8 +2490,8 @@
       "Invalid category reference key Information for website <NULL>"
     ],
     "matchNotes": "`category`, `website`, `<NULL>`",
-    "explanation": "NetSuite needs a website before it can identify the site's category.",
-    "firstCheck": "Map the website or select a default when every row belongs to that site. Then check the category within that site.",
+    "explanation": "A site category needs its website, and the Site field is not receiving one, so the category reference resolves to nothing.",
+    "firstCheck": "Include the site name as it was created in NetSuite or set it as a mapping default.",
     "procedureIds": [
       "P01"
     ],

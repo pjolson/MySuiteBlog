@@ -26,13 +26,13 @@ Check bill headers, linked detail files, and whether the bill is sourced from a 
 
 **What it means**
 
-The bill has no linked detail.
+A vendor bill saved without any line. Bills with expenses import as two linked files, and the expense file's amount column must be named Total.
 
 Import context: Vendor bills.
 
 **Check this first**
 
-Check expense-file linkage and sublist mappings.
+Check the two-file setup: a shared external ID key, expense lines linked to the bill, and a Total column.
 
 ::: details Show the steps
 
@@ -59,13 +59,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The primary file repeats a bill key.
+The primary bill file repeats the same external ID on more than one row, and the header file can only hold each bill once.
 
 Import context: Vendor bills.
 
 **Check this first**
 
-Keep one header row per bill in a multi-file import.
+Keep one row per bill in the primary file and move detail rows to the linked file.
 
 ::: details Show the steps
 

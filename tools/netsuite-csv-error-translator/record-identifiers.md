@@ -26,13 +26,13 @@ Check which record the identifier belongs to and whether the import expects a na
 
 **What it means**
 
-The customer cannot be identified.
+The update is trying to find customers by company name or another text field. Customer updates match on internal ID, external ID, or customer ID only, so the lookup comes back empty.
 
 Import context: Customers.
 
 **Check this first**
 
-Use its internal ID, external ID, or customer ID.
+Check which field the mapping uses as the record key and switch it to one of the three identifiers.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Several customers fit.
+More than one customer fits the row, typically a parent with several child customers while Child of is mapped and no unique identifier is.
 
 Import context: Customers.
 
 **Check this first**
 
-Add a unique customer identifier, especially for parent and child customers.
+Map internal ID, external ID, or customer ID for the affected rows so each matches exactly one record.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The list record has no mapped identity.
+The custom list rows carry no identity: neither a name nor an internal or external ID is mapped, so NetSuite cannot tell which entry is which.
 
 Import context: Custom lists.
 
 **Check this first**
 
-Choose a name or supported identifier and map it to the intended field.
+Map a name or ID column and pick the matching reference type on the Field Mapping page.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The new revaluation needs an external ID or reference number.
+New revaluation rows have no unique identifier mapped, so NetSuite cannot tell the records apart.
 
 Import context: Inventory cost revaluations.
 
 **Check this first**
 
-Map the intended identifier.
+Map an external ID or reference number for every new revaluation row.
 
 ::: details Show the steps
 
@@ -154,13 +154,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The import needs a supported transaction identifier.
+New transactions need one mapped identifier NetSuite can tell them apart by, and none of external ID, internal ID, or a transaction number is mapped.
 
 Import context: Transactions.
 
 **Check this first**
 
-Choose one appropriate to the record and operation.
+Map one unique identifier for every row and pick its matching reference type.
 
 ::: details Show the steps
 

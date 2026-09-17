@@ -26,13 +26,13 @@ Check the starting price, price level, and existing matrix before deciding how t
 
 **What it means**
 
-The higher quantity break is present, but the starting price is missing.
+Quantity pricing is being imported without a price for quantity zero, which NetSuite requires before the other quantity breaks.
 
 Import context: Item records.
 
 **Check this first**
 
-Include pricing for quantity zero as well as the later quantity breaks. Check the existing item before changing the price table.
+Include the quantity zero price in the same import or load it before the other prices.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The pricing update refers to a header that is not already in the matrix.
+The import adds quantity pricing that is not in the item's existing matrix headers, and only existing headers can be updated unless the whole matrix is replaced.
 
 Import context: Item records.
 
 **Check this first**
 
-Decide whether you are updating existing breaks or replacing the price structure. Oracle's error-specific article describes supplying the full price matrix and enabling sublist replacement, but its general sublist guidance cautions against that option for item pricing. Do not present replacement as an automatic fix.
+Compare the imported quantities with the item's existing pricing headers before changing any replacement settings.
 
 ::: details Show the steps
 
@@ -98,13 +98,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Check the price level under the accounting lists, including inactive entries.
+The price level on the row is not an active, exactly spelled entry in the account's Price Level list.
 
 Import context: Item records.
 
 **Check this first**
 
-Compare its name with the CSV value. If the import should use one price level throughout, select that level as a mapping default. Do not use a default when the file deliberately includes different levels.
+Check the Price Level list under Accounting Lists for the value, including spelling and active state.
 
 ::: details Show the steps
 

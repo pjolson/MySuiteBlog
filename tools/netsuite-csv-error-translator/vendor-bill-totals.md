@@ -26,13 +26,13 @@ Compare the supplied header amount with the detail lines and review whether the 
 
 **What it means**
 
-The supplied header amount disagrees with the lines.
+The bill's header amount is mapped, and it disagrees with the line totals NetSuite computes itself.
 
 Import context: Vendor bills.
 
 **Check this first**
 
-Review whether that header mapping belongs here.
+Remove the header Amount mapping from the Vendor Bill folder and let the lines set the total.
 
 ::: details Show the steps
 

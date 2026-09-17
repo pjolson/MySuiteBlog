@@ -26,13 +26,13 @@ Distinguish the plan’s identity from its item reference and check the complete
 
 **What it means**
 
-The import is not identifying the intended record.
+The import cannot find the demand plan it should update. Plans are identified by internal ID, and that ID is not reaching the right field.
 
 Import context: Item demand plans.
 
 **Check this first**
 
-Distinguish the plan's identity from its item reference before changing the mapping.
+Map the plan internal ID to the Demand: Item field and confirm which plan each row targets.
 
 ::: details Show the steps
 
@@ -62,13 +62,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The plan dates may conflict with its year or end date.
+The plan start date falls in a future year while the Year and end date fields are not mapped, so NetSuite cannot build the planning period.
 
 Import context: Item demand plans.
 
 **Check this first**
 
-Supply a consistent period instead of changing the start date alone.
+Map Year and both plan start and end dates for any plan that begins after the current year.
 
 ::: details Show the steps
 

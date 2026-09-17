@@ -107,13 +107,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The AP reference may be unnecessary when the bill is identified directly.
+The Accounts Payable account is mapped even though the bill's internal ID already tells NetSuite which AP account applies, and the two collide.
 
 Import context: Vendor payments.
 
 **Check this first**
 
-Review the mapping.
+Remove the AP account from the mapping when bills are matched by internal ID.
 
 ::: details Show the steps
 
@@ -139,13 +139,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The referenced bill or invoice may be unavailable for application.
+The payment references a bill or invoice that is not open, or an ID that does not match an open document. Payment imports accept internal and external IDs only.
 
 Import context: Vendor payments.
 
 **Check this first**
 
-Check its identity and open balance.
+Check that the referenced document is open and that the ID matches it exactly.
 
 ::: details Show the steps
 
@@ -171,13 +171,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The amount due may differ after discounts or other activity.
+The bill carries a term discount, so the amount due is the net amount, and the payment in the file does not match it.
 
 Import context: Vendor payments.
 
 **Check this first**
 
-Refresh it before retrying.
+Compare the payment with the net amount after the discount, or clear the terms if no discount applies.
 
 ::: details Show the steps
 
@@ -203,13 +203,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A bill-and-credit application needs review.
+The import pays bills and applies existing credits in one pass, and that setup only works with Add/Update handling, open documents, and one shared AP account.
 
 Import context: Vendor payments.
 
 **Check this first**
 
-Check import mode, unused credit, open bill, and matching AP accounts.
+Set Data Handling to Add/Update and check the bill, the credit, and their AP accounts.
 
 ::: details Show the steps
 
@@ -236,13 +236,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The bill reference is not a usable internal ID.
+The value in the internal ID field is not an internal ID; it is usually a name or an external ID that NetSuite cannot parse as a number.
 
 Import context: Vendor payments.
 
 **Check this first**
 
-Verify the bill and mapping.
+Replace the value with the document's actual internal ID or switch the mapping's reference type.
 
 ::: details Show the steps
 

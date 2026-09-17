@@ -26,13 +26,13 @@ Check the item reference in the right context: a transaction line, kit member, r
 
 **What it means**
 
-The item may be missing or paired with the wrong cost category.
+A cost line references an item NetSuite cannot accept here, usually a typo or an item paired with a cost category it does not belong to.
 
 Import context: Manufacturing cost templates.
 
 **Check this first**
 
-Check the item's purchasing information as well as its identity.
+Open the item record and compare its cost category on the Purchasing subtab with the failing line.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The invoice cannot match its item.
+An item on the invoice cannot be matched, usually an inactive item or a value that does not agree with the mapping reference type.
 
 Import context: Invoices and credits.
 
 **Check this first**
 
-Check the invoice form's item selection, active state, and name-versus-ID mapping.
+Open the intended item and compare the CSV value with the Name, Internal ID, or External ID choice in the mapping.
 
 ::: details Show the steps
 
@@ -91,13 +91,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-For this import, a related item's store display name can affect name matching.
+A related item is matched by its store display name in this import, and the CSV value does not agree with it.
 
 Import context: Related items and Item records.
 
 **Check this first**
 
-Check the displayed value on the related item and whether the mapping expects a name or internal ID. If the store display name is populated, Oracle identifies that name as the relevant name reference in this scenario. This explanation is specific to related items.
+Compare the related item Store Display Name with the saved CSV value before changing the reference.
 
 ::: details Show the steps
 
@@ -124,13 +124,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The kit cannot match a member item.
+A kit member cannot be matched to an item, so the kit line fails, usually a name or reference type mismatch on the member item.
 
 Import context: Kits and packages.
 
 **Check this first**
 
-Check that the member exists and is active, then align the member-item mapping with the name or internal ID in the file. The relevant field is the member reference, not the kit's own identity.
+Compare each member value with the mapping's reference type and the item's exact name.
 
 ::: details Show the steps
 
@@ -156,13 +156,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The sales order cannot match its item.
+A sales order item cannot be matched, often because spreadsheet formatting changed the item reference or the value does not agree with the mapping's reference type.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Check the selection and reference type.
+Check the item selection and the mapping's reference type before retyping any item values.
 
 ::: details Show the steps
 

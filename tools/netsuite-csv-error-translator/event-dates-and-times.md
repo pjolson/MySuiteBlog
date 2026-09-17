@@ -26,13 +26,13 @@ Check the event’s start and end values, date format, and whether it spans date
 
 **What it means**
 
-An event date does not match the importing user's format.
+At least one date on the event rows is not written in the date format of the person running the import, so NetSuite stops at the mapping step.
 
 Import context: Events.
 
 **Check this first**
 
-Check both date columns.
+Compare the Date and End Date values with the importing user format under Home > Set Preferences.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A date is missing, or an unintended row is being processed.
+A row is missing its Date or End Date. Formatted but empty spreadsheet rows below the data can also import as blank events.
 
 Import context: Events.
 
 **Check this first**
 
-Inspect the saved CSV.
+Check the date columns for blanks and delete leftover empty rows after the data.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A date and time cannot be read.
+NetSuite could not parse a date and time on the event rows, either from a format mismatch or from an End Date it had to invent for a row that lacked one.
 
 Import context: Events.
 
 **Check this first**
 
-Check the format and any absent end date.
+Compare the date and time cells with the importing user preference and fill any missing End Date values.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The time range is invalid for this event import.
+An event ends before it starts. An event also cannot span two days, so a later date with an earlier time of day fails the same way.
 
 Import context: Events.
 
 **Check this first**
 
-Check both dates and times, including overnight spans.
+Check each End Date against the Date and keep every event within a single day.
 
 ::: details Show the steps
 

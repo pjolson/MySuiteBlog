@@ -26,13 +26,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-Excel may have changed the value.
+The saved value no longer matches the source, a spreadsheet symptom: text such as a part number was silently converted to a date or a number.
 
 Import context: General imports.
 
 **Check this first**
 
-Compare the original.
+Compare the saved CSV value with the original export before changing anything in NetSuite.
 
 ::: details Show the steps
 
@@ -67,13 +67,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The amount may include a currency symbol the mapping does not expect.
+The item defined cost was rejected even though the number is right, usually because the value carries a currency symbol the field does not accept.
 
 Import context: Item records.
 
 **Check this first**
 
-Compare the raw CSV value with the field's currency-format setting. For Oracle's documented case, supply the numeric amount without the symbol and select the corresponding no-symbol format.
+Remove currency symbols from the cost column and set the field's currency format to none on the mapping page.
 
 ::: details Show the steps
 
@@ -99,13 +99,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Inspect full decimal values and unnecessary opposite-side zero entries.
+The journal's debits and credits stop matching after rounding, usually because line amounts carry more precision than the currency keeps.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Reconcile the journal before retrying.
+Check line amounts for extra decimal places and correct them at the source rather than adding a balancing line.
 
 ::: details Show the steps
 
@@ -223,13 +223,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-Spreadsheet handling may have changed a number.
+A long number was saved in exponent notation, such as 1.23E+15, so the identifier no longer matches anything.
 
 Import context: General imports.
 
 **Check this first**
 
-Inspect its saved text and original value.
+Format the column as text and compare the saved value with the original before importing again.
 
 ::: details Show the steps
 
@@ -255,13 +255,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The amount may contain unsupported symbols or separators.
+The amount is not plain numeric text: a thousands separator or a currency symbol is riding along in the column.
 
 Import context: Vendor bills.
 
 **Check this first**
 
-Check the raw numeric text.
+Strip separators and symbols so the Amount column holds bare numbers only.
 
 ::: details Show the steps
 

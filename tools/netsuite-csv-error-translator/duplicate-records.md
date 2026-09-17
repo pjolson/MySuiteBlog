@@ -26,13 +26,13 @@ Find the existing record before deciding whether to add a new one or update what
 
 **What it means**
 
-Another record uses this identifier.
+Another custom record already uses this name or identifier, so NetSuite will not create a second one.
 
 Import context: General imports.
 
 **Check this first**
 
-Check existing external IDs.
+Search the record type for the value and decide whether the row should update the existing record instead.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Another entity may already own that external ID.
+The external ID on the row already belongs to another entity, and two entities cannot share one.
 
 Import context: Leads and prospects.
 
 **Check this first**
 
-Search entities by the value and establish which record the import is meant to create or update.
+Search entities for the failing external ID and decide whether the row should update that record instead.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A revaluation already occupies this item, location, and date combination.
+A revaluation already exists for this item, location, and date, and each combination can only be used once.
 
 Import context: Inventory cost revaluations.
 
 **Check this first**
 
-Find it before deciding whether an update is appropriate.
+Find the existing revaluation and decide whether to update it or change the date.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The identifier may belong to an earlier transaction.
+A transaction with this identifier already exists, so an Add import will not create another one.
 
 Import context: Transactions.
 
 **Check this first**
 
-Find it before creating another.
+Find the existing transaction and decide whether the row should update it instead.
 
 ::: details Show the steps
 

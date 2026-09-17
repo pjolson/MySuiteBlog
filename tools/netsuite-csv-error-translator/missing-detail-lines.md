@@ -26,13 +26,13 @@ Check the detail mapping and how each item, expense, member, or operation row co
 
 **What it means**
 
-The assembly has no linked component rows.
+The assembly import reached NetSuite without any member items attached, so the assembly cannot be built as a bill of materials.
 
 Import context: Assemblies.
 
 **Check this first**
 
-Check the primary assembly file, member file, shared assembly identifier, and member item and quantity mappings.
+Check the link between the assembly file and the member file: the member rows must carry the assembly identifier.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The cost template has no linked cost lines.
+The cost template saved without any cost lines. In a multiple-file import this usually means the key column linking template to detail rows did not match.
 
 Import context: Manufacturing cost templates.
 
 **Check this first**
 
-Check that each template has details and that the file-linking keys agree.
+Check that every template has at least one detail row and that the linking key matches exactly in both files.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The report has no linked expense line.
+An expense report saved without any expense lines, which usually means the key column linking the report file to the expense file did not match.
 
 Import context: Expense reports.
 
 **Check this first**
 
-Check the shared key between the report and its expenses.
+Check that every report has at least one expense row and that the linking key matches exactly in both files.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The invoice has no imported item line.
+The invoice saved without any item line. A default value on the item mapping does not create a line; the item must come from a CSV column.
 
 Import context: Invoices and credits.
 
 **Check this first**
 
-Put the item in a CSV column and map the item sublist. A default by itself may not create the line.
+Put the item in its own column and map it to the Items : Item field on the Field Mapping page.
 
 ::: details Show the steps
 
@@ -154,13 +154,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The routing has no linked operations.
+A routing saved without any operation lines, which usually means the key linking the routing file to its operations file did not match.
 
 Import context: Manufacturing routings.
 
 **Check this first**
 
-Check the detail file and shared routing key.
+Check that every routing has operations and that the linking key matches exactly in both files.
 
 ::: details Show the steps
 
@@ -186,13 +186,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-No item line reached the transaction.
+The sales order saved without any item line reaching its Items sublist, often a mapping or line-linking problem in a multiple-file import.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Map a CSV field into the item sublist.
+Check that every order has an item row and that the line data links to its order header.
 
 ::: details Show the steps
 

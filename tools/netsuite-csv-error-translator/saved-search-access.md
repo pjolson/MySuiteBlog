@@ -26,13 +26,13 @@ Check whether the saved search still exists and whether the importing role can a
 
 **What it means**
 
-A field depends on an inaccessible search.
+A custom field on the form pulls its value from a saved search that is inactive, deleted, or private to someone else.
 
 Import context: General imports.
 
 **Check this first**
 
-Check existence and audience.
+Ask an admin to confirm the search exists, is active, and is visible to the importing user.
 
 ::: details Show the steps
 

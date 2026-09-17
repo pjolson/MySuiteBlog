@@ -26,13 +26,13 @@ Check the separator and the complete intended set. Routing locations have their 
 
 **What it means**
 
-A list selection may be repeated.
+A multi-select column repeats the same value inside one cell, and NetSuite refuses the duplicate selection.
 
 Import context: General imports.
 
 **Check this first**
 
-Check multi-select IDs.
+Find the multi-select column and remove any value or internal ID that appears twice in the same cell.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The configured multi-select separator may appear inside an identifier.
+The multi-select delimiter also appears inside a value, often an external ID with special characters, so one value reads as several.
 
 Import context: Inventory items.
 
 **Check this first**
 
-Choose an import separator absent from those values. Oracle also notes that a literal NULL setting can behave as a space.
+Set the Custom Multi-Select Value Delimiter in Advanced Options to a character your data never contains.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Check the location, its subsidiary, and multi-select syntax.
+A routing location cannot be matched: a typo, a location outside the routing's subsidiary, or spaces around the multi-select delimiter.
 
 Import context: Manufacturing routings.
 
 **Check this first**
 
-This routing guide specifically warns about spaces around the separator.
+Check the location spelling and subsidiary, and remove spaces around the delimiter for multiple locations.
 
 ::: details Show the steps
 

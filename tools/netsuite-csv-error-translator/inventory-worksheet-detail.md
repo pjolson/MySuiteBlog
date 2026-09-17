@@ -26,13 +26,13 @@ Confirm that this is an inventory worksheet and review its bin-detail requiremen
 
 **What it means**
 
-This inventory worksheet is encountering a bin-detail requirement.
+The worksheet rows need inventory detail because an accounting preference requires bins on this transaction type.
 
 Import context: Inventory worksheets.
 
 **Check this first**
 
-Confirm that this is the worksheet import, rather than an inventory adjustment, before using worksheet-specific guidance.
+Confirm the import is an inventory worksheet and review the bin requirement with your admin before changing preferences.
 
 ::: details Show the steps
 

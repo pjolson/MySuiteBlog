@@ -26,13 +26,13 @@ Check the country name used by the account and the state or province allowed for
 
 **What it means**
 
-Country and state do not agree.
+The state or province value does not belong to the country on the same row, or the Country field is not exposed for the import to fill.
 
 Import context: Customers.
 
 **Check this first**
 
-Check both values and whether Country is exposed.
+Compare the state value with the short names the country allows, and check that Country appears on the Field Mapping page.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A country code may have been supplied where a localized name is expected.
+The file uses country codes, and the Import Assistant only accepts country names as NetSuite displays them.
 
 Import context: General imports.
 
 **Check this first**
 
-A country code may have been supplied where a localized name is expected.
+Replace codes such as US with the full country names NetSuite displays.
 
 ::: details Show the steps
 

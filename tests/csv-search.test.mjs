@@ -307,7 +307,7 @@ test('SAL-05 preserves mapping checks and adds conditional identifier preservati
   assert.equal(entries.filter(e=>e.id==='SAL-05').length,1)
   assert.equal(entries.length,119)
   assert.deepEqual(entry.procedureIds,['P01','P04'])
-  assert.equal(entry.firstCheck,'Check the selection and reference type.')
+  assert.match(entry.firstCheck,/item selection and the mapping/)
   const md=renderGuide(guides.find(g=>g.ids.includes('SAL-05')))
   assert.equal(md.split('### Did the spreadsheet change the item reference?').length-1,1)
   assert.match(md,/Text before pasting or importing the references/)

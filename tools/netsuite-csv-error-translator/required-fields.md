@@ -26,13 +26,13 @@ Find the exact field, its mapping, and the form or sublist that requires it.
 
 **What it means**
 
-The tax registration value exceeds the field's length.
+The Tax Reg. Number field, whose field ID is vatregnumber, holds at most 20 characters, and a mapped value is longer.
 
 Import context: Customers.
 
 **Check this first**
 
-Check the value before editing.
+Find the over-length registration numbers and confirm the correct values before shortening anything.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The expense report expects a currency.
+The account has multicurrency expense reports enabled, so every new expense report needs a currency, and none is reaching the import.
 
 Import context: Expense reports and Employees and expense categories.
 
 **Check this first**
 
-Map the expense currency or choose a default that applies to every affected line. If the expenses genuinely use only the employee subsidiary's base currency, review the report's multicurrency setting.
+Add a Currency column or set a mapping default, or switch multicurrency off for these reports if it is not needed.
 
 ::: details Show the steps
 
@@ -91,13 +91,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The expense-account value is too long for this field.
+The Expense Account value on an expense category holds at most 61 characters including spaces and symbols, and a mapped value is longer.
 
 Import context: Employees and expense categories.
 
 **Check this first**
 
-Check that the intended value belongs here before shortening it.
+Find the over-length account values and confirm the intended account before shortening them.
 
 ::: details Show the steps
 
@@ -124,13 +124,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A required value isn't reaching NetSuite.
+A field the record requires is not receiving a value: a blank cell, a shifted column, or a form that makes the field mandatory.
 
 Import context: General imports.
 
 **Check this first**
 
-Check mapping and separators.
+Read the field name in the full error and inspect the failing row and its mapping for that field.
 
 ::: details Show the steps
 
@@ -157,13 +157,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-This field may be unavailable for import.
+NetSuite refused to write the field: it may be read-only, hidden by the form, tied to a disabled feature, or the value itself was rejected.
 
 Import context: General imports.
 
 **Check this first**
 
-Check read-only settings.
+Check whether the importing role and the selected form allow the field before changing any values.
 
 ::: details Show the steps
 
@@ -189,13 +189,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The related-item line needs its type as well as the referenced item.
+Related items are being added without a type, a field that lives under Presentation Items on the Field Mapping page and is easy to miss.
 
 Import context: Related items and Item records.
 
 **Check this first**
 
-Inspect the presentation-item mapping, identify the existing main item, and provide the related item's type. Oracle describes an Update import for this case. The source's example mapping labels are unclear, so check the live field labels before following them literally.
+Set Data Handling to Update and map the related item number and type under Presentation Items.
 
 ::: details Show the steps
 
@@ -222,13 +222,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-An email value is missing or invalid in this import.
+A row's email value is blank or not shaped like an email address, and the import stops at the mapping step.
 
 Import context: Leads and prospects.
 
 **Check this first**
 
-Inspect the mapped email column and the rows being processed.
+Check every row for a complete, correctly formatted address in the email column.
 
 ::: details Show the steps
 
@@ -254,13 +254,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-A required value is absent on a processed row.
+A required value is missing on a revaluation row, or an empty formatted row below the data is being imported as a record.
 
 Import context: Inventory cost revaluations.
 
 **Check this first**
 
-Check real records and unintended trailing content.
+Check the mapped required columns for blanks and delete leftover empty rows after the data.
 
 ::: details Show the steps
 
@@ -286,13 +286,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-The transaction's stored form may require the field.
+Updating an existing sales order tripped another required field, one the form demands even though the import did not intend to change it.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Check that form's rules.
+Read the field name in the full error and check what the order's form requires.
 
 ::: details Show the steps
 

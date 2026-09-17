@@ -26,13 +26,13 @@ Compare the reference type, hierarchy, active state, and subsidiary of the selec
 
 **What it means**
 
-The department reference cannot be matched.
+The department on a journal line cannot be matched: a spelling difference, a missing parent path, an inactive record, or the wrong reference type.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Check hierarchy, active state, and reference type.
+Compare the value with the department's full path, such as Finance : Accounting, and check its active state.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Check the department's hierarchy, active state, and name-versus-ID setting.
+The department cannot be matched: spelling, a missing parent path, an inactive record, or a reference type mismatch.
 
 Import context: General imports and Journal entries.
 
 **Check this first**
 
-Check the department's hierarchy, active state, and name-versus-ID setting.
+Compare the value with the department's full path and check its active state and the mapping's reference type.
 
 ::: details Show the steps
 
@@ -91,13 +91,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The selected location may not belong to the bill's subsidiary.
+In a OneWorld account the location on the bill belongs to a different subsidiary than the transaction, so the reference fails.
 
 Import context: Vendor bills.
 
 **Check this first**
 
-Compare both records.
+Compare the vendor's subsidiary with the location's and choose a location that is valid for it.
 
 ::: details Show the steps
 

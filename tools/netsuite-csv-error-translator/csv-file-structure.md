@@ -26,13 +26,13 @@ Inspect the saved file for encoding, separators, quoted fields, headers, and uni
 
 **What it means**
 
-NetSuite couldn't read the file.
+NetSuite could not read the uploaded file, usually because the saved encoding or delimiter does not match what the Import Assistant expects.
 
 Import context: General imports.
 
 **Check this first**
 
-Check encoding.
+Save a fresh CSV copy with the delimiter and encoding selected in the Import Assistant and upload that copy.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A row has too many fields.
+A row has a different number of fields than the header, which usually means a comma or an unclosed quotation mark split the row apart.
 
 Import context: General imports.
 
 **Check this first**
 
-Check quotes and separators.
+Compare the failing row field count with the header and inspect the quoting around free-text fields.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A column lacks a heading.
+The file has a column without a heading in row one, often an empty column the spreadsheet saved to the right of the data.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Inspect the first CSV row.
+Give every column a heading and delete unnamed columns before saving the CSV.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-A totals row may be treated as another journal line.
+An extra row, usually a debit and credit totals row, is being read as another journal line, and a line cannot exist without an account.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Check the final records.
+Remove totals rows and any other rows that are not journal lines from the saved CSV.
 
 ::: details Show the steps
 
@@ -154,13 +154,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-The file's encoding may differ from the import setting.
+The file contains characters NetSuite cannot read, usually a copy-paste artifact or a save in the wrong encoding.
 
 Import context: General imports.
 
 **Check this first**
 
-Check both.
+Re-save the file in the encoding selected in the Import Assistant and inspect the failing row in a text editor.
 
 ::: details Show the steps
 

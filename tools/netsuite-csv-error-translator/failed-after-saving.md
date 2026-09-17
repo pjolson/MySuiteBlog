@@ -26,13 +26,13 @@ Check what saved before retrying. A script or later processing step can fail aft
 
 **What it means**
 
-The record saved before a script failed.
+The record itself saved, and an afterSubmit script failed afterward. Retrying the row blindly can create a duplicate.
 
 Import context: General imports.
 
 **Check this first**
 
-Check that record before retrying.
+Open the record the result names, confirm what saved, and involve the script owner before rerunning.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-A script exhausted its allowed execution usage.
+A script ran during the import and used up its allowed processing units, so NetSuite stopped it. The import data is rarely the cause.
 
 Import context: General imports.
 
 **Check this first**
 
-Inspect the script failure and saved-record state.
+Identify the script in the full error and have its owner review what it does during CSV imports.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Oracle does not publish one exact wording for this case. Match it by the situati
 
 **What it means**
 
-Some work may already have saved.
+The failure happened after the data reached NetSuite, in application logic or a script, so records may exist even though rows report errors.
 
 Import context: General imports.
 
 **Check this first**
 
-Verify the affected records before choosing what to rerun.
+Check the import email notification for the error list and confirm what saved before retrying anything.
 
 ::: details Show the steps
 

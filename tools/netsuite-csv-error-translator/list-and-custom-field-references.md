@@ -26,13 +26,13 @@ Check the list behind the field, the allowed selection, and the mapping referenc
 
 **What it means**
 
-The expense category cannot be matched.
+The expense category on the row cannot be matched, usually because it is inactive or its name does not match the category list exactly.
 
 Import context: Employees and expense categories.
 
 **Check this first**
 
-Check its active state, displayed name, and mapping reference type.
+Check the category active state and exact displayed name, or switch the mapping to internal IDs.
 
 ::: details Show the steps
 
@@ -59,13 +59,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The value supplied to a custom item field does not match an allowed selection.
+A custom item field points at a list, and the value on the row is not one of that list's active selections, or the reference type does not match.
 
 Import context: Item records.
 
 **Check this first**
 
-Identify the field from its script ID, then inspect the list or record it references. Check spelling, spaces, and the chosen reference type. For several selections in one cell, check the multi-select separator too. Confirm a missing selection belongs in the list before adding it.
+Open the field definition from the ID in the error and compare the value with the allowed selections.
 
 ::: details Show the steps
 
@@ -91,13 +91,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-NetSuite cannot match the lead source.
+The lead source on the row is not in the account's Lead Sources list, or its name does not match the list's naming, which can include a campaign ID.
 
 Import context: Leads and prospects.
 
 **Check this first**
 
-Check the configured list and include the campaign identifier when it forms part of the displayed value. The list's location depends on whether Marketing Automation is enabled.
+Compare the value with the Lead Sources list and include the campaign ID when the list shows one.
 
 ::: details Show the steps
 
@@ -123,13 +123,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-NetSuite needs a website before it can identify the site's category.
+A site category needs its website, and the Site field is not receiving one, so the category reference resolves to nothing.
 
 Import context: Website categories.
 
 **Check this first**
 
-Map the website or select a default when every row belongs to that site. Then check the category within that site.
+Include the site name as it was created in NetSuite or set it as a mapping default.
 
 ::: details Show the steps
 

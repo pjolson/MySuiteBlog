@@ -62,13 +62,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Translation support may not be configured.
+Translations are being imported while the Multi-Language feature is not fully set up, so the translation sublist will not accept new lines.
 
 Import context: Custom lists.
 
 **Check this first**
 
-Check that the language feature is enabled and at least one language is configured.
+Check that Multi-Language is enabled and at least one language is listed under Enable Features.
 
 ::: details Show the steps
 
@@ -93,13 +93,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-One default language may be applied to rows containing several languages.
+The Language field uses one fixed mapping value while the file contains translations in more than one language, so most rows find no matching line.
 
 Import context: Custom lists.
 
 **Check this first**
 
-Map the language from the file instead.
+Map the language from a CSV column or split the file so each import carries one language.
 
 ::: details Show the steps
 

@@ -26,13 +26,13 @@ The exact wording varies. Messages for this case mention `terms` and `paymentmet
 
 **What it means**
 
-Conflicting billing instructions were mapped.
+The order supplies both payment terms and a payment method, and the two describe different billing outcomes, so NetSuite rejects the combination.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Choose the intended billing path.
+Decide whether the order should bill on terms or take a payment method, and map only that one.
 
 ::: details Show the steps
 

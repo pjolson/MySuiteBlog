@@ -26,13 +26,13 @@ Check the record identifier first. For parent or matrix-item errors, use the con
 
 **What it means**
 
-The proposed parent may be a different kind of item.
+The parent item is a different item type than the items being imported, and a parent must share its children's type.
 
 Import context: Item records.
 
 **Check this first**
 
-Compare both item types with the record type selected for import. Correct an incorrect import selection first. If the item hierarchy itself needs redesign, review that separately. Oracle discusses replacing an incorrectly typed parent; deletion is not a routine troubleshooting step.
+Compare the parent's item type with the import's record type before creating or selecting a different parent.
 
 ::: details Show the steps
 

@@ -26,13 +26,13 @@ Check sequence numbers within each routing and confirm that the selected group i
 
 **What it means**
 
-Two steps share a sequence within one routing.
+Two operations in the same routing use the same sequence number. In a multiple-file import a wrong link can pull another routing's numbers in.
 
 Import context: Manufacturing routings.
 
 **Check this first**
 
-Check both the sequence values and which routing owns each row.
+Compare sequence numbers within each routing and check the identifiers linking operations to routings.
 
 ::: details Show the steps
 
@@ -62,13 +62,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The selected group may not be designated as a manufacturing work center.
+The value mapped to Manufacturing Work Center is not a group NetSuite recognizes as one; the group record may be missing its work center flag.
 
 Import context: Manufacturing routings.
 
 **Check this first**
 
-Check the group record, not just its name.
+Open the employee group and confirm the Manufacturing Work Center box is checked.
 
 ::: details Show the steps
 

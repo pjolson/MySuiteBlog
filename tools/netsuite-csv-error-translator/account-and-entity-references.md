@@ -26,7 +26,7 @@ Check the record identity and whether its subsidiary, currency, and active state
 
 **What it means**
 
-The time entry cannot match the employee supplied.
+The time entry cannot match the employee it names, usually because the value does not agree with the mapping choice of name or internal ID.
 
 Import context: Time entries and Employees and expense categories.
 
@@ -59,13 +59,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The accounting reference does not match what the field expects.
+The asset or COGS account on the row cannot be matched, usually an inactive account, a subsidiary restriction, or a reference type mismatch.
 
 Import context: Item records.
 
 **Check this first**
 
-Use a verified account internal ID with the matching reference type, or match the account's displayed name, including hierarchy and account number when those are used. A mapping default is suitable only when every affected item should use the same account.
+Open the intended account and compare the CSV value with the mapping's Name or Internal ID choice.
 
 ::: details Show the steps
 
@@ -91,13 +91,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The account may not be valid for this subsidiary.
+The account on a journal line is not available to the subsidiary the journal posts to, or the account reference does not match the mapping.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Check eligibility and reference format.
+Open the account and check its subsidiaries, then compare the CSV value with the mapping's reference type.
 
 ::: details Show the steps
 
@@ -123,13 +123,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The entity may not support the journal currency.
+The entity on a journal line cannot be used, usually because it is inactive, its displayed name differs from the CSV, or its currency does not match the journal.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Check its currencies and active state.
+Check the entity's active state, displayed name, and currencies against the journal's transaction currency.
 
 ::: details Show the steps
 
@@ -156,13 +156,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The purchase order cannot match the vendor.
+The vendor on the purchase order cannot be matched, usually an inactive vendor, a name that differs from the record, or the wrong reference type.
 
 Import context: Purchase orders.
 
 **Check this first**
 
-Check the vendor as shown on the purchase-order form, its active state, and the reference type. If using an ID, make sure it belongs to the vendor and matches the selected ID type.
+Open the intended vendor and compare the CSV value with the mapping's Name or Internal ID choice.
 
 ::: details Show the steps
 
@@ -188,13 +188,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The entity's subsidiary reference may be formatted incorrectly.
+The subsidiary reference does not match, often because a child subsidiary needs its full path, such as Parent : Europe : Spain.
 
 Import context: General imports.
 
 **Check this first**
 
-Check the full hierarchy when using names.
+Compare the value with the subsidiary's full displayed hierarchy.
 
 ::: details Show the steps
 

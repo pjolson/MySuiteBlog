@@ -26,13 +26,13 @@ Decide whether to update, add, or replace lines, then use the keys for that spec
 
 **What it means**
 
-NetSuite cannot tell which location row to update.
+The import is trying to add a new row to the item Locations sublist, and this import can only update the rows that already exist.
 
 Import context: Item records.
 
 **Check this first**
 
-Map the location within the item's Locations sublist when importing values such as reorder point or preferred stock level. A location elsewhere in the import does not necessarily identify this sublist row.
+Map the location key inside the sublist so each row updates the existing location line.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The update's line handling needs review.
+The update references order lines that no longer match what was retrieved, which Oracle resolves with the overwrite-sublists update setup.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Check existing lines before replacing a sublist.
+Review the update setup: Update data handling, Overwrite Sublists checked, and no Line ID mapped.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The update may use incorrect line identifiers.
+The update cannot tell which existing item line the row should change, so NetSuite asks for an item to be chosen.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Export the actual line IDs.
+Check how the rows identify existing lines before adding any item values.
 
 ::: details Show the steps
 
@@ -122,13 +122,13 @@ The exact wording varies. Messages for this case mention `Ambiguity error`.
 
 **What it means**
 
-Repeated items make line matching unclear.
+The rows add or update several lines that use the same item on one transaction, and without line IDs NetSuite cannot tell them apart.
 
 Import context: Transactions.
 
 **Check this first**
 
-Identify existing lines explicitly.
+Include a Line ID column: blank for new lines, or values above the highest existing line ID.
 
 ::: details Show the steps
 
@@ -154,13 +154,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Imported and existing sales-team percentages may exceed the allowed total together.
+The sales team already on the record plus the imported rows adds up past 100 percent, because without overwriting NetSuite merges the two teams.
 
 Import context: Transactions.
 
 **Check this first**
 
-Review the complete team.
+Add the imported contributions to the existing team before deciding whether to overwrite or adjust.
 
 ::: details Show the steps
 

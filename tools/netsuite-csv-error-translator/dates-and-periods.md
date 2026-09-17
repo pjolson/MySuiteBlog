@@ -26,13 +26,13 @@ Compare the saved CSV text with the importing user’s date format and the inten
 
 **What it means**
 
-The period value cannot be matched.
+The posting period on the row does not match an existing period name, often because spreadsheet formatting changed the text.
 
 Import context: Expense reports.
 
 **Check this first**
 
-Check the existing period name and whether spreadsheet formatting changed it.
+Compare the value with the exact period name and format the Posting Period column as text.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The date format doesn't match.
+The effective date on the row is not readable in the importing user date format, so the reference fails.
 
 Import context: General imports.
 
 **Check this first**
 
-Check your preferences.
+Compare the saved CSV date text with the importing user date format and confirm the intended year.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The amortization dates are reversed or misread.
+The amortization start and end dates are reversed, or the fields are mapped in an account where revenue recognition does not expose them.
 
 Import context: Journal entries.
 
 **Check this first**
 
-Check their actual values.
+Compare the two date columns and confirm the start date comes before the end date.
 
 ::: details Show the steps
 
@@ -157,13 +157,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The transaction date does not match the expected format.
+The transaction date is not readable in the importing user's date format, or it falls outside the accounting period being posted to.
 
 Import context: Transactions.
 
 **Check this first**
 
-Check the raw value.
+Compare the saved date text with the importing user's format and the intended period.
 
 ::: details Show the steps
 

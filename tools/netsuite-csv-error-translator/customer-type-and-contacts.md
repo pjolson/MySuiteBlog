@@ -26,13 +26,13 @@ Distinguish a customer-only import from a combined customer or prospect and cont
 
 **What it means**
 
-This combined import expects company customers.
+The combined customers-and-contacts import only accepts company customers. This appears when a row tries to add an individual customer together with a contact.
 
 Import context: Customers with contacts.
 
 **Check this first**
 
-If the customer is an individual, choose the customer-only import and handle the contact separately.
+Check whether the failing rows are individuals. Import those with Customers Only and add their contacts separately.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The linked customer may be inactive.
+The company this contact should attach to exists but is inactive, so the import cannot reference it.
 
 Import context: Customers with contacts.
 
 **Check this first**
 
-Check the customer before changing the contact mapping. Oracle describes importing with an active customer and inactivating afterward; only use that sequence when the intended customer lifecycle supports it.
+Check the linked customer for an inactive flag before assuming the reference value is wrong.
 
 ::: details Show the steps
 
@@ -90,13 +90,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The selected customer form requires a type.
+The customer form used by the import marks Type as mandatory, and the rows do not supply a value for it.
 
 Import context: Customers.
 
 **Check this first**
 
-Check the field and form settings.
+Decide whether to supply a Type value in the file or to clear the Mandatory box on the entry form.
 
 ::: details Show the steps
 
@@ -123,13 +123,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-NetSuite needs to know whether this customer is an individual or company.
+NetSuite needs to know whether each customer is an individual or a company, and the isperson field, which is the Company Type, is not receiving that answer.
 
 Import context: Customers.
 
 **Check this first**
 
-Map the choice.
+Map the Individual field and give every row a Yes or No value.
 
 ::: details Show the steps
 
@@ -187,13 +187,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The prospect and contact data may be mapped to the wrong records.
+On the combined prospects-and-contacts import this error usually means the prospect's and the contact's fields, often phone numbers, are mapped into each other.
 
 Import context: Prospects with contacts.
 
 **Check this first**
 
-Check their identifiers and phone mappings separately. Prospect fields belong to the prospect section; the contact's ID and phone belong to the contact section.
+Keep the prospect's identifiers and phone separate from the contact's in both the file and the mapping.
 
 ::: details Show the steps
 
