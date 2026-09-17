@@ -2610,5 +2610,26 @@
     "reviewNotes": "",
     "evidenceType": "documented",
     "documentationCheckedAt": "2026-09-17"
+  },
+  {
+    "id": "SAL-08",
+    "context": "Sales orders",
+    "messageFragments": [
+      "Please enter value(s) for: Amount"
+    ],
+    "matchNotes": "`Please enter value(s) for: Amount` on sales order imports; SuiteAnswers Answer 82833, supplied during testing.",
+    "explanation": "The sales order line arrived without an amount because the import could not read the item's price, either from the way the item is mapped or because the item has no base price.",
+    "firstCheck": "Map the item by internal ID so the amount fills from the item record, then check the imported items for a missing base price.",
+    "tailoredSteps": "1. Map the Item by Internal ID on the Field Mapping page. With the internal ID, the amount fills automatically from the price on the item record.\n2. If the error continues, some imported items have no base price. Open each item and check Base Price on the Sales/Pricing subtab.\n3. Populate the missing base prices, save the items, and retry the import.",
+    "additionalChecks": "These steps follow SuiteAnswers Answer 82833, Sales Order Import > Please Enter Value for Amount, which requires a NetSuite sign-in to view. The wording and resolution were supplied during translator testing.",
+    "procedureIds": [
+      "P03"
+    ],
+    "sources": [
+      "https://suiteanswers.custhelp.com/app/answers/detail/a_id/82833"
+    ],
+    "reviewNotes": "",
+    "evidenceType": "documented",
+    "documentationCheckedAt": "2026-09-17"
   }
 ]

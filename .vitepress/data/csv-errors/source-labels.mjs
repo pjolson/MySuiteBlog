@@ -6,6 +6,7 @@
 // title here (or set a per-entry override in `sourceLabels`); unknown URLs
 // fall back to a generic label rather than failing.
 export const sourceLabels = {
+  'https://suiteanswers.custhelp.com/app/answers/detail/a_id/82833': 'SuiteAnswers: Sales Order Import > Please Enter Value for Amount (sign-in required)',
   'https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_24213744571.html': 'Other Charge for Sale Item',
   'https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/article_63201856891.html': 'Other Charge for Purchase Item',
   'https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_N3924743.html': 'CSV Import FAQ',

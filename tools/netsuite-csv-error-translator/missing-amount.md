@@ -1,6 +1,6 @@
 ---
 title: "NetSuite CSV import says an amount is missing"
-description: "Check which field supplies the amount and whether the expense line also needs a rate or quantity."
+description: "Check which field supplies the amount, whether an expense line needs a rate or quantity, and whether a sales order item is missing its base price."
 outline: [2, 2]
 csvGuide: missing-amount
 lastUpdated: false
@@ -14,7 +14,7 @@ head:
 
 # NetSuite CSV import says an amount is missing {#missing-amount}
 
-Check which field supplies the amount and whether the expense line also needs a rate or quantity.
+Check which field supplies the amount, whether an expense line needs a rate or quantity, and whether a sales order item is missing its base price.
 
 <CsvGuideContext slug="missing-amount" />
 
@@ -79,6 +79,40 @@ Check for duplicate lines and format the Amount column as a number without symbo
 <CsvEntryHelp entry-id="GEN-07" />
 
 - [General Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4568642498.html)
+
+Documentation checked September 16, 2026.
+
+## A sales order amount cannot be read from the item {#a-sales-order-amount-cannot-be-read-from-the-item}
+
+**Message looks like**
+
+- `Please enter value(s) for: Amount`
+
+**What it means**
+
+The sales order line arrived without an amount because the import could not read the item's price, either from the way the item is mapped or because the item has no base price.
+
+Import context: Sales orders.
+
+**Check this first**
+
+Map the item by internal ID so the amount fills from the item record, then check the imported items for a missing base price.
+
+::: details Show the steps
+
+**undefined**
+
+1. Map the Item by Internal ID on the Field Mapping page. With the internal ID, the amount fills automatically from the price on the item record.
+2. If the error continues, some imported items have no base price. Open each item and check Base Price on the Sales/Pricing subtab.
+3. Populate the missing base prices, save the items, and retry the import.
+
+:::
+
+These steps follow SuiteAnswers Answer 82833, Sales Order Import > Please Enter Value for Amount, which requires a NetSuite sign-in to view. The wording and resolution were supplied during translator testing.
+
+<CsvEntryHelp entry-id="SAL-08" />
+
+- [SuiteAnswers: Sales Order Import > Please Enter Value for Amount (sign-in required)](https://suiteanswers.custhelp.com/app/answers/detail/a_id/82833)
 
 Documentation checked September 16, 2026.
 

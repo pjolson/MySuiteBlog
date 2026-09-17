@@ -46,8 +46,8 @@ test('reviewed exact-message families route through both searches', () => {
   assert.deepEqual(ids('An unexpected error has occurred').sort(), ['ASM-02', 'ITM-10'])
 })
 
-test('the first editorial pass contains 116 entry-specific explanations', () => {
-  assert.equal(detailedEntryIds.size, 116)
+test('the first editorial pass contains 117 entry-specific explanations', () => {
+  assert.equal(detailedEntryIds.size, 117)
   for (const id of detailedEntryIds) {
     const entry = entries.find(item => item.id === id)
     assert.ok(entry?.detailed, id)
@@ -65,7 +65,7 @@ test('every researched entry is retained once in a canonical guide', () => {
   const sourceIds = [...new Set([...catalogue.matchAll(/(?:^\| |^#### )([A-Z]+-\d\d)/gm)].map(match => match[1]))].sort()
   assert.equal(sourceIds.length, 119)
   // Documented post-brief discoveries from the journal common-errors page.
-  const expected = [...sourceIds, 'JRN-09', 'JRN-10'].sort()
+  const expected = [...sourceIds, 'JRN-09', 'JRN-10', 'SAL-08'].sort()
   assert.deepEqual(entries.map(entry => entry.id).sort(), expected)
   assert.deepEqual(guides.flatMap(guide => guide.ids).sort(), expected)
   assert.equal(guides.length, 35)
@@ -276,7 +276,7 @@ test('other type errors retain their own families and INV-02 remains one entry',
   assert.ok(!ids('The record you are attempting to load cannot be transformed').includes('INV-02'))
   assert.ok(!ids('Unsupported transformation from inventoryitem to customer').includes('INV-02'))
   assert.equal(entries.filter(entry=>entry.id==='INV-02').length,1)
-  assert.equal(entries.length,121)
+  assert.equal(entries.length,122)
   const entry = entries.find(entry=>entry.id==='INV-02')
   assert.equal(entry.reviewStatus,'source-reviewed')
   assert.equal(questionFor(entry).options.length,5)
@@ -307,7 +307,7 @@ test('sales-order item references retain characters and context-specific matches
 test('SAL-05 preserves mapping checks and adds conditional identifier preservation once', () => {
   const entry=entries.find(e=>e.id==='SAL-05')
   assert.equal(entries.filter(e=>e.id==='SAL-05').length,1)
-  assert.equal(entries.length,121)
+  assert.equal(entries.length,122)
   assert.deepEqual(entry.procedureIds,['P01','P04'])
   assert.match(entry.firstCheck,/item selection and the mapping/)
   const md=renderGuide(guides.find(g=>g.ids.includes('SAL-05')))
@@ -338,7 +338,7 @@ test('ITM-13 matches the record-not-found family in both search paths without as
 test('ITM-13 preserves conditional scenarios and independent identity checks', () => {
   const entry=entries.find(e=>e.id==='ITM-13')
   assert.equal(entries.filter(e=>e.id==='ITM-13').length,1)
-  assert.equal(entries.length,121)
+  assert.equal(entries.length,122)
   assert.equal(guides.length,35)
   assert.equal(entry.category,'Record references')
   assert.match(entry.firstCheck,/begin with the item's own identity/)
@@ -380,7 +380,7 @@ test('journal balance wording matches JRN-08 independently of rounding', () => {
 test('journal balance guidance keeps totals, grouping, workaround and update checks distinct', () => {
   const e=entries.find(e=>e.id==='JRN-08')
   const md=renderGuide(guides.find(g=>g.ids.includes('JRN-08')))
-  assert.equal(entries.length,121)
+  assert.equal(entries.length,122)
   assert.equal(guides.length,35)
   assert.match(e.explanation,/Each journal must balance on its own/)
   assert.match(e.detailMarkdown,/combined 200 on each side does not make either journal valid/)
@@ -510,6 +510,11 @@ test('customer import errors carry documented wording and fixes', () => {
   const typeGuide = renderGuide(guides.find(guide => guide.ids.includes('CUS-07')))
   assert.match(typeGuide, /Default Customer Type of Individual/)
   assert.match(typeGuide, /clear its Mandatory box/)
+})
+
+test('the sales order amount scenario matches with its filter applied', () => {
+  assert.deepEqual(ids('Please Enter Value for amount', { context: 'Sales orders' }), ['SAL-08'])
+  assert.deepEqual(ids('Please enter value(s) for: Amount', { context: 'Expense reports' }), ['EXP-01'])
 })
 
 test('errors stay reachable under the import type Oracle files them beneath', () => {

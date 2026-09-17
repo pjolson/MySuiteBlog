@@ -33,7 +33,7 @@ rule(/\bitem\b.*reference|reference.*\bitem\b/, 'ITM-04 KIT-01 INVC-03 SAL-05 CS
 rule(/\btype\b/, 'CUS-03 ITM-07', required)
 // The customer import's own wording says "set", not "enter".
 rule(/please set value for type/, 'CUS-03')
-rule(/\bamount\b/, 'GEN-07 EXP-01', required)
+rule(/\bamount\b/, 'GEN-07 EXP-01 SAL-08', required)
 rule(/\bamount\b/, 'VBL-05', /\b(invalid|malformed|format|numeric|unreadable)\b/)
 rule(/\billegal id\b/, 'CUS-07 CON-01')
 rule(/\bapply\b/, 'INVC-02 VPY-02 VPY-04', /doc.*line|sublist|adding.*line|invalid|reference/)
