@@ -72,7 +72,7 @@ Open the field definition from the ID in the error and compare the value with th
 **Steps for this error**
 
 1. Use the custom field ID in the error to open the field definition and identify its source list or record.
-2. Compare the CSV value with an allowed active selection and the chosen reference type.
+2. Compare the CSV value with an allowed active selection and the chosen reference type, including spaces, spelling, and letter case.
 3. For multi-select values, verify the configured separator before adding any missing list option.
 
 :::

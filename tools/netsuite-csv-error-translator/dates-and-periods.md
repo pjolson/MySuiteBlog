@@ -71,7 +71,7 @@ Compare the saved CSV date text with the importing user date format and confirm 
 **Steps for this error**
 
 1. Copy the effective-date text from the saved CSV rather than the spreadsheet display.
-2. Compare it with the importing user’s date format and confirm the intended year.
+2. Compare it with the importing user’s date format and confirm the intended year. A default value on the Effective Date mapping can also supply the properly formatted date. To stop a spreadsheet from converting date text, enter it as formula text in the =”Sept 2013” style.
 3. Correct one unambiguous date and retry that row.
 
 :::
@@ -122,13 +122,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-NetSuite or account customization tried to treat a value as a valid date and failed. The imported date may have triggered the failure, but the message often comes from SuiteScript or workflow logic running while the sales order is processed.
+A date on the row is malformed, classically a year with an extra digit such as 3/29/20014, and NetSuite's date handling fails on it. The message names script internals, but the trigger is usually the date value.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Open the complete import error and identify any script, workflow, function, or stack trace named there. Compare the affected row's date values with the format and assumptions used by that customization.
+Check the mapped date values for malformed years before investigating any script or workflow named in the full error.
 
 ::: details Show the steps
 
@@ -136,7 +136,7 @@ Open the complete import error and identify any script, workflow, function, or s
 
 1. Preserve the complete error from the CSV response.
 2. Identify the affected row and all mapped date fields.
-3. Confirm the saved CSV contains the intended date text.
+3. Confirm the saved CSV contains the intended date text, watching for a malformed year such as 3/29/20014.
 4. If the error names a script or workflow, inspect its date parsing and empty-value handling on the Sales Order form and CSV execution context.
 5. Test one corrected row. Do not change every account date preference based only on this message.
 
@@ -154,6 +154,7 @@ Documentation checked September 16, 2026.
 
 - `Invalid date value (must be entered as mm/dd/yyyy)`
 - `The transaction date you specified is not within the date range of your accounting period`
+- `You have entered an Invalid Field Value x/x/xxxx for the following field: trandate`
 
 **What it means**
 

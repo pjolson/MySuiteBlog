@@ -72,7 +72,7 @@ Open the intended account and compare the CSV value with the mapping's Name or I
 **Steps for this error**
 
 1. Open the intended asset or COGS account and confirm its active state and subsidiary availability.
-2. Match the CSV value to the mapping’s Name or Internal ID reference type.
+2. Match the CSV value to the mapping’s Name or Internal ID reference type. A name must follow the format on the item’s Accounting subtab, including the number prefix and parent path when those are enabled. A mapping default can supply one account for every item.
 3. Retry one item after correcting that account reference.
 
 :::
@@ -103,7 +103,7 @@ Open the account and check its subsidiaries, then compare the CSV value with the
 
 **Steps for this error**
 
-1. Open the account named by the failed journal line and check its subsidiaries.
+1. Open the account named by the failed journal line and check its subsidiaries and active state. A name must match the format shown in the Account dropdown on Make Journal Entries.
 2. Compare the saved account value with the mapping’s Name or Internal ID reference type.
 3. Correct the account or subsidiary assignment, then retry one balanced journal.
 
@@ -169,7 +169,7 @@ Open the intended vendor and compare the CSV value with the mapping's Name or In
 **Steps for this error**
 
 1. Open the vendor intended for the purchase order and confirm it is active and available to the transaction subsidiary.
-2. Compare the CSV value with the Vendor mapping’s selected reference type.
+2. Compare the CSV value with the Vendor mapping’s selected reference type. A name must match the Vendor field on Enter Purchase Orders exactly.
 3. Correct the vendor reference and retry one purchase order.
 
 :::
@@ -185,6 +185,7 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid subsidiary reference key xxx`
+- `Transaction subsidiary xx is not valid for entity xx. Please choose a different entity.`
 
 **What it means**
 
@@ -209,6 +210,38 @@ Compare the value with the subsidiary's full displayed hierarchy.
 <CsvEntryHelp entry-id="SYS-04" />
 
 - [CSV Import Error Reporting](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N353446.html)
+
+Documentation checked September 16, 2026.
+
+## A book-specific journal rejects its currency {#a-book-specific-journal-rejects-its-currency}
+
+**Message looks like**
+
+- `Invalid currency reference key x for accountingbook y`
+
+**What it means**
+
+A book-specific journal entry is trying to set its currency, and that field is not yours to set: NetSuite fills it from the other fields on the record.
+
+Import context: Journal entries.
+
+**Check this first**
+
+Remove the currency from the mapping for book-specific journal lines and let NetSuite supply it.
+
+::: details Show the steps
+
+**undefined**
+
+1. Find the currency column mapped for the book-specific journal entry.
+2. Remove that mapping; the system fills the currency from the record’s other fields.
+3. Retry one journal.
+
+:::
+
+<CsvEntryHelp entry-id="JRN-09" />
+
+- [Common Errors With Journal Entries](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html)
 
 Documentation checked September 16, 2026.
 

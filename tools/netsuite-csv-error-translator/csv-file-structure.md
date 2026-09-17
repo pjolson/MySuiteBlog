@@ -38,7 +38,7 @@ Save a fresh CSV copy with the delimiter and encoding selected in the Import Ass
 
 **Steps for this error**
 
-1. Save a fresh copy as CSV using the delimiter and encoding selected in the Import Assistant.
+1. Save a fresh copy as CSV using the delimiter and encoding selected in the Import Assistant. When special characters fail, save the file as UTF-8, for example through a text editor’s Save As encoding option.
 2. Open the saved file in a text editor and inspect its first rows for unexpected characters or separators.
 3. Upload that saved copy again instead of reusing the previous upload.
 

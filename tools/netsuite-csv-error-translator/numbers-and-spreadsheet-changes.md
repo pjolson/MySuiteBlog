@@ -99,7 +99,7 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The journal's debits and credits stop matching after rounding, usually because line amounts carry more precision than the currency keeps.
+The journal's debits and credits stop matching after rounding, usually hidden extra decimals from the original export or 0.00 values entered on the opposite side of lines.
 
 Import context: Journal entries.
 

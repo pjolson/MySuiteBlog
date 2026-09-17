@@ -136,7 +136,7 @@ Include a Line ID column: blank for new lines, or values above the highest exist
 
 1. This appears when a file adds or updates several lines that use the same item on one transaction.
 2. Include a Line ID column. Leave it blank for lines NetSuite should treat as new, or use values above the highest existing Line ID.
-3. Import with Transactions as the import type and the matching record type, then verify the changed lines on one transaction.
+3. Import with Transactions as the import type and the matching record type, set Data Handling to Update, then verify the changed lines on one transaction.
 
 :::
 

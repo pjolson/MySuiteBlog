@@ -40,7 +40,7 @@ Open the record the result names, confirm what saved, and involve the script own
 
 1. Open the record referenced by the import result and confirm what saved before the afterSubmit failure.
 2. Use the complete error to identify the script and failing function.
-3. Have the script owner test that path in the CSV context before rerunning records that may already exist.
+3. Have the script owner test that path in the CSV context. Do not run the same rows through the import again; the records already exist.
 
 :::
 

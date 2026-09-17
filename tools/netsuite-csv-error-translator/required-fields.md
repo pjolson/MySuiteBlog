@@ -137,7 +137,7 @@ Read the field name in the full error and inspect the failing row and its mappin
 **Steps for this error**
 
 1. Read the field name in the complete error and locate its destination on Field Mapping.
-2. Inspect the failed row for a blank, shifted column, or value that the chosen form makes mandatory.
+2. Inspect the failed row for a blank, a shifted column, or extra commas that only a text editor reveals.
 3. Supply the intended value or correct the mapping, then retry one row.
 
 :::
@@ -171,6 +171,7 @@ Check whether the importing role and the selected form allow the field before ch
 
 1. Identify the field named after “for the following field” and the value immediately before it.
 2. Check whether the importing role can set that field and whether the selected form exposes it for this record type.
+3. On the import’s Advanced Options, check Ignore Read-Only Fields. It is on by default for new imports but stays off on older saved imports.
 3. Correct the field value, mapping, form, or role only after confirming which restriction applies.
 
 :::
@@ -317,6 +318,38 @@ For an update to an existing sales order, inspect the form saved with that trans
 <CsvEntryHelp entry-id="SAL-07" />
 
 - [Sales Order Import Errors](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4570036567.html)
+
+Documentation checked September 16, 2026.
+
+## A journal line is missing its subsidiary {#a-journal-line-is-missing-its-subsidiary}
+
+**Message looks like**
+
+- `Please enter a value for subsidiary`
+
+**What it means**
+
+The journal requires a subsidiary on every line, even when the account has only one valid choice.
+
+Import context: Journal entries.
+
+**Check this first**
+
+Map the Subsidiary field and give every journal row a value.
+
+::: details Show the steps
+
+**undefined**
+
+1. Map the Subsidiary field for the journal import.
+2. Give every row a subsidiary value, including accounts where only one choice exists.
+3. Retry one journal.
+
+:::
+
+<CsvEntryHelp entry-id="JRN-10" />
+
+- [Common Errors With Journal Entries](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_4103386138.html)
 
 Documentation checked September 16, 2026.
 

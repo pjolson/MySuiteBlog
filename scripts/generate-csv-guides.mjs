@@ -11,7 +11,7 @@ for (const name of ['entries.json', 'guides.mjs', 'procedures.json', 'search.mjs
 }
 await writeFile(new URL('../.vitepress/data/csv-errors/version.json', import.meta.url), JSON.stringify(`csv-${catalogueHash.digest('hex').slice(0, 12)}`) + '\n')
 await mkdir(directory, { recursive: true })
-if (entries.length !== 119 || new Set(guides.flatMap(guide => guide.ids)).size !== entries.length) {
+if (entries.length !== 121 || new Set(guides.flatMap(guide => guide.ids)).size !== entries.length) {
   throw new Error('Catalogue coverage is incomplete or duplicated.')
 }
 for (const guide of guides) {

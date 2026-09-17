@@ -26,7 +26,7 @@ Check language setup, translation mappings, and whether the main record needs to
 
 **What it means**
 
-Creating the item and its translations together can cause this documented failure.
+The Multi-Language feature is enabled and the item is being created with translation columns in the same file, which this import cannot do in one pass.
 
 Import context: Inventory items and Item translations.
 

@@ -54,7 +54,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `at least one line`
+- `You must enter at least one line`
 
 **What it means**
 
@@ -150,7 +150,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `at least one line`
+- `You must enter at least one line`
 
 **What it means**
 
@@ -186,7 +186,7 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-The sales order saved without any item line reaching its Items sublist, often a mapping or line-linking problem in a multiple-file import.
+The sales order saved without any item line reaching its Items sublist. A default value on sublist fields does not create lines; at least one sublist field must be mapped from the file.
 
 Import context: Sales orders.
 

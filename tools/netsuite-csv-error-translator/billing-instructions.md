@@ -22,35 +22,25 @@ Choose the intended billing outcome before changing either the terms or payment-
 
 **Message looks like**
 
-The exact wording varies. Messages for this case mention `terms` and `paymentmethod`.
+- `Please specify either a terms parameter or a paymentmethod parameter in the request but not both`
 
 **What it means**
 
-The order supplies both payment terms and a payment method, and the two describe different billing outcomes, so NetSuite rejects the combination.
+The order maps both Terms and Payment Method, and NetSuite accepts only one: terms bill to an invoice, a payment method bills to a cash sale.
 
 Import context: Sales orders.
 
 **Check this first**
 
-Decide whether the order should bill on terms or take a payment method, and map only that one.
+Decide how the order should bill and map only Terms or only Payment Method.
 
 ::: details Show the steps
 
-**Check the required field and mapping**
+**Steps for this error**
 
-1. Find the exact NetSuite field named in the error. Confirm whether it belongs to the record header, a line, or a subrecord.
-2. Check that it is mapped to the intended CSV column, or to a valid default.
-3. Inspect the affected records for missing values. A populated column does not mean every record has a value.
-4. Expand the relevant field group in the mapping tree. A required field can be present there without being visible in the current mapping list.
-5. If the field belongs to a sublist, make sure the import actually supplies that sublist's data.
-
-[Required fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_N349431.html)
-
-For a field that cannot be written, inspect its availability and the import's read-only-field setting. Ignoring a read-only field allows the rest of the import to proceed; it does not make the field editable. [Read-only fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751046796.html)
-
-If a custom field is required, provide the intended value first. Turning off mandatory custom-field validation changes which incomplete records the import will accept. It should be an informed configuration choice, not the default troubleshooting instruction. [Mandatory custom fields](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/section_3751048115.html)
-
-For an update to an existing sales order, inspect the form saved with that transaction. The import's selected form may not explain its required fields. For the terms/payment-method conflict, ask which billing outcome is intended before removing either mapping.
+1. Choose the billing outcome: Terms creates an invoice when the order is billed; Payment Method creates a cash sale.
+2. Map only the chosen field on the Field Mapping page and remove the other.
+3. Retry one order.
 
 :::
 

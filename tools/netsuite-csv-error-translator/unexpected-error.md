@@ -26,13 +26,13 @@ Choose the import context before following a documented example. A generic error
 
 **What it means**
 
-For the documented assembly case, check unit settings on the assembly and its components.
+On an assembly import this generic error usually means the assembly or one of its components is missing unit values: the unit type, or its stock, purchase, and sales units.
 
 Import context: Assemblies.
 
 **Check this first**
 
-Oracle also suggests resaving populated records, but that should follow a review of the affected records and automation.
+Check the unit fields on the assembly and its components before anything else. If they are already filled, resaving the records without changes is Oracle's documented follow-up.
 
 ::: details Show the steps
 
@@ -58,13 +58,13 @@ Documentation checked September 16, 2026.
 
 **What it means**
 
-Oracle documents a case involving simultaneous item-name and store-display-name mappings, with translation language also needing attention.
+On item translation imports, mapping both Item Name and Store Display Name at the same time triggers this generic failure; only one of the two should be mapped.
 
 Import context: Item translations and Item records.
 
 **Check this first**
 
-Check those mappings if you are importing translations. This short error is not enough to establish the cause on other item imports.
+Check whether both name fields are mapped, and that Item Translation : Language is mapped.
 
 ::: details Show the steps
 

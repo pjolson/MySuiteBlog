@@ -6,7 +6,7 @@ export function normalize(text) {
   return text.toLowerCase().replace(/[’‘]/g, "'").replace(/[^\p{L}\p{N}_%]+/gu, ' ').trim().replace(/\s+/g, ' ')
 }
 
-const reference = /\b(invalid|reference|cannot match|cannot find|can t find|not find|not exist|bad reference)\b/
+const reference = /\b(invalid|reference|cannot match|cannot find|can t find|not find|not exist|not valid|bad reference)\b/
 const required = /\b(required|missing|mandatory|blank|please enter|must enter|must provide)\b/
 const rules = []
 const rule = (pattern, ids, condition) => rules.push({ pattern, ids: ids.split(' '), condition })
@@ -20,7 +20,8 @@ const broad = (pattern, ids, condition) => rules.push({ pattern, ids: ids.split(
 rule(/\b(?:inventorystatus|inventory status)\b.*\breference\b/, 'FLD-01')
 rule(/you only have .+ available.*please enter a different quantity/, 'FLD-02')
 rule(/(?:cannot|can t) change (?:the )?(?:selected )?item.*already (?:been )?received|cannot change received item|change item after receiving|csv changes a received line/, 'FLD-03')
-rule(/you have entered an invalid field value .+ for the following field/, 'GEN-04')
+// The transaction-date variant of this wording belongs to its own family.
+rule(/you have entered an invalid field value .+ for the following field(?! trandate\b)/, 'GEN-04')
 // Fields with a documented entry of their own are excluded here and matched by
 // their specific families below (Type, Amount, Account, Currency).
 rule(/please enter value(?: s)? for (?!type\b|amount\b|account\b|currency\b)/, 'GEN-03')
@@ -105,6 +106,8 @@ broad(/\baccount\b/, 'JRN-05', required)
 rule(/amortization/, 'JRN-06', /date|start|end/)
 rule(/rounding error/, 'JRN-07')
 rule(/\bjournal entry must balance\b/, 'JRN-08')
+rule(/accountingbook/, 'JRN-09')
+rule(/please enter a value for subsidiary/, 'JRN-10')
 rule(/invalid entity reference key/, 'PUR-01 JRN-03')
 rule(/deleted since/, 'SAL-02')
 rule(/\bterms\b.*payment\s?method/, 'SAL-04')

@@ -26,13 +26,13 @@ Identify the payment separately from the bill or invoice, then check the documen
 
 **What it means**
 
-Check whether the failing identifier belongs to the payment or the invoice it should pay.
+NetSuite cannot find the record the internal ID points at, usually while linking a customer payment to an invoice. A supplied internal ID takes precedence over any external ID.
 
 Import context: Customer payments.
 
 **Check this first**
 
-They are different records. Verify both references; a supplied internal ID can take precedence over an external ID.
+Verify the internal IDs of both the payment and the invoice; they are different records.
 
 ::: details Show the steps
 
@@ -80,7 +80,7 @@ Import context: Invoices and credits.
 
 **Check this first**
 
-Separate item rows from application rows and check the document being paid or credited.
+Count the application rows per document: the invoice internal ID and applied amount belong on one row only.
 
 ::: details Show the steps
 

@@ -22,7 +22,7 @@ Check the item reference in the right context: a transaction line, kit member, r
 
 **Message looks like**
 
-- `Invalid item reference key {value}`
+- `Invalid item reference key xx`
 
 **What it means**
 
@@ -54,7 +54,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid item reference key {value}`
+- `Invalid item reference key xx`
 
 **What it means**
 
@@ -71,7 +71,7 @@ Open the intended item and compare the CSV value with the Name, Internal ID, or 
 **Steps for this error**
 
 1. Open the intended item and confirm that it is active and available on the invoice form.
-2. Compare the CSV item value with the mapping’s Name, Internal ID, or External ID reference type.
+2. Compare the CSV item value with the mapping’s Name, Internal ID, or External ID reference type. When matching by name, use the format shown in the invoice’s Item dropdown.
 3. Retry one invoice line after correcting the confirmed reference mismatch.
 
 :::
@@ -86,8 +86,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid item reference key {value}`
-- `Invalid Item Reference Key`
+- `Invalid item reference key xx`
 
 **What it means**
 
@@ -104,7 +103,7 @@ Compare the related item Store Display Name with the saved CSV value before chan
 **Steps for this error**
 
 1. Open the related item and compare its Store Display Name with the value in the saved CSV.
-2. Confirm whether the related-item mapping expects a name or internal ID.
+2. Confirm whether the related-item mapping expects a name or internal ID, and that an internal ID is not sitting in a Name-type mapping.
 3. Correct that reference and retry one related-item row; do not apply this display-name rule to unrelated item imports.
 
 :::
@@ -119,8 +118,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid item reference key {value}`
-- `Invalid item reference key`
+- `Invalid item reference key xx`
 
 **What it means**
 
@@ -137,8 +135,9 @@ Compare each member value with the mapping's reference type and the item's exact
 **Steps for this error**
 
 1. Open the intended kit member and confirm it is active.
-2. Compare its exact name or internal ID with the member-item mapping, separately from the kit’s own identifier.
-3. Correct the member reference and retry one kit.
+2. Match the member name to the format shown in the Item dropdown under Lists > Accounting > Items, including any parent prefix.
+3. Or use the internal ID instead: on the Field Mapping page, open the Members : Item field and set Choose Reference Type to Internal ID.
+4. Correct the member reference and retry one kit.
 
 :::
 
@@ -152,7 +151,7 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid item reference key {value}`
+- `Invalid item reference key xx`
 
 **What it means**
 

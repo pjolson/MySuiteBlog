@@ -85,9 +85,9 @@ Documentation checked September 16, 2026.
 
 **Message looks like**
 
-- `Invalid purchaseunit reference key xx`
-- `Invalid saleunit reference key xx`
-- `Invalid stockunit reference key xx`
+- `Invalid purchaseunit reference key xx for unitstype <NULL>`
+- `Invalid saleunit reference key xx for unitstype <NULL>`
+- `Invalid stockunit reference key xx for unitstype <NULL>`
 
 **What it means**
 
