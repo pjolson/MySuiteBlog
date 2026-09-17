@@ -24,8 +24,6 @@ Check the country name used by the account and the state or province allowed for
 
 - `The country and state/province are mismatched, the country is US and the state/province is XX. Please enter a state/province short name that matches the country.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Country and state do not agree.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid country code`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

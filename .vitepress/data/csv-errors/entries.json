@@ -254,8 +254,8 @@
       "Illegal ID. Please enter a name."
     ],
     "matchNotes": "`Illegal ID`",
-    "explanation": "The customer type may be hidden on the import form.",
-    "firstCheck": "Check the form and default type.",
+    "explanation": "Oracle documents this on a customer-only import when two settings combine: the account's Default Customer Type is Individual, and the form selected for the import does not show the Type field.",
+    "firstCheck": "Check the Default Customer Type under General Preferences, and whether the form chosen on the import's Advanced Options shows the Type field.",
     "procedureIds": [
       "P03"
     ],

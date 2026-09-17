@@ -24,8 +24,6 @@ Check the separator and the complete intended set. Routing locations have their 
 
 - `There is already an item with that name or name/parent combination`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 A list selection may be repeated.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Multiple values found for a dropdown field that can only take one`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `used on a transaction`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The imported subsidiary list may replace the existing selections and leave out a subsidiary needed by earlier transactions.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid location reference key`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

@@ -75,7 +75,7 @@ function unfilter() {
     </div>
 
     <p role="status" aria-live="polite" aria-atomic="true" class="csv-results-count">{{ resultsAnnouncement }}</p>
-    <p class="csv-help">Search {{ entries.length }} documented import situations across {{ guides.length }} guides. Detailed troubleshooting is available for the most common and best-supported errors.</p>
+    <p class="csv-help">Search {{ entries.length }} documented import situations across {{ guides.length }} guides. A match identifies the situation described in the wording, not a confirmed diagnosis for your account.</p>
     <div v-if="ambiguous && count" class="csv-notice">
       <strong>This message has a few possible causes</strong>
       <p>Which import produced it?</p>

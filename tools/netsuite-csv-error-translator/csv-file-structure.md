@@ -24,8 +24,6 @@ Inspect the saved file for encoding, separators, quoted fields, headers, and uni
 
 - `The following file(s) could not be uploaded because of one or more errors. Please correct and re-upload.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite couldn't read the file.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Different number of columns than in the header row`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `No empty or blank headers are allowed in the CSV file`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 A column lacks a heading.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Please enter the value(s) for Account`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

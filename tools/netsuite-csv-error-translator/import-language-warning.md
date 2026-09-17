@@ -24,8 +24,6 @@ Check the import results before treating a language warning as a failed record.
 
 - `Warning: Your personal language settings do not match your company's language preferences. This may slow down the import of CSV data.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Language settings may slow the import.

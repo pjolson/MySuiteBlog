@@ -24,8 +24,6 @@ Distinguish a customer-only import from a combined customer or prospect and cont
 
 - `Illegal ID. Please enter a name.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 This combined import expects company customers.
@@ -58,8 +56,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid company reference key ***.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The linked customer may be inactive.
@@ -91,8 +87,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Please set value for Type`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -127,8 +121,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid isperson reference key (customer name)`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite needs to know whether this customer is an individual or company.
@@ -161,17 +153,15 @@ Documentation checked September 16, 2026.
 
 - `Illegal ID. Please enter a name.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
-The customer type may be hidden on the import form.
+Oracle documents this on a customer-only import when two settings combine: the account's Default Customer Type is Individual, and the form selected for the import does not show the Type field.
 
 Import context: Customers.
 
 **Check this first**
 
-Check the form and default type.
+Check the Default Customer Type under General Preferences, and whether the form chosen on the import's Advanced Options shows the Type field.
 
 ::: details Show the steps
 
@@ -194,8 +184,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `That Record Does Not Exist`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

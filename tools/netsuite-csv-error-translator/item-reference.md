@@ -24,8 +24,6 @@ Check the item reference in the right context: a transaction line, kit member, r
 
 - `Invalid item reference key {value}`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The item may be missing or paired with the wrong cost category.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid item reference key {value}`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -93,8 +89,6 @@ Documentation checked September 16, 2026.
 - `Invalid item reference key {value}`
 - `Invalid Item Reference Key`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 For this import, a related item's store display name can affect name matching.
@@ -128,8 +122,6 @@ Documentation checked September 16, 2026.
 - `Invalid item reference key {value}`
 - `Invalid item reference key`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The kit cannot match a member item.
@@ -161,8 +153,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid item reference key {value}`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

@@ -24,8 +24,6 @@ Check which record the identifier belongs to and whether the import expects a na
 
 - `Could not find matching record. Primary name field was not mapped or is empty.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The customer cannot be identified.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Matched more than one record`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `One of the columns [id, name] must be mapped in the CUSTOMLIST import`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The list record has no mapped identity.
@@ -126,8 +120,6 @@ Documentation checked September 16, 2026.
 
 - `You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The new revaluation needs an external ID or reference number.
@@ -159,8 +151,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `You must map one of the following NetSuite fields to a column in your CSV file, to be a unique identifier: External ID, Internal ID, or a transaction number field, such as Order # or Invoice #`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

@@ -24,8 +24,6 @@ Choose the import context before following a documented example. A generic error
 
 - `An Unexpected Error has Occurred`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 For the documented assembly case, check unit settings on the assembly and its components.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `An Unexpected Error has Occurred`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

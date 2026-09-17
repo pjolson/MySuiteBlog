@@ -24,8 +24,6 @@ Compare the reference type, hierarchy, active state, and subsidiary of the selec
 
 - `Invalid department reference key xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The department reference cannot be matched.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid department reference key xxx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid location reference key xx for subsidiary xx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

@@ -24,8 +24,6 @@ Find the existing record before deciding whether to add a new one or update what
 
 - `There is already a Custom Record Entry with that name`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Another record uses this identifier.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `This entity already exists`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `An Inventory Cost Revaluation Already Exists for this Item, Location, and Date`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 A revaluation already occupies this item, location, and date combination.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `This record already exists`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

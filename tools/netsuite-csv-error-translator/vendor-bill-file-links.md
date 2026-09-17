@@ -24,8 +24,6 @@ Check bill headers, linked detail files, and whether the bill is sourced from a 
 
 - `You must enter a line item for this transaction`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The bill has no linked detail.
@@ -58,8 +56,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Multiple rows in your primary CSV file have the same value for the key column. Please edit this file to eliminate rows with duplicate key column values for field 'ExternalId'`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -96,8 +92,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `purchase order list`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

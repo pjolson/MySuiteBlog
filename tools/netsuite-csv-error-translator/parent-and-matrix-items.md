@@ -24,8 +24,6 @@ Check the record identifier first. For parent or matrix-item errors, use the con
 
 - `Invalid parent reference key xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The proposed parent may be a different kind of item.
@@ -59,8 +57,6 @@ Documentation checked September 16, 2026.
 
 - `Could not find any records by this name.`
 - `Could not find any records`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -149,8 +145,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid parent reference key xxx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

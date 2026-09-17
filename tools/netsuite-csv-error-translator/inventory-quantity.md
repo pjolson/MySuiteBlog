@@ -24,8 +24,6 @@ Check the exact quantity, unit, lot, bin, and status. Small rounding changes can
 
 - `You only have {quantity} available. Please enter a different quantity.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The requested quantity exceeds the quantity NetSuite will allow for the selected inventory detail. The difference can be too small to notice in the spreadsheet.

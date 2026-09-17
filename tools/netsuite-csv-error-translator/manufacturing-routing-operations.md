@@ -24,8 +24,6 @@ Check sequence numbers within each routing and confirm that the selected group i
 
 - `This sequence number is already in use on another step`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Two steps share a sequence within one routing.
@@ -61,8 +59,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid manufacturingworkcenter reference key Value`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

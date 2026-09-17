@@ -24,8 +24,6 @@ Check which field supplies the amount and whether the expense line also needs a 
 
 - `Please enter value(s) for: Amount`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The expense amount may depend on a missing rate or quantity.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Please enter a value for amount`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

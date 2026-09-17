@@ -24,8 +24,6 @@ Check the detail mapping and how each item, expense, member, or operation row co
 
 - `Please select member items before submitting`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The assembly has no linked component rows.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `at least one line`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `You must enter at least one line item for this transaction`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The report has no linked expense line.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `You must enter at least one line item for this transaction`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -160,8 +152,6 @@ Documentation checked September 16, 2026.
 
 - `at least one line`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The routing has no linked operations.
@@ -193,8 +183,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `You must enter at least one line item for this transaction`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

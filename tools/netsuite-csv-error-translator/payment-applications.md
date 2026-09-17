@@ -24,8 +24,6 @@ Identify the payment separately from the bill or invoice, then check the documen
 
 - `Could not find record with Internal ID = xxxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Check whether the failing identifier belongs to the payment or the invoice it should pay.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Unable to find a matching line for sublist apply with key: [doc,line]`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -109,8 +105,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid account reference key Accounts Payable xx for entity xx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The AP reference may be unnecessary when the bill is identified directly.
@@ -142,8 +136,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Unable to find a matching line for sublist apply with key: [doc,line]`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -177,8 +169,6 @@ Documentation checked September 16, 2026.
 
 - `One or more bills or invoices has had a payment made on it since you retrieved the form`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The amount due may differ after discounts or other activity.
@@ -210,8 +200,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Adding new line to sublist apply is not allowed`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -245,8 +233,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Unparseable Internal Id, did you mean to lookup this field by Name or External ID? for field xx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

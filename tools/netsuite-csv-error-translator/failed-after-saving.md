@@ -24,8 +24,6 @@ Check what saved before retrying. A script or later processing step can fail aft
 
 - `AfterSubmit Script failed, record created with internalId xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The record saved before a script failed.

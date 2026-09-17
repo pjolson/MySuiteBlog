@@ -24,8 +24,6 @@ Compare the supplied header amount with the detail lines and review whether the 
 
 - `Your transaction does not balance. Please Adjust Expenses/Items.: userTotal:xx: totalField:xx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The supplied header amount disagrees with the lines.

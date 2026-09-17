@@ -24,8 +24,6 @@ Check the item, location, lot, bin, and status together, as well as the Status r
 
 - `Invalid inventorystatus reference key {status} for issueinventorynumber {number}.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite could not use that status with the inventory detail on this line. The status might exist elsewhere, but the import still needs the correct item, location, lot, bin, and status combination.

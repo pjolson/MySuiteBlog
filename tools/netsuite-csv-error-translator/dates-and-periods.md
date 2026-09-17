@@ -24,8 +24,6 @@ Compare the saved CSV text with the importing user’s date format and the inten
 
 - `Invalid postingperiod reference key for subsidiary 1`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The period value cannot be matched.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid effective date reference key`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `Amortization end date cannot be before amortization start date`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The amortization dates are reversed or misread.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `TypeError: Cannot find function getFullYear in object NaN`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -162,8 +154,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid date value (must be entered as mm/dd/yyyy)`
 - `The transaction date you specified is not within the date range of your accounting period`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

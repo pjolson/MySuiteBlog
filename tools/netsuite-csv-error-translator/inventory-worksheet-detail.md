@@ -24,8 +24,6 @@ Confirm that this is an inventory worksheet and review its bin-detail requiremen
 
 - `configure the inventory detail`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 This inventory worksheet is encountering a bin-detail requirement.

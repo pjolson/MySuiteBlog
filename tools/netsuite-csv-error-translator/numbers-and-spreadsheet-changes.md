@@ -65,8 +65,6 @@ Documentation checked September 16, 2026.
 
 - `You have entered an Invalid Field Value for [CostEstimate]`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The amount may include a currency symbol the mapping does not expect.
@@ -98,8 +96,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Rounding Error xx.xx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -134,8 +130,6 @@ Check each journal separately. If the amounts already balance, check which lines
 **Message looks like**
 
 - `The amounts in a journal entry must balance.`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -258,8 +252,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `You have entered an invalid field value for the following field: amount`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

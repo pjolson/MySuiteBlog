@@ -24,8 +24,6 @@ Check the transaction line, item reference, receipt history, and whether the row
 
 - `You cannot change the selected item because it has already been received.`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite is rejecting an item change because it considers the affected line already received.

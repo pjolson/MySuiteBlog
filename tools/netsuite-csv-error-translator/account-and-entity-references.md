@@ -24,8 +24,6 @@ Check the record identity and whether its subsidiary, currency, and active state
 
 - `Invalid employee reference key`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The time entry cannot match the employee supplied.
@@ -59,8 +57,6 @@ Documentation checked September 16, 2026.
 - `Invalid assetaccount reference key xxx`
 - `Invalid cogsaccount reference key xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The accounting reference does not match what the field expects.
@@ -93,8 +89,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid account reference key 'xxx' for subsidiary 'xxx'`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The account may not be valid for this subsidiary.
@@ -126,8 +120,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid entity reference key xx for currency xx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -162,8 +154,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid entity reference key`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The purchase order cannot match the vendor.
@@ -195,8 +185,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid subsidiary reference key xxx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

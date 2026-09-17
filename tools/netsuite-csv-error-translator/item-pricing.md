@@ -24,8 +24,6 @@ Check the starting price, price level, and existing matrix before deciding how t
 
 - `Please Enter Missing Price(s)`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The higher quantity break is present, but the starting price is missing.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `If you are not replacing the entire matrix you may only update existing headers. X is not in the existing matrix`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -99,8 +95,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid price level reference key XXX`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

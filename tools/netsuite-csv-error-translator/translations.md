@@ -24,8 +24,6 @@ Check language setup, translation mappings, and whether the main record needs to
 
 - `Invalid Locale Reference Key XX`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Creating the item and its translations together can cause this documented failure.
@@ -62,8 +60,6 @@ Documentation checked September 16, 2026.
 
 - `Adding new line to sublist translations is not allowed`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 Translation support may not be configured.
@@ -94,8 +90,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Unable to find a matching line for sublist translations`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

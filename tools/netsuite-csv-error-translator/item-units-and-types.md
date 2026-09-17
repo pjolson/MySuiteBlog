@@ -24,8 +24,6 @@ Check the item type and unit type before changing purchase, sales, or stock unit
 
 - `The record you are attempting to load has a different type: {actualType} from the type specified: {requestedType}`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite found a record, but the operation is trying to open it as a different type.
@@ -90,8 +88,6 @@ Documentation checked September 16, 2026.
 - `Invalid purchaseunit reference key xx`
 - `Invalid saleunit reference key xx`
 - `Invalid stockunit reference key xx`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

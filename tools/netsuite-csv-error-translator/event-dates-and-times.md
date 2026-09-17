@@ -24,8 +24,6 @@ Check the event’s start and end values, date format, and whether it spans date
 
 - `Date field not in your preferred date format`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 An event date does not match the importing user's format.
@@ -57,8 +55,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Required field missing for field Date`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -92,8 +88,6 @@ Documentation checked September 16, 2026.
 
 - `Parse of date/time failed`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 A date and time cannot be read.
@@ -125,8 +119,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Start time must be earlier than the end time`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

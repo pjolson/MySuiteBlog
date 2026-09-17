@@ -24,8 +24,6 @@ Decide whether to update, add, or replace lines, then use the keys for that spec
 
 - `Adding New Line to Sublist Locations is not Allowed`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite cannot tell which location row to update.
@@ -58,8 +56,6 @@ Documentation checked September 16, 2026.
 
 - `The record has been deleted since you retrieved it`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The update's line handling needs review.
@@ -91,8 +87,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Please choose an item to add`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
@@ -157,8 +151,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Total contribution for sales reps cannot exceed 100%`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

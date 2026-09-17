@@ -24,8 +24,6 @@ Distinguish the plan’s identity from its item reference and check the complete
 
 - `Could not find record with internal ID = xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The import is not identifying the intended record.
@@ -61,8 +59,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid start date ref key mm/dd/yyyy`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 

@@ -24,8 +24,6 @@ Check the list behind the field, the allowed selection, and the mapping referenc
 
 - `Invalid category reference key xx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The expense category cannot be matched.
@@ -59,8 +57,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid custitem reference key xxx`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 The value supplied to a custom item field does not match an allowed selection.
@@ -93,8 +89,6 @@ Documentation checked September 16, 2026.
 
 - `Invalid Lead Source Reference Key`
 
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
-
 **What it means**
 
 NetSuite cannot match the lead source.
@@ -126,8 +120,6 @@ Documentation checked September 16, 2026.
 **Message looks like**
 
 - `Invalid category reference key Information for website <NULL>`
-
-The wording identifies a matching situation, not a confirmed diagnosis for your account.
 
 **What it means**
 
