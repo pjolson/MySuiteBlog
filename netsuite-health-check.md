@@ -10,7 +10,7 @@ aside: false
 Find out what's quietly wrong in your NetSuite account before your auditor does. The Health Check looks at access conflicts, security gaps, audit exposure, and wasted license spend. We give you a prioritized plan to fix it.
 
 <div class="hc-hero-actions">
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
   <a href="/health-check-sample.pdf" target="_blank" class="cta-secondary">See a Sample Report</a>
 </div>
 
@@ -52,7 +52,7 @@ This is an expert-reviewed assessment, not a script you run yourself.
 <div class="health-check-card">
   <h3>$2,500, flat fee</h3>
   <p>Includes the assessment, the report, the manual review, and the debrief. Credited toward whatever comes next.</p>
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=pricing" class="cta-primary">Book Your Health Check</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=pricing" class="cta-primary">Book Your Health Check</a>
 </div>
 
 ## Frequently asked questions
@@ -82,5 +82,5 @@ Yes.
 </div>
 
 <div style="text-align: center; margin: 2.5rem 0;">
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=health-check&utm_content=footer" class="cta-primary">Book Your Health Check</a>
+  <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=footer" class="cta-primary">Book Your Health Check</a>
 </div>

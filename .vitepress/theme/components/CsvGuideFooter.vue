@@ -4,7 +4,7 @@ import CsvGuideNavigation from './CsvGuideNavigation.vue'
 const props = defineProps({ showNavigation: Boolean, slug: { type: String, default: '' } })
 // UTMs go on the external booking link only. Internal links stay clean so a
 // visitor's original attribution survives the session.
-const booking = `https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=csv-tool&utm_campaign=import-fix&utm_content=${props.slug || 'csv-tool'}`
+const booking = `https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=csv-tool&utm_campaign=import-fix&utm_content=${props.slug || 'csv-tool'}`
 </script>
 
 <template>

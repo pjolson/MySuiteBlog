@@ -17,7 +17,7 @@ Tell us a little about your NetSuite environment and what is getting in the way.
 
 ## Book a Meeting
 
-[Schedule a meeting](https://meetings-eu1.hubspot.com/patrick-olson/mysuite)
+[Schedule a meeting](https://meetings-eu1.hubspot.com/patrick-olson)
 
 ---
 

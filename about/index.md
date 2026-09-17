@@ -16,19 +16,19 @@ Your implementation partner knows NetSuite. They don't know your business. MySui
     <h3>Ongoing Support & Improvement</h3>
     <div class="offering-scope">from $4,000/mo</div>
     <p>A certified admin on call for support, configuration, reporting, and training once you're live. Retainers scale from 20 to 80 hours a month, and we adjust as your priorities change. The system keeps improving instead of drifting.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=ongoing-support" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=services&utm_content=ongoing-support" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="implementation-support">
     <h3>Implementation Support</h3>
     <div class="offering-scope">scoped to your project</div>
     <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. Not the partner. Your advocate.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=implementation-support" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=services&utm_content=implementation-support" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="customization">
     <h3>Customization & Integrations</h3>
     <div class="offering-scope">quoted to scope</div>
     <p>SuiteScript and SuiteQL builds, reporting, data migration, and integrations with the tools your business already runs on, including Celigo, Workato, Box, Concur, and Salesforce. Fixed-fee, scoped to the work, with PMP-certified project management included.</p>
-    <a href="https://meetings-eu1.hubspot.com/patrick-olson/mysuite?utm_source=mysuite&utm_medium=services&utm_content=customization" class="cta-secondary">Get Started</a>
+    <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=services&utm_content=customization" class="cta-secondary">Get Started</a>
   </div>
 </div>
 
@@ -48,6 +48,30 @@ In the first few weeks we get access to your account, review your configuration,
     <p>Patrick scopes every engagement and remains your consultant throughout. He lives in Barcelona and works daily with clients across North America.</p>
   </div>
 </div>
+
+## Recent work
+
+### Client-side resource, multi-division horticulture business
+
+A horticulture company running retail garden centers, greenhouse growing operations, a landscaping division, and wholesale, with over a thousand employees at seasonal peak, was six months behind on its NetSuite implementation. The partner was delivering. The problem was on the client side. Testing, data migration, and internal project management all depended on people who still had full-time jobs running the business, and the work was not getting done.
+
+We joined as the client-side resource for six months, took over the internal project plan, and drove the workstreams that had stalled: building and running the test cycles, preparing and executing the large data imports, and keeping internal decisions moving so the partner was never waiting on the client. Department leads did the parts only they could do, and we did the rest.
+
+The company went live on the reset date with no further slip. We rolled off after go-live with the internal team owning the system.
+
+### Backlog cleared, specialty retail franchisor
+
+A national specialty retail franchisor with a wholesale arm had a list of roughly 50 NetSuite fixes and improvements that had been growing for months. Reporting by division and segment that finance could not get out of the system. Purchase orders with hundreds of lines that reviewers had to page through in NetSuite because there was no way to export them. Small configuration fixes nobody had time for.
+
+We worked through the entire list in the first month. That included a one-click export of PO lines to Excel, built in SuiteScript, and the division and segment reporting on sales, bills, and payments that finance had been asking for. Once the backlog was gone, the same hours went to the next round of reporting.
+
+### Subscription operations at scale, financial services firm
+
+A financial services firm newly live on NetSuite was managing thousands of recurring subscriptions with out-of-the-box tools built for a few hundred. Renewals were handled one at a time. Collections were falling behind, and the standard reminder emails made it worse: a customer with 17 past-due invoices got 17 separate emails, each with its own payment link.
+
+We built three custom applications. A bulk-renewal Suitelet that lets the team select and renew subscriptions in batches instead of one by one. A lightweight CRM layer on native activity records, so choosing a value in a dropdown triggers the matching customer email automatically. And an automated past-due process that runs every weekday, aggregates each customer's open invoices into a single email with one payment link through their payment provider, replacing the one-email-per-invoice flood.
+
+The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after we rolled off.
 
 ## Is this a fit?
 
