@@ -6,6 +6,8 @@ import { copyableSteps } from '../../data/csv-errors/render.mjs'
 
 const props = defineProps({ entryId: { type: String, required: true } })
 const entry = computed(() => entries.find(entry => entry.id === props.entryId))
+// utm_term carries the entry ID so bookings attribute to the exact error.
+const booking = computed(() => `https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=csv-tool&utm_campaign=import-fix&utm_content=${entry.value.slug}&utm_term=${entry.value.id}`)
 const question = computed(() => questionFor(entry.value))
 const selected = ref('')
 const copyStatus = ref('')
@@ -38,6 +40,7 @@ async function copySteps() {
     </details>
     <div class="csv-actions">
       <button type="button" class="cta-secondary csv-button" @click="copySteps">Copy steps</button>
+      <a class="csv-fix-link" :href="booking" target="_blank" rel="noopener">or book a free 30-minute fix</a>
       <span role="status" class="csv-help">{{ copyStatus }}</span>
     </div>
   </div>

@@ -32,13 +32,13 @@ Your implementation partner knows NetSuite. They don't know your business. MySui
   </div>
 </div>
 
-## How we'll work together
+## How we'll work together {#how-we-work}
 
 Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there we propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
 
 In the first few weeks we get access to your account, review your configuration, roles, and open issues, and set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You always work with a senior consultant directly. The same certified person scopes the work and does the work.
 
-## Work directly with Patrick Olson
+## Work directly with Patrick Olson {#patrick}
 
 <div class="founder-block">
   <img src="../img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">

@@ -77,6 +77,9 @@
 .vp-doc .csv-empty h3 { margin-top: 0; }
 .csv-empty .cta-actions { align-items: center; }
 .csv-results-count { font-size: 0.9rem; font-weight: 600; }
+/* Quiet per-entry booking link: a text link in the existing action row, not
+   another block, so multi-entry guides do not become a wall of CTAs. */
+.csv-fix-link { font-size: 0.9rem; }
 /* The live region stays rendered while empty; keep display intact so
    assistive technology announces its first update. */
 .vp-doc p.csv-results-count:empty { margin: 0; }

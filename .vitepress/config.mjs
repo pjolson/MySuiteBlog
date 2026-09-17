@@ -181,8 +181,17 @@ export default defineConfig({
           { text: 'CSV Error Translator', link: '/tools/netsuite-csv-error-translator/' }
         ]
       },
-      { text: 'Services', link: '/about/' },
-      { text: 'Health Check', link: '/netsuite-health-check' },
+      {
+        text: 'Services', activeMatch: '^/(about|netsuite-health-check)',
+        items: [
+          { text: 'Services Overview', link: '/about/' },
+          { text: 'How We Work', link: '/about/#how-we-work' },
+          { text: 'About Patrick', link: '/about/#patrick' },
+          { text: 'Recent Work', link: '/about/#recent-work' },
+          { text: 'Credentials', link: '/about/#credentials' },
+          { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
+        ]
+      },
       { text: 'Partners', link: '/partners/' },
       { text: 'Contact', link: '/contact/' },
       { text: 'Greenlight', link: 'https://greenlightsoftware.io', target: '_blank' }
