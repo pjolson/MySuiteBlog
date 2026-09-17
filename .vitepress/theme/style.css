@@ -930,3 +930,27 @@
   .founder-block { flex-direction: column; align-items: center; }
   .founder-photo { width: 144px; height: 144px; }
 }
+
+/* Recent work cards: same bordered, brand-accented language as the service
+   and health-check cards, with a kicker tying each story to its service. */
+.work-card {
+  border: 1px solid var(--vp-c-divider);
+  border-left: 3px solid var(--vp-c-brand-1);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem 1.75rem;
+  margin: 1.5rem 0;
+}
+.work-kicker {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+.vp-doc .work-card h3 { margin: 0.35rem 0 1rem; }
+.work-card .work-outcome {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 1rem;
+  margin-bottom: 0;
+}

@@ -51,19 +51,32 @@ In the first few weeks we get access to your account, review your configuration,
 
 ## Recent work
 
+<div class="work-card">
+<div class="work-kicker">Implementation Support</div>
+
 ### Client-side resource, multi-division horticulture business
 
 A horticulture company running retail garden centers, greenhouse growing operations, a landscaping division, and wholesale, with over a thousand employees at seasonal peak, was six months behind on its NetSuite implementation. The partner was delivering. The problem was on the client side. Testing, data migration, and internal project management all depended on people who still had full-time jobs running the business, and the work was not getting done.
 
 We joined as the client-side resource for six months, took over the internal project plan, and drove the workstreams that had stalled: building and running the test cycles, preparing and executing the large data imports, and keeping internal decisions moving so the partner was never waiting on the client. Department leads did the parts only they could do, and we did the rest.
 
-The company went live on the reset date with no further slip. We rolled off after go-live with the internal team owning the system.
+<p class="work-outcome">The company went live on the reset date with no further slip. We rolled off after go-live with the internal team owning the system.</p>
+</div>
+
+<div class="work-card">
+<div class="work-kicker">Ongoing Support &amp; Improvement</div>
 
 ### Backlog cleared, specialty retail franchisor
 
 A national specialty retail franchisor with a wholesale arm had a list of roughly 50 NetSuite fixes and improvements that had been growing for months. Reporting by division and segment that finance could not get out of the system. Purchase orders with hundreds of lines that reviewers had to page through in NetSuite because there was no way to export them. Small configuration fixes nobody had time for.
 
-We worked through the entire list in the first month. That included a one-click export of PO lines to Excel, built in SuiteScript, and the division and segment reporting on sales, bills, and payments that finance had been asking for. Once the backlog was gone, the same hours went to the next round of reporting.
+We worked through the entire list in the first month. That included a one-click export of PO lines to Excel, built in SuiteScript, and the division and segment reporting on sales, bills, and payments that finance had been asking for.
+
+<p class="work-outcome">Once the backlog was gone, the same hours went to the next round of reporting.</p>
+</div>
+
+<div class="work-card">
+<div class="work-kicker">Customization &amp; Integrations</div>
 
 ### Subscription operations at scale, financial services firm
 
@@ -71,7 +84,8 @@ A financial services firm newly live on NetSuite was managing thousands of recur
 
 We built three custom applications. A bulk-renewal Suitelet that lets the team select and renew subscriptions in batches instead of one by one. A lightweight CRM layer on native activity records, so choosing a value in a dropdown triggers the matching customer email automatically. And an automated past-due process that runs every weekday, aggregates each customer's open invoices into a single email with one payment link through their payment provider, replacing the one-email-per-invoice flood.
 
-The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after we rolled off.
+<p class="work-outcome">The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after we rolled off.</p>
+</div>
 
 ## Is this a fit?
 
