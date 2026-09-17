@@ -38,6 +38,17 @@ Every engagement starts with a conversation, not a contract. We talk through you
 
 In the first few weeks we get access to your account, review your configuration, roles, and open issues, and set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You always work with a senior consultant directly. The same certified person scopes the work and does the work.
 
+## Work directly with Patrick Olson
+
+<div class="founder-block">
+  <img src="../img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
+  <div class="founder-text">
+    <p>MySuite is the NetSuite practice of Patrick Olson, a senior consultant with thirteen years in NetSuite. Before consulting independently, Patrick spent five years running NetSuite from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why MySuite works the way it does: on the client's side of the table.</p>
+    <p>The work Patrick likes best is becoming part of a team for a while: training the people, delivering the system, and leaving both stronger than he found them. He has seen implementations from the customer chair, the partner chair, and the rescue chair. There is not much in NetSuite he is meeting for the first time.</p>
+    <p>Patrick scopes every engagement and remains your consultant throughout. He lives in Barcelona and works daily with clients across North America.</p>
+  </div>
+</div>
+
 ## Is this a fit?
 
 MySuite works best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or round-the-clock coverage, we are not the right fit, and we will tell you.

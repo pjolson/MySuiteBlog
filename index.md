@@ -48,7 +48,15 @@ In the first few weeks of an ongoing engagement, we review your configuration, r
   <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
 </div>
 
-## Certified and hands-on
+## Work directly with Patrick Olson
+
+<div class="founder-block">
+  <img src="./img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
+  <div class="founder-text">
+    <p>MySuite is the NetSuite practice of Patrick Olson, a senior consultant with thirteen years in NetSuite. Before consulting independently, Patrick spent five years running NetSuite from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why MySuite works the way it does: on the client's side of the table.</p>
+    <p>Patrick scopes every engagement and remains your consultant throughout. He lives in Barcelona and works daily with clients across North America.</p>
+  </div>
+</div>
 
 NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalytics, ARM, Multi-Book, and PMP. Hands-on across administration, SuiteScript and SuiteQL, reporting, supply chain, and manufacturing, with integration work in Celigo, Workato, Box, Concur, and Salesforce.
 
