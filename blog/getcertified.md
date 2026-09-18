@@ -101,7 +101,7 @@ These badges were earned under the old exam names, which is how they should stay
 <img src="./img/finusernew.jpg" width=48% alt="NetSuite Financial User Certified">
 
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Ongoing Support" message="Need a certified NetSuite admin on your team? We offer fractional administration and advisory support for organizations running NetSuite." />
+<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="Need a certified NetSuite admin on your team? We offer fractional administration and advisory support for organizations running NetSuite." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 05/28/2026

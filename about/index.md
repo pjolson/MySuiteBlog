@@ -14,9 +14,9 @@ Your implementation partner knows NetSuite. They don't know your business. MySui
 
 <div class="services-grid offerings-grid">
   <div class="service-card" id="ongoing-support">
-    <h3>Ongoing Support & Improvement</h3>
-    <div class="offering-scope">from $4,000/mo</div>
-    <p>A certified admin on call for support, configuration, reporting, and training once you're live. Retainers scale from 20 to 80 hours a month, and we adjust as your priorities change. The system keeps improving instead of drifting.</p>
+    <h3>Fractional NetSuite Administration</h3>
+    <div class="offering-scope">monthly retainer</div>
+    <p>A senior certified admin as a fraction of your team: support, configuration, reporting, and training, working a prioritized backlog. Sized to your workload and priced by the month, not by the hour.</p>
     <a href="/contact/" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="implementation-support">

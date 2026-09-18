@@ -18,8 +18,8 @@ hero:
       link: /about/
 
 features:
-  - title: Ongoing Support & Improvement
-    details: "A certified admin on call for support, configuration, reporting, and training after go-live. Retainers scale from 20 to 80 hours a month."
+  - title: Fractional NetSuite Administration
+    details: "A senior certified admin as a fraction of your team, handling support, configuration, reporting, and training after go-live. Priced by the month, not by the hour."
     link: /about/#ongoing-support
     linkText: Learn More
   - title: Implementation Support
