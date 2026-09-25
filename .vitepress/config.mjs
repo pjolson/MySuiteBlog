@@ -113,6 +113,13 @@ export default defineConfig({
     // The page must also render the same Q&A visibly for Google to honor it.
     if (pageData.frontmatter.faqSchema) {
       const faqByPath = {
+        'blog/netsuite-administrator-cost.md': [
+          { q: 'How much does a full-time NetSuite administrator cost?', a: 'In the US market, experienced NetSuite administrators mostly earn between $95,000 and $140,000 in base salary, and the fully loaded cost with benefits and overhead typically lands between $120,000 and $190,000 per year. Recruiting fees and a search that commonly takes two to four months add to the first-year cost.' },
+          { q: 'What does fractional NetSuite administration mean?', a: 'A senior administrator covers the role for a defined portion of their time on an ongoing monthly basis. The same person handles support, configuration, reporting, and improvements every month, holding the system knowledge without the cost of a full-time seat.' },
+          { q: 'How many hours of administration does a live NetSuite account need?', a: 'It varies with user count, customization, and integrations. Many mid-market accounts generate between twenty and eighty hours of genuine administration work per month. Counting your actual requests, builds, and fixes over the last few months gives a more honest number than any benchmark.' },
+          { q: 'Is a support contract from a partner enough after go-live?', a: 'It can be, if your needs are occasional and you accept a reactive model. Support contracts answer tickets. They do not watch roles, integrations, or system health between tickets, and hours are often consumed by consultants learning your business before fixing the problem.' },
+          { q: 'When does a full-time NetSuite administrator make sense?', a: 'When the genuine workload runs well past one hundred hours a month, or the environment spans many subsidiaries with heavy customization and constant change. At that scale a dedicated seat is justified, and a fractional admin can keep the system stable during the search and help interview candidates.' }
+        ],
         'netsuite-health-check.md': [
           { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and we remove all access objects when the engagement ends.' },
           { q: 'How long does the NetSuite Health Check take?', a: 'Report within 24 hours. Debrief scheduled with you, usually within the same week.' },
