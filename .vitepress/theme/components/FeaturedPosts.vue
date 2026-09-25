@@ -12,6 +12,11 @@
 <script setup>
 const posts = [
   {
+    title: 'What a NetSuite Administrator Actually Costs',
+    url: '/blog/netsuite-administrator-cost',
+    tags: ['Admin', 'Advisory']
+  },
+  {
     title: 'What a Client-Side Resource Does on a NetSuite Implementation',
     url: '/blog/netsuite-client-side-resource',
     tags: ['Implementation', 'Advisory']
@@ -20,11 +25,6 @@ const posts = [
     title: 'Why NetSuite Implementation Partners Should Want a Client-Side Resource',
     url: '/blog/netsuite-partner-client-side-resource',
     tags: ['Implementation', 'Partners']
-  },
-  {
-    title: 'Why You Need an Internal NetSuite Expert on Your Implementation Team',
-    url: '/blog/netsuite-implementation-resource',
-    tags: ['Implementation', 'Advisory']
   },
   {
     title: 'What to Look for in Your NetSuite SOW Before You Sign It',
