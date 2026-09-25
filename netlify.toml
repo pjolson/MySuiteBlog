@@ -3,7 +3,11 @@
   publish = ".vitepress/dist"
 
 [build.environment]
-  NODE_VERSION = "22"
+  # Exact pin: a bare "22" resolves to the newest 22.x, and 22.23.3 shipped
+  # without a prebuilt binary for Netlify's build image, which sent builds
+  # into compiling Node from source. 22.18.0 is the version this site is
+  # built and tested on locally.
+  NODE_VERSION = "22.18.0"
 
 [functions]
   directory = "netlify/functions"
