@@ -2,7 +2,7 @@
 layout: home
 title: "NetSuite Support for Finance & Operations Teams"
 titleTemplate: ":title | MySuite"
-description: "NetSuite consulting for finance and operations teams: ongoing administration and support, implementation help, and customization. Senior certified expertise that stays with you."
+description: "NetSuite support from the client side of the table. One senior certified consultant: fractional administration, implementation support, and customization."
 hero:
   text: NetSuite support from the client side of the table.
   tagline: "Fractional administration, implementation support, and customization for finance and operations teams. One senior certified consultant, the same person in every session, not a rotating bench."

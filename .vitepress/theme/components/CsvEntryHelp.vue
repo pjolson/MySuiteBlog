@@ -40,7 +40,7 @@ async function copySteps() {
     </details>
     <div class="csv-actions">
       <button type="button" class="cta-secondary csv-button" @click="copySteps">Copy steps</button>
-      <a class="csv-fix-link" :href="booking" target="_blank" rel="noopener">or book a free 30-minute fix</a>
+      <a class="csv-fix-link" :href="booking" target="_blank" rel="noopener">or book a free 30-minute look</a>
       <span role="status" class="csv-help">{{ copyStatus }}</span>
     </div>
   </div>

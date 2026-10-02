@@ -2,7 +2,7 @@
 aside: false
 title: NetSuite Support, Implementation & Customization
 lastUpdated: false
-description: "NetSuite consulting for finance and operations teams: ongoing support and administration, implementation help, and customization and integrations. Senior certified expertise that stays with you."
+description: "Fractional NetSuite administration, implementation support, and customization from one senior certified consultant who scopes the work and does the work."
 ---
 
 # The NetSuite expert on your side of the table.
