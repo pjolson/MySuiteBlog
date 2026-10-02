@@ -5,7 +5,7 @@ import { useData } from 'vitepress'
 const props = defineProps({
   message: {
     type: String,
-    default: 'MySuite provides contract NetSuite administration and development support, from quick fixes to ongoing managed services.'
+    default: 'I work on the client side of NetSuite: the same senior person every session, learning your business and not just your system, from quick fixes to owning the admin seat.'
   },
   secondaryLink: { type: String, default: '/about/' },
   secondaryText: { type: String, default: 'View Services & Pricing' }

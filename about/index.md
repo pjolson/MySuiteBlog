@@ -1,4 +1,5 @@
 ---
+aside: false
 title: NetSuite Support, Implementation & Customization
 lastUpdated: false
 description: "NetSuite consulting for finance and operations teams: ongoing support and administration, implementation help, and customization and integrations. Senior certified expertise that stays with you."
@@ -6,7 +7,7 @@ description: "NetSuite consulting for finance and operations teams: ongoing supp
 
 # The NetSuite expert on your side of the table.
 
-Your implementation partner knows NetSuite. They don't know your business. MySuite supports finance and operations teams through an implementation and long after go-live, led by a NetSuite Certified ERP Consultant and PMP. You get a senior consultant, the same one in every session. No rotating juniors, no handoffs.
+Your implementation partner knows NetSuite. They do not know your business. I support finance and operations teams through an implementation and long after go-live: a NetSuite Certified ERP Consultant and PMP, the same person in every session. No rotating juniors, no handoffs.
 
 <div style="text-align: center; margin: 1.5rem 0;">
   <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
@@ -22,7 +23,7 @@ Your implementation partner knows NetSuite. They don't know your business. MySui
   <div class="service-card" id="implementation-support">
     <h3>Implementation Support</h3>
     <div class="offering-scope">scoped to your project</div>
-    <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. Not the partner. Your advocate.</p>
+    <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. The partner delivers the system. I make sure your side of the project holds up its end, which is where most slips start.</p>
     <a href="/contact/" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="customization">
@@ -35,18 +36,18 @@ Your implementation partner knows NetSuite. They don't know your business. MySui
 
 ## How we'll work together {#how-we-work}
 
-Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there we propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
+Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there I propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
 
-In the first few weeks we get access to your account, review your configuration, roles, and open issues, and set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You always work with a senior consultant directly. The same certified person scopes the work and does the work.
+In the first few weeks I get access to your account, review your configuration, roles, and open issues, and we set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You work with me directly. I scope the work and I do the work.
 
 ## Work directly with Patrick Olson {#patrick}
 
 <div class="founder-block">
   <img src="../img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
   <div class="founder-text">
-    <p>MySuite is the NetSuite practice of Patrick Olson, a senior consultant with thirteen years in NetSuite. Before consulting independently, Patrick spent five years running NetSuite from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why MySuite works the way it does: on the client's side of the table.</p>
-    <p>The work Patrick likes best is joining a team for a while and leaving it stronger than he found it, with the system delivered and the people trained to run it. He has seen implementations from the customer chair, the partner chair, and the rescue chair. There is not much in NetSuite he is meeting for the first time.</p>
-    <p>Patrick scopes every engagement and remains your consultant throughout. He lives in Barcelona and works daily with clients across North America.</p>
+    <p>MySuite is my practice. I am Patrick Olson, a senior consultant with thirteen years in NetSuite: five of them running it from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why I work the way I do, on the client's side of the table.</p>
+    <p>The work I like best is joining a team for a while and leaving it stronger than I found it, with the system delivered and the people trained to run it. I have seen implementations from the customer chair, the partner chair, and the rescue chair. There is not much in NetSuite I am meeting for the first time.</p>
+    <p>I scope every engagement and I remain your consultant throughout. None of the decisions already in your account are mine, which means I can assess them without defending them. I live in Barcelona and work daily with clients across North America.</p>
   </div>
 </div>
 
@@ -67,9 +68,9 @@ In the first few weeks we get access to your account, review your configuration,
 
 A horticulture company running retail garden centers, greenhouse growing operations, a landscaping division, and wholesale, with over a thousand employees at seasonal peak, was six months behind on its NetSuite implementation. The partner was delivering. The problem was on the client side. Testing, data migration, and internal project management all depended on people who still had full-time jobs running the business, and the work was not getting done.
 
-Patrick joined as the client-side resource for six months, took over the internal project plan, and drove the workstreams that had stalled: building and running the test cycles, preparing and executing the large data imports, and keeping internal decisions moving so the partner was never waiting on the client. Department leads did the parts only they could do, and Patrick did the rest.
+I joined as the client-side resource for six months, took over the internal project plan, and drove the workstreams that had stalled: building and running the test cycles, preparing and executing the large data imports, and keeping internal decisions moving so the partner was never waiting on the client. Department leads did the parts only they could do, and I did the rest.
 
-<p class="work-outcome">The company went live on the reset date with no further slip. Patrick rolled off after go-live with the internal team owning the system.</p>
+<p class="work-outcome">The company went live on the reset date with no further slip. I rolled off after go-live with the internal team owning the system.</p>
 </div>
 
 <div class="work-card">
@@ -79,7 +80,7 @@ Patrick joined as the client-side resource for six months, took over the interna
 
 A national specialty retail franchisor with a wholesale arm had a list of roughly 50 NetSuite fixes and improvements that had been growing for months. Reporting by division and segment that finance could not get out of the system. Purchase orders with hundreds of lines that reviewers had to page through in NetSuite because there was no way to export them. Small configuration fixes nobody had time for.
 
-We worked through the entire list in the first month. That included a one-click export of PO lines to Excel, built in SuiteScript, and the division and segment reporting on sales, bills, and payments that finance had been asking for.
+I worked through the entire list in the first month. That included a one-click export of PO lines to Excel, built in SuiteScript, and the division and segment reporting on sales, bills, and payments that finance had been asking for.
 
 <p class="work-outcome">Once the backlog was gone, the same hours went to the next round of reporting.</p>
 </div>
@@ -91,14 +92,14 @@ We worked through the entire list in the first month. That included a one-click 
 
 A financial services firm newly live on NetSuite was managing thousands of recurring subscriptions with out-of-the-box tools built for a few hundred. Renewals were handled one at a time. Collections were falling behind, and the standard reminder emails made it worse: a customer with 17 past-due invoices got 17 separate emails, each with its own payment link.
 
-We built three custom applications. A bulk-renewal Suitelet that lets the team select and renew subscriptions in batches instead of one by one. A lightweight CRM layer on native activity records, so choosing a value in a dropdown triggers the matching customer email automatically. And an automated past-due process that runs every weekday, aggregates each customer's open invoices into a single email with one payment link through their payment provider, replacing the one-email-per-invoice flood.
+I built three custom applications. A bulk-renewal Suitelet that lets the team select and renew subscriptions in batches instead of one by one. A lightweight CRM layer on native activity records, so choosing a value in a dropdown triggers the matching customer email automatically. And an automated past-due process that runs every weekday, aggregates each customer's open invoices into a single email with one payment link through their payment provider, replacing the one-email-per-invoice flood.
 
-<p class="work-outcome">The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after we rolled off.</p>
+<p class="work-outcome">The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after I rolled off.</p>
 </div>
 
 ## Is this a fit?
 
-MySuite works best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or round-the-clock coverage, we are not the right fit, and we will tell you.
+I work best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or coverage around the clock, I am not the right fit, and I will tell you.
 
 <div class="health-check-card">
   <h3>One way to start: NetSuite Health Check, $2,500</h3>

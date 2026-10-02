@@ -1,11 +1,12 @@
 ---
+aside: false
 title: Contact a NetSuite Advisor
-description: "Get in touch with MySuite Consulting for NetSuite optimization, customization, and support. Book a meeting or send a message."
+description: "Talk to Patrick Olson about your NetSuite account: what you are running, where it hurts, and whether a client-side consultant is the right fit. No obligation."
 ---
 
 # Contact
 
-Tell us a little about your NetSuite environment and what is getting in the way. The first conversation is a straightforward call: what you are running, where it hurts, and whether MySuite is the right fit to help. No assessment purchase required to talk, and no obligation if it is not a fit. If it is, we will follow up with a proposed scope.
+Tell me a little about your NetSuite environment and what is getting in the way. The first conversation is a straightforward call: what you are running, where it hurts, and whether I am the right fit to help. No assessment purchase required to talk, and no obligation if it is not a fit. If it is, I will follow up with a proposed scope.
 
 ## Get in Touch
 

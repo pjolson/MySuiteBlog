@@ -4,8 +4,8 @@ title: "NetSuite Support for Finance & Operations Teams"
 titleTemplate: ":title | MySuite"
 description: "NetSuite consulting for finance and operations teams: ongoing administration and support, implementation help, and customization. Senior certified expertise that stays with you."
 hero:
-  text: NetSuite support from a consultant who owns the outcome.
-  tagline: "Ongoing administration, implementation help, and customization for finance and operations teams. Senior certified expertise that stays with you, not a rotating bench."
+  text: NetSuite support from the client side of the table.
+  tagline: "Fractional administration, implementation support, and customization for finance and operations teams. One senior certified consultant, the same person in every session, not a rotating bench."
   image:
     src: /mark.svg
     alt: MySuite
@@ -36,13 +36,13 @@ features:
 
 ## Where we help
 
-Most teams reach out at one of a few moments: the implementation partner has rolled off and no one owns the system, the admin seat is empty and the backlog is growing, a report or workflow is not doing what the business needs, or an integration has to connect NetSuite to the rest of the stack. In each case you work with a senior certified consultant who understands both the software and the accounting and operations work it supports.
+Most teams reach out at one of a few moments: the implementation partner has rolled off and no one owns the system, the admin seat is empty and the backlog is growing, a report or workflow is not doing what the business needs, or an integration has to connect NetSuite to the rest of the stack. In each case you work with me directly, a senior certified consultant who understands both the software and the accounting and operations work it supports. And because none of the past configuration decisions in your account are mine, I can assess them without defending them.
 
 ## How engagements work
 
-Every engagement starts with a conversation about your NetSuite environment and what is getting in the way. From there we agree on scope: an ongoing retainer, a fixed-fee project, or implementation support for a defined phase. You work with a senior consultant directly, the same certified person who scopes the work and does the work, in every session.
+Every engagement starts with a conversation about your NetSuite environment and what is getting in the way. From there we agree on a scope: an ongoing retainer, a fixed-fee project, or implementation support for a defined phase. You work with me directly. I scope the work and I do the work, in every session.
 
-In the first few weeks of an ongoing engagement, we review your configuration, roles, and open issues and prioritize together. You get a clear picture of what needs attention and in what order, before committing to a long list of work.
+In the first few weeks of an ongoing engagement, I review your configuration, roles, and open issues, and we prioritize together. You get a clear picture of what needs attention and in what order, before committing to a long list of work.
 
 <div style="text-align: center; margin: 2rem 0;">
   <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
@@ -53,8 +53,8 @@ In the first few weeks of an ongoing engagement, we review your configuration, r
 <div class="founder-block">
   <img src="./img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
   <div class="founder-text">
-    <p>MySuite is the NetSuite practice of Patrick Olson, a senior consultant with thirteen years in NetSuite. Before consulting independently, Patrick spent five years running NetSuite from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why MySuite works the way it does: on the client's side of the table.</p>
-    <p>Patrick scopes every engagement and remains your consultant throughout. He lives in Barcelona and works daily with clients across North America.</p>
+    <p>MySuite is my practice. I am Patrick Olson, a senior consultant with thirteen years in NetSuite: five of them running it from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why I work the way I do, on the client's side of the table.</p>
+    <p>I scope every engagement and I remain your consultant throughout. I live in Barcelona and work daily with clients across North America.</p>
   </div>
 </div>
 
