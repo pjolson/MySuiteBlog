@@ -63,6 +63,10 @@ export default defineConfig({
     ['script', { src: 'https://analytics.ahrefs.com/analytics.js', 'data-key': 'JB7/uRXKgpaYMdBoftGA9Q', async: '' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-R3FVBP7K9S' }],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-R3FVBP7K9S');"],
+    // HubSpot tracking (portal 147146964). Gives HubSpot the original source and
+    // first page seen, which it cannot know from the contact-page form alone.
+    // Held off the CSV translator for the same reason GA4 is, one line above.
+    ['script', {}, "if (!location.pathname.startsWith('/tools/netsuite-csv-error-translator/')) { var h = document.createElement('script'); h.type = 'text/javascript'; h.id = 'hs-script-loader'; h.async = true; h.defer = true; h.src = 'https://js-eu1.hs-scripts.com/147146964.js'; document.head.appendChild(h); }"],
   ],
 
   transformPageData(pageData) {
