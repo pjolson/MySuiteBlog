@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" width="2048" height="1152">
+  <!--
+    MySuite YouTube channel banner. 2048 x 1152 (YouTube's minimum upload size).
+
+    YouTube crops this differently on every device. Only the centred
+    1235 x 338 box is guaranteed visible everywhere, so ALL text and the
+    wordmark sit inside it:
+        x 406.5 .. 1641.5      y 407 .. 745
+    The gradient and bracket pattern are allowed to bleed to the full canvas,
+    which is what television and wide desktop viewers see.
+
+    The "my" text carries textLength so the brackets stay correctly spaced
+    whatever font renders the file. Do not remove it.
+  -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A4D33"/>
+      <stop offset="100%" stop-color="#0E6B47"/>
+    </linearGradient>
+    <pattern id="brackets" x="0" y="0" width="160" height="160" patternUnits="userSpaceOnUse">
+      <path d="M 20 40 L 10 40 L 10 120 L 20 120" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 140 40 L 150 40 L 150 120 L 140 120" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </pattern>
+  </defs>
+
+  <rect width="2048" height="1152" fill="url(#bg)"/>
+  <rect width="2048" height="1152" fill="url(#brackets)"/>
+
+  <!-- wordmark, centred on x=1024, scaled to a 64px cap height -->
+  <g transform="translate(879.7, 425) scale(0.63)">
+    <path d="M 23.86 4.5 L 4.5 4.5 L 4.5 96.9 L 23.86 96.9"
+          stroke="#2DD4A4" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="39.7" y="83.7" font-size="88" font-weight="700" fill="#FFFFFF"
+          textLength="149" lengthAdjust="spacingAndGlyphs"
+          font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">my</text>
+    <path d="M 204.54 4.5 L 223.9 4.5 L 223.9 96.9 L 204.54 96.9"
+          stroke="#2DD4A4" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="243.26" y="83.7" font-size="88" font-weight="600" fill="#FFFFFF"
+          textLength="214.7" lengthAdjust="spacingAndGlyphs"
+          font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">suite</text>
+  </g>
+
+  <!-- headline, inside the all-device safe area -->
+  <text x="1024" y="575" text-anchor="middle" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF"
+        font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">A senior NetSuite advisor</text>
+  <text x="1024" y="649" text-anchor="middle" font-size="62" font-weight="700" letter-spacing="-1.5" fill="#FFFFFF"
+        font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">on your side of the table</text>
+
+  <text x="1024" y="721" text-anchor="middle" font-size="22" font-weight="500" letter-spacing="1" fill="#FFFFFF" fill-opacity="0.72"
+        font-family="'DejaVu Sans', -apple-system, BlinkMacSystemFont, Inter, 'Segoe UI', sans-serif">Administration · Implementation · Customization   ·   mysuite.tech</text>
+</svg>
