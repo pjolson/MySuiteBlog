@@ -4,8 +4,8 @@ title: "NetSuite Support for Finance & Operations Teams"
 titleTemplate: ":title | MySuite"
 description: "NetSuite support from the client side of the table. One senior certified consultant: fractional administration, implementation support, and customization."
 hero:
-  text: NetSuite support from the client side of the table.
-  tagline: "Fractional administration, implementation support, and customization for finance and operations teams. One senior certified consultant, the same person in every session, not a rotating bench."
+  text: A senior NetSuite advisor on your side of the table
+  tagline: "Retainer-based advisory for finance and operations teams, mid-implementation or post-go-live. You work directly with me, a certified consultant with thirteen years in NetSuite. No juniors, no handoffs."
   image:
     src: /mark.svg
     alt: MySuite
@@ -41,6 +41,8 @@ Most teams reach out at one of a few moments: the implementation partner has rol
 ## How engagements work
 
 Every engagement starts with a conversation about your NetSuite environment and what is getting in the way. From there we agree on a scope: an ongoing retainer, a fixed-fee project, or implementation support for a defined phase. You work with me directly. I scope the work and I do the work, in every session.
+
+An ongoing retainer includes a standing weekly working session, priority access between sessions, and ownership of your NetSuite roadmap: what to fix, in what order, and why. The scope is fixed each month, so the arrangement stays predictable for both of us.
 
 In the first few weeks of an ongoing engagement, I review your configuration, roles, and open issues, and we prioritize together. You get a clear picture of what needs attention and in what order, before committing to a long list of work.
 
@@ -92,6 +94,10 @@ NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalyti
     <p>Native NetSuite apps for approvals and accounts payable, built by MySuite. Automated routing, budget checks, and bill entry, with every step human-approved and audit-ready.</p>
     <a href="https://greenlightsoftware.io" target="_blank" class="cta-secondary">greenlightsoftware.io →</a>
   </div>
+</div>
+
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
 </div>
 
 </div>
