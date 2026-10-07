@@ -1,4 +1,5 @@
 ---
+pageClass: commercial-page
 title: "NetSuite Health Check | Find Hidden Risk in Your Account"
 description: "A NetSuite Health Check that finds segregation-of-duties conflicts, security gaps, audit exposure, and wasted license spend. See a sample report."
 faqSchema: true

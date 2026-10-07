@@ -954,3 +954,28 @@
   padding-top: 1rem;
   margin-bottom: 0;
 }
+
+/* Commercial page width
+ *
+ * Pages without a `layout` key fall back to VitePress's doc layout, whose
+ * content column is capped at 688px. That measure is right for prose, but it
+ * squeezes the card grids: the three service cards land at roughly 218px each
+ * against 368px for the same pattern on the homepage.
+ *
+ * Widen the container on the commercial pages to match the homepage, then hold
+ * top-level prose at a readable measure so the text does not stretch with it.
+ * Card copy is nested deeper than `.vp-doc > div > p`, so it is unaffected and
+ * keeps filling its card. Blog posts and the CSV tool deliberately stay at 688px.
+ */
+.commercial-page .content-container {
+  max-width: 1152px;
+}
+
+.commercial-page .vp-doc > div > p,
+.commercial-page .vp-doc > div > ul,
+.commercial-page .vp-doc > div > ol,
+.home-content > p,
+.home-content > ul,
+.home-content > ol {
+  max-width: 720px;
+}
