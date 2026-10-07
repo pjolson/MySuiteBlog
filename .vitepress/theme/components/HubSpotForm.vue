@@ -1,24 +1,48 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 
-// HubSpot's embed posts a message to the parent window when a form is
-// submitted successfully. Turn that into a GA4 conversion so the inquiry
-// path is measurable. event.data.data.submissionValues carries what the
-// visitor typed, including their email, so none of it is forwarded.
-function onHubSpotMessage(event) {
-  const payload = event.data
-  if (!payload || payload.type !== 'hsFormCallback') return
-  if (payload.eventName !== 'onFormSubmitted') return
+// Turn a successful HubSpot submission into a GA4 conversion.
+//
+// HubSpot has two generations of form embed and they report success
+// differently. This form uses the updated editor (div.hs-form-frame plus
+// /forms/embed/<portalId>.js), which dispatches a window event. The older
+// v2.js embed instead postMessages hsFormCallback. Both are handled so the
+// event survives whichever generation the form is on.
+//
+// Only the form id and page path are sent. HubSpot's payload also carries
+// submissionValues, which holds the visitor's email, and none of that is
+// forwarded to GA4.
+
+let lastSent = 0
+
+function sendLead(formId) {
   if (typeof window.gtag !== 'function') return
+  const now = Date.now()
+  if (now - lastSent < 2000) return // both listeners firing is one conversion
+  lastSent = now
 
   window.gtag('event', 'generate_lead', {
-    form_id: payload.id || '',
+    form_id: formId || '',
     page_path: window.location.pathname
   })
 }
 
+// updated forms editor
+function onFormSuccess(event) {
+  sendLead(event && event.detail && event.detail.formId)
+}
+
+// legacy v2.js embed
+function onLegacyMessage(event) {
+  const payload = event.data
+  if (!payload || payload.type !== 'hsFormCallback') return
+  if (payload.eventName !== 'onFormSubmitted') return
+  sendLead(payload.id)
+}
+
 onMounted(() => {
-  window.addEventListener('message', onHubSpotMessage)
+  window.addEventListener('hs-form-event:on-submission:success', onFormSuccess)
+  window.addEventListener('message', onLegacyMessage)
 
   const script = document.createElement('script')
   script.src = 'https://js-eu1.hsforms.net/forms/embed/147146964.js'
@@ -27,7 +51,8 @@ onMounted(() => {
 })
 
 onBeforeUnmount(() => {
-  window.removeEventListener('message', onHubSpotMessage)
+  window.removeEventListener('hs-form-event:on-submission:success', onFormSuccess)
+  window.removeEventListener('message', onLegacyMessage)
 })
 </script>
 
