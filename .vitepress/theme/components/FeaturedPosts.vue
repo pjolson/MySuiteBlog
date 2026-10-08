@@ -22,9 +22,9 @@ const posts = [
     tags: ['Implementation', 'Advisory']
   },
   {
-    title: 'Why NetSuite Implementation Partners Should Want a Client-Side Resource',
-    url: '/blog/netsuite-partner-client-side-resource',
-    tags: ['Implementation', 'Partners']
+    title: 'NetSuite Month-End Close: Where It Actually Breaks',
+    url: '/blog/netsuite-month-end-close',
+    tags: ['Admin', 'Advisory']
   },
   {
     title: 'What to Look for in Your NetSuite SOW Before You Sign It',

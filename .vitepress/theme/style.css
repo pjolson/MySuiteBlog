@@ -711,8 +711,9 @@
   color: #fff;
 }
 
-/* Go-live printable checklist */
-.golive-checklist {
+/* Printable checklist. .print-checklist is the generic class; .golive-checklist predates it. */
+.golive-checklist,
+.print-checklist {
   margin: 1.5rem 0 2.5rem;
   padding: 1.5rem 1.75rem;
   border: 1px solid var(--vp-c-divider);
@@ -720,24 +721,28 @@
   background: var(--vp-c-bg-soft);
 }
 
-.golive-checklist > p:first-child {
+.golive-checklist > p:first-child,
+.print-checklist > p:first-child {
   margin-top: 0;
 }
 
-.golive-checklist ul {
+.golive-checklist ul,
+.print-checklist ul {
   list-style: none;
   padding-left: 1.75rem;
   margin: 0.5rem 0 1.25rem;
 }
 
-.golive-checklist li {
+.golive-checklist li,
+.print-checklist li {
   position: relative;
   margin: 0.35rem 0;
   line-height: 1.5;
   break-inside: avoid;
 }
 
-.golive-checklist li::before {
+.golive-checklist li::before,
+.print-checklist li::before {
   content: "\2610";
   position: absolute;
   left: -1.75rem;
@@ -772,7 +777,8 @@
   color: var(--vp-c-text-3);
 }
 
-/* Print: drop site chrome and CTAs so the checklist prints clean */
+/* Print: drop site chrome and CTAs so the checklist prints clean.
+   .print-checklist is the generic class; .golive-checklist predates it. */
 @media print {
   .VPNav,
   .VPLocalNav,
@@ -785,7 +791,8 @@
     display: none !important;
   }
 
-  .golive-checklist {
+  .golive-checklist,
+  .print-checklist {
     border: none;
     background: none;
     padding: 0;
