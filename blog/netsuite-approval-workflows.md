@@ -77,4 +77,7 @@ If your approval needs are straightforward, start with SuiteFlow and you will be
 
 <ConsultingCTA message="If you are building approval workflows and want help evaluating what SuiteFlow can handle vs. what needs something else, that is a conversation we have regularly." />
 
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+6/8/2026
+
 <TagLinks />

@@ -206,4 +206,9 @@ Bill Capture only accepts email from sender addresses registered on a vendor rec
 
 <ConsultingCTA message="If you are running NetSuite Bill Capture and want help getting AP intake and the approval process behind it right, that is the kind of thing we help NetSuite teams sort out." />
 
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+6/19/2026
+
 <TagLinks />
+
+Read Next - [NetSuite Approval Workflows](/blog/netsuite-approval-workflows)

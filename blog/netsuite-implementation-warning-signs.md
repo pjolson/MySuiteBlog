@@ -54,3 +54,8 @@ That's the job we do. We sit on your side of the table during the implementation
 If you're mid-project and two or three of these are nagging at you, [let's talk](/about/). The cheapest time to deal with it is before go-live. And if you're already live and wondering what the rush left behind, a [NetSuite Health Check](/netsuite-health-check) will tell you in a few days.
 
 <ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="We sit on your side of the table during NetSuite implementations. SOW review, design validation, partner oversight, and making sure the system you launch actually fits your business." />
+
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+6/3/2026
+
+<TagLinks />

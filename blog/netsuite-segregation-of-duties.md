@@ -78,4 +78,7 @@ If an auditor pulled a random transaction from last quarter tomorrow, how long w
 
 <ConsultingCTA message="If you are setting up roles and approval routing and want segregation of duties that holds up to an audit, not just a policy document, that is the kind of thing we help NetSuite teams get right." />
 
+<a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
+6/15/2026
+
 <TagLinks />
