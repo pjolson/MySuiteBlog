@@ -29,7 +29,7 @@ What the proposal does not price is the work that stays on the client's side of 
 
 This is where projects stall for six months. Not because the software failed, and not because the partner was bad at the job. The partner delivered what the statement of work described. The work on the other side of that statement had no owner.
 
-I have sat in that seat. A healthcare services firm I worked for went live on NetSuite the year I joined, and inside a year I owned the program: a consultant handled the scripting, and the decisions the partner could not make for us were mine.
+I have sat in that seat. A healthcare services firm I worked for went live on NetSuite the year I joined. A consultant handled the scripting; the decisions the partner could not make for us were mine.
 
 ## The Line Nobody Budgets
 
