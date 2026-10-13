@@ -27,9 +27,9 @@ const posts = [
     tags: ['Admin', 'Advisory']
   },
   {
-    title: 'What to Look for in Your NetSuite SOW Before You Sign It',
-    url: '/blog/netsuite-sow-before-you-sign',
-    tags: ['Implementation', 'Advisory']
+    title: 'The Signs a Client Has Outgrown QuickBooks',
+    url: '/blog/outgrown-quickbooks',
+    tags: ['Advisory', 'Implementation']
   },
   {
     title: 'Managing NetSuite Bill Capture Email Notifications and Sender Restrictions',
