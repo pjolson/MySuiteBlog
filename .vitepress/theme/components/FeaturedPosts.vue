@@ -37,9 +37,9 @@ const posts = [
     tags: ['Admin', 'Bill Capture']
   },
   {
-    title: 'The Post-Go-Live Cliff',
-    url: '/blog/post-go-live-cliff',
-    tags: ['Implementation', 'Advisory']
+    title: 'Four Ways NetSuite Books Quietly Go Wrong',
+    url: '/blog/netsuite-books-go-wrong',
+    tags: ['Advisory', 'Compliance']
   }
 ]
 </script>
