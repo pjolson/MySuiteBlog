@@ -51,27 +51,25 @@ The consequence is not theoretical. Any user with posting rights can write into 
 
 ## Why These Survive So Long
 
-None of the four throws an error. That is the common thread.
+None of the four throws an error.
 
-A system that rejects a bad entry teaches somebody immediately. These four produce entries NetSuite is perfectly happy to accept, because each one is legitimate in some other context. Coding a deposit to Accounts Receivable is a reasonable thing to do sometimes. The result is a set of books that balances, reconciles to the bank, and describes a business that does not exist.
+That is the common thread, and it is why they last. A system that rejects a bad entry teaches somebody immediately. These four produce entries NetSuite is perfectly happy to accept, because each one is legitimate in some other context: coding a deposit to Accounts Receivable is a reasonable thing to do sometimes, and closing a period is optional by design. What you end up with is a set of books that balances, reconciles to the bank, and describes a business that does not exist.
 
-The most consequential version is the first one, and it usually runs in the company's favour. When customer receipts never reach revenue, the income statement understates the business. Leadership makes decisions against a result that is worse than reality, sometimes for years, and one of those decisions is often whether to replace the system that produced it.
+The first pattern is the most consequential, and it usually runs in the company's favour. When customer receipts never reach revenue, the income statement understates the business. Leadership makes decisions against a result that is worse than reality, sometimes for years, and one of those decisions is often whether to replace the system that produced it.
 
 ## Read Every Line, Not a Sample
 
-A review like this traditionally means sampling. An experienced reviewer pulls a representative set of transactions, forms a view, and accepts that the unexamined remainder probably behaves like the examined part. That is a sensible trade when a person is doing the reading.
+A review like this traditionally means sampling. An experienced reviewer pulls a representative set of transactions, forms a view, and accepts that the unexamined remainder probably behaves like the examined part. That is a sensible trade when a person is doing the reading, and for as long as people did the reading it was the only trade available.
 
-It is also how a problem confined to one transaction type goes unnoticed for four years. The sample misses it, the sample looks fine, and the conclusion is that the books are fine.
+It is also how a problem confined to one transaction type goes unnoticed for four years.
 
-Querying the ledger directly removes the reason to sample. NetSuite's SuiteQL, through a read-only connection, will cover every posting line in an account for the same effort as covering forty of them, and it does not get tired at line nine hundred. Keep the queries and you can run the same checks again next quarter without repeating the work.
+Querying the ledger directly removes the reason to sample. NetSuite's SuiteQL, through a read-only connection, covers every posting line in an account for the same effort as covering forty of them, and it does not get tired at line nine hundred. Keep the queries and the same checks run again next quarter without repeating the work.
 
-Read-only is the important part. The newer AI connector can create and update records when you grant it those permissions. For reviewing a set of books, you want an account that cannot write, so that afterwards you can say plainly that nothing was touched.
+Read-only is the important part. The newer AI connector can create and update records once you grant it those permissions, and for reviewing somebody's books you want an account that cannot write, so that afterwards you can say plainly that nothing was touched.
 
 ## The Fix Is Usually Not a New System
 
-When books look this bad the instinct is to conclude that the implementation failed and start over. That conclusion is expensive and usually wrong.
-
-Errors of this kind are corrected with documented journal entries prepared from reconciled support, alongside a redesign of the four processes that produced them: how receipts are recorded, how payroll posts, how depreciation runs, and how periods get closed. The chart of accounts is typically fine. The structure is typically fine.
+When books look this bad the instinct is to conclude that the implementation failed and start over. That conclusion is expensive and usually wrong. Errors of this kind are corrected with documented journal entries prepared from reconciled support, alongside a redesign of the four processes that produced them: how receipts are recorded, how payroll posts, how depreciation runs, and how periods get closed. The chart of accounts is typically fine. So is the structure. What failed was the process feeding them.
 
 A reimplementation adds licensing cost on top of consulting hours, and it does not remove the need to correct the prior years anyway, because those corrections are required for tax and audit regardless of which system you use next. Starting fresh means paying twice and still doing the hard part.
 
