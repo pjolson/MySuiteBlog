@@ -32,9 +32,9 @@ const posts = [
     tags: ['Advisory', 'Implementation']
   },
   {
-    title: 'Managing NetSuite Bill Capture Email Notifications and Sender Restrictions',
-    url: '/blog/netsuite-bill-capture-email-relay',
-    tags: ['Admin', 'Bill Capture']
+    title: 'QuickBooks to NetSuite Migration: What It Takes',
+    url: '/blog/quickbooks-to-netsuite-migration',
+    tags: ['Implementation', 'Advisory']
   },
   {
     title: 'Four Ways NetSuite Books Quietly Go Wrong',
