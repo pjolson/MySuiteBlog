@@ -4,6 +4,7 @@ date: 2019-02-25
 description: "Create dynamic drill-down links in NetSuite Saved Searches using formula fields to link to related searches and records."
 
 tags: ["Formulas", "HTML", "SavedSearch", "SuiteAnalytics"]
+faqSchema: true
 ---
 
 # Dynamic Links - Saved Search
@@ -161,6 +162,22 @@ Dynamic links are great for drilling into data, but if you're building approval 
     </a>
     `
 
+
+**Related.** The formula behind these links is the same CASE and text handling used elsewhere in saved searches. [The NetSuite CASE WHEN reference](/blog/stringmatch) covers the syntax, the comparisons available, and what commonly breaks.
+
+## Frequently Asked Questions
+
+### How do you create a drill-down link in a NetSuite saved search?
+
+With a formula text field that builds a hyperlink and passes a value from the current row into a second saved search. The result is a clickable column that opens a different search filtered to the record on that line.
+
+### What does the native saved search drill-down do?
+
+Summarizing results by group makes the grouped field clickable, and clicking it returns a summarized view of the same search. It works, but it is limited to the search you are already in and to the columns that search contains.
+
+### Why use a formula link instead of native grouping?
+
+A formula link can point at an entirely different saved search, with different criteria and different columns, rather than re-presenting the search you started from.
 
 <ConsultingCTA message="Dynamic links and formula fields are some of the most powerful tools in NetSuite. We help teams build searches that actually drive decisions. Let's talk." />
 

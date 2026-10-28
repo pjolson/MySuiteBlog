@@ -4,6 +4,7 @@ date: 2019-02-08
 description: "How to use CASE WHEN formulas in NetSuite Saved Searches to compare fields, match strings, and handle multiple conditions."
 
 tags: ["CaseWhen", "Formulas", "SuiteAnalytics"]
+faqSchema: true
 ---
 
 # Match field strings in NetSuite
@@ -55,6 +56,38 @@ Case is a powerful tool in NetSuite that allows for complex if/then logic. The s
             'Say That'
     END
 
+CASE evaluates each WHEN in order and stops at the first one that is true. That order matters: put your narrowest condition first, because a broader condition above it will catch those rows before the narrower one ever runs.
+
+ELSE is optional. Leave it out and any row matching none of the conditions returns blank rather than an error, which is usually not what you want in a report somebody reads.
+
+### More than two outcomes
+
+Nothing limits you to one WHEN. Chain as many as the logic needs:
+
+    CASE
+        WHEN {amount} > 10000 THEN 'Over 10k'
+        WHEN {amount} > 5000  THEN '5k to 10k'
+        WHEN {amount} > 0     THEN 'Under 5k'
+        ELSE 'Zero or credit'
+    END
+
+Read top to bottom, a transaction of 12,000 matches the first line and stops there. Reverse the order and everything over zero would match the last condition first, which is the single most common mistake with a chained CASE.
+
+### The comparisons available
+
+LIKE is used below for text matching, but CASE accepts the comparisons you would expect from any SQL engine, because NetSuite formulas are evaluated by Oracle:
+
+| Comparison | Use |
+|---|---|
+| `=` | Exact match, including numbers and dates |
+| `LIKE` | Text matching, with `%` as a wildcard |
+| `>` `<` `>=` `<=` | Ranges, usually on numbers or dates |
+| `IN ('A','B')` | Membership in a short list |
+| `IS NULL` / `IS NOT NULL` | Testing for an empty field |
+| `BETWEEN x AND y` | An inclusive range |
+
+String literals take single quotes. Double quotes are not string delimiters in Oracle and will produce an error rather than the text you expected.
+
 In this scenario we want to compare the values in the **Parent : Hash ({custrecord_test_parent_hash})** field and the **Child : Hash field ({custrecord_test_child_parentlink.custrecord_test_child_hash})**. 
 
 If they match, we want to output some text that indicates a match and if not then output text that denotes the mismatch.
@@ -97,12 +130,51 @@ Now there will be a green checkmark to the right side of records where Parent/Ch
 
 
 
+## Where Else CASE WHEN Works
+
+The formula above sits in a results column, but the same expression works in several other places in a saved search, and knowing which is which saves a lot of rebuilding:
+
+- **Results columns.** A Formula (Text), Formula (Numeric) or Formula (Date) field, as used above.
+- **Criteria.** Add a Formula field under the Criteria tab to filter on something the standard filters cannot express. The formula returns a value and you compare that value, rather than filtering directly on the expression.
+- **Highlighting.** Shown above. The same formula drives a visual cue instead of a column.
+- **Summary rows.** A CASE inside a summary expression lets you count or sum only the rows meeting a condition, which is how most conditional totals get built.
+
+## Three Things That Break a CASE WHEN Formula
+
+**The wrong formula field type.** A formula returning text belongs in Formula (Text), a number in Formula (Numeric), a date in Formula (Date). Putting a text result in a numeric field produces an Invalid Expression error even when the syntax is perfect. The [date formulas post](/blog/netsuite-saved-search-date-formulas) covers this trap in more depth.
+
+**Double quotes.** Oracle treats double quotes as identifier delimiters rather than string delimiters, so `'MATCH'` works and `"MATCH"` does not.
+
+**Nulls that quietly match nothing.** Comparing anything to an empty field returns unknown rather than true or false, so a row with a blank value falls through every WHEN and lands in the ELSE. If a blank should be treated as a specific value, wrap the field in NVL first, as in `NVL({custbody_hash},'none')`, and the comparison behaves.
+
 ## Conclusion
 
 The CASE WHEN formula is a deep topic and it has many use cases. It can be used every day in your saved searches, workflows, custom records and fields. The list goes on and on. This is a simple use case that allows for excellent comparison across records and fields. It also does the heavy lifting behind [aging buckets and other date formulas](/blog/netsuite-saved-search-date-formulas), where the same logic sorts records by how many days old they are.
 
 One common CASE WHEN job in a compliance context is flagging records where the person who created a transaction also approved it. It works as a check, but catching a violation after the fact is not the same as preventing it. More on that distinction in [segregation of duties in NetSuite](/blog/netsuite-segregation-of-duties).
 
+
+## Frequently Asked Questions
+
+### What is the CASE WHEN syntax in a NetSuite saved search?
+
+CASE WHEN condition THEN result ELSE other result END. NetSuite formulas are evaluated by Oracle, so the syntax is standard Oracle SQL. String literals take single quotes, and double quotes produce an error because Oracle treats them as identifier delimiters rather than string delimiters.
+
+### Can a CASE WHEN formula have more than two outcomes?
+
+Yes. Chain as many WHEN clauses as the logic needs. CASE evaluates them in order and stops at the first one that is true, so the narrowest condition belongs first. A broader condition placed above a narrower one will catch those rows before the narrower one ever runs.
+
+### Why does my CASE WHEN formula return Invalid Expression?
+
+The most common cause is a mismatch between the formula field type and what the formula returns. Text results belong in Formula (Text), numbers in Formula (Numeric) and dates in Formula (Date). The error appears even when the syntax itself is correct.
+
+### Why do blank fields fall into the ELSE of my CASE statement?
+
+Comparing any value to an empty field returns unknown rather than true or false, so rows with a blank value match no condition and land in the ELSE. Wrapping the field in NVL with a substitute value, such as NVL of the field and the text none, makes the comparison behave as expected.
+
+### Where can CASE WHEN be used in a saved search?
+
+In results columns as a formula field, in criteria to filter on something the standard filters cannot express, in highlighting to drive a visual cue, and inside summary expressions to count or sum only the rows meeting a condition.
 
 ::: tip Building approval workflows in NetSuite?
 If you're using CASE WHEN logic to route approvals or flag exceptions, take a look at [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/): purpose-built approval workflows for NetSuite.

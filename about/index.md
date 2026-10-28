@@ -3,6 +3,7 @@ pageClass: commercial-page
 aside: false
 title: NetSuite Support, Implementation & Customization
 lastUpdated: false
+faqSchema: true
 description: "Fractional NetSuite administration, implementation support, and customization from one senior certified consultant who scopes the work and does the work."
 ---
 
@@ -101,6 +102,28 @@ I built three custom applications. A bulk-renewal Suitelet that lets the team se
 ## Is this a fit?
 
 I work best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or coverage around the clock, I am not the right fit, and I will tell you.
+
+## Common Questions
+
+### What does a fractional NetSuite administrator do?
+
+The same work a full-time administrator does, for a fraction of the month: support, configuration, reporting and training, worked against a prioritized backlog rather than a ticket queue. The arrangement is sized to your actual workload.
+
+### How much does NetSuite support cost?
+
+I price ongoing work by the month rather than by the hour, sized to the workload rather than to a block of time. Scope comes out of a first conversation about your environment, so there is no standard rate to quote before that.
+
+### Do we need a full-time NetSuite administrator?
+
+That depends on how much real administration work your account generates each month, which is usually less than people assume and more than nobody. [What a NetSuite administrator actually costs](/blog/netsuite-administrator-cost) walks through the workload bands and the three ways to cover the seat.
+
+### What does implementation support involve?
+
+Acting as your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, user acceptance testing and knowledge transfer.
+
+### Do you replace our implementation partner?
+
+No. The partner delivers the system and that is their job. I make sure your side of the project holds up its end, which is where most slips start, and I work alongside them rather than in competition with them.
 
 <div class="health-check-card">
   <h3>One way to start: NetSuite Health Check, $2,500</h3>

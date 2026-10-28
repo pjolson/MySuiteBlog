@@ -3,6 +3,7 @@ title: Creating Custom Center Tabs
 date: 2018-12-18
 description: "Learn how to create Custom Center Tabs, Categories, and Links in NetSuite to add permanent navigation bar tabs to your interface."
 tags: ["Centers", "Navigation", "SuiteBuilder"]
+faqSchema: true
 ---
 
 # Create a Custom Center Tab
@@ -104,6 +105,30 @@ Center tabs are limited by role and audience, which is really an access-control 
 ::: tip Want approvals that work as smoothly as your navigation?
 If you're customizing NetSuite to fit your team's workflow, take a look at [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/): fast, reliable approval workflows built for NetSuite.
 :::
+
+**Admin note.** Custom centers, tabs and links are easy to add and easy to forget, which is why customization debt is one of the areas a periodic review covers. See [how to audit a NetSuite account](/blog/netsuite-account-audit).
+
+## Frequently Asked Questions
+
+### What is a NetSuite center tab?
+
+A permanent tab in the NetSuite navigation bar. A center tab is associated with a Center, can hold categories, links and portlets, and can be limited to particular audiences rather than shown to everyone.
+
+### What feature must be enabled to create custom center tabs?
+
+Custom Records, found under Setup, Company, Enable Features, on the SuiteCloud subtab. The Custom Centers options only appear under Customization once that feature is on.
+
+### Where do you create a custom center tab?
+
+Customization, then Centers and Tabs, then New. The form asks for a label, the center to associate it with, any categories, and the portlets available on the tab landing page.
+
+### Can you control who sees a custom center tab?
+
+Yes. Center tabs can be limited by audience, including roles, individual people, departments, groups, customers, vendors and partners.
+
+### Where does a custom tab appear in the navigation bar?
+
+It depends on the center chosen. Selecting All places the tab next to Activities. Selecting a specific center such as Classic Center places it between Setup and Support.
 
 <ConsultingCTA message="Custom center tabs, roles, and navigation are just the start. We help teams configure NetSuite to match how they actually work." />
 

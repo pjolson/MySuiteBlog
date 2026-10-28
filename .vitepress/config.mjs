@@ -117,6 +117,38 @@ export default defineConfig({
     // The page must also render the same Q&A visibly for Google to honor it.
     if (pageData.frontmatter.faqSchema) {
       const faqByPath = {
+        'blog/displayshipping.md': [
+          { q: 'Why does the Address field on a NetSuite customer record show the billing address?', a: 'The ADDRESS field on the Main subtab always sources the default billing address. When a customer has different default billing and shipping addresses, the shipping one does not appear there, and no setting changes which address that field uses.' },
+          { q: 'Can you change which address the NetSuite Address field sources?', a: 'Not natively. The field is fixed to the default billing address, so displaying the shipping address means adding a separate custom field rather than reconfiguring the standard one.' },
+          { q: 'How do you display the default shipping address on a customer record?', a: 'Create a custom entity field of type Inline HTML, applied to Customer and displayed on the Main subtab, with a default value that references the shipping address fields. The field renders the address as formatted text alongside the standard one.' },
+          { q: 'What field type displays formatted HTML on a NetSuite record?', a: 'Inline HTML. It renders markup rather than escaping it, which is what allows a custom field to present an address block, and optionally a map link, inside the record.' }
+        ],
+        'blog/centertabs.md': [
+          { q: 'What is a NetSuite center tab?', a: 'A permanent tab in the NetSuite navigation bar. A center tab is associated with a Center, can hold categories, links and portlets, and can be limited to particular audiences rather than shown to everyone.' },
+          { q: 'What feature must be enabled to create custom center tabs?', a: 'Custom Records, found under Setup, Company, Enable Features, on the SuiteCloud subtab. The Custom Centers options only appear under Customization once that feature is on.' },
+          { q: 'Where do you create a custom center tab?', a: 'Customization, then Centers and Tabs, then New. The form asks for a label, the center to associate it with, any categories, and the portlets available on the tab landing page.' },
+          { q: 'Can you control who sees a custom center tab?', a: 'Yes. Center tabs can be limited by audience, including roles, individual people, departments, groups, customers, vendors and partners.' },
+          { q: 'Where does a custom tab appear in the navigation bar?', a: 'It depends on the center chosen. Selecting All places the tab next to Activities. Selecting a specific center such as Classic Center places it between Setup and Support.' }
+        ],
+        'blog/dynamiclinks_suiteanalytics.md': [
+          { q: 'How do you create a drill-down link in a NetSuite saved search?', a: 'With a formula text field that builds a hyperlink and passes a value from the current row into a second saved search. The result is a clickable column that opens a different search filtered to the record on that line.' },
+          { q: 'What does the native saved search drill-down do?', a: 'Summarizing results by group makes the grouped field clickable, and clicking it returns a summarized view of the same search. It works, but it is limited to the search you are already in and to the columns that search contains.' },
+          { q: 'Why use a formula link instead of native grouping?', a: 'A formula link can point at an entirely different saved search, with different criteria and different columns, rather than re-presenting the search you started from.' }
+        ],
+        'about/index.md': [
+          { q: 'What does a fractional NetSuite administrator do?', a: 'The same work a full-time administrator does, for a fraction of the month: support, configuration, reporting and training, worked against a prioritized backlog rather than a ticket queue. The arrangement is sized to your actual workload.' },
+          { q: 'How much does NetSuite support cost?', a: 'I price ongoing work by the month rather than by the hour, sized to the workload rather than to a block of time. Scope comes out of a first conversation about your environment, so there is no standard rate to quote before that.' },
+          { q: 'Do we need a full-time NetSuite administrator?', a: 'That depends on how much real administration work your account generates each month, which is usually less than people assume and more than nobody. What a NetSuite administrator actually costs walks through the workload bands and the three ways to cover the seat.' },
+          { q: 'What does implementation support involve?', a: 'Acting as your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, user acceptance testing and knowledge transfer.' },
+          { q: 'Do you replace our implementation partner?', a: 'No. The partner delivers the system and that is their job. I make sure your side of the project holds up its end, which is where most slips start, and I work alongside them rather than in competition with them.' }
+        ],
+        'blog/stringmatch.md': [
+          { q: 'What is the CASE WHEN syntax in a NetSuite saved search?', a: 'CASE WHEN condition THEN result ELSE other result END. NetSuite formulas are evaluated by Oracle, so the syntax is standard Oracle SQL. String literals take single quotes, and double quotes produce an error because Oracle treats them as identifier delimiters rather than string delimiters.' },
+          { q: 'Can a CASE WHEN formula have more than two outcomes?', a: 'Yes. Chain as many WHEN clauses as the logic needs. CASE evaluates them in order and stops at the first one that is true, so the narrowest condition belongs first. A broader condition placed above a narrower one will catch those rows before the narrower one ever runs.' },
+          { q: 'Why does my CASE WHEN formula return Invalid Expression?', a: 'The most common cause is a mismatch between the formula field type and what the formula returns. Text results belong in Formula (Text), numbers in Formula (Numeric) and dates in Formula (Date). The error appears even when the syntax itself is correct.' },
+          { q: 'Why do blank fields fall into the ELSE of my CASE statement?', a: 'Comparing any value to an empty field returns unknown rather than true or false, so rows with a blank value match no condition and land in the ELSE. Wrapping the field in NVL with a substitute value, such as NVL of the field and the text none, makes the comparison behave as expected.' },
+          { q: 'Where can CASE WHEN be used in a saved search?', a: 'In results columns as a formula field, in criteria to filter on something the standard filters cannot express, in highlighting to drive a visual cue, and inside summary expressions to count or sum only the rows meeting a condition.' }
+        ],
         'blog/getcertified.md': [
           { q: 'Which NetSuite certification should I get first?', a: 'SuiteFoundation Specialist remains the real starting point for anyone planning to work in NetSuite professionally, even though the free Associate exams now sit below it. It is the prerequisite for Administrator, ERP Consultant and the developer capstone, and roughly six months of hands-on use is enough to start studying.' },
           { q: 'How much do NetSuite certification exams cost?', a: 'The Specialist and Professional exams run 250 US dollars each. The Associate exams are free.' },

@@ -4,6 +4,7 @@ date: 2019-01-15
 description: "How to display the default shipping address on a NetSuite Customer Record using a custom field, with formula examples."
 
 tags: ["CaseWhen", "Forms", "Formulas", "HTML", "SuiteBuilder"]
+faqSchema: true
 ---
 
 # Display Default Shipping Address in a Custom Field
@@ -94,6 +95,26 @@ Multi-entity setups are also where segregation of duties gets hard, because the 
 ::: tip Struggling with approval routing across entities or locations?
 Custom fields solve display problems, but approval workflows need more. [Greenlight Approvals](https://greenlightsoftware.io/products/approvals/) handles multi-entity approval routing, delegation, and mobile sign-off natively in NetSuite.
 :::
+
+**Admin note.** Custom fields like this one accumulate quietly over the years, and customization debt is one of the areas worth reviewing periodically. [How to audit a NetSuite account](/blog/netsuite-account-audit) covers that review.
+
+## Frequently Asked Questions
+
+### Why does the Address field on a NetSuite customer record show the billing address?
+
+The ADDRESS field on the Main subtab always sources the default billing address. When a customer has different default billing and shipping addresses, the shipping one does not appear there, and no setting changes which address that field uses.
+
+### Can you change which address the NetSuite Address field sources?
+
+Not natively. The field is fixed to the default billing address, so displaying the shipping address means adding a separate custom field rather than reconfiguring the standard one.
+
+### How do you display the default shipping address on a customer record?
+
+Create a custom entity field of type Inline HTML, applied to Customer and displayed on the Main subtab, with a default value that references the shipping address fields. The field renders the address as formatted text alongside the standard one.
+
+### What field type displays formatted HTML on a NetSuite record?
+
+Inline HTML. It renders markup rather than escaping it, which is what allows a custom field to present an address block, and optionally a map link, inside the record.
 
 <ConsultingCTA message="Custom fields, default values, and smart configurations save your team time every day. We help companies get their NetSuite set up right." />
 
