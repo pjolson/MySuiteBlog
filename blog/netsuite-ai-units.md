@@ -48,7 +48,7 @@ Oracle publishes estimates for nine features and labels them as estimates:
 | Text Enhance | 5 to 10 |
 | Transaction Matching Assistant | 5 to 10 |
 
-Several things are explicitly exempt. Oracle states that add-on modules including **Bill Capture, EPM and Analytics Warehouse do not consume AI Units**, because they are licensed separately. More interestingly, **the NetSuite AI Connector does not consume them either**. Work you push through the Connector to Claude or ChatGPT runs on your AI provider meter instead, which makes where a task runs a budgeting decision rather than only a technical one.
+Several things are explicitly exempt. Oracle states that add-on modules including **Bill Capture, EPM and Analytics Warehouse do not consume AI Units**, because they are licensed separately. More interestingly, **the NetSuite AI Connector does not consume them either**. Work you push through the Connector to Claude or ChatGPT runs on your AI provider meter instead, which makes where a task runs a budgeting decision rather than only a technical one. That route is how I ran [a read-only review of two years of books](/blog/netsuite-books-go-wrong) without touching the unit pool at all.
 
 What is not on the list deserves care. Oracle never says that unlisted features are free, and the announcements from SuiteWorld 2026 arrived without unit estimates attached. SuiteSkills, AI Portlets, AI Workspaces and the industry agents are all live, and none of them appears on Oracle's estimates page. Read that as a gap in the documentation rather than evidence they are free.
 
@@ -89,7 +89,7 @@ Five actions, 377 units.
 
 **And a portlet is not a one-time cost.** Refreshing the page re-ran it, twice, for 52 units and then 11. That changes what a portlet is. A portlet is not a chart you build once. It is a meter that runs whenever somebody loads the dashboard it sits on. Put one in front of ten people who each open NetSuite three times a day and the arithmetic stops being a rounding error.
 
-**The answer also changed.** The first render returned a twelve-month trend with a chart. After the refresh, the same prompt returned current-period figures only. Both are defensible readings of "cash flow over time," which is the problem. A number somebody reports from should not depend on when the page last reloaded.
+**The answer also changed.** The first render returned a twelve-month trend with a chart. After the refresh, the same prompt returned current-period figures only. Both are defensible readings of "cash flow over time," which is the problem. A number somebody reports from should not depend on when the page last reloaded, and [a figure that does not tie out](/blog/netsuite-saved-search-gl-mismatch) costs more to chase than it ever cost to produce.
 
 These are five actions in one account on one day, read from Oracle's own counter. They are not benchmarks, and your account will differ. The method is the point: the counter is on the Billing Information page, and anyone can do this in an afternoon before deciding what to switch on.
 
@@ -157,7 +157,7 @@ The honest framing is that this is a small budget with no enforcement, attached 
 
 **Set your own thresholds.** Oracle enforces none, so pick a review point, a reserve, and a stop, and write them down. They are only conventions, but conventions you have agreed beat discovering the limit.
 
-**Inventory the scripts.** Find anything already calling generative AI, particularly anything written before August 2026 that passed its own cloud credentials. Those calls are on your meter now.
+**Inventory the scripts.** Find anything already calling generative AI, particularly anything written before August 2026 that passed its own cloud credentials. Those calls are on your meter now. If you are already building a script inventory for [the SuiteScript 2.1 deadline](/blog/suitescript-2-1-migration), do both passes at once.
 
 **Require an estimate for new automation.** Any script, SuiteApp or scheduled agent that calls generative AI should come with a projected unit cost before it is deployed, in the same way a new integration comes with a scope.
 

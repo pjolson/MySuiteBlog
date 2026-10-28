@@ -37,9 +37,9 @@ const posts = [
     tags: ['Implementation', 'Advisory']
   },
   {
-    title: 'Four Ways NetSuite Books Quietly Go Wrong',
-    url: '/blog/netsuite-books-go-wrong',
-    tags: ['Advisory', 'Compliance']
+    title: 'NetSuite AI Units: What Finance Needs to Know',
+    url: '/blog/netsuite-ai-units',
+    tags: ['Advisory', 'Admin']
   }
 ]
 </script>
