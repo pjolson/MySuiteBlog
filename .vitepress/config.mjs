@@ -117,6 +117,13 @@ export default defineConfig({
     // The page must also render the same Q&A visibly for Google to honor it.
     if (pageData.frontmatter.faqSchema) {
       const faqByPath = {
+        'blog/getcertified.md': [
+          { q: 'Which NetSuite certification should I get first?', a: 'SuiteFoundation Specialist remains the real starting point for anyone planning to work in NetSuite professionally, even though the free Associate exams now sit below it. It is the prerequisite for Administrator, ERP Consultant and the developer capstone, and roughly six months of hands-on use is enough to start studying.' },
+          { q: 'How much do NetSuite certification exams cost?', a: 'The Specialist and Professional exams run 250 US dollars each. The Associate exams are free.' },
+          { q: 'Where do you register for NetSuite certification exams?', a: 'Oracle moved exam registration and delivery to MyLearn in mid-2025. Webassessor is retired for new exams, so anyone who last registered there should start at MyLearn instead.' },
+          { q: 'Which certification should a NetSuite administrator take?', a: 'Administrator Professional. It formalizes what an administrator already does day to day, and it expects SuiteFoundation plus roughly a year of real experience behind it.' },
+          { q: 'Do NetSuite certifications expire?', a: 'Yes. The older model of retaking exams every couple of years is being replaced, and recertification has moved into MyLearn. The transitional New Release Quiz cycle has closed, so check MyLearn for the mechanism currently in force rather than relying on any published description of the old one.' }
+        ],
         'blog/suitescript-2-1-migration.md': [
           { q: 'When does SuiteScript 1.0 stop working?', a: 'In NetSuite 2028.2. Oracle states that all new and existing scripts must use SuiteScript 2.1 by that release and that legacy versions will no longer run. Support narrows earlier than that: from 2027.1, SuiteScript 1.0 enters end-of-life support covering critical issues only.' },
           { q: 'Does SuiteScript 2.0 have to be converted too?', a: 'Yes, on the same deadline. Oracle instructs customers to transition all existing SuiteScript 2.0 and 2.x scripts before the 2028.2 release. The assumption that only 1.0 is affected is the most common misreading of this timeline.' },

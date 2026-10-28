@@ -3,6 +3,7 @@ title: "NetSuite Certifications in 2026: What's Changed and Where to Start"
 date: 2026-05-28
 description: "The NetSuite certification program has been rebuilt into a tiered, role-based system, and the old exams were renamed in the move. Here is what exists now, what your old certs are called today, and how to approach it."
 tags: ["Certification", "SuiteFoundation", "Admin"]
+faqSchema: true
 ---
 
 # NetSuite Certifications in 2026: What's Changed and Where to Start
@@ -70,7 +71,9 @@ A few practical details that have changed:
 
 The old model, retake your exams every couple of years, is on its way out. What replaces it is not fully built, which makes this the one area where you should not assume anything is settled.
 
-NetSuite is developing a new recertification program inside MyLearn. Until that lands, the bridge is the **New Release Quiz (NRQ)**: an open-book, non-proctored, 30-question quiz drawn entirely from the recent release notes, with a 70% pass mark. One pass renews all of your eligible certifications at once, currently Administrator, Application Developer, ERP Consultant, SuiteFoundation, and Web Services Developer. It costs $50 per attempt, you get three attempts, and the current cycle runs on the old Webassessor platform rather than MyLearn. The 2025 quiz closes for good on May 31, 2026, so if you are reading this around the publish date and your status is lapsing, that window is effectively now.
+NetSuite is developing a new recertification program inside MyLearn. Until that lands, the bridge is the **New Release Quiz (NRQ)**: an open-book, non-proctored, 30-question quiz drawn entirely from the recent release notes, with a 70% pass mark. One pass renews all of your eligible certifications at once, currently Administrator, Application Developer, ERP Consultant, SuiteFoundation, and Web Services Developer. It costs $50 per attempt and you get three attempts.
+
+**Updated October 2026:** that quiz cycle has closed. Its deadline was extended to August 31, 2026 and has since passed, and recertification has moved into MyLearn. Check MyLearn for the mechanism in force before assuming anything in this section still applies to your status.
 
 Treat the NRQ as the current mechanism, not the permanent one. The format, platform, and pricing of whatever MyLearn ships next are explicitly not guaranteed to match it. The one constant, across the old model and the new, is the release notes. If you read them every cycle, recertification is a formality you pass open-book in twenty minutes. If you have been ignoring them, the quiz is the system telling you to stop.
 
@@ -87,6 +90,8 @@ We published study tips in the original version of this post in 2019. Most of th
 
 **Use MyLearn training paths.** Oracle University and MyLearn now have structured learning paths aligned to each certification. These are a big step up from piecing together study materials on your own, and they did not exist in this form a few years ago.
 
+**Build something.** Reading about how NetSuite behaves is slower than watching it behave. Saved searches are the cheapest place to practise, and the formula and date work covered in [CASE WHEN formulas](/blog/stringmatch) and [saved search date formulas](/blog/netsuite-saved-search-date-formulas) is what the job asks for once the certificate is on the wall.
+
 **Use SuiteAnswers, but set a timer.** SuiteAnswers articles are dense and heavily cross-linked. Look up a specific concept, read one or two related articles, and move on. The temptation to follow every link is real and it will eat your study time.
 
 **You do not need 100%.** You need to pass. The study guides cover a huge surface area. Learn the broad strokes of every section and go deeper on the areas that match your daily work. A few questions about obscure features are not going to be the difference.
@@ -100,6 +105,28 @@ These badges were earned under the old exam names, which is how they should stay
 <img src="./img/analyticsnew.jpg" width=48% alt="NetSuite SuiteAnalytics User Certified">
 <img src="./img/finusernew.jpg" width=48% alt="NetSuite Financial User Certified">
 
+
+## Frequently Asked Questions
+
+### Which NetSuite certification should I get first?
+
+SuiteFoundation Specialist remains the real starting point for anyone planning to work in NetSuite professionally, even though the free Associate exams now sit below it. It is the prerequisite for Administrator, ERP Consultant and the developer capstone, and roughly six months of hands-on use is enough to start studying.
+
+### How much do NetSuite certification exams cost?
+
+The Specialist and Professional exams run 250 US dollars each. The Associate exams are free.
+
+### Where do you register for NetSuite certification exams?
+
+Oracle moved exam registration and delivery to MyLearn in mid-2025. Webassessor is retired for new exams, so anyone who last registered there should start at MyLearn instead.
+
+### Which certification should a NetSuite administrator take?
+
+Administrator Professional. It formalizes what an administrator already does day to day, and it expects SuiteFoundation plus roughly a year of real experience behind it.
+
+### Do NetSuite certifications expire?
+
+Yes. The older model of retaking exams every couple of years is being replaced, and recertification has moved into MyLearn. The transitional New Release Quiz cycle has closed, so check MyLearn for the mechanism currently in force rather than relying on any published description of the old one.
 
 <ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="Getting certified usually makes you the NetSuite person where you work, and often the only one. That holds until an implementation lands on top of the day job, or a backlog builds that nobody owns. I work alongside internal admins on exactly that, not in place of them." />
 
