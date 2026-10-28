@@ -52,6 +52,47 @@ Several things are explicitly exempt. Oracle states that add-on modules includin
 
 What is not on the list deserves care. Oracle never says that unlisted features are free, and the announcements from SuiteWorld 2026 arrived without unit estimates attached. SuiteSkills, AI Portlets, AI Workspaces and the industry agents are all live, and none of them appears on Oracle's estimates page. Read that as a gap in the documentation rather than evidence they are free.
 
+## What I Measured
+
+Oracle publishes estimates for nine features. The ones announced at SuiteWorld are not among them, so I ran five actions in a test account with 100,000 units provisioned and read the counter on the Billing Information page after each one.
+
+| Step | Action | Units used | Oracle estimate |
+|---|---|---|---|
+| Start | Counter before anything | 277 of 100,000 | not applicable |
+| 1 | Create an AI portlet, prompt "Give me a view into our cash flow over time", effort on Auto | **179** | none published |
+| 2 | Ask Oracle, "How do I approve a bill?" | **9** | about 10 |
+| 3 | Ask Oracle, "Show me a list of all customers with past due balances" | **126** | 50 to 200 |
+| 4 | Refresh the dashboard page | **52** | none published |
+| 5 | Refresh it again | **11** | none published |
+
+Five actions, 377 units.
+
+<div class="slide-grid">
+  <a href="/img/ai-units-test-slides/ai-units-test-01.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-01.png" alt="Starting counter: 277 units used of 100,000 provisioned" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-02.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-02.png" alt="Step 1, creating an AI portlet with effort left on Auto" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-03.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-03.png" alt="Step 1, the cash flow portlet it produced" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-04.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-04.png" alt="Step 1 cost: 179 units" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-05.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-05.png" alt="Step 2, a simple Ask Oracle question" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-06.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-06.png" alt="Step 2 cost: 9 units" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-07.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-07.png" alt="Step 3, a data question that loaded a skill and queried A/R aging" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-08.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-08.png" alt="Step 3 cost: 126 units" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-09.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-09.png" alt="Step 4, refreshing the page rebuilt the portlet and changed the answer" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-10.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-10.png" alt="Step 4 cost: 52 units" loading="lazy"></a>
+  <a href="/img/ai-units-test-slides/ai-units-test-11.png" target="_blank"><img src="/img/ai-units-test-slides/ai-units-test-11.png" alt="Step 5, a second refresh cost 11 more units" loading="lazy"></a>
+</div>
+
+<p class="slide-grid-caption">The counter after each step. Click any slide to view it full size.</p>
+
+**Oracle's published numbers held up.** The simple question came in at 9 against an estimate of about 10. The past-due list came in at 126 against a range of 50 to 200. Where Oracle publishes an estimate, it appears to be honest, which is worth saying plainly.
+
+**The portlet is the part nobody has priced.** Creating one cost 179 units, more than the research question, and Oracle publishes no estimate for it at all.
+
+**And a portlet is not a one-time cost.** Refreshing the page re-ran it, twice, for 52 units and then 11. That changes what a portlet is. A portlet is not a chart you build once. It is a meter that runs whenever somebody loads the dashboard it sits on. Put one in front of ten people who each open NetSuite three times a day and the arithmetic stops being a rounding error.
+
+**The answer also changed.** The first render returned a twelve-month trend with a chart. After the refresh, the same prompt returned current-period figures only. Both are defensible readings of "cash flow over time," which is the problem. A number somebody reports from should not depend on when the page last reloaded.
+
+These are five actions in one account on one day, read from Oracle's own counter. They are not benchmarks, and your account will differ. The method is the point: the counter is on the Billing Information page, and anyone can do this in an afternoon before deciding what to switch on.
+
 ## The Part That Actually Burns a Pool
 
 People are slow. Automation is not.

@@ -986,3 +986,54 @@
 .home-content > ol {
   max-width: 720px;
 }
+
+/* Slide grid
+ *
+ * For step-by-step image sequences shot in a portrait carousel format
+ * (1080x1350). Stacking those full width makes an unreadable scroll, so they
+ * render as a clickable, lazy-loaded grid that preserves the sequence.
+ */
+.slide-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.slide-grid a {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+  transition: border-color 0.2s;
+}
+
+.slide-grid a:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.slide-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-grid-caption {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  margin-top: -1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .slide-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .slide-grid {
+    grid-template-columns: 1fr;
+  }
+}
