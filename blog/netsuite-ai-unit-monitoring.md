@@ -26,11 +26,26 @@ It is the quickest check and the only one available on the classic interface. Wh
 
 In NetSuite Next, Setup, Agent Management, Agent monitoring. This is the real tool, and it has three parts.
 
+<figure class="post-figure post-figure-narrow">
+  <a href="/img/ai-units-article-images/netsuite-agent-management-menu.webp" target="_blank"><img src="/img/ai-units-article-images/netsuite-agent-management-menu.webp" alt="The NetSuite Next Setup menu with Agent Management expanded, showing Agent monitoring, Agents, Agent Activity, Skills, Prompt Studio, Agent Preferences and AI Unit usage" loading="lazy"></a>
+  <figcaption>Agent monitoring sits under Setup, Agent Management, alongside Agent Activity and the AI Unit usage page.</figcaption>
+</figure>
+
 **AI unit capacity** covers the budget: units at the start of the term, units used, units remaining, and a consumption trend across the term with a forecast date for when the pool runs dry once there is enough history. It compares a recent window against the one before it over two hours, twenty-four hours, seven days or thirty days. Then it breaks usage down two ways that matter: **by capability**, such as Ask Oracle or a named agent, and **by person**, showing who is spending the most.
 
 Oracle lists what those views are for, and the list is a decent summary of the decisions available to you: investigate an agent using more than expected, restrict access by role, retrain an individual user, or buy more units.
 
+<figure class="post-figure">
+  <a href="/img/ai-units-article-images/netsuite-ai-units-by-person.webp" target="_blank"><img src="/img/ai-units-article-images/netsuite-ai-units-by-person.webp" alt="The People using the highest number of AI units chart on the Agent monitoring dashboard, showing a top five users share, an active user count, and a bar chart of units consumed per person" loading="lazy"></a>
+  <figcaption>The by-person view, here in a lab account with a single active user. In a live account this is the view that answers who is spending the pool.</figcaption>
+</figure>
+
 One thing I noticed testing this. Over a twenty-four hour window in which I had used both Ask Oracle and an AI portlet, the capability breakdown listed only Ask Oracle. Portlet usage appears to be counted under it, though the documentation does not say so. If you are trying to work out what a portlet is costing you, that breakdown may not separate it.
+
+<figure class="post-figure">
+  <a href="/img/ai-units-article-images/netsuite-ai-units-by-capability.webp" target="_blank"><img src="/img/ai-units-article-images/netsuite-ai-units-by-capability.webp" alt="The AI unit usage by capability chart over a twenty-four hour range, showing a single bar for Ask Oracle at 730.248625 units and 100 percent of consumption" loading="lazy"></a>
+  <figcaption>Twenty-four hours of my own testing, which included portlet runs. Ask Oracle is the only capability listed, at 100 percent.</figcaption>
+</figure>
 
 **Agent run health** covers whether custom agents are working rather than what they cost: total runs, completed runs, errors, timeouts, and tool errors inside otherwise completed runs. You can filter by agent and by what triggered the run. Setup, Agent Management, Agent Activity holds the traces for individual runs.
 
@@ -55,6 +70,11 @@ The records move through four states, and the design is better than I expected:
 | Monitoring recovery | You acted, and the system keeps checking daily to see whether it worked |
 | Resolved | The system confirmed the situation is fixed. Only the system sets this |
 | Dismissed | You decided no action was needed. Kept for audit, and raised again if it recurs |
+
+<figure class="post-figure">
+  <a href="/img/ai-units-article-images/netsuite-ai-observations.webp" target="_blank"><img src="/img/ai-units-article-images/netsuite-ai-observations.webp" alt="The AI Observations panel on the Agent monitoring dashboard with Active, Monitoring recovery, Resolved and Dismissed tabs, all showing a count of zero" loading="lazy"></a>
+  <figcaption>The four states as tabs on the dashboard. Nothing flagged in this account, which is what a quiet week should look like.</figcaption>
+</figure>
 
 Two details are worth pausing on. **Only the system can mark something resolved**, so an administrator cannot close a problem by asserting it is fixed. And **dismissed records are retained and will reappear if the situation recurs**, which means a decision to ignore something leaves a trail. For anything a controller has to defend later, both of those are the right design.
 

@@ -1037,3 +1037,38 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Inline screenshots inside blog posts */
+.post-figure {
+  margin: 1.5rem 0 2rem;
+}
+
+.post-figure a {
+  display: block;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  overflow: hidden;
+  line-height: 0;
+  transition: border-color 0.2s;
+}
+
+.post-figure a:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+.post-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-figure figcaption {
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.5;
+  margin-top: 0.6rem;
+}
+
+.post-figure-narrow {
+  max-width: 300px;
+}
