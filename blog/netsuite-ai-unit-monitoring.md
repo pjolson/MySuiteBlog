@@ -152,4 +152,4 @@ It raises an AI Observation record when units are forecast to run out before the
 
 <TagLinks />
 
-Read Next - [What AI Units Cost and Who Controls Them](/blog/netsuite-ai-units)
+Read Next - [What a NetSuite Administrator Actually Costs](/blog/netsuite-administrator-cost)

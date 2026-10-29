@@ -200,4 +200,4 @@ Oracle says customers are expected to purchase more or pause any further usage o
 
 <TagLinks />
 
-Read Next - [How to Audit a NetSuite Account](/blog/netsuite-account-audit)
+Read Next - [Part Two: AI Unit Monitoring, the Tools and the Gaps](/blog/netsuite-ai-unit-monitoring)
