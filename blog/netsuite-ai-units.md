@@ -127,7 +127,9 @@ Worth knowing: several features are on by default, including Text Enhance and Na
 
 ## Watching the Meter
 
-Three places show usage:
+Three places show usage, and [the second piece in this series](/blog/netsuite-ai-unit-monitoring) covers the Agent monitoring dashboard, what NetSuite flags on its own, and the gaps around both in detail.
+
+The three:
 
 - **Setup, Company, View Billing Information** shows account-level consumption including units used in the current month.
 - **The AI Units usage dashboard** breaks consumption down by date, name and feature, which is what you need to find the thing driving a spike.
