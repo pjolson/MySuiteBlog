@@ -27,9 +27,9 @@ const posts = [
     tags: ['Admin', 'Advisory']
   },
   {
-    title: 'The Signs a Client Has Outgrown QuickBooks',
-    url: '/blog/outgrown-quickbooks',
-    tags: ['Advisory', 'Implementation']
+    title: 'How to Roll Out NetSuite Next Role by Role, and What to Decide First',
+    url: '/blog/netsuite-next-rollout',
+    tags: ['Admin', 'Advisory']
   },
   {
     title: 'QuickBooks to NetSuite Migration: What It Takes',
