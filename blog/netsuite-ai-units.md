@@ -34,7 +34,7 @@ Which licences generate units is narrower than people assume. Oracle lists Gener
 
 ## What Spends Them
 
-Oracle publishes estimates for nine features and labels them as estimates:
+Oracle publishes estimates for seven features, with Ask Oracle split into three tiers, and labels every figure an estimate:
 
 | Feature | Estimated AI Units |
 |---|---|
@@ -50,11 +50,11 @@ Oracle publishes estimates for nine features and labels them as estimates:
 
 Several things are explicitly exempt. Oracle states that add-on modules including **Bill Capture, EPM and Analytics Warehouse do not consume AI Units**, because they are licensed separately. More interestingly, **the NetSuite AI Connector does not consume them either**. Work you push through the Connector to Claude or ChatGPT runs on your AI provider meter instead, which makes where a task runs a budgeting decision rather than only a technical one. That route is how I ran [a read-only review of two years of books](/blog/netsuite-books-go-wrong) without touching the unit pool at all.
 
-What is not on the list deserves care. Oracle never says that unlisted features are free, and the announcements from SuiteWorld 2026 arrived without unit estimates attached. SuiteSkills, AI Portlets, AI Workspaces and the industry agents are all live, and none of them appears on Oracle's estimates page. Read that as a gap in the documentation rather than evidence they are free.
+What is not on the list deserves care. Oracle never says that unlisted features are free, and the announcements from SuiteWorld 2026 arrived without unit estimates attached. SuiteSkills, AI Portlets, AI Workspaces and the industry agents are all live, and none of them appears on Oracle's estimates page. Read that as a gap in the documentation rather than evidence they are free. The page was unchanged when I checked it again on November 12, 2026.
 
 ## What I Measured
 
-Oracle publishes estimates for nine features. The ones announced at SuiteWorld are not among them, so I ran five actions in a test account with 100,000 units provisioned and read the counter on the Billing Information page after each one.
+Oracle publishes estimates for seven features. The ones announced at SuiteWorld are not among them, so I ran five actions in a test account with 100,000 units provisioned and read the counter on the Billing Information page after each one.
 
 | Step | Action | Units used | Oracle estimate |
 |---|---|---|---|
