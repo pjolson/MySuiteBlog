@@ -12,6 +12,11 @@
 <script setup>
 const posts = [
   {
+    title: 'Claude for Manufacturing and NetSuite: What It Reads and Writes',
+    url: '/blog/claude-for-manufacturing-netsuite',
+    tags: ['Advisory', 'Manufacturing']
+  },
+  {
     title: 'What a NetSuite Administrator Actually Costs',
     url: '/blog/netsuite-administrator-cost',
     tags: ['Admin', 'Advisory']
@@ -24,11 +29,6 @@ const posts = [
   {
     title: 'NetSuite Month-End Close: Where It Actually Breaks',
     url: '/blog/netsuite-month-end-close',
-    tags: ['Admin', 'Advisory']
-  },
-  {
-    title: 'How to Roll Out NetSuite Next Role by Role, and What to Decide First',
-    url: '/blog/netsuite-next-rollout',
     tags: ['Admin', 'Advisory']
   },
   {

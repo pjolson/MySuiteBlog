@@ -14,6 +14,8 @@ Anthropic released Claude for Manufacturing in the week of November 12, 2026, an
 
 I installed it and read every skill it ships with, alongside the published documentation on both sides. One detail in there matters more than the feature list, so it goes first.
 
+This article is the documented version: what the plugin is built to do, and what the published material on both sides actually says. A second article follows it with the results of running the thing against a NetSuite manufacturing account.
+
 I have no affiliation with Anthropic, and nobody paid for this article.
 
 **What is Claude for Manufacturing?** Claude for Manufacturing is a plugin for Claude rather than a separate product. It adds seventeen skills covering quoting, quality, maintenance, production reporting, sourcing and design, plus connectors for Microsoft 365, Oracle NetSuite, Infor M3 and Autodesk Fusion. It reads your data and drafts documents for a person to review. Anthropic states that it does not run production control, operate equipment, or write to your systems of record.
@@ -126,7 +128,7 @@ None of this needs a project. It needs a handful of decisions made before the fi
 
 ## Coming Next: Running It Against a Real Account
 
-Everything above is what the plugin is documented to do. Later this week I am running it against a NetSuite manufacturing account to find out what it actually does: which records it reaches with a given role, whether the NetSuite connector behaves as read and write in practice, how a generated quote compares against the NetSuite data it cites, and where it gets things wrong. That article will carry the numbers.
+Everything above is what the plugin is documented to do. The next article runs it against a NetSuite manufacturing account to find out what it actually does: which records it reaches with a given role, whether the NetSuite connector behaves as read and write in practice, how a generated quote compares against the NetSuite data it cites, and where it gets things wrong. That one will carry the numbers.
 
 ## Who Should Own This
 
