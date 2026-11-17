@@ -126,9 +126,11 @@ None of this needs a project. It needs a handful of decisions made before the fi
 
 </div>
 
-## Coming Next: Running It Against a Real Account
+## What Happened When I Ran It
 
-Everything above is what the plugin is documented to do. The next article runs it against a NetSuite manufacturing account to find out what it actually does: which records it reaches with a given role, whether the NetSuite connector behaves as read and write in practice, how a generated quote compares against the NetSuite data it cites, and where it gets things wrong. That one will carry the numbers.
+Everything above is what the plugin is documented to do. I then connected Claude to a NetSuite manufacturing account as four of the delivered manufacturing roles and put the same questions to each one. [Claude and NetSuite: Four Roles, Four Answers](/blog/claude-netsuite-role-test) carries the full grid and the refusal messages NetSuite returned.
+
+Two things came out of it. Permissions held: on identical tools against identical records, each role was allowed what it was entitled to and refused the rest, and NetSuite named the missing permission each time it refused. The second was the one I did not expect. In that account the connector exposed no tool to create a transaction at all, so the inventory adjustment and the purchase order receipt could not be attempted by any role. How a generated quote compares against the NetSuite data it cites is still ahead.
 
 ## Who Should Own This
 
@@ -169,4 +171,4 @@ No, but the features enabled in your account decide what it can see. Bill of mat
 
 <TagLinks />
 
-Read Next - [NetSuite AI Unit Monitoring: The Tools and the Gaps](/blog/netsuite-ai-unit-monitoring)
+Read Next - [Claude and NetSuite: Four Roles, Four Answers](/blog/claude-netsuite-role-test)
