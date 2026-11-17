@@ -17,6 +17,11 @@ const posts = [
     tags: ['Advisory', 'Manufacturing']
   },
   {
+    title: 'Claude and NetSuite: Four Roles, Four Answers',
+    url: '/blog/claude-netsuite-role-test',
+    tags: ['Admin', 'Manufacturing']
+  },
+  {
     title: 'What a NetSuite Administrator Actually Costs',
     url: '/blog/netsuite-administrator-cost',
     tags: ['Admin', 'Advisory']
@@ -25,11 +30,6 @@ const posts = [
     title: 'What a Client-Side Resource Does on a NetSuite Implementation',
     url: '/blog/netsuite-client-side-resource',
     tags: ['Implementation', 'Advisory']
-  },
-  {
-    title: 'NetSuite Month-End Close: Where It Actually Breaks',
-    url: '/blog/netsuite-month-end-close',
-    tags: ['Admin', 'Advisory']
   },
   {
     title: 'QuickBooks to NetSuite Migration: What It Takes',
