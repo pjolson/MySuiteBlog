@@ -267,11 +267,12 @@ export default defineConfig({
           { q: 'When does a full-time NetSuite administrator make sense?', a: 'When the genuine workload runs well past one hundred hours a month, or the environment spans many subsidiaries with heavy customization and constant change. At that scale a dedicated seat is justified, and a fractional admin can keep the system stable during the search and help interview candidates.' }
         ],
         'netsuite-health-check.md': [
-          { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and we remove all access objects when the engagement ends.' },
+          { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and I remove all access objects when the engagement ends.' },
           { q: 'How long does the NetSuite Health Check take?', a: 'Report within 24 hours. Debrief scheduled with you, usually within the same week.' },
+          { q: 'What does the NetSuite Health Check score mean?', a: 'Each assessed area is rated on its worst finding, and the score is the average of those area ratings out of 100, carrying a letter grade. Any Critical finding caps the grade at D and any High finding caps it at C. Areas that cannot be judged from a read-only extraction are excluded from the score and flagged for manual review rather than counted as clean.' },
           { q: 'What if our NetSuite account is clean?', a: 'Then you get documented proof of a well-governed system. Useful for auditors and boards.' },
-          { q: 'Do you fix the issues found in the Health Check?', a: 'Yes. The Health Check is the diagnosis. We scope remediation separately.' },
-          { q: 'Does the Health Check work for OneWorld / multi-subsidiary?', a: 'Yes.' }
+          { q: 'Do you fix the issues found in the Health Check?', a: 'Yes. The Health Check is the diagnosis. Remediation is scoped separately, and the fee is credited toward it.' },
+          { q: 'Does the Health Check work for OneWorld / multi-subsidiary?', a: 'Yes. The assessment runs account wide, so a OneWorld account is covered in the same pass, and the number of subsidiaries does not change the fee.' }
         ],
         'blog/netsuite-bill-capture-email-relay.md': [
           { q: 'What is NetSuite Bill Capture?', a: 'NetSuite Bill Capture is the SuiteApp that scans vendor bills and lets you submit invoices by email or upload. The email submission feature is sometimes called the Email Capture Plugin. Bill Capture reads the sender address of each inbound email to decide whether the submission is allowed.' },
