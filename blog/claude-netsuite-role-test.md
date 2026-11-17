@@ -51,8 +51,8 @@ Treat that as a description of what I saw on November 17, 2026 rather than a per
 ## The Results
 
 <figure class="post-figure">
-  <a href="/img/claudemfgarticles/netsuite-claude-role-test-results.webp" target="_blank"><img src="/img/claudemfgarticles/netsuite-claude-role-test-results.webp" alt="Results grid for four delivered NetSuite manufacturing roles against the same read and write tests, showing answered, partial, no tool, allowed and refused outcomes per role" loading="lazy"></a>
-  <figcaption>Six of the eight tests. The vendor bill attachment and the purchase order close are in the full table below.</figcaption>
+  <a href="/img/claudemfgarticles/netsuite-claude-role-test-results.webp" target="_blank"><img src="/img/claudemfgarticles/netsuite-claude-role-test-results.webp" alt="Complete results grid for four delivered NetSuite manufacturing roles against eight identical read and write tests, showing answered, partial, empty, no tool, allowed and refused outcomes for every role and test" loading="lazy"></a>
+  <figcaption>All eight tests against all four roles. Every write row came back two allowed and two refused, with a different pair succeeding each time.</figcaption>
 </figure>
 
 | | Production Operator | Production Manager | Cost Accountant | IT Manager |
@@ -62,13 +62,13 @@ Treat that as a description of what I saw on November 17, 2026 rather than a per
 | Create inventory adjustment | No tool | No tool | No tool | No tool |
 | Receive purchase order | No tool | No tool | No tool | No tool |
 | Attach file to purchase order | Refused by NetSuite | Allowed | Allowed | Refused by NetSuite |
-| Attach file to work order | Allowed | Not tested | Refused by NetSuite | Refused by NetSuite |
-| Attach file to vendor bill | Not tested | Not tested | Not tested | Allowed |
-| Close purchase order | Refused by NetSuite | Passed the role check, then blocked: action not available in this account | Not tested | Not tested |
+| Attach file to work order | Allowed | Allowed | Refused by NetSuite | Refused by NetSuite |
+| Attach file to vendor bill | Refused by NetSuite | Refused by NetSuite | Allowed | Allowed |
+| Close purchase order | Refused by NetSuite | Passed the role check, then blocked: action not available in this account | Passed the role check, then blocked: action not available in this account | Refused by NetSuite |
 
-The attach rows show the control most clearly. Same tool, same file, same target records every time. The Production Operator could attach to the work order but not the purchase order. The Cost Accountant could do the reverse. The IT Manager could do neither, yet it could attach to a vendor bill. Each result matched that role's permission on that record type, and nothing else.
+The attach rows show the control most clearly. Same tool, same file, the same three target records, four roles. Each row came back two allowed and two refused, and a different pair of roles succeeded in each one. The Production Operator reached the work order and nothing else. The Production Manager reached the work order and the purchase order. The Cost Accountant reached the purchase order and the vendor bill. The IT Manager reached only the vendor bill. Every outcome matched that role's permission on that record type.
 
-The Close test showed the order NetSuite checks things in. For the Production Operator it returned a permission violation naming the Transactions, Purchase Order permission and the level required. The Production Manager passed that check and then hit a second message saying the action was not available in this account. The role check came first.
+The Close test showed the order NetSuite checks things in, and it put the role check in writing. The Production Operator, which holds view access to purchase orders, was told it needs a higher level of the Transactions, Purchase Order permission. The IT Manager, which holds no purchase order permission at all, was told it needs the permission. Same tool, same record, two different refusals tracking two different permission levels. The Production Manager and the Cost Accountant passed that check and then hit a second message saying the action is not available in this account. The role check runs first, and NetSuite names what it checked.
 
 ## Four Things That Surprised Me
 
@@ -121,7 +121,7 @@ The record action log gives you the record type, the record ID and the action. T
   <figcaption>The SuiteQL log. Descriptions such as "Item cost fields" and "Q1: open work orders with backordered components" are labels Claude wrote, not the queries it ran.</figcaption>
 </figure>
 
-So the readable part of your SuiteQL audit trail is a narrative composed by the thing being audited. In this test the descriptions were accurate and useful. They are still not evidence of what ran, and you cannot reconstruct a query from a row that records only its character count.
+So the readable part of your SuiteQL audit trail is a narrative composed by the thing being audited. The descriptions on these rows were accurate and useful. They are still not evidence of what ran, and you cannot reconstruct a query from a row that records only its character count.
 
 One of those rows is worth looking at directly. Under the IT Manager role I asked whether the employee social security number field was readable, as a permissions probe, counting rows only and returning no values. The attempt failed because the field is not exposed under the name tried, and it landed in the log as an error row carrying its own description: "Count only: is the employee SSN field readable (no values returned)."
 
@@ -129,7 +129,7 @@ That row is the useful one in the whole set. The log caught an attempt that retu
 
 Retention is short. Oracle states twenty-one days in production and seven in sandbox. Anything you need beyond that has to be taken out and kept somewhere else, which is a real consideration for a regulated manufacturer.
 
-I have not yet confirmed whether file attachments made through the connector appear in System Notes, so I would not lean on System Notes for this until somebody has checked.
+System Notes did not record the one write I could check against it. After a file was attached to a work order through the connector, I opened that work order as administrator. The file was there, under Communication and then Files. System Notes had no entry for it. The Files subtab showed the file's own last modified date, which was months old, rather than when it was attached or by whom. For connector file attachments in this account the script execution log was the only record of who attached what and when, and that log expires in twenty-one days.
 
 ## What This Means for a Manufacturer
 
@@ -158,6 +158,7 @@ Which is the part worth acting on now, while it is still a configuration questio
 - One figure checked against the record or a saved search before anyone acts on a cost, margin or inventory answer
 - A standing follow-up when an answer comes back empty: can this role see those records at all
 - A named owner for the execution logs, reading them weekly for the first month
+- Awareness that a file attached through the connector may leave no System Notes entry, which makes the execution log the only record of it
 - A way to retain log rows past twenty-one days if your auditors will ask for them
 
 </div>
@@ -192,7 +193,7 @@ Not reliably. In this test, roles lacking access to a record type usually receiv
 
 ### Where can I see what Claude did in NetSuite?
 
-In the script execution logs for the connector tool deployments, which were separate for SuiteQL and record actions. The record action log shows record type, record ID and action. The SuiteQL log shows query length and result count rather than the query itself, alongside a description the model wrote for its own call. Oracle retains these for twenty-one days in production and seven in sandbox.
+In the script execution logs for the connector tool deployments, which were separate for SuiteQL and record actions. The record action log shows record type, record ID and action. The SuiteQL log shows query length and result count rather than the query itself, alongside a description the model wrote for its own call. A file attached through the connector produced no System Notes entry on the record in this test, so the execution log was the only record of it. Oracle retains these for twenty-one days in production and seven in sandbox.
 
 <ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="Every result here came from role configuration that was already in the account before any AI was involved. Establishing what your roles can see and change today is worth doing while it is still a configuration question." />
 
