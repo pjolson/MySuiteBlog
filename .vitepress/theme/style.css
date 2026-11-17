@@ -4,6 +4,14 @@
   --vp-c-brand-3: #07402a;
   --vp-c-brand-soft: rgba(14, 107, 71, 0.1);
 
+  /* Solid brand fills (buttons, badges, number chips).
+     Deliberately NOT --vp-c-brand-1: that token doubles as the link/accent
+     colour and goes mint in dark mode, which is right for text on a dark
+     background and far too loud as a large fill. */
+  --ms-fill: #0E6B47;
+  --ms-fill-hover: #0a5538;
+  --ms-fill-text: #ffffff;
+
   --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
@@ -16,7 +24,27 @@
   --vp-c-brand-2: #0E6B47;
   --vp-c-brand-3: #0a5538;
   --vp-c-brand-soft: rgba(45, 212, 164, 0.1);
+
+  /* Same emerald fill in dark mode; hover lifts lighter rather than darker. */
+  --ms-fill: #0E6B47;
+  --ms-fill-hover: #14875a;
+  --ms-fill-text: #ffffff;
   --vp-home-hero-name-color: #f9fafb;
+}
+
+/* VitePress VPButton (homepage hero) follows the same fill as .cta-primary,
+   so the hero and every other CTA match in both colour schemes. */
+:root,
+.dark {
+  --vp-button-brand-bg: var(--ms-fill);
+  --vp-button-brand-text: var(--ms-fill-text);
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-hover-bg: var(--ms-fill-hover);
+  --vp-button-brand-hover-text: var(--ms-fill-text);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-active-bg: var(--ms-fill-hover);
+  --vp-button-brand-active-text: var(--ms-fill-text);
+  --vp-button-brand-active-border: transparent;
 }
 
 /* Homepage content wrapper */
@@ -158,8 +186,8 @@
 }
 
 .tag-badge:hover {
-  background: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
 }
 
 /* Tag section on tags page */
@@ -244,8 +272,8 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.75rem;
@@ -423,18 +451,18 @@
 }
 
 .pricing-cta:hover {
-  background: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
 }
 
 .pricing-card.featured .pricing-cta {
-  background: var(--vp-c-brand-1);
-  color: #fff;
-  border-color: var(--vp-c-brand-1);
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
+  border-color: var(--ms-fill);
 }
 
 .pricing-card.featured .pricing-cta:hover {
-  background: var(--vp-c-brand-2);
+  background: var(--ms-fill-hover);
 }
 
 /* Health check featured card */
@@ -800,15 +828,15 @@
   display: inline-block;
   padding: 0.6rem 1.5rem;
   border-radius: 6px;
-  background: var(--vp-c-brand-1);
-  color: #fff !important;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text) !important;
   font-weight: 600;
   text-decoration: none;
   transition: background 0.2s;
 }
 
 .cta-primary:hover {
-  background: var(--vp-c-brand-2);
+  background: var(--ms-fill-hover);
   text-decoration: none;
 }
 
@@ -825,31 +853,25 @@
 }
 
 .cta-secondary:hover {
-  background: var(--vp-c-brand-1);
-  color: #fff !important;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text) !important;
   text-decoration: none;
 }
 
 /*
- * Dark mode: brand-1 is bright mint (#2DD4A4). White text on it fails
- * contrast, so any button whose background is the mint gets dark ink;
- * hover states that shift to the darker emerald (brand-2/3) keep white.
+ * VitePress ships `.vp-doc a { text-decoration: underline }`, which outranks
+ * the `text-decoration: none` on a single button or card class. Anything that
+ * is a button or a card rather than a link in prose needs the extra weight,
+ * so the class is repeated to raise specificity above `.vp-doc a`.
  */
-.dark .cta-primary {
-  color: #062a1c !important;
-}
-.dark .cta-primary:hover {
-  color: #fff !important;
-}
-.dark .cta-secondary:hover {
-  color: #062a1c !important;
-}
-.dark .pricing-cta:hover,
-.dark .pricing-card.featured .pricing-cta {
-  color: #062a1c;
-}
-.dark .pricing-card.featured .pricing-cta:hover {
-  color: #fff;
+a.cta-primary.cta-primary,
+a.cta-secondary.cta-secondary,
+a.pricing-cta.pricing-cta,
+a.tag-badge.tag-badge,
+a.hc-read-card.hc-read-card,
+a.featured-card.featured-card,
+a.work-card.work-card {
+  text-decoration: none;
 }
 
 /* Printable checklist. .print-checklist is the generic class; .golive-checklist predates it. */
