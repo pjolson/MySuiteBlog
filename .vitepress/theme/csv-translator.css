@@ -60,8 +60,9 @@
 .vp-doc .csv-button { text-decoration: none; }
 .csv-button:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 3px; }
 .csv-button:disabled { opacity: 0.5; cursor: default; }
-.csv-button.cta-primary:disabled:hover { background: var(--vp-c-brand-1); }
-.dark .csv-button.cta-primary:disabled:hover { color: #062a1c !important; }
+/* Hold a disabled primary button at its resting appearance on hover. Uses the
+   same solid brand fill as .cta-primary so it does not drift in dark mode. */
+.csv-button.cta-primary:disabled:hover { background: var(--ms-fill); color: var(--ms-fill-text); }
 .csv-translator button, .csv-guide-context button, .csv-entry-help button { cursor: pointer; }
 .vp-doc .csv-results { list-style: none; padding: 0; margin: 0; }
 .vp-doc .csv-result { padding: 1.5rem 0; margin: 0; border-bottom: 1px solid var(--vp-c-divider); }
