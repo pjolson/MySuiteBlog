@@ -293,6 +293,16 @@ export default defineConfig({
           { q: 'Do you also manage the project?', a: 'Yes, on the client side. I am PMP certified, and I manage the tasks your team owns against the plan the partner runs: UAT preparation, data preparation, training scheduling and business process documentation. The partner manages their own plan and their own team.' },
           { q: 'What happens after go-live?', a: 'By go-live I know why each configuration decision was made and where the workarounds are, so that knowledge stays on your side when the partner rolls off. Who supports the system after that is your call: your own team, the partner, or ongoing administration with me. I do not pitch for it during the project.' }
         ],
+        'netsuite-advanced-revenue-management.md': [
+          { q: 'What is NetSuite Advanced Revenue Management?', a: 'Advanced Revenue Management, or ARM, is the NetSuite feature set for revenue recognition, and it supports ASC 606 and IFRS 15. Each sale produces a revenue arrangement with a revenue element for each performance obligation, such as a line on the sale. Revenue is allocated across the elements by fair value, and each element is recognized on a plan built from a revenue recognition rule.' },
+          { q: 'Do you implement Advanced Revenue Management?', a: 'No. Implementing ARM is work for NetSuite or a NetSuite partner. I work on accounts where it is already live, and during an implementation I can work on your side of the project alongside the partner.' },
+          { q: 'Why does NetSuite start recognizing revenue on a different date than the sales order?', a: 'The default start date source on a revenue recognition rule is the revenue arrangement date. Unless the preference Use Transaction Date as Revenue Arrangement Date is checked, that date is the system date when NetSuite created the arrangement, which can be later than the date on the order.' },
+          { q: 'Why did changing the item not change how existing contracts recognize?', a: 'Item settings are copied to the revenue element when the arrangement is created. Oracle states that item configuration changes do not affect revenue elements created before the change, so each existing sale has to be corrected on its own records.' },
+          { q: 'Does a credit memo reduce the original revenue arrangement?', a: 'Not by itself. A credit memo created from an invoice gets its own revenue arrangement with a negative element. The negative element is linked to the original sale only when the two arrangements are merged.' },
+          { q: 'Why does ARM create so many journal entries each month?', a: 'Month-end runs more than one process. Revenue recognition journal entries post first. The reclassification process then creates up to five adjustment journal entries, and it reverses the prior unbilled receivable adjustment before booking the current one. Each subsidiary and accounting book is processed separately.' },
+          { q: 'What happens when an item has no fair value price?', a: 'It depends on the accounting preference Use Sales Price as Fair Value. When it is checked, NetSuite uses the sales price as the fair value and no error appears. When it is clear, allocation fails with an error and the arrangement is not compliant, which keeps it out of reclassification until it is fixed.' },
+          { q: 'How is ARM work priced?', a: 'A defined review or cleanup is quoted as a fixed fee, scoped to the work. Ongoing help through month-end is part of fractional administration, which is priced by the month. Scope comes out of a first conversation about your account.' }
+        ],
         'netsuite-customization.md': [
           { q: 'What NetSuite customization work do you take on?', a: 'SuiteScript and SuiteQL builds, reporting, data migration and integrations. Recent work includes a bulk-renewal Suitelet, an automated past-due process that sends each customer one email with one payment link, and a one-click export of purchase order lines to Excel.' },
           { q: 'How is custom NetSuite work priced?', a: 'Fixed-fee, scoped to the work, with project management included. Scope comes out of a first conversation about what you need, and the quote follows from that.' },
@@ -368,7 +378,7 @@ export default defineConfig({
       // the overview page and its sections. The top-level items are unchanged.
       {
         text: 'Services',
-        activeMatch: '^/(about|netsuite-health-check|fractional-netsuite-administrator|netsuite-implementation-support|netsuite-customization)',
+        activeMatch: '^/(about|netsuite-health-check|fractional-netsuite-administrator|netsuite-implementation-support|netsuite-customization|netsuite-advanced-revenue-management)',
         items: [
           {
             text: 'Services',
@@ -376,6 +386,7 @@ export default defineConfig({
               { text: 'Fractional NetSuite Administration', link: '/fractional-netsuite-administrator' },
               { text: 'Implementation Support', link: '/netsuite-implementation-support' },
               { text: 'Customization & Integrations', link: '/netsuite-customization' },
+              { text: 'Advanced Revenue Management', link: '/netsuite-advanced-revenue-management' },
               { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
             ]
           },

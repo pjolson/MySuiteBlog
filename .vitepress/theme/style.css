@@ -763,6 +763,11 @@
   .ms-card-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  /* Four longer cards read better two by two than three and one. */
+  .ms-card-grid.ms-card-grid--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Shared card surface */

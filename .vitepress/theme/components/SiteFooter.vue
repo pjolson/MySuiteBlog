@@ -10,6 +10,7 @@ const columns = [
       { text: 'Fractional NetSuite Administration', href: '/fractional-netsuite-administrator' },
       { text: 'Implementation Support', href: '/netsuite-implementation-support' },
       { text: 'Customization & Integrations', href: '/netsuite-customization' },
+      { text: 'Advanced Revenue Management', href: '/netsuite-advanced-revenue-management' },
       { text: 'NetSuite Health Check', href: '/netsuite-health-check' }
     ]
   },
