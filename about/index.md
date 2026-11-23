@@ -28,19 +28,28 @@ description: "Fractional NetSuite administration, implementation support, and cu
     <div class="offering-scope">monthly retainer</div>
     <h3>Fractional NetSuite Administration</h3>
     <p>A senior certified admin as a fraction of your team: support, configuration, reporting, and training, working a prioritized backlog. Sized to your workload and priced by the month, not by the hour.</p>
-    <a href="/contact/" class="cta-secondary">Get Started</a>
+    <div class="service-card-actions">
+      <a href="/contact/" class="cta-secondary">Get Started</a>
+      <a href="/fractional-netsuite-administrator" class="ms-more">Learn More</a>
+    </div>
   </div>
   <div class="service-card" id="implementation-support">
     <div class="offering-scope">scoped to your project</div>
     <h3>Implementation Support</h3>
     <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. The partner delivers the system. I make sure your side of the project holds up its end, which is where most slips start.</p>
-    <a href="/contact/" class="cta-secondary">Get Started</a>
+    <div class="service-card-actions">
+      <a href="/contact/" class="cta-secondary">Get Started</a>
+      <a href="/netsuite-implementation-support" class="ms-more">Learn More</a>
+    </div>
   </div>
   <div class="service-card" id="customization">
     <div class="offering-scope">quoted to scope</div>
     <h3>Customization &amp; Integrations</h3>
     <p>SuiteScript and SuiteQL builds, reporting, data migration, and integrations with the tools your business already runs on, including Celigo, Workato, Box, Concur, and Salesforce. Fixed-fee, scoped to the work, with PMP-certified project management included.</p>
-    <a href="/contact/" class="cta-secondary">Get Started</a>
+    <div class="service-card-actions">
+      <a href="/contact/" class="cta-secondary">Get Started</a>
+      <a href="/netsuite-customization" class="ms-more">Learn More</a>
+    </div>
   </div>
 </div>
 </div>

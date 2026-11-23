@@ -894,8 +894,12 @@ a.ms-more:hover::after {
   color: var(--vp-c-brand-1);
 }
 
-.offerings-grid .service-card .cta-secondary {
-  align-self: flex-start;
+/* A card's button and its link to the service's own page. */
+.service-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1.25rem;
   margin-top: 1.5rem;
 }
 

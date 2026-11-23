@@ -7,15 +7,16 @@ const columns = [
   {
     title: 'Services',
     links: [
-      { text: 'Fractional NetSuite Administration', href: '/about/#ongoing-support' },
-      { text: 'Implementation Support', href: '/about/#implementation-support' },
-      { text: 'Customization & Integrations', href: '/about/#customization' },
+      { text: 'Fractional NetSuite Administration', href: '/fractional-netsuite-administrator' },
+      { text: 'Implementation Support', href: '/netsuite-implementation-support' },
+      { text: 'Customization & Integrations', href: '/netsuite-customization' },
       { text: 'NetSuite Health Check', href: '/netsuite-health-check' }
     ]
   },
   {
     title: 'Practice',
     links: [
+      { text: 'Services Overview', href: '/about/' },
       { text: 'How We Work', href: '/about/#how-we-work' },
       { text: 'About Patrick', href: '/about/#patrick' },
       { text: 'Recent Work', href: '/about/#recent-work' },

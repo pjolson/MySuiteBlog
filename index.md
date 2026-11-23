@@ -38,19 +38,19 @@ description: "NetSuite support from the client side of the table. One senior cer
 <section class="ms-section ms-section--overlap">
 <div class="ms-wrap">
 <div class="ms-card-grid">
-  <a class="ms-service" href="/about/#ongoing-support">
+  <a class="ms-service" href="/fractional-netsuite-administrator">
     <span class="ms-kicker">Monthly retainer</span>
     <h2>Fractional NetSuite Administration</h2>
     <p>A senior certified admin as a fraction of your team, handling support, configuration, reporting, and training after go-live. Priced by the month, not by the hour.</p>
     <span class="ms-more">Learn More</span>
   </a>
-  <a class="ms-service" href="/about/#implementation-support">
+  <a class="ms-service" href="/netsuite-implementation-support">
     <span class="ms-kicker">Scoped to your project</span>
     <h2>Implementation Support</h2>
     <p>Your independent expert in the room through an implementation: SOW and scope review, design validation, UAT, and knowledge transfer.</p>
     <span class="ms-more">Learn More</span>
   </a>
-  <a class="ms-service" href="/about/#customization">
+  <a class="ms-service" href="/netsuite-customization">
     <span class="ms-kicker">Quoted to scope</span>
     <h2>Customization &amp; Integrations</h2>
     <p>SuiteScript and SuiteQL builds, reporting, data migration, and integrations with the tools your business already runs on.</p>

@@ -360,14 +360,30 @@ export default defineConfig({
     // Services leads, as on any consulting site. Home is the logo, and Contact
     // is the button rendered by theme/Layout.vue, so neither is a text link.
     nav: [
+      // Two groups, matching the footer columns: one page per service, then
+      // the overview page and its sections. The top-level items are unchanged.
       {
-        text: 'Services', activeMatch: '^/(about|netsuite-health-check)',
+        text: 'Services',
+        activeMatch: '^/(about|netsuite-health-check|fractional-netsuite-administrator|netsuite-implementation-support|netsuite-customization)',
         items: [
-          { text: 'Services Overview', link: '/about/' },
-          { text: 'How We Work', link: '/about/#how-we-work' },
-          { text: 'About Patrick', link: '/about/#patrick' },
-          { text: 'Recent Work', link: '/about/#recent-work' },
-          { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
+          {
+            text: 'Services',
+            items: [
+              { text: 'Fractional NetSuite Administration', link: '/fractional-netsuite-administrator' },
+              { text: 'Implementation Support', link: '/netsuite-implementation-support' },
+              { text: 'Customization & Integrations', link: '/netsuite-customization' },
+              { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
+            ]
+          },
+          {
+            text: 'Practice',
+            items: [
+              { text: 'Services Overview', link: '/about/' },
+              { text: 'How We Work', link: '/about/#how-we-work' },
+              { text: 'About Patrick', link: '/about/#patrick' },
+              { text: 'Recent Work', link: '/about/#recent-work' }
+            ]
+          }
         ]
       },
       { text: 'Blog', link: '/blog/', activeMatch: '^/(blog|tags)/' },
