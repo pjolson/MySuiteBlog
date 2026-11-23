@@ -46,6 +46,7 @@ export default defineConfig({
         // along with the noindex and `search: false` lines in its frontmatter.
         if (item.url === 'fractional-netsuite-administrator') return false
         if (item.url === 'netsuite-implementation-support') return false
+        if (item.url === 'netsuite-customization') return false
         if (!item.url.startsWith(translatorPrefix) || item.url === translatorPrefix) return true
         const slug = item.url.slice(translatorPrefix.length).replace(/\/$/, '')
         return indexableGuideSlugs.has(slug)
@@ -287,6 +288,15 @@ export default defineConfig({
           { q: 'Will you make changes in our NetSuite account?', a: 'Only when asked. The partner is building the system. I take on functional or data work, such as CSV imports, saved searches, basic configuration and data validation, when the partner asks because their team is stretched, or when your team needs work that is outside the scope of the partner.' },
           { q: 'Do you also manage the project?', a: 'Yes, on the client side. I am PMP certified, and I manage the tasks your team owns against the plan the partner runs: UAT preparation, data preparation, training scheduling and business process documentation. The partner manages their own plan and their own team.' },
           { q: 'What happens after go-live?', a: 'By go-live I know why each configuration decision was made and where the workarounds are, so that knowledge stays on your side when the partner rolls off. Who supports the system after that is your call: your own team, the partner, or ongoing administration with me. I do not pitch for it during the project.' }
+        ],
+        'netsuite-customization.md': [
+          { q: 'What NetSuite customization work do you take on?', a: 'SuiteScript and SuiteQL builds, reporting, data migration and integrations. Recent work includes a bulk-renewal Suitelet, an automated past-due process that sends each customer one email with one payment link, and a one-click export of purchase order lines to Excel.' },
+          { q: 'How is custom NetSuite work priced?', a: 'Fixed-fee, scoped to the work, with project management included. Scope comes out of a first conversation about what you need, and the quote follows from that.' },
+          { q: 'Which integration tools do you work with?', a: 'My integration work covers Celigo, Workato, Box, Concur and Salesforce. Before any integration is built, the direction, frequency, field mapping, middleware and ownership after go-live get written down.' },
+          { q: 'Do our SuiteScript 1.0 and 2.0 scripts have to be converted?', a: 'Yes, on one deadline. Oracle states that scripts using SuiteScript 1.0, 2.0 or 2.x will stop working in NetSuite 2028.2, and a script annotated 2.x is a 2.0 script. Not every script deserves converting, because some are inactive or duplicated and some can be replaced by native functionality.' },
+          { q: 'Can you work on scripts someone else wrote?', a: 'Usually. Objects deployed as ordinary account customizations can be edited. Code delivered in a managed bundle is controlled by the solution provider that published it and may be locked against editing in your account, so the first step is checking the Managed column in your installed bundle list.' },
+          { q: 'Is small work a project or part of a retainer?', a: 'Small scripts and fixes are part of fractional administration. Larger builds are quoted separately as fixed-fee projects, scoped to the work.' },
+          { q: 'Who writes the code?', a: 'I do. I scope the work and I do the work, and there are no juniors and no handoffs.' }
         ],
         'netsuite-health-check.md': [
           { q: 'Is the NetSuite Health Check safe? What access do you need?', a: 'Read-only access via a scoped, token-based role. The extraction pulls configuration and metadata only, not transaction data. Nothing in your account is modified, and I remove all access objects when the engagement ends.' },
