@@ -201,7 +201,7 @@ No. The partner delivers the system and that is their job. I make sure your side
 <div class="health-check-card">
   <h3>One way to start: NetSuite Health Check, $2,500</h3>
   <p>If you would rather begin with a clear assessment than an open-ended conversation, the Health Check is a fixed-scope review of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call, credited toward whatever comes next. It is one way in, not a required first step.</p>
-  <a href="/netsuite-health-check" class="cta-secondary">See What's Included</a>
+  <a href="/netsuite-health-check" class="cta-secondary">See What Is Included</a>
 </div>
 </div>
 </section>

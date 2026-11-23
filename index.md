@@ -163,7 +163,7 @@ NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalyti
 <div class="health-check-card">
   <h3>Not sure where you stand? NetSuite Health Check, $2,500</h3>
   <p>A fixed-scope assessment of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call. One way to start, credited toward whatever comes next. It is an option, not a required first step.</p>
-  <a href="/netsuite-health-check" class="cta-secondary">See What's Included</a>
+  <a href="/netsuite-health-check" class="cta-secondary">See What Is Included</a>
 </div>
 </div>
 </section>

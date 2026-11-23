@@ -8,7 +8,7 @@ const props = defineProps({
     default: 'I work on the client side of NetSuite: the same senior person every session, learning your business and not just your system, from quick fixes to owning the admin seat.'
   },
   secondaryLink: { type: String, default: '/about/' },
-  secondaryText: { type: String, default: 'View Services & Pricing' }
+  secondaryText: { type: String, default: 'View Services' }
 })
 // The post slug rides on the booking link so consultations attribute to the
 // article that produced them.
