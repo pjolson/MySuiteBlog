@@ -204,7 +204,7 @@ Partner benchmarks put a client project lead at 20 to 30 hours a week and financ
 
 It can be for a single-entity company whose main limits are users, accounts, or classes. NetSuite fits better when you need multiple subsidiaries, multiple currencies, inventory across locations, revenue recognition, or stronger approvals and controls.
 
-<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Most of what slows a QuickBooks to NetSuite move sits on the client side of the project: the decisions, the data cleanup, the testing, the parallel close. If your team does not have the hours for that on top of their real jobs, that is the work I do." />
+<ConsultingCTA secondary-link="/netsuite-implementation-support" secondary-text="See Implementation Support" message="Most of what slows a QuickBooks to NetSuite move sits on the client side of the project: the decisions, the data cleanup, the testing, the parallel close. If your team does not have the hours for that on top of their real jobs, that is the work I do." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 10/19/2026

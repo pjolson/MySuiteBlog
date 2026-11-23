@@ -195,7 +195,7 @@ Not reliably. In this test, roles lacking access to a record type usually receiv
 
 In the script execution logs for the connector tool deployments, which were separate for SuiteQL and record actions. The record action log shows record type, record ID and action. The SuiteQL log shows query length and result count rather than the query itself, alongside a description the model wrote for its own call. A file attached through the connector produced no System Notes entry on the record in this test, so the execution log was the only record of it. Oracle retains these for twenty-one days in production and seven in sandbox.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="Every result here came from role configuration that was already in the account before any AI was involved. Establishing what your roles can see and change today is worth doing while it is still a configuration question." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="Every result here came from role configuration that was already in the account before any AI was involved. Establishing what your roles can see and change today is worth doing while it is still a configuration question." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 11/17/2026

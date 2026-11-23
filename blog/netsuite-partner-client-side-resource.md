@@ -53,7 +53,7 @@ The client-side seat exists on every project. Either the customer fills it with 
 
 If you have run an implementation where the client could not keep up, you already know which one you would rather have next time. We are glad to fill that seat on the customer's side of your next project, and to do it in a way that makes your team's job easier instead of harder.
 
-<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Partners: if you have a client who needs a capable resource on their side of the table, we fill that seat without stepping on your delivery. Worth a conversation about your next project." />
+<ConsultingCTA secondary-link="/netsuite-implementation-support" secondary-text="See Implementation Support" message="Partners: if you have a client who needs a capable resource on their side of the table, we fill that seat without stepping on your delivery. Worth a conversation about your next project." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 6/20/2026

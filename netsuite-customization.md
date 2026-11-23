@@ -4,14 +4,6 @@ pageClass: commercial-page
 title: "NetSuite Customization, SuiteScript & Integrations"
 description: "NetSuite customization from one senior consultant: SuiteScript and SuiteQL builds, reporting, data migration and integrations. Fixed-fee, scoped to the work."
 faqSchema: true
-# DRAFT, not yet approved for publishing. Three guards keep it out of search
-# until it is: the noindex tag below, `search: false` (site search), and the
-# sitemap exclusion in .vitepress/config.mjs. Remove all three to publish.
-search: false
-head:
-  - - meta
-    - name: robots
-      content: noindex
 ---
 
 <section class="ms-hero ms-hero--page">

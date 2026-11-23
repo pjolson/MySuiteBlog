@@ -163,7 +163,7 @@ Open Customization, SuiteBundler, Search and Install Bundles, List and read the 
 
 It depends on how much of the build is documented, which is usually less than anyone expects. On one project where the partner was close to a year into the work, my estimate was three to six months for a replacement firm to reach the position the existing one already held. That figure is specific to that account rather than a benchmark, but the shape holds: the less documentation exists, the more of the handover has to be rebuilt by inspection.
 
-<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="If the partner conversation is coming and nobody has run the comparison, an independent read of what transfers and what the contract actually says is worth having before the decision rather than after it." />
+<ConsultingCTA secondary-link="/netsuite-implementation-support" secondary-text="See Implementation Support" message="If the partner conversation is coming and nobody has run the comparison, an independent read of what transfers and what the contract actually says is worth having before the decision rather than after it." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 11/11/2026

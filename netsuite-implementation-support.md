@@ -4,14 +4,6 @@ pageClass: commercial-page
 title: "NetSuite Implementation Support and Project Rescue"
 description: "Client-side NetSuite implementation support: SOW review, design validation, testing, data migration and project management, alongside your partner."
 faqSchema: true
-# DRAFT, not yet approved for publishing. Three guards keep it out of search
-# until it is: the noindex tag below, `search: false` (site search), and the
-# sitemap exclusion in .vitepress/config.mjs. Remove all three to publish.
-search: false
-head:
-  - - meta
-    - name: robots
-      content: noindex
 ---
 
 <section class="ms-hero ms-hero--page">

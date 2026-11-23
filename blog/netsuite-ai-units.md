@@ -193,7 +193,7 @@ Yes. Oracle states that SuiteApps using generative AI consume units, specificall
 
 Oracle says customers are expected to purchase more or pause any further usage of AI features. It does not document whether features stop immediately or whether any overage is billed, and it publishes no price for the add-on packs, so that is a question for your account team in writing.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="A shared budget with no enforcement, attached to features that are on by default, is the kind of thing that needs an owner rather than a policy. Setting that up, and inventorying what already calls generative AI in your account, is the sort of work I do between closes." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="A shared budget with no enforcement, attached to features that are on by default, is the kind of thing that needs an owner rather than a policy. Setting that up, and inventorying what already calls generative AI in your account, is the sort of work I do between closes." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 10/28/2026

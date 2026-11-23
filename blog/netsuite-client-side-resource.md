@@ -126,7 +126,7 @@ That is the role. It is not adversarial and it is not deferential. It is the sea
 If your implementation has that seat unfilled, fill it. The mistake is leaving it empty.
 
 
-<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Running an implementation and the client side is the bottleneck? We fill the seat between your team and the partner: super user, client-side PM, and hands-on support in one role." />
+<ConsultingCTA secondary-link="/netsuite-implementation-support" secondary-text="See Implementation Support" message="Running an implementation and the client side is the bottleneck? We fill the seat between your team and the partner: super user, client-side PM, and hands-on support in one role." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 6/4/2026

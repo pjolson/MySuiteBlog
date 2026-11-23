@@ -42,11 +42,6 @@ export default defineConfig({
       const translatorPrefix = basePath.slice(1)
       return items.filter(item => {
         if (item.url === 'blog/firstpost') return false
-        // Draft pages awaiting approval. To publish one, delete its line here
-        // along with the noindex and `search: false` lines in its frontmatter.
-        if (item.url === 'fractional-netsuite-administrator') return false
-        if (item.url === 'netsuite-implementation-support') return false
-        if (item.url === 'netsuite-customization') return false
         if (!item.url.startsWith(translatorPrefix) || item.url === translatorPrefix) return true
         const slug = item.url.slice(translatorPrefix.length).replace(/\/$/, '')
         return indexableGuideSlugs.has(slug)

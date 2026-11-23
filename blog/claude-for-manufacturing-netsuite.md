@@ -164,7 +164,7 @@ No. Oracle states that the NetSuite AI Connector Service does not support Admini
 
 No, but the features enabled in your account decide what it can see. Bill of materials revisions, manufacturing routings and work in process transactions are only present when those features are on. Without them the plugin works from the records it can reach, such as items, work orders, purchase orders and inventory.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="A connector documented as writable, pointed at the system your plant runs on, is a role design question before it is an AI question. Reviewing which role your people would connect with, and what it can reach today, is worth doing before the first person signs in rather than after." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="A connector documented as writable, pointed at the system your plant runs on, is a role design question before it is an AI question. Reviewing which role your people would connect with, and what it can reach today, is worth doing before the first person signs in rather than after." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 11/16/2026

@@ -71,7 +71,7 @@ If you are not sure what your workload actually is, that is a solvable problem. 
 
 ## Where We Fit
 
-MySuite sells [fractional NetSuite administration](/about/#ongoing-support), priced by the month rather than by the hour, and we are open about the fact that this article describes our own category. The comparison above is still the one we walk through with anyone who asks, including the people we send toward a full-time hire because their workload demands one. The wrong-sized engagement fails, and a failed engagement is worse for us than a referral.
+MySuite sells [fractional NetSuite administration](/fractional-netsuite-administrator), priced by the month rather than by the hour, and we are open about the fact that this article describes our own category. The comparison above is still the one we walk through with anyone who asks, including the people we send toward a full-time hire because their workload demands one. The wrong-sized engagement fails, and a failed engagement is worse for us than a referral.
 
 ## Frequently Asked Questions
 
@@ -95,7 +95,7 @@ It can be, if your needs are occasional and you accept a reactive model. Support
 
 When the genuine workload runs well past one hundred hours a month, or the environment spans many subsidiaries with heavy customization and constant change. At that scale a dedicated seat is justified, and a fractional admin can keep the system stable during the search and help interview candidates.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="If you are weighing these options for your own account, we will walk through the workload math with you straight, including the cases where the right answer is a full-time hire. Same senior person, priced by the month." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="If you are weighing these options for your own account, we will walk through the workload math with you straight, including the cases where the right answer is a full-time hire. Same senior person, priced by the month." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 9/25/2026

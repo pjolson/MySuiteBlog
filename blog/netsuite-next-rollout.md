@@ -139,7 +139,7 @@ The administrator runs the rollout. The decision to grant Ask Oracle to a role b
 
 One question worth settling before the first role moves. When a pilot user hits something that does not work, who do they tell, and will that person know which of the two experiences the user was in when it happened?
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="A role by role rollout is several weeks of structured testing wrapped around a close calendar, and it lands on whoever already owns the account. If that person is already full, this is the sort of work I pick up between closes: the customization inventory, the test scripts per role, and the pass or fail call on each wave." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="A role by role rollout is several weeks of structured testing wrapped around a close calendar, and it lands on whoever already owns the account. If that person is already full, this is the sort of work I pick up between closes: the customization inventory, the test scripts per role, and the pass or fail call on each wave." />
 
 ## Frequently Asked Questions
 

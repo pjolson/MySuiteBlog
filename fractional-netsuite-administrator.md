@@ -4,14 +4,6 @@ pageClass: commercial-page
 title: "Fractional NetSuite Administrator & Admin Services"
 description: "A senior certified NetSuite administrator as a fraction of your team. Support, configuration, reporting and training on a monthly retainer, same person."
 faqSchema: true
-# DRAFT, not yet approved for publishing. Three guards keep it out of search
-# until it is: the noindex tag below, `search: false` (site search), and the
-# sitemap exclusion in .vitepress/config.mjs. Remove all three to publish.
-search: false
-head:
-  - - meta
-    - name: robots
-      content: noindex
 ---
 
 <section class="ms-hero ms-hero--page">
@@ -101,7 +93,7 @@ Skip the org chart debate and estimate the actual workload. Look back at the las
 
 What you give up is just as real. I am one person with other clients, not a bench. You get scheduled presence and clearly stated response expectations, not somebody in a chair from nine to five. If your operation needs a full-time person on site, or coverage around the clock, fractional is the wrong answer, and I will say so early.
 
-If you are still mid-implementation, the gap you have is an owner for the project, not the system. That is [implementation support](/about/#implementation-support), a different engagement.
+If you are still mid-implementation, the gap you have is an owner for the project, not the system. That is [implementation support](/netsuite-implementation-support), a different engagement.
 
 </div>
 </div>

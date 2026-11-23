@@ -153,7 +153,7 @@ No. Oracle recommends retiring scripts that are inactive, obsolete or duplicated
 
 Two are open as of October 2026. Oracle states that SuiteScript 2.1 client scripts are not supported in the Scriptable Cart, and that the SuiteTax Engine requires SuiteScript 2.0 for full functionality. No published date reconciles either with 2028.2, so both are worth tracking in each release preview.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="The hard part of this deadline is not the converting. It is deciding which scripts are dead, which encode a control somebody still depends on, and which could be replaced outright. That is the work I do alongside whoever writes the code." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="The hard part of this deadline is not the converting. It is deciding which scripts are dead, which encode a control somebody still depends on, and which could be replaced outright. That is the work I do alongside whoever writes the code." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 10/27/2026

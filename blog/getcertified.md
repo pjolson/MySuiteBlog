@@ -128,7 +128,7 @@ Administrator Professional. It formalizes what an administrator already does day
 
 Yes. The older model of retaking exams every couple of years is being replaced, and recertification has moved into MyLearn. The transitional New Release Quiz cycle has closed, so check MyLearn for the mechanism currently in force rather than relying on any published description of the old one.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="Getting certified usually makes you the NetSuite person where you work, and often the only one. That holds until an implementation lands on top of the day job, or a backlog builds that nobody owns. I work alongside internal admins on exactly that, not in place of them." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="Getting certified usually makes you the NetSuite person where you work, and often the only one. That holds until an implementation lands on top of the day job, or a backlog builds that nobody owns. I work alongside internal admins on exactly that, not in place of them." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 05/28/2026

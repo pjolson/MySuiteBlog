@@ -165,7 +165,7 @@ No. Oracle lists only standard and average costing as compatible with Manufactur
 
 NetSuite estimates the cost of the underwater fulfillment and posts a cost adjustment when stock comes back above zero. For FIFO, LIFO, specific, and lot items, a preference sets the estimate. Average items use the most recent above-water average cost.
 
-<ConsultingCTA secondary-link="/about/#implementation-support" secondary-text="See Implementation Support" message="Costing is one of a dozen decisions an implementation locks in during its first month, and most of them are easier to get right than to undo. If you want someone reviewing those calls who has no stake in the project plan, that is the work I do." />
+<ConsultingCTA secondary-link="/netsuite-implementation-support" secondary-text="See Implementation Support" message="Costing is one of a dozen decisions an implementation locks in during its first month, and most of them are easier to get right than to undo. If you want someone reviewing those calls who has no stake in the project plan, that is the work I do." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 10/5/2026

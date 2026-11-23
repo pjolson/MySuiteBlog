@@ -89,7 +89,7 @@ The Amount field is signed by debit and credit convention, and revenue accounts 
 
 Consolidated financial statements translate each subsidiary using consolidated exchange rates, and income accounts translate at a different rate type than balance sheet accounts. A search totaling base currency amounts per subsidiary is summing untranslated numbers. Compare at the single-subsidiary level first to separate translation effects from transaction differences.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="We build the reconciliation searches and reporting that finance teams close with, and we find the differences that will not tie. If your team loses days of every close to numbers that disagree, that is fixable." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="We build the reconciliation searches and reporting that finance teams close with, and we find the differences that will not tie. If your team loses days of every close to numbers that disagree, that is fixable." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 9/22/2026

@@ -172,7 +172,7 @@ The usual cause is the Calculate Consolidated Exchange Rates task. It is separat
 
 No. Oracle warns against closing a period while inventory cost recalculation is still in progress, because the results cannot be relied on. The Review Inventory Cost Accounting task is there to confirm that costing calculations are not currently running. On item records, the Cost Accounting Status field reports that state as Pending, Processing, Complete or Failed, and Oracle notes the field is hidden by default, so it is easy to assume recalculation finished when nobody has actually looked.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="If your close keeps slipping and nobody can say exactly where, that is usually a handful of specific causes rather than a staffing problem. Finding which ones apply to your account is the kind of work I do between closes." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="If your close keeps slipping and nobody can say exactly where, that is usually a handful of specific causes rather than a staffing problem. Finding which ones apply to your account is the kind of work I do between closes." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 10/8/2026

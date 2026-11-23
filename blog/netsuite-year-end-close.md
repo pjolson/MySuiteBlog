@@ -153,7 +153,7 @@ Go to Setup, Accounting, Manage G/L, Manage Accounting Periods and click Set Up 
 
 Because tax reporting calendars do not always match accounting calendars, and in companies with international operations tax periods can vary between subsidiaries. Tax periods are maintained at Setup, Accounting, Taxes, Manage Tax Periods, which has its own Set Up Full Year button. Creating next year accounting periods without also creating the tax periods is a common omission, and the resulting error appears later than the configuration that caused it.
 
-<ConsultingCTA secondary-link="/about/#ongoing-support" secondary-text="See Fractional Administration" message="If January turns into a reconstruction project every year, the causes tend to be a short and specific list. Identifying which of them apply to your account is worth doing while there is still time to act on the answer." />
+<ConsultingCTA secondary-link="/fractional-netsuite-administrator" secondary-text="See Fractional Administration" message="If January turns into a reconstruction project every year, the causes tend to be a short and specific list. Identifying which of them apply to your account is worth doing while there is still time to act on the answer." />
 
 <a href="https://www.linkedin.com/in/patrick-olson-pmp/" target="_blank"><img src="./img/profile.jpg" title="Patrick Olson - LinkedIn Profile" alt="Patrick Olson - LinkedIn Profile" width="48" height="48" style="border-radius: 50%; vertical-align: middle;"></a>**By:** [Patrick Olson](https://www.linkedin.com/in/patrick-olson-pmp/)
 11/09/2026
