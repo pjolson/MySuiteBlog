@@ -15,6 +15,7 @@ import CsvGuideContext from './components/CsvGuideContext.vue'
 import CsvEntryHelp from './components/CsvEntryHelp.vue'
 import CsvGuideFooter from './components/CsvGuideFooter.vue'
 import ContactBand from './components/ContactBand.vue'
+import RelatedPosts from './components/RelatedPosts.vue'
 import Layout from './Layout.vue'
 
 // Bookings complete on meetings-eu1.hubspot.com, so GA4 never sees the outcome,
@@ -63,5 +64,6 @@ export default {
     app.component('CsvEntryHelp', CsvEntryHelp)
     app.component('CsvGuideFooter', CsvGuideFooter)
     app.component('ContactBand', ContactBand)
+    app.component('RelatedPosts', RelatedPosts)
   }
 }

@@ -768,6 +768,9 @@
 /* Shared card surface */
 .ms-service,
 .ms-case,
+.ms-tile,
+.ms-compare,
+.ms-step,
 .service-card,
 .featured-card,
 .blog-card,
@@ -894,6 +897,175 @@ a.ms-more:hover::after {
 .offerings-grid .service-card .cta-secondary {
   align-self: flex-start;
   margin-top: 1.5rem;
+}
+
+/* Service detail pages (one static page per service).
+   Intro copy above a grid, and a closing note below it. */
+.ms-intro {
+  margin-bottom: 2.25rem;
+}
+
+.ms-outro {
+  margin-top: 2.25rem;
+}
+
+/* Small text tile: a heading and a line or two. */
+.ms-tile {
+  padding: 1.5rem;
+}
+
+.ms-tile h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.08rem;
+}
+
+.ms-tile p {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.58;
+}
+
+/* Options set side by side. --pick marks the one the page is about. */
+.ms-compare {
+  padding: 1.75rem;
+}
+
+.ms-tile--pick,
+.ms-compare--pick {
+  border-color: var(--ms-accent-line);
+  border-top: 3px solid var(--ms-fill);
+  box-shadow: var(--ms-shadow);
+}
+
+.ms-compare h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.016em;
+}
+
+.ms-compare dl {
+  margin: 0;
+}
+
+.ms-compare dt {
+  margin-top: 1.2rem;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ms-muted);
+}
+
+.ms-compare--pick dt {
+  color: var(--vp-c-brand-1);
+}
+
+.ms-compare dd {
+  margin: 0.3rem 0 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--ms-body);
+}
+
+/* Numbered steps, such as the phases of a project. Each can end in a link. */
+.ms-steps {
+  display: grid;
+  gap: 1.25rem;
+  counter-reset: step;
+}
+
+@media (min-width: 640px) {
+  .ms-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .ms-steps {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ms-step {
+  display: flex;
+  flex-direction: column;
+  counter-increment: step;
+  padding: 1.5rem;
+}
+
+.ms-step h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
+.ms-step h3::before {
+  content: "0" counter(step);
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  color: var(--vp-c-brand-1);
+}
+
+.ms-step p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.ms-step .ms-more,
+.ms-panel .ms-more {
+  margin-top: 1.2rem;
+}
+
+/* In a narrow step card the link can wrap, so let the arrow follow the last
+   word instead of sitting out at the right edge. */
+.ms-step .ms-more {
+  display: inline;
+}
+
+.ms-step .ms-more::after {
+  display: inline-block;
+  margin-left: 0.4rem;
+}
+
+/* Numbered list inside a panel */
+.ms-numlist {
+  margin-top: 0.6rem;
+  counter-reset: item;
+}
+
+.ms-numlist li {
+  position: relative;
+  padding: 0.7rem 0 0.7rem 2.3rem;
+  border-top: 1px solid var(--ms-line);
+  font-size: 0.99rem;
+  line-height: 1.45;
+  color: var(--ms-heading);
+  counter-increment: item;
+}
+
+.ms-numlist li:first-child {
+  border-top: 0;
+}
+
+.ms-numlist li::before {
+  content: "0" counter(item);
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  color: var(--vp-c-brand-1);
+}
+
+/* A story card that follows a two-column block in the same section. */
+.ms-split + .work-card {
+  margin-top: 3rem;
 }
 
 /* "Where I help": the moments a team reaches out. */
@@ -1905,7 +2077,8 @@ a.work-card.work-card {
   padding: 1.6rem;
 }
 
-.blog-card h2 {
+.blog-card h2,
+.blog-card h3 {
   margin: 0.7rem 0 0.6rem;
   font-size: 1.2rem;
   font-weight: 650;
