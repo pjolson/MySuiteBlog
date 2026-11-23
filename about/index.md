@@ -1,72 +1,110 @@
 ---
+layout: page
 pageClass: commercial-page
-aside: false
 title: NetSuite Support, Implementation & Customization
-lastUpdated: false
 faqSchema: true
 description: "Fractional NetSuite administration, implementation support, and customization from one senior certified consultant who scopes the work and does the work."
 ---
 
+<section class="ms-hero ms-hero--page ms-hero--overlap">
+<div class="ms-wrap">
+<div class="ms-hero-copy">
+<p class="ms-eyebrow">Services</p>
+
 # The NetSuite expert on your side of the table.
 
-Your implementation partner knows NetSuite. They do not know your business. I support finance and operations teams through an implementation and long after go-live: a NetSuite Certified ERP Consultant and PMP, the same person in every session. No rotating juniors, no handoffs.
-
-<div style="text-align: center; margin: 1.5rem 0;">
+<p class="ms-hero-lead">Your implementation partner knows NetSuite. They do not know your business. I support finance and operations teams through an implementation and long after go-live: a NetSuite Certified ERP Consultant and PMP, the same person in every session. No rotating juniors, no handoffs.</p>
+<div class="ms-actions">
   <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
 </div>
+</div>
+</div>
+</section>
 
+<section class="ms-section ms-section--overlap">
+<div class="ms-wrap">
 <div class="services-grid offerings-grid">
   <div class="service-card" id="ongoing-support">
-    <h3>Fractional NetSuite Administration</h3>
     <div class="offering-scope">monthly retainer</div>
+    <h3>Fractional NetSuite Administration</h3>
     <p>A senior certified admin as a fraction of your team: support, configuration, reporting, and training, working a prioritized backlog. Sized to your workload and priced by the month, not by the hour.</p>
     <a href="/contact/" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="implementation-support">
-    <h3>Implementation Support</h3>
     <div class="offering-scope">scoped to your project</div>
+    <h3>Implementation Support</h3>
     <p>Your independent expert in the room: SOW and scope review, design validation, change-order control, steering committee, UAT, and knowledge transfer. The partner delivers the system. I make sure your side of the project holds up its end, which is where most slips start.</p>
     <a href="/contact/" class="cta-secondary">Get Started</a>
   </div>
   <div class="service-card" id="customization">
-    <h3>Customization & Integrations</h3>
     <div class="offering-scope">quoted to scope</div>
+    <h3>Customization &amp; Integrations</h3>
     <p>SuiteScript and SuiteQL builds, reporting, data migration, and integrations with the tools your business already runs on, including Celigo, Workato, Box, Concur, and Salesforce. Fixed-fee, scoped to the work, with PMP-certified project management included.</p>
     <a href="/contact/" class="cta-secondary">Get Started</a>
   </div>
 </div>
+</div>
+</section>
+
+<section class="ms-section ms-section--rule">
+<div class="ms-wrap ms-rail">
+<div>
 
 ## How we'll work together {#how-we-work}
+
+</div>
+<div class="ms-rail-body ms-prose">
 
 Every engagement starts with a conversation, not a contract. We talk through your environment, what is working, and what is not. From there I propose a scope: an ongoing retainer sized to your workload, a fixed-fee project, or implementation support for a defined phase.
 
 In the first few weeks I get access to your account, review your configuration, roles, and open issues, and we set priorities together. You get a clear picture of what needs attention and in what order before committing to a long list of work. You work with me directly. I scope the work and I do the work.
 
+</div>
+</div>
+</section>
+
+<section class="ms-section ms-section--tint">
+<div class="ms-wrap ms-principal">
+<figure class="ms-portrait">
+  <img src="../img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite">
+  <figcaption><strong>Patrick Olson</strong><span>NetSuite Certified ERP Consultant, PMP</span></figcaption>
+</figure>
+<div class="ms-prose">
+
 ## Work directly with Patrick Olson {#patrick}
 
-<div class="founder-block">
-  <img src="../img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
-  <div class="founder-text">
-    <p>MySuite is my practice. I am Patrick Olson, a senior consultant with thirteen years in NetSuite: five of them running it from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why I work the way I do, on the client's side of the table.</p>
-    <p>The work I like best is joining a team for a while and leaving it stronger than I found it, with the system delivered and the people trained to run it. I have seen implementations from the customer chair, the partner chair, and the rescue chair. There is not much in NetSuite I am meeting for the first time.</p>
-    <p>I scope every engagement and I remain your consultant throughout. None of the decisions already in your account are mine, which means I can assess them without defending them. I live in Barcelona and work daily with clients across North America.</p>
-  </div>
-</div>
+MySuite is my practice. I am Patrick Olson, a senior consultant with thirteen years in NetSuite: five of them running it from the inside as an administrator and application development manager, then several more delivering implementations inside NetSuite Solution Providers. That is why I work the way I do, on the client's side of the table.
 
-<div class="cert-badges cert-badges-5" id="credentials">
+The work I like best is joining a team for a while and leaving it stronger than I found it, with the system delivered and the people trained to run it. I have seen implementations from the customer chair, the partner chair, and the rescue chair. There is not much in NetSuite I am meeting for the first time.
+
+I scope every engagement and I remain your consultant throughout. None of the decisions already in your account are mine, which means I can assess them without defending them. I live in Barcelona and work daily with clients across North America.
+
+<div class="ms-creds" id="credentials">
+<div class="cert-badges cert-badges-5">
   <img src="../img/erpconsultant.png" alt="Certified ERP Consultant">
   <img src="../img/adminnew.jpg" alt="Certified Administrator">
   <img src="../img/foundnew.jpg" alt="SuiteFoundation">
   <img src="../img/finusernew.jpg" alt="Financial User">
   <img src="../img/analyticsnew.jpg" alt="SuiteAnalytics User">
 </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
 
 ## Recent work
 
 <div class="work-card">
+<div class="work-head">
 <div class="work-kicker">Implementation Support</div>
 
 ### Client-side resource, multi-division horticulture business
+
+</div>
+<div class="work-body">
 
 A horticulture company running retail garden centers, greenhouse growing operations, a landscaping division, and wholesale, with over a thousand employees at seasonal peak, was six months behind on its NetSuite implementation. The partner was delivering. The problem was on the client side. Testing, data migration, and internal project management all depended on people who still had full-time jobs running the business, and the work was not getting done.
 
@@ -74,11 +112,16 @@ I joined as the client-side resource for six months, took over the internal proj
 
 <p class="work-outcome">The company went live on the reset date with no further slip. I rolled off after go-live with the internal team owning the system.</p>
 </div>
+</div>
 
 <div class="work-card">
-<div class="work-kicker">Ongoing Support &amp; Improvement</div>
+<div class="work-head">
+<div class="work-kicker">Fractional NetSuite Administration</div>
 
 ### Backlog cleared, specialty retail franchisor
+
+</div>
+<div class="work-body">
 
 A national specialty retail franchisor with a wholesale arm had a list of roughly 50 NetSuite fixes and improvements that had been growing for months. Reporting by division and segment that finance could not get out of the system. Purchase orders with hundreds of lines that reviewers had to page through in NetSuite because there was no way to export them. Small configuration fixes nobody had time for.
 
@@ -86,11 +129,16 @@ I worked through the entire list in the first month. That included a one-click e
 
 <p class="work-outcome">Once the backlog was gone, the same hours went to the next round of reporting.</p>
 </div>
+</div>
 
 <div class="work-card">
+<div class="work-head">
 <div class="work-kicker">Customization &amp; Integrations</div>
 
 ### Subscription operations at scale, financial services firm
+
+</div>
+<div class="work-body">
 
 A financial services firm newly live on NetSuite was managing thousands of recurring subscriptions with out-of-the-box tools built for a few hundred. Renewals were handled one at a time. Collections were falling behind, and the standard reminder emails made it worse: a customer with 17 past-due invoices got 17 separate emails, each with its own payment link.
 
@@ -98,12 +146,35 @@ I built three custom applications. A bulk-renewal Suitelet that lets the team se
 
 <p class="work-outcome">The reminder process ran unattended every weekday from launch, and the client kept all three applications in production after I rolled off.</p>
 </div>
+</div>
+
+</div>
+</section>
+
+<section class="ms-section ms-section--tint">
+<div class="ms-wrap ms-rail">
+<div>
 
 ## Is this a fit?
 
+</div>
+<div class="ms-rail-body ms-prose">
+
 I work best with finance and operations teams that run NetSuite as a core system and need senior help without adding headcount: companies whose implementation partner has rolled off, teams without a dedicated admin, and businesses that need specific customization or integration work done right. If you need a large delivery bench or coverage around the clock, I am not the right fit, and I will tell you.
 
+</div>
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
+<div class="ms-rail">
+<div>
+
 ## Common Questions
+
+</div>
+<div class="ms-rail-body ms-faq">
 
 ### What does a fractional NetSuite administrator do?
 
@@ -125,21 +196,27 @@ Acting as your independent expert in the room: SOW and scope review, design vali
 
 No. The partner delivers the system and that is their job. I make sure your side of the project holds up its end, which is where most slips start, and I work alongside them rather than in competition with them.
 
+</div>
+</div>
 <div class="health-check-card">
   <h3>One way to start: NetSuite Health Check, $2,500</h3>
   <p>If you would rather begin with a clear assessment than an open-ended conversation, the Health Check is a fixed-scope review of your NetSuite environment, mid-implementation or post-go-live. You get a findings report ranked by risk and effort, a prioritized remediation roadmap, and a readout call, credited toward whatever comes next. It is one way in, not a required first step.</p>
   <a href="/netsuite-health-check" class="cta-secondary">See What's Included</a>
 </div>
-
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="/contact/" class="cta-primary">Discuss your NetSuite needs</a>
 </div>
+</section>
 
+<section class="ms-section ms-section--tint ms-section--tight">
+<div class="ms-wrap">
 <div class="greenlight-service-card">
   <img src="../img/greenlogo.png" alt="Greenlight Software" class="greenlight-logo">
   <div class="greenlight-service-content">
     <h3>Greenlight Software</h3>
     <p>Native NetSuite apps for approvals and accounts payable. Automated routing, budget checks, and bill entry, with every step human-approved and audit-ready. No spreadsheets, email chains, or SuiteScript.</p>
-    <a href="https://greenlightsoftware.io" target="_blank" class="cta-secondary">greenlightsoftware.io →</a>
+    <a href="https://greenlightsoftware.io" target="_blank" class="ms-more">greenlightsoftware.io</a>
   </div>
 </div>
+</div>
+</section>
+
+<ContactBand />

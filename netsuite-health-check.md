@@ -1,41 +1,78 @@
 ---
+layout: page
 pageClass: commercial-page
 title: "NetSuite Health Check | Find Hidden Risk in Your Account"
 description: "A NetSuite Health Check that finds segregation-of-duties conflicts, security gaps, audit exposure and wasted license spend. Fifteen areas, scored, ranked by severity. See a sample report."
 faqSchema: true
-aside: false
 ---
+
+<section class="ms-hero ms-hero--page">
+<div class="ms-wrap">
+<div class="ms-hero-copy">
+<p class="ms-eyebrow">Fixed-scope assessment</p>
 
 # NetSuite Health Check
 
-Find out what is quietly wrong in your NetSuite account before your auditor does. I assess fifteen areas across access controls, system health and data governance, then hand you a scored report with every finding ranked by severity and by the effort it takes to fix.
-
-<div class="hc-hero-actions">
+<p class="ms-hero-lead">Find out what is quietly wrong in your NetSuite account before your auditor does. I assess fifteen areas across access controls, system health and data governance, then hand you a scored report with every finding ranked by severity and by the effort it takes to fix.</p>
+<div class="ms-actions hc-hero-actions">
   <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=hero" class="cta-primary">Book Your Health Check</a>
   <a href="/health-check-sample.pdf" target="_blank" class="cta-secondary">See a Sample Report</a>
 </div>
+</div>
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
 
 ## What you get back
 
+<div class="hc-media">
 <figure class="hc-report-figure">
   <a href="/health-check-sample.pdf" target="_blank"><img src="/img/health-check/hc-report-scorecard.webp" alt="Executive summary page of a NetSuite Health Check report showing a score of 69 with a grade of D across ten assessed areas, severity counts of one critical, three high, four medium and five low findings, and a fifteen-area overview color coded by worst finding" loading="lazy"></a>
   <figcaption>The executive summary from a sample report. Click to open the full sample.</figcaption>
 </figure>
+<div class="ms-prose">
 
 Your account gets a score out of 100 and a letter grade. The scoring method is printed on the page, so you can check the arithmetic rather than take the number on trust. Each area is rated on its worst finding, one Critical finding caps the grade at D, and any area that cannot be judged from a read-only extraction is marked for manual review instead of being quietly counted as clean.
 
+</div>
+</div>
+
+<div class="hc-media hc-media--flip">
 <figure class="hc-report-figure">
   <a href="/health-check-sample.pdf" target="_blank"><img src="/img/health-check/hc-report-roadmap.webp" alt="Three rows from the remediation roadmap table of a NetSuite Health Check report, each giving a severity badge, the area, the specific finding, the effort to fix it and a written recommendation" loading="lazy"></a>
   <figcaption>Three rows from the remediation roadmap. Severity, the finding in your account, effort, and what to do about it.</figcaption>
 </figure>
+<div class="ms-prose">
 
 Every finding carries the area it came from, what was actually found in your account with the counts attached, how much work the fix is, and a specific recommendation. The roadmap is sorted so the critical items and the quick wins sit at the top.
 
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="ms-section ms-section--tint">
+<div class="ms-wrap ms-rail">
+<div>
+
 ## The problem
+
+</div>
+<div class="ms-rail-body ms-prose">
 
 Most NetSuite accounts accumulate risk quietly. Roles drift until somebody can create and approve their own payments. Admin access piles up. Periods never get closed. Old tokens and dormant logins stay open. None of it shows up until an audit, a bad actor or a renewal invoice forces the issue.
 
 A Health Check catches it in days rather than in a six-week consulting engagement.
+
+</div>
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
 
 ## What the Health Check finds
 
@@ -57,6 +94,12 @@ A Health Check catches it in days rather than in a six-week consulting engagemen
     <p>Missing MFA, overprivileged roles, stale integration tokens.</p>
   </div>
 </div>
+
+</div>
+</section>
+
+<section class="ms-section ms-section--tint">
+<div class="ms-wrap">
 
 ## The fifteen areas
 
@@ -93,6 +136,12 @@ A Health Check catches it in days rather than in a six-week consulting engagemen
   </div>
 </div>
 
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
+
 ## How the engagement runs
 
 <div class="hc-steps">
@@ -110,7 +159,7 @@ A Health Check catches it in days rather than in a six-week consulting engagemen
   </div>
 </div>
 
-This is an expert-reviewed assessment, not a script you run yourself.
+<p class="hc-note">This is an expert-reviewed assessment, not a script you run yourself.</p>
 
 <div class="health-check-card">
   <h3>$2,500, flat fee</h3>
@@ -118,18 +167,26 @@ This is an expert-reviewed assessment, not a script you run yourself.
   <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=pricing" class="cta-primary">Book Your Health Check</a>
 </div>
 
+</div>
+</section>
+
+<section class="ms-section ms-section--tint">
+<div class="ms-wrap ms-principal">
+<figure class="ms-portrait">
+  <img src="./img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite">
+  <figcaption><strong>Patrick Olson</strong><span>NetSuite Certified ERP Consultant, PMP</span></figcaption>
+</figure>
+<div class="ms-prose">
+
 ## Who does the work
 
-<div class="founder-block">
-  <img src="./img/headshotnew.jpeg" alt="Patrick Olson, founder of MySuite" class="founder-photo">
-  <div class="founder-text">
-    <p>I am Patrick Olson, and I run every Health Check myself. Thirteen years in NetSuite, five of them administering an account from the inside before several more delivering implementations inside NetSuite Solution Providers. The findings in this report are the ones I spent those years cleaning up.</p>
-    <p>You get the same senior certified person for the extraction, the manual review and the debrief. There is no bench behind me and nothing is handed off.</p>
-  </div>
-</div>
+I am Patrick Olson, and I run every Health Check myself. Thirteen years in NetSuite, five of them administering an account from the inside before several more delivering implementations inside NetSuite Solution Providers. The findings in this report are the ones I spent those years cleaning up.
+
+You get the same senior certified person for the extraction, the manual review and the debrief. There is no bench behind me and nothing is handed off.
 
 NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalytics, ARM, Multi-Book and PMP.
 
+<div class="ms-creds">
 <div class="cert-badges cert-badges-5">
   <img src="./img/erpconsultant.png" alt="Certified ERP Consultant">
   <img src="./img/adminnew.jpg" alt="Certified Administrator">
@@ -137,6 +194,13 @@ NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalyti
   <img src="./img/finusernew.jpg" alt="Financial User">
   <img src="./img/analyticsnew.jpg" alt="SuiteAnalytics User">
 </div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ms-section">
+<div class="ms-wrap">
 
 ## Related reading
 
@@ -155,9 +219,17 @@ NetSuite Certified ERP Consultant and Certified Administrator, plus SuiteAnalyti
   </a>
 </div>
 
+</div>
+</section>
+
+<section class="ms-section ms-section--rule">
+<div class="ms-wrap ms-rail">
+<div>
+
 ## Frequently asked questions
 
-<div class="hc-faq">
+</div>
+<div class="ms-rail-body ms-faq hc-faq">
 
 ### Is it safe? What access do you need?
 
@@ -184,7 +256,7 @@ Yes. The Health Check is the diagnosis. Remediation is scoped separately, and th
 Yes. The assessment runs account wide, so a OneWorld account is covered in the same pass, and the number of subsidiaries does not change the fee.
 
 </div>
-
-<div style="text-align: center; margin: 2.5rem 0;">
-  <a href="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=footer" class="cta-primary">Book Your Health Check</a>
 </div>
+</section>
+
+<ContactBand heading="NetSuite Health Check: $2,500, flat fee" text="Includes the assessment, the report, the manual review and the debrief. Credited toward whatever comes next." link="https://meetings-eu1.hubspot.com/patrick-olson?utm_source=mysuite&utm_medium=health-check&utm_content=footer" label="Book Your Health Check" />

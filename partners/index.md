@@ -1,14 +1,23 @@
 ---
+layout: page
 pageClass: commercial-page
 title: "NetSuite Tools & Partners"
 description: "Tools and services I trust and work with across the NetSuite ecosystem."
-aside: false
 ---
+
+<section class="ms-hero ms-hero--page">
+<div class="ms-wrap">
+<div class="ms-hero-copy">
 
 # Partners
 
-Tools and services I trust and work with across the NetSuite ecosystem.
+<p class="ms-hero-lead">Tools and services I trust and work with across the NetSuite ecosystem.</p>
+</div>
+</div>
+</section>
 
+<section class="ms-section">
+<div class="ms-wrap">
 <div class="partners-grid">
   <div class="partner-card">
     <img src="../img/greenlogo.png" alt="Greenlight Software" class="partner-logo">
@@ -23,7 +32,6 @@ Tools and services I trust and work with across the NetSuite ecosystem.
     <a href="https://suitepreferences.com" target="_blank" class="cta-secondary">suitepreferences.com</a>
   </div>
 </div>
-
-<div style="text-align: center; margin: 2.5rem 0 1rem;">
-  <p style="color: var(--vp-c-text-2);">Interested in partnering? <a href="/contact/">Get in touch</a>.</p>
+<p class="ms-aside-note ms-prose">Interested in partnering? <a href="/contact/">Get in touch</a>.</p>
 </div>
+</section>

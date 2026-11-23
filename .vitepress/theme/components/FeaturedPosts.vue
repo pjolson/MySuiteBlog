@@ -1,10 +1,8 @@
 <template>
   <div class="featured-grid">
     <a v-for="post in posts" :key="post.url" :href="post.url" class="featured-card">
+      <span class="ms-kicker">{{ post.tags.join(' / ') }}</span>
       <h3>{{ post.title }}</h3>
-      <div class="featured-tags">
-        <span v-for="tag in post.tags" :key="tag" class="tag-badge">{{ tag }}</span>
-      </div>
     </a>
   </div>
 </template>

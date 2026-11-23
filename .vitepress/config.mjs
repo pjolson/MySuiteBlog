@@ -325,16 +325,9 @@ export default defineConfig({
     logo: { src: '/logo.svg', alt: 'MySuite' },
     siteTitle: false,
 
+    // Services leads, as on any consulting site. Home is the logo, and Contact
+    // is the button rendered by theme/Layout.vue, so neither is a text link.
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Blog', link: '/blog/' },
-      {
-        text: 'Tools', activeMatch: '^/tools/',
-        items: [
-          { text: 'All Tools', link: '/tools/' },
-          { text: 'CSV Error Translator', link: '/tools/netsuite-csv-error-translator/' }
-        ]
-      },
       {
         text: 'Services', activeMatch: '^/(about|netsuite-health-check)',
         items: [
@@ -345,8 +338,15 @@ export default defineConfig({
           { text: 'NetSuite Health Check', link: '/netsuite-health-check' }
         ]
       },
+      { text: 'Blog', link: '/blog/', activeMatch: '^/(blog|tags)/' },
+      {
+        text: 'Tools', activeMatch: '^/tools/',
+        items: [
+          { text: 'All Tools', link: '/tools/' },
+          { text: 'CSV Error Translator', link: '/tools/netsuite-csv-error-translator/' }
+        ]
+      },
       { text: 'Partners', link: '/partners/' },
-      { text: 'Contact', link: '/contact/' },
       { text: 'Greenlight', link: 'https://greenlightsoftware.io', target: '_blank' }
     ],
 
@@ -356,10 +356,8 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/patrick-olson-pmp/' }
     ],
 
-    footer: {
-      message: 'NetSuite Implementation Advisory &amp; Administration',
-      copyright: '&copy; 2018-present MySuite'
-    },
+    // No `footer` key: the footer is theme/components/SiteFooter.vue, mounted
+    // through the layout-bottom slot in theme/Layout.vue.
 
     search: {
       provider: 'local',

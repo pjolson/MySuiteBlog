@@ -1,3 +1,24 @@
+/* ==========================================================================
+   MySuite theme
+   --------------------------------------------------------------------------
+   1. Tokens
+   2. Site chrome: header, mobile menu, footer
+   3. Commercial layout system: sections, hero, bands (home + layout: page)
+   4. Commercial components: cards, panels, portrait, FAQ
+   5. Buttons and calls to action
+   6. Page-specific: Health Check, contact, partners, tools
+   7. Blog index and article furniture
+   8. Print
+
+   The commercial pages (home, services, health check, contact, partners,
+   tools, blog index) use `layout: home` or `layout: page`, which VitePress
+   renders without its `.vp-doc` documentation styles. Everything they need is
+   defined here under the `ms-` prefix. Blog posts and the CSV translator stay
+   on the doc layout and keep VitePress's article typography.
+   ========================================================================== */
+
+/* 1. Tokens ---------------------------------------------------------------- */
+
 :root {
   --vp-c-brand-1: #0E6B47;
   --vp-c-brand-2: #0a5538;
@@ -16,7 +37,31 @@
     Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
 
-  --vp-home-hero-name-color: #111827;
+  /* The nav bar container is this value minus 64px, so 1216px lines the logo
+     and the contact button up with the 1152px content column below them. */
+  --vp-layout-max-width: 1216px;
+
+  /* Commercial-page palette. Ink and emerald come from the logo. */
+  --ms-heading: #111827;
+  --ms-body: #374151;
+  --ms-muted: #5f6b7a;
+  --ms-line: #e2e7e4;
+  --ms-surface: #ffffff;
+  --ms-tint: #f3f6f4;
+  --ms-accent-wash: rgba(14, 107, 71, 0.045);
+  --ms-accent-line: rgba(14, 107, 71, 0.28);
+
+  /* Deep bands (hero, closing call to action) and the footer. These hold the
+     same value in both colour schemes: they are dark by design. */
+  --ms-deep: #0b2b20;
+  --ms-mint: #2dd4a4;
+  --ms-on-deep: #ffffff;
+  --ms-on-deep-muted: rgba(255, 255, 255, 0.76);
+  --ms-on-deep-line: rgba(255, 255, 255, 0.16);
+  --ms-footer: #0b1511;
+
+  --ms-radius: 8px;
+  --ms-shadow: 0 1px 2px rgba(17, 24, 39, 0.05), 0 14px 32px -18px rgba(17, 24, 39, 0.22);
 }
 
 .dark {
@@ -29,11 +74,23 @@
   --ms-fill: #0E6B47;
   --ms-fill-hover: #14875a;
   --ms-fill-text: #ffffff;
-  --vp-home-hero-name-color: #f9fafb;
+
+  --ms-heading: #f3f4f6;
+  --ms-body: #c7cbd1;
+  --ms-muted: #98989f;
+  --ms-line: #2e2e32;
+  --ms-surface: #202127;
+  --ms-tint: #161618;
+  --ms-accent-wash: rgba(45, 212, 164, 0.06);
+  --ms-accent-line: rgba(45, 212, 164, 0.28);
+
+  --ms-deep: #0a241b;
+  --ms-footer: #0a100d;
+  --ms-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 14px 32px -18px rgba(0, 0, 0, 0.7);
 }
 
-/* VitePress VPButton (homepage hero) follows the same fill as .cta-primary,
-   so the hero and every other CTA match in both colour schemes. */
+/* VitePress VPButton follows the same fill as .cta-primary, so any stock
+   button matches the site's own in both colour schemes. */
 :root,
 .dark {
   --vp-button-brand-bg: var(--ms-fill);
@@ -47,74 +104,7 @@
   --vp-button-brand-active-border: transparent;
 }
 
-/* Homepage content wrapper */
-.home-content {
-  max-width: 1152px;
-  margin: 0 auto;
-  padding: 0 1.5rem 2rem;
-}
-
-.home-content h2 {
-  margin-top: 2.5rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  border-top: none;
-}
-
-.home-field-notes {
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-.home-services-line {
-  text-align: center;
-  color: var(--vp-c-text-2);
-  font-size: 0.95rem;
-  margin: 1.5rem 0;
-}
-
-.home-services-line a {
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-}
-
-/* Homepage about block */
-.about-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.about-photo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-.about-text p {
-  margin: 0;
-  color: var(--vp-c-text-2);
-  line-height: 1.7;
-  font-size: 0.95rem;
-}
-
-@media (max-width: 480px) {
-  .about-block {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* Code block wrapping */
-.vp-doc pre code {
-  white-space: pre-wrap;
-  word-break: break-all;
-}
+/* 2. Site chrome ----------------------------------------------------------- */
 
 /* Nav logo sizing */
 .VPNavBarTitle .logo {
@@ -122,394 +112,941 @@
   width: auto;
 }
 
-/* Blog post list */
-.blog-post-item {
-  padding: 1.5rem 0;
-  border-bottom: 1px solid var(--vp-c-divider);
+/* A solid header on every page. VitePress leaves the bar transparent and
+   undivided on the home page until the visitor scrolls. */
+.VPNav .VPNavBar.home {
+  background-color: var(--vp-nav-bg-color);
 }
 
-.blog-post-item:last-child {
-  border-bottom: none;
+.VPNav .VPNavBar.home .divider-line {
+  background-color: var(--vp-c-gutter);
 }
 
-.blog-post-item h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.4rem;
-  border-top: none;
+.VPNav .VPNavBar .VPNavBarMenuLink,
+.VPNav .VPNavBarMenu .VPFlyout .text {
+  font-size: 15px;
 }
 
-.blog-post-item h2 a {
-  color: var(--vp-c-brand-1);
-  text-decoration: none;
+/* Order inside the bar: menu, search, LinkedIn, contact button, hamburger.
+   Everything sits right-aligned, so the search no longer stretches. */
+.VPNavBar .VPNavBarMenu { order: 1; }
+.VPNavBar .VPNavBarSearch { order: 2; }
+.VPNavBar .VPNavBarSocialLinks { order: 3; }
+.VPNavBar .ms-nav-cta { order: 4; }
+.VPNavBar .VPNavBarHamburger { order: 5; }
+
+/* The theme switch is documentation-site furniture. The site still follows
+   the visitor's system colour scheme; it just does not advertise a toggle.
+   The "..." overflow menu only ever held that switch and the LinkedIn icon. */
+.VPNavBar .VPNavBarAppearance,
+.VPNavBar .VPNavBarExtra,
+.VPNavScreen .VPNavScreenAppearance {
+  display: none !important;
 }
 
-.blog-post-item h2 a:hover {
-  text-decoration: underline;
+.VPNavBar .content-body .VPNavBarSocialLinks::before {
+  display: none;
 }
 
-.blog-post-item .date {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  margin-bottom: 0.5rem;
+/* Search stays (the CSV translator relies on it) but as a plain icon rather
+   than the "Search / Cmd K" field of a docs site. */
+@media (min-width: 768px) {
+  .VPNavBar .VPNavBarSearch {
+    flex-grow: 0;
+    padding-left: 0;
+    margin-left: 4px;
+  }
+
+  .VPNavBarSearch .DocSearch-Button.DocSearch-Button {
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 6px;
+    background-color: transparent;
+  }
+
+  .VPNavBarSearch .DocSearch-Button.DocSearch-Button:hover {
+    border-color: transparent;
+    background-color: var(--vp-c-bg-soft);
+  }
+
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Search-Icon.DocSearch-Search-Icon {
+    top: 0;
+    margin-right: 0;
+    width: 16px;
+    height: 16px;
+    color: var(--vp-c-text-1);
+  }
+
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder.DocSearch-Button-Placeholder,
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Keys.DocSearch-Button-Keys {
+    display: none;
+  }
 }
 
-.blog-post-item .description {
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-}
-
-.blog-post-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-  margin-top: 0.5rem;
-}
-
-.read-more {
-  display: inline-block;
-  margin-top: 0.5rem;
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-}
-
-/* Tag badges */
-.tag-badge {
-  display: inline-block;
-  padding: 0.2rem 0.6rem;
-  margin: 0.15rem;
-  border-radius: 1rem;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  font-size: 0.85rem;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-
-.tag-badge:hover {
+.ms-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  height: 34px;
+  margin-left: 4px;
+  padding: 0 12px;
+  border-radius: 6px;
   background: var(--ms-fill);
   color: var(--ms-fill-text);
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
 }
 
-/* Tag section on tags page */
-.tag-section h2 {
-  margin-top: 2rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid var(--vp-c-divider);
+.ms-nav-cta:hover {
+  background: var(--ms-fill-hover);
 }
 
-.tag-section ul {
-  list-style: none;
-  padding-left: 0;
+@media (min-width: 768px) {
+  .ms-nav-cta {
+    height: 38px;
+    margin-left: 14px;
+    padding: 0 18px;
+    font-size: 14px;
+  }
 }
 
-.tag-section li {
-  padding: 0.3rem 0;
-}
-
-.tag-section li a {
-  color: var(--vp-c-brand-1);
-}
-
-/* Author bio card */
-.author-bio {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--vp-c-divider);
-}
-
-.author-bio img {
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-}
-
-/* Greenlight promo card */
-.greenlight-card {
-  margin: 2rem 0;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(14, 107, 71, 0.05), rgba(45, 212, 164, 0.05));
-}
-
-.greenlight-card h3 {
-  margin: 0 0 0.5rem;
-  color: var(--vp-c-text-1);
-}
-
-.greenlight-card p {
-  margin: 0 0 0.75rem;
-  color: var(--vp-c-text-2);
-}
-
-.greenlight-card a {
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-}
-
-/* How I Work steps */
-.how-i-work {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.25rem;
-  margin: 1.5rem 0;
-}
-
-.step-card {
-  padding: 1.5rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
+.ms-nav-screen-cta {
+  display: block;
+  margin-top: 24px;
+  padding: 13px 16px;
+  border-radius: 6px;
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
+  font-size: 15px;
+  font-weight: 600;
   text-align: center;
 }
 
-.step-number {
+/* Footer */
+.ms-footer {
+  position: relative;
+  z-index: var(--vp-z-index-footer);
+  padding: 4rem 0 2rem;
+  background: var(--ms-footer);
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+.ms-footer-top {
+  display: grid;
+  gap: 2.75rem;
+}
+
+@media (min-width: 900px) {
+  .ms-footer-top {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 2.75fr);
+    gap: 4rem;
+  }
+}
+
+.ms-footer-logo {
+  display: inline-block;
+}
+
+.ms-footer-logo svg {
+  display: block;
+  width: auto;
+  height: 34px;
+}
+
+.ms-footer-brand p {
+  max-width: 21rem;
+  margin-top: 1rem;
+}
+
+.ms-footer-brand p + p {
+  margin-top: 0.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ms-footer-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.25rem 2rem;
+}
+
+@media (min-width: 640px) {
+  .ms-footer-cols {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.ms-footer h2 {
+  margin-bottom: 0.95rem;
+  font-size: 0.74rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.ms-footer li + li {
+  margin-top: 0.55rem;
+}
+
+.ms-footer a {
+  color: rgba(255, 255, 255, 0.84);
+  overflow-wrap: anywhere;
+  transition: color 0.2s;
+}
+
+.ms-footer a:hover {
+  color: var(--ms-mint);
+}
+
+.ms-footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.825rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* 3. Commercial layout system ---------------------------------------------- */
+
+/* The home layout reserves space under its content for a docs footer. */
+.VPContent .VPHome.VPHome {
+  margin-bottom: 0;
+}
+
+.ms-wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .ms-wrap {
+    max-width: 1216px;
+    padding: 0 32px;
+  }
+}
+
+.ms-section {
+  padding: 3.75rem 0;
+  background: var(--vp-c-bg);
+  color: var(--ms-body);
+}
+
+@media (min-width: 768px) {
+  .ms-section {
+    padding: 5.5rem 0;
+  }
+}
+
+.ms-section--tint {
+  background: var(--ms-tint);
+}
+
+.ms-section--rule {
+  border-top: 1px solid var(--ms-line);
+}
+
+.ms-section--tight {
+  padding: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .ms-section--tight {
+    padding: 3.25rem 0;
+  }
+}
+
+/* Pulls the first row of cards up over the bottom edge of the hero. */
+.ms-section--overlap {
+  padding-top: 0;
+}
+
+.ms-section--overlap > .ms-wrap {
+  position: relative;
+  z-index: 1;
+  margin-top: -4.5rem;
+}
+
+/* Type. VitePress resets headings, paragraphs and lists outside .vp-doc. */
+.ms-section h2,
+.ms-band h2 {
+  font-size: clamp(1.6rem, 1.15rem + 1.7vw, 2.125rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.022em;
+  color: var(--ms-heading);
+  text-wrap: balance;
+}
+
+.ms-section h3 {
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--ms-heading);
+}
+
+.ms-section p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+/* A section title sitting directly above a grid or a run of cards. */
+.ms-section .ms-wrap > h2 {
+  margin-bottom: 2rem;
+}
+
+.ms-section-head h2 {
+  margin-bottom: 0;
+}
+
+/* Permalink markers that VitePress adds to markdown headings: wanted inside
+   articles, noise on a commercial page. The ids themselves are untouched. */
+.ms-section .header-anchor,
+.ms-hero .header-anchor {
+  display: none;
+}
+
+/* Running copy written in markdown inside a section. */
+.ms-prose > h2 {
+  margin-bottom: 1.25rem;
+}
+
+.ms-prose > p + p,
+.ms-prose > ul + p,
+.ms-prose > p + ul {
+  margin-top: 1.1rem;
+}
+
+.ms-prose > p {
+  max-width: 44rem;
+}
+
+.ms-prose a:not([class]),
+.ms-faq a:not([class]) {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+
+.ms-prose a:not([class]):hover,
+.ms-faq a:not([class]):hover {
+  text-decoration-thickness: 2px;
+}
+
+.ms-lead {
+  font-size: 1.2rem !important;
+  line-height: 1.55 !important;
+  font-weight: 500;
+  color: var(--ms-heading);
+}
+
+.ms-eyebrow,
+.ms-kicker {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.ms-eyebrow {
+  margin-bottom: 1rem;
+  font-size: 0.78rem;
+}
+
+/* Heading and a link on one line above a grid. */
+.ms-section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Two-column layouts */
+.ms-split,
+.ms-rail {
+  display: grid;
+  gap: 2.25rem;
+}
+
+@media (min-width: 960px) {
+  .ms-split {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    gap: 4.5rem;
+    align-items: start;
+  }
+
+  .ms-split--lead {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+
+  /* Section title in a left rail, content to its right. */
+  .ms-rail {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: 4.5rem;
+    align-items: start;
+  }
+}
+
+.ms-rail-body {
+  max-width: 46rem;
+}
+
+/* Hero and deep bands */
+.ms-hero,
+.ms-band {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--ms-deep);
+  color: var(--ms-on-deep);
+}
+
+.ms-hero::before,
+.ms-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(56rem 28rem at 88% -12%, rgba(45, 212, 164, 0.17), transparent 62%),
+    radial-gradient(44rem 26rem at -6% 112%, rgba(14, 107, 71, 0.6), transparent 66%);
+}
+
+/* A faint ledger grid, fading in from the left. */
+.ms-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: linear-gradient(100deg, transparent 38%, #000 100%);
+  mask-image: linear-gradient(100deg, transparent 38%, #000 100%);
+}
+
+.ms-hero {
+  padding: 3.5rem 0 4rem;
+}
+
+@media (min-width: 768px) {
+  .ms-hero {
+    padding: 5.5rem 0 6rem;
+  }
+}
+
+.ms-hero--overlap {
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .ms-hero--overlap {
+    padding-bottom: 10rem;
+  }
+}
+
+.ms-hero--page {
+  padding: 3rem 0 3.25rem;
+}
+
+@media (min-width: 768px) {
+  .ms-hero--page {
+    padding: 4.25rem 0 4.5rem;
+  }
+
+  .ms-hero--page.ms-hero--overlap {
+    padding-bottom: 8.5rem;
+  }
+}
+
+.ms-hero--page.ms-hero--overlap {
+  padding-bottom: 7.5rem;
+}
+
+.ms-hero-grid {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .ms-hero-grid {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    gap: 5rem;
+  }
+}
+
+.ms-hero h1 {
+  font-size: clamp(2.25rem, 1.25rem + 3.7vw, 3.75rem);
+  font-weight: 700;
+  line-height: 1.06;
+  letter-spacing: -0.032em;
+  color: #ffffff;
+  text-wrap: balance;
+}
+
+.ms-hero--page h1 {
+  max-width: 48rem;
+  font-size: clamp(2rem, 1.35rem + 2.5vw, 3rem);
+  line-height: 1.1;
+}
+
+.ms-hero .ms-eyebrow {
+  color: var(--ms-mint);
+}
+
+.ms-hero-lead {
+  max-width: 40rem;
+  margin-top: 1.5rem;
+  font-size: clamp(1.06rem, 1rem + 0.4vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--ms-on-deep-muted);
+}
+
+.ms-hero-note {
+  margin-top: 1rem;
+  font-size: 0.925rem;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.ms-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* Hero facts, framed by the brackets from the logo. */
+.ms-proof {
+  position: relative;
+  padding: 0.75rem 2.5rem;
+}
+
+.ms-proof::before,
+.ms-proof::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 18px;
+  border: 4px solid var(--ms-mint);
+  border-radius: 4px;
+}
+
+.ms-proof::before {
+  left: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ms-proof::after {
+  right: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.ms-proof dl {
+  margin: 0;
+}
+
+.ms-proof dl > div {
+  padding: 1.15rem 0;
+}
+
+.ms-proof dl > div + div {
+  border-top: 1px solid var(--ms-on-deep-line);
+}
+
+.ms-proof dt {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.018em;
+  color: #ffffff;
+}
+
+.ms-proof dd {
+  margin: 0.35rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ms-on-deep-muted);
+}
+
+/* Closing call-to-action band */
+.ms-cta-band {
+  padding: 3.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .ms-cta-band {
+    padding: 4.5rem 0;
+  }
+}
+
+.ms-cta-band-inner {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+@media (min-width: 860px) {
+  .ms-cta-band-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3.5rem;
+  }
+}
+
+.ms-cta-band h2 {
+  color: #ffffff;
+}
+
+.ms-cta-band p {
+  max-width: 40rem;
+  margin-top: 0.8rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ms-on-deep-muted);
+}
+
+.ms-cta-band .cta-primary {
+  justify-self: start;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ms-hero-copy > *,
+  .ms-proof {
+    animation: ms-rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .ms-hero-copy > :nth-child(2) { animation-delay: 0.06s; }
+  .ms-hero-copy > :nth-child(3) { animation-delay: 0.12s; }
+  .ms-hero-copy > :nth-child(4) { animation-delay: 0.18s; }
+  .ms-proof { animation-delay: 0.2s; }
+}
+
+@keyframes ms-rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* 4. Commercial components ------------------------------------------------- */
+
+.ms-card-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .ms-card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Shared card surface */
+.ms-service,
+.ms-case,
+.service-card,
+.featured-card,
+.blog-card,
+.partner-card,
+.ms-tool,
+.hc-finding,
+.hc-step,
+.hc-read-card {
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+a.ms-service,
+a.ms-case,
+a.featured-card,
+a.blog-card,
+a.ms-tool,
+a.hc-read-card {
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+a.ms-service:hover,
+a.ms-case:hover,
+a.featured-card:hover,
+a.blog-card:hover,
+a.ms-tool:hover,
+a.hc-read-card:hover {
+  border-color: var(--vp-c-brand-1);
+  box-shadow: var(--ms-shadow);
+  transform: translateY(-2px);
+}
+
+.ms-section a:focus-visible,
+.ms-footer a:focus-visible,
+.ms-nav-cta:focus-visible,
+.blog-filter button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 3px;
+}
+
+.ms-hero a:focus-visible,
+.ms-band a:focus-visible,
+.ms-footer a:focus-visible {
+  outline: 2px solid var(--ms-mint);
+  outline-offset: 3px;
+}
+
+/* Service cards: the home page entrances and the services page offerings. */
+.ms-service,
+.service-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  border-top: 3px solid var(--ms-fill);
+  box-shadow: var(--ms-shadow);
+}
+
+.ms-service h2,
+.service-card h3 {
+  margin: 0.65rem 0 0.7rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.016em;
+  color: var(--ms-heading);
+  text-wrap: balance;
+}
+
+.ms-service p,
+.service-card p {
+  flex-grow: 1;
+  margin: 0;
+  font-size: 0.975rem;
+  line-height: 1.62;
+  color: var(--ms-body);
+}
+
+.ms-more {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: var(--ms-fill);
-  color: var(--ms-fill-text);
-  font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 0.75rem;
+  gap: 0.4rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
 }
 
-.step-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.05rem;
-  color: var(--vp-c-text-1);
+.ms-more::after {
+  content: "\2192";
+  transition: transform 0.2s;
 }
 
-.step-card p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
+a:hover > .ms-more::after,
+a.ms-more:hover::after {
+  transform: translateX(3px);
 }
 
-/* Services grid */
+.ms-service .ms-more {
+  margin-top: 1.4rem;
+}
+
+/* Services grid (services page) */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .services-grid {
     grid-template-columns: 1fr;
   }
 }
 
-.service-card {
-  padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.service-card:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.08);
-}
-
-.service-card h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1.05rem;
-  color: var(--vp-c-text-1);
-}
-
-.service-card p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
-}
-
-/* Integration chips */
-.integrations-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.cert-list-vertical {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 0.5rem;
-  margin: 1rem 0;
-  justify-content: start;
-}
-
-.cert-list-vertical .integration-chip {
-  width: fit-content;
-}
-
-.integration-chip {
-  display: inline-block;
-  padding: 0.35rem 0.85rem;
-  border-radius: 2rem;
-  background: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-divider);
-  font-size: 0.9rem;
-  color: var(--vp-c-text-1);
-}
-
-/* Pricing grid */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin: 1.5rem 0;
-}
-
-@media (max-width: 960px) {
-  .pricing-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .pricing-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.pricing-card {
-  padding: 2rem 1.5rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 10px;
-  text-align: center;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.pricing-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.pricing-card.featured {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.12);
-  position: relative;
-}
-
-.pricing-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.3rem;
-  color: var(--vp-c-text-1);
-}
-
-.pricing-card.featured h3 {
+.offering-scope {
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
   color: var(--vp-c-brand-1);
-}
-
-.pricing-desc {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-.pricing-hours {
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  margin-bottom: 1rem;
-}
-
-.pricing-amount {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--vp-c-text-1);
-  margin-bottom: 1.25rem;
-  margin-top: auto;
-}
-
-.pricing-card.featured .pricing-amount {
-  color: var(--vp-c-brand-1);
-}
-
-.pricing-cta {
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border-radius: 6px;
-  background: var(--vp-c-bg-soft);
-  color: var(--vp-c-brand-1);
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid var(--vp-c-divider);
-  transition: background 0.2s, color 0.2s;
-}
-
-.pricing-cta:hover {
-  background: var(--ms-fill);
-  color: var(--ms-fill-text);
-}
-
-.pricing-card.featured .pricing-cta {
-  background: var(--ms-fill);
-  color: var(--ms-fill-text);
-  border-color: var(--ms-fill);
-}
-
-.pricing-card.featured .pricing-cta:hover {
-  background: var(--ms-fill-hover);
-}
-
-/* Health check featured card */
-.health-check-card {
-  margin: 2rem 0;
-  padding: 2rem;
-  border: 2px solid var(--vp-c-brand-1);
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
-  text-align: center;
-}
-
-.health-check-card h3 {
-  margin: 0 0 0.75rem;
-  font-size: 1.3rem;
-  color: var(--vp-c-brand-1);
-}
-
-.health-check-card p {
-  margin: 0 0 1.25rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-  max-width: 640px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.25rem;
-}
-
-/* Offerings grid */
-.offerings-grid .service-card {
-  display: flex;
-  flex-direction: column;
 }
 
 .offerings-grid .service-card .cta-secondary {
-  margin-top: auto;
   align-self: flex-start;
+  margin-top: 1.5rem;
 }
 
-.offering-scope {
-  font-size: 0.85rem;
+/* "Where I help": the moments a team reaches out. */
+.ms-moments {
+  display: grid;
+  gap: 1rem;
+  counter-reset: moment;
+}
+
+@media (min-width: 640px) {
+  .ms-moments {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.ms-moments li {
+  counter-increment: moment;
+  padding: 1.25rem 1.4rem 1.4rem;
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+  font-size: 1.03rem;
+  font-weight: 550;
+  line-height: 1.45;
+  color: var(--ms-heading);
+}
+
+.ms-moments li::before {
+  content: "0" counter(moment);
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
   color: var(--vp-c-brand-1);
-  font-weight: 500;
-  margin-bottom: 0.5rem;
 }
 
-/* Certification badge sizing */
+/* Side panel with a short checklist */
+.ms-panel {
+  padding: 1.75rem;
+  background: var(--ms-tint);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+.ms-section--tint .ms-panel {
+  background: var(--ms-surface);
+}
+
+.ms-panel h3 {
+  margin-bottom: 0.4rem;
+}
+
+.ms-panel p {
+  font-size: 0.975rem;
+  line-height: 1.6;
+}
+
+.ms-checks li {
+  position: relative;
+  margin-top: 0.8rem;
+  padding-left: 1.85rem;
+  font-size: 0.99rem;
+  line-height: 1.5;
+  color: var(--ms-heading);
+}
+
+.ms-checks li::before {
+  content: "";
+  position: absolute;
+  top: 0.32em;
+  left: 0.1rem;
+  width: 0.95rem;
+  height: 0.5rem;
+  border-bottom: 2px solid var(--vp-c-brand-1);
+  border-left: 2px solid var(--vp-c-brand-1);
+  transform: rotate(-45deg);
+}
+
+.ms-checks + p {
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--ms-line);
+}
+
+/* Principal: portrait card beside the bio */
+.ms-principal {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 860px) {
+  .ms-principal {
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 4.5rem;
+    align-items: start;
+  }
+}
+
+.ms-portrait {
+  max-width: 280px;
+  margin: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+  box-shadow: var(--ms-shadow);
+}
+
+.ms-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.ms-portrait figcaption {
+  padding: 0.95rem 1.2rem 1.1rem;
+  background: var(--ms-surface);
+  border-top: 1px solid var(--ms-line);
+}
+
+.ms-portrait strong {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ms-heading);
+}
+
+.ms-portrait span {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--ms-muted);
+  text-wrap: balance;
+}
+
+/* Certification badges. The artwork is black on white, so the strip keeps a
+   white ground in both colour schemes. */
+.ms-creds {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+.ms-creds .cert-badges {
+  margin: 0 auto;
+}
+
 .cert-badges {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -560,263 +1097,237 @@
   border-radius: 6px;
 }
 
-/* Greenlight service card */
+/* Recent work: teaser tiles on the home page */
+.ms-case {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+
+.ms-case-claim {
+  flex-grow: 1;
+  margin-top: 0.9rem;
+  font-size: 1.3rem !important;
+  font-weight: 650;
+  line-height: 1.3 !important;
+  letter-spacing: -0.018em;
+  color: var(--ms-heading);
+  text-wrap: balance;
+}
+
+.ms-case-client {
+  display: block;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ms-line);
+  font-size: 0.875rem;
+  color: var(--ms-muted);
+}
+
+/* Recent work: full stories on the services page. A kicker ties each story
+   to its service, and the outcome is set off below the narrative. */
+.work-card {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding: 1.75rem;
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+@media (min-width: 900px) {
+  .work-card {
+    grid-template-columns: minmax(0, 4fr) minmax(0, 8fr);
+    gap: 3.5rem;
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.work-kicker {
+  font-size: 0.72rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.work-card h3 {
+  margin-top: 0.6rem;
+  font-size: 1.3rem;
+  line-height: 1.28;
+  letter-spacing: -0.018em;
+  text-wrap: balance;
+}
+
+.work-body p {
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.work-body p + p {
+  margin-top: 1rem;
+}
+
+.work-card .work-outcome {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--ms-line);
+  font-weight: 600;
+  color: var(--ms-heading);
+}
+
+/* Questions and answers */
+.ms-faq h3 {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--ms-line);
+  font-size: 1.1rem;
+}
+
+.ms-faq h3:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.ms-faq p {
+  margin-top: 0.55rem;
+  font-size: 1.02rem;
+  line-height: 1.68;
+}
+
+/* "One way to start" card: the Health Check offer, and its price on the
+   Health Check page itself. */
+.health-check-card {
+  display: grid;
+  gap: 0.9rem 2.5rem;
+  align-items: center;
+  margin-top: 2.5rem;
+  padding: 1.75rem;
+  background: var(--ms-accent-wash);
+  border: 1px solid var(--ms-accent-line);
+  border-left: 4px solid var(--ms-fill);
+  border-radius: var(--ms-radius);
+}
+
+.health-check-card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--ms-heading);
+}
+
+.health-check-card p {
+  max-width: 46rem;
+  margin: 0;
+  font-size: 0.975rem;
+  line-height: 1.62;
+  color: var(--ms-body);
+}
+
+.health-check-card > a {
+  justify-self: start;
+  margin-top: 0.35rem;
+}
+
+@media (min-width: 860px) {
+  .health-check-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    padding: 2rem 2.25rem;
+  }
+
+  .health-check-card h3,
+  .health-check-card p {
+    grid-column: 1;
+  }
+
+  .health-check-card > a {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    margin-top: 0;
+  }
+}
+
+/* Greenlight cross-reference */
 .greenlight-service-card {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 10px;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.greenlight-service-card:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.08);
+  padding: 1.5rem 1.75rem;
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
 }
 
 .greenlight-logo {
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   flex-shrink: 0;
   border-radius: 8px;
 }
 
+.greenlight-service-content {
+  flex-grow: 1;
+}
+
 .greenlight-service-content h3 {
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.3rem;
   font-size: 1.1rem;
-  color: var(--vp-c-text-1);
+  color: var(--ms-heading);
 }
 
 .greenlight-service-content p {
-  margin: 0 0 0.75rem;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
+  max-width: 46rem;
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ms-body);
 }
 
 @media (max-width: 480px) {
   .greenlight-service-card {
     flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
+    align-items: flex-start;
   }
 }
 
-/* Health Check page */
-.hc-hero-actions {
+/* Featured articles (home page) */
+.featured-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 600px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .featured-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.featured-card {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 
-.hc-findings-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-@media (max-width: 480px) {
-  .hc-findings-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.hc-finding {
-  padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-}
-
-.hc-finding h3 {
-  margin: 0 0 0.4rem;
-  font-size: 1rem;
-  color: var(--vp-c-text-1);
-}
-
-.hc-finding p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.5;
-}
-
-
-.hc-faq h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 0.25rem;
-  font-size: 1.05rem;
-}
-
-.hc-faq p {
-  color: var(--vp-c-text-2);
-}
-
-/* Health Check: sample report figures */
-.hc-report-figure {
-  margin: 1.75rem auto 2rem;
-  max-width: 720px;
-}
-
-.hc-report-figure img {
-  display: block;
-  width: 100%;
-  height: auto;
-  background: #fff;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 10px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
-}
-
-.hc-report-figure figcaption {
-  margin-top: 0.65rem;
-  font-size: 0.85rem;
-  color: var(--vp-c-text-3);
-  text-align: center;
-}
-
-/* Health Check: the fifteen assessed areas */
-.hc-areas {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin: 1.5rem 0 2rem;
-}
-
-.hc-area-group {
-  padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  background: var(--vp-c-bg-soft);
-}
-
-.hc-area-group h3 {
-  margin: 0 0 0.6rem;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--vp-c-brand-1);
-  border: 0;
-  padding: 0;
-}
-
-.hc-area-group ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hc-area-group li {
-  padding: 0.3rem 0;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  border-bottom: 1px solid var(--vp-c-divider);
-}
-
-.hc-area-group li:last-child {
-  border-bottom: 0;
-}
-
-/* Health Check: how the engagement runs */
-.hc-steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin: 1.5rem 0 2rem;
-}
-
-.hc-step {
-  padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-top: 3px solid var(--vp-c-brand-1);
-  border-radius: 8px;
-}
-
-.hc-step h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  color: var(--vp-c-text-1);
-  border: 0;
-  padding: 0;
-}
-
-.hc-step p {
-  margin: 0;
-  font-size: 0.9rem;
-  line-height: 1.55;
-  color: var(--vp-c-text-2);
-}
-
-/* Health Check: related reading */
-.hc-reading {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin: 1.5rem 0 2rem;
-}
-
-.hc-read-card {
-  display: block;
-  padding: 1.1rem 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.2s, transform 0.2s;
-}
-
-.hc-read-card:hover {
-  border-color: var(--vp-c-brand-1);
-  transform: translateY(-2px);
-}
-
-.hc-read-card h3 {
-  margin: 0 0 0.35rem;
-  font-size: 0.95rem;
+.featured-card h3 {
+  margin: 0.7rem 0 0;
+  font-size: 1.125rem;
+  font-weight: 650;
   line-height: 1.35;
-  color: var(--vp-c-brand-1);
-  border: 0;
-  padding: 0;
+  letter-spacing: -0.012em;
+  color: var(--ms-heading);
+  text-wrap: balance;
 }
 
-.hc-read-card p {
-  margin: 0;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  color: var(--vp-c-text-2);
-}
-
-@media (max-width: 860px) {
-  .hc-areas,
-  .hc-steps,
-  .hc-reading {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Consulting CTA banner */
-.consulting-cta {
-  margin: 2.5rem 0;
-  padding: 1.75rem 2rem;
-  border: 2px solid var(--vp-c-brand-1);
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
-}
-
-.consulting-cta h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.25rem;
-  color: var(--vp-c-brand-1);
-}
-
-.consulting-cta p {
-  margin: 0 0 1.25rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-}
+/* 5. Buttons and calls to action ------------------------------------------- */
 
 .cta-actions {
   display: flex;
@@ -824,15 +1335,25 @@
   flex-wrap: wrap;
 }
 
-.cta-primary {
-  display: inline-block;
-  padding: 0.6rem 1.5rem;
+.cta-primary,
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.4rem;
+  border: 1px solid transparent;
   border-radius: 6px;
+  font-size: 0.975rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.cta-primary {
   background: var(--ms-fill);
   color: var(--ms-fill-text) !important;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
 }
 
 .cta-primary:hover {
@@ -841,21 +1362,45 @@
 }
 
 .cta-secondary {
-  display: inline-block;
-  padding: 0.6rem 1.5rem;
-  border-radius: 6px;
   background: transparent;
+  border-color: var(--vp-c-brand-1);
   color: var(--vp-c-brand-1) !important;
-  font-weight: 500;
-  text-decoration: none;
-  border: 1px solid var(--vp-c-brand-1);
-  transition: background 0.2s, color 0.2s;
 }
 
 .cta-secondary:hover {
   background: var(--ms-fill);
+  border-color: var(--ms-fill);
   color: var(--ms-fill-text) !important;
   text-decoration: none;
+}
+
+/* On a deep ground the primary button inverts and the secondary outlines. */
+.ms-hero .cta-primary,
+.ms-band .cta-primary,
+.consulting-cta .cta-primary {
+  background: #ffffff;
+  color: #0b2b20 !important;
+}
+
+.ms-hero .cta-primary:hover,
+.ms-band .cta-primary:hover,
+.consulting-cta .cta-primary:hover {
+  background: #d9f5ea;
+}
+
+.ms-hero .cta-secondary,
+.ms-band .cta-secondary,
+.consulting-cta .cta-secondary {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: #ffffff !important;
+}
+
+.ms-hero .cta-secondary:hover,
+.ms-band .cta-secondary:hover,
+.consulting-cta .cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  color: #ffffff !important;
 }
 
 /*
@@ -866,12 +1411,591 @@
  */
 a.cta-primary.cta-primary,
 a.cta-secondary.cta-secondary,
-a.pricing-cta.pricing-cta,
 a.tag-badge.tag-badge,
 a.hc-read-card.hc-read-card,
 a.featured-card.featured-card,
 a.work-card.work-card {
   text-decoration: none;
+}
+
+/* Consulting CTA banner (end of every blog post) */
+.consulting-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 2.5rem 0;
+  padding: 2rem;
+  border-radius: var(--ms-radius);
+  background: var(--ms-deep);
+}
+
+.consulting-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(36rem 18rem at 100% -20%, rgba(45, 212, 164, 0.18), transparent 62%);
+}
+
+.consulting-cta h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+}
+
+.consulting-cta p {
+  margin: 0 0 1.4rem;
+  line-height: 1.6;
+  color: var(--ms-on-deep-muted);
+}
+
+/* Gated checklist download card */
+.checklist-cta {
+  margin: 2.5rem 0;
+  padding: 1.75rem 2rem;
+  border: 2px solid var(--vp-c-brand-1);
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
+}
+
+.checklist-cta h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  color: var(--vp-c-brand-1);
+}
+
+.checklist-cta p {
+  margin: 0 0 1.25rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+
+.checklist-cta-todo {
+  font-style: italic;
+  color: var(--vp-c-text-3);
+}
+
+/* 6. Page-specific --------------------------------------------------------- */
+
+/* Health Check: report pages beside the text that explains them */
+.hc-media {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.hc-media + .hc-media {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 900px) {
+  .hc-media {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 4rem;
+  }
+
+  /* Second row mirrors the first: text left, report page right. */
+  .hc-media--flip {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+
+  .hc-media--flip .hc-report-figure {
+    order: 2;
+  }
+}
+
+.hc-report-figure {
+  margin: 0;
+}
+
+.hc-report-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+  box-shadow: var(--ms-shadow);
+}
+
+.hc-report-figure figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.85rem;
+  color: var(--ms-muted);
+}
+
+/* Health Check: what it finds */
+.hc-findings-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .hc-findings-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .hc-findings-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.hc-finding {
+  padding: 1.5rem;
+}
+
+.hc-finding h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--ms-heading);
+}
+
+.hc-finding p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ms-body);
+}
+
+/* Health Check: the fifteen assessed areas */
+.hc-areas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.hc-area-group {
+  padding: 1.5rem;
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+.hc-area-group h3 {
+  margin: 0 0 0.7rem;
+  padding: 0;
+  border: 0;
+  font-size: 0.74rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vp-c-brand-1);
+}
+
+.hc-area-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hc-area-group li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--ms-line);
+  font-size: 0.97rem;
+  color: var(--ms-heading);
+}
+
+.hc-area-group li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+/* Health Check: how the engagement runs */
+.hc-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+  counter-reset: step;
+}
+
+.hc-step {
+  counter-increment: step;
+  padding: 1.5rem;
+}
+
+.hc-step h3 {
+  margin: 0 0 0.5rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.1rem;
+  color: var(--ms-heading);
+}
+
+.hc-step h3::before {
+  content: "0" counter(step);
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  color: var(--vp-c-brand-1);
+}
+
+.hc-step p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ms-body);
+}
+
+.hc-note {
+  margin-top: 1.75rem;
+  font-weight: 600;
+  color: var(--ms-heading);
+}
+
+/* Health Check: related reading */
+.hc-reading {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.hc-read-card {
+  display: block;
+  padding: 1.4rem 1.5rem;
+  text-decoration: none;
+}
+
+.hc-read-card h3 {
+  margin: 0 0 0.4rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  color: var(--ms-heading);
+}
+
+.hc-read-card p {
+  margin: 0;
+  font-size: 0.925rem;
+  line-height: 1.55;
+  color: var(--ms-body);
+}
+
+@media (max-width: 860px) {
+  .hc-areas,
+  .hc-steps,
+  .hc-reading {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact: form beside a direct-contact card */
+.ms-contact {
+  display: grid;
+  gap: 2.5rem;
+}
+
+@media (min-width: 960px) {
+  .ms-contact {
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 4rem;
+    align-items: start;
+  }
+}
+
+.ms-contact-form h2 {
+  margin-bottom: 1.5rem;
+}
+
+.ms-contact-card {
+  padding: 1.75rem;
+  background: var(--ms-tint);
+  border: 1px solid var(--ms-line);
+  border-radius: var(--ms-radius);
+}
+
+.ms-contact-card img {
+  display: block;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 1rem;
+  border-radius: var(--ms-radius);
+  background: #ffffff;
+  object-fit: cover;
+}
+
+.ms-contact-card strong {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ms-heading);
+}
+
+.ms-contact-card > span {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.875rem;
+  color: var(--ms-muted);
+}
+
+.ms-contact-card dl {
+  margin: 1.25rem 0 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ms-line);
+}
+
+.ms-contact-card dt {
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--ms-muted);
+}
+
+.ms-contact-card dd {
+  margin: 0.15rem 0 0.9rem;
+  font-size: 0.99rem;
+  overflow-wrap: anywhere;
+}
+
+.ms-contact-card dd a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+}
+
+.ms-contact-card dd a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ms-contact-card .cta-secondary {
+  width: 100%;
+}
+
+/* Partners */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.partner-logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1.25rem;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.partner-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.25rem;
+  color: var(--ms-heading);
+}
+
+.partner-card p {
+  flex-grow: 1;
+  margin: 0 0 1.5rem;
+  font-size: 0.975rem;
+  line-height: 1.62;
+  color: var(--ms-body);
+}
+
+.ms-aside-note {
+  margin-top: 2rem;
+  font-size: 1rem !important;
+  color: var(--ms-muted);
+}
+
+/* Tools */
+.ms-tool {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 2rem;
+  border-top: 3px solid var(--ms-fill);
+}
+
+@media (min-width: 768px) {
+  .ms-tool {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3rem;
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+.ms-tool h2 {
+  margin: 0.6rem 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+.ms-tool p {
+  max-width: 42rem;
+  font-size: 1rem;
+}
+
+.ms-tool .cta-primary {
+  justify-self: start;
+}
+
+/* 7. Blog index and article furniture -------------------------------------- */
+
+.blog-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.blog-filter button {
+  padding: 0.45rem 0.95rem;
+  background: var(--ms-surface);
+  border: 1px solid var(--ms-line);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 550;
+  color: var(--ms-body);
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.blog-filter button:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.blog-filter button.active {
+  background: var(--ms-fill);
+  border-color: var(--ms-fill);
+  color: var(--ms-fill-text);
+}
+
+.blog-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+}
+
+.blog-card h2 {
+  margin: 0.7rem 0 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 650;
+  line-height: 1.32;
+  letter-spacing: -0.014em;
+  text-wrap: balance;
+}
+
+.blog-card .description {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  line-height: 1.58;
+  color: var(--ms-body);
+}
+
+.blog-card .date {
+  display: block;
+  margin-top: 1.25rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--ms-line);
+  font-size: 0.84rem;
+  color: var(--ms-muted);
+}
+
+/* Tag badges (article footers and the tags page) */
+.tag-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin: 0.15rem;
+  border-radius: 1rem;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.tag-badge:hover {
+  background: var(--ms-fill);
+  color: var(--ms-fill-text);
+}
+
+/* Tag section on tags page */
+.tag-section h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.tag-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tag-section li {
+  padding: 0.3rem 0;
+}
+
+.tag-section li a {
+  color: var(--vp-c-brand-1);
+}
+
+/* Code block wrapping */
+.vp-doc pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Greenlight promo card (inside articles) */
+.greenlight-card {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(14, 107, 71, 0.05), rgba(45, 212, 164, 0.05));
+}
+
+.greenlight-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--vp-c-text-1);
+}
+
+.greenlight-card p {
+  margin: 0 0 0.75rem;
+  color: var(--vp-c-text-2);
+}
+
+.greenlight-card a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
 }
 
 /* Printable checklist. .print-checklist is the generic class; .golive-checklist predates it. */
@@ -912,242 +2036,6 @@ a.work-card.work-card {
   font-size: 1.2rem;
   line-height: 1.3;
   color: var(--vp-c-brand-1);
-}
-
-/* Gated checklist download card */
-.checklist-cta {
-  margin: 2.5rem 0;
-  padding: 1.75rem 2rem;
-  border: 2px solid var(--vp-c-brand-1);
-  border-radius: 10px;
-  background: linear-gradient(135deg, rgba(14, 107, 71, 0.04), rgba(45, 212, 164, 0.06));
-}
-
-.checklist-cta h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.25rem;
-  color: var(--vp-c-brand-1);
-}
-
-.checklist-cta p {
-  margin: 0 0 1.25rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-}
-
-.checklist-cta-todo {
-  font-style: italic;
-  color: var(--vp-c-text-3);
-}
-
-/* Print: drop site chrome and CTAs so the checklist prints clean.
-   .print-checklist is the generic class; .golive-checklist predates it. */
-@media print {
-  .VPNav,
-  .VPLocalNav,
-  .VPSidebar,
-  .VPFooter,
-  .VPDocFooter,
-  .VPDocAside,
-  .consulting-cta,
-  .checklist-cta {
-    display: none !important;
-  }
-
-  .golive-checklist,
-  .print-checklist {
-    border: none;
-    background: none;
-    padding: 0;
-  }
-}
-
-/* Featured posts grid */
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
-  margin: 0.5rem 0 1.5rem;
-}
-
-@media (max-width: 960px) {
-  .featured-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .featured-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.featured-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1.25rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 8px;
-  text-decoration: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.featured-card:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.08);
-}
-
-.featured-card h3 {
-  margin: 0 0 0.75rem;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: var(--vp-c-text-1);
-}
-
-.featured-card .featured-tags {
-  margin-top: auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
-}
-
-.featured-card .tag-badge {
-  font-size: 0.75rem;
-  padding: 0.15rem 0.5rem;
-  pointer-events: none;
-}
-
-/* Partners grid */
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-@media (max-width: 768px) {
-  .partners-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.partner-card {
-  padding: 2rem;
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.partner-card:hover {
-  border-color: var(--vp-c-brand-1);
-  box-shadow: 0 2px 12px rgba(14, 107, 71, 0.08);
-}
-
-.partner-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
-.partner-card h3 {
-  margin: 0 0 0.75rem;
-  font-size: 1.15rem;
-  color: var(--vp-c-text-1);
-}
-
-.partner-card p {
-  margin: 0 0 1.25rem;
-  font-size: 0.9rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-}
-
-.partner-card .cta-secondary {
-  margin-top: auto;
-}
-
-/* HubSpot form placeholder */
-.hubspot-placeholder {
-  padding: 2rem;
-  border: 2px dashed var(--vp-c-divider);
-  border-radius: 8px;
-  text-align: center;
-  color: var(--vp-c-text-2);
-}
-
-/* Founder block: photo plus bio on the homepage and services page */
-.founder-block {
-  display: flex;
-  gap: 1.75rem;
-  align-items: flex-start;
-  margin: 1.5rem 0 2rem;
-}
-.founder-photo {
-  width: 168px;
-  height: 168px;
-  border-radius: 10px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.founder-text p:first-child { margin-top: 0; }
-@media (max-width: 640px) {
-  .founder-block { flex-direction: column; align-items: center; }
-  .founder-photo { width: 144px; height: 144px; }
-}
-
-/* Recent work cards: same bordered, brand-accented language as the service
-   and health-check cards, with a kicker tying each story to its service. */
-.work-card {
-  border: 1px solid var(--vp-c-divider);
-  border-left: 3px solid var(--vp-c-brand-1);
-  border-radius: 8px;
-  background: var(--vp-c-bg-soft);
-  padding: 1.5rem 1.75rem;
-  margin: 1.5rem 0;
-}
-.work-kicker {
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--vp-c-brand-1);
-}
-.vp-doc .work-card h3 { margin: 0.35rem 0 1rem; }
-.work-card .work-outcome {
-  border-top: 1px solid var(--vp-c-divider);
-  padding-top: 1rem;
-  margin-bottom: 0;
-}
-
-/* Commercial page width
- *
- * Pages without a `layout` key fall back to VitePress's doc layout, whose
- * content column is capped at 688px. That measure is right for prose, but it
- * squeezes the card grids: the three service cards land at roughly 218px each
- * against 368px for the same pattern on the homepage.
- *
- * Widen the container on the commercial pages to match the homepage, then hold
- * top-level prose at a readable measure so the text does not stretch with it.
- * Card copy is nested deeper than `.vp-doc > div > p`, so it is unaffected and
- * keeps filling its card. Blog posts and the CSV tool deliberately stay at 688px.
- */
-.commercial-page .content-container {
-  max-width: 1152px;
-}
-
-.commercial-page .vp-doc > div > p,
-.commercial-page .vp-doc > div > ul,
-.commercial-page .vp-doc > div > ol,
-.home-content > p,
-.home-content > ul,
-.home-content > ol {
-  max-width: 720px;
 }
 
 /* Slide grid
@@ -1234,4 +2122,29 @@ a.work-card.work-card {
 
 .post-figure-narrow {
   max-width: 300px;
+}
+
+/* 8. Print ----------------------------------------------------------------- */
+
+/* Drop site chrome and CTAs so the checklist prints clean.
+   .print-checklist is the generic class; .golive-checklist predates it. */
+@media print {
+  .VPNav,
+  .VPLocalNav,
+  .VPSidebar,
+  .VPFooter,
+  .ms-footer,
+  .VPDocFooter,
+  .VPDocAside,
+  .consulting-cta,
+  .checklist-cta {
+    display: none !important;
+  }
+
+  .golive-checklist,
+  .print-checklist {
+    border: none;
+    background: none;
+    padding: 0;
+  }
 }

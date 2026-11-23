@@ -14,6 +14,8 @@ import CsvTranslator from './components/CsvTranslator.vue'
 import CsvGuideContext from './components/CsvGuideContext.vue'
 import CsvEntryHelp from './components/CsvEntryHelp.vue'
 import CsvGuideFooter from './components/CsvGuideFooter.vue'
+import ContactBand from './components/ContactBand.vue'
+import Layout from './Layout.vue'
 
 // Bookings complete on meetings-eu1.hubspot.com, so GA4 never sees the outcome,
 // only the click. Record the click and carry the CTA's own UTM values with it,
@@ -44,6 +46,7 @@ function trackBookingClicks() {
 
 export default {
   extends: DefaultTheme,
+  Layout,
   enhanceApp({ app }) {
     if (typeof window !== 'undefined') trackBookingClicks()
 
@@ -59,5 +62,6 @@ export default {
     app.component('CsvGuideContext', CsvGuideContext)
     app.component('CsvEntryHelp', CsvEntryHelp)
     app.component('CsvGuideFooter', CsvGuideFooter)
+    app.component('ContactBand', ContactBand)
   }
 }
